@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 1 )
+			( logicalViewRevNum 2 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -24,11 +24,148 @@
 		)
 	)
 	( DictionaryExtensions
+		( Attribute
+			( Name "CDS_LMAN_SYM_OUTLINE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "gt_delays"
+			)
+			( signal "@tubii_tk2_lib.gt_delays(sch_1):gt_ttl"
+				( objectStatus "gt_ttl" )
+			)
+			( gate "@tubii_tk2_lib.gt_delays(sch_1):page1_i1"
+				( attribute "CDS_LIB" "ttl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,300,200,-300"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-450,3300)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "DS1023200"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "DS1023200"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I1" )
+				( pin "\clk/p1\"
+				)
+				( pin "\d/p2\"
+				)
+				( pin "gnd"
+				)
+				( pin "\in\"
+				)
+				( pin "\le*\"
+				)
+				( pin "ms"
+				)
+				( pin "\out\"
+				)
+				( pin "p3"
+				)
+				( pin "p4"
+				)
+				( pin "p5"
+				)
+				( pin "p6"
+				)
+				( pin "p7"
+				)
+				( pin "ps"
+				)
+				( pin "pwm"
+				)
+				( pin "\q/p0\"
+				)
+				( pin "vcc"
+				)
+			)
+			( gate "@tubii_tk2_lib.gt_delays(sch_1):page1_i2"
+				( attribute "CDS_LIB" "ttl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,350,175,-250"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-400,1950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "DS102350"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "DS102350"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I2" )
+				( pin "\clk/p1\"
+				)
+				( pin "\d/p2\"
+				)
+				( pin "gnd"
+				)
+				( pin "\in\"
+				)
+				( pin "\le*\"
+				)
+				( pin "ms"
+				)
+				( pin "\out\"
+				)
+				( pin "p3"
+				)
+				( pin "p4"
+				)
+				( pin "p5"
+				)
+				( pin "p6"
+				)
+				( pin "p7"
+				)
+				( pin "ps"
+				)
+				( pin "pwm"
+				)
+				( pin "\q/p0\"
+				)
+				( pin "vcc"
+				)
 			)
 		)
 	)

@@ -8,6 +8,7 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 12)
+      (lastInstTermId 1)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -23,6 +24,9 @@
       ("S7" "ecal_control" "tubii_tk2_lib" "sym_1"
       )
       ("S8" "gt_delays" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T1" "gt_ttl" -1 -1 1)
+        )
       )
       ("S9" "caen_coms" "tubii_tk2_lib" "sym_1"
       )
@@ -50,6 +54,10 @@
       ("I6" "page1_i6" "S7"
       )
       ("I7" "page1_i7" "S8"
+        (pins
+          ("M1" "T1" -1 -1
+          )
+        )
       )
       ("I8" "page1_i8" "S9"
       )

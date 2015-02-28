@@ -19,15 +19,6 @@ primitive 'DS102350';
     'IN':
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.6,0.02)';
-    'Q/P0':
-      PIN_NUMBER='(3)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'CLK/P1':
-      PIN_NUMBER='(4)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'D/P2':
-      PIN_NUMBER='(5)';
-      INPUT_LOAD='(-0.6,0.02)';
     'P3':
       PIN_NUMBER='(6)';
       INPUT_LOAD='(-0.6,0.02)';
@@ -43,6 +34,31 @@ primitive 'DS102350';
     'P7':
       PIN_NUMBER='(13)';
       INPUT_LOAD='(-0.6,0.02)';
+    'Q/P0':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'CLK/P1':
+      PIN_NUMBER='(4)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'D/P2':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'GND':
+      PIN_NUMBER='(8)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VCC':
+      PIN_NUMBER='(16)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
     PART_NAME='DS102350';
@@ -50,9 +66,6 @@ primitive 'DS102350';
     JEDEC_TYPE='soic16';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
-    GROUND_NETS='GND';
-    POWER_PINS='(GND:8)';
-    POWER_PINS='(VCC:16)';
   end_body;
 end_primitive;
 

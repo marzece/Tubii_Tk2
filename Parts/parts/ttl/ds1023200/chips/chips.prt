@@ -1,48 +1,64 @@
 FILE_TYPE=LIBRARY_PARTS;
 primitive 'DS1023200';
   pin
-    '-LE':
-      PIN_NUMBER='(2)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'PWM':
-      PIN_NUMBER='(9)';
-      OUTPUT_LOAD='(20.0,-1.0)';
-    'OUT':
-      PIN_NUMBER='(15)';
-      OUTPUT_LOAD='(20.0,-1.0)';
-    'MS':
-      PIN_NUMBER='(11)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'PS':
-      PIN_NUMBER='(14)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'IN':
-      PIN_NUMBER='(1)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P3':
-      PIN_NUMBER='(6)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P4':
-      PIN_NUMBER='(7)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P5':
-      PIN_NUMBER='(10)';
+    'P7':
+      PIN_NUMBER='(13)';
       INPUT_LOAD='(-0.6,0.02)';
     'P6':
       PIN_NUMBER='(12)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P7':
-      PIN_NUMBER='(13)';
+    'P5':
+      PIN_NUMBER='(10)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'MS':
+      PIN_NUMBER='(11)';
       INPUT_LOAD='(-0.6,0.02)';
     'Q/P0':
       PIN_NUMBER='(3)';
       INPUT_LOAD='(-0.6,0.02)';
+    '-LE':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.6,0.02)';
     'CLK/P1':
       PIN_NUMBER='(4)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'PS':
+      PIN_NUMBER='(14)';
       INPUT_LOAD='(-0.6,0.02)';
     'D/P2':
       PIN_NUMBER='(5)';
       INPUT_LOAD='(-0.6,0.02)';
+    'P4':
+      PIN_NUMBER='(7)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'P3':
+      PIN_NUMBER='(6)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'OUT':
+      PIN_NUMBER='(15)';
+      OUTPUT_LOAD='(20.0,-1.0)';
+    'PWM':
+      PIN_NUMBER='(9)';
+      OUTPUT_LOAD='(20.0,-1.0)';
+    'IN':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'GND':
+      PIN_NUMBER='(8)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VCC':
+      PIN_NUMBER='(16)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
     PART_NAME='DS1023200';
@@ -50,9 +66,6 @@ primitive 'DS1023200';
     JEDEC_TYPE='soic16';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
-    GROUND_NETS='GND';
-    POWER_PINS='(GND:8)';
-    POWER_PINS='(VCC:16)';
   end_body;
 end_primitive;
 
