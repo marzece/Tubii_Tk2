@@ -1,0 +1,689 @@
+( ConstraintFile "microzed_module"
+	( constraintHeader
+		( objectKey
+			( logical )
+		)
+		( version
+			( 16.6 )
+		)
+		( revisionNumber
+			( logicalViewRevNum 2 )
+			( physicalViewRevNum 0 )
+			( otherViewRevNum 0 )
+		)
+		( contents
+			( dictionaryExtensions )
+			( worksheetCustomizations )
+			( electricalConstraints )
+			( netClasses )
+			( properties )
+		)
+		( precision
+			( units mil )
+			( numberOfDecimalPlaces 2 )
+		)
+	)
+	( DictionaryExtensions
+		( Attribute
+			( Name "CDS_LMAN_SYM_OUTLINE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "CURRENT" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIST" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "KNEE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_TEMP" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NEGTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PACKTYPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POSTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "SLOPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TOL_ON_OFF" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+	)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "microzed_module"
+			)
+			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i1"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,1450,125,-1300"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,2500)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "FCI_61083-101400LF"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "FCI_61083-101400LF"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I1" )
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
+				( pin "\3\"
+				)
+				( pin "\4\"
+				)
+				( pin "\5\"
+				)
+				( pin "\6\"
+				)
+				( pin "\7\"
+				)
+				( pin "\8\"
+				)
+				( pin "\9\"
+				)
+				( pin "\10\"
+				)
+				( pin "\11\"
+				)
+				( pin "\12\"
+				)
+				( pin "\13\"
+				)
+				( pin "\14\"
+				)
+				( pin "\15\"
+				)
+				( pin "\16\"
+				)
+				( pin "\17\"
+				)
+				( pin "\18\"
+				)
+				( pin "\19\"
+				)
+				( pin "\20\"
+				)
+				( pin "\21\"
+				)
+				( pin "\22\"
+				)
+				( pin "\23\"
+				)
+				( pin "\24\"
+				)
+				( pin "\25\"
+				)
+				( pin "\26\"
+				)
+				( pin "\27\"
+				)
+				( pin "\28\"
+				)
+				( pin "\29\"
+				)
+				( pin "\30\"
+				)
+				( pin "\31\"
+				)
+				( pin "\32\"
+				)
+				( pin "\33\"
+				)
+				( pin "\34\"
+				)
+				( pin "\35\"
+				)
+				( pin "\36\"
+				)
+				( pin "\37\"
+				)
+				( pin "\38\"
+				)
+				( pin "\39\"
+				)
+				( pin "\40\"
+				)
+				( pin "\41\"
+				)
+				( pin "\42\"
+				)
+				( pin "\43\"
+				)
+				( pin "\44\"
+				)
+				( pin "\45\"
+				)
+				( pin "\46\"
+				)
+				( pin "\47\"
+				)
+				( pin "\48\"
+				)
+				( pin "\49\"
+				)
+				( pin "\50\"
+				)
+				( pin "\51\"
+				)
+				( pin "\52\"
+				)
+				( pin "\53\"
+				)
+				( pin "\54\"
+				)
+				( pin "\55\"
+				)
+				( pin "\56\"
+				)
+				( pin "\57\"
+				)
+				( pin "\58\"
+				)
+				( pin "\59\"
+				)
+				( pin "\60\"
+				)
+				( pin "\61\"
+				)
+				( pin "\62\"
+				)
+				( pin "\63\"
+				)
+				( pin "\64\"
+				)
+				( pin "\65\"
+				)
+				( pin "\66\"
+				)
+				( pin "\67\"
+				)
+				( pin "\68\"
+				)
+				( pin "\69\"
+				)
+				( pin "\70\"
+				)
+				( pin "\71\"
+				)
+				( pin "\72\"
+				)
+				( pin "\73\"
+				)
+				( pin "\74\"
+				)
+				( pin "\75\"
+				)
+				( pin "\76\"
+				)
+				( pin "\77\"
+				)
+				( pin "\78\"
+				)
+				( pin "\79\"
+				)
+				( pin "\80\"
+				)
+				( pin "\81\"
+				)
+				( pin "\82\"
+				)
+				( pin "\83\"
+				)
+				( pin "\84\"
+				)
+				( pin "\85\"
+				)
+				( pin "\86\"
+				)
+				( pin "\87\"
+				)
+				( pin "\88\"
+				)
+				( pin "\89\"
+				)
+				( pin "\90\"
+				)
+				( pin "\91\"
+				)
+				( pin "\92\"
+				)
+				( pin "\93\"
+				)
+				( pin "\94\"
+				)
+				( pin "\95\"
+				)
+				( pin "\96\"
+				)
+				( pin "\97\"
+				)
+				( pin "\98\"
+				)
+				( pin "\99\"
+				)
+				( pin "\100\"
+				)
+				( pin "\101\"
+				)
+				( pin "\102\"
+				)
+			)
+			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i2"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,1450,125,-1300"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1350,2450)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "FCI_61083-101400LF"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "FCI_61083-101400LF"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I2" )
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
+				( pin "\3\"
+				)
+				( pin "\4\"
+				)
+				( pin "\5\"
+				)
+				( pin "\6\"
+				)
+				( pin "\7\"
+				)
+				( pin "\8\"
+				)
+				( pin "\9\"
+				)
+				( pin "\10\"
+				)
+				( pin "\11\"
+				)
+				( pin "\12\"
+				)
+				( pin "\13\"
+				)
+				( pin "\14\"
+				)
+				( pin "\15\"
+				)
+				( pin "\16\"
+				)
+				( pin "\17\"
+				)
+				( pin "\18\"
+				)
+				( pin "\19\"
+				)
+				( pin "\20\"
+				)
+				( pin "\21\"
+				)
+				( pin "\22\"
+				)
+				( pin "\23\"
+				)
+				( pin "\24\"
+				)
+				( pin "\25\"
+				)
+				( pin "\26\"
+				)
+				( pin "\27\"
+				)
+				( pin "\28\"
+				)
+				( pin "\29\"
+				)
+				( pin "\30\"
+				)
+				( pin "\31\"
+				)
+				( pin "\32\"
+				)
+				( pin "\33\"
+				)
+				( pin "\34\"
+				)
+				( pin "\35\"
+				)
+				( pin "\36\"
+				)
+				( pin "\37\"
+				)
+				( pin "\38\"
+				)
+				( pin "\39\"
+				)
+				( pin "\40\"
+				)
+				( pin "\41\"
+				)
+				( pin "\42\"
+				)
+				( pin "\43\"
+				)
+				( pin "\44\"
+				)
+				( pin "\45\"
+				)
+				( pin "\46\"
+				)
+				( pin "\47\"
+				)
+				( pin "\48\"
+				)
+				( pin "\49\"
+				)
+				( pin "\50\"
+				)
+				( pin "\51\"
+				)
+				( pin "\52\"
+				)
+				( pin "\53\"
+				)
+				( pin "\54\"
+				)
+				( pin "\55\"
+				)
+				( pin "\56\"
+				)
+				( pin "\57\"
+				)
+				( pin "\58\"
+				)
+				( pin "\59\"
+				)
+				( pin "\60\"
+				)
+				( pin "\61\"
+				)
+				( pin "\62\"
+				)
+				( pin "\63\"
+				)
+				( pin "\64\"
+				)
+				( pin "\65\"
+				)
+				( pin "\66\"
+				)
+				( pin "\67\"
+				)
+				( pin "\68\"
+				)
+				( pin "\69\"
+				)
+				( pin "\70\"
+				)
+				( pin "\71\"
+				)
+				( pin "\72\"
+				)
+				( pin "\73\"
+				)
+				( pin "\74\"
+				)
+				( pin "\75\"
+				)
+				( pin "\76\"
+				)
+				( pin "\77\"
+				)
+				( pin "\78\"
+				)
+				( pin "\79\"
+				)
+				( pin "\80\"
+				)
+				( pin "\81\"
+				)
+				( pin "\82\"
+				)
+				( pin "\83\"
+				)
+				( pin "\84\"
+				)
+				( pin "\85\"
+				)
+				( pin "\86\"
+				)
+				( pin "\87\"
+				)
+				( pin "\88\"
+				)
+				( pin "\89\"
+				)
+				( pin "\90\"
+				)
+				( pin "\91\"
+				)
+				( pin "\92\"
+				)
+				( pin "\93\"
+				)
+				( pin "\94\"
+				)
+				( pin "\95\"
+				)
+				( pin "\96\"
+				)
+				( pin "\97\"
+				)
+				( pin "\98\"
+				)
+				( pin "\99\"
+				)
+				( pin "\100\"
+				)
+				( pin "\101\"
+				)
+				( pin "\102\"
+				)
+			)
+		)
+	)
+)

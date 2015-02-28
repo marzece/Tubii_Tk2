@@ -4,6 +4,9 @@ primitive '74HCT165';
     'D0':
       PIN_NUMBER='(11)';
       INPUT_LOAD='(-0.01,0.01)';
+    'D5':
+      PIN_NUMBER='(4)';
+      INPUT_LOAD='(-0.01,0.01)';
     'D1':
       PIN_NUMBER='(12)';
       INPUT_LOAD='(-0.01,0.01)';
@@ -15,9 +18,6 @@ primitive '74HCT165';
       INPUT_LOAD='(-0.01,0.01)';
     'D4':
       PIN_NUMBER='(3)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'D5':
-      PIN_NUMBER='(4)';
       INPUT_LOAD='(-0.01,0.01)';
     'D6':
       PIN_NUMBER='(5)';
@@ -37,12 +37,30 @@ primitive '74HCT165';
     'Q7':
       PIN_NUMBER='(9)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      DIFF_PAIR_PINS_POS='dp_q7';
     '-Q7':
       PIN_NUMBER='(7)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      DIFF_PAIR_PINS_NEG='dp_q7';
     '-PL':
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
+    'GND':
+      PIN_NUMBER='(8)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VCC':
+      PIN_NUMBER='(16)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
     PART_NAME='74HCT165';
@@ -50,9 +68,6 @@ primitive '74HCT165';
     JEDEC_TYPE='ssop16';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
-    GROUND_NETS='GND';
-    POWER_PINS='(GND:8)';
-    POWER_PINS='(VCC:16)';
   end_body;
 end_primitive;
 

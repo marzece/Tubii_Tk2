@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-28T01:57:04</modificationTime>
+    <modificationTime>2015-02-28T15:16:19</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="gt_delays" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>31</instanceid>
-        <netid>35</netid>
-        <insttermid>160</insttermid>
+        <instanceid>32</instanceid>
+        <netid>41</netid>
+        <insttermid>176</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -388,82 +387,82 @@
           </parameters>
           <terms>
             <term>
-              <id>T83</id>
+              <id>T94</id>
               <name>clk/p1</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T84</id>
+              <id>T95</id>
               <name>d/p2</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T85</id>
+              <id>T96</id>
               <name>gnd</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T86</id>
+              <id>T97</id>
               <name>in</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T87</id>
+              <id>T98</id>
               <name>le*</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T88</id>
+              <id>T99</id>
               <name>ms</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T89</id>
+              <id>T100</id>
               <name>out</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T90</id>
+              <id>T101</id>
               <name>p3</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T91</id>
+              <id>T102</id>
               <name>p4</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T92</id>
+              <id>T103</id>
               <name>p5</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T93</id>
+              <id>T104</id>
               <name>p6</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T94</id>
+              <id>T105</id>
               <name>p7</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T95</id>
+              <id>T106</id>
               <name>ps</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T96</id>
+              <id>T107</id>
               <name>pwm</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T97</id>
+              <id>T108</id>
               <name>q/p0</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T98</id>
+              <id>T109</id>
               <name>vcc</name>
               <direction>input</direction>
             </term>
@@ -494,10 +493,6 @@
           <name>le</name>
           <scope>interface</scope>
           <direction>input</direction>
-        </net>
-        <net>
-          <id>N11</id>
-          <name>unnamed_1_ds1023200_i1_q</name>
         </net>
         <net>
           <id>N25</id>
@@ -536,8 +531,32 @@
           <name>unnamed_1_ledl_i19_a</name>
         </net>
         <net>
-          <id>N35</id>
-          <name>page1_vcc</name>
+          <id>N36</id>
+          <name>ddgt_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N37</id>
+          <name>ddgt_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N38</id>
+          <name>dgt_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N39</id>
+          <name>dgt_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N41</id>
+          <name>ddgt_bits</name>
         </net>
         <net>
           <id>N2</id>
@@ -556,7 +575,6 @@
         </net>
       </nets>
       <aliases>
-        <alias net1="N35" lsb1="-1" msb1="-1" net2="N6" lsb2="-1" msb2="-1" />
       </aliases>
       <differentialnets>
       </differentialnets>
@@ -674,7 +692,7 @@
               <id>M15</id>
               <termid>T16</termid>
               <connections>
-                <connection net="N11" />
+                <connection net="N41" />
               </connections>
             </pin>
             <pin>
@@ -750,7 +768,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N2" />
+                <connection pinmsb="0" pinlsb="0" net="N6" />
               </connections>
             </pin>
             <pin>
@@ -759,7 +777,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
+                <connection pinmsb="0" pinlsb="0" net="N2" />
               </connections>
             </pin>
           </pins>
@@ -925,12 +943,14 @@
               <id>M108</id>
               <termid>T62</termid>
               <connections>
+                <connection net="N39" />
               </connections>
             </pin>
             <pin>
               <id>M109</id>
               <termid>T63</termid>
               <connections>
+                <connection net="N38" />
               </connections>
             </pin>
             <pin>
@@ -944,12 +964,14 @@
               <id>M111</id>
               <termid>T65</termid>
               <connections>
+                <connection net="N37" />
               </connections>
             </pin>
             <pin>
               <id>M112</id>
               <termid>T66</termid>
               <connections>
+                <connection net="N36" />
               </connections>
             </pin>
             <pin>
@@ -1447,9 +1469,9 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I31</id>
+          <id>I32</id>
           <cellid>S9</cellid>
-          <name>page1_i2</name>
+          <name>page1_i26</name>
           <parameters>
           </parameters>
           <masks>
@@ -1458,104 +1480,108 @@
           </powers>
           <pins>
             <pin>
-              <id>M145</id>
-              <termid>T83</termid>
+              <id>M161</id>
+              <termid>T94</termid>
               <connections>
                 <connection net="N8" />
               </connections>
             </pin>
             <pin>
-              <id>M146</id>
-              <termid>T84</termid>
+              <id>M162</id>
+              <termid>T95</termid>
               <connections>
-                <connection net="N11" />
+                <connection net="N41" />
               </connections>
             </pin>
             <pin>
-              <id>M147</id>
-              <termid>T85</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M148</id>
-              <termid>T86</termid>
-              <connections>
-                <connection net="N1" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M149</id>
-              <termid>T87</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M150</id>
-              <termid>T88</termid>
+              <id>M163</id>
+              <termid>T96</termid>
               <connections>
                 <connection net="N2" />
               </connections>
             </pin>
             <pin>
-              <id>M151</id>
-              <termid>T89</termid>
+              <id>M164</id>
+              <termid>T97</termid>
+              <connections>
+                <connection net="N1" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M165</id>
+              <termid>T98</termid>
+              <connections>
+                <connection net="N10" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M166</id>
+              <termid>T99</termid>
+              <connections>
+                <connection net="N2" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M167</id>
+              <termid>T100</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M168</id>
+              <termid>T101</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M169</id>
+              <termid>T102</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M170</id>
+              <termid>T103</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M171</id>
+              <termid>T104</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M172</id>
+              <termid>T105</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M173</id>
+              <termid>T106</termid>
+              <connections>
+                <connection net="N6" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M174</id>
+              <termid>T107</termid>
               <connections>
                 <connection net="N25" />
               </connections>
             </pin>
             <pin>
-              <id>M152</id>
-              <termid>T90</termid>
+              <id>M175</id>
+              <termid>T108</termid>
               <connections>
               </connections>
             </pin>
             <pin>
-              <id>M153</id>
-              <termid>T91</termid>
+              <id>M176</id>
+              <termid>T109</termid>
               <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M154</id>
-              <termid>T92</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M155</id>
-              <termid>T93</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M156</id>
-              <termid>T94</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M157</id>
-              <termid>T95</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M158</id>
-              <termid>T96</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M159</id>
-              <termid>T97</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M160</id>
-              <termid>T98</termid>
-              <connections>
+                <connection net="N6" />
               </connections>
             </pin>
           </pins>
@@ -1587,6 +1613,30 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ddgt_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ddgt_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="dgt_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="dgt_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="gnd">
@@ -1624,7 +1674,12 @@
             <nets>
               <net ref="clk"></net>
               <net ref="data"></net>
+              <net ref="ddgt_bits"></net>
+              <net ref="ddgt_n"></net>
+              <net ref="ddgt_p"></net>
               <net ref="ddgt_ttl"></net>
+              <net ref="dgt_n"></net>
+              <net ref="dgt_p"></net>
               <net ref="dgt_ttl"></net>
               <net ref="gnd"></net>
               <net ref="gt_ttl"></net>
@@ -1632,7 +1687,6 @@
               <net ref="unnamed_1_csmd0603_i12_a"></net>
               <net ref="unnamed_1_csmd0805_i14_b"></net>
               <net ref="unnamed_1_csmd0805_i15_b"></net>
-              <net ref="unnamed_1_ds1023200_i1_q"></net>
               <net ref="unnamed_1_hct123_i9_q1"></net>
               <net ref="unnamed_1_hct123_i9_q2"></net>
               <net ref="unnamed_1_ledl_i18_a"></net>
@@ -1642,7 +1696,6 @@
             </nets>
             <instances>
               <instance ref="i1"></instance>
-              <instance ref="i2"></instance>
               <instance ref="i4"></instance>
               <instance ref="i5"></instance>
               <instance ref="i9"></instance>
@@ -1658,6 +1711,7 @@
               <instance ref="i19"></instance>
               <instance ref="i20"></instance>
               <instance ref="i21"></instance>
+              <instance ref="i26"></instance>
             </instances>
           </page>
         </pages>

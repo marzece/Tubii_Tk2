@@ -2,9 +2,9 @@
 (                                                                     )
 (    Allegro Netrev Import Logic                                      )
 (                                                                     )
-(    Drawing          : TubiiPCB_V1.brd                               )
+(    Drawing          : TubiiPCB_V2.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Fri Feb 27 23:57:01 2015                      )
+(    Date/Time        : Sat Feb 28 18:38:47 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -18,32 +18,78 @@ RIPUP_SYMBOLS ALWAYS;
 Missing symbol has error FALSE;
 SCHEMATIC_DIRECTORY 'C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\packaged';
 BOARD_DIRECTORY '';
-OLD_BOARD_NAME 'C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V1.brd';
-NEW_BOARD_NAME 'C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V1.brd';
+OLD_BOARD_NAME 'C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V2.brd';
+NEW_BOARD_NAME 'C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V2.brd';
 
-CmdLine: netrev -proj C:\Users\Eric Marzec\Documents\Tubii_Tk2\tubii_tk2.cpm -y 1 -O C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\physical\TubiiPCB_V1.brd C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\physical\TubiiPCB_V1.brd -$
+CmdLine: netrev -proj C:\Users\Eric Marzec\Documents\Tubii_Tk2\tubii_tk2.cpm -y 1 -O C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\physical\TubiiPCB_V2.brd C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\physical\TubiiPCB_V2.brd -$
 
 ------ Preparing to read pst files ------
 
 Starting to read C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstchip.dat 
-   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstchip.dat (00:00:21.30)
+   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstchip.dat (00:00:21.02)
 Starting to read C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxprt.dat 
    Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxprt.dat (00:00:00.00)
 Starting to read C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxnet.dat 
-   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxnet.dat (00:00:00.00)
+   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxnet.dat (00:00:00.01)
 
 ------ Oversights/Warnings/Errors ------
 
 
-ERROR: File "TubiiPCB_V1.brd" is being edited by user "Eric Marzec" on date "Fri Feb 27 23:54:58 2015" on system "ERIC_PC". Resolve lock file and re-run netrev.
+#1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
 
-#1   ERROR(SPMHNI-175): Netrev error detected.
+WARNING(SPMHNI-194): Symbol 'DIP16' for device 'HCT123' not found in PSMPATH or must be "dbdoctor"ed.
 
-#2   Run stopped because errors were detected
+    Alternatively, the JEDEC_TYPE is not defined for the device in the pstchip.dat.
 
-netrev run on Feb 27 23:56:39 2015
+#2   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'PLCC20' for device 'MC10H124' has extra pin '6'.
+
+ERROR(SPMHNI-196): Symbol 'PLCC20' for device 'MC10H124' has extra pin '11'.
+
+ERROR(SPMHNI-196): Symbol 'PLCC20' for device 'MC10H124' has extra pin '16'.
+
+ERROR(SPMHNI-196): Symbol 'PLCC20' for device 'MC10H124' has extra pin '1'.
+
+
+
+===========================================================
+Start Constraint Diff3 Import
+	Constraint File:    C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstcmdb.dat
+	Allegro Baseline:   C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaae08716.tmp
+	Start time: Sat Feb 28 18:38:47 2015
+===========================================================
+===========================================================
+Finished Constraint Update	Time: Sat Feb 28 18:38:48 2015
+===========================================================
+
+------ Library Paths ------
+MODULEPATH =  . 
+           C:/Cadence/SPB_16.6/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_16.6/share/local/pcb/symbols 
+           C:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_16.6/share/pcb/allegrolib/symbols 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_16.6/share/local/pcb/padstacks 
+           C:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_16.6/share/pcb/allegrolib/symbols 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Feb 28 18:38:26 2015
    DESIGN NAME : 'TUBII'
-   PACKAGING ON 27-Feb-2015 AT 23:56:05
+   PACKAGING ON 28-Feb-2015 AT 18:37:46
 
    COMPILE 'logic'
    CHECK_PIN_NAMES OFF
@@ -67,10 +113,10 @@ netrev run on Feb 27 23:56:39 2015
    SUPPRESS   20
    WARNINGS ON
 
-  2 errors detected
+ No error detected
  No oversight detected
- No warning detected
+  2 warnings detected
 
-cpu time      1:11:00
+cpu time      1:12:08
 elapsed time  0:00:22
 

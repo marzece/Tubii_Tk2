@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "tubii_pcb"
     (lastIds
-      (lastInstanceId 12)
-      (lastNetId 5)
-      (lastInstTermId 14)
+      (lastInstanceId 13)
+      (lastNetId 18)
+      (lastInstTermId 60)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -24,29 +24,49 @@
       )
       ("S7" "ecal_control" "tubii_tk2_lib" "sym_1"
       )
-      ("S8" "gt_delays" "tubii_tk2_lib" "sym_1"
-        (terms
-          ("T1" "gt_ttl" -1 -1 1)
-          ("T7" "clk" -1 -1 1)
-          ("T8" "data" -1 -1 1)
-          ("T9" "le" -1 -1 1)
-        )
-      )
       ("S9" "caen_coms" "tubii_tk2_lib" "sym_1"
       )
       ("S10" "ellie_coms" "tubii_tk2_lib" "sym_1"
       )
       ("S11" "cntrl_register" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T26" "clk" -1 -1 1)
+          ("T27" "data" -1 -1 1)
+          ("T28" "data_rdy" -1 -1 1)
+          ("T29" "default_clk_sel" -1 -1 2)
+          ("T30" "display" 3 1 2)
+          ("T31" "ecal_enable" -1 -1 2)
+          ("T33" "le" -1 -1 1)
+          ("T34" "lo_sel" -1 -1 2)
+          ("T35" "read_bit" -1 -1 1)
+          ("T36" "reg_val" -1 -1 2)
+        )
       )
       ("S12" "tubii_spkr" "tubii_tk2_lib" "sym_1"
       )
       ("S13" "baseline_buffer" "tubii_tk2_lib" "sym_1"
+      )
+      ("S14" "lo_gen" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T47" "dgt_n" -1 -1 2)
+          ("T48" "dgt_p" -1 -1 2)
+          ("T49" "lo" -1 -1 2)
+          ("T50" "lo*" -1 -1 2)
+          ("T51" "lo_sel" -1 -1 1)
+          ("T52" "mtcd_lo*" -1 -1 1)
+          ("T53" "clk" -1 -1 1)
+          ("T54" "data" -1 -1 1)
+          ("T55" "gt_ttl" -1 -1 1)
+          ("T56" "le" -1 -1 1)
+        )
       )
     )
 
     (nets
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vcc" "vcc" -1 -1 2  inherited)
+      ("vee" "vee" -1 -1 2  inherited)
+      ("vtt" "vtt" -1 -1 2  inherited)
     )
 
     (instances
@@ -62,27 +82,61 @@
       )
       ("I6" "page1_i6" "S7"
       )
-      ("I7" "page1_i7" "S8"
-        (pins
-          ("M1" "T1" -1 -1
-          )
-          ("M5" "T7" -1 -1
-          )
-          ("M6" "T8" -1 -1
-          )
-          ("M7" "T9" -1 -1
-          )
-        )
-      )
       ("I8" "page1_i8" "S9"
       )
       ("I9" "page1_i9" "S10"
       )
       ("I10" "page1_i10" "S11"
+        (pins
+          ("M25" "T26" -1 -1
+          )
+          ("M26" "T27" -1 -1
+          )
+          ("M27" "T28" -1 -1
+          )
+          ("M28" "T29" -1 -1
+          )
+          ("M29" "T30" 3 1
+          )
+          ("M30" "T31" -1 -1
+          )
+          ("M32" "T33" -1 -1
+          )
+          ("M33" "T34" -1 -1
+          )
+          ("M34" "T35" -1 -1
+          )
+          ("M35" "T36" -1 -1
+          )
+        )
       )
       ("I11" "page1_i11" "S12"
       )
       ("I12" "page1_i12" "S13"
+      )
+      ("I13" "page1_i13" "S14"
+        (pins
+          ("M51" "T47" -1 -1
+          )
+          ("M52" "T48" -1 -1
+          )
+          ("M53" "T49" -1 -1
+          )
+          ("M54" "T50" -1 -1
+          )
+          ("M55" "T51" -1 -1
+          )
+          ("M56" "T52" -1 -1
+          )
+          ("M57" "T53" -1 -1
+          )
+          ("M58" "T54" -1 -1
+          )
+          ("M59" "T55" -1 -1
+          )
+          ("M60" "T56" -1 -1
+          )
+        )
       )
     )
 

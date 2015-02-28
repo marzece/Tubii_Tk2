@@ -16,35 +16,27 @@ primitive 'MC10H124';
     'A_OUT':
       PIN_NUMBER='(3)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_POS='dp_a_out';
     'B_OUT':
       PIN_NUMBER='(2)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_POS='dp_b_out';
     'C_OUT':
       PIN_NUMBER='(19)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_POS='dp_c_out';
     'D_OUT':
       PIN_NUMBER='(18)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_POS='dp_d_out';
     '-A_OUT':
       PIN_NUMBER='(5)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_NEG='dp_a_out';
     '-B_OUT':
       PIN_NUMBER='(4)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_NEG='dp_b_out';
     '-C_OUT':
       PIN_NUMBER='(15)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_NEG='dp_c_out';
     '-D_OUT':
       PIN_NUMBER='(17)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_NEG='dp_d_out';
     'VEE':
       PIN_NUMBER='(10)';
       PINUSE='POWER';
@@ -79,6 +71,7 @@ primitive 'MC10H124';
     JEDEC_TYPE='plcc20';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
+    NC_PINS='(1,6,11,16)';
   end_body;
 end_primitive;
 

@@ -1,0 +1,219 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    PLACEMENT LOG                                                    )
+(                                                                     )
+(    Drawing          : BSTPLC.brd                                    )
+(    Software Version : 16.6P004                                      )
+(    Date/Time        : Sat Feb 28 16:05:58 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Autoplace BSTPLC.brd 
+ Save as BSTPLC.brd 
+
+ Will search while getting acceptable improvement
+ Will not scale complete graph edges
+ Start time Sat Feb 28 16:05:58 2015
+
+
+ 
+ 	 	 Placement Task Version 1.00 
+ 
+ 
+ Algorithm  : IC
+ Place within: room
+ Room name: CNTRL_REG
+ Map grid points to: library origin
+ Place leftovers on bottom: YES
+ Allow component overlap: NO
+ Soft boundary: NO
+ Cluster: NO
+ No Rat: NO
+ Remove TAG: NO
+ Components at rotation of 0 degrees are weighted 50
+
+ Components at rotation of 90 degrees are weighted 0
+
+ Components at rotation of 180 degrees are weighted 0
+
+ Components at rotation of 270 degrees are weighted 0
+
+ Board direction of north is weighted 50
+
+ Board direction of east is weighted 60
+
+ Board direction of south is weighted 50
+
+ Board direction of west is weighted 60
+
+ Component mirroring weight is 0
+
+ Component straightness weight is 75
+
+ Placement Keepin
+
+  line seg 	(800.0,600.0) (16000.0,600.0)
+  line seg 	(16000.0,600.0) (16000.0,15800.0)
+  line seg 	(16000.0,15800.0) (800.0,15800.0)
+  line seg 	(800.0,15800.0) (800.0,600.0)
+
+ACTIVE ROOMS:
+    Room  1: CNTRL_REG       (2300.0 12200.0) (5900.0 12200.0) (5900.0 14700.0) (2300.0 14700.0)
+
+
+ Top grid x increment will be 250.0
+
+ grid y increment will be 250.0
+
+ Start grid point will be (1050.0 800.0)
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dangling Line, Via and Antenna Report                            )
+(                                                                     )
+(    Drawing          : BSTPLC.brd                                    )
+(    Software Version : 16.6P004                                      )
+(    Date/Time        : Sat Feb 28 16:05:58 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Report methodology:
+  - Dangling lines have at least one end not connected.
+  - Dangling vias have one or no connection
+      - Plus are not a test, thieving or netshort property via.
+  - Antenna vias do not have connections on their start and end layers.
+      - Plus they are not a thieving vias.
+      - Optionally, VOLTAGE nets, testvias and through vias can be suppressed with
+        the environment variable report_antennavia.
+      - Section may be suppressed by variable report_noantennavia.
+  - Not part of the current partition.
+  - To suppress items in dangle report add the OK_DANGLE property to the via
+    or connect line.
+
+
+<< Summary >>
+  Total dangling lines:       0
+  Total dangling vias:        0
+  Total antenna vias:         0
+
+    Layout Statistics:
+    -----------------
+        Components:  Placed 0  Unplaced 35  Total 35
+        Nets:  W/Rats 47  No/Rats 0  Total 47
+        Pins:  W/Rats 0  No/Rats 0  Unused 0  Unplaced 360  Total 360
+        Equivalent ICs (1 pin = 1/14 EIC)  25
+        RatTs              0
+        Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
+        Layout area (sq in) 231.04
+        Layout density (sq in/EIC) 9.242
+        Pin density (Pins/sq in) 1.558
+        Average ratlength (in)  0.0
+        Rat density (in/sq in) 0.000
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                  0           0            0
+        Already Connected            0           0            0
+        Missing Connections          0           0            0
+        Dangling Connections                                  0
+        Connection Completion        0.00%       0.00%        0.00%
+        Manh Distance (inches)       0.00
+        Etch Length (inches)         0.00        0.00         0.00
+        Number of vias		     0           0            0
+        Vias per Connection          0.00        0.00         0.00
+        Smd pins with attached clines                         0
+
+
+ Starting Connection Matrix construction.
+
+ Failed placements are marked with an asterisk in the table below
+
+ 
+  ref_des    location_x  location_y  rotation mirror            package
+
+ Warning: Unplaced components have no affinity to placed
+     TP10       2550.0     12300.0         0               FEC32DTP (15)
+       U4       2800.0     12800.0         0                 SOIC20 (5)
+       U3       2550.0     12550.0         0                 SSOP16 (1)
+       U2       2800.0     13050.0         0                 SOIC14 (0)
+       C1       2550.0     13300.0         0                CAP0603 (2)
+       C3       3300.0     12550.0         0                CAP0603 (4)
+      TP9       3300.0     12550.0         0               FEC32DTP (14)
+      TP8       2550.0     12800.0         0               FEC32DTP (13)
+      TP7       2550.0     13050.0         0               FEC32DTP (12)
+      TP6       3050.0     13050.0         0               FEC32DTP (11)
+      TP5       2800.0     13300.0         0               FEC32DTP (10)
+      TP4       2550.0     13300.0         0               FEC32DTP (9)
+      TP3       3300.0     13050.0         0               FEC32DTP (8)
+      TP2       3300.0     12300.0         0               FEC32DTP (7)
+      TP1       3050.0     13300.0         0               FEC32DTP (6)
+
+ Warning: Unplaced components have no affinity to placed
+       C2       3550.0     12550.0         0                CAP0603 (3)
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dangling Line, Via and Antenna Report                            )
+(                                                                     )
+(    Drawing          : BSTPLC.brd                                    )
+(    Software Version : 16.6P004                                      )
+(    Date/Time        : Sat Feb 28 16:05:58 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Report methodology:
+  - Dangling lines have at least one end not connected.
+  - Dangling vias have one or no connection
+      - Plus are not a test, thieving or netshort property via.
+  - Antenna vias do not have connections on their start and end layers.
+      - Plus they are not a thieving vias.
+      - Optionally, VOLTAGE nets, testvias and through vias can be suppressed with
+        the environment variable report_antennavia.
+      - Section may be suppressed by variable report_noantennavia.
+  - Not part of the current partition.
+  - To suppress items in dangle report add the OK_DANGLE property to the via
+    or connect line.
+
+
+<< Summary >>
+  Total dangling lines:       0
+  Total dangling vias:        0
+  Total antenna vias:         0
+
+    Layout Statistics:
+    -----------------
+        Components:  Placed 16  Unplaced 19  Total 35
+        Nets:  W/Rats 47  No/Rats 0  Total 47
+        Pins:  W/Rats 65  No/Rats 0  Unused 1  Unplaced 294  Total 360
+        Equivalent ICs (1 pin = 1/14 EIC)  25
+        RatTs              0
+        Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
+        Layout area (sq in) 231.04
+        Layout density (sq in/EIC) 9.242
+        Pin density (Pins/sq in) 1.558
+        Average ratlength (in)  0.4
+        Rat density (in/sq in) 0.063
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                 37           0           37
+        Already Connected            0           0            0
+        Missing Connections         37           0           37
+        Dangling Connections                                  0
+        Connection Completion        0.00%       0.00%        0.00%
+        Manh Distance (inches)      14.56
+        Etch Length (inches)         0.00        0.00         0.00
+        Number of vias		     0           0            0
+        Vias per Connection          0.00        0.00         0.00
+        Smd pins with attached clines                         0
+
+
+ Successfully placed 16 components out of 16
+
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Sat Feb 28 16:05:58 2015
+
