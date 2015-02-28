@@ -8,7 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 12)
-      (lastInstTermId 1)
+      (lastNetId 5)
+      (lastInstTermId 14)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -26,6 +27,9 @@
       ("S8" "gt_delays" "tubii_tk2_lib" "sym_1"
         (terms
           ("T1" "gt_ttl" -1 -1 1)
+          ("T7" "clk" -1 -1 1)
+          ("T8" "data" -1 -1 1)
+          ("T9" "le" -1 -1 1)
         )
       )
       ("S9" "caen_coms" "tubii_tk2_lib" "sym_1"
@@ -38,6 +42,11 @@
       )
       ("S13" "baseline_buffer" "tubii_tk2_lib" "sym_1"
       )
+    )
+
+    (nets
+      ("gnd" "gnd" -1 -1 2  inherited)
+      ("vcc" "vcc" -1 -1 2  inherited)
     )
 
     (instances
@@ -56,6 +65,12 @@
       ("I7" "page1_i7" "S8"
         (pins
           ("M1" "T1" -1 -1
+          )
+          ("M5" "T7" -1 -1
+          )
+          ("M6" "T8" -1 -1
+          )
+          ("M7" "T9" -1 -1
           )
         )
       )

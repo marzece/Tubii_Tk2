@@ -1,0 +1,159 @@
+; Packager-XL run on 27-Feb-2015 AT 23:56:05 CONSTRAINTS_VIEW_GENERATED
+( ConstraintFile "tubii"
+	( constraintHeader
+		( objectKey
+			( physical )
+		)
+		( version
+			( 16.6 )
+		)
+		( revisionNumber
+			( logicalViewRevNum 3 )
+			( physicalViewRevNum 0 )
+			( otherViewRevNum 0 )
+		)
+		( contents
+			( dictionaryExtensions )
+			( worksheetCustomizations )
+			( electricalConstraints )
+			( netClasses )
+			( properties )
+		)
+		( precision
+			( units mil )
+			( numberOfDecimalPlaces 2 )
+		)
+	)
+	( DictionaryExtensions
+		( Attribute
+			( Name "CDS_LMAN_SYM_OUTLINE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+	)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "tubii"
+				( objectFlag fObjectReadOnly )
+				( objectStatus sObjectLogicalNet )
+			)
+			( signal "GT_TTL"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):gt_ttl" )
+			)
+			( gate "U1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1" )
+			)
+			( gate "U2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2" )
+			)
+			( pin "U1.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:\clk/p1\" )
+			)
+			( pin "U1.5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:\d/p2\" )
+			)
+			( pin "U1.8"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:gnd" )
+			)
+			( pin "U1.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:\in\" )
+			)
+			( pin "U1.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:\le*\" )
+			)
+			( pin "U1.11"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:ms" )
+			)
+			( pin "U1.15"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:\out\" )
+			)
+			( pin "U1.6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:p3" )
+			)
+			( pin "U1.7"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:p4" )
+			)
+			( pin "U1.10"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:p5" )
+			)
+			( pin "U1.12"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:p6" )
+			)
+			( pin "U1.13"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:p7" )
+			)
+			( pin "U1.14"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:ps" )
+			)
+			( pin "U1.9"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:pwm" )
+			)
+			( pin "U1.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:\q/p0\" )
+			)
+			( pin "U1.16"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i1:vcc" )
+			)
+			( pin "U2.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:\clk/p1\" )
+			)
+			( pin "U2.5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:\d/p2\" )
+			)
+			( pin "U2.8"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:gnd" )
+			)
+			( pin "U2.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:\in\" )
+			)
+			( pin "U2.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:\le*\" )
+			)
+			( pin "U2.11"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:ms" )
+			)
+			( pin "U2.15"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:\out\" )
+			)
+			( pin "U2.6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:p3" )
+			)
+			( pin "U2.7"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:p4" )
+			)
+			( pin "U2.10"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:p5" )
+			)
+			( pin "U2.12"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:p6" )
+			)
+			( pin "U2.13"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:p7" )
+			)
+			( pin "U2.14"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:ps" )
+			)
+			( pin "U2.9"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:pwm" )
+			)
+			( pin "U2.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:\q/p0\" )
+			)
+			( pin "U2.16"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i7@tubii_tk2_lib.gt_delays(sch_1):page1_i2:vcc" )
+			)
+		)
+	)
+)
