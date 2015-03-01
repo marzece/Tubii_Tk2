@@ -5,16 +5,73 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-27T18:53:32</modificationTime>
+    <modificationTime>2015-02-28T19:57:47</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="general_utilities" view="sch_1">
       <lastids>
+        <instanceid>2</instanceid>
+        <netid>7</netid>
+        <insttermid>15</insttermid>
       </lastids>
       <cells>
+        <cell>
+          <id>S1</id>
+          <library>tubii_tk2_lib</library>
+          <name>pulse_inverter</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T4</id>
+              <name>pulse_inv_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T5</id>
+              <name>pulse_inv_out</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S2</id>
+          <library>tubii_tk2_lib</library>
+          <name>ribbon_delay</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+          </terms>
+        </cell>
       </cells>
       <nets>
+        <net>
+          <id>gnd</id>
+          <name>gnd</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc</id>
+          <name>vcc</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vee</id>
+          <name>vee</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vtt</id>
+          <name>vtt</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
       </nets>
       <aliases>
       </aliases>
@@ -27,6 +84,60 @@
       <netinterfaces>
       </netinterfaces>
       <instances>
+        <instance>
+          <id>I1</id>
+          <cellid>S1</cellid>
+          <name>page1_i1</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M4</id>
+              <termid>T4</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M5</id>
+              <termid>T5</termid>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I2</id>
+          <cellid>S2</cellid>
+          <name>page1_i2</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -44,6 +155,8 @@
             <nets>
             </nets>
             <instances>
+              <instance ref="i1"></instance>
+              <instance ref="i2"></instance>
             </instances>
           </page>
         </pages>
