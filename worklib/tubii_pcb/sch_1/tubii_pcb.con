@@ -7,7 +7,7 @@
   (library "tubii_tk2_lib")
   (design "tubii_pcb"
     (lastIds
-      (lastInstanceId 13)
+      (lastInstanceId 14)
       (lastNetId 22)
       (lastInstTermId 104)
     )
@@ -15,8 +15,6 @@
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
       )
       ("S3" "clocks" "tubii_tk2_lib" "sym_1"
-      )
-      ("S4" "comparators" "tubii_tk2_lib" "sym_1"
       )
       ("S5" "general_utilities" "tubii_tk2_lib" "sym_1"
         (terms
@@ -81,6 +79,8 @@
           ("T56" "le" -1 -1 1)
         )
       )
+      ("S15" "mtca_mimic" "tubii_tk2_lib" "sym_1"
+      )
     )
 
     (nets
@@ -94,8 +94,6 @@
       ("I1" "page1_i1" "S2"
       )
       ("I2" "page1_i2" "S3"
-      )
-      ("I3" "page1_i3" "S4"
       )
       ("I4" "page1_i4" "S5"
         (pins
@@ -196,6 +194,8 @@
           ("M60" "T56" -1 -1
           )
         )
+      )
+      ("I14" "page1_i3" "S15"
       )
     )
 

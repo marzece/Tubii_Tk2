@@ -5,13 +5,13 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-28T21:29:50</modificationTime>
+    <modificationTime>2015-02-28T21:37:21</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
       <lastids>
-        <instanceid>13</instanceid>
+        <instanceid>14</instanceid>
         <netid>22</netid>
         <insttermid>104</insttermid>
       </lastids>
@@ -30,16 +30,6 @@
           <id>S3</id>
           <library>tubii_tk2_lib</library>
           <name>clocks</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-          </terms>
-        </cell>
-        <cell>
-          <id>S4</id>
-          <library>tubii_tk2_lib</library>
-          <name>comparators</name>
           <view>sym_1</view>
           <parameters>
           </parameters>
@@ -323,6 +313,16 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S15</id>
+          <library>tubii_tk2_lib</library>
+          <name>mtca_mimic</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -386,27 +386,6 @@
           <id>I2</id>
           <cellid>S3</cellid>
           <name>page1_i2</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I3</id>
-          <cellid>S4</cellid>
-          <name>page1_i3</name>
           <parameters>
           </parameters>
           <masks>
@@ -827,6 +806,27 @@
               <connections>
               </connections>
             </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I14</id>
+          <cellid>S15</cellid>
+          <name>page1_i3</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
           </pins>
           <differentialpins>
           </differentialpins>

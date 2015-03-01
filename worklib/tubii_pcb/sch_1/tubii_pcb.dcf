@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 17 )
+			( logicalViewRevNum 18 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -12472,7 +12472,7 @@
 				( attribute "XY" "(-2700,500)"
 					( Origin gFrontEnd )
 				)
-				( objectStatus "page1_i3 (comparators)" )
+				( objectStatus "page1_i3 (mtca_mimic)" )
 			)
 			( designInst "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4"
 				( attribute "BLOCK" "TRUE"
@@ -13932,28 +13932,6 @@
 		( ruleChanges
 			( allRules )
 			( design "clocks"
-			)
-		)
-	)
-	( EndBaseCopy )
-	)
-	( BaseCopy "comparators"
-		( constraintHeader
-			( revisionNumber
-				( logicalViewRevNum 1 )
-				( physicalViewRevNum 0 )
-				( otherViewRevNum 0 )
-			)
-			( contents
-				( electricalConstraints )
-				( netClasses )
-				( properties )
-			)
-		)
-    ( designConstraints
-		( ruleChanges
-			( allRules )
-			( design "comparators"
 			)
 		)
 	)
@@ -26459,6 +26437,28 @@
 					( Origin gFrontEnd )
 				)
 				( objectStatus "page1_i2 (select_lo_src)" )
+			)
+		)
+	)
+	( EndBaseCopy )
+	)
+	( BaseCopy "mtca_mimic"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 1 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "mtca_mimic"
 			)
 		)
 	)
