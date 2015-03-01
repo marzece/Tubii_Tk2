@@ -7,6 +7,35 @@
   (library "tubii_tk2_lib")
   (design "general_utilities"
     (lastIds
+      (lastInstanceId 1)
+      (lastNetId 3)
+      (lastInstTermId 5)
     )
+    (cells
+      ("S1" "pulse_inverter" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T4" "pulse_inv_in" -1 -1 1)
+          ("T5" "pulse_inv_out" -1 -1 2)
+        )
+      )
+    )
+
+    (nets
+      ("gnd" "gnd" -1 -1 2  inherited)
+      ("vcc" "vcc" -1 -1 2  inherited)
+      ("vee" "vee" -1 -1 2  inherited)
+    )
+
+    (instances
+      ("I1" "page1_i1" "S1"
+        (pins
+          ("M4" "T4" -1 -1
+          )
+          ("M5" "T5" -1 -1
+          )
+        )
+      )
+    )
+
   )
 )
