@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-28T16:44:28</modificationTime>
+    <modificationTime>2015-02-28T18:33:11</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
       <lastids>
         <instanceid>13</instanceid>
-        <netid>14</netid>
-        <insttermid>44</insttermid>
+        <netid>18</netid>
+        <insttermid>60</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -186,6 +186,56 @@
           <parameters>
           </parameters>
           <terms>
+            <term>
+              <id>T47</id>
+              <name>dgt_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T48</id>
+              <name>dgt_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T49</id>
+              <name>lo</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T50</id>
+              <name>lo*</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T51</id>
+              <name>lo_sel</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T52</id>
+              <name>mtcd_lo*</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T53</id>
+              <name>clk</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T54</id>
+              <name>data</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T55</id>
+              <name>gt_ttl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T56</id>
+              <name>le</name>
+              <direction>input</direction>
+            </term>
           </terms>
         </cell>
       </cells>
@@ -205,6 +255,12 @@
         <net>
           <id>vee</id>
           <name>vee</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vtt</id>
+          <name>vtt</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -524,6 +580,66 @@
           <powers>
           </powers>
           <pins>
+            <pin>
+              <id>M51</id>
+              <termid>T47</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M52</id>
+              <termid>T48</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M53</id>
+              <termid>T49</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M54</id>
+              <termid>T50</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M55</id>
+              <termid>T51</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M56</id>
+              <termid>T52</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M57</id>
+              <termid>T53</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M58</id>
+              <termid>T54</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M59</id>
+              <termid>T55</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M60</id>
+              <termid>T56</termid>
+              <connections>
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>

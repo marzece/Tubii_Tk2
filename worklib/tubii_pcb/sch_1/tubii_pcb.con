@@ -9,7 +9,7 @@
     (lastIds
       (lastInstanceId 13)
       (lastNetId 18)
-      (lastInstTermId 60)
+      (lastInstTermId 72)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -23,6 +23,12 @@
       ("S6" "power" "tubii_tk2_lib" "sym_1"
       )
       ("S7" "ecal_control" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T65" "ecal_active" -1 -1 1)
+          ("T66" "ext_ped_in" -1 -1 1)
+          ("T67" "ext_ped_out" -1 -1 2)
+          ("T68" "gt" -1 -1 1)
+        )
       )
       ("S9" "caen_coms" "tubii_tk2_lib" "sym_1"
       )
@@ -81,6 +87,16 @@
       ("I5" "page1_i5" "S6"
       )
       ("I6" "page1_i6" "S7"
+        (pins
+          ("M69" "T65" -1 -1
+          )
+          ("M70" "T66" -1 -1
+          )
+          ("M71" "T67" -1 -1
+          )
+          ("M72" "T68" -1 -1
+          )
+        )
       )
       ("I8" "page1_i8" "S9"
       )
