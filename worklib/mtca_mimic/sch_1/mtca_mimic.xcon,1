@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-01T02:08:10</modificationTime>
+    <modificationTime>2015-03-01T02:09:20</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="mtca_mimic" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>18</instanceid>
-        <netid>36</netid>
+        <netid>38</netid>
         <insttermid>98</insttermid>
       </lastids>
       <cells>
@@ -556,6 +555,18 @@
           <direction>output</direction>
         </net>
         <net>
+          <id>N37</id>
+          <name>pulse1_anal</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N38</id>
+          <name>pulse2_anal</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
           <id>N1</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -631,12 +642,14 @@
               <id>M5</id>
               <termid>T8</termid>
               <connections>
+                <connection net="N37" />
               </connections>
             </pin>
             <pin>
               <id>M6</id>
               <termid>T9</termid>
               <connections>
+                <connection net="N38" />
               </connections>
             </pin>
             <pin>
@@ -1594,6 +1607,18 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="pulse1_anal">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="pulse2_anal">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="trig1_out_n">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1645,6 +1670,8 @@
               <net ref="gt"></net>
               <net ref="le"></net>
               <net ref="lo*"></net>
+              <net ref="pulse1_anal"></net>
+              <net ref="pulse2_anal"></net>
               <net ref="trig1_out_n"></net>
               <net ref="trig1_out_p"></net>
               <net ref="trig2_out_n"></net>
