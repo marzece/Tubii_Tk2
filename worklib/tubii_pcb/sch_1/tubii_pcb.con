@@ -8,8 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 13)
-      (lastNetId 18)
-      (lastInstTermId 72)
+      (lastNetId 22)
+      (lastInstTermId 104)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -19,6 +19,21 @@
       ("S4" "comparators" "tubii_tk2_lib" "sym_1"
       )
       ("S5" "general_utilities" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T87" "clk" -1 -1 1)
+          ("T88" "data" -1 -1 1)
+          ("T89" "generic_delay_in" -1 -1 1)
+          ("T91" "generic_pulse_in" -1 -1 1)
+          ("T93" "le" -1 -1 1)
+          ("T94" "pulse_inv_in" -1 -1 1)
+          ("T96" "ribbon_pulse_in_n" -1 -1 1)
+          ("T97" "ribbon_pulse_in_p" -1 -1 1)
+          ("T100" "generic_delay_out" -1 -1 2)
+          ("T101" "generic_pulse_out" -1 -1 2)
+          ("T102" "pulse_inv_out" -1 -1 2)
+          ("T103" "ribbon_pulse_out_n" -1 -1 2)
+          ("T104" "ribbon_pulse_out_p" -1 -1 2)
+        )
       )
       ("S6" "power" "tubii_tk2_lib" "sym_1"
       )
@@ -83,6 +98,34 @@
       ("I3" "page1_i3" "S4"
       )
       ("I4" "page1_i4" "S5"
+        (pins
+          ("M87" "T87" -1 -1
+          )
+          ("M88" "T88" -1 -1
+          )
+          ("M89" "T89" -1 -1
+          )
+          ("M91" "T91" -1 -1
+          )
+          ("M93" "T93" -1 -1
+          )
+          ("M94" "T94" -1 -1
+          )
+          ("M96" "T96" -1 -1
+          )
+          ("M97" "T97" -1 -1
+          )
+          ("M100" "T100" -1 -1
+          )
+          ("M101" "T101" -1 -1
+          )
+          ("M102" "T102" -1 -1
+          )
+          ("M103" "T103" -1 -1
+          )
+          ("M104" "T104" -1 -1
+          )
+        )
       )
       ("I5" "page1_i5" "S6"
       )

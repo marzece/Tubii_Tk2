@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "general_utilities"
     (lastIds
-      (lastInstanceId 2)
-      (lastNetId 7)
-      (lastInstTermId 19)
+      (lastInstanceId 3)
+      (lastNetId 20)
+      (lastInstTermId 28)
     )
     (cells
       ("S1" "pulse_inverter" "tubii_tk2_lib" "sym_1"
@@ -26,9 +26,33 @@
           ("T23" "pulse_out_p" -1 -1 2)
         )
       )
+      ("S3" "generic_delays" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T26" "clk" -1 -1 1)
+          ("T27" "data" -1 -1 1)
+          ("T28" "delay_in" -1 -1 1)
+          ("T29" "delay_out" -1 -1 2)
+          ("T30" "le" -1 -1 1)
+          ("T31" "pulse_in" -1 -1 1)
+          ("T32" "pulse_out" -1 -1 2)
+        )
+      )
     )
 
     (nets
+      ("N8" "clk" -1 -1 1 1)
+      ("N9" "data" -1 -1 1 1)
+      ("N10" "generic_delay_in" -1 -1 1 1)
+      ("N11" "generic_delay_out" -1 -1 1 2)
+      ("N12" "generic_pulse_in" -1 -1 1 1)
+      ("N13" "generic_pulse_out" -1 -1 1 2)
+      ("N14" "le" -1 -1 1 1)
+      ("N15" "pulse_inv_in" -1 -1 1 1)
+      ("N16" "pulse_inv_out" -1 -1 1 2)
+      ("N17" "ribbon_pulse_in_n" -1 -1 1 1)
+      ("N18" "ribbon_pulse_in_p" -1 -1 1 1)
+      ("N19" "ribbon_pulse_out_n" -1 -1 1 2)
+      ("N20" "ribbon_pulse_out_p" -1 -1 1 2)
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vcc" "vcc" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
@@ -39,20 +63,77 @@
       ("I1" "page1_i1" "S1"
         (pins
           ("M4" "T4" -1 -1
+            (conn
+              ("0" -1 -1 "N15" -1 -1)
+            )
           )
           ("M5" "T5" -1 -1
+            (conn
+              ("0" -1 -1 "N16" -1 -1)
+            )
           )
         )
       )
       ("I2" "page1_i2" "S2"
         (pins
           ("M16" "T20" -1 -1
+            (conn
+              ("0" -1 -1 "N17" -1 -1)
+            )
           )
           ("M17" "T21" -1 -1
+            (conn
+              ("0" -1 -1 "N18" -1 -1)
+            )
           )
           ("M18" "T22" -1 -1
+            (conn
+              ("0" -1 -1 "N19" -1 -1)
+            )
           )
           ("M19" "T23" -1 -1
+            (conn
+              ("0" -1 -1 "N20" -1 -1)
+            )
+          )
+        )
+      )
+      ("I3" "page1_i5" "S3"
+        (pins
+          ("M22" "T26" -1 -1
+            (conn
+              ("0" -1 -1 "N8" -1 -1)
+            )
+          )
+          ("M23" "T27" -1 -1
+            (conn
+              ("0" -1 -1 "N9" -1 -1)
+            )
+          )
+          ("M24" "T28" -1 -1
+            (conn
+              ("0" -1 -1 "N10" -1 -1)
+            )
+          )
+          ("M25" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N11" -1 -1)
+            )
+          )
+          ("M26" "T30" -1 -1
+            (conn
+              ("0" -1 -1 "N14" -1 -1)
+            )
+          )
+          ("M27" "T31" -1 -1
+            (conn
+              ("0" -1 -1 "N12" -1 -1)
+            )
+          )
+          ("M28" "T32" -1 -1
+            (conn
+              ("0" -1 -1 "N13" -1 -1)
+            )
           )
         )
       )
