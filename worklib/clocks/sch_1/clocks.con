@@ -7,6 +7,49 @@
   (library "tubii_tk2_lib")
   (design "clocks"
     (lastIds
+      (lastInstanceId 2)
+      (lastNetId 4)
+      (lastInstTermId 14)
     )
+    (cells
+      ("S1" "default_clk_sel" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T14" "bckp_clk" -1 -1 2)
+          ("T15" "clk_sel" -1 -1 1)
+          ("T16" "default_clk" -1 -1 2)
+          ("T17" "reset" -1 -1 1)
+          ("T18" "tub_clk_in" -1 -1 1)
+        )
+      )
+      ("S2" "fault_detection" "tubii_tk2_lib" "sym_1"
+      )
+    )
+
+    (nets
+      ("gnd" "gnd" -1 -1 2  inherited)
+      ("vcc" "vcc" -1 -1 2  inherited)
+      ("vee" "vee" -1 -1 2  inherited)
+      ("vtt" "vtt" -1 -1 2  inherited)
+    )
+
+    (instances
+      ("I1" "page1_i1" "S1"
+        (pins
+          ("M10" "T14" -1 -1
+          )
+          ("M11" "T15" -1 -1
+          )
+          ("M12" "T16" -1 -1
+          )
+          ("M13" "T17" -1 -1
+          )
+          ("M14" "T18" -1 -1
+          )
+        )
+      )
+      ("I2" "page1_i2" "S2"
+      )
+    )
+
   )
 )
