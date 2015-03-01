@@ -8,8 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 14)
-      (lastNetId 26)
-      (lastInstTermId 146)
+      (lastNetId 30)
+      (lastInstTermId 170)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -62,6 +62,9 @@
         )
       )
       ("S12" "tubii_spkr" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T178" "spkr_sig" -1 -1 1)
+        )
       )
       ("S13" "baseline_buffer" "tubii_tk2_lib" "sym_1"
       )
@@ -183,6 +186,10 @@
         )
       )
       ("I11" "page1_i11" "S12"
+        (pins
+          ("M170" "T178" -1 -1
+          )
+        )
       )
       ("I12" "page1_i12" "S13"
       )

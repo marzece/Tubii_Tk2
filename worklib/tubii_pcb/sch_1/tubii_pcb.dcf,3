@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 22 )
+			( logicalViewRevNum 23 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -1022,6 +1022,10 @@
 				)
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):dgt"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):pulse1_anal"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):pulse2_anal"
 			)
 			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -34060,7 +34064,7 @@
 	( BaseCopy "mtca_mimic"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 10 )
+				( logicalViewRevNum 11 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -34327,6 +34331,12 @@
 					( Origin gPackager )
 				)
 				( objectStatus "trig2_out_p" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):pulse1_anal"
+				( objectStatus "pulse1_anal" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):pulse2_anal"
+				( objectStatus "pulse2_anal" )
 			)
 			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
