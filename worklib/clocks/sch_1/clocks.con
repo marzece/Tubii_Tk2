@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "clocks"
     (lastIds
-      (lastInstanceId 2)
-      (lastNetId 4)
-      (lastInstTermId 14)
+      (lastInstanceId 3)
+      (lastNetId 18)
+      (lastInstTermId 53)
     )
     (cells
       ("S1" "default_clk_sel" "tubii_tk2_lib" "sym_1"
@@ -22,10 +22,24 @@
         )
       )
       ("S2" "fault_detection" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T35" "bckp_clk" -1 -1 1)
+          ("T36" "clk_reset_ecl" -1 -1 1)
+          ("T37" "clk_reset_ttl" -1 -1 1)
+          ("T38" "data_rdy" -1 -1 1)
+          ("T39" "default_clk" -1 -1 1)
+          ("T40" "max_count" 7 0 1)
+          ("T41" "change_clk_n" -1 -1 2)
+          ("T42" "change_clk_p" -1 -1 2)
+        )
+      )
+      ("S3" "change_clks" "tubii_tk2_lib" "sym_1"
       )
     )
 
     (nets
+      ("N17" "unnamed_1_defaultclksel_i1_bckpclk" -1 -1 0 )
+      ("N18" "unnamed_1_defaultclksel_i1_defaultclk" -1 -1 0 )
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vcc" "vcc" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
@@ -36,10 +50,16 @@
       ("I1" "page1_i1" "S1"
         (pins
           ("M10" "T14" -1 -1
+            (conn
+              ("0" -1 -1 "N17" -1 -1)
+            )
           )
           ("M11" "T15" -1 -1
           )
           ("M12" "T16" -1 -1
+            (conn
+              ("0" -1 -1 "N18" -1 -1)
+            )
           )
           ("M13" "T17" -1 -1
           )
@@ -48,6 +68,32 @@
         )
       )
       ("I2" "page1_i2" "S2"
+        (pins
+          ("M46" "T35" -1 -1
+            (conn
+              ("0" -1 -1 "N17" -1 -1)
+            )
+          )
+          ("M47" "T36" -1 -1
+          )
+          ("M48" "T37" -1 -1
+          )
+          ("M49" "T38" -1 -1
+          )
+          ("M50" "T39" -1 -1
+            (conn
+              ("0" -1 -1 "N18" -1 -1)
+            )
+          )
+          ("M51" "T40" 7 0
+          )
+          ("M52" "T41" -1 -1
+          )
+          ("M53" "T42" -1 -1
+          )
+        )
+      )
+      ("I3" "page1_i3" "S3"
       )
     )
 
