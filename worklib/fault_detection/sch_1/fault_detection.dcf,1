@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 6 )
+			( logicalViewRevNum 7 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -419,6 +419,15 @@
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):max_count(7)"
 				( objectStatus "max_count<7>" )
 			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):clk_state"
+				( objectStatus "clk_state" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):change_clk_p"
+				( objectStatus "change_clk_p" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):change_clk_n"
+				( objectStatus "change_clk_n" )
+			)
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):clk_reset_ecl"
 				( objectStatus "clk_reset_ecl" )
 			)
@@ -431,8 +440,14 @@
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):unnamed_1_mc10h131_i59_gnd1"
 				( objectStatus "unnamed_1_mc10h131_i59_gnd1" )
 			)
-			( signal "@tubii_tk2_lib.fault_detection(sch_1):unnamed_1_mc10h131_i59_q2"
-				( objectStatus "unnamed_1_mc10h131_i59_q2" )
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):restart_count"
+				( objectStatus "restart_count" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):unnamed_1_csmd0603_i76_a"
+				( objectStatus "unnamed_1_csmd0603_i76_a" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):unnamed_1_csmd0603_i76_b"
+				( objectStatus "unnamed_1_csmd0603_i76_b" )
 			)
 			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"
@@ -3525,7 +3540,7 @@
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "ROT" "0"
+				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
@@ -4576,6 +4591,86 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I73" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i76"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,1275)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I76" )
 				( pin "a(0)"
 				)
 				( pin "b(0)"

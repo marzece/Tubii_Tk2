@@ -5,16 +5,116 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-27T18:59:57</modificationTime>
+    <modificationTime>2015-03-02T15:39:32</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_coms" view="sch_1">
       <lastids>
+        <instanceid>27</instanceid>
+        <netid>76</netid>
+        <insttermid>245</insttermid>
       </lastids>
       <cells>
+        <cell>
+          <id>S8</id>
+          <library>tubii_tk2_lib</library>
+          <name>caen_analog_coms</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T95</id>
+              <name>caen_out_anal</name>
+              <direction>output</direction>
+              <msb>7</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T96</id>
+              <name>scope_out_anal</name>
+              <direction>output</direction>
+              <msb>7</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T97</id>
+              <name>clk</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T98</id>
+              <name>data</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T99</id>
+              <name>data_rdy</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T100</id>
+              <name>le</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T101</id>
+              <name>pulse_in_anal</name>
+              <direction>input</direction>
+              <msb>11</msb>
+              <lsb>0</lsb>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S9</id>
+          <library>tubii_tk2_lib</library>
+          <name>caen_dig_coms</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+          </terms>
+        </cell>
       </cells>
       <nets>
+        <net>
+          <id>vcc15</id>
+          <name>vcc15</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc15m</id>
+          <name>vcc15m</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>N73</id>
+          <name>gnd</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>N74</id>
+          <name>vcc</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vee</id>
+          <name>vee</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vtt</id>
+          <name>vtt</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
       </nets>
       <aliases>
       </aliases>
@@ -27,6 +127,96 @@
       <netinterfaces>
       </netinterfaces>
       <instances>
+        <instance>
+          <id>I26</id>
+          <cellid>S8</cellid>
+          <name>page1_i1</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M229</id>
+              <termid>T95</termid>
+              <msb>7</msb>
+              <lsb>0</lsb>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M230</id>
+              <termid>T96</termid>
+              <msb>7</msb>
+              <lsb>0</lsb>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M231</id>
+              <termid>T97</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M232</id>
+              <termid>T98</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M233</id>
+              <termid>T99</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M234</id>
+              <termid>T100</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M235</id>
+              <termid>T101</termid>
+              <msb>11</msb>
+              <lsb>0</lsb>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I27</id>
+          <cellid>S9</cellid>
+          <name>page1_i2</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -44,6 +234,8 @@
             <nets>
             </nets>
             <instances>
+              <instance ref="i1"></instance>
+              <instance ref="i2"></instance>
             </instances>
           </page>
         </pages>

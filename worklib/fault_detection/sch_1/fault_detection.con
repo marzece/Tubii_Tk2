@@ -8,7 +8,7 @@
   (design "fault_detection"
     (lastIds
       (lastInstanceId 67)
-      (lastNetId 50)
+      (lastNetId 51)
       (lastInstTermId 306)
     )
     (cells
@@ -287,7 +287,6 @@
       ("N30" "bckp_clk_bufd_p" -1 -1 0 )
       ("N31" "clk_bad_n" -1 -1 0 )
       ("N32" "clk_bad_p" -1 -1 0 )
-      ("N34" "data_rdy" -1 -1 1 1)
       ("N35" "max_count" 7 0 1 1)
       ("N39" "clk_reset_ecl" -1 -1 1 1)
       ("N40" "count" -1 -1 0 )
@@ -297,6 +296,7 @@
       ("N46" "clk_state" -1 -1 0 )
       ("N47" "restart_count" -1 -1 0 )
       ("N50" "clk_reset_ttl" -1 -1 1 1)
+      ("N51" "load_count*" -1 -1 0 )
       ("N11" "gnd" -1 -1 2 )
       ("N20" "vcc" -1 -1 2 )
       ("N21" "vee" -1 -1 2 )
@@ -1103,6 +1103,9 @@
           ("M160" "T121" -1 -1
           )
           ("M161" "T122" -1 -1
+            (conn
+              ("0" -1 -1 "N51" -1 -1)
+            )
           )
           ("M162" "T123" -1 -1
           )
@@ -1356,7 +1359,7 @@
           )
           ("M225" "T186" -1 -1
             (conn
-              ("0" -1 -1 "N34" -1 -1)
+              ("0" -1 -1 "N51" -1 -1)
             )
           )
           ("M226" "T187" -1 -1
@@ -1622,7 +1625,7 @@
         (pins
           ("M285" "T51" 0 0
             (conn
-              ("0" 0 0 "N34" -1 -1)
+              ("0" 0 0 "N51" -1 -1)
             )
           )
           ("M286" "T52" 0 0

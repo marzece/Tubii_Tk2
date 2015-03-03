@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-01T03:05:41</modificationTime>
+    <modificationTime>2015-03-02T15:04:13</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
       <lastids>
         <instanceid>14</instanceid>
-        <netid>30</netid>
-        <insttermid>169</insttermid>
+        <netid>42</netid>
+        <insttermid>237</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -241,6 +241,11 @@
           <parameters>
           </parameters>
           <terms>
+            <term>
+              <id>T178</id>
+              <name>spkr_sig</name>
+              <direction>input</direction>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -411,6 +416,18 @@
         <net>
           <id>vtt</id>
           <name>vtt</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc15</id>
+          <name>vcc15</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc15m</id>
+          <name>vcc15m</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -769,6 +786,12 @@
           <powers>
           </powers>
           <pins>
+            <pin>
+              <id>M170</id>
+              <termid>T178</termid>
+              <connections>
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>

@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 9 )
+			( logicalViewRevNum 10 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -386,9 +386,6 @@
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):clk_bad_p"
 				( objectStatus "clk_bad_p" )
 			)
-			( signal "@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
-				( objectStatus "data_rdy" )
-			)
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):max_count(0)"
 				( objectStatus "max_count<0>" )
 			)
@@ -436,6 +433,9 @@
 			)
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):restart_count"
 				( objectStatus "restart_count" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):\load_count*\"
+				( objectStatus "load_count*" )
 			)
 			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"

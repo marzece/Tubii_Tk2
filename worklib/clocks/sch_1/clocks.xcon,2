@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-01T23:21:39</modificationTime>
+    <modificationTime>2015-03-01T23:38:25</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="clocks" view="sch_1">
       <lastids>
-        <instanceid>2</instanceid>
-        <netid>16</netid>
-        <insttermid>45</insttermid>
+        <instanceid>3</instanceid>
+        <netid>18</netid>
+        <insttermid>53</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -59,10 +59,70 @@
           <parameters>
           </parameters>
           <terms>
+            <term>
+              <id>T35</id>
+              <name>bckp_clk</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T36</id>
+              <name>clk_reset_ecl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T37</id>
+              <name>clk_reset_ttl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T38</id>
+              <name>data_rdy</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T39</id>
+              <name>default_clk</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T40</id>
+              <name>max_count</name>
+              <direction>input</direction>
+              <msb>7</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T41</id>
+              <name>change_clk_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T42</id>
+              <name>change_clk_p</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S3</id>
+          <library>tubii_tk2_lib</library>
+          <name>change_clks</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
           </terms>
         </cell>
       </cells>
       <nets>
+        <net>
+          <id>N17</id>
+          <name>unnamed_1_defaultclksel_i1_bckpclk</name>
+        </net>
+        <net>
+          <id>N18</id>
+          <name>unnamed_1_defaultclksel_i1_defaultclk</name>
+        </net>
         <net>
           <id>gnd</id>
           <name>gnd</name>
@@ -114,6 +174,7 @@
               <id>M10</id>
               <termid>T14</termid>
               <connections>
+                <connection net="N17" />
               </connections>
             </pin>
             <pin>
@@ -126,6 +187,7 @@
               <id>M12</id>
               <termid>T16</termid>
               <connections>
+                <connection net="N18" />
               </connections>
             </pin>
             <pin>
@@ -161,6 +223,79 @@
           <powers>
           </powers>
           <pins>
+            <pin>
+              <id>M46</id>
+              <termid>T35</termid>
+              <connections>
+                <connection net="N17" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M47</id>
+              <termid>T36</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M48</id>
+              <termid>T37</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M49</id>
+              <termid>T38</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M50</id>
+              <termid>T39</termid>
+              <connections>
+                <connection net="N18" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M51</id>
+              <termid>T40</termid>
+              <msb>7</msb>
+              <lsb>0</lsb>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M52</id>
+              <termid>T41</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M53</id>
+              <termid>T42</termid>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I3</id>
+          <cellid>S3</cellid>
+          <name>page1_i3</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -186,10 +321,13 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
+              <net ref="unnamed_1_defaultclksel_i1_bckpclk"></net>
+              <net ref="unnamed_1_defaultclksel_i1_defaultclk"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>
               <instance ref="i2"></instance>
+              <instance ref="i3"></instance>
             </instances>
           </page>
         </pages>
