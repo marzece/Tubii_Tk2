@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 12 )
+			( logicalViewRevNum 19 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -309,6 +309,7 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):gnd"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):gnd") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):gnd") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):gnd") )
 				( objectStatus "gnd" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):gnd"
@@ -317,9 +318,13 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):vcc"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):vcc") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):vcc") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):vcc") )
 				( objectStatus "vcc" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):vcc"
@@ -328,15 +333,22 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):vcc"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):vee"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):vee") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):vee") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):vee") )
 				( objectStatus "vee" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):vee"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):vee"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):vee"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):vtt"
@@ -352,6 +364,7 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):\bckp_clk*\"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):clk_sel"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):clk_sel_ecl_n"
 			)
@@ -365,10 +378,12 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):fox_100mhz_p"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset_clk_div_ecl"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):tub_clk_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):unnamed_1_rsmd0805_i16_b"
 			)
@@ -460,14 +475,13 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):max_count(7)"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):clk_state"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):change_clk_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):change_clk_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):clk_reset_ecl"
 			)
@@ -526,6 +540,14 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_a" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(7)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<7>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(7)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<7>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_b"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_b") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(6)") )
@@ -539,6 +561,14 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_b"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_b" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(6)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<6>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(6)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<6>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_c"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_c") )
@@ -554,6 +584,14 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_c" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(5)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<5>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(5)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<5>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_d"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_d") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(4)") )
@@ -567,6 +605,14 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_d"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_d" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(4)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<4>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(4)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<4>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_e"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_e") )
@@ -582,6 +628,14 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_e" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(3)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<3>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(3)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<3>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_f"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_f") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(2)") )
@@ -595,6 +649,14 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_f"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_f" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(2)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<2>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(2)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<2>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_g"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_g") )
@@ -610,6 +672,14 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_g" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(1)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<1>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(1)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<1>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_h"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_h") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(0)") )
@@ -624,76 +694,167 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_h" )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(0)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<0>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(1)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<1>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(2)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<2>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(3)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<3>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(4)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<4>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(5)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<5>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(6)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<6>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(7)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<7>" )
-			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(0)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_y<0>" )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(1)"
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(0)"
 				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<1>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(2)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<2>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(3)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<3>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(4)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<4>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(5)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<5>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(6)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<6>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(7)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<7>" )
+				( objectStatus "unnamed_1_8merge_i14_y<0>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_faultdetection_i2_datardy"
-				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_FAULTDETECTION_I2_DAT"
 					( Origin gPackager )
 				)
 				( objectStatus "unnamed_1_faultdetection_i2_datardy" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):\load_count*\"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):chosen_clk2_n"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):chosen_clk2_p"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):chosen_clk_n"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):chosen_clk_p"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):unnamed_1_csmd0603_i10_a"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):unnamed_1_csmd0603_i10_b"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk2n"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_n") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_n") )
+				( objectStatus "unnamed_1_changeclks_i3_bckpclk2n" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk2p"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_p") )
+				( objectStatus "unnamed_1_changeclks_i3_bckpclk2p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):use_bckp_n"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):use_bckp_p"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):use_default_n"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):use_default_p"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk2_n"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk2_p"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):default_clk2_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):default_clk2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk3n"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_n") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n") )
+				( objectStatus "unnamed_1_changeclks_i3_bckpclk3n" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk3p"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p") )
+				( objectStatus "unnamed_1_changeclks_i3_bckpclk3p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_changeclkn"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):change_clk_n") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk_n") )
+				( objectStatus "unnamed_1_changeclks_i3_changeclkn" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_changeclkp"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):change_clk_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk_p") )
+				( objectStatus "unnamed_1_changeclks_i3_changeclkp" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_defaultclk2n"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_n") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):default_clk2_n") )
+				( objectStatus "unnamed_1_changeclks_i3_defaultclk2n" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_defaultclk2p"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):default_clk2_p") )
+				( objectStatus "unnamed_1_changeclks_i3_defaultclk2p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_ttl"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):bckp_used"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_used") )
+				( objectStatus "bckp_used" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_used"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):clk100_n"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_n") )
+				( objectStatus "clk100_n" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):clk100_p"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_p") )
+				( objectStatus "clk100_p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):clk100_ttl"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_ttl") )
+				( objectStatus "clk100_ttl" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):clk_sel"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):clk_sel") )
+				( objectStatus "clk_sel" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):reset"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset") )
+				( objectStatus "reset" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):tub_clk_in"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):tub_clk_in") )
+				( objectStatus "tub_clk_in" )
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -6156,7 +6317,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1200,3350)"
+				( attribute "XY" "(-1200,3300)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -6254,7 +6415,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1300,3350)"
+				( attribute "XY" "(-1300,3300)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -8942,6 +9103,915 @@
 				( pin "b(0)"
 				)
 			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i1"
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,400,175,-275"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1750,3175)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MC10E116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MC10E116"
+					( Origin gPackager )
+				)
+				( pin "d0"
+				)
+				( pin "\d0*\"
+				)
+				( pin "d1"
+				)
+				( pin "\d1*\"
+				)
+				( pin "d2"
+				)
+				( pin "\d2*\"
+				)
+				( pin "d3"
+				)
+				( pin "\d3*\"
+				)
+				( pin "d4"
+				)
+				( pin "\d4*\"
+				)
+				( pin "gnd0"
+				)
+				( pin "gnd1"
+				)
+				( pin "gnd2"
+				)
+				( pin "gnd3"
+				)
+				( pin "gnd4"
+				)
+				( pin "gnd5"
+				)
+				( pin "q0"
+				)
+				( pin "\q0*\"
+				)
+				( pin "q1"
+				)
+				( pin "\q1*\"
+				)
+				( pin "q2"
+				)
+				( pin "\q2*\"
+				)
+				( pin "q3"
+				)
+				( pin "\q3*\"
+				)
+				( pin "q4"
+				)
+				( pin "\q4*\"
+				)
+				( pin "vbb"
+				)
+				( pin "vee"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i2"
+				( attribute "CDS_LIB" "ttl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,225,125,-125"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-825,3525)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SY100EL05"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SY100EL05"
+					( Origin gPackager )
+				)
+				( pin "d_a"
+				)
+				( pin "\d_a*\"
+				)
+				( pin "d_b"
+				)
+				( pin "\d_b*\"
+				)
+				( pin "gnd"
+				)
+				( pin "q"
+				)
+				( pin "\q*\"
+				)
+				( pin "vee"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i3"
+				( attribute "CDS_LIB" "ttl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,225,125,-125"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-825,3000)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SY100EL05"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SY100EL05"
+					( Origin gPackager )
+				)
+				( pin "d_a"
+				)
+				( pin "\d_a*\"
+				)
+				( pin "d_b"
+				)
+				( pin "\d_b*\"
+				)
+				( pin "gnd"
+				)
+				( pin "q"
+				)
+				( pin "\q*\"
+				)
+				( pin "vee"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i4"
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-150,150,150,-150"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(500,3300)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SS22SDP2"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SS22SDP2"
+					( Origin gPackager )
+				)
+				( pin "p1"
+				)
+				( pin "p2"
+				)
+				( pin "t_a1"
+				)
+				( pin "t_a2"
+				)
+				( pin "t_b1"
+				)
+				( pin "t_b2"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i5"
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,300,125,-200"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-800,1850)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MC10H125"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MC10H125"
+					( Origin gPackager )
+				)
+				( pin "d1"
+				)
+				( pin "\d1*\"
+				)
+				( pin "d2"
+				)
+				( pin "\d2*\"
+				)
+				( pin "d3"
+				)
+				( pin "\d3*\"
+				)
+				( pin "d4"
+				)
+				( pin "\d4*\"
+				)
+				( pin "gnd"
+				)
+				( pin "q1"
+				)
+				( pin "q2"
+				)
+				( pin "q3"
+				)
+				( pin "q4"
+				)
+				( pin "vbb"
+				)
+				( pin "vcc"
+				)
+				( pin "vee"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i6"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-975,2325)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i7"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2325)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i8"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-775,3350)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i9"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-675,3900)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i10"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1850,3800)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):page1_i83"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2250,3450)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
 			( bus "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):max_count"
 				( memberType ( signal ) )
 				( objectFlag fObjectAlias )
@@ -10673,7 +11743,7 @@
 	( BaseCopy "fault_detection"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 9 )
+				( logicalViewRevNum 12 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -10683,7 +11753,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "fault_detection"
@@ -10772,9 +11842,6 @@
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):clk_bad_p"
 				( objectStatus "clk_bad_p" )
 			)
-			( signal "@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
-				( objectStatus "data_rdy" )
-			)
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):max_count(0)"
 				( objectStatus "max_count<0>" )
 			)
@@ -10822,6 +11889,27 @@
 			)
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):restart_count"
 				( objectStatus "restart_count" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):\load_count*\"
+				( objectStatus "load_count*" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_n"
+				( objectStatus "bckp_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_p"
+				( objectStatus "bckp_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):default_clk2_n"
+				( objectStatus "default_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):default_clk2_p"
+				( objectStatus "default_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_n"
+				( objectStatus "bckp_clk3_n" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_p"
+				( objectStatus "bckp_clk3_p" )
 			)
 			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"
@@ -13672,7 +14760,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1200,3350)"
+				( attribute "XY" "(-1200,3300)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "RSMD0805"
@@ -13749,7 +14837,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1300,3350)"
+				( attribute "XY" "(-1300,3300)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "RSMD0805"
@@ -15441,6 +16529,86 @@
 				( pin "b(0)"
 				)
 			)
+			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i83"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2250,3450)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I83" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
 			( bus "@tubii_tk2_lib.fault_detection(sch_1):max_count"
 				( memberType ( signal ) )
 				( member ( signalRef "@tubii_tk2_lib.fault_detection(sch_1):max_count(0)") )
@@ -15460,7 +16628,7 @@
 	( BaseCopy "change_clks"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 1 )
+				( logicalViewRevNum 5 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -15470,10 +16638,758 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "change_clks"
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):change_clk_n"
+				( objectStatus "change_clk_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):change_clk_p"
+				( objectStatus "change_clk_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):chosen_clk2_n"
+				( objectStatus "chosen_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):chosen_clk2_p"
+				( objectStatus "chosen_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):chosen_clk_n"
+				( objectStatus "chosen_clk_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):chosen_clk_p"
+				( objectStatus "chosen_clk_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):gnd"
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):unnamed_1_csmd0603_i10_a"
+				( objectStatus "unnamed_1_csmd0603_i10_a" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):unnamed_1_csmd0603_i10_b"
+				( objectStatus "unnamed_1_csmd0603_i10_b" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_p"
+				( objectStatus "clk100_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_n"
+				( objectStatus "clk100_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p"
+				( objectStatus "bckp_clk3_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n"
+				( objectStatus "bckp_clk3_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):use_bckp_n"
+				( objectStatus "use_bckp_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):use_bckp_p"
+				( objectStatus "use_bckp_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):use_default_n"
+				( objectStatus "use_default_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):use_default_p"
+				( objectStatus "use_default_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):vcc"
+				( objectStatus "vcc" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):vee"
+				( objectStatus "vee" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_n"
+				( objectStatus "bckp_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_p"
+				( objectStatus "bckp_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):change_clk2_n"
+				( objectStatus "change_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):change_clk2_p"
+				( objectStatus "change_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):default_clk2_n"
+				( objectStatus "default_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):default_clk2_p"
+				( objectStatus "default_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_ttl"
+				( objectStatus "clk100_ttl" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_used"
+				( objectStatus "bckp_used" )
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i1"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,400,175,-275"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1750,3175)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MC10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MC10E116"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I1" )
+				( pin "d0"
+				)
+				( pin "\d0*\"
+				)
+				( pin "d1"
+				)
+				( pin "\d1*\"
+				)
+				( pin "d2"
+				)
+				( pin "\d2*\"
+				)
+				( pin "d3"
+				)
+				( pin "\d3*\"
+				)
+				( pin "d4"
+				)
+				( pin "\d4*\"
+				)
+				( pin "gnd0"
+				)
+				( pin "gnd1"
+				)
+				( pin "gnd2"
+				)
+				( pin "gnd3"
+				)
+				( pin "gnd4"
+				)
+				( pin "gnd5"
+				)
+				( pin "q0"
+				)
+				( pin "\q0*\"
+				)
+				( pin "q1"
+				)
+				( pin "\q1*\"
+				)
+				( pin "q2"
+				)
+				( pin "\q2*\"
+				)
+				( pin "q3"
+				)
+				( pin "\q3*\"
+				)
+				( pin "q4"
+				)
+				( pin "\q4*\"
+				)
+				( pin "vbb"
+				)
+				( pin "vee"
+				)
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i2"
+				( attribute "CDS_LIB" "ttl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,225,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-825,3525)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SY100EL05"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SY100EL05"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I2" )
+				( pin "d_a"
+				)
+				( pin "\d_a*\"
+				)
+				( pin "d_b"
+				)
+				( pin "\d_b*\"
+				)
+				( pin "gnd"
+				)
+				( pin "q"
+				)
+				( pin "\q*\"
+				)
+				( pin "vee"
+				)
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i3"
+				( attribute "CDS_LIB" "ttl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,225,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-825,3000)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SY100EL05"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SY100EL05"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I3" )
+				( pin "d_a"
+				)
+				( pin "\d_a*\"
+				)
+				( pin "d_b"
+				)
+				( pin "\d_b*\"
+				)
+				( pin "gnd"
+				)
+				( pin "q"
+				)
+				( pin "\q*\"
+				)
+				( pin "vee"
+				)
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i4"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-150,150,150,-150"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(500,3300)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SS22SDP2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SS22SDP2"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I4" )
+				( pin "p1"
+				)
+				( pin "p2"
+				)
+				( pin "t_a1"
+				)
+				( pin "t_a2"
+				)
+				( pin "t_b1"
+				)
+				( pin "t_b2"
+				)
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i5"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,300,125,-200"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-800,1850)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MC10H125"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MC10H125"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I5" )
+				( pin "d1"
+				)
+				( pin "\d1*\"
+				)
+				( pin "d2"
+				)
+				( pin "\d2*\"
+				)
+				( pin "d3"
+				)
+				( pin "\d3*\"
+				)
+				( pin "d4"
+				)
+				( pin "\d4*\"
+				)
+				( pin "gnd"
+				)
+				( pin "q1"
+				)
+				( pin "q2"
+				)
+				( pin "q3"
+				)
+				( pin "q4"
+				)
+				( pin "vbb"
+				)
+				( pin "vcc"
+				)
+				( pin "vee"
+				)
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i6"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-975,2325)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I6" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i7"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2325)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I7" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i8"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-775,3350)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I8" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i9"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-675,3900)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I9" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i10"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1850,3800)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I10" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
 			)
 		)
 	)

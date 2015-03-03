@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 13 )
+			( logicalViewRevNum 20 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -318,6 +318,9 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):vcc"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):vcc") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):vcc") )
@@ -330,6 +333,9 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):vcc"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):vee"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):vee") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):vee") )
@@ -340,6 +346,9 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):vee"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):vee"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):vtt"
@@ -355,6 +364,7 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):\bckp_clk*\"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):clk_sel"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):clk_sel_ecl_n"
 			)
@@ -368,10 +378,12 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):fox_100mhz_p"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset_clk_div_ecl"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):tub_clk_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):unnamed_1_rsmd0805_i16_b"
 			)
@@ -463,14 +475,13 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):max_count(7)"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):clk_state"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):change_clk_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):change_clk_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):clk_reset_ecl"
 			)
@@ -529,6 +540,14 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_a" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(7)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<7>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(7)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<7>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_b"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_b") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(6)") )
@@ -542,6 +561,14 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_b"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_b" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(6)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<6>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(6)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<6>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_c"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_c") )
@@ -557,6 +584,14 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_c" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(5)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<5>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(5)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<5>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_d"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_d") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(4)") )
@@ -570,6 +605,14 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_d"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_d" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(4)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<4>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(4)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<4>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_e"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_e") )
@@ -585,6 +628,14 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_e" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(3)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<3>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(3)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<3>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_f"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_f") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(2)") )
@@ -598,6 +649,14 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_f"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_f" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(2)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<2>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(2)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<2>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_g"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_g") )
@@ -613,6 +672,14 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_g" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(1)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_8merge_i14_y<1>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(1)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_8merge_i14_y<1>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_h"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_h") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(0)") )
@@ -627,71 +694,16 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_h" )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(0)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<0>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(1)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<1>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(2)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<2>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(3)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<3>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(4)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<4>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(5)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<5>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(6)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<6>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(7)"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_8merge_i14_y<7>" )
-			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(0)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_y<0>" )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(1)"
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_y(0)"
 				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<1>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(2)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<2>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(3)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<3>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(4)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<4>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(5)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<5>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(6)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<6>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_y(7)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_8merge_i14_y<7>" )
+				( objectStatus "unnamed_1_8merge_i14_y<0>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_faultdetection_i2_datardy"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_FAULTDETECTION_I2_DAT"
 					( Origin gPackager )
 				)
@@ -699,15 +711,11 @@
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):\load_count*\"
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):vee"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):chosen_clk2_n"
 			)
@@ -721,13 +729,21 @@
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):unnamed_1_csmd0603_i10_b"
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):unnamed_1_mc10e116_i1_q2"
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_n"
+				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):unnamed_1_mc10e116_i1_q2_1"
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_p"
+				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):unnamed_1_mc10e116_i1_q3"
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk2n"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_n") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_n") )
+				( objectStatus "unnamed_1_changeclks_i3_bckpclk2n" )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):unnamed_1_mc10e116_i1_q3_1"
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk2p"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_p") )
+				( objectStatus "unnamed_1_changeclks_i3_bckpclk2p" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):use_bckp_n"
 			)
@@ -736,6 +752,113 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):use_default_n"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):use_default_p"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk2_n"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk2_p"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):default_clk2_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):default_clk2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk3n"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_n") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n") )
+				( objectStatus "unnamed_1_changeclks_i3_bckpclk3n" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk3p"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p") )
+				( objectStatus "unnamed_1_changeclks_i3_bckpclk3p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_changeclkn"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):change_clk_n") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk_n") )
+				( objectStatus "unnamed_1_changeclks_i3_changeclkn" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_changeclkp"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):change_clk_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk_p") )
+				( objectStatus "unnamed_1_changeclks_i3_changeclkp" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_defaultclk2n"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_n") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):default_clk2_n") )
+				( objectStatus "unnamed_1_changeclks_i3_defaultclk2n" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_defaultclk2p"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):default_clk2_p") )
+				( objectStatus "unnamed_1_changeclks_i3_defaultclk2p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_ttl"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):bckp_used"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_used") )
+				( objectStatus "bckp_used" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_used"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):clk100_n"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_n") )
+				( objectStatus "clk100_n" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):clk100_p"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_p") )
+				( objectStatus "clk100_p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):clk100_ttl"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_ttl") )
+				( objectStatus "clk100_ttl" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):clk_sel"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):clk_sel") )
+				( objectStatus "clk_sel" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):reset"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset") )
+				( objectStatus "reset" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):tub_clk_in"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):tub_clk_in") )
+				( objectStatus "tub_clk_in" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
+				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -6198,7 +6321,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1200,3350)"
+				( attribute "XY" "(-1200,3300)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -6296,7 +6419,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1300,3350)"
+				( attribute "XY" "(-1300,3300)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -9673,7 +9796,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-825,3900)"
+				( attribute "XY" "(-675,3900)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -9784,6 +9907,108 @@
 					( Origin gPackager )
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):page1_i83"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2250,3450)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -11522,7 +11747,7 @@
 	( BaseCopy "fault_detection"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 10 )
+				( logicalViewRevNum 13 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -11671,6 +11896,27 @@
 			)
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):\load_count*\"
 				( objectStatus "load_count*" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_n"
+				( objectStatus "bckp_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_p"
+				( objectStatus "bckp_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):default_clk2_n"
+				( objectStatus "default_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):default_clk2_p"
+				( objectStatus "default_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_n"
+				( objectStatus "bckp_clk3_n" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_p"
+				( objectStatus "bckp_clk3_p" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
+				( objectStatus "data_rdy" )
 			)
 			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"
@@ -14521,7 +14767,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1200,3350)"
+				( attribute "XY" "(-1200,3300)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "RSMD0805"
@@ -14598,7 +14844,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1300,3350)"
+				( attribute "XY" "(-1300,3300)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "RSMD0805"
@@ -16290,6 +16536,86 @@
 				( pin "b(0)"
 				)
 			)
+			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i83"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2250,3450)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I83" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
 			( bus "@tubii_tk2_lib.fault_detection(sch_1):max_count"
 				( memberType ( signal ) )
 				( member ( signalRef "@tubii_tk2_lib.fault_detection(sch_1):max_count(0)") )
@@ -16309,7 +16635,7 @@
 	( BaseCopy "change_clks"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 2 )
+				( logicalViewRevNum 5 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -16351,17 +16677,17 @@
 			( signal "@tubii_tk2_lib.change_clks(sch_1):unnamed_1_csmd0603_i10_b"
 				( objectStatus "unnamed_1_csmd0603_i10_b" )
 			)
-			( signal "@tubii_tk2_lib.change_clks(sch_1):unnamed_1_mc10e116_i1_q2"
-				( objectStatus "unnamed_1_mc10e116_i1_q2" )
+			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_p"
+				( objectStatus "clk100_p" )
 			)
-			( signal "@tubii_tk2_lib.change_clks(sch_1):unnamed_1_mc10e116_i1_q2_1"
-				( objectStatus "unnamed_1_mc10e116_i1_q2_1" )
+			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_n"
+				( objectStatus "clk100_n" )
 			)
-			( signal "@tubii_tk2_lib.change_clks(sch_1):unnamed_1_mc10e116_i1_q3"
-				( objectStatus "unnamed_1_mc10e116_i1_q3" )
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p"
+				( objectStatus "bckp_clk3_p" )
 			)
-			( signal "@tubii_tk2_lib.change_clks(sch_1):unnamed_1_mc10e116_i1_q3_1"
-				( objectStatus "unnamed_1_mc10e116_i1_q3_1" )
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n"
+				( objectStatus "bckp_clk3_n" )
 			)
 			( signal "@tubii_tk2_lib.change_clks(sch_1):use_bckp_n"
 				( objectStatus "use_bckp_n" )
@@ -16380,6 +16706,30 @@
 			)
 			( signal "@tubii_tk2_lib.change_clks(sch_1):vee"
 				( objectStatus "vee" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_n"
+				( objectStatus "bckp_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_p"
+				( objectStatus "bckp_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):change_clk2_n"
+				( objectStatus "change_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):change_clk2_p"
+				( objectStatus "change_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):default_clk2_n"
+				( objectStatus "default_clk2_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):default_clk2_p"
+				( objectStatus "default_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_ttl"
+				( objectStatus "clk100_ttl" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_used"
+				( objectStatus "bckp_used" )
 			)
 			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"
@@ -16953,7 +17303,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-825,3900)"
+				( attribute "XY" "(-675,3900)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CSMD0603"
