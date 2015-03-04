@@ -8,7 +8,7 @@
   (design "ellie_coms"
     (lastIds
       (lastInstanceId 2)
-      (lastNetId 9)
+      (lastNetId 11)
       (lastInstTermId 44)
     )
     (cells
@@ -67,8 +67,6 @@
     )
 
     (nets
-      ("N1" "ellie_pulse_in_ecl" -1 -1 0 )
-      ("N2" "tellie_pulse_in_ecl" -1 -1 0 )
       ("N3" "unnamed_1_mc10e116_i2_d0" -1 -1 0 )
       ("N4" "unnamed_1_mc10e116_i2_gnd0" -1 -1 0 )
       ("N5" "unnamed_1_mc10e116_i2_q0" -1 -1 0 )
@@ -76,6 +74,8 @@
       ("N7" "unnamed_1_mc10e116_i2_q1" -1 -1 0 )
       ("N8" "unnamed_1_mc10e116_i2_q1_1" -1 -1 0 )
       ("N9" "unnamed_1_mc10h125_i1_gnd" -1 -1 0 )
+      ("N10" "smellie_delay_in_ecl" -1 -1 0 )
+      ("N11" "tellie_delay_in_ecl" -1 -1 0 )
     )
 
     (instances
@@ -140,7 +140,7 @@
         (pins
           ("M17" "T17" -1 -1
             (conn
-              ("0" -1 -1 "N1" -1 -1)
+              ("0" -1 -1 "N10" -1 -1)
             )
           )
           ("M18" "T18" -1 -1
@@ -150,7 +150,7 @@
           )
           ("M19" "T19" -1 -1
             (conn
-              ("0" -1 -1 "N2" -1 -1)
+              ("0" -1 -1 "N11" -1 -1)
             )
           )
           ("M20" "T20" -1 -1

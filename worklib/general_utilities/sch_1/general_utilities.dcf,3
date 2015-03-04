@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 6 )
+			( logicalViewRevNum 7 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -328,8 +328,10 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):pulse_inv_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):pulse_inv_out"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):unnamed_1_ad8009_i1_in"
 			)
@@ -338,22 +340,31 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):unnamed_1_ad8009_i1_v_1"
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):pulse_in_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):pulse_in_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):clk"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):data"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):le"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):pulse_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):delay_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):delay_out"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):pulse_out"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):unnamed_1_csmd0805_i13_b"
 			)
@@ -368,6 +379,34 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):unnamed_1_ledl_i17_a"
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):unnamed_1_ledl_i18_a"
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):clk"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):clk") )
+				( attribute "PHYS_NET_NAME" "CLK"
+					( Origin gPackager )
+				)
+				( objectStatus "clk" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):data"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):data") )
+				( attribute "PHYS_NET_NAME" "DATA"
+					( Origin gPackager )
+				)
+				( objectStatus "data" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):generic_delay_in"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):delay_in") )
+				( attribute "PHYS_NET_NAME" "GENERIC_DELAY_IN"
+					( Origin gPackager )
+				)
+				( objectStatus "generic_delay_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):generic_delay_out"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):delay_out") )
+				( attribute "PHYS_NET_NAME" "GENERIC_DELAY_OUT"
+					( Origin gPackager )
+				)
+				( objectStatus "generic_delay_out" )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):gnd"
 				( objectFlag fObjectAlias )
@@ -389,8 +428,10 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):pulse_out_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):pulse_out_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):rib10_n"
 			)
@@ -431,6 +472,51 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):rib9_n"
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):rib9_p"
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):generic_pulse_in"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):pulse_in") )
+				( attribute "PHYS_NET_NAME" "GENERIC_PULSE_IN"
+					( Origin gPackager )
+				)
+				( objectStatus "generic_pulse_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):generic_pulse_out"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):pulse_out") )
+				( attribute "PHYS_NET_NAME" "GENERIC_PULSE_OUT"
+					( Origin gPackager )
+				)
+				( objectStatus "generic_pulse_out" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):le"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):le") )
+				( attribute "PHYS_NET_NAME" "LE"
+					( Origin gPackager )
+				)
+				( objectStatus "le" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):pulse_inv_in"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):pulse_inv_in") )
+				( objectStatus "pulse_inv_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):pulse_inv_out"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):pulse_inv_out") )
+				( objectStatus "pulse_inv_out" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ribbon_pulse_in_n"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):pulse_in_n") )
+				( objectStatus "ribbon_pulse_in_n" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ribbon_pulse_in_p"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):pulse_in_p") )
+				( objectStatus "ribbon_pulse_in_p" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ribbon_pulse_out_n"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):pulse_out_n") )
+				( objectStatus "ribbon_pulse_out_n" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ribbon_pulse_out_p"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):pulse_out_p") )
+				( objectStatus "ribbon_pulse_out_p" )
 			)
 			( gate "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -3950,7 +4036,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(1400,2275)"
+				( attribute "XY" "(1425,2275)"
 					( Origin gFrontEnd )
 				)
 				( objectStatus "page1_i2 (ribbon_delay)" )

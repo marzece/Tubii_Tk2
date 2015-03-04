@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 7 )
+			( logicalViewRevNum 8 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -296,6 +296,54 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -311,6 +359,12 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):vcc"
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):vcc") )
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):vcc") )
@@ -319,12 +373,18 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):vcc"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):vee"
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):vee") )
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):vee") )
 				( objectStatus "vee" )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):vee"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):vee"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):pulse_inv_in"
@@ -407,18 +467,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "generic_delay_out" )
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):vee"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):vtt"
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):vtt") )
@@ -4062,6 +4110,27 @@
 				)
 				( objectStatus "page1_i5 (generic_delays)" )
 			)
+			( designInst "@tubii_tk2_lib.general_utilities(sch_1):page1_i19"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_tk2_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2700,2975)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i19 (translation)" )
+			)
 		)
 	)
 	( BaseCopy "pulse_inverter"
@@ -4492,7 +4561,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "ribbon_delay"
@@ -5933,7 +6002,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "generic_delays"
@@ -6983,6 +7052,28 @@
 				)
 				( pin "vcc"
 				)
+			)
+		)
+	)
+	( EndBaseCopy )
+	)
+	( BaseCopy "translation"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 1 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "translation"
 			)
 		)
 	)

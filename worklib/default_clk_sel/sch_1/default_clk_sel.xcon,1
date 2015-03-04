@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-01T15:23:37</modificationTime>
+    <modificationTime>2015-03-03T19:18:37</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="default_clk_sel" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>21</instanceid>
-        <netid>19</netid>
+        <netid>20</netid>
         <insttermid>102</insttermid>
       </lastids>
       <cells>
@@ -556,6 +555,10 @@
         <net>
           <id>N16</id>
           <name>unnamed_1_rsmd0805_i17_b</name>
+        </net>
+        <net>
+          <id>N20</id>
+          <name>unnamed_1_sy100el91l_i15_vcc0</name>
         </net>
         <net>
           <id>N11</id>
@@ -1254,12 +1257,14 @@
               <id>M67</id>
               <termid>T70</termid>
               <connections>
+                <connection net="N11" />
               </connections>
             </pin>
             <pin>
               <id>M68</id>
               <termid>T71</termid>
               <connections>
+                <connection net="N11" />
               </connections>
             </pin>
             <pin>
@@ -1316,24 +1321,28 @@
               <id>M77</id>
               <termid>T80</termid>
               <connections>
+                <connection net="N20" />
               </connections>
             </pin>
             <pin>
               <id>M78</id>
               <termid>T81</termid>
               <connections>
+                <connection net="N20" />
               </connections>
             </pin>
             <pin>
               <id>M79</id>
               <termid>T82</termid>
               <connections>
+                <connection net="N20" />
               </connections>
             </pin>
             <pin>
               <id>M80</id>
               <termid>T83</termid>
               <connections>
+                <connection net="N18" />
               </connections>
             </pin>
           </pins>
@@ -1675,6 +1684,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N11" />
               </connections>
             </pin>
             <pin>
@@ -1712,6 +1722,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N18" />
               </connections>
             </pin>
             <pin>
@@ -1720,6 +1731,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N11" />
               </connections>
             </pin>
           </pins>
@@ -1850,6 +1862,7 @@
               <net ref="tub_clk_in"></net>
               <net ref="unnamed_1_rsmd0805_i16_b"></net>
               <net ref="unnamed_1_rsmd0805_i17_b"></net>
+              <net ref="unnamed_1_sy100el91l_i15_vcc0"></net>
               <net ref="vcc"></net>
               <net ref="vee"></net>
               <net ref="vtt"></net>
