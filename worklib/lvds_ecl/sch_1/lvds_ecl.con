@@ -7,6 +7,71 @@
   (library "tubii_tk2_lib")
   (design "lvds_ecl"
     (lastIds
+      (lastInstanceId 1)
+      (lastNetId 3)
+      (lastInstTermId 10)
     )
+    (cells
+      ("S1" "ds90lv019" "misc" "sym_1"
+        (terms
+          ("T3" "de" -1 -1 1)
+          ("T4" "din" -1 -1 1)
+          ("T5" "dout" -1 -1 2)
+          ("T6" "dout*" -1 -1 2)
+          ("T7" "gnd" -1 -1 1)
+          ("T8" "re" -1 -1 1)
+          ("T9" "ri" -1 -1 1)
+          ("T10" "ri*" -1 -1 1)
+          ("T11" "rout" -1 -1 2)
+          ("T12" "vcc" -1 -1 1)
+        )
+      )
+    )
+
+    (nets
+      ("N1" "lvds_in_n" -1 -1 1 1)
+      ("N2" "lvds_in_p" -1 -1 1 1)
+      ("N3" "unnamed_1_ds90lv019_i1_gnd" -1 -1 0 )
+    )
+
+    (instances
+      ("I1" "page1_i1" "S1"
+        (pins
+          ("M1" "T3" -1 -1
+          )
+          ("M2" "T4" -1 -1
+          )
+          ("M3" "T5" -1 -1
+          )
+          ("M4" "T6" -1 -1
+          )
+          ("M5" "T7" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+          ("M6" "T8" -1 -1
+          )
+          ("M7" "T9" -1 -1
+            (conn
+              ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+          ("M8" "T10" -1 -1
+            (conn
+              ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+          ("M9" "T11" -1 -1
+          )
+          ("M10" "T12" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
   )
 )

@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-28T21:26:32</modificationTime>
+    <modificationTime>2015-03-04T11:38:32</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="general_utilities" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>3</instanceid>
-        <netid>20</netid>
-        <insttermid>28</insttermid>
+        <instanceid>4</instanceid>
+        <netid>24</netid>
+        <insttermid>36</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -110,6 +109,16 @@
               <name>pulse_out</name>
               <direction>output</direction>
             </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S4</id>
+          <library>tubii_tk2_lib</library>
+          <name>translation</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
           </terms>
         </cell>
       </cells>
@@ -382,6 +391,27 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I4</id>
+          <cellid>S4</cellid>
+          <name>page1_i19</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -493,6 +523,7 @@
               <instance ref="i1"></instance>
               <instance ref="i2"></instance>
               <instance ref="i5"></instance>
+              <instance ref="i19"></instance>
             </instances>
           </page>
         </pages>

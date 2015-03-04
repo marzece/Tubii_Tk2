@@ -25,6 +25,22 @@ primitive 'DS90LV019';
     'ROUT':
       PIN_NUMBER='(4)';
       OUTPUT_LOAD='(1.0,-1.0)';
+    'GND':
+      PIN_NUMBER='(7)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VCC':
+      PIN_NUMBER='(14)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
     PART_NAME='DS90LV019';
@@ -32,9 +48,6 @@ primitive 'DS90LV019';
     JEDEC_TYPE='soic14';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
-    GROUND_NETS='GND';
-    POWER_PINS='(GND:7)';
-    POWER_PINS='(VCC:14)';
     NC_PINS='(3,5,6,13)';
   end_body;
 end_primitive;
