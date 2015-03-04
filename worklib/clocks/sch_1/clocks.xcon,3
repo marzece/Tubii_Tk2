@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-03T16:11:49</modificationTime>
+    <modificationTime>2015-03-03T16:34:58</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>11</instanceid>
-        <netid>64</netid>
-        <insttermid>157</insttermid>
+        <netid>71</netid>
+        <insttermid>161</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -176,6 +176,26 @@
               <id>T127</id>
               <name>bckp_clk3_p</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T132</id>
+              <name>bckp_used</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T140</id>
+              <name>clk100_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T141</id>
+              <name>clk100_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T142</id>
+              <name>clk100_ttl</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -546,6 +566,48 @@
           <name>unnamed_1_changeclks_i3_defaultclk2p</name>
         </net>
         <net>
+          <id>N65</id>
+          <name>bckp_used</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N66</id>
+          <name>clk100_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N67</id>
+          <name>clk100_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N68</id>
+          <name>clk100_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N69</id>
+          <name>clk_sel</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N70</id>
+          <name>reset</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N71</id>
+          <name>tub_clk_in</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
           <id>gnd</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -617,6 +679,7 @@
               <id>M11</id>
               <termid>T15</termid>
               <connections>
+                <connection net="N69" />
               </connections>
             </pin>
             <pin>
@@ -630,12 +693,14 @@
               <id>M13</id>
               <termid>T17</termid>
               <connections>
+                <connection net="N70" />
               </connections>
             </pin>
             <pin>
               <id>M14</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N71" />
               </connections>
             </pin>
           </pins>
@@ -825,6 +890,34 @@
               <termid>T127</termid>
               <connections>
                 <connection net="N60" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M158</id>
+              <termid>T132</termid>
+              <connections>
+                <connection net="N65" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M159</id>
+              <termid>T140</termid>
+              <connections>
+                <connection net="N66" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M160</id>
+              <termid>T141</termid>
+              <connections>
+                <connection net="N67" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M161</id>
+              <termid>T142</termid>
+              <connections>
+                <connection net="N68" />
               </connections>
             </pin>
           </pins>
@@ -1418,6 +1511,36 @@
         <schematicExtension>
         <errorStatus>true</errorStatus>
         <netScopes>
+          <netScope ref="bckp_used">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk100_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk100_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk100_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk_sel">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="data">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1435,7 +1558,19 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="reset">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="sr_clk">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="tub_clk_in">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
@@ -1457,10 +1592,17 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>true</errorStatus>
             <nets>
+              <net ref="bckp_used"></net>
+              <net ref="clk100_n"></net>
+              <net ref="clk100_p"></net>
+              <net ref="clk100_ttl"></net>
+              <net ref="clk_sel"></net>
               <net ref="data"></net>
               <net ref="gnd"></net>
               <net ref="le"></net>
+              <net ref="reset"></net>
               <net ref="sr_clk"></net>
+              <net ref="tub_clk_in"></net>
               <net ref="unnamed_1_74f164_i4_q0"></net>
               <net ref="unnamed_1_74f164_i4_q1"></net>
               <net ref="unnamed_1_74f164_i4_q2"></net>

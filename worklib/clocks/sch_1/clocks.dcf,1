@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 17 )
+			( logicalViewRevNum 18 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -779,10 +779,12 @@
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk3n"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_n") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n") )
 				( objectStatus "unnamed_1_changeclks_i3_bckpclk3n" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk3p"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p") )
 				( objectStatus "unnamed_1_changeclks_i3_bckpclk3p" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_changeclkn"
@@ -804,6 +806,20 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_p") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):default_clk2_p") )
 				( objectStatus "unnamed_1_changeclks_i3_defaultclk2p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_p"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_n"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_ttl"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):missed_clk"
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -16577,7 +16593,7 @@
 	( BaseCopy "change_clks"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 3 )
+				( logicalViewRevNum 4 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -16619,6 +16635,18 @@
 			( signal "@tubii_tk2_lib.change_clks(sch_1):unnamed_1_csmd0603_i10_b"
 				( objectStatus "unnamed_1_csmd0603_i10_b" )
 			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_p"
+				( objectStatus "clk100_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_n"
+				( objectStatus "clk100_n" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p"
+				( objectStatus "bckp_clk3_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n"
+				( objectStatus "bckp_clk3_n" )
+			)
 			( signal "@tubii_tk2_lib.change_clks(sch_1):use_bckp_n"
 				( objectStatus "use_bckp_n" )
 			)
@@ -16654,6 +16682,12 @@
 			)
 			( signal "@tubii_tk2_lib.change_clks(sch_1):default_clk2_p"
 				( objectStatus "default_clk2_p" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_ttl"
+				( objectStatus "clk100_ttl" )
+			)
+			( signal "@tubii_tk2_lib.change_clks(sch_1):missed_clk"
+				( objectStatus "missed_clk" )
 			)
 			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"

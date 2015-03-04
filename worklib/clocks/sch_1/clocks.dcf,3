@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 19 )
+			( logicalViewRevNum 20 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -703,6 +703,7 @@
 				( objectStatus "unnamed_1_8merge_i14_y<0>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_faultdetection_i2_datardy"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_FAULTDETECTION_I2_DAT"
 					( Origin gPackager )
 				)
@@ -855,6 +856,9 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):tub_clk_in"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):tub_clk_in") )
 				( objectStatus "tub_clk_in" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
+				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -11743,7 +11747,7 @@
 	( BaseCopy "fault_detection"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 12 )
+				( logicalViewRevNum 13 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -11910,6 +11914,9 @@
 			)
 			( signal "@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_p"
 				( objectStatus "bckp_clk3_p" )
+			)
+			( signal "@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
+				( objectStatus "data_rdy" )
 			)
 			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"

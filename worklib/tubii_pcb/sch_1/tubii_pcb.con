@@ -8,13 +8,18 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 14)
-      (lastNetId 54)
-      (lastInstTermId 347)
+      (lastNetId 55)
+      (lastInstTermId 357)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
       )
       ("S3" "clocks" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T306" "clk100_p" -1 -1 2)
+          ("T307" "clk100_ttl" -1 -1 2)
+          ("T308" "tub_clk_in" -1 -1 2)
+        )
       )
       ("S5" "general_utilities" "tubii_tk2_lib" "sym_1"
         (terms
@@ -128,12 +133,21 @@
       ("vtt" "vtt" -1 -1 2  inherited)
       ("vcc15" "vcc15" -1 -1 2  inherited)
       ("vcc15m" "vcc15m" -1 -1 2  inherited)
+      ("v3p3" "v3p3" -1 -1 2  inherited)
     )
 
     (instances
       ("I1" "page1_i1" "S2"
       )
       ("I2" "page1_i2" "S3"
+        (pins
+          ("M355" "T306" -1 -1
+          )
+          ("M356" "T307" -1 -1
+          )
+          ("M357" "T308" -1 -1
+          )
+        )
       )
       ("I4" "page1_i4" "S5"
         (pins

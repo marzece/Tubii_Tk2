@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 20 )
+			( logicalViewRevNum 21 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -827,11 +827,7 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):bckp_used"
-				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_used") )
 				( objectStatus "bckp_used" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_used"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):clk100_n"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_n") )
@@ -859,6 +855,8 @@
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):missed_clk"
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -9139,6 +9137,10 @@
 				( attribute "CDS_PART_NAME" "MC10E116"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "d0"
 				)
 				( pin "\d0*\"
@@ -9228,6 +9230,10 @@
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "d_a"
 				)
 				( pin "\d_a*\"
@@ -9276,6 +9282,10 @@
 				)
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "d_a"
 				)
@@ -9326,6 +9336,10 @@
 				( attribute "CDS_PART_NAME" "SS22SDP2"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "p1"
 				)
 				( pin "p2"
@@ -9370,6 +9384,10 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H125"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "d1"
 				)
@@ -9501,6 +9519,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -9602,6 +9624,10 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 				)
@@ -9705,6 +9731,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -9807,6 +9837,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -9908,6 +9942,10 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 				)
@@ -16635,7 +16673,7 @@
 	( BaseCopy "change_clks"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 5 )
+				( logicalViewRevNum 6 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -16728,8 +16766,8 @@
 			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_ttl"
 				( objectStatus "clk100_ttl" )
 			)
-			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_used"
-				( objectStatus "bckp_used" )
+			( signal "@tubii_tk2_lib.change_clks(sch_1):missed_clk"
+				( objectStatus "missed_clk" )
 			)
 			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"
@@ -16755,6 +16793,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10E116"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I1" )
 				( pin "d0"
@@ -16839,6 +16880,9 @@
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I2" )
 				( pin "d_a"
 				)
@@ -16881,6 +16925,9 @@
 				)
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I3" )
 				( pin "d_a"
@@ -16925,6 +16972,9 @@
 				( attribute "CDS_PART_NAME" "SS22SDP2"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "p1"
 				)
@@ -16963,6 +17013,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H125"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I5" )
 				( pin "d1"
@@ -17072,6 +17125,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a(0)"
 				)
@@ -17151,6 +17207,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I7" )
 				( pin "a(0)"
@@ -17232,6 +17291,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a(0)"
 				)
@@ -17312,6 +17374,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a(0)"
 				)
@@ -17391,6 +17456,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a(0)"
