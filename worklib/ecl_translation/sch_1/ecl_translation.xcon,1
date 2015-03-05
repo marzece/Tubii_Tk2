@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-04T18:51:49</modificationTime>
+    <modificationTime>2015-03-05T11:44:46</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecl_translation" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>22</instanceid>
+        <instanceid>23</instanceid>
         <netid>36</netid>
-        <insttermid>108</insttermid>
+        <insttermid>110</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -540,10 +539,14 @@
         <net>
           <id>N2</id>
           <name>ecl_to_lvds_out_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N3</id>
           <name>ecl_to_lvds_out_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N4</id>
@@ -572,10 +575,14 @@
         <net>
           <id>N9</id>
           <name>lvds_to_ecl_in_n</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>N10</id>
           <name>lvds_to_ecl_in_p</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>N11</id>
@@ -592,10 +599,14 @@
         <net>
           <id>N13</id>
           <name>nim_to_ecl_in</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>N14</id>
           <name>nim_to_ecl_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N15</id>
@@ -1974,6 +1985,45 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I23</id>
+          <cellid>S2</cellid>
+          <name>page1_i39</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M109</id>
+              <termid>T14</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N8" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M110</id>
+              <termid>T15</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N26" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1987,6 +2037,18 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ecl_to_lvds_out_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ecl_to_lvds_out_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="ecl_to_nim_in">
@@ -2018,6 +2080,18 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="lvds_to_ecl_in_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="lvds_to_ecl_in_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="lvds_to_ecl_out_n">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2025,6 +2099,18 @@
             </pageScope>
           </netScope>
           <netScope ref="lvds_to_ecl_out_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="nim_to_ecl_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="nim_to_ecl_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
@@ -2124,6 +2210,7 @@
               <instance ref="i30"></instance>
               <instance ref="i31"></instance>
               <instance ref="i32"></instance>
+              <instance ref="i39"></instance>
             </instances>
           </page>
         </pages>

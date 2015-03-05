@@ -8,8 +8,8 @@
   (design "general_utilities"
     (lastIds
       (lastInstanceId 5)
-      (lastNetId 32)
-      (lastInstTermId 80)
+      (lastNetId 61)
+      (lastInstTermId 101)
     )
     (cells
       ("S1" "pulse_inverter" "tubii_tk2_lib" "sym_1"
@@ -41,12 +41,18 @@
         (terms
           ("T65" "ecl_to_lvds_in" -1 -1 1)
           ("T66" "ecl_to_nim_in" -1 -1 1)
-          ("T67" "ecl_to_nim_out" -1 -1 1)
+          ("T67" "ecl_to_nim_out" -1 -1 2)
           ("T68" "ecl_to_ttl_in" -1 -1 1)
-          ("T69" "ecl_to_ttl_out" -1 -1 1)
-          ("T70" "lvds_to_ecl_out_n" -1 -1 1)
-          ("T71" "lvds_to_ecl_out_p" -1 -1 1)
+          ("T69" "ecl_to_ttl_out" -1 -1 2)
           ("T72" "ttl_to_ecl_in" -1 -1 1)
+          ("T101" "ecl_to_lvds_out_n" -1 -1 2)
+          ("T102" "ecl_to_lvds_out_p" -1 -1 2)
+          ("T103" "lvds_to_ecl_in_n" -1 -1 1)
+          ("T104" "lvds_to_ecl_in_p" -1 -1 1)
+          ("T105" "nim_to_ecl_in" -1 -1 1)
+          ("T106" "nim_to_ecl_out" -1 -1 2)
+          ("T125" "lvds_to_ecl_out" -1 -1 2)
+          ("T126" "ttl_to_ecl_out" -1 -1 2)
         )
       )
     )
@@ -65,6 +71,20 @@
       ("N18" "ribbon_pulse_in_p" -1 -1 1 1)
       ("N19" "ribbon_pulse_out_n" -1 -1 1 2)
       ("N20" "ribbon_pulse_out_p" -1 -1 1 2)
+      ("N44" "ecl_to_lvds_in" -1 -1 1 1)
+      ("N45" "ecl_to_lvds_out_n" -1 -1 1 2)
+      ("N46" "ecl_to_lvds_out_p" -1 -1 1 2)
+      ("N47" "ecl_to_nim_in" -1 -1 1 1)
+      ("N48" "ecl_to_nim_out" -1 -1 1 2)
+      ("N49" "ecl_to_ttl_in" -1 -1 1 1)
+      ("N50" "ecl_to_ttl_out" -1 -1 1 2)
+      ("N51" "lvds_to_ecl_in_n" -1 -1 1 1)
+      ("N52" "lvds_to_ecl_in_p" -1 -1 1 1)
+      ("N55" "nim_to_ecl_in" -1 -1 1 1)
+      ("N56" "nim_to_ecl_out" -1 -1 1 2)
+      ("N57" "ttl_to_ecl_in" -1 -1 1 1)
+      ("N60" "lvds_to_ecl_out" -1 -1 1 2)
+      ("N61" "ttl_to_ecl_out" -1 -1 1 2)
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vcc" "vcc" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
@@ -152,20 +172,74 @@
       ("I5" "page1_i20" "S5"
         (pins
           ("M73" "T65" -1 -1
+            (conn
+              ("0" -1 -1 "N44" -1 -1)
+            )
           )
           ("M74" "T66" -1 -1
+            (conn
+              ("0" -1 -1 "N47" -1 -1)
+            )
           )
           ("M75" "T67" -1 -1
+            (conn
+              ("0" -1 -1 "N48" -1 -1)
+            )
           )
           ("M76" "T68" -1 -1
+            (conn
+              ("0" -1 -1 "N49" -1 -1)
+            )
           )
           ("M77" "T69" -1 -1
-          )
-          ("M78" "T70" -1 -1
-          )
-          ("M79" "T71" -1 -1
+            (conn
+              ("0" -1 -1 "N50" -1 -1)
+            )
           )
           ("M80" "T72" -1 -1
+            (conn
+              ("0" -1 -1 "N57" -1 -1)
+            )
+          )
+          ("M92" "T101" -1 -1
+            (conn
+              ("0" -1 -1 "N45" -1 -1)
+            )
+          )
+          ("M93" "T102" -1 -1
+            (conn
+              ("0" -1 -1 "N46" -1 -1)
+            )
+          )
+          ("M94" "T103" -1 -1
+            (conn
+              ("0" -1 -1 "N51" -1 -1)
+            )
+          )
+          ("M95" "T104" -1 -1
+            (conn
+              ("0" -1 -1 "N52" -1 -1)
+            )
+          )
+          ("M96" "T105" -1 -1
+            (conn
+              ("0" -1 -1 "N55" -1 -1)
+            )
+          )
+          ("M97" "T106" -1 -1
+            (conn
+              ("0" -1 -1 "N56" -1 -1)
+            )
+          )
+          ("M100" "T125" -1 -1
+            (conn
+              ("0" -1 -1 "N60" -1 -1)
+            )
+          )
+          ("M101" "T126" -1 -1
+            (conn
+              ("0" -1 -1 "N61" -1 -1)
+            )
           )
         )
       )

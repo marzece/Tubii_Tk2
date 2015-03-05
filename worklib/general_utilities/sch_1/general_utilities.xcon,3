@@ -5,16 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-28T21:26:32</modificationTime>
+    <modificationTime>2015-03-05T11:46:51</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="general_utilities" view="sch_1">
       <external_errors>true</external_errors>
       <lastids>
-        <instanceid>3</instanceid>
-        <netid>20</netid>
-        <insttermid>28</insttermid>
+        <instanceid>5</instanceid>
+        <netid>43</netid>
+        <insttermid>99</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -112,6 +112,96 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S5</id>
+          <library>tubii_tk2_lib</library>
+          <name>ecl_translation</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T65</id>
+              <name>ecl_to_lvds_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T66</id>
+              <name>ecl_to_nim_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T67</id>
+              <name>ecl_to_nim_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T68</id>
+              <name>ecl_to_ttl_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T69</id>
+              <name>ecl_to_ttl_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T70</id>
+              <name>lvds_to_ecl_out_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T71</id>
+              <name>lvds_to_ecl_out_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T72</id>
+              <name>ttl_to_ecl_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T101</id>
+              <name>ecl_to_lvds_out_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T102</id>
+              <name>ecl_to_lvds_out_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T103</id>
+              <name>lvds_to_ecl_in_n</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T104</id>
+              <name>lvds_to_ecl_in_p</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T105</id>
+              <name>nim_to_ecl_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T106</id>
+              <name>nim_to_ecl_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T107</id>
+              <name>ttl_to_ecl_out_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T108</id>
+              <name>ttl_to_ecl_out_p</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -191,6 +281,34 @@
           <name>ribbon_pulse_out_p</name>
           <scope>interface</scope>
           <direction>output</direction>
+        </net>
+        <net>
+          <id>N37</id>
+          <name>unnamed_1_ecltranslation_i20_ecltolvdsin</name>
+        </net>
+        <net>
+          <id>N38</id>
+          <name>unnamed_1_ecltranslation_i20_ecltonimin</name>
+        </net>
+        <net>
+          <id>N39</id>
+          <name>unnamed_1_ecltranslation_i20_ecltottlin</name>
+        </net>
+        <net>
+          <id>N40</id>
+          <name>unnamed_1_ecltranslation_i20_lvdstoeclinn</name>
+        </net>
+        <net>
+          <id>N41</id>
+          <name>unnamed_1_ecltranslation_i20_lvdstoeclinp</name>
+        </net>
+        <net>
+          <id>N42</id>
+          <name>unnamed_1_ecltranslation_i20_nimtoeclin</name>
+        </net>
+        <net>
+          <id>N43</id>
+          <name>unnamed_1_ecltranslation_i20_ttltoeclin</name>
         </net>
         <net>
           <id>gnd</id>
@@ -382,6 +500,130 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I5</id>
+          <cellid>S5</cellid>
+          <name>page1_i20</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M73</id>
+              <termid>T65</termid>
+              <connections>
+                <connection net="N37" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M74</id>
+              <termid>T66</termid>
+              <connections>
+                <connection net="N38" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M75</id>
+              <termid>T67</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M76</id>
+              <termid>T68</termid>
+              <connections>
+                <connection net="N39" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M77</id>
+              <termid>T69</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M78</id>
+              <termid>T70</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M79</id>
+              <termid>T71</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M80</id>
+              <termid>T72</termid>
+              <connections>
+                <connection net="N43" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M92</id>
+              <termid>T101</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M93</id>
+              <termid>T102</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M94</id>
+              <termid>T103</termid>
+              <connections>
+                <connection net="N40" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M95</id>
+              <termid>T104</termid>
+              <connections>
+                <connection net="N41" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M96</id>
+              <termid>T105</termid>
+              <connections>
+                <connection net="N42" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M97</id>
+              <termid>T106</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M98</id>
+              <termid>T107</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M99</id>
+              <termid>T108</termid>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -488,11 +730,19 @@
               <net ref="ribbon_pulse_in_p"></net>
               <net ref="ribbon_pulse_out_n"></net>
               <net ref="ribbon_pulse_out_p"></net>
+              <net ref="unnamed_1_ecltranslation_i20_ecltolvdsin"></net>
+              <net ref="unnamed_1_ecltranslation_i20_ecltonimin"></net>
+              <net ref="unnamed_1_ecltranslation_i20_ecltottlin"></net>
+              <net ref="unnamed_1_ecltranslation_i20_lvdstoeclinn"></net>
+              <net ref="unnamed_1_ecltranslation_i20_lvdstoeclinp"></net>
+              <net ref="unnamed_1_ecltranslation_i20_nimtoeclin"></net>
+              <net ref="unnamed_1_ecltranslation_i20_ttltoeclin"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>
               <instance ref="i2"></instance>
               <instance ref="i5"></instance>
+              <instance ref="i20"></instance>
             </instances>
           </page>
         </pages>

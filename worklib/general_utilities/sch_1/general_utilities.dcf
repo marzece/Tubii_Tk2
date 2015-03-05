@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 13 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -366,6 +366,9 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):vcc"
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):vcc") )
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):vcc") )
@@ -378,6 +381,9 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):vcc"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):vee"
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):vee") )
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):vee") )
@@ -388,6 +394,9 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):vee"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vee"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):pulse_inv_in"
@@ -569,46 +578,49 @@
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):pulse_out_p") )
 				( objectStatus "ribbon_pulse_out_p" )
 			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vee"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_lvds_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_lvds_out_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_lvds_out_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_nim_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_nim_out"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_ttl_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_ttl_out"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_in_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_in_p"
+				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out_n"
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):lvds_to_ecl_out"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out") )
+				( objectStatus "lvds_to_ecl_out" )
 			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out_p"
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ttl_to_ecl_out"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out") )
+				( objectStatus "ttl_to_ecl_out" )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):nim_to_ecl_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):nim_to_ecl_out"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_in"
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out_n"
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):unnamed_1_csmd0805_i11_b"
 			)
@@ -643,6 +655,60 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):unnamed_1_mpsh81_i17_c"
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):unnamed_1_rsmd0805_i20_a"
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ecl_to_lvds_in"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_lvds_in") )
+				( objectStatus "ecl_to_lvds_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ecl_to_lvds_out_n"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_lvds_out_n") )
+				( objectStatus "ecl_to_lvds_out_n" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ecl_to_lvds_out_p"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_lvds_out_p") )
+				( objectStatus "ecl_to_lvds_out_p" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ecl_to_nim_in"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_nim_in") )
+				( objectStatus "ecl_to_nim_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ecl_to_nim_out"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_nim_out") )
+				( objectStatus "ecl_to_nim_out" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ecl_to_ttl_in"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_ttl_in") )
+				( objectStatus "ecl_to_ttl_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ecl_to_ttl_out"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_ttl_out") )
+				( objectStatus "ecl_to_ttl_out" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):lvds_to_ecl_in_n"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_in_n") )
+				( objectStatus "lvds_to_ecl_in_n" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):lvds_to_ecl_in_p"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_in_p") )
+				( objectStatus "lvds_to_ecl_in_p" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):nim_to_ecl_in"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):nim_to_ecl_in") )
+				( objectStatus "nim_to_ecl_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):nim_to_ecl_out"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):nim_to_ecl_out") )
+				( objectStatus "nim_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):ttl_to_ecl_in"
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_in") )
+				( objectStatus "ttl_to_ecl_in" )
 			)
 			( gate "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -4204,6 +4270,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i7.1" )
 				)
@@ -4308,6 +4378,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i8.1" )
 				)
@@ -4346,6 +4420,10 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H125"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "d1"
 					( objectStatus "page1_i9.4" )
@@ -4427,6 +4505,10 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H124"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a_in"
 					( objectStatus "page1_i10.7" )
@@ -4574,6 +4656,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i11.1" )
 				)
@@ -4677,6 +4763,10 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( objectStatus "page1_i12.1" )
@@ -4782,6 +4872,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i13.1" )
 				)
@@ -4820,6 +4914,10 @@
 				)
 				( attribute "CDS_PART_NAME" "DS90LV019"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "de"
 					( objectStatus "page1_i14.1" )
@@ -4945,6 +5043,10 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i16.1" )
 				)
@@ -4983,6 +5085,10 @@
 				)
 				( attribute "CDS_PART_NAME" "MPSH81"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "b"
 					( objectStatus "page1_i17.1" )
@@ -5087,6 +5193,10 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i18.1" )
 				)
@@ -5125,6 +5235,10 @@
 				)
 				( attribute "CDS_PART_NAME" "MMBTH10"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "b"
 					( objectStatus "page1_i19.1" )
@@ -5228,6 +5342,10 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( objectStatus "page1_i20.1" )
@@ -5333,6 +5451,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i21.1" )
 				)
@@ -5371,6 +5493,10 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10E116"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "d0"
 					( objectStatus "page1_i22.3" )
@@ -5550,6 +5676,10 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i26.1" )
 				)
@@ -5649,6 +5779,10 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( objectStatus "page1_i27.1" )
@@ -5750,6 +5884,10 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i28.1" )
 				)
@@ -5849,6 +5987,10 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( objectStatus "page1_i29.1" )
@@ -5950,6 +6092,10 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i30.1" )
 				)
@@ -6049,6 +6195,10 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( objectStatus "page1_i31.1" )
@@ -6150,11 +6300,121 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( objectStatus "page1_i32.1" )
 				)
 				( pin "b(0)"
 					( objectStatus "page1_i32.2" )
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):page1_i39"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1050,825)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
 				)
 			)
 			( pin "@tubii_tk2_lib.general_utilities(sch_1):page1_i1:pulse_inv_in"
@@ -9204,7 +9464,7 @@
 	( BaseCopy "ecl_translation"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 2 )
+				( logicalViewRevNum 5 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -9249,12 +9509,6 @@
 			( signal "@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_in_p"
 				( objectStatus "lvds_to_ecl_in_p" )
 			)
-			( signal "@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out_n"
-				( objectStatus "lvds_to_ecl_out_n" )
-			)
-			( signal "@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out_p"
-				( objectStatus "lvds_to_ecl_out_p" )
-			)
 			( signal "@tubii_tk2_lib.ecl_translation(sch_1):nim_to_ecl_in"
 				( objectStatus "nim_to_ecl_in" )
 			)
@@ -9263,12 +9517,6 @@
 			)
 			( signal "@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_in"
 				( objectStatus "ttl_to_ecl_in" )
-			)
-			( signal "@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out_n"
-				( objectStatus "ttl_to_ecl_out_n" )
-			)
-			( signal "@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out_p"
-				( objectStatus "ttl_to_ecl_out_p" )
 			)
 			( signal "@tubii_tk2_lib.ecl_translation(sch_1):unnamed_1_csmd0805_i11_b"
 				( objectStatus "unnamed_1_csmd0805_i11_b" )
@@ -9326,6 +9574,12 @@
 			)
 			( signal "@tubii_tk2_lib.ecl_translation(sch_1):vee"
 				( objectStatus "vee" )
+			)
+			( signal "@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out"
+				( objectStatus "lvds_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out"
+				( objectStatus "ttl_to_ecl_out" )
 			)
 			( gate "@tubii_tk2_lib.ecl_translation(sch_1):page1_i7"
 				( attribute "CDS_LIB" "capacitors"
@@ -9400,6 +9654,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I7" )
 				( pin "a(0)"
@@ -9481,6 +9738,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a(0)"
 				)
@@ -9511,6 +9771,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H125"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I9" )
 				( pin "d1"
@@ -9570,6 +9833,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H124"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a_in"
@@ -9679,6 +9945,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I11" )
 				( pin "a(0)"
 				)
@@ -9758,6 +10027,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I12" )
 				( pin "a(0)"
@@ -9839,6 +10111,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I13" )
 				( pin "a(0)"
 				)
@@ -9869,6 +10144,9 @@
 				)
 				( attribute "CDS_PART_NAME" "DS90LV019"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I14" )
 				( pin "de"
@@ -9963,6 +10241,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I16" )
 				( pin "a(0)"
 				)
@@ -9993,6 +10274,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MPSH81"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I17" )
 				( pin "b"
@@ -10073,6 +10357,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I18" )
 				( pin "a(0)"
 				)
@@ -10103,6 +10390,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MMBTH10"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I19" )
 				( pin "b"
@@ -10182,6 +10472,9 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I20" )
 				( pin "a(0)"
@@ -10263,6 +10556,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I21" )
 				( pin "a(0)"
 				)
@@ -10293,6 +10589,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10E116"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I22" )
 				( pin "d0"
@@ -10423,6 +10722,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I26" )
 				( pin "a(0)"
 				)
@@ -10499,6 +10801,9 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I27" )
 				( pin "a(0)"
@@ -10577,6 +10882,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I28" )
 				( pin "a(0)"
 				)
@@ -10653,6 +10961,9 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I29" )
 				( pin "a(0)"
@@ -10731,6 +11042,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I30" )
 				( pin "a(0)"
 				)
@@ -10807,6 +11121,9 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I31" )
 				( pin "a(0)"
@@ -10885,7 +11202,93 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I32" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.ecl_translation(sch_1):page1_i39"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1050,825)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "TRANSLATORS"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_I39" )
 				( pin "a(0)"
 				)
 				( pin "b(0)"

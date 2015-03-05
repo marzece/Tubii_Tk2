@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-02T19:17:20</modificationTime>
+    <modificationTime>2015-03-05T12:44:41</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
       <lastids>
         <instanceid>14</instanceid>
-        <netid>48</netid>
-        <insttermid>308</insttermid>
+        <netid>80</netid>
+        <insttermid>431</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -34,6 +34,21 @@
           <parameters>
           </parameters>
           <terms>
+            <term>
+              <id>T306</id>
+              <name>clk100_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T307</id>
+              <name>clk100_ttl</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T308</id>
+              <name>tub_clk_in</name>
+              <direction>output</direction>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -107,6 +122,76 @@
             <term>
               <id>T104</id>
               <name>ribbon_pulse_out_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T388</id>
+              <name>ecl_to_lvds_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T389</id>
+              <name>ecl_to_lvds_out_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T390</id>
+              <name>ecl_to_lvds_out_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T391</id>
+              <name>ecl_to_nim_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T392</id>
+              <name>ecl_to_nim_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T393</id>
+              <name>ecl_to_ttl_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T394</id>
+              <name>ecl_to_ttl_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T395</id>
+              <name>lvds_to_ecl_in_n</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T396</id>
+              <name>lvds_to_ecl_in_p</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T399</id>
+              <name>nim_to_ecl_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T400</id>
+              <name>nim_to_ecl_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T401</id>
+              <name>ttl_to_ecl_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T406</id>
+              <name>lvds_to_ecl_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T407</id>
+              <name>ttl_to_ecl_out</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -492,6 +577,90 @@
       </cells>
       <nets>
         <net>
+          <id>N63</id>
+          <name>ecl_to_lvds_in</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N64</id>
+          <name>ecl_to_lvds_out_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N65</id>
+          <name>ecl_to_lvds_out_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N66</id>
+          <name>ecl_to_nim_in</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N67</id>
+          <name>ecl_to_nim_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N68</id>
+          <name>ecl_to_ttl_in</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N69</id>
+          <name>ecl_to_ttl_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N70</id>
+          <name>lvds_to_ecl_in_n</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N71</id>
+          <name>lvds_to_ecl_in_p</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N74</id>
+          <name>nim_to_ecl_in</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N75</id>
+          <name>nim_to_ecl_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N76</id>
+          <name>ttl_to_ecl_in</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N79</id>
+          <name>lvds_to_ecl_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N80</id>
+          <name>ttl_to_ecl_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
           <id>gnd</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -524,6 +693,12 @@
         <net>
           <id>vcc15m</id>
           <name>vcc15m</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>v3p3</id>
+          <name>v3p3</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -571,6 +746,24 @@
           <powers>
           </powers>
           <pins>
+            <pin>
+              <id>M355</id>
+              <termid>T306</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M356</id>
+              <termid>T307</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M357</id>
+              <termid>T308</termid>
+              <connections>
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -668,6 +861,104 @@
               <id>M104</id>
               <termid>T104</termid>
               <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M414</id>
+              <termid>T388</termid>
+              <connections>
+                <connection net="N63" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M415</id>
+              <termid>T389</termid>
+              <connections>
+                <connection net="N64" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M416</id>
+              <termid>T390</termid>
+              <connections>
+                <connection net="N65" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M417</id>
+              <termid>T391</termid>
+              <connections>
+                <connection net="N66" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M418</id>
+              <termid>T392</termid>
+              <connections>
+                <connection net="N67" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M419</id>
+              <termid>T393</termid>
+              <connections>
+                <connection net="N68" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M420</id>
+              <termid>T394</termid>
+              <connections>
+                <connection net="N69" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M421</id>
+              <termid>T395</termid>
+              <connections>
+                <connection net="N70" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M422</id>
+              <termid>T396</termid>
+              <connections>
+                <connection net="N71" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M425</id>
+              <termid>T399</termid>
+              <connections>
+                <connection net="N74" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M426</id>
+              <termid>T400</termid>
+              <connections>
+                <connection net="N75" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M427</id>
+              <termid>T401</termid>
+              <connections>
+                <connection net="N76" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M430</id>
+              <termid>T406</termid>
+              <connections>
+                <connection net="N79" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M431</id>
+              <termid>T407</termid>
+              <connections>
+                <connection net="N80" />
               </connections>
             </pin>
           </pins>
@@ -1222,12 +1513,110 @@
         <extension name="schematic_extension">
         <schematicExtension>
         <netScopes>
+          <netScope ref="ecl_to_lvds_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ecl_to_lvds_out_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ecl_to_lvds_out_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ecl_to_nim_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ecl_to_nim_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ecl_to_ttl_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ecl_to_ttl_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="lvds_to_ecl_in_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="lvds_to_ecl_in_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="lvds_to_ecl_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="nim_to_ecl_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="nim_to_ecl_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ttl_to_ecl_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="ttl_to_ecl_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
         </netScopes>
         <pages>
           <page number="1">
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
+              <net ref="ecl_to_lvds_in"></net>
+              <net ref="ecl_to_lvds_out_n"></net>
+              <net ref="ecl_to_lvds_out_p"></net>
+              <net ref="ecl_to_nim_in"></net>
+              <net ref="ecl_to_nim_out"></net>
+              <net ref="ecl_to_ttl_in"></net>
+              <net ref="ecl_to_ttl_out"></net>
+              <net ref="lvds_to_ecl_in_n"></net>
+              <net ref="lvds_to_ecl_in_p"></net>
+              <net ref="lvds_to_ecl_out"></net>
+              <net ref="nim_to_ecl_in"></net>
+              <net ref="nim_to_ecl_out"></net>
+              <net ref="ttl_to_ecl_in"></net>
+              <net ref="ttl_to_ecl_out"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>

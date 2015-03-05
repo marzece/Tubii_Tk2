@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "ecl_translation"
     (lastIds
-      (lastInstanceId 22)
-      (lastNetId 36)
-      (lastInstTermId 108)
+      (lastInstanceId 23)
+      (lastNetId 38)
+      (lastInstTermId 110)
     )
     (cells
       ("S2" "csmd0805" "capacitors" "sym_1"
@@ -134,21 +134,17 @@
 
     (nets
       ("N1" "ecl_to_lvds_in" -1 -1 1 1)
-      ("N2" "ecl_to_lvds_out_n" -1 -1 0 )
-      ("N3" "ecl_to_lvds_out_p" -1 -1 0 )
+      ("N2" "ecl_to_lvds_out_n" -1 -1 1 2)
+      ("N3" "ecl_to_lvds_out_p" -1 -1 1 2)
       ("N4" "ecl_to_nim_in" -1 -1 1 1)
       ("N5" "ecl_to_nim_out" -1 -1 1 2)
       ("N6" "ecl_to_ttl_in" -1 -1 1 1)
       ("N7" "ecl_to_ttl_out" -1 -1 1 2)
-      ("N9" "lvds_to_ecl_in_n" -1 -1 0 )
-      ("N10" "lvds_to_ecl_in_p" -1 -1 0 )
-      ("N11" "lvds_to_ecl_out_n" -1 -1 1 2)
-      ("N12" "lvds_to_ecl_out_p" -1 -1 1 2)
-      ("N13" "nim_to_ecl_in" -1 -1 0 )
-      ("N14" "nim_to_ecl_out" -1 -1 0 )
+      ("N9" "lvds_to_ecl_in_n" -1 -1 1 1)
+      ("N10" "lvds_to_ecl_in_p" -1 -1 1 1)
+      ("N13" "nim_to_ecl_in" -1 -1 1 1)
+      ("N14" "nim_to_ecl_out" -1 -1 1 2)
       ("N15" "ttl_to_ecl_in" -1 -1 1 1)
-      ("N16" "ttl_to_ecl_out_n" -1 -1 1 2)
-      ("N17" "ttl_to_ecl_out_p" -1 -1 1 2)
       ("N18" "unnamed_1_csmd0805_i11_b" -1 -1 0 )
       ("N19" "unnamed_1_csmd0805_i13_a" -1 -1 0 )
       ("N20" "unnamed_1_csmd0805_i13_b" -1 -1 0 )
@@ -166,6 +162,8 @@
       ("N32" "unnamed_1_mc10e116_i22_q2" -1 -1 0 )
       ("N33" "unnamed_1_mpsh81_i17_c" -1 -1 0 )
       ("N34" "unnamed_1_rsmd0805_i20_a" -1 -1 0 )
+      ("N37" "lvds_to_ecl_out" -1 -1 1 2)
+      ("N38" "ttl_to_ecl_out" -1 -1 1 2)
       ("N8" "gnd" -1 -1 2 )
       ("N35" "vcc" -1 -1 2 )
       ("N36" "vee" -1 -1 2 )
@@ -272,13 +270,10 @@
           )
           ("M22" "T33" -1 -1
             (conn
-              ("0" -1 -1 "N17" -1 -1)
+              ("0" -1 -1 "N38" -1 -1)
             )
           )
           ("M23" "T34" -1 -1
-            (conn
-              ("0" -1 -1 "N16" -1 -1)
-            )
           )
           ("M24" "T35" -1 -1
             (conn
@@ -287,13 +282,10 @@
           )
           ("M25" "T36" -1 -1
             (conn
-              ("0" -1 -1 "N12" -1 -1)
+              ("0" -1 -1 "N37" -1 -1)
             )
           )
           ("M26" "T37" -1 -1
-            (conn
-              ("0" -1 -1 "N11" -1 -1)
-            )
           )
           ("M27" "T38" -1 -1
           )
@@ -742,6 +734,20 @@
           ("M108" "T59" 0 0
             (conn
               ("0" 0 0 "N6" -1 -1)
+            )
+          )
+        )
+      )
+      ("I23" "page1_i39" "S2"
+        (pins
+          ("M109" "T14" 0 0
+            (conn
+              ("0" 0 0 "N8" -1 -1)
+            )
+          )
+          ("M110" "T15" 0 0
+            (conn
+              ("0" 0 0 "N26" -1 -1)
             )
           )
         )
