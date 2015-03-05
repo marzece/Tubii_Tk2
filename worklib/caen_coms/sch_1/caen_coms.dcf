@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 13 )
+			( logicalViewRevNum 19 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -296,6 +296,54 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -376,6 +424,16 @@
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):out_att") )
 				( objectStatus "caen_out_anal<0>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(0)"
+				( attribute "PHYS_NET_NAME" "CAEN_OUT_ANAL<0>"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_p"
 				( objectFlag fObjectAlias )
 			)
@@ -433,6 +491,9 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):vcc"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i16_b"
@@ -1035,13 +1096,6 @@
 				)
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(0)"
-				( attribute "PHYS_NET_NAME" "CAEN_OUT_ANAL<0>"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(7)"
 				( attribute "PHYS_NET_NAME" "CAEN_BUFF_CNTRL<7>"
 					( Status sBlockFlattened )
@@ -1161,9 +1215,6 @@
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):vref5m"
 			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync24_lvds_n"
 				( objectFlag fObjectAlias )
 			)
@@ -1185,35 +1236,56 @@
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):out_att") )
 				( objectStatus "caen_out_anal<1>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):caen_out_anal(2)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(2)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):out_att") )
 				( objectStatus "caen_out_anal<2>" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):caen_out_anal(3)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(3)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):out_att") )
 				( objectStatus "caen_out_anal<3>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):caen_out_anal(4)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(4)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):out_att") )
 				( objectStatus "caen_out_anal<4>" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):caen_out_anal(5)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(5)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):out_att") )
 				( objectStatus "caen_out_anal<5>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):caen_out_anal(6)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(6)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):out_att") )
 				( objectStatus "caen_out_anal<6>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):caen_out_anal(7)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(7)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):out_att") )
 				( objectStatus "caen_out_anal<7>" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):clk"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):clk") )
@@ -1280,60 +1352,96 @@
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):in_anal") )
 				( objectStatus "pulse_in_anal<8>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):in_anal"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):pulse_in_anal(9)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):pulse_in_anal(9)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):in_anal") )
 				( objectStatus "pulse_in_anal<9>" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):in_anal"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):pulse_in_anal(10)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):pulse_in_anal(10)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):in_anal") )
 				( objectStatus "pulse_in_anal<10>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):in_anal"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):pulse_in_anal(11)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):pulse_in_anal(11)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):in_anal") )
 				( objectStatus "pulse_in_anal<11>" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):in_anal"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):scope_out_anal(0)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):scope_out_anal(0)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):out_clip") )
 				( objectStatus "scope_out_anal<0>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):scope_out_anal(1)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):scope_out_anal(1)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):out_clip") )
 				( objectStatus "scope_out_anal<1>" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):scope_out_anal(2)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):scope_out_anal(2)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):out_clip") )
 				( objectStatus "scope_out_anal<2>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):scope_out_anal(3)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):scope_out_anal(3)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):out_clip") )
 				( objectStatus "scope_out_anal<3>" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):scope_out_anal(4)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):scope_out_anal(4)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):out_clip") )
 				( objectStatus "scope_out_anal<4>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):scope_out_anal(5)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):scope_out_anal(5)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):out_clip") )
 				( objectStatus "scope_out_anal<5>" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):scope_out_anal(6)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):scope_out_anal(6)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):out_clip") )
 				( objectStatus "scope_out_anal<6>" )
 			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):scope_out_anal(7)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):scope_out_anal(7)") )
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):out_clip") )
 				( objectStatus "scope_out_anal<7>" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):sync24_lvds_n"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync24_lvds_n") )
@@ -1367,65 +1475,30 @@
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_p") )
 				( objectStatus "sync_p" )
 			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt_ttl"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):unnamed_1_mc10e116_i1_q3"
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):unnamed_1_mc10e116_i1_q3_1"
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):gt_ttl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt_ttl") )
+				( objectStatus "gt_ttl" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_n"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_p"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
-				( objectFlag fObjectAlias )
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):gt2_n"
+				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_n") )
+				( objectStatus "gt2_n" )
 			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):out_clip"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):in_anal"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):in_anal"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):in_anal"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):in_anal"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):out_att"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):out_att"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):out_att"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):out_att"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):out_att"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):out_att"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):out_att"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):out_att"
-				( objectFlag fObjectAlias )
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):gt2_p"
+				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_p") )
+				( objectStatus "gt2_p" )
 			)
 			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -45153,7 +45226,7 @@
 	( BaseCopy "caen_dig_coms"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 3 )
+				( logicalViewRevNum 5 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -45236,6 +45309,21 @@
 			)
 			( signal "@tubii_tk2_lib.caen_dig_coms(sch_1):vcc"
 				( objectStatus "vcc" )
+			)
+			( signal "@tubii_tk2_lib.caen_dig_coms(sch_1):gt_ttl"
+				( objectStatus "gt_ttl" )
+			)
+			( signal "@tubii_tk2_lib.caen_dig_coms(sch_1):unnamed_1_mc10e116_i1_q3"
+				( objectStatus "unnamed_1_mc10e116_i1_q3" )
+			)
+			( signal "@tubii_tk2_lib.caen_dig_coms(sch_1):unnamed_1_mc10e116_i1_q3_1"
+				( objectStatus "unnamed_1_mc10e116_i1_q3_1" )
+			)
+			( signal "@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_n"
+				( objectStatus "gt2_n" )
+			)
+			( signal "@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_p"
+				( objectStatus "gt2_p" )
 			)
 			( gate "@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"

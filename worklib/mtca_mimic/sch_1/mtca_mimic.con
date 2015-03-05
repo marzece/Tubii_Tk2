@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "mtca_mimic"
     (lastIds
-      (lastInstanceId 24)
-      (lastNetId 44)
-      (lastInstTermId 114)
+      (lastInstanceId 27)
+      (lastNetId 45)
+      (lastInstTermId 124)
     )
     (cells
       ("S1" "ad96687" "misc" "sym_1"
@@ -118,13 +118,18 @@
           ("T102" "t_b2" -1 -1 3)
         )
       )
+      ("S9" "rsmd0805" "resistors" "sym_1"
+        (terms
+          ("T124" "a" 0 0 1)
+          ("T125" "b" 0 0 2)
+        )
+      )
     )
 
     (nets
       ("N3" "unnamed_1_ad7243_i2_refin" -1 -1 0 )
       ("N7" "unnamed_1_ad7243_i2_vdd" -1 -1 0 )
       ("N9" "unnamed_1_ad7243_i2_vss" -1 -1 0 )
-      ("N10" "unnamed_1_ad96687_i1_gnd1" -1 -1 0 )
       ("N12" "unnamed_1_csmd0805_i8_b" -1 -1 0 )
       ("N13" "unnamed_1_csmd0805_i9_b" -1 -1 0 )
       ("N16" "comp1_thresh" -1 -1 0 )
@@ -156,7 +161,7 @@
       ("N1" "gnd" -1 -1 2 )
       ("N14" "vcc" -1 -1 2 )
       ("N15" "vee" -1 -1 2 )
-      ("vtt" "vtt" -1 -1 2  inherited)
+      ("vtt" "vtt" -1 -1 2 )
     )
 
     (instances
@@ -164,12 +169,12 @@
         (pins
           ("M1" "T4" -1 -1
             (conn
-              ("0" -1 -1 "N10" -1 -1)
+              ("0" -1 -1 "N1" -1 -1)
             )
           )
           ("M2" "T5" -1 -1
             (conn
-              ("0" -1 -1 "N10" -1 -1)
+              ("0" -1 -1 "N1" -1 -1)
             )
           )
           ("M3" "T6" -1 -1
@@ -691,6 +696,48 @@
           ("M114" "T36" -1 -1
             (conn
               ("0" -1 -1 "N44" -1 -1)
+            )
+          )
+        )
+      )
+      ("I25" "page1_i40" "S9"
+        (pins
+          ("M119" "T124" 0 0
+            (conn
+              ("0" 0 0 "vtt" -1 -1)
+            )
+          )
+          ("M120" "T125" 0 0
+            (conn
+              ("0" 0 0 "N31" -1 -1)
+            )
+          )
+        )
+      )
+      ("I26" "page1_i41" "S7"
+        (pins
+          ("M121" "T89" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M122" "T90" 0 0
+            (conn
+              ("0" 0 0 "N14" -1 -1)
+            )
+          )
+        )
+      )
+      ("I27" "page1_i42" "S7"
+        (pins
+          ("M123" "T89" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M124" "T90" 0 0
+            (conn
+              ("0" 0 0 "N15" -1 -1)
             )
           )
         )

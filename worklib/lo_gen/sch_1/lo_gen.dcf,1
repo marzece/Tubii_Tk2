@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 5 )
+			( logicalViewRevNum 8 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -409,6 +409,14 @@
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):\ddgt*\"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):gt_ttl"
+				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):gt_ttl") )
+				( objectStatus "gt_ttl" )
+			)
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):le"
+				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):le") )
+				( objectStatus "le" )
+			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):dgt_n"
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):dgt_n") )
 				( attribute "PHYS_NET_NAME" "DGT_N"
@@ -451,20 +459,6 @@
 				)
 				( objectStatus "mtcd_lo*" )
 			)
-			( signal "@tubii_tk2_lib.lo_gen(sch_1):unnamed_1_gtdelays_i1_clk"
-				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):clk") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_GTDELAYS_I1_CLK"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_gtdelays_i1_clk" )
-			)
-			( signal "@tubii_tk2_lib.lo_gen(sch_1):unnamed_1_gtdelays_i1_data"
-				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):data") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_GTDELAYS_I1_DATA"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_gtdelays_i1_data" )
-			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):unnamed_1_gtdelays_i1_ddgtn"
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):ddgt_n") )
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):\ddgt*\") )
@@ -480,19 +474,7 @@
 				)
 				( objectStatus "unnamed_1_gtdelays_i1_ddgtp" )
 			)
-			( signal "@tubii_tk2_lib.lo_gen(sch_1):unnamed_1_gtdelays_i1_gtttl"
-				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):gt_ttl") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_GTDELAYS_I1_GTTTL"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_gtdelays_i1_gtttl" )
-			)
-			( signal "@tubii_tk2_lib.lo_gen(sch_1):unnamed_1_gtdelays_i1_le"
-				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):le") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_GTDELAYS_I1_LE"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_gtdelays_i1_le" )
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star_raw"
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):unnamed_1_csmd0603_i6_a"
 			)
@@ -508,9 +490,17 @@
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):unnamed_1_csmd0603_i9_b"
 			)
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):clk"
+				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):clk") )
+				( objectStatus "clk" )
+			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):unnamed_1_ledl_i11_a"
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):unnamed_1_mc10e116_i2_d0"
+			)
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):data"
+				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):data") )
+				( objectStatus "data" )
 			)
 			( gate "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ttl"
@@ -2786,7 +2776,7 @@
 				( attribute "CDS_PART_NAME" "MC10H124"
 					( Origin gPackager )
 				)
-				( attribute "ROOM" "LO_SEL"
+				( attribute "ROOM" "SEL_LO"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -2855,7 +2845,7 @@
 				( attribute "CDS_PART_NAME" "MC10E116"
 					( Origin gPackager )
 				)
-				( attribute "ROOM" "LO_SEL"
+				( attribute "ROOM" "SEL_LO"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -3006,6 +2996,10 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -3101,6 +3095,10 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -3134,6 +3132,10 @@
 				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a1"
 				)
@@ -3265,6 +3267,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -3361,6 +3367,10 @@
 					( Origin gFrontEnd )
 				)
 				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROOM" "SEL_LO"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -3463,6 +3473,10 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -3562,6 +3576,10 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -3597,6 +3615,10 @@
 					( Origin gPackager )
 				)
 				( attribute "ABBREV" "LED"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROOM" "SEL_LO"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -3698,6 +3720,10 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -3795,6 +3821,10 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 				)
@@ -3894,6 +3924,10 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -3991,6 +4025,10 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 				)
@@ -4090,6 +4128,10 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -4166,10 +4208,28 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-100,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R12"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R12"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I11" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.lo_gen(sch_1):page1_i12"
@@ -4197,8 +4257,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP11"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP11"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I12" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1_i6"
@@ -4297,6 +4372,10 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 				)
@@ -6157,7 +6236,7 @@
 	( BaseCopy "select_lo_src"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 6 )
+				( logicalViewRevNum 8 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -6229,6 +6308,9 @@
 			( signal "@tubii_tk2_lib.select_lo_src(sch_1):unnamed_1_mc10e116_i2_d0"
 				( objectStatus "unnamed_1_mc10e116_i2_d0" )
 			)
+			( signal "@tubii_tk2_lib.select_lo_src(sch_1):lo_star_raw"
+				( objectStatus "lo_star_raw" )
+			)
 			( gate "@tubii_tk2_lib.select_lo_src(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
@@ -6254,7 +6336,7 @@
 				( attribute "CDS_PART_NAME" "MC10H124"
 					( Origin gPackager )
 				)
-				( attribute "ROOM" "LO_SEL"
+				( attribute "ROOM" "SEL_LO"
 					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I1" )
@@ -6316,7 +6398,7 @@
 				( attribute "CDS_PART_NAME" "MC10E116"
 					( Origin gPackager )
 				)
-				( attribute "ROOM" "LO_SEL"
+				( attribute "ROOM" "SEL_LO"
 					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I2" )
@@ -6448,6 +6530,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I3" )
 				( pin "a(0)"
 				)
@@ -6525,6 +6610,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-100,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "a(0)"
 				)
@@ -6555,6 +6643,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H104"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I5" )
 				( pin "a1"
@@ -6664,6 +6755,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I7" )
 				( pin "a(0)"
 				)
@@ -6743,6 +6837,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a(0)"
@@ -6824,6 +6921,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a(0)"
 				)
@@ -6904,6 +7004,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a(0)"
 				)
@@ -6937,6 +7040,9 @@
 				)
 				( attribute "CDS_PART_NAME" "LED_L"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I11" )
 				( pin "a"
@@ -7015,6 +7121,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I18" )
 				( pin "a(0)"
 				)
@@ -7091,6 +7200,9 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I17" )
 				( pin "a(0)"
@@ -7169,6 +7281,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I16" )
 				( pin "a(0)"
 				)
@@ -7246,6 +7361,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I15" )
 				( pin "a(0)"
 				)
@@ -7322,6 +7440,9 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I14" )
 				( pin "a(0)"
@@ -7402,6 +7523,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SEL_LO"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a(0)"

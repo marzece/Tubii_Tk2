@@ -8,8 +8,8 @@
   (design "lo_gen"
     (lastIds
       (lastInstanceId 4)
-      (lastNetId 23)
-      (lastInstTermId 32)
+      (lastNetId 31)
+      (lastInstTermId 42)
     )
     (cells
       ("S2" "gt_delays" "tubii_tk2_lib" "sym_1"
@@ -22,15 +22,15 @@
           ("T9" "dgt_p" -1 -1 2)
           ("T10" "gt_ttl" -1 -1 1)
           ("T11" "le" -1 -1 1)
+          ("T69" "dgt2" -1 -1 2)
         )
       )
       ("S3" "select_lo_src" "tubii_tk2_lib" "sym_1"
         (terms
           ("T37" "ddgt*" -1 -1 1)
-          ("T38" "lo" -1 -1 2)
-          ("T39" "lo*" -1 -1 2)
           ("T40" "lo_sel" -1 -1 1)
           ("T41" "mtcd_lo*" -1 -1 1)
+          ("T68" "lo_star2" -1 -1 2)
         )
       )
       ("S4" "rsmd0805" "resistors" "sym_1"
@@ -49,8 +49,6 @@
     (nets
       ("N8" "dgt_n" -1 -1 1 2)
       ("N9" "dgt_p" -1 -1 1 2)
-      ("N10" "lo" -1 -1 1 2)
-      ("N11" "lo*" -1 -1 1 2)
       ("N12" "lo_sel" -1 -1 1 1)
       ("N13" "mtcd_lo*" -1 -1 1 1)
       ("N16" "unnamed_1_gtdelays_i1_ddgtn" -1 -1 0 )
@@ -59,6 +57,10 @@
       ("N21" "data" -1 -1 1 1)
       ("N22" "gt_ttl" -1 -1 1 1)
       ("N23" "le" -1 -1 1 1)
+      ("N28" "dgt2" -1 -1 1 2)
+      ("N29" "lo_star2" -1 -1 1 2)
+      ("N30" "lo_star_out_n" -1 -1 1 2)
+      ("N31" "lo_star_out_p" -1 -1 1 2)
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vcc" "vcc" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
@@ -108,6 +110,11 @@
               ("0" -1 -1 "N23" -1 -1)
             )
           )
+          ("M42" "T69" -1 -1
+            (conn
+              ("0" -1 -1 "N28" -1 -1)
+            )
+          )
         )
       )
       ("I2" "page1_i2" "S3"
@@ -115,16 +122,6 @@
           ("M27" "T37" -1 -1
             (conn
               ("0" -1 -1 "N16" -1 -1)
-            )
-          )
-          ("M28" "T38" -1 -1
-            (conn
-              ("0" -1 -1 "N10" -1 -1)
-            )
-          )
-          ("M29" "T39" -1 -1
-            (conn
-              ("0" -1 -1 "N11" -1 -1)
             )
           )
           ("M30" "T40" -1 -1
@@ -135,6 +132,11 @@
           ("M31" "T41" -1 -1
             (conn
               ("0" -1 -1 "N13" -1 -1)
+            )
+          )
+          ("M41" "T68" -1 -1
+            (conn
+              ("0" -1 -1 "N29" -1 -1)
             )
           )
         )

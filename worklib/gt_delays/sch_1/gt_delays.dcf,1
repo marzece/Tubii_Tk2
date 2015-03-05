@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 11 )
+			( logicalViewRevNum 12 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -306,7 +306,6 @@
 				( objectStatus "gt_ttl" )
 			)
 			( signal "@tubii_tk2_lib.gt_delays(sch_1):gnd"
-				( alias ( signalRef "@tubii_tk2_lib.gt_delays(sch_1):page1_gnd") )
 				( attribute "PHYS_NET_NAME" "GND"
 					( Origin gPackager )
 				)
@@ -316,15 +315,10 @@
 				( objectStatus "le" )
 			)
 			( signal "@tubii_tk2_lib.gt_delays(sch_1):vcc"
-				( alias ( signalRef "@tubii_tk2_lib.gt_delays(sch_1):page1_vcc") )
 				( attribute "PHYS_NET_NAME" "VCC"
 					( Origin gPackager )
 				)
 				( objectStatus "vcc" )
-			)
-			( signal "@tubii_tk2_lib.gt_delays(sch_1):page1_vcc"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_vcc" )
 			)
 			( signal "@tubii_tk2_lib.gt_delays(sch_1):clk"
 				( objectStatus "clk" )
@@ -374,9 +368,8 @@
 			( signal "@tubii_tk2_lib.gt_delays(sch_1):dgt_p"
 				( objectStatus "dgt_p" )
 			)
-			( signal "@tubii_tk2_lib.gt_delays(sch_1):page1_gnd"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_gnd" )
+			( signal "@tubii_tk2_lib.gt_delays(sch_1):ddgt_bits"
+				( objectStatus "ddgt_bits" )
 			)
 			( gate "@tubii_tk2_lib.gt_delays(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ttl"
@@ -1552,6 +1545,65 @@
 				( pin "a(0)"
 				)
 				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.gt_delays(sch_1):page1_i26"
+				( attribute "CDS_LIB" "ttl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,250,175,-250"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-350,2000)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "DS1023500"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "DS1023500"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I26" )
+				( pin "\clk/p1\"
+				)
+				( pin "\d/p2\"
+				)
+				( pin "gnd"
+				)
+				( pin "\in\"
+				)
+				( pin "\le*\"
+				)
+				( pin "ms"
+				)
+				( pin "\out\"
+				)
+				( pin "p3"
+				)
+				( pin "p4"
+				)
+				( pin "p5"
+				)
+				( pin "p6"
+				)
+				( pin "p7"
+				)
+				( pin "ps"
+				)
+				( pin "pwm"
+				)
+				( pin "\q/p0\"
+				)
+				( pin "vcc"
 				)
 			)
 		)

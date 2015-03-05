@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 20 )
+			( logicalViewRevNum 22 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -282,6 +282,54 @@
 		)
 		( Attribute
 			( Name "TC2" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
 			( Description " " )
 			( Value
 				( DataType ( dString ) )
@@ -709,6 +757,9 @@
 				)
 				( objectStatus "unnamed_1_faultdetection_i2_datardy" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):\load_count*\"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk_n"
@@ -740,10 +791,22 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_n") )
 				( objectStatus "unnamed_1_changeclks_i3_bckpclk2n" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_n"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk2p"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_p") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_p") )
 				( objectStatus "unnamed_1_changeclks_i3_bckpclk2p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):use_bckp_n"
 			)
@@ -753,22 +816,10 @@
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):use_default_p"
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_n"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk2_p"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_n"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):default_clk2_p"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_n"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk2_p"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):change_clk2_n"
@@ -786,10 +837,16 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n") )
 				( objectStatus "unnamed_1_changeclks_i3_bckpclk3n" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_bckpclk3p"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):bckp_clk3_p") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p") )
 				( objectStatus "unnamed_1_changeclks_i3_bckpclk3p" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_changeclks_i3_changeclkn"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):change_clk_n") )
@@ -817,21 +874,11 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_n"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_p"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_clk3_n"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_ttl"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):bckp_used"
-				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_used") )
 				( objectStatus "bckp_used" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):bckp_used"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):clk100_n"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_n") )
@@ -857,8 +904,9 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):tub_clk_in") )
 				( objectStatus "tub_clk_in" )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
-				( objectFlag fObjectAlias )
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):missed_clk"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):v3p3"
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -2556,7 +2604,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2425,3775)"
+				( attribute "XY" "(-2300,3775)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -2662,7 +2710,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2725,3750)"
+				( attribute "XY" "(-2725,3775)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -9139,6 +9187,10 @@
 				( attribute "CDS_PART_NAME" "MC10E116"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "d0"
 				)
 				( pin "\d0*\"
@@ -9228,6 +9280,10 @@
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "d_a"
 				)
 				( pin "\d_a*\"
@@ -9276,6 +9332,10 @@
 				)
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "d_a"
 				)
@@ -9326,6 +9386,10 @@
 				( attribute "CDS_PART_NAME" "SS22SDP2"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "p1"
 				)
 				( pin "p2"
@@ -9370,6 +9434,10 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H125"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "d1"
 				)
@@ -9501,6 +9569,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -9602,6 +9674,10 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 				)
@@ -9705,6 +9781,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -9807,6 +9887,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -9908,6 +9992,10 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 				)
@@ -10123,7 +10211,7 @@
 	( BaseCopy "default_clk_sel"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 3 )
+				( logicalViewRevNum 5 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -10133,7 +10221,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "default_clk_sel"
@@ -10194,6 +10282,9 @@
 			)
 			( signal "@tubii_tk2_lib.default_clk_sel(sch_1):vtt"
 				( objectStatus "vtt" )
+			)
+			( signal "@tubii_tk2_lib.default_clk_sel(sch_1):v3p3"
+				( objectStatus "v3p3" )
 			)
 			( gate "@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -11559,7 +11650,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2425,3775)"
+				( attribute "XY" "(-2300,3775)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CSMD0603"
@@ -11642,7 +11733,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2725,3750)"
+				( attribute "XY" "(-2725,3775)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CSMD0603"
@@ -11757,7 +11848,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "fault_detection"
@@ -16635,7 +16726,7 @@
 	( BaseCopy "change_clks"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 5 )
+				( logicalViewRevNum 6 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -16645,7 +16736,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "change_clks"
@@ -16728,8 +16819,8 @@
 			( signal "@tubii_tk2_lib.change_clks(sch_1):clk100_ttl"
 				( objectStatus "clk100_ttl" )
 			)
-			( signal "@tubii_tk2_lib.change_clks(sch_1):bckp_used"
-				( objectStatus "bckp_used" )
+			( signal "@tubii_tk2_lib.change_clks(sch_1):missed_clk"
+				( objectStatus "missed_clk" )
 			)
 			( gate "@tubii_tk2_lib.change_clks(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"
@@ -16755,6 +16846,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10E116"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I1" )
 				( pin "d0"
@@ -16839,6 +16933,9 @@
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I2" )
 				( pin "d_a"
 				)
@@ -16881,6 +16978,9 @@
 				)
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I3" )
 				( pin "d_a"
@@ -16925,6 +17025,9 @@
 				( attribute "CDS_PART_NAME" "SS22SDP2"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "p1"
 				)
@@ -16963,6 +17066,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H125"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I5" )
 				( pin "d1"
@@ -17072,6 +17178,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a(0)"
 				)
@@ -17151,6 +17260,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I7" )
 				( pin "a(0)"
@@ -17232,6 +17344,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a(0)"
 				)
@@ -17312,6 +17427,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a(0)"
 				)
@@ -17391,6 +17509,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a(0)"

@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 12 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -399,12 +399,16 @@
 			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):pos_trig2"
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):posneg1_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):posneg1_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):posneg2_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):posneg2_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):gt"
 				( objectFlag fObjectAlias )
@@ -554,6 +558,46 @@
 					( Origin gPackager )
 				)
 				( objectStatus "trig2_out_p" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):pulse1_anal"
+				( objectStatus "pulse1_anal" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):pulse2_anal"
+				( objectStatus "pulse2_anal" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ss22sdp2_i34_p1"
+				( alias ( signalRef "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):posneg1_p") )
+				( attribute "PHYS_NET_NAME" "UNNAMED_1_SS22SDP2_I34_P1"
+					( Origin gPackager )
+				)
+				( objectStatus "unnamed_1_ss22sdp2_i34_p1" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ss22sdp2_i34_p2"
+				( alias ( signalRef "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):posneg1_n") )
+				( attribute "PHYS_NET_NAME" "UNNAMED_1_SS22SDP2_I34_P2"
+					( Origin gPackager )
+				)
+				( objectStatus "unnamed_1_ss22sdp2_i34_p2" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ss22sdp2_i34_ta1"
+				( objectStatus "unnamed_1_ss22sdp2_i34_ta1" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ss22sdp2_i34_ta2"
+				( objectStatus "unnamed_1_ss22sdp2_i34_ta2" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ss22sdp2_i35_p1"
+				( alias ( signalRef "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):posneg2_p") )
+				( attribute "PHYS_NET_NAME" "UNNAMED_1_SS22SDP2_I35_P1"
+					( Origin gPackager )
+				)
+				( objectStatus "unnamed_1_ss22sdp2_i35_p1" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ss22sdp2_i35_p2"
+				( alias ( signalRef "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):posneg2_n") )
+				( attribute "PHYS_NET_NAME" "UNNAMED_1_SS22SDP2_I35_P2"
+					( Origin gPackager )
+				)
+				( objectStatus "unnamed_1_ss22sdp2_i35_p2" )
 			)
 			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -7158,7 +7202,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(925,3800)"
+				( attribute "XY" "(625,3750)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
@@ -7187,7 +7231,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(1100,3800)"
+				( attribute "XY" "(575,3850)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
@@ -7780,6 +7824,200 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i34"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-150,150,150,-150"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1525,3925)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SS22SDP2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SS22SDP2"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I34" )
+				( pin "p1"
+				)
+				( pin "p2"
+				)
+				( pin "t_a1"
+				)
+				( pin "t_a2"
+				)
+				( pin "t_b1"
+				)
+				( pin "t_b2"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i35"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-150,150,150,-150"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1525,3575)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SS22SDP2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SS22SDP2"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I35" )
+				( pin "p1"
+				)
+				( pin "p2"
+				)
+				( pin "t_a1"
+				)
+				( pin "t_a2"
+				)
+				( pin "t_b1"
+				)
+				( pin "t_b2"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i36"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2275,4000)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I36" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i37"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2275,3900)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I37" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i38"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2275,3800)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I38" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i39"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2275,3700)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I39" )
 				( pin "a"
 				)
 			)

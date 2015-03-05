@@ -8,8 +8,8 @@
   (design "clocks"
     (lastIds
       (lastInstanceId 11)
-      (lastNetId 71)
-      (lastInstTermId 163)
+      (lastNetId 77)
+      (lastInstTermId 175)
     )
     (cells
       ("S1" "default_clk_sel" "tubii_tk2_lib" "sym_1"
@@ -132,7 +132,6 @@
       ("N49" "page1_unnamed_1_8merge_i14_h" -1 -1 0 )
       ("N50" "unnamed_1_8merge_i14_y" 7 0 0 )
       ("N51" "page1_unnamed_1_8merge_i14_y" 7 0 0 )
-      ("N52" "unnamed_1_faultdetection_i2_datardy" -1 -1 0 )
       ("N57" "unnamed_1_changeclks_i3_bckpclk2n" -1 -1 0 )
       ("N58" "unnamed_1_changeclks_i3_bckpclk2p" -1 -1 0 )
       ("N59" "unnamed_1_changeclks_i3_bckpclk3n" -1 -1 0 )
@@ -148,10 +147,12 @@
       ("N69" "clk_sel" -1 -1 1 1)
       ("N70" "reset" -1 -1 1 1)
       ("N71" "tub_clk_in" -1 -1 1 1)
+      ("N77" "data_rdy" -1 -1 1 1)
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2 )
       ("vtt" "vtt" -1 -1 2  inherited)
+      ("v3p3" "v3p3" -1 -1 2  inherited)
     )
 
     (alias
@@ -267,7 +268,7 @@
           )
           ("M162" "T143" -1 -1
             (conn
-              ("0" -1 -1 "N52" -1 -1)
+              ("0" -1 -1 "N77" -1 -1)
             )
           )
         )

@@ -8,8 +8,8 @@
   (design "caen_coms"
     (lastIds
       (lastInstanceId 27)
-      (lastNetId 98)
-      (lastInstTermId 268)
+      (lastNetId 107)
+      (lastInstTermId 281)
     )
     (cells
       ("S8" "caen_analog_coms" "tubii_tk2_lib" "sym_1"
@@ -26,16 +26,19 @@
       ("S9" "caen_dig_coms" "tubii_tk2_lib" "sym_1"
         (terms
           ("T120" "gt_n" -1 -1 1)
-          ("T121" "gt_nim" -1 -1 1)
+          ("T121" "gt_nim" -1 -1 2)
           ("T122" "gt_p" -1 -1 1)
-          ("T123" "sync24_lvds_n" -1 -1 1)
-          ("T124" "sync24_lvds_p" -1 -1 1)
+          ("T123" "sync24_lvds_n" -1 -1 2)
+          ("T124" "sync24_lvds_p" -1 -1 2)
           ("T125" "sync24_n" -1 -1 1)
           ("T126" "sync24_p" -1 -1 1)
-          ("T127" "sync_lvds_n" -1 -1 1)
-          ("T128" "sync_lvds_p" -1 -1 1)
+          ("T127" "sync_lvds_n" -1 -1 2)
+          ("T128" "sync_lvds_p" -1 -1 2)
           ("T129" "sync_n" -1 -1 1)
           ("T130" "sync_p" -1 -1 1)
+          ("T163" "gt_ttl" -1 -1 2)
+          ("T171" "gt2_n" -1 -1 2)
+          ("T172" "gt2_p" -1 -1 2)
         )
       )
     )
@@ -59,6 +62,9 @@
       ("N96" "sync_lvds_p" -1 -1 1 2)
       ("N97" "sync_n" -1 -1 1 1)
       ("N98" "sync_p" -1 -1 1 1)
+      ("N105" "gt_ttl" -1 -1 1 2)
+      ("N106" "gt2_n" -1 -1 1 2)
+      ("N107" "gt2_p" -1 -1 1 2)
       ("N73" "gnd" -1 -1 2  inherited)
       ("N74" "vcc" -1 -1 2  inherited)
       ("vcc15" "vcc15" -1 -1 2  inherited)
@@ -162,6 +168,21 @@
           ("M268" "T130" -1 -1
             (conn
               ("0" -1 -1 "N98" -1 -1)
+            )
+          )
+          ("M277" "T163" -1 -1
+            (conn
+              ("0" -1 -1 "N105" -1 -1)
+            )
+          )
+          ("M280" "T171" -1 -1
+            (conn
+              ("0" -1 -1 "N106" -1 -1)
+            )
+          )
+          ("M281" "T172" -1 -1
+            (conn
+              ("0" -1 -1 "N107" -1 -1)
             )
           )
         )

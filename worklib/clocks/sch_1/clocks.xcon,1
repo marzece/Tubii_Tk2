@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-03T16:35:28</modificationTime>
+    <modificationTime>2015-03-05T16:20:53</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>11</instanceid>
-        <netid>71</netid>
-        <insttermid>162</insttermid>
+        <netid>76</netid>
+        <insttermid>175</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -181,11 +181,6 @@
               <id>T127</id>
               <name>bckp_clk3_p</name>
               <direction>input</direction>
-            </term>
-            <term>
-              <id>T132</id>
-              <name>bckp_used</name>
-              <direction>output</direction>
             </term>
             <term>
               <id>T140</id>
@@ -633,6 +628,12 @@
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
+        <net>
+          <id>v3p3</id>
+          <name>v3p3</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
       </nets>
       <aliases>
         <alias net1="N35" lsb1="-1" msb1="-1" net2="N34" lsb2="-1" msb2="-1" />
@@ -902,13 +903,6 @@
               <termid>T127</termid>
               <connections>
                 <connection net="N60" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M158</id>
-              <termid>T132</termid>
-              <connections>
-                <connection net="N65" />
               </connections>
             </pin>
             <pin>

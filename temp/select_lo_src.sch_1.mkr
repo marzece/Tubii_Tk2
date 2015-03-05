@@ -6,24 +6,161 @@
    (class "SCHEMATIC")
    (severity 40)
    (error_num 1)
-   (short_msg "ERROR(SPCOCD-198): Signal syntax is incorrect.")
+   (short_msg "ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.")
    (long_msg "Severity : Error (Concept)
-Description : ERROR(SPCOCD-198): Signal syntax is incorrect.
+Description : ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.
+Port name: lo_star2
+Entity file location: C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\select_lo_src\entity\verilog.v
 Object dump: 
 {
-    page:  1
-    instance:  i5
-    cell name: mc10h104
-    pin name:  Q1
-    net name:  lo*_raw
+    port name: lo_star2
+}
+{
+    port name: lo_star2
 }
 ")
    (location
     (
-     (object_kind "InstancePin")
-     (canonical_name "_!drawerror pin i5.Q1;")
-     (parent_canonical_name "DRAWERROR PIN i5.Q1;")
-     (drawing_name "@tubii_tk2_lib.select_lo_src(sch_1):page1")
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal lo_star2;")
+     (parent_canonical_name "DRAWERROR NET lo_star2")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
+    )
+    (
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal lo_star2;")
+     (parent_canonical_name "DRAWERROR NET lo_star2")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
+    )
+   )
+  )
+  (
+   (tool "Concept")
+   (class "SCHEMATIC")
+   (severity 40)
+   (error_num 2)
+   (short_msg "ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.")
+   (long_msg "Severity : Error (Concept)
+Description : ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.
+Port name: lo_star_out_n
+Entity file location: C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\select_lo_src\entity\verilog.v
+Object dump: 
+{
+    port name: lo_star_out_n
+}
+{
+    port name: lo_star_out_n
+}
+")
+   (location
+    (
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal lo_star_out_n;")
+     (parent_canonical_name "DRAWERROR NET lo_star_out_n")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
+    )
+    (
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal lo_star_out_n;")
+     (parent_canonical_name "DRAWERROR NET lo_star_out_n")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
+    )
+   )
+  )
+  (
+   (tool "Concept")
+   (class "SCHEMATIC")
+   (severity 40)
+   (error_num 3)
+   (short_msg "ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.")
+   (long_msg "Severity : Error (Concept)
+Description : ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.
+Port name: lo_star_out_p
+Entity file location: C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\select_lo_src\entity\verilog.v
+Object dump: 
+{
+    port name: lo_star_out_p
+}
+{
+    port name: lo_star_out_p
+}
+")
+   (location
+    (
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal lo_star_out_p;")
+     (parent_canonical_name "DRAWERROR NET lo_star_out_p")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
+    )
+    (
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal lo_star_out_p;")
+     (parent_canonical_name "DRAWERROR NET lo_star_out_p")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
+    )
+   )
+  )
+  (
+   (tool "Concept")
+   (class "SCHEMATIC")
+   (severity 40)
+   (error_num 4)
+   (short_msg "ERROR(SPCOCD-171): Port exists in symbol but not in the schematic. Either delete this port from the symbol or add this port in the schematic.")
+   (long_msg "Severity : Error (Concept)
+Description : ERROR(SPCOCD-171): Port exists in symbol but not in the schematic. Either delete this port from the symbol or add this port in the schematic.
+Port name: lo
+Entity file location: C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\select_lo_src\entity\verilog.v
+Object dump: 
+{
+}
+{
+    port name: lo
+}
+")
+   (location
+    (
+     (object_kind "ThisCellView")
+     (canonical_name ";;;")
+     (parent_canonical_name "CONCEPT")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
+    )
+    (
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal lo;")
+     (parent_canonical_name "DRAWERROR NET lo")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
+    )
+   )
+  )
+  (
+   (tool "Concept")
+   (class "SCHEMATIC")
+   (severity 40)
+   (error_num 5)
+   (short_msg "ERROR(SPCOCD-171): Port exists in symbol but not in the schematic. Either delete this port from the symbol or add this port in the schematic.")
+   (long_msg "Severity : Error (Concept)
+Description : ERROR(SPCOCD-171): Port exists in symbol but not in the schematic. Either delete this port from the symbol or add this port in the schematic.
+Port name: lo*
+Entity file location: C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\select_lo_src\entity\verilog.v
+Object dump: 
+{
+}
+{
+    port name: lo*
+}
+")
+   (location
+    (
+     (object_kind "ThisCellView")
+     (canonical_name ";;;")
+     (parent_canonical_name "CONCEPT")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
+    )
+    (
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal lo*;")
+     (parent_canonical_name "DRAWERROR NET lo*")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):page1")
     )
    )
   )

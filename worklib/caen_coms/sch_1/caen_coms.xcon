@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-02T16:14:22</modificationTime>
+    <modificationTime>2015-03-05T16:04:52</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>27</instanceid>
-        <netid>98</netid>
-        <insttermid>268</insttermid>
+        <netid>107</netid>
+        <insttermid>281</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -84,7 +84,7 @@
             <term>
               <id>T121</id>
               <name>gt_nim</name>
-              <direction>input</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T122</id>
@@ -94,12 +94,12 @@
             <term>
               <id>T123</id>
               <name>sync24_lvds_n</name>
-              <direction>input</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T124</id>
               <name>sync24_lvds_p</name>
-              <direction>input</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T125</id>
@@ -114,12 +114,12 @@
             <term>
               <id>T127</id>
               <name>sync_lvds_n</name>
-              <direction>input</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T128</id>
               <name>sync_lvds_p</name>
-              <direction>input</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T129</id>
@@ -130,6 +130,21 @@
               <id>T130</id>
               <name>sync_p</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T163</id>
+              <name>gt_ttl</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T171</id>
+              <name>gt2_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T172</id>
+              <name>gt2_p</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -248,6 +263,24 @@
           <name>sync_p</name>
           <scope>interface</scope>
           <direction>input</direction>
+        </net>
+        <net>
+          <id>N105</id>
+          <name>gt_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N106</id>
+          <name>gt2_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N107</id>
+          <name>gt2_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N73</id>
@@ -461,6 +494,27 @@
                 <connection net="N98" />
               </connections>
             </pin>
+            <pin>
+              <id>M277</id>
+              <termid>T163</termid>
+              <connections>
+                <connection net="N105" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M280</id>
+              <termid>T171</termid>
+              <connections>
+                <connection net="N106" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M281</id>
+              <termid>T172</termid>
+              <connections>
+                <connection net="N107" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -504,6 +558,18 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="gt2_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="gt2_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="gt_n">
             <pageScope number="1">
               <scope>interface</scope>
@@ -520,6 +586,12 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="gt_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="le">
@@ -601,9 +673,12 @@
               <net ref="clk"></net>
               <net ref="data"></net>
               <net ref="data_rdy"></net>
+              <net ref="gt2_n"></net>
+              <net ref="gt2_p"></net>
               <net ref="gt_n"></net>
               <net ref="gt_nim"></net>
               <net ref="gt_p"></net>
+              <net ref="gt_ttl"></net>
               <net ref="le"></net>
               <net ref="pulse_in_anal">
                 <msb>11</msb>
