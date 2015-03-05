@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "general_utilities"
     (lastIds
-      (lastInstanceId 4)
-      (lastNetId 28)
-      (lastInstTermId 57)
+      (lastInstanceId 5)
+      (lastNetId 32)
+      (lastInstTermId 80)
     )
     (cells
       ("S1" "pulse_inverter" "tubii_tk2_lib" "sym_1"
@@ -37,7 +37,17 @@
           ("T32" "pulse_out" -1 -1 2)
         )
       )
-      ("S4" "translation" "tubii_tk2_lib" "sym_1"
+      ("S5" "ecl_translation" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T65" "ecl_to_lvds_in" -1 -1 1)
+          ("T66" "ecl_to_nim_in" -1 -1 1)
+          ("T67" "ecl_to_nim_out" -1 -1 1)
+          ("T68" "ecl_to_ttl_in" -1 -1 1)
+          ("T69" "ecl_to_ttl_out" -1 -1 1)
+          ("T70" "lvds_to_ecl_out_n" -1 -1 1)
+          ("T71" "lvds_to_ecl_out_p" -1 -1 1)
+          ("T72" "ttl_to_ecl_in" -1 -1 1)
+        )
       )
     )
 
@@ -139,7 +149,25 @@
           )
         )
       )
-      ("I4" "page1_i19" "S4"
+      ("I5" "page1_i20" "S5"
+        (pins
+          ("M73" "T65" -1 -1
+          )
+          ("M74" "T66" -1 -1
+          )
+          ("M75" "T67" -1 -1
+          )
+          ("M76" "T68" -1 -1
+          )
+          ("M77" "T69" -1 -1
+          )
+          ("M78" "T70" -1 -1
+          )
+          ("M79" "T71" -1 -1
+          )
+          ("M80" "T72" -1 -1
+          )
+        )
       )
     )
 

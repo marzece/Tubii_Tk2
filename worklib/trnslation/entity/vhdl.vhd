@@ -3,7 +3,7 @@
 library ieee;
 use     ieee.std_logic_1164.all;
 use     work.all;
-entity translation is
+entity trnslation is
     port (    
 	ECL_TO_LVDS_OUT_N: OUT    STD_LOGIC;    
 	ECL_TO_LVDS_OUT_P: OUT    STD_LOGIC;    
@@ -13,4 +13,4 @@ entity translation is
 	LVDS_TO_ECL_OUT_P: OUT    STD_LOGIC;    
 	TTL_TO_ECL_OUT_N: OUT    STD_LOGIC;    
 	TTL_TO_ECL_OUT_P: OUT    STD_LOGIC);
-end translation;
+end trnslation;

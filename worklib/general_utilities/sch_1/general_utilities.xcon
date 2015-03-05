@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-04T18:12:52</modificationTime>
+    <modificationTime>2015-03-04T19:06:50</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="general_utilities" view="sch_1">
       <lastids>
-        <instanceid>4</instanceid>
-        <netid>28</netid>
-        <insttermid>57</insttermid>
+        <instanceid>5</instanceid>
+        <netid>32</netid>
+        <insttermid>80</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -112,13 +112,53 @@
           </terms>
         </cell>
         <cell>
-          <id>S4</id>
+          <id>S5</id>
           <library>tubii_tk2_lib</library>
-          <name>translation</name>
+          <name>ecl_translation</name>
           <view>sym_1</view>
           <parameters>
           </parameters>
           <terms>
+            <term>
+              <id>T65</id>
+              <name>ecl_to_lvds_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T66</id>
+              <name>ecl_to_nim_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T67</id>
+              <name>ecl_to_nim_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T68</id>
+              <name>ecl_to_ttl_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T69</id>
+              <name>ecl_to_ttl_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T70</id>
+              <name>lvds_to_ecl_out_n</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T71</id>
+              <name>lvds_to_ecl_out_p</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T72</id>
+              <name>ttl_to_ecl_in</name>
+              <direction>input</direction>
+            </term>
           </terms>
         </cell>
       </cells>
@@ -392,9 +432,9 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I4</id>
-          <cellid>S4</cellid>
-          <name>page1_i19</name>
+          <id>I5</id>
+          <cellid>S5</cellid>
+          <name>page1_i20</name>
           <parameters>
           </parameters>
           <masks>
@@ -402,6 +442,54 @@
           <powers>
           </powers>
           <pins>
+            <pin>
+              <id>M73</id>
+              <termid>T65</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M74</id>
+              <termid>T66</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M75</id>
+              <termid>T67</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M76</id>
+              <termid>T68</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M77</id>
+              <termid>T69</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M78</id>
+              <termid>T70</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M79</id>
+              <termid>T71</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M80</id>
+              <termid>T72</termid>
+              <connections>
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -523,7 +611,7 @@
               <instance ref="i1"></instance>
               <instance ref="i2"></instance>
               <instance ref="i5"></instance>
-              <instance ref="i19"></instance>
+              <instance ref="i20"></instance>
             </instances>
           </page>
         </pages>
