@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 2 )
+			( logicalViewRevNum 5 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -350,52 +350,350 @@
 			( allRules )
 			( design "front_ports"
 			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_in"
-				( objectStatus "ecl_to_lvds_in" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_out_n"
-				( objectStatus "ecl_to_lvds_out_n" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_out_p"
-				( objectStatus "ecl_to_lvds_out_p" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_nim_in"
-				( objectStatus "ecl_to_nim_in" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_nim_out"
-				( objectStatus "ecl_to_nim_out" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_ttl_in"
-				( objectStatus "ecl_to_ttl_in" )
-			)
 			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_ttl_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_out") )
 				( objectStatus "ecl_to_ttl_out" )
 			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_in_n"
-				( objectStatus "lvds_to_ecl_in_n" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_in_p"
-				( objectStatus "lvds_to_ecl_in_p" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_out"
-				( objectStatus "lvds_to_ecl_out" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):nim_to_ecl_in"
-				( objectStatus "nim_to_ecl_in" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):nim_to_ecl_out"
-				( objectStatus "nim_to_ecl_out" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ttl_to_ecl_in"
-				( objectStatus "ttl_to_ecl_in" )
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_in") )
+				( objectStatus "ecl_to_lvds_in" )
 			)
 			( signal "@tubii_tk2_lib.front_ports(sch_1):ttl_to_ecl_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_out") )
 				( objectStatus "ttl_to_ecl_out" )
 			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):unnamed_1_conn34_i12_1"
-				( objectStatus "unnamed_1_conn34_i12_1" )
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ttl_to_ecl_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_in") )
+				( objectStatus "ttl_to_ecl_in" )
 			)
-			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i12"
+			( signal "@tubii_tk2_lib.front_ports(sch_1):nim_to_ecl_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_out") )
+				( objectStatus "nim_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):nim_to_ecl_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_in") )
+				( objectStatus "nim_to_ecl_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_out") )
+				( objectStatus "lvds_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_in_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_p") )
+				( objectStatus "lvds_to_ecl_in_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_in_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_n") )
+				( objectStatus "lvds_to_ecl_in_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_ttl_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_in") )
+				( objectStatus "ecl_to_ttl_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_nim_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_out") )
+				( objectStatus "ecl_to_nim_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_nim_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_in") )
+				( objectStatus "ecl_to_nim_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_out_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_p") )
+				( objectStatus "ecl_to_lvds_out_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_out_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_n") )
+				( objectStatus "ecl_to_lvds_out_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):unnamed_1_conn34_i1_1"
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i1"
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,425,125,-425"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1600,2950)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CONN34"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CONN34"
+					( Origin gPackager )
+				)
+				( pin "\1\"
+					( objectStatus "page1_i1.1" )
+				)
+				( pin "\2\"
+					( objectStatus "page1_i1.2" )
+				)
+				( pin "\3\"
+					( objectStatus "page1_i1.3" )
+				)
+				( pin "\4\"
+					( objectStatus "page1_i1.4" )
+				)
+				( pin "\5\"
+					( objectStatus "page1_i1.5" )
+				)
+				( pin "\6\"
+					( objectStatus "page1_i1.6" )
+				)
+				( pin "\7\"
+					( objectStatus "page1_i1.7" )
+				)
+				( pin "\8\"
+					( objectStatus "page1_i1.8" )
+				)
+				( pin "\9\"
+					( objectStatus "page1_i1.9" )
+				)
+				( pin "\10\"
+					( objectStatus "page1_i1.10" )
+				)
+				( pin "\11\"
+					( objectStatus "page1_i1.11" )
+				)
+				( pin "\12\"
+					( objectStatus "page1_i1.12" )
+				)
+				( pin "\13\"
+					( objectStatus "page1_i1.13" )
+				)
+				( pin "\14\"
+					( objectStatus "page1_i1.14" )
+				)
+				( pin "\15\"
+					( objectStatus "page1_i1.15" )
+				)
+				( pin "\16\"
+					( objectStatus "page1_i1.16" )
+				)
+				( pin "\17\"
+					( objectStatus "page1_i1.17" )
+				)
+				( pin "\18\"
+					( objectStatus "page1_i1.18" )
+				)
+				( pin "\19\"
+					( objectStatus "page1_i1.19" )
+				)
+				( pin "\20\"
+					( objectStatus "page1_i1.20" )
+				)
+				( pin "\21\"
+					( objectStatus "page1_i1.21" )
+				)
+				( pin "\22\"
+					( objectStatus "page1_i1.22" )
+				)
+				( pin "\23\"
+					( objectStatus "page1_i1.23" )
+				)
+				( pin "\24\"
+					( objectStatus "page1_i1.24" )
+				)
+				( pin "\25\"
+					( objectStatus "page1_i1.25" )
+				)
+				( pin "\26\"
+					( objectStatus "page1_i1.26" )
+				)
+				( pin "\27\"
+					( objectStatus "page1_i1.27" )
+				)
+				( pin "\28\"
+					( objectStatus "page1_i1.28" )
+				)
+				( pin "\29\"
+					( objectStatus "page1_i1.29" )
+				)
+				( pin "\30\"
+					( objectStatus "page1_i1.30" )
+				)
+				( pin "\31\"
+					( objectStatus "page1_i1.31" )
+				)
+				( pin "\32\"
+					( objectStatus "page1_i1.32" )
+				)
+				( pin "\33\"
+					( objectStatus "page1_i1.33" )
+				)
+				( pin "\34\"
+					( objectStatus "page1_i1.34" )
+				)
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_lvds_out_n"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_lvds_out_p"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_nim_in"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_nim_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_ttl_in"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:lvds_to_ecl_in_n"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:lvds_to_ecl_in_p"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:lvds_to_ecl_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:nim_to_ecl_in"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:nim_to_ecl_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ttl_to_ecl_out"
+			)
+			( designInst "@tubii_tk2_lib.front_ports(sch_1):page1_i21"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_tk2_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-175,1525)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i21 (translation_ports)" )
+			)
+		)
+	)
+	( BaseCopy "translation_ports"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 2 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "translation_ports"
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_in"
+				( objectStatus "ecl_to_lvds_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_n"
+				( objectStatus "ecl_to_lvds_out_n" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_p"
+				( objectStatus "ecl_to_lvds_out_p" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_in"
+				( objectStatus "ecl_to_nim_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_out"
+				( objectStatus "ecl_to_nim_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_in"
+				( objectStatus "ecl_to_ttl_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_out"
+				( objectStatus "ecl_to_ttl_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_n"
+				( objectStatus "lvds_to_ecl_in_n" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_p"
+				( objectStatus "lvds_to_ecl_in_p" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_out"
+				( objectStatus "lvds_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_in"
+				( objectStatus "nim_to_ecl_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_out"
+				( objectStatus "nim_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_in"
+				( objectStatus "ttl_to_ecl_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_out"
+				( objectStatus "ttl_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):unnamed_1_conn34_i1_1"
+				( objectStatus "unnamed_1_conn34_i1_1" )
+			)
+			( gate "@tubii_tk2_lib.translation_ports(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
@@ -411,7 +709,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(1000,3675)"
+				( attribute "XY" "(-1600,2950)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CONN34"
@@ -420,7 +718,7 @@
 				( attribute "CDS_PART_NAME" "CONN34"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I12" )
+				( objectStatus "PAGE1_I1" )
 				( pin "\1\"
 				)
 				( pin "\2\"
@@ -491,5 +789,7 @@
 				)
 			)
 		)
+	)
+	( EndBaseCopy )
 	)
 )

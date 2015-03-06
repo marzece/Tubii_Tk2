@@ -8,8 +8,8 @@
   (design "tubii"
     (lastIds
       (lastInstanceId 3)
-      (lastNetId 29)
-      (lastInstTermId 106)
+      (lastNetId 84)
+      (lastInstTermId 174)
     )
     (cells
       ("S1" "tubii_pcb" "tubii_tk2_lib" "sym_1"
@@ -28,24 +28,70 @@
           ("T56" "nim_to_ecl_in" -1 -1 1)
           ("T57" "nim_to_ecl_out" -1 -1 2)
           ("T58" "ttl_to_ecl_in" -1 -1 1)
+          ("T75" "caen_out_anal" 7 0 2)
+          ("T76" "clk100_n" -1 -1 2)
+          ("T77" "clk100_p" -1 -1 2)
+          ("T78" "dgt_n" -1 -1 2)
+          ("T79" "dgt_p" -1 -1 2)
+          ("T80" "ext_ped_in" -1 -1 1)
+          ("T81" "ext_ped_out" -1 -1 2)
+          ("T82" "ext_trig_in" 15 0 1)
+          ("T83" "generic_delay_in" -1 -1 1)
+          ("T84" "generic_delay_out" -1 -1 2)
+          ("T85" "generic_pulse_out" -1 -1 2)
+          ("T86" "gt_n" -1 -1 1)
+          ("T87" "gt_nim" -1 -1 2)
+          ("T88" "gt_p" -1 -1 1)
+          ("T89" "lo_star_out_n" -1 -1 2)
+          ("T90" "lo_star_out_p" -1 -1 2)
+          ("T91" "mtca_mimi2_pulse_anal" -1 -1 1)
+          ("T92" "mtca_mimic1_out_n" -1 -1 2)
+          ("T93" "mtca_mimic1_out_p" -1 -1 2)
+          ("T94" "mtca_mimic1_pulse_anal" -1 -1 1)
+          ("T95" "mtca_mimic2_out_n" -1 -1 2)
+          ("T96" "mtca_mimic2_out_p" -1 -1 2)
+          ("T97" "mtcd_lo*" -1 -1 1)
+          ("T98" "pulse_in_anal" 11 0 1)
+          ("T99" "pulse_inv_out" -1 -1 2)
+          ("T100" "ribbon_pulse_in_n" -1 -1 1)
+          ("T101" "ribbon_pulse_in_p" -1 -1 1)
+          ("T102" "ribbon_pulse_out_n" -1 -1 2)
+          ("T103" "ribbon_pulse_out_p" -1 -1 2)
+          ("T104" "scaler" 6 1 2)
+          ("T105" "scope_out_anal" 7 0 2)
+          ("T106" "smellie_delay_in" -1 -1 1)
+          ("T107" "smellie_delay_out" -1 -1 2)
+          ("T108" "smellie_pulse_out" -1 -1 2)
+          ("T109" "sync24_lvds_n" -1 -1 2)
+          ("T110" "sync24_lvds_p" -1 -1 2)
+          ("T111" "sync24_n" -1 -1 1)
+          ("T112" "sync24_p" -1 -1 1)
+          ("T113" "sync_lvds_n" -1 -1 2)
+          ("T114" "sync_lvds_p" -1 -1 2)
+          ("T115" "sync_n" -1 -1 1)
+          ("T116" "sync_p" -1 -1 1)
+          ("T117" "tellie_delay_in" -1 -1 1)
+          ("T118" "tellie_delay_out" -1 -1 2)
+          ("T119" "tellie_pulse_out" -1 -1 2)
+          ("T120" "tub_clk_in" -1 -1 1)
         )
       )
       ("S2" "front_ports" "tubii_tk2_lib" "sym_1"
         (terms
-          ("T33" "ecl_to_lvds_in" -1 -1 2)
-          ("T34" "ecl_to_lvds_out_n" -1 -1 1)
-          ("T35" "ecl_to_lvds_out_p" -1 -1 1)
-          ("T36" "ecl_to_nim_in" -1 -1 2)
-          ("T37" "ecl_to_nim_out" -1 -1 1)
-          ("T38" "ecl_to_ttl_in" -1 -1 2)
-          ("T39" "ecl_to_ttl_out" -1 -1 1)
-          ("T40" "lvds_to_ecl_in_n" -1 -1 2)
-          ("T41" "lvds_to_ecl_in_p" -1 -1 2)
-          ("T42" "lvds_to_ecl_out" -1 -1 1)
-          ("T43" "nim_to_ecl_in" -1 -1 2)
-          ("T44" "nim_to_ecl_out" -1 -1 1)
-          ("T45" "ttl_to_ecl_in" -1 -1 2)
-          ("T46" "ttl_to_ecl_out" -1 -1 1)
+          ("T121" "ecl_to_lvds_out_n" -1 -1 1)
+          ("T122" "ecl_to_lvds_out_p" -1 -1 1)
+          ("T123" "ecl_to_nim_in" -1 -1 2)
+          ("T124" "ecl_to_nim_out" -1 -1 1)
+          ("T125" "ecl_to_ttl_in" -1 -1 2)
+          ("T126" "lvds_to_ecl_in_n" -1 -1 2)
+          ("T127" "lvds_to_ecl_in_p" -1 -1 2)
+          ("T128" "lvds_to_ecl_out" -1 -1 1)
+          ("T129" "nim_to_ecl_in" -1 -1 2)
+          ("T130" "nim_to_ecl_out" -1 -1 1)
+          ("T131" "ttl_to_ecl_in" -1 -1 2)
+          ("T132" "ttl_to_ecl_out" -1 -1 1)
+          ("T133" "ecl_to_lvds_in" -1 -1 2)
+          ("T134" "ecl_to_ttl_out" -1 -1 1)
         )
       )
       ("S3" "back_ports" "tubii_tk2_lib" "sym_1"
@@ -67,6 +113,53 @@
       ("N19" "unnamed_1_frontports_i2_nimtoeclout" -1 -1 0 )
       ("N20" "unnamed_1_frontports_i2_ttltoeclin" -1 -1 0 )
       ("N21" "unnamed_1_frontports_i2_ttltoeclout" -1 -1 0 )
+      ("N38" "unnamed_1_frontports_i2_caenoutanal" 7 0 0 )
+      ("N39" "unnamed_1_frontports_i2_clk100n" -1 -1 0 )
+      ("N40" "unnamed_1_frontports_i2_clk100p" -1 -1 0 )
+      ("N41" "unnamed_1_frontports_i2_dgtn" -1 -1 0 )
+      ("N42" "unnamed_1_frontports_i2_dgtp" -1 -1 0 )
+      ("N43" "unnamed_1_frontports_i2_extpedin" -1 -1 0 )
+      ("N44" "unnamed_1_frontports_i2_extpedout" -1 -1 0 )
+      ("N45" "unnamed_1_frontports_i2_exttrigin" 15 0 0 )
+      ("N46" "unnamed_1_frontports_i2_genericdelayin" -1 -1 0 )
+      ("N47" "unnamed_1_frontports_i2_genericdelayout" -1 -1 0 )
+      ("N48" "unnamed_1_frontports_i2_genericpulseout" -1 -1 0 )
+      ("N49" "unnamed_1_frontports_i2_gtn" -1 -1 0 )
+      ("N50" "unnamed_1_frontports_i2_gtnim" -1 -1 0 )
+      ("N51" "unnamed_1_frontports_i2_gtp" -1 -1 0 )
+      ("N52" "unnamed_1_frontports_i2_lostaroutn" -1 -1 0 )
+      ("N53" "unnamed_1_frontports_i2_lostaroutp" -1 -1 0 )
+      ("N54" "unnamed_1_frontports_i2_mtcamimi2pulseanal" -1 -1 0 )
+      ("N55" "unnamed_1_frontports_i2_mtcamimic1outn" -1 -1 0 )
+      ("N56" "unnamed_1_frontports_i2_mtcamimic1outp" -1 -1 0 )
+      ("N57" "unnamed_1_frontports_i2_mtcamimic1pulseanal" -1 -1 0 )
+      ("N58" "unnamed_1_frontports_i2_mtcamimic2outn" -1 -1 0 )
+      ("N59" "unnamed_1_frontports_i2_mtcamimic2outp" -1 -1 0 )
+      ("N60" "unnamed_1_frontports_i2_mtcdlo" -1 -1 0 )
+      ("N61" "unnamed_1_frontports_i2_pulseinanal" 11 0 0 )
+      ("N62" "unnamed_1_frontports_i2_pulseinvin" -1 -1 0 )
+      ("N63" "unnamed_1_frontports_i2_pulseinvout" -1 -1 0 )
+      ("N64" "unnamed_1_frontports_i2_ribbonpulseinn" -1 -1 0 )
+      ("N65" "unnamed_1_frontports_i2_ribbonpulseinp" -1 -1 0 )
+      ("N66" "unnamed_1_frontports_i2_ribbonpulseoutn" -1 -1 0 )
+      ("N67" "unnamed_1_frontports_i2_ribbonpulseoutp" -1 -1 0 )
+      ("N68" "unnamed_1_frontports_i2_scaler" 6 1 0 )
+      ("N69" "unnamed_1_frontports_i2_scopeoutanal" 7 0 0 )
+      ("N70" "unnamed_1_frontports_i2_smelliedelayin" -1 -1 0 )
+      ("N71" "unnamed_1_frontports_i2_smelliedelayout" -1 -1 0 )
+      ("N72" "unnamed_1_frontports_i2_smelliepulseout" -1 -1 0 )
+      ("N73" "unnamed_1_frontports_i2_sync24lvdsn" -1 -1 0 )
+      ("N74" "unnamed_1_frontports_i2_sync24lvdsp" -1 -1 0 )
+      ("N75" "unnamed_1_frontports_i2_sync24n" -1 -1 0 )
+      ("N76" "unnamed_1_frontports_i2_sync24p" -1 -1 0 )
+      ("N77" "unnamed_1_frontports_i2_synclvdsn" -1 -1 0 )
+      ("N78" "unnamed_1_frontports_i2_synclvdsp" -1 -1 0 )
+      ("N79" "unnamed_1_frontports_i2_syncn" -1 -1 0 )
+      ("N80" "unnamed_1_frontports_i2_syncp" -1 -1 0 )
+      ("N81" "unnamed_1_frontports_i2_telliedelayin" -1 -1 0 )
+      ("N82" "unnamed_1_frontports_i2_telliedelayout" -1 -1 0 )
+      ("N83" "unnamed_1_frontports_i2_telliepulseout" -1 -1 0 )
+      ("N84" "unnamed_1_frontports_i2_tubclkin" -1 -1 0 )
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vcc" "vcc" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
@@ -150,78 +243,308 @@
               ("0" -1 -1 "N20" -1 -1)
             )
           )
+          ("M115" "T75" 7 0
+            (conn
+              ("0" 7 0 "N38" 7 0)
+            )
+          )
+          ("M116" "T76" -1 -1
+            (conn
+              ("0" -1 -1 "N39" -1 -1)
+            )
+          )
+          ("M117" "T77" -1 -1
+            (conn
+              ("0" -1 -1 "N40" -1 -1)
+            )
+          )
+          ("M118" "T78" -1 -1
+            (conn
+              ("0" -1 -1 "N41" -1 -1)
+            )
+          )
+          ("M119" "T79" -1 -1
+            (conn
+              ("0" -1 -1 "N42" -1 -1)
+            )
+          )
+          ("M120" "T80" -1 -1
+            (conn
+              ("0" -1 -1 "N43" -1 -1)
+            )
+          )
+          ("M121" "T81" -1 -1
+            (conn
+              ("0" -1 -1 "N44" -1 -1)
+            )
+          )
+          ("M122" "T82" 15 0
+            (conn
+              ("0" 15 0 "N45" 15 0)
+            )
+          )
+          ("M123" "T83" -1 -1
+            (conn
+              ("0" -1 -1 "N46" -1 -1)
+            )
+          )
+          ("M124" "T84" -1 -1
+            (conn
+              ("0" -1 -1 "N47" -1 -1)
+            )
+          )
+          ("M125" "T85" -1 -1
+            (conn
+              ("0" -1 -1 "N48" -1 -1)
+            )
+          )
+          ("M126" "T86" -1 -1
+            (conn
+              ("0" -1 -1 "N49" -1 -1)
+            )
+          )
+          ("M127" "T87" -1 -1
+            (conn
+              ("0" -1 -1 "N50" -1 -1)
+            )
+          )
+          ("M128" "T88" -1 -1
+            (conn
+              ("0" -1 -1 "N51" -1 -1)
+            )
+          )
+          ("M129" "T89" -1 -1
+            (conn
+              ("0" -1 -1 "N52" -1 -1)
+            )
+          )
+          ("M130" "T90" -1 -1
+            (conn
+              ("0" -1 -1 "N53" -1 -1)
+            )
+          )
+          ("M131" "T91" -1 -1
+            (conn
+              ("0" -1 -1 "N54" -1 -1)
+            )
+          )
+          ("M132" "T92" -1 -1
+            (conn
+              ("0" -1 -1 "N55" -1 -1)
+            )
+          )
+          ("M133" "T93" -1 -1
+            (conn
+              ("0" -1 -1 "N56" -1 -1)
+            )
+          )
+          ("M134" "T94" -1 -1
+            (conn
+              ("0" -1 -1 "N57" -1 -1)
+            )
+          )
+          ("M135" "T95" -1 -1
+            (conn
+              ("0" -1 -1 "N58" -1 -1)
+            )
+          )
+          ("M136" "T96" -1 -1
+            (conn
+              ("0" -1 -1 "N59" -1 -1)
+            )
+          )
+          ("M137" "T97" -1 -1
+            (conn
+              ("0" -1 -1 "N60" -1 -1)
+            )
+          )
+          ("M138" "T98" 11 0
+            (conn
+              ("0" 11 0 "N61" 11 0)
+            )
+          )
+          ("M139" "T99" -1 -1
+            (conn
+              ("0" -1 -1 "N63" -1 -1)
+            )
+          )
+          ("M140" "T100" -1 -1
+            (conn
+              ("0" -1 -1 "N64" -1 -1)
+            )
+          )
+          ("M141" "T101" -1 -1
+            (conn
+              ("0" -1 -1 "N65" -1 -1)
+            )
+          )
+          ("M142" "T102" -1 -1
+            (conn
+              ("0" -1 -1 "N66" -1 -1)
+            )
+          )
+          ("M143" "T103" -1 -1
+            (conn
+              ("0" -1 -1 "N67" -1 -1)
+            )
+          )
+          ("M144" "T104" 6 1
+            (conn
+              ("0" 6 1 "N68" 6 1)
+            )
+          )
+          ("M145" "T105" 7 0
+            (conn
+              ("0" 7 0 "N69" 7 0)
+            )
+          )
+          ("M146" "T106" -1 -1
+            (conn
+              ("0" -1 -1 "N70" -1 -1)
+            )
+          )
+          ("M147" "T107" -1 -1
+            (conn
+              ("0" -1 -1 "N71" -1 -1)
+            )
+          )
+          ("M148" "T108" -1 -1
+            (conn
+              ("0" -1 -1 "N72" -1 -1)
+            )
+          )
+          ("M149" "T109" -1 -1
+            (conn
+              ("0" -1 -1 "N73" -1 -1)
+            )
+          )
+          ("M150" "T110" -1 -1
+            (conn
+              ("0" -1 -1 "N74" -1 -1)
+            )
+          )
+          ("M151" "T111" -1 -1
+            (conn
+              ("0" -1 -1 "N75" -1 -1)
+            )
+          )
+          ("M152" "T112" -1 -1
+            (conn
+              ("0" -1 -1 "N76" -1 -1)
+            )
+          )
+          ("M153" "T113" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
+          )
+          ("M154" "T114" -1 -1
+            (conn
+              ("0" -1 -1 "N78" -1 -1)
+            )
+          )
+          ("M155" "T115" -1 -1
+            (conn
+              ("0" -1 -1 "N79" -1 -1)
+            )
+          )
+          ("M156" "T116" -1 -1
+            (conn
+              ("0" -1 -1 "N80" -1 -1)
+            )
+          )
+          ("M157" "T117" -1 -1
+            (conn
+              ("0" -1 -1 "N81" -1 -1)
+            )
+          )
+          ("M158" "T118" -1 -1
+            (conn
+              ("0" -1 -1 "N82" -1 -1)
+            )
+          )
+          ("M159" "T119" -1 -1
+            (conn
+              ("0" -1 -1 "N83" -1 -1)
+            )
+          )
+          ("M160" "T120" -1 -1
+            (conn
+              ("0" -1 -1 "N84" -1 -1)
+            )
+          )
         )
       )
       ("I2" "page1_i2" "S2"
         (pins
-          ("M26" "T33" -1 -1
-            (conn
-              ("0" -1 -1 "N8" -1 -1)
-            )
-          )
-          ("M27" "T34" -1 -1
+          ("M161" "T121" -1 -1
             (conn
               ("0" -1 -1 "N9" -1 -1)
             )
           )
-          ("M28" "T35" -1 -1
+          ("M162" "T122" -1 -1
             (conn
               ("0" -1 -1 "N10" -1 -1)
             )
           )
-          ("M29" "T36" -1 -1
+          ("M163" "T123" -1 -1
             (conn
               ("0" -1 -1 "N11" -1 -1)
             )
           )
-          ("M30" "T37" -1 -1
+          ("M164" "T124" -1 -1
             (conn
               ("0" -1 -1 "N12" -1 -1)
             )
           )
-          ("M31" "T38" -1 -1
+          ("M165" "T125" -1 -1
             (conn
               ("0" -1 -1 "N13" -1 -1)
             )
           )
-          ("M32" "T39" -1 -1
-            (conn
-              ("0" -1 -1 "N14" -1 -1)
-            )
-          )
-          ("M33" "T40" -1 -1
+          ("M166" "T126" -1 -1
             (conn
               ("0" -1 -1 "N15" -1 -1)
             )
           )
-          ("M34" "T41" -1 -1
+          ("M167" "T127" -1 -1
             (conn
               ("0" -1 -1 "N16" -1 -1)
             )
           )
-          ("M35" "T42" -1 -1
+          ("M168" "T128" -1 -1
             (conn
               ("0" -1 -1 "N17" -1 -1)
             )
           )
-          ("M36" "T43" -1 -1
+          ("M169" "T129" -1 -1
             (conn
               ("0" -1 -1 "N18" -1 -1)
             )
           )
-          ("M37" "T44" -1 -1
+          ("M170" "T130" -1 -1
             (conn
               ("0" -1 -1 "N19" -1 -1)
             )
           )
-          ("M38" "T45" -1 -1
+          ("M171" "T131" -1 -1
             (conn
               ("0" -1 -1 "N20" -1 -1)
             )
           )
-          ("M39" "T46" -1 -1
+          ("M172" "T132" -1 -1
             (conn
               ("0" -1 -1 "N21" -1 -1)
+            )
+          )
+          ("M173" "T133" -1 -1
+            (conn
+              ("0" -1 -1 "N8" -1 -1)
+            )
+          )
+          ("M174" "T134" -1 -1
+            (conn
+              ("0" -1 -1 "N14" -1 -1)
             )
           )
         )
