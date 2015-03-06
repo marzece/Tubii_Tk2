@@ -8,7 +8,7 @@
   (design "ellie_coms"
     (lastIds
       (lastInstanceId 16)
-      (lastNetId 30)
+      (lastNetId 44)
       (lastInstTermId 100)
     )
     (cells
@@ -87,23 +87,23 @@
     )
 
     (nets
-      ("N10" "smellie_delay_in_ecl" -1 -1 1 1)
-      ("N11" "tellie_delay_in_ecl" -1 -1 1 1)
       ("N13" "smellie_delay_buf_n" -1 -1 0 )
       ("N14" "smellie_delay_buf_p" -1 -1 0 )
       ("N15" "smellie_delay_out" -1 -1 1 2)
-      ("N16" "smellie_delay_pulse" -1 -1 0 )
-      ("N17" "smellie_predelay" -1 -1 1 1)
       ("N18" "smellie_pulse_out" -1 -1 1 2)
       ("N19" "smellile_pulse" -1 -1 1 1)
       ("N20" "tellie_delay_buf_n" -1 -1 0 )
       ("N21" "tellie_delay_buf_p" -1 -1 0 )
       ("N22" "tellie_delay_out" -1 -1 1 2)
-      ("N23" "tellie_delay_pulse" -1 -1 0 )
-      ("N24" "tellie_predelay" -1 -1 1 1)
       ("N25" "tellie_pulse" -1 -1 1 1)
       ("N26" "tellie_pulse_out" -1 -1 1 2)
       ("N27" "unnamed_1_csmd0603_i10_b" -1 -1 0 )
+      ("N32" "smellie_pre_delay_ecl" -1 -1 1 1)
+      ("N35" "tellie_pre_delay_ecl" -1 -1 1 1)
+      ("N41" "smellie_delay_out_ttl" -1 -1 1 1)
+      ("N42" "tellie_delay_out_ttl" -1 -1 1 1)
+      ("N43" "smellie_pre_delay_ttl" -1 -1 1 2)
+      ("N44" "tellie_pre_delay_ttl" -1 -1 1 2)
       ("N12" "gnd" -1 -1 2 )
       ("N28" "vcc" -1 -1 2 )
       ("N29" "vee" -1 -1 2 )
@@ -148,12 +148,12 @@
           )
           ("M10" "T10" -1 -1
             (conn
-              ("0" -1 -1 "N16" -1 -1)
+              ("0" -1 -1 "N43" -1 -1)
             )
           )
           ("M11" "T11" -1 -1
             (conn
-              ("0" -1 -1 "N23" -1 -1)
+              ("0" -1 -1 "N44" -1 -1)
             )
           )
           ("M12" "T12" -1 -1
@@ -178,7 +178,7 @@
         (pins
           ("M45" "T57" -1 -1
             (conn
-              ("0" -1 -1 "N17" -1 -1)
+              ("0" -1 -1 "N41" -1 -1)
             )
           )
           ("M46" "T58" -1 -1
@@ -190,7 +190,7 @@
           )
           ("M48" "T60" -1 -1
             (conn
-              ("0" -1 -1 "N24" -1 -1)
+              ("0" -1 -1 "N42" -1 -1)
             )
           )
           ("M49" "T61" -1 -1
@@ -395,7 +395,7 @@
           )
           ("M82" "T76" 0 0
             (conn
-              ("0" 0 0 "N10" -1 -1)
+              ("0" 0 0 "N32" -1 -1)
             )
           )
         )
@@ -409,7 +409,7 @@
           )
           ("M84" "T76" 0 0
             (conn
-              ("0" 0 0 "N11" -1 -1)
+              ("0" 0 0 "N35" -1 -1)
             )
           )
         )
@@ -418,7 +418,7 @@
         (pins
           ("M85" "T77" -1 -1
             (conn
-              ("0" -1 -1 "N10" -1 -1)
+              ("0" -1 -1 "N32" -1 -1)
             )
           )
           ("M86" "T78" -1 -1
@@ -428,7 +428,7 @@
           )
           ("M87" "T79" -1 -1
             (conn
-              ("0" -1 -1 "N11" -1 -1)
+              ("0" -1 -1 "N35" -1 -1)
             )
           )
           ("M88" "T80" -1 -1

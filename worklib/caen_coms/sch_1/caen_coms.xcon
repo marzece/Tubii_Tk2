@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-05T16:04:52</modificationTime>
+    <modificationTime>2015-03-05T19:39:29</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_coms" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>27</instanceid>
-        <netid>107</netid>
-        <insttermid>281</insttermid>
+        <netid>109</netid>
+        <insttermid>283</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -144,6 +143,16 @@
             <term>
               <id>T172</id>
               <name>gt2_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T173</id>
+              <name>sync24_ttl</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T174</id>
+              <name>sync_ttl</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -279,6 +288,18 @@
         <net>
           <id>N107</id>
           <name>gt2_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N108</id>
+          <name>sync24_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N109</id>
+          <name>sync_ttl</name>
           <scope>interface</scope>
           <direction>output</direction>
         </net>
@@ -515,6 +536,20 @@
                 <connection net="N107" />
               </connections>
             </pin>
+            <pin>
+              <id>M282</id>
+              <termid>T173</termid>
+              <connections>
+                <connection net="N108" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M283</id>
+              <termid>T174</termid>
+              <connections>
+                <connection net="N109" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -533,6 +568,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="caen_out_anal">
             <pageScope number="1">
@@ -636,6 +672,12 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="sync24_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="sync_lvds_n">
             <pageScope number="1">
               <scope>interface</scope>
@@ -658,6 +700,12 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
         </netScopes>
@@ -692,10 +740,12 @@
               <net ref="sync24_lvds_p"></net>
               <net ref="sync24_n"></net>
               <net ref="sync24_p"></net>
+              <net ref="sync24_ttl"></net>
               <net ref="sync_lvds_n"></net>
               <net ref="sync_lvds_p"></net>
               <net ref="sync_n"></net>
               <net ref="sync_p"></net>
+              <net ref="sync_ttl"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>

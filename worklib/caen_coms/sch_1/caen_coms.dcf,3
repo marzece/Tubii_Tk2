@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 18 )
+			( logicalViewRevNum 19 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -1487,8 +1487,18 @@
 				( objectStatus "gt_ttl" )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):gt2_n"
+				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_n") )
+				( objectStatus "gt2_n" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):gt2_p"
+				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_p") )
+				( objectStatus "gt2_p" )
 			)
 			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"

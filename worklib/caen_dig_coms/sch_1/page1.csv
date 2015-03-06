@@ -2,35 +2,35 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"GT_2";
-2"GT2_N";
-3"GT2_P";
-4"SYNC_P";
-5"UN$1$MC10E116$I1$Q3";
-6"GT_N";
-7"GT_P";
-8"GT_TTL";
-9"SYNC24_TTL";
-10"VEE\G";
+1"GND\G";
+2"SYNC_2_N";
+3"SYNC24_TTL";
+4"GT_TTL";
+5"SYNC_TTL";
+6"UN$1$MC10E116$I1$Q3$1";
+7"UN$1$MC10E116$I1$Q3";
+8"GT_2";
+9"SYNC24_2_N";
+10"SYNC24_2_P";
 11"SYNC_2_P";
-12"SYNC24_2_P";
-13"GND\G";
-14"UN$1$MC10E116$I1$Q3$1";
-15"SYNC24_N";
-16"SYNC24_P";
+12"GT2_N";
+13"GT2_P";
+14"SYNC_P";
+15"GT_N";
+16"GT_P";
 17"VEE\G";
-18"SYNC24_2_N";
-19"SYNC_2_N";
-20"SYNC24_LVDS_N";
-21"SYNC24_LVDS_P";
-22"SYNC_LVDS_N";
-23"SYNC_LVDS_P";
-24"GND\G";
-25"VCC\G";
+18"SYNC24_N";
+19"SYNC24_P";
+20"VEE\G";
+21"SYNC24_LVDS_N";
+22"SYNC24_LVDS_P";
+23"SYNC_LVDS_N";
+24"SYNC_LVDS_P";
+25"GND\G";
 26"VCC\G";
-27"GND\G";
-28"VEE\G";
-29"SYNC_TTL";
+27"VCC\G";
+28"GND\G";
+29"VEE\G";
 30"UN$1$MMBTH81$I9$C";
 31"GT_NIM";
 32"VTT\G";
@@ -42,34 +42,34 @@ FILE_TYPE = CONNECTIVITY;
 ROOM"CAEN_DIG"
 CDS_LIB"ecl"
 CDS_LMAN_SYM_OUTLINE"-175,400,175,-275";
-"VEE"17;
-"GND0"13;
+"VEE"20;
+"GND0"1;
 "VBB"0;
-"D0"4;
-"D1"16;
-"D2"7;
-"D3"7;
-"D4"7;
+"D0"14;
+"D1"19;
+"D2"16;
+"D3"16;
+"D4"16;
 "D0* \B"34;
-"D1* \B"15;
-"D2* \B"6;
-"D3* \B"6;
-"D4* \B"6;
+"D1* \B"18;
+"D2* \B"15;
+"D3* \B"15;
+"D4* \B"15;
 "Q0"11;
-"Q1"12;
-"Q2"1;
-"Q3"14;
-"Q4"3;
-"Q0* \B"19;
-"Q1* \B"18;
+"Q1"10;
+"Q2"8;
+"Q3"6;
+"Q4"13;
+"Q0* \B"2;
+"Q1* \B"9;
 "Q2* \B"0;
-"Q3* \B"5;
-"Q4* \B"2;
-"GND1"13;
-"GND2"13;
-"GND3"13;
-"GND4"13;
-"GND5"13;
+"Q3* \B"7;
+"Q4* \B"12;
+"GND1"1;
+"GND2"1;
+"GND3"1;
+"GND4"1;
+"GND5"1;
 %"RSMD0805"
 "1","(-1800,1275)","0","resistors","I10";
 ;
@@ -93,7 +93,7 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors"
 TOL"1%";
 "A<0>"31;
-"B<0>"27;
+"B<0>"28;
 %"RSMD0805"
 "1","(-1650,850)","0","resistors","I11";
 ;
@@ -117,7 +117,7 @@ NEGTOL"5%"
 IC"UNDEF"
 DIST"FLAT";
 "A<0>"30;
-"B<0>"28;
+"B<0>"29;
 %"OUTPORT"
 "1","(-1250,1625)","0","standard","I12";
 ;
@@ -132,14 +132,14 @@ HDL_PORT"OUT"31;
 ROOM"CAEN_DIG"
 CDS_LMAN_SYM_OUTLINE"-125,225,125,-125"
 CDS_LIB"misc";
-"Q2* \B"20;
-"Q1* \B"22;
-"Q2"21;
-"Q1"23;
-"GND"24;
-"D2"9;
-"D1"29;
-"VCC"25;
+"Q2* \B"21;
+"Q1* \B"23;
+"Q2"22;
+"Q1"24;
+"GND"25;
+"D2"3;
+"D1"5;
+"VCC"26;
 %"RSMD0805"
 "1","(-2675,2975)","1","resistors","I15";
 ;
@@ -162,7 +162,7 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 PACKTYPE"0805"
 CDS_LIB"resistors"
 POSTOL"5%";
-"A<0>"1;
+"A<0>"8;
 "B<0>"32;
 %"RSMD0805"
 "1","(-2625,2950)","1","resistors","I16";
@@ -186,7 +186,7 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors"
 PACKTYPE"0805"
 POSTOL"5%";
-"A<0>"18;
+"A<0>"9;
 "B<0>"32;
 %"RSMD0805"
 "1","(-2600,2950)","1","resistors","I17";
@@ -210,7 +210,7 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POSTOL"5%"
 PACKTYPE"0805";
-"A<0>"12;
+"A<0>"10;
 "B<0>"32;
 %"RSMD0805"
 "1","(-2575,2950)","1","resistors","I18";
@@ -234,7 +234,7 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors"
 POSTOL"5%"
 PACKTYPE"0805";
-"A<0>"19;
+"A<0>"2;
 "B<0>"32;
 %"RSMD0805"
 "1","(-2550,2950)","1","resistors","I19";
@@ -267,7 +267,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"4;
+HDL_PORT"IN"14;
 %"CSMD0603"
 "1","(-2375,2675)","0","capacitors","I20";
 ;
@@ -291,7 +291,7 @@ CDS_LIB"capacitors"
 TOL"10%"
 POSTOL"10%";
 "B<0>"33;
-"A<0>"10;
+"A<0>"17;
 %"CSMD0603"
 "1","(-2025,2675)","0","capacitors","I21";
 ;
@@ -314,7 +314,7 @@ MAX_TEMP"CTMAX"
 KNEE"CBMAX"
 NEEDS_NO_SIZE"TRUE"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25";
-"B<0>"26;
+"B<0>"27;
 "A<0>"33;
 %"CSMD0603"
 "1","(-1625,2650)","0","capacitors","I22";
@@ -338,8 +338,8 @@ NEGTOL"10%"
 NEEDS_NO_SIZE"TRUE"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors";
-"B<0>"24;
-"A<0>"25;
+"B<0>"25;
+"A<0>"26;
 %"OUTPORT"
 "1","(-525,2400)","0","standard","I23";
 ;
@@ -347,7 +347,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"23;
+VHDL_PORT"OUT"24;
 %"OUTPORT"
 "1","(-525,2350)","0","standard","I24";
 ;
@@ -355,7 +355,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"22;
+VHDL_PORT"OUT"23;
 %"OUTPORT"
 "1","(-525,2275)","0","standard","I25";
 ;
@@ -363,7 +363,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"21;
+VHDL_PORT"OUT"22;
 %"OUTPORT"
 "1","(-525,2225)","0","standard","I26";
 ;
@@ -371,7 +371,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"20;
+VHDL_PORT"OUT"21;
 %"CSMD0603"
 "1","(-3075,2875)","0","capacitors","I27";
 ;
@@ -394,8 +394,8 @@ NEEDS_NO_SIZE"TRUE"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 POSTOL"10%";
-"B<0>"13;
-"A<0>"17;
+"B<0>"1;
+"A<0>"20;
 %"OUTPORT"
 "1","(-1600,1925)","0","standard","I28";
 ;
@@ -403,7 +403,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"8;
+HDL_PORT"OUT"4;
 %"OUTPORT"
 "1","(-2475,1975)","0","standard","I29";
 ;
@@ -411,7 +411,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"3;
+HDL_PORT"OUT"13;
 %"INPORT"
 "1","(-3750,2375)","0","standard","I3";
 ;
@@ -427,7 +427,23 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"2;
+HDL_PORT"OUT"12;
+%"OUTPORT"
+"1","(-1600,2050)","0","standard","I31";
+;
+CDS_LIB"standard"
+OFFPAGE"TRUE";
+"A"
+HDL_PORT"OUT"
+VHDL_PORT"OUT"3;
+%"OUTPORT"
+"1","(-1575,2125)","0","standard","I32";
+;
+CDS_LIB"standard"
+OFFPAGE"TRUE";
+"A"
+HDL_PORT"OUT"
+VHDL_PORT"OUT"5;
 %"INPORT"
 "1","(-3750,2325)","0","standard","I4";
 ;
@@ -435,7 +451,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"16;
+HDL_PORT"IN"19;
 %"INPORT"
 "1","(-3750,2275)","0","standard","I5";
 ;
@@ -443,7 +459,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"15;
+HDL_PORT"IN"18;
 %"INPORT"
 "1","(-3750,2225)","0","standard","I6";
 ;
@@ -451,7 +467,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"7;
+HDL_PORT"IN"16;
 %"INPORT"
 "1","(-3750,2175)","0","standard","I7";
 ;
@@ -459,27 +475,27 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"6;
+HDL_PORT"IN"15;
 %"MC10H125"
 "1","(-2250,2225)","0","ecl","I8";
 ;
 ROOM"CAEN_DIG"
 CDS_LMAN_SYM_OUTLINE"-125,300,125,-200"
 CDS_LIB"ecl";
-"VCC"26;
+"VCC"27;
 "GND"33;
-"VEE"10;
+"VEE"17;
 "Q4"0;
-"Q3"8;
-"Q2"9;
-"Q1"29;
+"Q3"4;
+"Q2"3;
+"Q1"5;
 "D4* \B"0;
-"D3* \B"5;
-"D2* \B"18;
-"D1* \B"19;
+"D3* \B"7;
+"D2* \B"9;
+"D1* \B"2;
 "D4"0;
-"D3"14;
-"D2"12;
+"D3"6;
+"D2"10;
 "D1"11;
 "VBB"0;
 %"MMBTH81"
@@ -489,6 +505,6 @@ ROOM"CAEN_DIG"
 CDS_LIB"transistors"
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125";
 "E"31;
-"B"1;
+"B"8;
 "C"30;
 END.

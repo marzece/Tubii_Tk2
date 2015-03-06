@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-05T15:34:19</modificationTime>
+    <modificationTime>2015-03-05T15:56:46</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -14,7 +14,7 @@
       <lastids>
         <instanceid>27</instanceid>
         <netid>104</netid>
-        <insttermid>277</insttermid>
+        <insttermid>279</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -255,12 +255,6 @@
           <direction>input</direction>
         </net>
         <net>
-          <id>N104</id>
-          <name>gt_ttl</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
           <id>N73</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -476,7 +470,6 @@
               <id>M277</id>
               <termid>T163</termid>
               <connections>
-                <connection net="N104" />
               </connections>
             </pin>
           </pins>
@@ -539,12 +532,6 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="gt_ttl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="le">
@@ -629,7 +616,6 @@
               <net ref="gt_n"></net>
               <net ref="gt_nim"></net>
               <net ref="gt_p"></net>
-              <net ref="gt_ttl"></net>
               <net ref="le"></net>
               <net ref="pulse_in_anal">
                 <msb>11</msb>
