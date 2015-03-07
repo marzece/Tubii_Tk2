@@ -7,6 +7,83 @@
   (library "tubii_tk2_lib")
   (design "caen_digital_ports"
     (lastIds
+      (lastInstanceId 6)
+      (lastNetId 6)
+      (lastInstTermId 6)
     )
+    (cells
+      ("S1" "testpoint_l" "misc" "sym_1"
+        (terms
+          ("T7" "a" -1 -1 3)
+        )
+      )
+    )
+
+    (nets
+      ("N2" "gt_nim" -1 -1 1 1)
+      ("N3" "sync24_lvds_n" -1 -1 1 1)
+      ("N4" "sync24_lvds_p" -1 -1 1 1)
+      ("N5" "sync_lvds_n" -1 -1 1 1)
+      ("N6" "sync_lvds_p" -1 -1 1 1)
+      ("N1" "gnd" -1 -1 2 )
+    )
+
+    (instances
+      ("I1" "page1_i1" "S1"
+        (pins
+          ("M1" "T7" -1 -1
+            (conn
+              ("0" -1 -1 "N6" -1 -1)
+            )
+          )
+        )
+      )
+      ("I2" "page1_i2" "S1"
+        (pins
+          ("M2" "T7" -1 -1
+            (conn
+              ("0" -1 -1 "N5" -1 -1)
+            )
+          )
+        )
+      )
+      ("I3" "page1_i3" "S1"
+        (pins
+          ("M3" "T7" -1 -1
+            (conn
+              ("0" -1 -1 "N4" -1 -1)
+            )
+          )
+        )
+      )
+      ("I4" "page1_i4" "S1"
+        (pins
+          ("M4" "T7" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+        )
+      )
+      ("I5" "page1_i5" "S1"
+        (pins
+          ("M5" "T7" -1 -1
+            (conn
+              ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+        )
+      )
+      ("I6" "page1_i6" "S1"
+        (pins
+          ("M6" "T7" -1 -1
+            (conn
+              ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
   )
 )

@@ -8,8 +8,8 @@
   (design "tubii"
     (lastIds
       (lastInstanceId 3)
-      (lastNetId 84)
-      (lastInstTermId 213)
+      (lastNetId 94)
+      (lastInstTermId 239)
     )
     (cells
       ("S1" "tubii_pcb" "tubii_tk2_lib" "sym_1"
@@ -74,6 +74,7 @@
           ("T118" "tellie_delay_out" -1 -1 2)
           ("T119" "tellie_pulse_out" -1 -1 2)
           ("T120" "tub_clk_in" -1 -1 1)
+          ("T207" "tubii_rt_out" -1 -1 2)
         )
       )
       ("S2" "front_ports" "tubii_tk2_lib" "sym_1"
@@ -129,6 +130,17 @@
           ("T171" "sync24_lvds_p" -1 -1 1)
           ("T172" "sync_lvds_n" -1 -1 1)
           ("T173" "sync_lvds_p" -1 -1 1)
+          ("T191" "scaler" 6 1 1)
+          ("T193" "mtca_mimic2_pulse_anal" -1 -1 2)
+          ("T194" "ext_trig_in" 15 0 2)
+          ("T195" "ext_ped_out" -1 -1 1)
+          ("T198" "ext_ped_in" -1 -1 2)
+          ("T199" "dgt_n" -1 -1 1)
+          ("T200" "dgt_p" -1 -1 1)
+          ("T203" "mtcd_lo*" -1 -1 2)
+          ("T204" "lo_star_out_n" -1 -1 1)
+          ("T205" "lo_star_out_p" -1 -1 1)
+          ("T206" "tubii_rt_out" -1 -1 1)
         )
       )
       ("S3" "back_ports" "tubii_tk2_lib" "sym_1"
@@ -166,7 +178,6 @@
       ("N51" "unnamed_1_frontports_i2_gtp" -1 -1 0 )
       ("N52" "unnamed_1_frontports_i2_lostaroutn" -1 -1 0 )
       ("N53" "unnamed_1_frontports_i2_lostaroutp" -1 -1 0 )
-      ("N54" "unnamed_1_frontports_i2_mtcamimi2pulseanal" -1 -1 0 )
       ("N55" "unnamed_1_frontports_i2_mtcamimic1outn" -1 -1 0 )
       ("N56" "unnamed_1_frontports_i2_mtcamimic1outp" -1 -1 0 )
       ("N57" "unnamed_1_frontports_i2_mtcamimic1pulseanal" -1 -1 0 )
@@ -197,6 +208,8 @@
       ("N82" "unnamed_1_frontports_i2_telliedelayout" -1 -1 0 )
       ("N83" "unnamed_1_frontports_i2_telliepulseout" -1 -1 0 )
       ("N84" "unnamed_1_frontports_i2_tubclkin" -1 -1 0 )
+      ("N93" "unnamed_1_frontports_i2_mtcamimic2pulseanal" -1 -1 0 )
+      ("N94" "unnamed_1_frontports_i2_tubiirtout" -1 -1 0 )
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vcc" "vcc" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
@@ -362,7 +375,7 @@
           )
           ("M131" "T91" -1 -1
             (conn
-              ("0" -1 -1 "N54" -1 -1)
+              ("0" -1 -1 "N93" -1 -1)
             )
           )
           ("M132" "T92" -1 -1
@@ -508,6 +521,11 @@
           ("M160" "T120" -1 -1
             (conn
               ("0" -1 -1 "N84" -1 -1)
+            )
+          )
+          ("M239" "T207" -1 -1
+            (conn
+              ("0" -1 -1 "N94" -1 -1)
             )
           )
         )
@@ -767,6 +785,61 @@
           ("M213" "T173" -1 -1
             (conn
               ("0" -1 -1 "N78" -1 -1)
+            )
+          )
+          ("M223" "T191" 6 1
+            (conn
+              ("0" 6 1 "N68" 6 1)
+            )
+          )
+          ("M225" "T193" -1 -1
+            (conn
+              ("0" -1 -1 "N93" -1 -1)
+            )
+          )
+          ("M226" "T194" 15 0
+            (conn
+              ("0" 15 0 "N45" 15 0)
+            )
+          )
+          ("M227" "T195" -1 -1
+            (conn
+              ("0" -1 -1 "N44" -1 -1)
+            )
+          )
+          ("M230" "T198" -1 -1
+            (conn
+              ("0" -1 -1 "N43" -1 -1)
+            )
+          )
+          ("M231" "T199" -1 -1
+            (conn
+              ("0" -1 -1 "N41" -1 -1)
+            )
+          )
+          ("M232" "T200" -1 -1
+            (conn
+              ("0" -1 -1 "N42" -1 -1)
+            )
+          )
+          ("M235" "T203" -1 -1
+            (conn
+              ("0" -1 -1 "N60" -1 -1)
+            )
+          )
+          ("M236" "T204" -1 -1
+            (conn
+              ("0" -1 -1 "N52" -1 -1)
+            )
+          )
+          ("M237" "T205" -1 -1
+            (conn
+              ("0" -1 -1 "N53" -1 -1)
+            )
+          )
+          ("M238" "T206" -1 -1
+            (conn
+              ("0" -1 -1 "N94" -1 -1)
             )
           )
         )

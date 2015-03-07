@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-05T19:41:50</modificationTime>
+    <modificationTime>2015-03-07T17:50:46</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>16</instanceid>
-        <netid>203</netid>
-        <insttermid>535</insttermid>
+        <netid>214</netid>
+        <insttermid>615</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -25,6 +25,122 @@
           <parameters>
           </parameters>
           <terms>
+            <term>
+              <id>T702</id>
+              <name>caen_data_rdy</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T703</id>
+              <name>clk</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T704</id>
+              <name>clocks_data_rdy</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T705</id>
+              <name>cntrl_rdy</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T706</id>
+              <name>data</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T707</id>
+              <name>le</name>
+              <direction>output</direction>
+              <msb>2</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T709</id>
+              <name>mtca_mimic_data_rdy</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T710</id>
+              <name>scaler</name>
+              <direction>output</direction>
+              <msb>6</msb>
+              <lsb>4</lsb>
+            </term>
+            <term>
+              <id>T711</id>
+              <name>smellie_delay</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T712</id>
+              <name>smellie_pulse</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T714</id>
+              <name>tellie_delay</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T715</id>
+              <name>tellie_pulse</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T716</id>
+              <name>tubii_rt_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T720</id>
+              <name>clk100_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T721</id>
+              <name>cntrl_reg_chk</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T722</id>
+              <name>ext_trig</name>
+              <direction>input</direction>
+              <msb>15</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T723</id>
+              <name>gt</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T724</id>
+              <name>smellie_pre_delay</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T725</id>
+              <name>sync</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T726</id>
+              <name>sync24</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T727</id>
+              <name>tellie_pre_delay</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T728</id>
+              <name>generic_delay_in</name>
+              <direction>input</direction>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -301,7 +417,6 @@
               <id>T244</id>
               <name>scope_out_anal</name>
               <direction>output</direction>
-              <displayName></displayName>
               <msb>7</msb>
               <lsb>0</lsb>
             </term>
@@ -420,6 +535,26 @@
             <term>
               <id>T576</id>
               <name>tellie_pulse_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T579</id>
+              <name>smellie_delay_out_ttl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T580</id>
+              <name>tellie_delay_out_ttl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T581</id>
+              <name>smellie_pre_delay_ttl</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T582</id>
+              <name>tellie_pre_delay_ttl</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -979,14 +1114,6 @@
           <name>unnamed_1_caencoms_i8_datardy</name>
         </net>
         <net>
-          <id>N138</id>
-          <name>unnamed_1_inport_i65_a</name>
-        </net>
-        <net>
-          <id>N139</id>
-          <name>unnamed_1_inport_i66_a</name>
-        </net>
-        <net>
           <id>N144</id>
           <name>unnamed_1_microzedmodule_i1_mtcamimicdatardy</name>
         </net>
@@ -1281,6 +1408,24 @@
           <name>unnamed_1_elliecoms_i9_telliepulse</name>
         </net>
         <net>
+          <id>N204</id>
+          <name>mtca_mimi2_pulse_anal</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N205</id>
+          <name>mtca_mimic1_pulse_anal</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N214</id>
+          <name>tubii_rt_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
           <id>gnd</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -1349,6 +1494,168 @@
           <powers>
           </powers>
           <pins>
+            <pin>
+              <id>M589</id>
+              <termid>T702</termid>
+              <connections>
+                <connection net="N135" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M590</id>
+              <termid>T703</termid>
+              <connections>
+                <connection net="N87" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M591</id>
+              <termid>T704</termid>
+              <connections>
+                <connection net="N159" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M592</id>
+              <termid>T705</termid>
+              <connections>
+                <connection net="N154" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M593</id>
+              <termid>T706</termid>
+              <connections>
+                <connection net="N88" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M594</id>
+              <termid>T707</termid>
+              <msb>2</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N124" />
+                <connection pinmsb="1" pinlsb="1" net="N125" />
+                <connection pinmsb="2" pinlsb="2" net="N126" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M596</id>
+              <termid>T709</termid>
+              <connections>
+                <connection net="N144" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M597</id>
+              <termid>T710</termid>
+              <msb>6</msb>
+              <lsb>4</lsb>
+              <connections>
+                <connection pinmsb="6" pinlsb="4" net="N179" netmsb="6" netlsb="4" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M598</id>
+              <termid>T711</termid>
+              <connections>
+                <connection net="N198" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M599</id>
+              <termid>T712</termid>
+              <connections>
+                <connection net="N200" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M601</id>
+              <termid>T714</termid>
+              <connections>
+                <connection net="N201" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M602</id>
+              <termid>T715</termid>
+              <connections>
+                <connection net="N203" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M603</id>
+              <termid>T716</termid>
+              <connections>
+                <connection net="N214" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M607</id>
+              <termid>T720</termid>
+              <connections>
+                <connection net="N153" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M608</id>
+              <termid>T721</termid>
+              <connections>
+                <connection net="N156" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M609</id>
+              <termid>T722</termid>
+              <msb>15</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="15" pinlsb="0" net="N162" netmsb="15" netlsb="0" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M610</id>
+              <termid>T723</termid>
+              <connections>
+                <connection net="N132" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M611</id>
+              <termid>T724</termid>
+              <connections>
+                <connection net="N199" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M612</id>
+              <termid>T725</termid>
+              <connections>
+                <connection net="N197" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M613</id>
+              <termid>T726</termid>
+              <connections>
+                <connection net="N196" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M614</id>
+              <termid>T727</termid>
+              <connections>
+                <connection net="N202" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M615</id>
+              <termid>T728</termid>
+              <connections>
+                <connection net="N96" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -1942,6 +2249,34 @@
                 <connection net="N193" />
               </connections>
             </pin>
+            <pin>
+              <id>M536</id>
+              <termid>T579</termid>
+              <connections>
+                <connection net="N198" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M537</id>
+              <termid>T580</termid>
+              <connections>
+                <connection net="N201" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M538</id>
+              <termid>T581</termid>
+              <connections>
+                <connection net="N199" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M539</id>
+              <termid>T582</termid>
+              <connections>
+                <connection net="N202" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -2291,14 +2626,14 @@
               <id>M145</id>
               <termid>T149</termid>
               <connections>
-                <connection net="N138" />
+                <connection net="N205" />
               </connections>
             </pin>
             <pin>
               <id>M146</id>
               <termid>T150</termid>
               <connections>
-                <connection net="N139" />
+                <connection net="N204" />
               </connections>
             </pin>
           </pins>
@@ -2637,6 +2972,12 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
+          <netScope ref="mtca_mimi2_pulse_anal">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="mtca_mimic1_out_n">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2647,6 +2988,12 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="mtca_mimic1_pulse_anal">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
             </pageScope>
           </netScope>
           <netScope ref="mtca_mimic2_out_n">
@@ -2835,6 +3182,12 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="tubii_rt_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="vcc">
             <pageScope number="1">
               <scope>global</scope>
@@ -2884,8 +3237,10 @@
               <net ref="lvds_to_ecl_in_n"></net>
               <net ref="lvds_to_ecl_in_p"></net>
               <net ref="lvds_to_ecl_out"></net>
+              <net ref="mtca_mimi2_pulse_anal"></net>
               <net ref="mtca_mimic1_out_n"></net>
               <net ref="mtca_mimic1_out_p"></net>
+              <net ref="mtca_mimic1_pulse_anal"></net>
               <net ref="mtca_mimic2_out_n"></net>
               <net ref="mtca_mimic2_out_p"></net>
               <net ref="mtcd_lo*"></net>
@@ -2929,6 +3284,7 @@
               <net ref="ttl_to_ecl_in"></net>
               <net ref="ttl_to_ecl_out"></net>
               <net ref="tub_clk_in"></net>
+              <net ref="tubii_rt_out"></net>
               <net ref="unnamed_1_caencoms_i8_datardy"></net>
               <net ref="unnamed_1_caencoms_i8_gt2p"></net>
               <net ref="unnamed_1_caencoms_i8_gtttl"></net>
@@ -2957,8 +3313,6 @@
               <net ref="unnamed_1_hct238_i53_a0"></net>
               <net ref="unnamed_1_hct238_i53_a1"></net>
               <net ref="unnamed_1_hct238_i53_a2"></net>
-              <net ref="unnamed_1_inport_i65_a"></net>
-              <net ref="unnamed_1_inport_i66_a"></net>
               <net ref="unnamed_1_logen_i13_dgt2"></net>
               <net ref="unnamed_1_logen_i13_lostar2"></net>
               <net ref="unnamed_1_microzedmodule_i1_mtcamimicdatardy"></net>

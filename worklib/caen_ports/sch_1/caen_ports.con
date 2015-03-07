@@ -8,12 +8,25 @@
   (design "caen_ports"
     (lastIds
       (lastInstanceId 2)
-      (lastNetId 8)
+      (lastNetId 9)
+      (lastInstTermId 10)
     )
     (cells
       ("S2" "caen_digital_ports" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T11" "gt_nim" -1 -1 1)
+          ("T12" "sync24_lvds_n" -1 -1 1)
+          ("T13" "sync24_lvds_p" -1 -1 1)
+          ("T14" "sync_lvds_n" -1 -1 1)
+          ("T15" "sync_lvds_p" -1 -1 1)
+        )
       )
       ("S3" "caen_analog_ports" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T17" "pulse_in_anal" 11 0 2)
+          ("T18" "caen_out_anal" 7 0 1)
+          ("T19" "scope_out_anal" 7 0 1)
+        )
       )
     )
 
@@ -26,12 +39,57 @@
       ("N6" "sync24_lvds_p" -1 -1 1 1)
       ("N7" "sync_lvds_n" -1 -1 1 1)
       ("N8" "sync_lvds_p" -1 -1 1 1)
+      ("gnd" "gnd" -1 -1 2  inherited)
     )
 
     (instances
       ("I1" "page1_i1" "S2"
+        (pins
+          ("M2" "T11" -1 -1
+            (conn
+              ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+          ("M3" "T12" -1 -1
+            (conn
+              ("0" -1 -1 "N5" -1 -1)
+            )
+          )
+          ("M4" "T13" -1 -1
+            (conn
+              ("0" -1 -1 "N6" -1 -1)
+            )
+          )
+          ("M5" "T14" -1 -1
+            (conn
+              ("0" -1 -1 "N7" -1 -1)
+            )
+          )
+          ("M6" "T15" -1 -1
+            (conn
+              ("0" -1 -1 "N8" -1 -1)
+            )
+          )
+        )
       )
       ("I2" "page1_i2" "S3"
+        (pins
+          ("M8" "T17" 11 0
+            (conn
+              ("0" 11 0 "N3" 11 0)
+            )
+          )
+          ("M9" "T18" 7 0
+            (conn
+              ("0" 7 0 "N1" 7 0)
+            )
+          )
+          ("M10" "T19" 7 0
+            (conn
+              ("0" 7 0 "N4" 7 0)
+            )
+          )
+        )
       )
     )
 

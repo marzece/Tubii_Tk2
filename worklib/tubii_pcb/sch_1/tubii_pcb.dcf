@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 54 )
+			( logicalViewRevNum 61 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -390,6 +390,7 @@
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):gnd") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):gnd") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):gnd") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gnd") )
 				( attribute "PHYS_NET_NAME" "GND"
 					( Origin gPackager )
 				)
@@ -503,6 +504,15 @@
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):vcc"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i10@tubii_tk2_lib.cntrl_register(sch_1):vcc") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):vcc") )
@@ -543,6 +553,7 @@
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):vcc") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vcc") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):vcc") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):vcc") )
 				( attribute "PHYS_NET_NAME" "VCC"
 					( Status sBlockFlattened )
 					( Status sAliasFlattened )
@@ -656,6 +667,15 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):vcc"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i10@tubii_tk2_lib.cntrl_register(sch_1):cntrl_raw(0)"
@@ -795,6 +815,15 @@
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):vee"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):vee"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vee"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):vee"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):gt_ttl"
 				( objectFlag fObjectAlias )
 			)
@@ -896,6 +925,12 @@
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):vtt"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):vtt"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):vtt"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):data"
 				( objectFlag fObjectAlias )
 			)
@@ -912,6 +947,12 @@
 					( Origin gPackager )
 				)
 				( objectStatus "generic_delay_out" )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):generic_delay_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):delay_out"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):unnamed_1_mc10e116_i2_q0"
 			)
@@ -964,6 +1005,7 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):generic_delay_in"
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):generic_delay_in") )
 				( objectStatus "generic_delay_in" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star2"
@@ -1036,9 +1078,6 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):le"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):delay_out"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):delay_in"
@@ -1122,9 +1161,6 @@
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):rib9_p"
 			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):generic_delay_out"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):generic_delay_in"
 				( attribute "PHYS_NET_NAME" "GENERIC_DELAY_IN"
 					( Origin gPackager )
@@ -1202,7 +1238,11 @@
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):spkr"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i11@tubii_tk2_lib.tubii_spkr(sch_1):spkr_sig") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):spkr") )
 				( objectStatus "spkr" )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i11@tubii_tk2_lib.tubii_spkr(sch_1):spkr_sig"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_csmd0805_i8_b"
 			)
@@ -1469,9 +1509,6 @@
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i11@tubii_tk2_lib.tubii_spkr(sch_1):unnamed_1_rsmd0805_i4_b"
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i11@tubii_tk2_lib.tubii_spkr(sch_1):unnamed_1_rsmd0805_i5_b"
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i11@tubii_tk2_lib.tubii_spkr(sch_1):spkr_sig"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):max_count(0)"
 				( objectFlag fObjectAlias )
@@ -2753,6 +2790,9 @@
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):v3p3"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):v3p3") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):v3p3") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):v3p3") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):v3p3") )
 				( objectStatus "v3p3" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):v3p3"
@@ -2787,6 +2827,7 @@
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):unnamed_1_rsmd0805_i31_a"
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):v3p3"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_lvds_out_p"
 				( objectFlag fObjectAlias )
@@ -2884,10 +2925,11 @@
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):out_att") )
 				( objectStatus "caen_out_anal<4>" )
 			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):sync24_ttl"
-				( objectFlag fObjectAlias )
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):tubii_rt_out"
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):tubii_rt_out") )
+				( objectStatus "tubii_rt_out" )
 			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):sync_ttl"
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):v3p3"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):ecl_to_lvds_in"
@@ -2976,11 +3018,13 @@
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_generalutilities_i4_genericdelayin"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):generic_delay_in") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):delay_in") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):generic_delay_out") )
 				( objectStatus "unnamed_1_generalutilities_i4_genericdelayin" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_generalutilities_i4_genericpulsein"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):generic_pulse_in") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):pulse_in") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):generic_pulse") )
 				( objectStatus "unnamed_1_generalutilities_i4_genericpulsein" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):nim_to_ecl_in"
@@ -3073,6 +3117,7 @@
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i10@tubii_tk2_lib.cntrl_register(sch_1):clk") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):clk") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):clk") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):clk") )
 				( objectStatus "sr_clk" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):sr_data"
@@ -3084,6 +3129,7 @@
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i10@tubii_tk2_lib.cntrl_register(sch_1):data") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):data") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):data") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):data") )
 				( objectStatus "sr_data" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):generic_pulse_out"
@@ -3203,12 +3249,15 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_hct238_i53_a0"
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):le(0)") )
 				( objectStatus "unnamed_1_hct238_i53_a0" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_hct238_i53_a1"
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):le(1)") )
 				( objectStatus "unnamed_1_hct238_i53_a1" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_hct238_i53_a2"
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):le(2)") )
 				( objectStatus "unnamed_1_hct238_i53_a2" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_logen_i13_dgt2"
@@ -3223,6 +3272,7 @@
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_caencoms_i8_datardy"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):data_rdy") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):data_rdy") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):caen_data_rdy") )
 				( objectStatus "unnamed_1_caencoms_i8_datardy" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_logen_i13_lostar2"
@@ -3245,6 +3295,7 @@
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):gt_ttl") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):gt_ttl") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt_ttl") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gt") )
 				( objectStatus "unnamed_1_caencoms_i8_gtttl" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_cntrlregister_i10_ecalenable"
@@ -3260,6 +3311,7 @@
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_microzedmodule_i1_mtcamimicdatardy"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):data_rdy") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):mtca_mimic_data_rdy") )
 				( objectStatus "unnamed_1_microzedmodule_i1_mtcamimicdatardy" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):mtca_mimic1_pulse_anal"
@@ -3299,18 +3351,22 @@
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_clocks_i2_clk100ttl"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):clk100_ttl") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):clk100_ttl") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):clk100_in") )
 				( objectStatus "unnamed_1_clocks_i2_clk100ttl" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_cntrlregister_i10_datardy"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i10@tubii_tk2_lib.cntrl_register(sch_1):data_rdy") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):cntrl_rdy") )
 				( objectStatus "unnamed_1_cntrlregister_i10_datardy" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_cntrlregister_i10_readbit"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i10@tubii_tk2_lib.cntrl_register(sch_1):read_bit") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):read_cntrl_reg_bit") )
 				( objectStatus "unnamed_1_cntrlregister_i10_readbit" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_cntrlregister_i10_regval"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i10@tubii_tk2_lib.cntrl_register(sch_1):reg_val") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):cntrl_reg_chk") )
 				( objectStatus "unnamed_1_cntrlregister_i10_regval" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):data_rdy"
@@ -3327,37 +3383,17 @@
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_clocks_i2_datardy"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):data_rdy") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):clocks_data_rdy") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CLOCKS_I2_DATARDY"
 					( Origin gPackager )
 				)
 				( objectStatus "unnamed_1_clocks_i2_datardy" )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):gnd"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):gng"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):gng") )
 				( objectStatus "gng" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):gng"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):vee"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vee"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):vtt"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_in(0)"
@@ -3506,79 +3542,83 @@
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(0)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(0)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(0)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<0>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(1)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(1)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(1)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<1>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(2)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(2)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(2)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<2>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(3)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(3)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(3)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<3>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(4)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(4)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(4)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<4>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(5)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(5)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(5)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<5>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(6)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(6)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(6)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<6>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(7)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(7)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(7)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<7>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(8)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(8)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(8)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<8>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(9)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(9)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(9)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<9>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(10)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(10)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(10)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<10>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(11)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(11)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(11)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<11>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(12)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(12)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(12)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<12>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(13)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(13)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(13)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<13>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(14)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(14)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(14)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<14>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(15)"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out(15)") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(15)") )
 				( objectStatus "unnamed_1_exttrigs_i70_exttrigout<15>" )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):vee"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):vtt"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):smellie_delay_buf_n"
 			)
@@ -3920,18 +3960,21 @@
 				( objectStatus "scaler<3>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):scaler(4)"
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler(4)") )
 				( attribute "PHYS_NET_NAME" "SCALER<4>"
 					( Origin gPackager )
 				)
 				( objectStatus "scaler<4>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):scaler(5)"
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler(5)") )
 				( attribute "PHYS_NET_NAME" "SCALER<5>"
 					( Origin gPackager )
 				)
 				( objectStatus "scaler<5>" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):scaler(6)"
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler(6)") )
 				( attribute "PHYS_NET_NAME" "SCALER<6>"
 					( Origin gPackager )
 				)
@@ -4055,37 +4098,221 @@
 				( objectStatus "tub_clk_in" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_caencoms_i8_sync24ttl"
-				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):sync24_ttl") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync24_ttl") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):sync24") )
 				( objectStatus "unnamed_1_caencoms_i8_sync24ttl" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_caencoms_i8_syncttl"
-				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):sync_ttl") )
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_ttl") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):sync") )
 				( objectStatus "unnamed_1_caencoms_i8_syncttl" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_elliecoms_i9_smelliedelayoutttl"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):smellie_delay_out_ttl") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):smellie_delay") )
 				( objectStatus "unnamed_1_elliecoms_i9_smelliedelayoutttl" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_elliecoms_i9_smelliepredelayttl"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):smellie_pre_delay_ttl") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):smellie_pre_delay") )
 				( objectStatus "unnamed_1_elliecoms_i9_smelliepredelayttl" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_elliecoms_i9_smelliepulse"
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):smellie_pulse") )
 				( objectStatus "unnamed_1_elliecoms_i9_smelliepulse" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_elliecoms_i9_telliedelayoutttl"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):tellie_delay_out_ttl") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):tellie_delay") )
 				( objectStatus "unnamed_1_elliecoms_i9_telliedelayoutttl" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_elliecoms_i9_telliepredelayttl"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):tellie_pre_delay_ttl") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):tellie_pre_delay") )
 				( objectStatus "unnamed_1_elliecoms_i9_telliepredelayttl" )
 			)
 			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_elliecoms_i9_telliepulse"
 				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i9@tubii_tk2_lib.ellie_coms(sch_1):tellie_pulse") )
+				( alias ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):tellie_pulse") )
 				( objectStatus "unnamed_1_elliecoms_i9_telliepulse" )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):v3p3"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):le(0)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):le(1)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):le(2)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler(4)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler(5)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler(6)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):caen_data_rdy"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):\carrier_srst#\"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):clk"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):clocks_data_rdy"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):cntrl_rdy"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):data"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):fpga_done"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):jtag_tdi"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):jtag_tms"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):jx1_guide_pin1"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):jx1_se_1"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):generic_delay_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):mtca_mimic_data_rdy"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):smellie_delay"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):smellie_pulse"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):generic_pulse"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):tellie_delay"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):tellie_pulse"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):tubii_rt_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(0)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):clk100_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):cntrl_reg_chk"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gpio0"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gpio1"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gpio2"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gpio3"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gpio4"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gpio5"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):gt"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):i2c_scl"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):i2c_sda"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):jx1_guide_pin2"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):jx2_guide_pin1"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):jx2_guide_pin2"
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):smellie_pre_delay"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):sync"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):sync24"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):tellie_pre_delay"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(1)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(2)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(3)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(4)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(5)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(6)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(7)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(8)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(9)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(10)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(11)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(12)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(13)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(14)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(15)"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):generic_delay_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):spkr"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):read_cntrl_reg_bit"
+				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -4128,667 +4355,6 @@
 					( Origin gPackager )
 				)
 				( attribute "LOCATION" "U5"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( pin "\1\"
-					( attribute "PN" "1"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\2\"
-					( attribute "PN" "2"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\3\"
-					( attribute "PN" "3"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\4\"
-					( attribute "PN" "4"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\5\"
-					( attribute "PN" "5"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\6\"
-					( attribute "PN" "6"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\7\"
-					( attribute "PN" "7"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\8\"
-					( attribute "PN" "8"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\9\"
-					( attribute "PN" "9"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\10\"
-					( attribute "PN" "10"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\11\"
-					( attribute "PN" "11"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\12\"
-					( attribute "PN" "12"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\13\"
-					( attribute "PN" "13"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\14\"
-					( attribute "PN" "14"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\15\"
-					( attribute "PN" "15"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\16\"
-					( attribute "PN" "16"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\17\"
-					( attribute "PN" "17"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\18\"
-					( attribute "PN" "18"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\19\"
-					( attribute "PN" "19"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\20\"
-					( attribute "PN" "20"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\21\"
-					( attribute "PN" "21"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\22\"
-					( attribute "PN" "22"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\23\"
-					( attribute "PN" "23"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\24\"
-					( attribute "PN" "24"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\25\"
-					( attribute "PN" "25"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\26\"
-					( attribute "PN" "26"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\27\"
-					( attribute "PN" "27"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\28\"
-					( attribute "PN" "28"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\29\"
-					( attribute "PN" "29"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\30\"
-					( attribute "PN" "30"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\31\"
-					( attribute "PN" "31"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\32\"
-					( attribute "PN" "32"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\33\"
-					( attribute "PN" "33"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\34\"
-					( attribute "PN" "34"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\35\"
-					( attribute "PN" "35"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\36\"
-					( attribute "PN" "36"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\37\"
-					( attribute "PN" "37"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\38\"
-					( attribute "PN" "38"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\39\"
-					( attribute "PN" "39"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\40\"
-					( attribute "PN" "40"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\41\"
-					( attribute "PN" "41"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\42\"
-					( attribute "PN" "42"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\43\"
-					( attribute "PN" "43"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\44\"
-					( attribute "PN" "44"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\45\"
-					( attribute "PN" "45"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\46\"
-					( attribute "PN" "46"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\47\"
-					( attribute "PN" "47"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\48\"
-					( attribute "PN" "48"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\49\"
-					( attribute "PN" "49"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\50\"
-					( attribute "PN" "50"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\51\"
-					( attribute "PN" "51"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\52\"
-					( attribute "PN" "52"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\53\"
-					( attribute "PN" "53"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\54\"
-					( attribute "PN" "54"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\55\"
-					( attribute "PN" "55"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\56\"
-					( attribute "PN" "56"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\57\"
-					( attribute "PN" "57"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\58\"
-					( attribute "PN" "58"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\59\"
-					( attribute "PN" "59"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\60\"
-					( attribute "PN" "60"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\61\"
-					( attribute "PN" "61"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\62\"
-					( attribute "PN" "62"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\63\"
-					( attribute "PN" "63"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\64\"
-					( attribute "PN" "64"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\65\"
-					( attribute "PN" "65"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\66\"
-					( attribute "PN" "66"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\67\"
-					( attribute "PN" "67"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\68\"
-					( attribute "PN" "68"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\69\"
-					( attribute "PN" "69"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\70\"
-					( attribute "PN" "70"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\71\"
-					( attribute "PN" "71"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\72\"
-					( attribute "PN" "72"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\73\"
-					( attribute "PN" "73"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\74\"
-					( attribute "PN" "74"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\75\"
-					( attribute "PN" "75"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\76\"
-					( attribute "PN" "76"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\77\"
-					( attribute "PN" "77"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\78\"
-					( attribute "PN" "78"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\79\"
-					( attribute "PN" "79"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\80\"
-					( attribute "PN" "80"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\81\"
-					( attribute "PN" "81"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\82\"
-					( attribute "PN" "82"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\83\"
-					( attribute "PN" "83"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\84\"
-					( attribute "PN" "84"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\85\"
-					( attribute "PN" "85"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\86\"
-					( attribute "PN" "86"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\87\"
-					( attribute "PN" "87"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\88\"
-					( attribute "PN" "88"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\89\"
-					( attribute "PN" "89"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\90\"
-					( attribute "PN" "90"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\91\"
-					( attribute "PN" "91"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\92\"
-					( attribute "PN" "92"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\93\"
-					( attribute "PN" "93"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\94\"
-					( attribute "PN" "94"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\95\"
-					( attribute "PN" "95"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\96\"
-					( attribute "PN" "96"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\97\"
-					( attribute "PN" "97"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\98\"
-					( attribute "PN" "98"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\99\"
-					( attribute "PN" "99"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\100\"
-					( attribute "PN" "100"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\101\"
-					( attribute "PN" "101"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\102\"
-					( attribute "PN" "102"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i2"
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,1450,125,-1300"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1350,2450)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "FCI_61083-101400LF"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "FCI_61083-101400LF"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U6"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U6"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
@@ -68333,6 +67899,831 @@
 				( pin "vee"
 				)
 			)
+			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i31"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3600,1700)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i32"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3575,1725)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i33"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3550,1725)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i34"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3525,1725)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i35"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3400,1700)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i36"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3375,1725)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i23"
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,1450,125,-1300"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1800,2525)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "FCI_61083-101400LF"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "FCI_61083-101400LF"
+					( Origin gPackager )
+				)
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
+				( pin "\3\"
+				)
+				( pin "\4\"
+				)
+				( pin "\5\"
+				)
+				( pin "\6\"
+				)
+				( pin "\7\"
+				)
+				( pin "\8\"
+				)
+				( pin "\9\"
+				)
+				( pin "\10\"
+				)
+				( pin "\11\"
+				)
+				( pin "\12\"
+				)
+				( pin "\13\"
+				)
+				( pin "\14\"
+				)
+				( pin "\15\"
+				)
+				( pin "\16\"
+				)
+				( pin "\17\"
+				)
+				( pin "\18\"
+				)
+				( pin "\19\"
+				)
+				( pin "\20\"
+				)
+				( pin "\21\"
+				)
+				( pin "\22\"
+				)
+				( pin "\23\"
+				)
+				( pin "\24\"
+				)
+				( pin "\25\"
+				)
+				( pin "\26\"
+				)
+				( pin "\27\"
+				)
+				( pin "\28\"
+				)
+				( pin "\29\"
+				)
+				( pin "\30\"
+				)
+				( pin "\31\"
+				)
+				( pin "\32\"
+				)
+				( pin "\33\"
+				)
+				( pin "\34\"
+				)
+				( pin "\35\"
+				)
+				( pin "\36\"
+				)
+				( pin "\37\"
+				)
+				( pin "\38\"
+				)
+				( pin "\39\"
+				)
+				( pin "\40\"
+				)
+				( pin "\41\"
+				)
+				( pin "\42\"
+				)
+				( pin "\43\"
+				)
+				( pin "\44\"
+				)
+				( pin "\45\"
+				)
+				( pin "\46\"
+				)
+				( pin "\47\"
+				)
+				( pin "\48\"
+				)
+				( pin "\49\"
+				)
+				( pin "\50\"
+				)
+				( pin "\51\"
+				)
+				( pin "\52\"
+				)
+				( pin "\53\"
+				)
+				( pin "\54\"
+				)
+				( pin "\55\"
+				)
+				( pin "\56\"
+				)
+				( pin "\57\"
+				)
+				( pin "\58\"
+				)
+				( pin "\59\"
+				)
+				( pin "\60\"
+				)
+				( pin "\61\"
+				)
+				( pin "\62\"
+				)
+				( pin "\63\"
+				)
+				( pin "\64\"
+				)
+				( pin "\65\"
+				)
+				( pin "\66\"
+				)
+				( pin "\67\"
+				)
+				( pin "\68\"
+				)
+				( pin "\69\"
+				)
+				( pin "\70\"
+				)
+				( pin "\71\"
+				)
+				( pin "\72\"
+				)
+				( pin "\73\"
+				)
+				( pin "\74\"
+				)
+				( pin "\75\"
+				)
+				( pin "\76\"
+				)
+				( pin "\77\"
+				)
+				( pin "\78\"
+				)
+				( pin "\79\"
+				)
+				( pin "\80\"
+				)
+				( pin "\81\"
+				)
+				( pin "\82\"
+				)
+				( pin "\83\"
+				)
+				( pin "\84\"
+				)
+				( pin "\85\"
+				)
+				( pin "\86\"
+				)
+				( pin "\87\"
+				)
+				( pin "\88\"
+				)
+				( pin "\89\"
+				)
+				( pin "\90\"
+				)
+				( pin "\91\"
+				)
+				( pin "\92\"
+				)
+				( pin "\93\"
+				)
+				( pin "\94\"
+				)
+				( pin "\95\"
+				)
+				( pin "\96\"
+				)
+				( pin "\97\"
+				)
+				( pin "\98\"
+				)
+				( pin "\99\"
+				)
+				( pin "\100\"
+				)
+				( pin "\101\"
+				)
+				( pin "\102\"
+				)
+			)
 			( pin "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i1:clk"
 			)
 			( pin "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i13@tubii_tk2_lib.lo_gen(sch_1):page1_i1:data"
@@ -68691,6 +69082,7 @@
 			( bus "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout"
 				( memberType ( signal ) )
 				( alias ( busRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i70@tubii_tk2_lib.ext_trigs(sch_1):ext_trig_out") )
+				( alias ( busRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig") )
 				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(0)") )
 				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(1)") )
 				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_exttrigs_i70_exttrigout(2)") )
@@ -68766,6 +69158,7 @@
 			( bus "@tubii_tk2_lib.tubii_pcb(sch_1):scaler"
 				( memberType ( signal ) )
 				( alias ( busRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i10@tubii_tk2_lib.cntrl_register(sch_1):display") )
+				( alias ( busRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler") )
 				( attribute "BUS_NAME" "SCALER"
 					( Origin gPackager )
 				)
@@ -68789,6 +69182,39 @@
 				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):scope_out_anal(6)") )
 				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):scope_out_anal(7)") )
 				( objectStatus "SCOPE_OUT_ANAL" )
+			)
+			( bus "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):le"
+				( memberType ( signal ) )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_hct238_i53_a2") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_hct238_i53_a1") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_hct238_i53_a0") )
+			)
+			( bus "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler"
+				( memberType ( signal ) )
+				( objectFlag fObjectAlias )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler(4)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler(5)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):scaler(6)") )
+			)
+			( bus "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig"
+				( memberType ( signal ) )
+				( objectFlag fObjectAlias )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(0)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(1)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(2)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(3)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(4)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(5)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(6)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(7)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(8)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(9)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(10)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(11)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(12)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(13)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(14)") )
+				( member ( signalRef "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):ext_trig(15)") )
 			)
 			( designInst "@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1"
 				( attribute "BLOCK" "TRUE"
@@ -69588,7 +70014,7 @@
 	( BaseCopy "microzed_module"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 3 )
+				( logicalViewRevNum 10 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -69598,10 +70024,205 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "microzed_module"
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):caen_data_rdy"
+				( objectStatus "caen_data_rdy" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):\carrier_srst#\"
+				( objectStatus "carrier_srst#" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):clk"
+				( objectStatus "clk" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):clocks_data_rdy"
+				( objectStatus "clocks_data_rdy" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):cntrl_rdy"
+				( objectStatus "cntrl_rdy" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):data"
+				( objectStatus "data" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):fpga_done"
+				( objectStatus "fpga_done" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):jtag_tdi"
+				( objectStatus "jtag_tdi" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):jtag_tms"
+				( objectStatus "jtag_tms" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):jx1_guide_pin1"
+				( objectStatus "jx1_guide_pin1" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):jx1_se_1"
+				( objectStatus "jx1_se_1" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):le(0)"
+				( objectStatus "le<0>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):le(1)"
+				( objectStatus "le<1>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):le(2)"
+				( objectStatus "le<2>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):generic_delay_out"
+				( objectStatus "generic_delay_out" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):mtca_mimic_data_rdy"
+				( objectStatus "mtca_mimic_data_rdy" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):scaler(4)"
+				( objectStatus "scaler<4>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):scaler(5)"
+				( objectStatus "scaler<5>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):scaler(6)"
+				( objectStatus "scaler<6>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):smellie_delay"
+				( objectStatus "smellie_delay" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):smellie_pulse"
+				( objectStatus "smellie_pulse" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):generic_pulse"
+				( objectStatus "generic_pulse" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):tellie_delay"
+				( objectStatus "tellie_delay" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):tellie_pulse"
+				( objectStatus "tellie_pulse" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):tubii_rt_out"
+				( objectStatus "tubii_rt_out" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(0)"
+				( objectStatus "ext_trig<0>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):v3p3"
+				( objectStatus "v3p3" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):vcc"
+				( objectStatus "vcc" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):clk100_in"
+				( objectStatus "clk100_in" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):cntrl_reg_chk"
+				( objectStatus "cntrl_reg_chk" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):gnd"
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):gpio0"
+				( objectStatus "gpio0" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):gpio1"
+				( objectStatus "gpio1" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):gpio2"
+				( objectStatus "gpio2" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):gpio3"
+				( objectStatus "gpio3" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):gpio4"
+				( objectStatus "gpio4" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):gpio5"
+				( objectStatus "gpio5" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):gt"
+				( objectStatus "gt" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):i2c_scl"
+				( objectStatus "i2c_scl" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):i2c_sda"
+				( objectStatus "i2c_sda" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):jx1_guide_pin2"
+				( objectStatus "jx1_guide_pin2" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):jx2_guide_pin1"
+				( objectStatus "jx2_guide_pin1" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):jx2_guide_pin2"
+				( objectStatus "jx2_guide_pin2" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):smellie_pre_delay"
+				( objectStatus "smellie_pre_delay" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):sync"
+				( objectStatus "sync" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):sync24"
+				( objectStatus "sync24" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):tellie_pre_delay"
+				( objectStatus "tellie_pre_delay" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(1)"
+				( objectStatus "ext_trig<1>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(2)"
+				( objectStatus "ext_trig<2>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(3)"
+				( objectStatus "ext_trig<3>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(4)"
+				( objectStatus "ext_trig<4>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(5)"
+				( objectStatus "ext_trig<5>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(6)"
+				( objectStatus "ext_trig<6>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(7)"
+				( objectStatus "ext_trig<7>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(8)"
+				( objectStatus "ext_trig<8>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(9)"
+				( objectStatus "ext_trig<9>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(10)"
+				( objectStatus "ext_trig<10>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(11)"
+				( objectStatus "ext_trig<11>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(12)"
+				( objectStatus "ext_trig<12>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(13)"
+				( objectStatus "ext_trig<13>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(14)"
+				( objectStatus "ext_trig<14>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(15)"
+				( objectStatus "ext_trig<15>" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):generic_delay_in"
+				( objectStatus "generic_delay_in" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):spkr"
+				( objectStatus "spkr" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):read_cntrl_reg_bit"
+				( objectStatus "read_cntrl_reg_bit" )
 			)
 			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -70152,7 +70773,7 @@
 					)
 				)
 			)
-			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i2"
+			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i23"
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
@@ -70168,7 +70789,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(1350,2450)"
+				( attribute "XY" "(1800,2525)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "FCI_61083-101400LF"
@@ -70177,529 +70798,245 @@
 				( attribute "CDS_PART_NAME" "FCI_61083-101400LF"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U6"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U6"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I2" )
+				( objectStatus "PAGE1_I23" )
 				( pin "\1\"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
 				)
 				( pin "\2\"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
 				)
 				( pin "\3\"
-					( attribute "PN" "3"
-						( Origin gPackager )
-					)
 				)
 				( pin "\4\"
-					( attribute "PN" "4"
-						( Origin gPackager )
-					)
 				)
 				( pin "\5\"
-					( attribute "PN" "5"
-						( Origin gPackager )
-					)
 				)
 				( pin "\6\"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
 				)
 				( pin "\7\"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
 				)
 				( pin "\8\"
-					( attribute "PN" "8"
-						( Origin gPackager )
-					)
 				)
 				( pin "\9\"
-					( attribute "PN" "9"
-						( Origin gPackager )
-					)
 				)
 				( pin "\10\"
-					( attribute "PN" "10"
-						( Origin gPackager )
-					)
 				)
 				( pin "\11\"
-					( attribute "PN" "11"
-						( Origin gPackager )
-					)
 				)
 				( pin "\12\"
-					( attribute "PN" "12"
-						( Origin gPackager )
-					)
 				)
 				( pin "\13\"
-					( attribute "PN" "13"
-						( Origin gPackager )
-					)
 				)
 				( pin "\14\"
-					( attribute "PN" "14"
-						( Origin gPackager )
-					)
 				)
 				( pin "\15\"
-					( attribute "PN" "15"
-						( Origin gPackager )
-					)
 				)
 				( pin "\16\"
-					( attribute "PN" "16"
-						( Origin gPackager )
-					)
 				)
 				( pin "\17\"
-					( attribute "PN" "17"
-						( Origin gPackager )
-					)
 				)
 				( pin "\18\"
-					( attribute "PN" "18"
-						( Origin gPackager )
-					)
 				)
 				( pin "\19\"
-					( attribute "PN" "19"
-						( Origin gPackager )
-					)
 				)
 				( pin "\20\"
-					( attribute "PN" "20"
-						( Origin gPackager )
-					)
 				)
 				( pin "\21\"
-					( attribute "PN" "21"
-						( Origin gPackager )
-					)
 				)
 				( pin "\22\"
-					( attribute "PN" "22"
-						( Origin gPackager )
-					)
 				)
 				( pin "\23\"
-					( attribute "PN" "23"
-						( Origin gPackager )
-					)
 				)
 				( pin "\24\"
-					( attribute "PN" "24"
-						( Origin gPackager )
-					)
 				)
 				( pin "\25\"
-					( attribute "PN" "25"
-						( Origin gPackager )
-					)
 				)
 				( pin "\26\"
-					( attribute "PN" "26"
-						( Origin gPackager )
-					)
 				)
 				( pin "\27\"
-					( attribute "PN" "27"
-						( Origin gPackager )
-					)
 				)
 				( pin "\28\"
-					( attribute "PN" "28"
-						( Origin gPackager )
-					)
 				)
 				( pin "\29\"
-					( attribute "PN" "29"
-						( Origin gPackager )
-					)
 				)
 				( pin "\30\"
-					( attribute "PN" "30"
-						( Origin gPackager )
-					)
 				)
 				( pin "\31\"
-					( attribute "PN" "31"
-						( Origin gPackager )
-					)
 				)
 				( pin "\32\"
-					( attribute "PN" "32"
-						( Origin gPackager )
-					)
 				)
 				( pin "\33\"
-					( attribute "PN" "33"
-						( Origin gPackager )
-					)
 				)
 				( pin "\34\"
-					( attribute "PN" "34"
-						( Origin gPackager )
-					)
 				)
 				( pin "\35\"
-					( attribute "PN" "35"
-						( Origin gPackager )
-					)
 				)
 				( pin "\36\"
-					( attribute "PN" "36"
-						( Origin gPackager )
-					)
 				)
 				( pin "\37\"
-					( attribute "PN" "37"
-						( Origin gPackager )
-					)
 				)
 				( pin "\38\"
-					( attribute "PN" "38"
-						( Origin gPackager )
-					)
 				)
 				( pin "\39\"
-					( attribute "PN" "39"
-						( Origin gPackager )
-					)
 				)
 				( pin "\40\"
-					( attribute "PN" "40"
-						( Origin gPackager )
-					)
 				)
 				( pin "\41\"
-					( attribute "PN" "41"
-						( Origin gPackager )
-					)
 				)
 				( pin "\42\"
-					( attribute "PN" "42"
-						( Origin gPackager )
-					)
 				)
 				( pin "\43\"
-					( attribute "PN" "43"
-						( Origin gPackager )
-					)
 				)
 				( pin "\44\"
-					( attribute "PN" "44"
-						( Origin gPackager )
-					)
 				)
 				( pin "\45\"
-					( attribute "PN" "45"
-						( Origin gPackager )
-					)
 				)
 				( pin "\46\"
-					( attribute "PN" "46"
-						( Origin gPackager )
-					)
 				)
 				( pin "\47\"
-					( attribute "PN" "47"
-						( Origin gPackager )
-					)
 				)
 				( pin "\48\"
-					( attribute "PN" "48"
-						( Origin gPackager )
-					)
 				)
 				( pin "\49\"
-					( attribute "PN" "49"
-						( Origin gPackager )
-					)
 				)
 				( pin "\50\"
-					( attribute "PN" "50"
-						( Origin gPackager )
-					)
 				)
 				( pin "\51\"
-					( attribute "PN" "51"
-						( Origin gPackager )
-					)
 				)
 				( pin "\52\"
-					( attribute "PN" "52"
-						( Origin gPackager )
-					)
 				)
 				( pin "\53\"
-					( attribute "PN" "53"
-						( Origin gPackager )
-					)
 				)
 				( pin "\54\"
-					( attribute "PN" "54"
-						( Origin gPackager )
-					)
 				)
 				( pin "\55\"
-					( attribute "PN" "55"
-						( Origin gPackager )
-					)
 				)
 				( pin "\56\"
-					( attribute "PN" "56"
-						( Origin gPackager )
-					)
 				)
 				( pin "\57\"
-					( attribute "PN" "57"
-						( Origin gPackager )
-					)
 				)
 				( pin "\58\"
-					( attribute "PN" "58"
-						( Origin gPackager )
-					)
 				)
 				( pin "\59\"
-					( attribute "PN" "59"
-						( Origin gPackager )
-					)
 				)
 				( pin "\60\"
-					( attribute "PN" "60"
-						( Origin gPackager )
-					)
 				)
 				( pin "\61\"
-					( attribute "PN" "61"
-						( Origin gPackager )
-					)
 				)
 				( pin "\62\"
-					( attribute "PN" "62"
-						( Origin gPackager )
-					)
 				)
 				( pin "\63\"
-					( attribute "PN" "63"
-						( Origin gPackager )
-					)
 				)
 				( pin "\64\"
-					( attribute "PN" "64"
-						( Origin gPackager )
-					)
 				)
 				( pin "\65\"
-					( attribute "PN" "65"
-						( Origin gPackager )
-					)
 				)
 				( pin "\66\"
-					( attribute "PN" "66"
-						( Origin gPackager )
-					)
 				)
 				( pin "\67\"
-					( attribute "PN" "67"
-						( Origin gPackager )
-					)
 				)
 				( pin "\68\"
-					( attribute "PN" "68"
-						( Origin gPackager )
-					)
 				)
 				( pin "\69\"
-					( attribute "PN" "69"
-						( Origin gPackager )
-					)
 				)
 				( pin "\70\"
-					( attribute "PN" "70"
-						( Origin gPackager )
-					)
 				)
 				( pin "\71\"
-					( attribute "PN" "71"
-						( Origin gPackager )
-					)
 				)
 				( pin "\72\"
-					( attribute "PN" "72"
-						( Origin gPackager )
-					)
 				)
 				( pin "\73\"
-					( attribute "PN" "73"
-						( Origin gPackager )
-					)
 				)
 				( pin "\74\"
-					( attribute "PN" "74"
-						( Origin gPackager )
-					)
 				)
 				( pin "\75\"
-					( attribute "PN" "75"
-						( Origin gPackager )
-					)
 				)
 				( pin "\76\"
-					( attribute "PN" "76"
-						( Origin gPackager )
-					)
 				)
 				( pin "\77\"
-					( attribute "PN" "77"
-						( Origin gPackager )
-					)
 				)
 				( pin "\78\"
-					( attribute "PN" "78"
-						( Origin gPackager )
-					)
 				)
 				( pin "\79\"
-					( attribute "PN" "79"
-						( Origin gPackager )
-					)
 				)
 				( pin "\80\"
-					( attribute "PN" "80"
-						( Origin gPackager )
-					)
 				)
 				( pin "\81\"
-					( attribute "PN" "81"
-						( Origin gPackager )
-					)
 				)
 				( pin "\82\"
-					( attribute "PN" "82"
-						( Origin gPackager )
-					)
 				)
 				( pin "\83\"
-					( attribute "PN" "83"
-						( Origin gPackager )
-					)
 				)
 				( pin "\84\"
-					( attribute "PN" "84"
-						( Origin gPackager )
-					)
 				)
 				( pin "\85\"
-					( attribute "PN" "85"
-						( Origin gPackager )
-					)
 				)
 				( pin "\86\"
-					( attribute "PN" "86"
-						( Origin gPackager )
-					)
 				)
 				( pin "\87\"
-					( attribute "PN" "87"
-						( Origin gPackager )
-					)
 				)
 				( pin "\88\"
-					( attribute "PN" "88"
-						( Origin gPackager )
-					)
 				)
 				( pin "\89\"
-					( attribute "PN" "89"
-						( Origin gPackager )
-					)
 				)
 				( pin "\90\"
-					( attribute "PN" "90"
-						( Origin gPackager )
-					)
 				)
 				( pin "\91\"
-					( attribute "PN" "91"
-						( Origin gPackager )
-					)
 				)
 				( pin "\92\"
-					( attribute "PN" "92"
-						( Origin gPackager )
-					)
 				)
 				( pin "\93\"
-					( attribute "PN" "93"
-						( Origin gPackager )
-					)
 				)
 				( pin "\94\"
-					( attribute "PN" "94"
-						( Origin gPackager )
-					)
 				)
 				( pin "\95\"
-					( attribute "PN" "95"
-						( Origin gPackager )
-					)
 				)
 				( pin "\96\"
-					( attribute "PN" "96"
-						( Origin gPackager )
-					)
 				)
 				( pin "\97\"
-					( attribute "PN" "97"
-						( Origin gPackager )
-					)
 				)
 				( pin "\98\"
-					( attribute "PN" "98"
-						( Origin gPackager )
-					)
 				)
 				( pin "\99\"
-					( attribute "PN" "99"
-						( Origin gPackager )
-					)
 				)
 				( pin "\100\"
-					( attribute "PN" "100"
-						( Origin gPackager )
-					)
 				)
 				( pin "\101\"
-					( attribute "PN" "101"
-						( Origin gPackager )
-					)
 				)
 				( pin "\102\"
-					( attribute "PN" "102"
-						( Origin gPackager )
-					)
 				)
+			)
+			( bus "@tubii_tk2_lib.microzed_module(sch_1):le"
+				( memberType ( signal ) )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):le(0)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):le(1)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):le(2)") )
+				( objectStatus "LE" )
+			)
+			( bus "@tubii_tk2_lib.microzed_module(sch_1):scaler"
+				( memberType ( signal ) )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):scaler(4)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):scaler(5)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):scaler(6)") )
+				( objectStatus "SCALER" )
+			)
+			( bus "@tubii_tk2_lib.microzed_module(sch_1):ext_trig"
+				( memberType ( signal ) )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(0)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(1)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(2)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(3)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(4)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(5)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(6)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(7)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(8)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(9)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(10)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(11)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(12)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(13)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(14)") )
+				( member ( signalRef "@tubii_tk2_lib.microzed_module(sch_1):ext_trig(15)") )
+				( objectStatus "EXT_TRIG" )
 			)
 		)
 	)
@@ -70718,7 +71055,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "clocks"
@@ -92348,7 +92685,7 @@
 	( BaseCopy "caen_coms"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 20 )
+				( logicalViewRevNum 21 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -93235,7 +93572,6 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync24_ttl"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_lvds_n"
 				( objectFlag fObjectAlias )
@@ -93244,7 +93580,6 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_ttl"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):caen_out_anal(1)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(1)") )
@@ -93514,14 +93849,6 @@
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):gt2_p"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_p") )
 				( objectStatus "gt2_p" )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):sync24_ttl"
-				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync24_ttl") )
-				( objectStatus "sync24_ttl" )
-			)
-			( signal "@tubii_tk2_lib.caen_coms(sch_1):sync_ttl"
-				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_ttl") )
-				( objectStatus "sync_ttl" )
 			)
 			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -114208,6 +114535,594 @@
 				( pin "b(0)"
 				)
 			)
+			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i31"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3600,1700)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i32"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3575,1725)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i33"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3550,1725)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i34"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3525,1725)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i35"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3400,1700)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i36"
+				( attribute "CDS_LIB" "resistors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3375,1725)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
 			( pin "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24:vref5m"
 			)
 			( pin "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24:out_clip"
@@ -114669,7 +115584,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "ellie_coms"
@@ -115912,7 +116827,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "cntrl_register"
@@ -119593,7 +120508,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "lo_gen"
@@ -124357,7 +125272,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "mtca_mimic"
@@ -132557,7 +133472,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "ext_trigs"

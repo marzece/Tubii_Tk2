@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "front_ports"
     (lastIds
-      (lastInstanceId 8)
-      (lastNetId 68)
-      (lastInstTermId 91)
+      (lastInstanceId 11)
+      (lastNetId 85)
+      (lastInstTermId 113)
     )
     (cells
       ("S2" "translation_ports" "tubii_tk2_lib" "sym_1"
@@ -92,6 +92,28 @@
           ("T172" "sync_lvds_p" -1 -1 1)
         )
       )
+      ("S9" "scaler_ports" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T234" "scaler" 6 1 1)
+        )
+      )
+      ("S10" "ext_trig_ports" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T238" "ext_trig_in" 15 0 2)
+          ("T241" "ext_ped_in" -1 -1 2)
+          ("T242" "ext_ped_out" -1 -1 1)
+          ("T261" "tubii_rt_out" -1 -1 1)
+        )
+      )
+      ("S11" "gt_delays_ports" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T254" "dgt_n" -1 -1 1)
+          ("T255" "dgt_p" -1 -1 1)
+          ("T258" "mtcd_lo*" -1 -1 2)
+          ("T259" "lo_star_out_n" -1 -1 1)
+          ("T260" "lo_star_out_p" -1 -1 1)
+        )
+      )
     )
 
     (nets
@@ -147,7 +169,18 @@
       ("N66" "sync24_lvds_p" -1 -1 1 1)
       ("N67" "sync_lvds_n" -1 -1 1 1)
       ("N68" "sync_lvds_p" -1 -1 1 1)
+      ("N70" "scaler" 6 1 1 1)
+      ("N72" "ext_trig_in" 15 0 1 2)
+      ("N73" "ext_ped_out" -1 -1 1 1)
+      ("N77" "ext_ped_in" -1 -1 1 2)
+      ("N78" "dgt_n" -1 -1 1 1)
+      ("N79" "dgt_p" -1 -1 1 1)
+      ("N82" "mtcd_lo*" -1 -1 1 2)
+      ("N83" "lo_star_out_n" -1 -1 1 1)
+      ("N84" "lo_star_out_p" -1 -1 1 1)
+      ("N85" "tubii_rt_out" -1 -1 1 1)
       ("gnd" "gnd" -1 -1 2  inherited)
+      ("vcc" "vcc" -1 -1 2  inherited)
     )
 
     (instances
@@ -435,6 +468,68 @@
           ("M91" "T172" -1 -1
             (conn
               ("0" -1 -1 "N68" -1 -1)
+            )
+          )
+        )
+      )
+      ("I9" "page1_i80" "S9"
+        (pins
+          ("M99" "T234" 6 1
+            (conn
+              ("0" 6 1 "N70" 6 1)
+            )
+          )
+        )
+      )
+      ("I10" "page1_i82" "S10"
+        (pins
+          ("M101" "T238" 15 0
+            (conn
+              ("0" 15 0 "N72" 15 0)
+            )
+          )
+          ("M103" "T241" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
+          )
+          ("M104" "T242" -1 -1
+            (conn
+              ("0" -1 -1 "N73" -1 -1)
+            )
+          )
+          ("M113" "T261" -1 -1
+            (conn
+              ("0" -1 -1 "N85" -1 -1)
+            )
+          )
+        )
+      )
+      ("I11" "page1_i87" "S11"
+        (pins
+          ("M106" "T254" -1 -1
+            (conn
+              ("0" -1 -1 "N78" -1 -1)
+            )
+          )
+          ("M107" "T255" -1 -1
+            (conn
+              ("0" -1 -1 "N79" -1 -1)
+            )
+          )
+          ("M110" "T258" -1 -1
+            (conn
+              ("0" -1 -1 "N82" -1 -1)
+            )
+          )
+          ("M111" "T259" -1 -1
+            (conn
+              ("0" -1 -1 "N83" -1 -1)
+            )
+          )
+          ("M112" "T260" -1 -1
+            (conn
+              ("0" -1 -1 "N84" -1 -1)
             )
           )
         )
