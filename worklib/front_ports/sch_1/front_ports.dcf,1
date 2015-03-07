@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 2 )
+			( logicalViewRevNum 13 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -350,52 +350,2105 @@
 			( allRules )
 			( design "front_ports"
 			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_in"
-				( objectStatus "ecl_to_lvds_in" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_out_n"
-				( objectStatus "ecl_to_lvds_out_n" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_out_p"
-				( objectStatus "ecl_to_lvds_out_p" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_nim_in"
-				( objectStatus "ecl_to_nim_in" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_nim_out"
-				( objectStatus "ecl_to_nim_out" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_ttl_in"
-				( objectStatus "ecl_to_ttl_in" )
+			( signal "@tubii_tk2_lib.front_ports(sch_1):mtca_mimic1_out_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_out_n") )
+				( objectStatus "mtca_mimic1_out_n" )
 			)
 			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_ttl_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_out") )
 				( objectStatus "ecl_to_ttl_out" )
 			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_in_n"
-				( objectStatus "lvds_to_ecl_in_n" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_in_p"
-				( objectStatus "lvds_to_ecl_in_p" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_out"
-				( objectStatus "lvds_to_ecl_out" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):nim_to_ecl_in"
-				( objectStatus "nim_to_ecl_in" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):nim_to_ecl_out"
-				( objectStatus "nim_to_ecl_out" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):ttl_to_ecl_in"
-				( objectStatus "ttl_to_ecl_in" )
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_in") )
+				( objectStatus "ecl_to_lvds_in" )
 			)
 			( signal "@tubii_tk2_lib.front_ports(sch_1):ttl_to_ecl_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_out") )
 				( objectStatus "ttl_to_ecl_out" )
 			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):unnamed_1_conn34_i12_1"
-				( objectStatus "unnamed_1_conn34_i12_1" )
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ttl_to_ecl_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_in") )
+				( objectStatus "ttl_to_ecl_in" )
 			)
-			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i12"
+			( signal "@tubii_tk2_lib.front_ports(sch_1):nim_to_ecl_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_out") )
+				( objectStatus "nim_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):nim_to_ecl_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_in") )
+				( objectStatus "nim_to_ecl_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_out") )
+				( objectStatus "lvds_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_in_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_p") )
+				( objectStatus "lvds_to_ecl_in_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):lvds_to_ecl_in_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_n") )
+				( objectStatus "lvds_to_ecl_in_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_ttl_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_in") )
+				( objectStatus "ecl_to_ttl_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_nim_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_out") )
+				( objectStatus "ecl_to_nim_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_nim_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_in") )
+				( objectStatus "ecl_to_nim_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_out_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_p") )
+				( objectStatus "ecl_to_lvds_out_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ecl_to_lvds_out_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_n") )
+				( objectStatus "ecl_to_lvds_out_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):unnamed_1_conn34_i1_1"
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):mtca_mimic1_out_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_out_p") )
+				( objectStatus "mtca_mimic1_out_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):mtca_mimic1_pulse_anal"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_pulse_anal") )
+				( objectStatus "mtca_mimic1_pulse_anal" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):mtca_mimic2_out_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_out_n") )
+				( objectStatus "mtca_mimic2_out_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):mtca_mimic2_out_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_out_p") )
+				( objectStatus "mtca_mimic2_out_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):mtca_mimic2_pulse_anal"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_pulse_anal") )
+				( objectStatus "mtca_mimic2_pulse_anal" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):gnd"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):gnd") )
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):gnd") )
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):gnd") )
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):gnd") )
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):gnd") )
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_out_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_out_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_pulse_anal"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_out_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_out_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_pulse_anal"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):smellie_delay_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):smellie_delay_in") )
+				( objectStatus "smellie_delay_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):smellie_delay_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):smellie_delay_out") )
+				( objectStatus "smellie_delay_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):smellie_pulse_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):smellie_pulse_out") )
+				( objectStatus "smellie_pulse_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):tellie_delay_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):tellie_delay_in") )
+				( objectStatus "tellie_delay_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):tellie_delay_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):tellie_delay_out") )
+				( objectStatus "tellie_delay_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):tellie_pulse_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):tellie_pulse_out") )
+				( objectStatus "tellie_pulse_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):smellie_delay_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):smellie_delay_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):smellie_pulse_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):tellie_delay_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):tellie_delay_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):tellie_pulse_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):clk100_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):clk100_n") )
+				( objectStatus "clk100_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):clk100_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):clk100_p") )
+				( objectStatus "clk100_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):tub_clk_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):tub_clk_in") )
+				( objectStatus "tub_clk_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):clk100_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):clk100_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):tub_clk_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):gt_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):gt_n") )
+				( objectStatus "gt_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):gt_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):gt_p") )
+				( objectStatus "gt_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):sync24_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):sync24_n") )
+				( objectStatus "sync24_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):sync24_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):sync24_p") )
+				( objectStatus "sync24_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):sync_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):sync_n") )
+				( objectStatus "sync_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):sync_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):sync_p") )
+				( objectStatus "sync_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):gt_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):gt_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):sync24_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):sync24_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):sync_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):sync_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):generic_delay_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):generic_delay_in") )
+				( objectStatus "generic_delay_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):generic_delay_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):generic_delay_out") )
+				( objectStatus "generic_delay_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):generic_pulse_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):generic_pulse_out") )
+				( objectStatus "generic_pulse_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):pulse_inv_in"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):pulse_inv_in") )
+				( objectStatus "pulse_inv_in" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):pulse_inv_out"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):pulse_inv_out") )
+				( objectStatus "pulse_inv_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ribbon_pulse_in_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_in_n") )
+				( objectStatus "ribbon_pulse_in_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ribbon_pulse_in_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_in_p") )
+				( objectStatus "ribbon_pulse_in_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ribbon_pulse_out_n"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_out_n") )
+				( objectStatus "ribbon_pulse_out_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):ribbon_pulse_out_p"
+				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_out_p") )
+				( objectStatus "ribbon_pulse_out_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):generic_delay_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):generic_delay_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):generic_pulse_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):pulse_inv_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):pulse_inv_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_in_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_in_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_out_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_out_p"
+				( objectFlag fObjectAlias )
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i7"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3200)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i1"
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,425,125,-425"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1600,2950)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CONN34"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CONN34"
+					( Origin gPackager )
+				)
+				( pin "\1\"
+					( objectStatus "page1_i1.1" )
+				)
+				( pin "\2\"
+					( objectStatus "page1_i1.2" )
+				)
+				( pin "\3\"
+					( objectStatus "page1_i1.3" )
+				)
+				( pin "\4\"
+					( objectStatus "page1_i1.4" )
+				)
+				( pin "\5\"
+					( objectStatus "page1_i1.5" )
+				)
+				( pin "\6\"
+					( objectStatus "page1_i1.6" )
+				)
+				( pin "\7\"
+					( objectStatus "page1_i1.7" )
+				)
+				( pin "\8\"
+					( objectStatus "page1_i1.8" )
+				)
+				( pin "\9\"
+					( objectStatus "page1_i1.9" )
+				)
+				( pin "\10\"
+					( objectStatus "page1_i1.10" )
+				)
+				( pin "\11\"
+					( objectStatus "page1_i1.11" )
+				)
+				( pin "\12\"
+					( objectStatus "page1_i1.12" )
+				)
+				( pin "\13\"
+					( objectStatus "page1_i1.13" )
+				)
+				( pin "\14\"
+					( objectStatus "page1_i1.14" )
+				)
+				( pin "\15\"
+					( objectStatus "page1_i1.15" )
+				)
+				( pin "\16\"
+					( objectStatus "page1_i1.16" )
+				)
+				( pin "\17\"
+					( objectStatus "page1_i1.17" )
+				)
+				( pin "\18\"
+					( objectStatus "page1_i1.18" )
+				)
+				( pin "\19\"
+					( objectStatus "page1_i1.19" )
+				)
+				( pin "\20\"
+					( objectStatus "page1_i1.20" )
+				)
+				( pin "\21\"
+					( objectStatus "page1_i1.21" )
+				)
+				( pin "\22\"
+					( objectStatus "page1_i1.22" )
+				)
+				( pin "\23\"
+					( objectStatus "page1_i1.23" )
+				)
+				( pin "\24\"
+					( objectStatus "page1_i1.24" )
+				)
+				( pin "\25\"
+					( objectStatus "page1_i1.25" )
+				)
+				( pin "\26\"
+					( objectStatus "page1_i1.26" )
+				)
+				( pin "\27\"
+					( objectStatus "page1_i1.27" )
+				)
+				( pin "\28\"
+					( objectStatus "page1_i1.28" )
+				)
+				( pin "\29\"
+					( objectStatus "page1_i1.29" )
+				)
+				( pin "\30\"
+					( objectStatus "page1_i1.30" )
+				)
+				( pin "\31\"
+					( objectStatus "page1_i1.31" )
+				)
+				( pin "\32\"
+					( objectStatus "page1_i1.32" )
+				)
+				( pin "\33\"
+					( objectStatus "page1_i1.33" )
+				)
+				( pin "\34\"
+					( objectStatus "page1_i1.34" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i8"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3100)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i11"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,2975)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i12"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,2875)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i15"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2150,2625)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i16"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2150,2525)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i17"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2150,2275)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i36@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i18"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2150,2375)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i7"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2750)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i7.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i8"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2650)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i8.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i9"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2500)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i9.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i10"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2400)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i10.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i11"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2225)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i11.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i12"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2125)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i12.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i13"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,1975)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i13.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i14"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,1875)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i14.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i15"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,1600)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i15.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i16"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,1500)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i16.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i17"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,1350)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i17.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i43@tubii_tk2_lib.ellie_ports(sch_1):page1_i18"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,1250)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i18.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):page1_i1"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3375)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i1.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):page1_i2"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3225)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i2.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):page1_i3"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3100)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i3.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i50@tubii_tk2_lib.clock_ports(sch_1):page1_i4"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3000)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+					( objectStatus "page1_i4.1" )
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):page1_i1"
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-150,175,125,-225"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-450,2925)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "IDS_C10"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "IDS_C10"
+					( Origin gPackager )
+				)
+				( pin "pin1"
+				)
+				( pin "pin2"
+				)
+				( pin "pin3"
+				)
+				( pin "pin4"
+				)
+				( pin "pin5"
+				)
+				( pin "pin6"
+				)
+				( pin "pin7"
+				)
+				( pin "pin8"
+				)
+				( pin "pin9"
+				)
+				( pin "pin10"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i1"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,4125)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i2"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,4025)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i3"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3850)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i4"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3725)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i5"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3575)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i6"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3475)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i7"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3325)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i8"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3225)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i9"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2875)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i10"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2775)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i11"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2625)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i12"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2525)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i13"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2350)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i14"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2250)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i50:tub_clk_in"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i50:clk100_p"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i50:clk100_n"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i43:tellie_pulse_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i43:tellie_delay_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i43:tellie_delay_in"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i43:smellie_pulse_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i43:smellie_delay_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i43:smellie_delay_in"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_lvds_out_n"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_lvds_out_p"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_nim_in"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_nim_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ecl_to_ttl_in"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:lvds_to_ecl_in_n"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:lvds_to_ecl_in_p"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:lvds_to_ecl_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:nim_to_ecl_in"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:nim_to_ecl_out"
+			)
+			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i21:ttl_to_ecl_out"
+			)
+			( designInst "@tubii_tk2_lib.front_ports(sch_1):page1_i21"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_tk2_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-175,1525)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i21 (translation_ports)" )
+			)
+			( designInst "@tubii_tk2_lib.front_ports(sch_1):page1_i36"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_tk2_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-300,3175)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i36 (mtca_mimic_ports)" )
+			)
+			( designInst "@tubii_tk2_lib.front_ports(sch_1):page1_i43"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_tk2_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-75,4075)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i43 (ellie_ports)" )
+			)
+			( designInst "@tubii_tk2_lib.front_ports(sch_1):page1_i50"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_tk2_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-150,2350)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i50 (clock_ports)" )
+			)
+			( designInst "@tubii_tk2_lib.front_ports(sch_1):page1_i54"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_tk2_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2700,3600)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i54 (time_bus_ports)" )
+			)
+			( designInst "@tubii_tk2_lib.front_ports(sch_1):page1_i61"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_tk2_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2600,2425)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i61 (general_utilities_ports)" )
+			)
+		)
+	)
+	( BaseCopy "translation_ports"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 2 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "translation_ports"
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_in"
+				( objectStatus "ecl_to_lvds_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_n"
+				( objectStatus "ecl_to_lvds_out_n" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_lvds_out_p"
+				( objectStatus "ecl_to_lvds_out_p" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_in"
+				( objectStatus "ecl_to_nim_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_nim_out"
+				( objectStatus "ecl_to_nim_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_in"
+				( objectStatus "ecl_to_ttl_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ecl_to_ttl_out"
+				( objectStatus "ecl_to_ttl_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_n"
+				( objectStatus "lvds_to_ecl_in_n" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_in_p"
+				( objectStatus "lvds_to_ecl_in_p" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):lvds_to_ecl_out"
+				( objectStatus "lvds_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_in"
+				( objectStatus "nim_to_ecl_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):nim_to_ecl_out"
+				( objectStatus "nim_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_in"
+				( objectStatus "ttl_to_ecl_in" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):ttl_to_ecl_out"
+				( objectStatus "ttl_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.translation_ports(sch_1):unnamed_1_conn34_i1_1"
+				( objectStatus "unnamed_1_conn34_i1_1" )
+			)
+			( gate "@tubii_tk2_lib.translation_ports(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
@@ -411,7 +2464,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(1000,3675)"
+				( attribute "XY" "(-1600,2950)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CONN34"
@@ -420,7 +2473,7 @@
 				( attribute "CDS_PART_NAME" "CONN34"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I12" )
+				( objectStatus "PAGE1_I1" )
 				( pin "\1\"
 				)
 				( pin "\2\"
@@ -491,5 +2544,1371 @@
 				)
 			)
 		)
+	)
+	( EndBaseCopy )
+	)
+	( BaseCopy "mtca_mimic_ports"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 3 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "mtca_mimic_ports"
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):gnd"
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_out_n"
+				( objectStatus "mtca_mimic1_out_n" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_out_p"
+				( objectStatus "mtca_mimic1_out_p" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_pulse_anal"
+				( objectStatus "mtca_mimic1_pulse_anal" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_out_n"
+				( objectStatus "mtca_mimic2_out_n" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_out_p"
+				( objectStatus "mtca_mimic2_out_p" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_pulse_anal"
+				( objectStatus "mtca_mimic2_pulse_anal" )
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i7"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3200)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I7" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i8"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3100)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I8" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i11"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,2975)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I11" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i12"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,2875)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I12" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i15"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2150,2625)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I15" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i16"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2150,2525)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I16" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i17"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2150,2275)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I17" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i18"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2150,2375)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I18" )
+				( pin "a"
+				)
+			)
+		)
+	)
+	( EndBaseCopy )
+	)
+	( BaseCopy "ellie_ports"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 2 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "ellie_ports"
+			)
+			( signal "@tubii_tk2_lib.ellie_ports(sch_1):gnd"
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_tk2_lib.ellie_ports(sch_1):smellie_delay_in"
+				( objectStatus "smellie_delay_in" )
+			)
+			( signal "@tubii_tk2_lib.ellie_ports(sch_1):smellie_delay_out"
+				( objectStatus "smellie_delay_out" )
+			)
+			( signal "@tubii_tk2_lib.ellie_ports(sch_1):smellie_pulse_out"
+				( objectStatus "smellie_pulse_out" )
+			)
+			( signal "@tubii_tk2_lib.ellie_ports(sch_1):tellie_delay_in"
+				( objectStatus "tellie_delay_in" )
+			)
+			( signal "@tubii_tk2_lib.ellie_ports(sch_1):tellie_delay_out"
+				( objectStatus "tellie_delay_out" )
+			)
+			( signal "@tubii_tk2_lib.ellie_ports(sch_1):tellie_pulse_out"
+				( objectStatus "tellie_pulse_out" )
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i7"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2750)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I7" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i8"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2650)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I8" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i9"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2500)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I9" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i10"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2400)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I10" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i11"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2225)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I11" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i12"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,2125)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I12" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i13"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,1975)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I13" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i14"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-600,1875)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I14" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i15"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,1600)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I15" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i16"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,1500)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I16" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i17"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,1350)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I17" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.ellie_ports(sch_1):page1_i18"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,1250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I18" )
+				( pin "a"
+				)
+			)
+		)
+	)
+	( EndBaseCopy )
+	)
+	( BaseCopy "clock_ports"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 3 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "clock_ports"
+			)
+			( signal "@tubii_tk2_lib.clock_ports(sch_1):clk100_n"
+				( objectStatus "clk100_n" )
+			)
+			( signal "@tubii_tk2_lib.clock_ports(sch_1):clk100_p"
+				( objectStatus "clk100_p" )
+			)
+			( signal "@tubii_tk2_lib.clock_ports(sch_1):gnd"
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_tk2_lib.clock_ports(sch_1):tub_clk_in"
+				( objectStatus "tub_clk_in" )
+			)
+			( gate "@tubii_tk2_lib.clock_ports(sch_1):page1_i1"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3375)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I1" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.clock_ports(sch_1):page1_i2"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3225)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I2" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.clock_ports(sch_1):page1_i3"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3100)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I3" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.clock_ports(sch_1):page1_i4"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1075,3000)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I4" )
+				( pin "a"
+				)
+			)
+		)
+	)
+	( EndBaseCopy )
+	)
+	( BaseCopy "time_bus_ports"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 2 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "time_bus_ports"
+			)
+			( signal "@tubii_tk2_lib.time_bus_ports(sch_1):gnd"
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_tk2_lib.time_bus_ports(sch_1):gt_n"
+				( objectStatus "gt_n" )
+			)
+			( signal "@tubii_tk2_lib.time_bus_ports(sch_1):gt_p"
+				( objectStatus "gt_p" )
+			)
+			( signal "@tubii_tk2_lib.time_bus_ports(sch_1):sync24_n"
+				( objectStatus "sync24_n" )
+			)
+			( signal "@tubii_tk2_lib.time_bus_ports(sch_1):sync24_p"
+				( objectStatus "sync24_p" )
+			)
+			( signal "@tubii_tk2_lib.time_bus_ports(sch_1):sync_n"
+				( objectStatus "sync_n" )
+			)
+			( signal "@tubii_tk2_lib.time_bus_ports(sch_1):sync_p"
+				( objectStatus "sync_p" )
+			)
+			( gate "@tubii_tk2_lib.time_bus_ports(sch_1):page1_i1"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-150,175,125,-225"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-450,2925)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "IDS_C10"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "IDS_C10"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I1" )
+				( pin "pin1"
+				)
+				( pin "pin2"
+				)
+				( pin "pin3"
+				)
+				( pin "pin4"
+				)
+				( pin "pin5"
+				)
+				( pin "pin6"
+				)
+				( pin "pin7"
+				)
+				( pin "pin8"
+				)
+				( pin "pin9"
+				)
+				( pin "pin10"
+				)
+			)
+		)
+	)
+	( EndBaseCopy )
+	)
+	( BaseCopy "general_utilities_ports"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 2 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "general_utilities_ports"
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):generic_delay_in"
+				( objectStatus "generic_delay_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):generic_delay_out"
+				( objectStatus "generic_delay_out" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):generic_pulse_out"
+				( objectStatus "generic_pulse_out" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):gnd"
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):pulse_inv_in"
+				( objectStatus "pulse_inv_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):pulse_inv_out"
+				( objectStatus "pulse_inv_out" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_in_n"
+				( objectStatus "ribbon_pulse_in_n" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_in_p"
+				( objectStatus "ribbon_pulse_in_p" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_out_n"
+				( objectStatus "ribbon_pulse_out_n" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities_ports(sch_1):ribbon_pulse_out_p"
+				( objectStatus "ribbon_pulse_out_p" )
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i1"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,4125)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I1" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i2"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,4025)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I2" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i3"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3850)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I3" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i4"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3725)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I4" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i5"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3575)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I5" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i6"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3475)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I6" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i7"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3325)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I7" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i8"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(775,3225)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I8" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i9"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2875)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I9" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i10"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2775)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I10" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i11"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2625)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I11" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i12"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2525)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I12" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i13"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2350)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I13" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i14"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1975,2250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I14" )
+				( pin "a"
+				)
+			)
+		)
+	)
+	( EndBaseCopy )
 	)
 )

@@ -1,0 +1,39 @@
+(
+  (version 16.6)
+  (tool
+    (creator "conceptHDL")
+    (last "conceptHDL")
+  )
+  (library "tubii_tk2_lib")
+  (design "caen_ports"
+    (lastIds
+      (lastInstanceId 2)
+      (lastNetId 8)
+    )
+    (cells
+      ("S2" "caen_digital_ports" "tubii_tk2_lib" "sym_1"
+      )
+      ("S3" "caen_analog_ports" "tubii_tk2_lib" "sym_1"
+      )
+    )
+
+    (nets
+      ("N1" "caen_out_anal" 7 0 1 1)
+      ("N2" "gt_nim" -1 -1 1 1)
+      ("N3" "pulse_in_anal" 11 0 1 2)
+      ("N4" "scope_out_anal" 7 0 1 1)
+      ("N5" "sync24_lvds_n" -1 -1 1 1)
+      ("N6" "sync24_lvds_p" -1 -1 1 1)
+      ("N7" "sync_lvds_n" -1 -1 1 1)
+      ("N8" "sync_lvds_p" -1 -1 1 1)
+    )
+
+    (instances
+      ("I1" "page1_i1" "S2"
+      )
+      ("I2" "page1_i2" "S3"
+      )
+    )
+
+  )
+)

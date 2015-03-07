@@ -1,0 +1,395 @@
+<schema xmlns="http://www.cadence.com/spb/csschema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cadence.com/spb/csschema CSSchema002.xsd">
+  <header>
+    <schemaVersion>16.6</schemaVersion>
+    <creatorTool>conceptHDL</creatorTool>
+    <modifierTool>conceptHDL</modifierTool>
+    <modificationTime>2015-03-06T14:26:25</modificationTime>
+    <savedLibrary>tubii_tk2_lib</savedLibrary>
+  </header>
+  <designs>
+    <design schemaType="nameBased" name="mtca_mimic_ports" view="sch_1">
+      <lastids>
+        <instanceid>8</instanceid>
+        <netid>7</netid>
+        <insttermid>8</insttermid>
+      </lastids>
+      <cells>
+        <cell>
+          <id>S2</id>
+          <library>misc</library>
+          <name>testpoint_l</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T8</id>
+              <name>a</name>
+              <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
+      </cells>
+      <nets>
+        <net>
+          <id>N2</id>
+          <name>mtca_mimic1_out_n</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N3</id>
+          <name>mtca_mimic1_out_p</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N4</id>
+          <name>mtca_mimic1_pulse_anal</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N5</id>
+          <name>mtca_mimic2_out_n</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N6</id>
+          <name>mtca_mimic2_out_p</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N7</id>
+          <name>mtca_mimic2_pulse_anal</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N1</id>
+          <name>gnd</name>
+          <scope>global</scope>
+        </net>
+      </nets>
+      <aliases>
+      </aliases>
+      <differentialnets>
+      </differentialnets>
+      <differentialbusnets>
+      </differentialbusnets>
+      <netgroups>
+      </netgroups>
+      <netinterfaces>
+      </netinterfaces>
+      <instances>
+        <instance>
+          <id>I1</id>
+          <cellid>S2</cellid>
+          <name>page1_i7</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M1</id>
+              <termid>T8</termid>
+              <connections>
+                <connection net="N3" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I2</id>
+          <cellid>S2</cellid>
+          <name>page1_i8</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M2</id>
+              <termid>T8</termid>
+              <connections>
+                <connection net="N2" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I3</id>
+          <cellid>S2</cellid>
+          <name>page1_i11</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M3</id>
+              <termid>T8</termid>
+              <connections>
+                <connection net="N6" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I4</id>
+          <cellid>S2</cellid>
+          <name>page1_i12</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M4</id>
+              <termid>T8</termid>
+              <connections>
+                <connection net="N5" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I5</id>
+          <cellid>S2</cellid>
+          <name>page1_i15</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M5</id>
+              <termid>T8</termid>
+              <connections>
+                <connection net="N4" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I6</id>
+          <cellid>S2</cellid>
+          <name>page1_i16</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M6</id>
+              <termid>T8</termid>
+              <connections>
+                <connection net="N1" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I7</id>
+          <cellid>S2</cellid>
+          <name>page1_i17</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M7</id>
+              <termid>T8</termid>
+              <connections>
+                <connection net="N1" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I8</id>
+          <cellid>S2</cellid>
+          <name>page1_i18</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M8</id>
+              <termid>T8</termid>
+              <connections>
+                <connection net="N7" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+      </instances>
+      <templateresolutions>
+      </templateresolutions>
+      <templateinstances>
+      </templateinstances>
+      <extensions>
+        <extension name="schematic_extension">
+        <schematicExtension>
+        <errorStatus>true</errorStatus>
+        <netScopes>
+          <netScope ref="gnd">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
+          <netScope ref="mtca_mimic1_out_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="mtca_mimic1_out_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="mtca_mimic1_pulse_anal">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="mtca_mimic2_out_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="mtca_mimic2_out_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="mtca_mimic2_pulse_anal">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+        </netScopes>
+        <pages>
+          <page number="1">
+            <physicalPageNumber>1</physicalPageNumber>
+            <errorStatus>false</errorStatus>
+            <nets>
+              <net ref="gnd"></net>
+              <net ref="mtca_mimic1_out_n"></net>
+              <net ref="mtca_mimic1_out_p"></net>
+              <net ref="mtca_mimic1_pulse_anal"></net>
+              <net ref="mtca_mimic2_out_n"></net>
+              <net ref="mtca_mimic2_out_p"></net>
+              <net ref="mtca_mimic2_pulse_anal"></net>
+            </nets>
+            <instances>
+              <instance ref="i7"></instance>
+              <instance ref="i8"></instance>
+              <instance ref="i11"></instance>
+              <instance ref="i12"></instance>
+              <instance ref="i15"></instance>
+              <instance ref="i16"></instance>
+              <instance ref="i17"></instance>
+              <instance ref="i18"></instance>
+            </instances>
+          </page>
+        </pages>
+      </schematicExtension>
+        </extension>
+      </extensions>
+    </design>
+  </designs>
+</schema>

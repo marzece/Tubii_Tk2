@@ -1,0 +1,61 @@
+FILE_TYPE = CONNECTIVITY;
+{Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
+"PAGE_NUMBER" = 1;
+0"NC";
+1"GND\G";
+2"CLK100_P";
+3"CLK100_N";
+4"TUB_CLK_IN";
+%"TESTPOINT_L"
+"1","(-1075,3375)","0","misc","I1";
+;
+TITLE"TEST"
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"2;
+%"TESTPOINT_L"
+"1","(-1075,3225)","0","misc","I2";
+;
+TITLE"TEST"
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"3;
+%"TESTPOINT_L"
+"1","(-1075,3100)","2","misc","I3";
+;
+CDS_LIB"misc"
+TITLE"TEST"
+ABBREV"TP";
+"A\NAC \B"4;
+%"TESTPOINT_L"
+"1","(-1075,3000)","2","misc","I4";
+;
+ABBREV"TP"
+TITLE"TEST"
+CDS_LIB"misc";
+"A\NAC \B"1;
+%"OUTPORT"
+"1","(-75,3100)","0","standard","I5";
+;
+OFFPAGE"TRUE"
+CDS_LIB"standard";
+"A"
+HDL_PORT"OUT"
+VHDL_PORT"OUT"4;
+%"INPORT"
+"1","(-2025,3375)","0","standard","I7";
+;
+OFFPAGE"TRUE"
+CDS_LIB"standard";
+"A"
+HDL_PORT"IN"
+VHDL_PORT"IN"2;
+%"INPORT"
+"1","(-2025,3225)","0","standard","I8";
+;
+OFFPAGE"TRUE"
+CDS_LIB"standard";
+"A"
+HDL_PORT"IN"
+VHDL_PORT"IN"3;
+END.

@@ -1,0 +1,69 @@
+(
+  (version 16.6)
+  (tool
+    (creator "conceptHDL")
+    (last "conceptHDL")
+  )
+  (library "tubii_tk2_lib")
+  (design "clock_ports"
+    (lastIds
+      (lastInstanceId 4)
+      (lastNetId 4)
+      (lastInstTermId 4)
+    )
+    (cells
+      ("S2" "testpoint_l" "misc" "sym_1"
+        (terms
+          ("T5" "a" -1 -1 3)
+        )
+      )
+    )
+
+    (nets
+      ("N1" "clk100_n" -1 -1 1 1)
+      ("N2" "clk100_p" -1 -1 1 1)
+      ("N4" "tub_clk_in" -1 -1 1 2)
+      ("N3" "gnd" -1 -1 2 )
+    )
+
+    (instances
+      ("I1" "page1_i1" "S2"
+        (pins
+          ("M1" "T5" -1 -1
+            (conn
+              ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+        )
+      )
+      ("I2" "page1_i2" "S2"
+        (pins
+          ("M2" "T5" -1 -1
+            (conn
+              ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+        )
+      )
+      ("I3" "page1_i3" "S2"
+        (pins
+          ("M3" "T5" -1 -1
+            (conn
+              ("0" -1 -1 "N4" -1 -1)
+            )
+          )
+        )
+      )
+      ("I4" "page1_i4" "S2"
+        (pins
+          ("M4" "T5" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
+  )
+)

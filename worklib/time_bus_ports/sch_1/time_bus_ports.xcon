@@ -1,0 +1,300 @@
+<schema xmlns="http://www.cadence.com/spb/csschema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cadence.com/spb/csschema CSSchema002.xsd">
+  <header>
+    <schemaVersion>16.6</schemaVersion>
+    <creatorTool>conceptHDL</creatorTool>
+    <modifierTool>conceptHDL</modifierTool>
+    <modificationTime>2015-03-06T18:16:13</modificationTime>
+    <savedLibrary>tubii_tk2_lib</savedLibrary>
+  </header>
+  <designs>
+    <design schemaType="nameBased" name="time_bus_ports" view="sch_1">
+      <lastids>
+        <instanceid>1</instanceid>
+        <netid>7</netid>
+        <insttermid>10</insttermid>
+      </lastids>
+      <cells>
+        <cell>
+          <id>S2</id>
+          <library>misc</library>
+          <name>ids_c10</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T8</id>
+              <name>pin1</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T9</id>
+              <name>pin2</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T10</id>
+              <name>pin3</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T11</id>
+              <name>pin4</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T12</id>
+              <name>pin5</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T13</id>
+              <name>pin6</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T14</id>
+              <name>pin7</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T15</id>
+              <name>pin8</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T16</id>
+              <name>pin9</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T17</id>
+              <name>pin10</name>
+              <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
+      </cells>
+      <nets>
+        <net>
+          <id>N2</id>
+          <name>gt_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N3</id>
+          <name>gt_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N4</id>
+          <name>sync24_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N5</id>
+          <name>sync24_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N6</id>
+          <name>sync_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N7</id>
+          <name>sync_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N1</id>
+          <name>gnd</name>
+          <scope>global</scope>
+        </net>
+      </nets>
+      <aliases>
+      </aliases>
+      <differentialnets>
+      </differentialnets>
+      <differentialbusnets>
+      </differentialbusnets>
+      <netgroups>
+      </netgroups>
+      <netinterfaces>
+      </netinterfaces>
+      <instances>
+        <instance>
+          <id>I1</id>
+          <cellid>S2</cellid>
+          <name>page1_i1</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M1</id>
+              <termid>T8</termid>
+              <connections>
+                <connection net="N3" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M2</id>
+              <termid>T9</termid>
+              <connections>
+                <connection net="N2" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M3</id>
+              <termid>T10</termid>
+              <connections>
+                <connection net="N1" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M4</id>
+              <termid>T11</termid>
+              <connections>
+                <connection net="N1" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M5</id>
+              <termid>T12</termid>
+              <connections>
+                <connection net="N1" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M6</id>
+              <termid>T13</termid>
+              <connections>
+                <connection net="N1" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M7</id>
+              <termid>T14</termid>
+              <connections>
+                <connection net="N6" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M8</id>
+              <termid>T15</termid>
+              <connections>
+                <connection net="N7" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M9</id>
+              <termid>T16</termid>
+              <connections>
+                <connection net="N4" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M10</id>
+              <termid>T17</termid>
+              <connections>
+                <connection net="N5" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+      </instances>
+      <templateresolutions>
+      </templateresolutions>
+      <templateinstances>
+      </templateinstances>
+      <extensions>
+        <extension name="schematic_extension">
+        <schematicExtension>
+        <errorStatus>true</errorStatus>
+        <netScopes>
+          <netScope ref="gnd">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
+          <netScope ref="gt_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="gt_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+        </netScopes>
+        <pages>
+          <page number="1">
+            <physicalPageNumber>1</physicalPageNumber>
+            <errorStatus>false</errorStatus>
+            <nets>
+              <net ref="gnd"></net>
+              <net ref="gt_n"></net>
+              <net ref="gt_p"></net>
+              <net ref="sync24_n"></net>
+              <net ref="sync24_p"></net>
+              <net ref="sync_n"></net>
+              <net ref="sync_p"></net>
+            </nets>
+            <instances>
+              <instance ref="i1"></instance>
+            </instances>
+          </page>
+        </pages>
+      </schematicExtension>
+        </extension>
+      </extensions>
+    </design>
+  </designs>
+</schema>
