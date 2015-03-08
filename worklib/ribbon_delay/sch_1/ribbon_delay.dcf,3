@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 6 )
+			( logicalViewRevNum 7 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -296,6 +296,54 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -312,9 +360,11 @@
 				( objectStatus "gnd" )
 			)
 			( signal "@tubii_tk2_lib.ribbon_delay(sch_1):pulse_out_n"
+				( alias ( signalRef "@tubii_tk2_lib.ribbon_delay(sch_1):page1_pulse_out_n") )
 				( objectStatus "pulse_out_n" )
 			)
 			( signal "@tubii_tk2_lib.ribbon_delay(sch_1):pulse_out_p"
+				( alias ( signalRef "@tubii_tk2_lib.ribbon_delay(sch_1):page1_pulse_out_p") )
 				( objectStatus "pulse_out_p" )
 			)
 			( signal "@tubii_tk2_lib.ribbon_delay(sch_1):rib10_n"
@@ -383,6 +433,14 @@
 			( signal "@tubii_tk2_lib.ribbon_delay(sch_1):vtt"
 				( objectStatus "vtt" )
 			)
+			( signal "@tubii_tk2_lib.ribbon_delay(sch_1):page1_pulse_out_n"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_pulse_out_n" )
+			)
+			( signal "@tubii_tk2_lib.ribbon_delay(sch_1):page1_pulse_out_p"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_pulse_out_p" )
+			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
@@ -411,26 +469,68 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "U53"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U53"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I1" )
 				( pin "pin1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin2"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin3"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin4"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin5"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin6"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin7"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin8"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin9"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin10"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i2"
@@ -461,26 +561,68 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "U54"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U54"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I2" )
 				( pin "pin1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin2"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin3"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin4"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin5"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin6"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin7"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin8"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin9"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "pin10"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i3"
@@ -505,38 +647,104 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CHIPS_PART_NAME" "MC10H116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MC10H116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U52"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U52"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I3" )
 				( pin "d1"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d1*\"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "d2"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d2*\"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
 				)
 				( pin "d3"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d3*\"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd1"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd2"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
 				)
 				( pin "q1"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q1*\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 				( pin "q2"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q2*\"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
 				( pin "q3"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q3*\"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
 				)
 				( pin "vbb"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
 				)
 				( pin "vee"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i4"
@@ -561,38 +769,104 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CHIPS_PART_NAME" "MC10H116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MC10H116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U51"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U51"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "d1"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d1*\"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "d2"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d2*\"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
 				)
 				( pin "d3"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d3*\"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd1"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd2"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
 				)
 				( pin "q1"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q1*\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 				( pin "q2"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q2*\"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
 				( pin "q3"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q3*\"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
 				)
 				( pin "vbb"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
 				)
 				( pin "vee"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i7"
@@ -672,10 +946,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "C87"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C87"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I7" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i8"
@@ -755,10 +1047,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "C86"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C86"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i9"
@@ -835,10 +1145,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R88"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R88"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i10"
@@ -915,10 +1243,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R89"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R89"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i11"
@@ -995,10 +1341,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R90"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R90"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I11" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i12"
@@ -1075,10 +1439,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R91"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R91"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I12" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i13"
@@ -1155,10 +1537,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R92"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R92"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I13" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i14"
@@ -1235,10 +1635,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R93"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R93"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I14" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i15"
@@ -1315,10 +1733,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R94"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R94"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I15" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i16"
@@ -1395,10 +1831,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R95"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R95"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I16" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i17"
@@ -1475,10 +1929,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R96"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R96"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I17" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i18"
@@ -1555,10 +2027,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R97"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R97"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I18" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i19"
@@ -1635,10 +2125,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R98"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R98"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I19" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ribbon_delay(sch_1):page1_i20"
@@ -1715,10 +2223,28 @@
 				( attribute "ROOM" "RIBBON_DELAY"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R99"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R99"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I20" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 		)

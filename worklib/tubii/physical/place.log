@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Mar 07 21:12:10 2015                      )
+(    Date/Time        : Sat Mar 07 23:37:56 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -15,7 +15,7 @@
 
  Will search while getting acceptable improvement
  Will not scale complete graph edges
- Start time Sat Mar 07 21:12:10 2015
+ Start time Sat Mar 07 23:37:56 2015
 
 
  
@@ -24,7 +24,7 @@
  
  Algorithm  : discrete
  Place within: room
- Room name: RIBBON_DELAY
+ Room name: PULSE_INV
  Map grid points to: library origin
  Place leftovers on bottom: YES
  Allow component overlap: NO
@@ -60,7 +60,7 @@
   line seg 	(800.0,15800.0) (800.0,600.0)
 
 ACTIVE ROOMS:
-    Room  1: RIBBON_DELAY    (10700.0 11700.0) (12400.0 11700.0) (12400.0 13200.0) (10700.0 13200.0)
+    Room  1: PULSE_INV       (7800.0 7200.0) (9300.0 7200.0) (9300.0 8400.0) (7800.0 8400.0)
 
 
  Top grid x increment will be 250.0
@@ -74,7 +74,7 @@ ACTIVE ROOMS:
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Mar 07 21:12:10 2015                      )
+(    Date/Time        : Sat Mar 07 23:37:56 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -128,9 +128,9 @@ Report methodology:
 
     Layout Statistics:
     -----------------
-        Components:  Placed 27  Unplaced 852  Total 879
+        Components:  Placed 92  Unplaced 787  Total 879
         Nets:  W/Rats 687  No/Rats 1  Total 688
-        Pins:  W/Rats 133  No/Rats 0  Unused 1  Unplaced 3233  Total 3367
+        Pins:  W/Rats 370  No/Rats 0  Unused 110  Unplaced 2887  Total 3367
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
@@ -138,16 +138,16 @@ Report methodology:
         Layout density (sq in/EIC) 0.963
         Pin density (Pins/sq in) 14.573
         Average ratlength (in)  0.5
-        Rat density (in/sq in) 0.157
+        Rat density (in/sq in) 0.484
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                 78           0           78
+        Connections                246           0          246
         Already Connected           70           0           70
-        Missing Connections          8           0            8
+        Missing Connections        176           0          176
         Dangling Connections                                  0
-        Connection Completion       89.74%       0.00%       89.74%
-        Manh Distance (inches)      36.32
+        Connection Completion       28.46%       0.00%       28.46%
+        Manh Distance (inches)     111.71
         Etch Length (inches)        41.71        0.00        41.71
         Number of vias		    34           0           34
         Vias per Connection          0.49        0.00         0.49
@@ -156,12 +156,105 @@ Report methodology:
 
  Starting Connection Matrix construction.
 
- Error: Symbol, alternate symbol or pad for package DIP16 not found
+ Failed placements are marked with an asterisk in the table below
 
- Error: See message(s) above
+ 
+  ref_des    location_x  location_y  rotation mirror            package
+      C85       9300.0      8300.0       270                CAP0603 (49)
+      U50       9050.0      8050.0       180                  SOIC8 (2)
+      R87       8800.0      8050.0       180                 RES805 (23)
+      C84       8800.0      8050.0        90                CAP0603 (48)
+      R86       9050.0      7800.0       180                 RES805 (22)
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dangling Line, Via and Antenna Report                            )
+(                                                                     )
+(    Drawing          : BSTPLC.brd                                    )
+(    Software Version : 16.6P004                                      )
+(    Date/Time        : Sat Mar 07 23:37:56 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Report methodology:
+  - Dangling lines have at least one end not connected.
+  - Dangling vias have one or no connection
+      - Plus are not a test, thieving or netshort property via.
+  - Antenna vias do not have connections on their start and end layers.
+      - Plus they are not a thieving vias.
+      - Optionally, VOLTAGE nets, testvias and through vias can be suppressed with
+        the environment variable report_antennavia.
+      - Section may be suppressed by variable report_noantennavia.
+  - Not part of the current partition.
+  - To suppress items in dangle report add the OK_DANGLE property to the via
+    or connect line.
+
+
+
+<< Dangling Vias >>
+  Net                  Padstack               Location            Layers
+  ---------------------------------------------------------------------------
+  VEE                  VIA                  (8318.6 12100.0) TOP/BOTTOM 
+  VEE                  VIA                  (7814.0 12100.0) TOP/BOTTOM 
+  VEE                  VIA                  (8994.5 12100.0) TOP/BOTTOM 
+  VCC                  VIA                  (8494.5 12700.0) TOP/BOTTOM 
+  VCC                  VIA                  (7994.5 12700.0) TOP/BOTTOM 
+  VCC                  VIA                  (8818.6 12723.6) TOP/BOTTOM 
+  VCC                  VIA                  (3235.5 13400.0) TOP/BOTTOM 
+  VCC                  VIA                  (3050.0 12744.5) TOP/BOTTOM 
+  VCC                  VIA                  (2887.6 13389.6) TOP/BOTTOM 
+
+
+<< Antenna Vias >>
+  Net                  Padstack               Location            Layers
+  ---------------------------------------------------------------------------
+  VEE                  VIA                  (8318.6 12100.0) TOP/BOTTOM 
+  VEE                  VIA                  (7814.0 12100.0) TOP/BOTTOM 
+  VEE                  VIA                  (8994.5 12100.0) TOP/BOTTOM 
+  VCC                  VIA                  (8494.5 12700.0) TOP/BOTTOM 
+  VCC                  VIA                  (7994.5 12700.0) TOP/BOTTOM 
+  VCC                  VIA                  (8818.6 12723.6) TOP/BOTTOM 
+  VCC                  VIA                  (3235.5 13400.0) TOP/BOTTOM 
+  VCC                  VIA                  (3050.0 12744.5) TOP/BOTTOM 
+  VCC                  VIA                  (2887.6 13389.6) TOP/BOTTOM 
+
+<< Summary >>
+  Total dangling lines:       0
+  Total dangling vias:        9
+  Total antenna vias:         9
+
+    Layout Statistics:
+    -----------------
+        Components:  Placed 97  Unplaced 782  Total 879
+        Nets:  W/Rats 687  No/Rats 1  Total 688
+        Pins:  W/Rats 383  No/Rats 0  Unused 113  Unplaced 2871  Total 3367
+        Equivalent ICs (1 pin = 1/14 EIC)  240
+        RatTs              0
+        Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
+        Layout area (sq in) 231.04
+        Layout density (sq in/EIC) 0.963
+        Pin density (Pins/sq in) 14.573
+        Average ratlength (in)  0.4
+        Rat density (in/sq in) 0.488
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                254           0          254
+        Already Connected           70           0           70
+        Missing Connections        184           0          184
+        Dangling Connections                                  0
+        Connection Completion       27.56%       0.00%       27.56%
+        Manh Distance (inches)     112.78
+        Etch Length (inches)        41.71        0.00        41.71
+        Number of vias		    34           0           34
+        Vias per Connection          0.49        0.00         0.49
+        Smd pins with attached clines                        93
+
+
+ Successfully placed 5 components out of 5
 
 
 
 Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
-Actual time of completion: Sat Mar 07 21:12:10 2015
+Actual time of completion: Sat Mar 07 23:37:56 2015
 

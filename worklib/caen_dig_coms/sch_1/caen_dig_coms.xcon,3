@@ -5,12 +5,11 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-06T18:19:58</modificationTime>
+    <modificationTime>2015-03-07T19:10:33</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_dig_coms" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>21</instanceid>
         <netid>29</netid>
@@ -463,6 +462,8 @@
         <net>
           <id>N20</id>
           <name>sync24_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N21</id>
@@ -479,6 +480,8 @@
         <net>
           <id>N23</id>
           <name>sync_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N25</id>
@@ -1739,6 +1742,12 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="sync24_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="sync_lvds_n">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1761,6 +1770,12 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="vcc">

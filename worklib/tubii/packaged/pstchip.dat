@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 07-Mar-2015 AT 19:47:18 }
+{ Packager-XL run on 07-Mar-2015 AT 23:12:38 }
 primitive '1N4448';
   pin
     'IN':
@@ -2798,22 +2798,18 @@ primitive 'HCT123';
     'Q1':
       PIN_NUMBER='(13)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_POS='dp_q1';
       PINUSE='OUT';
     'Q2':
       PIN_NUMBER='(5)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_POS='dp_q2';
       PINUSE='OUT';
     'Q1*':
       PIN_NUMBER='(4)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_NEG='dp_q1';
       PINUSE='OUT';
     'Q2*':
       PIN_NUMBER='(12)';
       OUTPUT_LOAD='(1.0,-1.0)';
-      DIFF_PAIR_PINS_NEG='dp_q2';
       PINUSE='OUT';
     'CEXT1':
       PIN_NUMBER='(14)';
@@ -2839,20 +2835,20 @@ primitive 'HCT123';
       NO_LOAD_CHECK='Both';
       ALLOW_CONNECT='TRUE';
       UNKNOWN_LOADING='TRUE';
-    'IN_B1':
-      PIN_NUMBER='(2)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'IN_B2':
-      PIN_NUMBER='(10)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
     'IN_A1*':
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
     'IN_A2*':
       PIN_NUMBER='(9)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'IN_B1':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'IN_B2':
+      PIN_NUMBER='(10)';
       INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
     'VCC':
@@ -2875,6 +2871,7 @@ primitive 'HCT123';
   body
       PART_NAME='HCT123';
       BODY_NAME='HCT123';
+      JEDEC_TYPE='SOIC16';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
   end_body;

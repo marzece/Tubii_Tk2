@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-01T03:04:43</modificationTime>
+    <modificationTime>2015-03-07T18:18:07</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_spkr" view="sch_1">
       <lastids>
         <instanceid>26</instanceid>
-        <netid>13</netid>
+        <netid>14</netid>
         <insttermid>81</insttermid>
       </lastids>
       <cells>
@@ -340,6 +340,12 @@
           <name>unnamed_1_rsmd0805_i5_b</name>
         </net>
         <net>
+          <id>N14</id>
+          <name>spkr_sig</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
           <id>N1</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -396,6 +402,7 @@
               <id>M4</id>
               <termid>T4</termid>
               <connections>
+                <connection net="N1" />
               </connections>
             </pin>
             <pin>
@@ -408,6 +415,7 @@
               <id>M6</id>
               <termid>T6</termid>
               <connections>
+                <connection net="N14" />
               </connections>
             </pin>
             <pin>
@@ -445,6 +453,7 @@
               <id>M12</id>
               <termid>T12</termid>
               <connections>
+                <connection net="N13" />
               </connections>
             </pin>
             <pin>
@@ -1525,6 +1534,12 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="spkr_sig">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="vcc">
             <pageScope number="1">
               <scope>global</scope>
@@ -1537,6 +1552,7 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="gnd"></net>
+              <net ref="spkr_sig"></net>
               <net ref="unnamed_1_74f06_i2_d1"></net>
               <net ref="unnamed_1_74f06_i2_q1"></net>
               <net ref="unnamed_1_74f06_i3_q1"></net>

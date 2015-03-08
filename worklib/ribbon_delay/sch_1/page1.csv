@@ -4,34 +4,34 @@ FILE_TYPE = CONNECTIVITY;
 0"NC";
 1"VTT\G";
 2"VTT\G";
-3"PULSE_IN_P";
-4"PULSE_IN_N";
+3"PULSE_IN_N";
+4"VEE\G";
 5"VEE\G";
-6"VEE\G";
-7"PULSE_OUT_N";
-8"PULSE_OUT_P";
-9"GND\G";
-10"RIB4_N";
-11"RIB8_N";
-12"RIB9_N";
-13"RIB1_N";
-14"RIB3_N";
-15"RIB5_N";
-16"RIB9_P";
-17"RIB8_P";
-18"GND\G";
-19"RIB4_P";
-20"RIB1_P";
-21"RIB5_P";
-22"RIB6_P";
-23"RIB7_P";
-24"RIB10_P";
-25"RIB10_N";
-26"RIB7_N";
-27"RIB6_N";
-28"RIB2_P";
-29"RIB2_N";
-30"RIB3_P";
+6"PULSE_OUT_P";
+7"RIB4_N";
+8"RIB9_N";
+9"RIB1_N";
+10"RIB8_P";
+11"RIB6_P";
+12"RIB10_P";
+13"RIB10_N";
+14"RIB7_N";
+15"RIB6_N";
+16"RIB2_P";
+17"RIB2_N";
+18"PULSE_OUT_N";
+19"RIB7_P";
+20"RIB3_N";
+21"RIB3_P";
+22"GND\G";
+23"RIB4_P";
+24"RIB8_N";
+25"RIB9_P";
+26"RIB5_N";
+27"RIB5_P";
+28"PULSE_IN_P";
+29"RIB1_P";
+30"GND\G";
 %"IDS_C10"
 "1","(1525,3775)","0","misc","I1";
 ;
@@ -43,25 +43,25 @@ ROOM"RIBBON_DELAY"
 CDS_LIB"misc"
 CDS_LMAN_SYM_OUTLINE"-150,175,125,-225";
 "PIN7"
-$PN"7"11;
+$PN"7"24;
 "PIN8"
-$PN"8"17;
+$PN"8"10;
 "PIN6"
-$PN"6"21;
+$PN"6"27;
 "PIN9"
-$PN"9"12;
+$PN"9"8;
 "PIN10"
-$PN"10"16;
+$PN"10"25;
 "PIN4"
-$PN"4"19;
+$PN"4"23;
 "PIN3"
-$PN"3"10;
+$PN"3"7;
 "PIN2"
-$PN"2"20;
+$PN"2"29;
 "PIN5"
-$PN"5"15;
+$PN"5"26;
 "PIN1"
-$PN"1"13;
+$PN"1"9;
 %"RSMD0805"
 "1","(-650,3650)","0","resistors","I10";
 ;
@@ -90,7 +90,7 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
 "A<0>"
 $PN"1"2;
 "B<0>"
-$PN"2"4;
+$PN"2"3;
 %"RSMD0805"
 "1","(-650,3600)","0","resistors","I11";
 ;
@@ -119,7 +119,7 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
 "A<0>"
 $PN"1"2;
 "B<0>"
-$PN"2"19;
+$PN"2"23;
 %"RSMD0805"
 "1","(-650,3550)","0","resistors","I12";
 ;
@@ -148,7 +148,7 @@ CDS_LIB"resistors";
 "A<0>"
 $PN"1"2;
 "B<0>"
-$PN"2"10;
+$PN"2"7;
 %"RSMD0805"
 "1","(-650,3500)","0","resistors","I13";
 ;
@@ -177,7 +177,7 @@ POWER"0.1";
 "A<0>"
 $PN"1"2;
 "B<0>"
-$PN"2"17;
+$PN"2"10;
 %"RSMD0805"
 "1","(-650,3450)","0","resistors","I14";
 ;
@@ -206,7 +206,7 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
 "A<0>"
 $PN"1"2;
 "B<0>"
-$PN"2"11;
+$PN"2"24;
 %"RSMD0805"
 "1","(-450,2750)","0","resistors","I15";
 ;
@@ -235,7 +235,7 @@ CDS_LIB"resistors";
 "A<0>"
 $PN"1"1;
 "B<0>"
-$PN"2"28;
+$PN"2"16;
 %"RSMD0805"
 "1","(-450,2650)","0","resistors","I16";
 ;
@@ -264,7 +264,7 @@ CDS_LIB"resistors";
 "A<0>"
 $PN"1"1;
 "B<0>"
-$PN"2"29;
+$PN"2"17;
 %"RSMD0805"
 "1","(-450,2600)","0","resistors","I17";
 ;
@@ -293,7 +293,7 @@ CDS_LIB"resistors";
 "A<0>"
 $PN"1"1;
 "B<0>"
-$PN"2"22;
+$PN"2"11;
 %"RSMD0805"
 "1","(-450,2550)","0","resistors","I18";
 ;
@@ -322,7 +322,7 @@ CDS_LIB"resistors";
 "A<0>"
 $PN"1"1;
 "B<0>"
-$PN"2"27;
+$PN"2"15;
 %"RSMD0805"
 "1","(-450,2500)","0","resistors","I19";
 ;
@@ -351,7 +351,7 @@ CDS_LIB"resistors";
 "A<0>"
 $PN"1"1;
 "B<0>"
-$PN"2"24;
+$PN"2"12;
 %"IDS_C10"
 "1","(1525,2800)","0","misc","I2";
 ;
@@ -363,25 +363,25 @@ ROOM"RIBBON_DELAY"
 CDS_LIB"misc"
 CDS_LMAN_SYM_OUTLINE"-150,175,125,-225";
 "PIN7"
-$PN"7"26;
+$PN"7"14;
 "PIN8"
-$PN"8"23;
+$PN"8"19;
 "PIN6"
-$PN"6"22;
+$PN"6"11;
 "PIN9"
-$PN"9"25;
+$PN"9"13;
 "PIN10"
-$PN"10"24;
+$PN"10"12;
 "PIN4"
-$PN"4"30;
+$PN"4"21;
 "PIN3"
-$PN"3"14;
+$PN"3"20;
 "PIN2"
-$PN"2"28;
+$PN"2"16;
 "PIN5"
-$PN"5"27;
+$PN"5"15;
 "PIN1"
-$PN"1"29;
+$PN"1"17;
 %"RSMD0805"
 "1","(-450,2450)","0","resistors","I20";
 ;
@@ -410,7 +410,7 @@ CDS_LIB"resistors";
 "A<0>"
 $PN"1"1;
 "B<0>"
-$PN"2"25;
+$PN"2"13;
 %"OUTPORT"
 "1","(900,2575)","0","standard","I21";
 ;
@@ -419,7 +419,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"8;
+HDL_PORT"OUT"6;
 %"OUTPORT"
 "1","(900,2525)","0","standard","I22";
 ;
@@ -428,7 +428,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"7;
+HDL_PORT"OUT"18;
 %"MC10H116"
 "1","(400,3700)","0","ecl","I3";
 ;
@@ -439,38 +439,38 @@ CDS_SEC"1"
 ROOM"RIBBON_DELAY"
 CDS_LMAN_SYM_OUTLINE"-125,300,125,-175"
 CDS_LIB"ecl";
-"Q3* \B"
-$PN"18"0;
-"Q2* \B"
-$PN"8"0;
-"Q1* \B"
-$PN"3"0;
-"Q3"
-$PN"19"0;
-"Q2"
-$PN"9"0;
 "Q1"
-$PN"4"0;
-"D3* \B"
-$PN"15"0;
-"D2* \B"
-$PN"12"0;
-"D1* \B"
-$PN"5"0;
-"D3"
-$PN"17"0;
-"D2"
-$PN"13"0;
+$PN"4"29;
+"Q1* \B"
+$PN"3"9;
+"Q3"
+$PN"19"25;
+"Q3* \B"
+$PN"18"8;
 "D1"
-$PN"7"0;
+$PN"7"28;
+"D1* \B"
+$PN"5"3;
+"D3* \B"
+$PN"15"24;
+"GND2"
+$PN"20"30;
+"GND1"
+$PN"2"30;
+"VEE"
+$PN"10"5;
 "VBB"
 $PN"14"0;
-"VEE"
-$PN"10"6;
-"GND1"
-$PN"2"18;
-"GND2"
-$PN"20"18;
+"Q2"
+$PN"9"27;
+"Q2* \B"
+$PN"8"26;
+"D3"
+$PN"17"10;
+"D2* \B"
+$PN"12"7;
+"D2"
+$PN"13"23;
 %"MC10H116"
 "1","(300,2650)","0","ecl","I4";
 ;
@@ -481,38 +481,38 @@ CDS_SEC"1"
 ROOM"RIBBON_DELAY"
 CDS_LIB"ecl"
 CDS_LMAN_SYM_OUTLINE"-125,300,125,-175";
-"Q3* \B"
-$PN"18"0;
-"Q2* \B"
-$PN"8"0;
-"Q1* \B"
-$PN"3"0;
-"Q3"
-$PN"19"0;
-"Q2"
-$PN"9"0;
 "Q1"
-$PN"4"0;
-"D3* \B"
-$PN"15"0;
-"D2* \B"
-$PN"12"0;
-"D1* \B"
-$PN"5"0;
-"D3"
-$PN"17"0;
-"D2"
-$PN"13"0;
+$PN"4"21;
+"Q1* \B"
+$PN"3"20;
+"Q3"
+$PN"19"6;
+"Q3* \B"
+$PN"18"18;
 "D1"
-$PN"7"0;
+$PN"7"16;
+"D1* \B"
+$PN"5"17;
+"D3* \B"
+$PN"15"13;
+"GND2"
+$PN"20"22;
+"GND1"
+$PN"2"22;
+"VEE"
+$PN"10"4;
 "VBB"
 $PN"14"0;
-"VEE"
-$PN"10"5;
-"GND1"
-$PN"2"9;
-"GND2"
-$PN"20"9;
+"Q2"
+$PN"9"19;
+"Q2* \B"
+$PN"8"14;
+"D3"
+$PN"17"12;
+"D2* \B"
+$PN"12"15;
+"D2"
+$PN"13"11;
 %"INPORT"
 "1","(-450,3850)","0","standard","I5";
 ;
@@ -521,7 +521,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"3;
+HDL_PORT"IN"28;
 %"INPORT"
 "1","(-450,3800)","0","standard","I6";
 ;
@@ -530,7 +530,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"4;
+HDL_PORT"IN"3;
 %"CSMD0603"
 "1","(350,4300)","0","capacitors","I7";
 ;
@@ -558,9 +558,9 @@ TC"0"
 CURRENT"CIMAX"
 TOL_ON_OFF"ON";
 "B<0>"
-$PN"2"18;
+$PN"2"30;
 "A<0>"
-$PN"1"6;
+$PN"1"5;
 %"CSMD0603"
 "1","(250,3100)","0","capacitors","I8";
 ;
@@ -588,9 +588,9 @@ MAX_TEMP"CTMAX"
 TC"0"
 POSTOL"10%";
 "B<0>"
-$PN"2"9;
+$PN"2"22;
 "A<0>"
-$PN"1"5;
+$PN"1"4;
 %"RSMD0805"
 "1","(-650,3700)","0","resistors","I9";
 ;
@@ -619,5 +619,5 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
 "A<0>"
 $PN"1"2;
 "B<0>"
-$PN"2"3;
+$PN"2"28;
 END.
