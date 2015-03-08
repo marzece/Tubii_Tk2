@@ -1,725 +1,2348 @@
-\t (00:00:44) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:44)     Journal start - Sat Feb 28 16:28:47 2015
-\t (00:00:44)         Host=ERIC_PC User=Eric Marzec Pid=8276 CPUs=8
-\t (00:00:44) 
-\t (00:02:11) Opening existing design...
-\d (00:02:11) Database opened: C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V2.brd
-\i (00:02:12) trapsize 125
-\i (00:02:12) trapsize 123
-\i (00:02:12) trapsize 126
-\i (00:02:12) trapsize 109
-\i (00:02:12) trapsize 120
-\i (00:02:13) generaledit 
-\i (00:03:10) trapsize 164
-\i (00:03:11) trapsize 120
-\i (00:03:17) dfa_spreadsheet 
-\i (00:03:17) setwindow dfa.dialog
-\i (00:03:17) dfa new
-\i (00:03:50) dfa worksheet Top add_package 1 SOIC14
-\i (00:03:50) dfa worksheet Top add_package 2 SOIC20
-\i (00:04:15) dfa worksheet Top change 1 to 1 250:250:250:250
-\i (00:04:25) dfa worksheet Top change 2 to 1 250:250:250:250
-\i (00:04:39) dfa worksheet Top change 2 to 2 250:250:250:250
-\i (00:04:39) dfa copy_top_to_bottom
-\i (00:04:56) dfa save "Tubii_DFA.dfa"
-\i (00:04:56) dfa attach_to_design
-\i (00:04:56) dfa attach_to_design
-\i (00:04:56) dfa okay
-\i (00:04:56) setwindow pcb
-\i (00:04:56) generaledit 
-\i (00:04:59) roam x -96 
-\i (00:04:59) roam x -96
-\i (00:04:59) roam x -96 
-\i (00:04:59) roam x -96
-\i (00:04:59) roam x -96 
-\i (00:04:59) roam x -96
-\i (00:04:59) roam x -96 
-\i (00:04:59) roam x -96
-\i (00:05:15) dfa_spreadsheet 
-\i (00:05:15) setwindow dfa.dialog
-\i (00:05:15) dfa read_from_design
-\i (00:05:20) dfa constraints on
-\i (00:05:22) dfa attach_to_design
-\i (00:05:22) dfa okay
-\i (00:05:22) setwindow pcb
-\i (00:05:22) generaledit 
-\i (00:05:25) drag_start grid 3542.4 13395.5
-\i (00:05:26) drag_stop 2165.8 12107.6
-\i (00:05:27) prepopup 3002.8 12469.8
-\i (00:05:31) trapsize 141
-\i (00:05:33) setwindow form.find
-\i (00:05:33) FORM find shapes NO 
-\i (00:05:33) setwindow pcb
-\i (00:05:33) pick grid 4429.2 13486.8
-\t (00:05:33) last pick:  4425.0  13475.0
-\i (00:05:34) drag_start grid 4347.4 13709.5
-\i (00:05:35) drag_stop 2114.8 11944.8
-\i (00:05:35) prepopup 2780.1 12669.3
-\i (00:05:36) pop dyn_option_select '@:@Unplace component' 
-\i (00:05:36) unplace component 
-\i (00:05:36) generaledit 
-\i (00:05:42) place area room 
-\t (00:05:44) CNTRL_REG room selected
-\i (00:05:44) fillin "CNTRL_REG"
-\w (00:05:44) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:05:44) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:05:44) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:05:44) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:05:44) WARNING(SPMHPL-31): There were 2 warnings reported in the log file.
-\i (00:05:44) generaledit 
-\i (00:06:03) dfa_spreadsheet 
-\i (00:06:03) setwindow dfa.dialog
-\i (00:06:03) dfa read_from_design
-\i (00:06:24) dfa worksheet Top add_package 3 SSOP16
-\i (00:06:33) dfa worksheet Top change 3 to 1 250:250:250:250
-\i (00:06:46) dfa save "Tubii_DFA.dfa"
-\i (00:06:46) dfa attach_to_design
-\i (00:06:46) dfa attach_to_design
-\i (00:06:46) dfa okay
-\i (00:06:46) setwindow pcb
-\i (00:06:46) generaledit 
-\i (00:06:54) place param 
-\i (00:06:54) generaledit 
-\i (00:07:07) setwindow form.plpmanual
-\i (00:07:07) FORM plpmanual close  
-\i (00:07:09) setwindow pcb
-\i (00:07:09) drag_start grid 3794.9 13489.6
-\i (00:07:10) drag_stop 2035.9 11933.5
-\i (00:07:10) prepopup 2506.7 12494.5
-\i (00:07:12) pop dyn_option_select '@:@Unplace component' 
-\i (00:07:12) unplace component 
-\i (00:07:12) generaledit 
-\i (00:07:17) place param 
-\i (00:07:17) generaledit 
-\i (00:07:18) setwindow form.plpmanual
-\i (00:07:18) FORM plpmanual discrete_algorithm YES 
-\i (00:07:23) FORM plpmanual ninety_weight 50 
-\i (00:07:25) FORM plpmanual one_eighty_weight 50 
-\i (00:07:28) FORM plpmanual two_seventy_weight 50 
-\i (00:07:28) FORM plpmanual placeit  
-\i (00:07:28) setwindow pcb
-\i (00:07:28) place execute 
-\w (00:07:29) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:07:29) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:07:29) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:07:29) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:07:29) WARNING(SPMHPL-31): There were 2 warnings reported in the log file.
-\i (00:07:29) generaledit 
-\i (00:07:32) zoom in 1 
-\i (00:07:32) setwindow pcb
-\i (00:07:32) zoom in 2861.9 12776.4
-\i (00:07:32) trapsize 70
-\i (00:07:37) zoom out 1 
-\i (00:07:37) setwindow pcb
-\i (00:07:37) zoom out 2797.0 12949.8
-\i (00:07:37) trapsize 141
-\i (00:07:43) roam y -96 
-\i (00:07:43) roam y -96
-\i (00:07:44) pick grid 3242.5 13457.5
-\t (00:07:44) last pick:  3250.0  13450.0
-\i (00:07:44) drag_start grid 3141.0 13508.3
-\i (00:07:45) drag_stop 2529.3 12953.0
-\i (00:07:46) prepopup 2681.5 13046.0
-\i (00:07:47) pop dyn_option_select @:@Move 
-\i (00:07:47) move 
-\t (00:07:47) last pick:  2675.0  13050.0
-\t (00:07:47) Moving TP4 / TESTPOINT_L / FEC32DTP.
-\t (00:07:47) Moving U3 / 74HCT165 / SSOP16.
-\t (00:07:47) Moving TP3 / TESTPOINT_L / FEC32DTP.
-\t (00:07:47) Moving TP8 / TESTPOINT_L / FEC32DTP.
-\t (00:07:47) Moving U2 / 74F164_2 / SOIC14.
-\t (00:07:47) Moving TP5 / TESTPOINT_L / FEC32DTP.
-\t (00:07:47) Moving TP6 / TESTPOINT_L / FEC32DTP.
-\t (00:07:47) Moving C1 / CSMD0603-0.1UF,10%,0603,50V / CAP0603.
-\t (00:07:47) Pick new location for the element(s).
-\i (00:07:51) pick grid 2681.5 13288.4
-\t (00:07:51) last pick:  2675.0  13300.0
-\i (00:07:51) generaledit 
-\i (00:07:56) drag_start grid 3386.2 13595.7
-\i (00:07:56) drag_stop 3262.2 13296.9
-\i (00:07:57) drag_start grid 3253.8 13649.2
-\i (00:07:58) drag_stop 3713.2 12721.8
-\i (00:07:58) prepopup 3490.6 13085.4
-\i (00:07:59) pop dyn_option_select @:@Move 
-\i (00:07:59) move 
-\t (00:07:59) last pick:  3500.0  13075.0
-\t (00:07:59) Moving TP7 / TESTPOINT_L / FEC32DTP.
-\t (00:07:59) Moving U2 / 74F164_2 / SOIC14.
-\t (00:07:59) Moving U3 / 74HCT165 / SSOP16.
-\t (00:07:59) Moving TP1 / TESTPOINT_L / FEC32DTP.
-\t (00:07:59) Moving TP2 / TESTPOINT_L / FEC32DTP.
-\t (00:07:59) Pick new location for the element(s).
-\i (00:08:00) prepopup 3510.3 13124.9
-\i (00:08:01) cancel 
-\i (00:08:01) generaledit 
-\i (00:08:01) pick grid 3298.9 13573.1
-\t (00:08:01) last pick:  3300.0  13575.0
-\i (00:08:02) pick grid 3366.5 13429.4
-\t (00:08:02) last pick:  3375.0  13425.0
-\i (00:08:03) pick grid ext 3558.2 13085.4
-\t (00:08:03) last pick:  3550.0  13075.0
-\i (00:08:03) pick grid ext 3577.9 12828.9
-\t (00:08:03) last pick:  3575.0  12825.0
-\i (00:08:04) prepopup ext 3301.7 12797.9
-\i (00:08:05) pick grid 3386.2 13319.4
-\t (00:08:05) last pick:  3375.0  13325.0
-\i (00:08:06) pick grid ext 3535.7 13057.3
-\t (00:08:06) last pick:  3525.0  13050.0
-\i (00:08:07) pick grid ext 3563.8 12826.1
-\t (00:08:07) last pick:  3575.0  12825.0
-\i (00:08:08) prepopup ext 3250.9 12823.3
-\i (00:08:08) pick grid ext 3298.9 12888.1
-\t (00:08:08) last pick:  3300.0  12900.0
-\i (00:08:09) pick grid ext 3287.6 12812.0
-\t (00:08:09) last pick:  3300.0  12800.0
-\i (00:08:09) prepopup 3290.4 12913.5
-\i (00:08:10) prepopup 3315.8 13248.9
-\i (00:08:11) pop dyn_option_select @:@Move 
-\i (00:08:11) move 
-\t (00:08:11) last pick:  3325.0  13250.0
-\t (00:08:11) Moving U2 / 74F164_2 / SOIC14.
-\t (00:08:11) Moving TP2 / TESTPOINT_L / FEC32DTP.
-\t (00:08:11) Moving TP1 / TESTPOINT_L / FEC32DTP.
-\t (00:08:11) Moving TP7 / TESTPOINT_L / FEC32DTP.
-\t (00:08:11) Pick new location for the element(s).
-\i (00:08:17) pick grid 3389.1 13251.8
-\t (00:08:17) last pick:  3400.0  13250.0
-\i (00:08:18) generaledit 
-\i (00:08:18) prepopup 3749.9 13319.4
-\i (00:08:19) pick grid 3741.4 13544.9
-\t (00:08:19) last pick:  3750.0  13550.0
-\i (00:08:28) prepopup 3964.1 13051.6
-\i (00:08:29) pick grid 4147.4 13254.6
-\t (00:08:29) last pick:  4150.0  13250.0
-\i (00:08:38) auto_route 
-\w (00:08:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:08:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:08:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:08:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:08:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:08:38) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:08:38) Xtalk table in drawing BSTPLC.brd does not exist. For xtalk estimation or xtalk DRC update, xtalk tables must be generated.
-   (00:08:38) Loading cmds.cxt 
-   (00:08:38) Loading vse.cxt 
-   (00:08:38) Loading axlcore.cxt 
-\i (00:08:44) setwindow form.vse_armain
-\i (00:08:44) FORM vse_armain smart_router  
-\i (00:08:45) FORM vse_armain routing_passes  
-\i (00:08:46) FORM vse_armain selections  
-\i (00:08:48) FORM vse_armain select_modeselected YES 
-\i (00:08:49) FORM vse_armain select_objecttype Components 
-\i (00:08:52) setwindow pcb
-\i (00:08:52) pick 3659.7 12826.1
-\t (00:08:52) last pick:  3659.7  12826.1
-\i (00:08:53) pick 3654.0 12814.8
-\t (00:08:53) last pick:  3654.0  12814.8
-\i (00:08:53) pick 3628.7 12795.1
-\t (00:08:53) last pick:  3628.7  12795.1
-\i (00:09:03) setwindow form.vse_armain
-\i (00:09:03) FORM vse_armain select_srclist U4 
-\i (00:09:06) FORM vse_armain select_srclist U2 
-\i (00:09:07) FORM vse_armain select_srclist U3 
-\i (00:09:27) FORM vse_armain execute  
-\i (00:10:06) FORM vse_armain close  
-\i (00:10:06) setwindow pcb
-\i (00:10:06) generaledit 
-\i (00:10:08) zoom out 1 
-\i (00:10:08) setwindow pcb
-\i (00:10:08) zoom out 3155.1 13313.8
-\i (00:10:08) trapsize 282
-\i (00:10:09) zoom out 1 
-\i (00:10:09) setwindow pcb
-\i (00:10:09) zoom out 3780.9 12789.4
-\i (00:10:09) trapsize 564
-\i (00:10:09) zoom out 1 
-\i (00:10:09) setwindow pcb
-\i (00:10:09) zoom out 5716.8 12789.5
-\i (00:10:09) trapsize 1057
-\i (00:10:10) zoom in 1 
-\i (00:10:10) setwindow pcb
-\i (00:10:10) zoom in 10720.2 10741.3
-\i (00:10:10) trapsize 529
-\i (00:10:10) zoom out 1 
-\i (00:10:10) setwindow pcb
-\i (00:10:10) zoom out 9719.6 10741.3
-\i (00:10:10) trapsize 1057
-\i (00:11:15) pick grid 18395.5 6554.7
-\t (00:11:15) last pick:  18400.0  6550.0
-\i (00:11:17) place manual 
-\i (00:12:14) refdes Tp10 
-\i (00:12:14) trapsize 16
-\t (00:12:14) Moving TP10 / TESTPOINT_L / FEC32DTP.
-\t (00:12:14) last pick:  2550.0  12300.0
-\i (00:12:14) refdes Tp9 
-\i (00:12:14) refdes Tp8 
-\i (00:12:14) refdes Tp7 
-\i (00:12:14) refdes Tp6 
-\i (00:12:14) refdes Tp5 
-\i (00:12:14) refdes Tp4 
-\i (00:12:14) refdes Tp3 
-\i (00:12:14) refdes Tp2 
-\i (00:12:14) refdes Tp1 
-\i (00:12:14) refdes R2 
-\i (00:12:14) refdes R1 
-\i (00:12:14) refdes R4 
-\i (00:12:14) refdes R3 
-\i (00:12:14) refdes U8 
-\i (00:12:14) refdes D2 
-\i (00:12:14) refdes D1 
-\i (00:12:14) refdes U4 
-\i (00:12:14) refdes U9 
-\i (00:12:14) refdes U6 
-\i (00:12:14) refdes U5 
-\i (00:12:14) refdes U7 
-\i (00:12:14) refdes U1 
-\i (00:12:14) refdes C10 
-\i (00:12:14) refdes C8 
-\i (00:12:14) refdes C9 
-\i (00:12:14) refdes C7 
-\i (00:12:14) refdes C6 
-\i (00:12:14) refdes C5 
-\i (00:12:14) refdes C4 
-\i (00:12:14) refdes C3 
-\i (00:12:14) refdes C2 
-\i (00:12:14) refdes C1 
-\i (00:12:14) refdes U3 
-\i (00:12:14) refdes U2 
-\i (00:12:14) xname_flush 
-\i (00:12:17) refdes R2 
-\i (00:12:17) refdes R1 
-\i (00:12:17) refdes R4 
-\i (00:12:17) refdes R3 
-\i (00:12:17) refdes U8 
-\i (00:12:17) refdes D2 
-\i (00:12:17) refdes D1 
-\i (00:12:17) refdes U9 
-\i (00:12:17) refdes U7 
-\i (00:12:17) refdes U1 
-\i (00:12:17) refdes C10 
-\i (00:12:17) refdes C8 
-\i (00:12:17) refdes C9 
-\i (00:12:17) refdes C7 
-\i (00:12:17) refdes C6 
-\i (00:12:17) refdes C5 
-\i (00:12:17) refdes C4 
-\i (00:12:17) xname_flush 
-\i (00:12:44) pick grid 2549.7 12354.5
-\t (00:12:44) last pick:  2500.0  12400.0
-\t (00:12:44) Placing C4 / CSMD0603-1.0UF,10%,0603,25V / CAP0603 on Top.
-\i (00:12:44) zoom out 1 
-\i (00:12:44) setwindow pcb
-\i (00:12:44) zoom out 2503.8 12367.2
-\i (00:12:44) trapsize 33
-\i (00:12:44) zoom out 1 
-\i (00:12:44) setwindow pcb
-\i (00:12:44) zoom out 2503.8 12367.3
-\i (00:12:44) trapsize 66
-\i (00:12:46) prepopup 2527.5 12236.1
-\i (00:12:47) cancel 
-\i (00:12:47) generaledit 
-\i (00:12:48) zoom in 1 
-\i (00:12:48) setwindow pcb
-\i (00:12:48) zoom in 2542.0 12312.2
-\i (00:12:48) trapsize 33
-\i (00:12:48) zoom in 1 
-\i (00:12:48) setwindow pcb
-\i (00:12:48) zoom in 2542.0 12312.3
-\i (00:12:48) trapsize 16
-\i (00:12:49) zoom out 1 
-\i (00:12:49) setwindow pcb
-\i (00:12:49) zoom out 2542.0 12312.3
-\i (00:12:49) trapsize 33
-\i (00:12:49) zoom out 1 
-\i (00:12:49) setwindow pcb
-\i (00:12:49) zoom out 2542.1 12312.3
-\i (00:12:49) trapsize 66
-\i (00:12:49) zoom out 1 
-\i (00:12:49) setwindow pcb
-\i (00:12:49) zoom out 2542.1 12312.2
-\i (00:12:49) trapsize 131
-\i (00:12:49) zoom out 1 
-\i (00:12:49) setwindow pcb
-\i (00:12:49) zoom out 2542.0 12312.3
-\i (00:12:49) trapsize 262
-\i (00:12:51) roam y -96 
-\i (00:12:51) roam y -96
-\i (00:12:51) zoom in 1 
-\i (00:12:51) setwindow pcb
-\i (00:12:51) zoom in 3118.4 13051.0
-\i (00:12:51) trapsize 131
-\i (00:12:51) zoom in 1 
-\i (00:12:51) setwindow pcb
-\i (00:12:51) zoom in 3102.6 13027.4
-\i (00:12:51) trapsize 66
-\i (00:12:54) roam y 96 
-\i (00:12:54) roam y 96
-\i (00:12:56) zoom out 1 
-\i (00:12:56) setwindow pcb
-\i (00:12:56) zoom out 3239.1 12621.8
-\i (00:12:56) trapsize 131
-\i (00:12:56) roam y -96 
-\i (00:12:56) roam y -96
-\i (00:13:04) zoom in 1 
-\i (00:13:04) setwindow pcb
-\i (00:13:04) zoom in 3060.6 12775.4
-\i (00:13:04) trapsize 66
-\i (00:13:05) zoom in 1 
-\i (00:13:05) setwindow pcb
-\i (00:13:05) zoom in 3054.1 12734.7
-\i (00:13:05) trapsize 33
-\i (00:13:05) zoom in 1 
-\i (00:13:05) setwindow pcb
-\i (00:13:05) zoom in 3054.1 12734.8
-\i (00:13:05) trapsize 16
-\i (00:13:07) zoom out 1 
-\i (00:13:07) setwindow pcb
-\i (00:13:07) zoom out 3053.8 12773.5
-\i (00:13:07) trapsize 33
-\i (00:13:07) zoom out 1 
-\i (00:13:07) setwindow pcb
-\i (00:13:07) zoom out 3053.1 12771.0
-\i (00:13:07) trapsize 66
-\i (00:13:08) zoom out 1 
-\i (00:13:08) setwindow pcb
-\i (00:13:08) zoom out 3609.6 12732.9
-\i (00:13:08) trapsize 131
-\i (00:13:08) zoom out 1 
-\i (00:13:08) setwindow pcb
-\i (00:13:08) zoom out 3630.5 12730.2
-\i (00:13:08) trapsize 262
-\i (00:13:10) xhilite 
-\i (00:13:10) xrefdes R2 
-\t (00:13:10) Can not select unplaced component R2.
-\t (00:13:10) Can not select unplaced component R2.
-\i (00:13:10) xrefdes R1 
-\t (00:13:10) Can not select unplaced component R1.
-\t (00:13:10) Can not select unplaced component R1.
-\i (00:13:10) xrefdes R4 
-\t (00:13:10) Can not select unplaced component R4.
-\t (00:13:10) Can not select unplaced component R4.
-\i (00:13:10) xrefdes R3 
-\t (00:13:10) Can not select unplaced component R3.
-\t (00:13:10) Can not select unplaced component R3.
-\i (00:13:10) xrefdes U8 
-\t (00:13:10) Can not select unplaced component U8.
-\t (00:13:10) Can not select unplaced component U8.
-\i (00:13:10) xrefdes D2 
-\t (00:13:10) Can not select unplaced component D2.
-\t (00:13:10) Can not select unplaced component D2.
-\i (00:13:10) xrefdes D1 
-\t (00:13:10) Can not select unplaced component D1.
-\t (00:13:10) Can not select unplaced component D1.
-\i (00:13:10) xrefdes U9 
-\t (00:13:10) Can not select unplaced component U9.
-\t (00:13:10) Can not select unplaced component U9.
-\i (00:13:10) xrefdes U7 
-\t (00:13:10) Can not select unplaced component U7.
-\t (00:13:10) Can not select unplaced component U7.
-\i (00:13:10) xrefdes U1 
-\t (00:13:10) Can not select unplaced component U1.
-\t (00:13:10) Can not select unplaced component U1.
-\i (00:13:10) xrefdes C10 
-\t (00:13:10) Can not select unplaced component C10.
-\t (00:13:10) Can not select unplaced component C10.
-\i (00:13:10) xrefdes C8 
-\t (00:13:10) Can not select unplaced component C8.
-\t (00:13:10) Can not select unplaced component C8.
-\i (00:13:10) xrefdes C9 
-\t (00:13:10) Can not select unplaced component C9.
-\t (00:13:10) Can not select unplaced component C9.
-\i (00:13:10) xrefdes C7 
-\t (00:13:10) Can not select unplaced component C7.
-\t (00:13:10) Can not select unplaced component C7.
-\i (00:13:10) xrefdes C6 
-\t (00:13:10) Can not select unplaced component C6.
-\t (00:13:10) Can not select unplaced component C6.
-\i (00:13:10) xrefdes C5 
-\t (00:13:10) Can not select unplaced component C5.
-\t (00:13:10) Can not select unplaced component C5.
-\i (00:13:10) xrefdes C4 
-\t (00:13:10) Can not select unplaced component C4.
-\t (00:13:10) Can not select unplaced component C4.
-\i (00:13:10) xname_flush 
-\i (00:13:10) done 
-\i (00:13:10) generaledit 
-\i (00:13:22) room outline 
-   (00:13:22) Loading floor.cxt 
-   (00:13:22) Loading fputil.cxt 
-\i (00:13:36) setwindow form.fprmoutline
-\i (00:13:36) FORM fprmoutline fprobottom YES 
-\i (00:13:40) setwindow pcb
-\i (00:13:40) pick grid 4814.1 13564.9
-\t (00:13:40) last pick:  4800.0  13600.0
-\i (00:13:44) pick grid 6651.5 12079.2
-\t (00:13:44) last pick:  6700.0  12100.0
-\i (00:13:46) setwindow form.fprmoutline
-\i (00:13:46) FORM fprmoutline done  
-\i (00:13:46) setwindow pcb
-\i (00:13:46) generaledit 
-\i (00:13:51) xhilite 
-\i (00:13:51) xrefdes R2 
-\t (00:13:51) Can not select unplaced component R2.
-\t (00:13:51) Can not select unplaced component R2.
-\i (00:13:51) xrefdes R1 
-\t (00:13:51) Can not select unplaced component R1.
-\t (00:13:51) Can not select unplaced component R1.
-\i (00:13:51) xrefdes R4 
-\t (00:13:51) Can not select unplaced component R4.
-\t (00:13:51) Can not select unplaced component R4.
-\i (00:13:51) xrefdes R3 
-\t (00:13:51) Can not select unplaced component R3.
-\t (00:13:51) Can not select unplaced component R3.
-\i (00:13:51) xrefdes U8 
-\t (00:13:51) Can not select unplaced component U8.
-\t (00:13:51) Can not select unplaced component U8.
-\i (00:13:51) xrefdes D2 
-\t (00:13:51) Can not select unplaced component D2.
-\t (00:13:51) Can not select unplaced component D2.
-\i (00:13:51) xrefdes D1 
-\t (00:13:51) Can not select unplaced component D1.
-\t (00:13:51) Can not select unplaced component D1.
-\i (00:13:51) xrefdes U9 
-\t (00:13:51) Can not select unplaced component U9.
-\t (00:13:51) Can not select unplaced component U9.
-\i (00:13:51) xrefdes U7 
-\t (00:13:51) Can not select unplaced component U7.
-\t (00:13:51) Can not select unplaced component U7.
-\i (00:13:51) xrefdes U1 
-\t (00:13:51) Can not select unplaced component U1.
-\t (00:13:51) Can not select unplaced component U1.
-\i (00:13:51) xrefdes C10 
-\t (00:13:51) Can not select unplaced component C10.
-\t (00:13:51) Can not select unplaced component C10.
-\i (00:13:51) xrefdes C8 
-\t (00:13:51) Can not select unplaced component C8.
-\t (00:13:51) Can not select unplaced component C8.
-\i (00:13:51) xrefdes C9 
-\t (00:13:51) Can not select unplaced component C9.
-\t (00:13:51) Can not select unplaced component C9.
-\i (00:13:51) xrefdes C7 
-\t (00:13:51) Can not select unplaced component C7.
-\t (00:13:51) Can not select unplaced component C7.
-\i (00:13:51) xrefdes C6 
-\t (00:13:51) Can not select unplaced component C6.
-\t (00:13:51) Can not select unplaced component C6.
-\i (00:13:51) xrefdes C5 
-\t (00:13:51) Can not select unplaced component C5.
-\t (00:13:51) Can not select unplaced component C5.
-\i (00:13:51) xrefdes C4 
-\t (00:13:51) Can not select unplaced component C4.
-\t (00:13:51) Can not select unplaced component C4.
-\i (00:13:51) xname_flush 
-\i (00:13:51) done 
-\i (00:13:51) generaledit 
-\i (00:13:59) xhilite 
-\i (00:13:59) xrefdes R2 
-\t (00:13:59) Can not select unplaced component R2.
-\t (00:13:59) Can not select unplaced component R2.
-\i (00:13:59) xrefdes R1 
-\t (00:13:59) Can not select unplaced component R1.
-\t (00:13:59) Can not select unplaced component R1.
-\i (00:13:59) xrefdes R4 
-\t (00:13:59) Can not select unplaced component R4.
-\t (00:13:59) Can not select unplaced component R4.
-\i (00:13:59) xrefdes R3 
-\t (00:13:59) Can not select unplaced component R3.
-\t (00:13:59) Can not select unplaced component R3.
-\i (00:13:59) xrefdes U8 
-\t (00:13:59) Can not select unplaced component U8.
-\t (00:13:59) Can not select unplaced component U8.
-\i (00:13:59) xrefdes D2 
-\t (00:13:59) Can not select unplaced component D2.
-\t (00:13:59) Can not select unplaced component D2.
-\i (00:13:59) xrefdes D1 
-\t (00:13:59) Can not select unplaced component D1.
-\t (00:13:59) Can not select unplaced component D1.
-\i (00:13:59) xrefdes U9 
-\t (00:13:59) Can not select unplaced component U9.
-\t (00:13:59) Can not select unplaced component U9.
-\i (00:13:59) xrefdes U7 
-\t (00:13:59) Can not select unplaced component U7.
-\t (00:13:59) Can not select unplaced component U7.
-\i (00:13:59) xrefdes U1 
-\t (00:13:59) Can not select unplaced component U1.
-\t (00:13:59) Can not select unplaced component U1.
-\i (00:13:59) xrefdes C10 
-\t (00:13:59) Can not select unplaced component C10.
-\t (00:13:59) Can not select unplaced component C10.
-\i (00:13:59) xrefdes C8 
-\t (00:13:59) Can not select unplaced component C8.
-\t (00:13:59) Can not select unplaced component C8.
-\i (00:13:59) xrefdes C9 
-\t (00:13:59) Can not select unplaced component C9.
-\t (00:13:59) Can not select unplaced component C9.
-\i (00:13:59) xrefdes C7 
-\t (00:13:59) Can not select unplaced component C7.
-\t (00:13:59) Can not select unplaced component C7.
-\i (00:13:59) xrefdes C6 
-\t (00:13:59) Can not select unplaced component C6.
-\t (00:13:59) Can not select unplaced component C6.
-\i (00:13:59) xrefdes C5 
-\t (00:13:59) Can not select unplaced component C5.
-\t (00:13:59) Can not select unplaced component C5.
-\i (00:13:59) xrefdes C4 
-\t (00:13:59) Can not select unplaced component C4.
-\t (00:13:59) Can not select unplaced component C4.
-\i (00:13:59) xname_flush 
-\i (00:13:59) done 
-\i (00:13:59) generaledit 
-\i (00:14:38) xhilite 
-\i (00:14:38) xrefdes R2 
-\t (00:14:38) Can not select unplaced component R2.
-\t (00:14:38) Can not select unplaced component R2.
-\i (00:14:38) xrefdes R1 
-\t (00:14:38) Can not select unplaced component R1.
-\t (00:14:38) Can not select unplaced component R1.
-\i (00:14:38) xrefdes R4 
-\t (00:14:38) Can not select unplaced component R4.
-\t (00:14:38) Can not select unplaced component R4.
-\i (00:14:38) xrefdes R3 
-\t (00:14:38) Can not select unplaced component R3.
-\t (00:14:38) Can not select unplaced component R3.
-\i (00:14:38) xrefdes U8 
-\t (00:14:38) Can not select unplaced component U8.
-\t (00:14:38) Can not select unplaced component U8.
-\i (00:14:38) xrefdes D2 
-\t (00:14:38) Can not select unplaced component D2.
-\t (00:14:38) Can not select unplaced component D2.
-\i (00:14:38) xrefdes D1 
-\t (00:14:38) Can not select unplaced component D1.
-\t (00:14:38) Can not select unplaced component D1.
-\i (00:14:38) xrefdes U9 
-\t (00:14:38) Can not select unplaced component U9.
-\t (00:14:38) Can not select unplaced component U9.
-\i (00:14:38) xrefdes U7 
-\t (00:14:38) Can not select unplaced component U7.
-\t (00:14:38) Can not select unplaced component U7.
-\i (00:14:38) xrefdes U1 
-\t (00:14:38) Can not select unplaced component U1.
-\t (00:14:38) Can not select unplaced component U1.
-\i (00:14:38) xrefdes C10 
-\t (00:14:38) Can not select unplaced component C10.
-\t (00:14:38) Can not select unplaced component C10.
-\i (00:14:38) xrefdes C8 
-\t (00:14:38) Can not select unplaced component C8.
-\t (00:14:38) Can not select unplaced component C8.
-\i (00:14:38) xrefdes C9 
-\t (00:14:38) Can not select unplaced component C9.
-\t (00:14:38) Can not select unplaced component C9.
-\i (00:14:38) xrefdes C7 
-\t (00:14:38) Can not select unplaced component C7.
-\t (00:14:38) Can not select unplaced component C7.
-\i (00:14:38) xrefdes C6 
-\t (00:14:38) Can not select unplaced component C6.
-\t (00:14:38) Can not select unplaced component C6.
-\i (00:14:38) xrefdes C5 
-\t (00:14:38) Can not select unplaced component C5.
-\t (00:14:38) Can not select unplaced component C5.
-\i (00:14:38) xrefdes C4 
-\t (00:14:38) Can not select unplaced component C4.
-\t (00:14:38) Can not select unplaced component C4.
-\i (00:14:38) xname_flush 
-\i (00:14:38) done 
-\i (00:14:38) generaledit 
-\i (00:14:39) xhilite 
-\i (00:14:39) xname_flush 
-\i (00:14:39) done 
-\i (00:14:39) generaledit 
-\i (00:14:43) xhilite 
-\i (00:14:43) xname_flush 
-\i (00:14:43) done 
-\i (00:14:43) generaledit 
-\i (00:15:36) xhilite 
-\i (00:15:36) xname_flush 
-\i (00:15:36) done 
-\i (00:15:36) generaledit 
-\i (00:15:44) xhilite 
-\i (00:15:44) xrefdes R2 
-\t (00:15:44) Can not select unplaced component R2.
-\t (00:15:44) Can not select unplaced component R2.
-\i (00:15:44) xrefdes R1 
-\t (00:15:44) Can not select unplaced component R1.
-\t (00:15:44) Can not select unplaced component R1.
-\i (00:15:44) xrefdes R4 
-\t (00:15:44) Can not select unplaced component R4.
-\t (00:15:44) Can not select unplaced component R4.
-\i (00:15:44) xrefdes R3 
-\t (00:15:44) Can not select unplaced component R3.
-\t (00:15:44) Can not select unplaced component R3.
-\i (00:15:44) xrefdes U8 
-\t (00:15:44) Can not select unplaced component U8.
-\t (00:15:44) Can not select unplaced component U8.
-\i (00:15:44) xrefdes D2 
-\t (00:15:44) Can not select unplaced component D2.
-\t (00:15:44) Can not select unplaced component D2.
-\i (00:15:44) xrefdes D1 
-\t (00:15:44) Can not select unplaced component D1.
-\t (00:15:44) Can not select unplaced component D1.
-\i (00:15:44) xrefdes U9 
-\t (00:15:44) Can not select unplaced component U9.
-\t (00:15:44) Can not select unplaced component U9.
-\i (00:15:44) xrefdes U7 
-\t (00:15:44) Can not select unplaced component U7.
-\t (00:15:44) Can not select unplaced component U7.
-\i (00:15:44) xrefdes U1 
-\t (00:15:44) Can not select unplaced component U1.
-\t (00:15:44) Can not select unplaced component U1.
-\i (00:15:44) xrefdes C10 
-\t (00:15:44) Can not select unplaced component C10.
-\t (00:15:44) Can not select unplaced component C10.
-\i (00:15:44) xrefdes C8 
-\t (00:15:44) Can not select unplaced component C8.
-\t (00:15:44) Can not select unplaced component C8.
-\i (00:15:44) xrefdes C9 
-\t (00:15:44) Can not select unplaced component C9.
-\t (00:15:44) Can not select unplaced component C9.
-\i (00:15:44) xrefdes C7 
-\t (00:15:44) Can not select unplaced component C7.
-\t (00:15:44) Can not select unplaced component C7.
-\i (00:15:44) xrefdes C6 
-\t (00:15:44) Can not select unplaced component C6.
-\t (00:15:44) Can not select unplaced component C6.
-\i (00:15:44) xrefdes C5 
-\t (00:15:44) Can not select unplaced component C5.
-\t (00:15:44) Can not select unplaced component C5.
-\i (00:15:44) xrefdes C4 
-\t (00:15:44) Can not select unplaced component C4.
-\t (00:15:44) Can not select unplaced component C4.
-\i (00:15:44) xname_flush 
-\i (00:15:44) done 
-\i (00:15:44) generaledit 
-\i (00:16:20) xhilite 
-\i (00:16:20) xname_flush 
-\i (00:16:20) done 
-\i (00:16:20) generaledit 
-\i (00:16:27) xhilite 
-\i (00:16:27) xname_flush 
-\i (00:16:27) done 
-\i (00:16:27) generaledit 
-\i (00:16:32) xhilite 
-\i (00:16:32) xname_flush 
-\i (00:16:32) done 
-\i (00:16:32) generaledit 
-\i (00:16:35) xhilite 
-\i (00:16:35) xname_flush 
-\i (00:16:35) done 
-\i (00:16:36) generaledit 
-\i (00:17:02) xhilite 
-\i (00:17:02) xname_flush 
-\i (00:17:02) done 
-\i (00:17:02) xhilite 
-\i (00:17:02) xname_flush 
-\i (00:17:02) done 
-\i (00:17:02) generaledit 
-\i (00:17:44) xhilite 
-\i (00:17:45) xname_flush 
-\i (00:17:45) done 
-\i (00:17:45) generaledit 
-\i (00:17:49) xhilite 
-\i (00:17:49) xname_flush 
-\i (00:17:49) done 
-\i (00:17:49) generaledit 
-\i (00:34:40) exit 
-\e (00:34:40) Do you want to save the changes you made to TubiiPCB_V2.brd?
-\i (00:34:42) fillin yes 
-\t (00:34:42)     Journal end - Sat Feb 28 17:02:45 2015
+\t (00:00:42) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:42)     Journal start - Sat Mar 07 19:57:36 2015
+\t (00:00:42)         Host=ERIC_PC User=Eric Marzec Pid=9296 CPUs=8
+\t (00:00:42) 
+\t (00:02:06) Opening existing design...
+\d (00:02:06) Database opened: C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V2.brd
+\i (00:02:06) trapsize 257
+\i (00:02:06) trapsize 252
+\i (00:02:06) trapsize 258
+\i (00:02:07) trapsize 262
+\i (00:02:07) trapsize 262
+\i (00:02:07) trapsize 413160
+\i (00:02:07) generaledit 
+\i (00:03:41) trapsize 262
+\i (00:03:44) roam y -96 
+\i (00:03:44) roam y -96
+\i (00:03:44) roam y -96 
+\i (00:03:44) roam y -96
+\i (00:03:44) roam y -96 
+\i (00:03:44) roam y -96
+\i (00:03:44) roam y -96 
+\i (00:03:44) roam y -96
+\i (00:03:45) roam x 96 
+\i (00:03:45) roam x 96
+\i (00:03:45) roam x 96 
+\i (00:03:45) roam x 96
+\i (00:03:45) roam x 96 
+\i (00:03:45) roam x 96
+\i (00:03:46) zoom out 1 
+\i (00:03:46) setwindow pcb
+\i (00:03:46) zoom out 5564.8 13019.5
+\i (00:03:46) trapsize 525
+\i (00:03:46) zoom in 1 
+\i (00:03:46) setwindow pcb
+\i (00:03:46) zoom in 6751.3 12821.1
+\i (00:03:46) trapsize 262
+\i (00:03:48) prepopup 6782.8 13472.1
+\i (00:03:54) enved 
+\i (00:03:55) generaledit 
+\i (00:04:02) setwindow form.prfedit
+\i (00:04:02) FORM prfedit cancel  
+\i (00:04:03) setwindow pcb
+\i (00:04:03) roam x -96 
+\i (00:04:03) roam x -96
+\i (00:04:03) roam x -96 
+\i (00:04:03) roam x -96
+\i (00:04:03) roam x -96 
+\i (00:04:03) roam x -96
+\i (00:20:01) room outline 
+   (00:20:01) Loading cmds.cxt 
+   (00:20:01) Loading floor.cxt 
+   (00:20:01) Loading fputil.cxt 
+   (00:20:01) Loading axlcore.cxt 
+\i (00:20:12) pick grid 7192.3 13340.9
+\t (00:20:12) last pick:  7200.0  13300.0
+\i (00:20:16) pick grid 9549.4 11256.7
+\t (00:20:16) last pick:  9500.0  11300.0
+\i (00:20:18) setwindow form.fprmoutline
+\i (00:20:18) FORM fprmoutline done  
+\i (00:20:19) setwindow pcb
+\i (00:20:19) generaledit 
+\i (00:20:25) place area room 
+\t (00:20:27) BASE_BUFFER room selected
+\i (00:20:27) fillin "BASE_BUFFER"
+\w (00:20:27) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:20:27) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:20:27) WARNING(SPMHPL-31): There were 1 warnings reported in the log file.
+\i (00:20:27) generaledit 
+\i (00:20:47) prepopup 7323.5 13172.9
+\i (00:20:49) pick grid 7197.5 13193.9
+\t (00:20:49) last pick:  7200.0  13200.0
+\i (00:20:50) pick grid 7208.0 13151.9
+\t (00:20:50) last pick:  7200.0  13200.0
+\i (00:20:53) pick grid 9502.2 11618.9
+\t (00:20:53) last pick:  9500.0  11600.0
+\i (00:20:54) pick grid 9502.2 11618.9
+\t (00:20:54) last pick:  9500.0  11600.0
+\i (00:21:00) move 
+\t (00:21:00) Select element(s) to move.
+\i (00:21:04) trapsize 258
+\i (00:21:13) pick grid 9513.9 13089.4
+\t (00:21:13) last pick:  9500.0  13100.0
+\t (00:21:13) last pick:  9500.0  13100.0
+\t (00:21:13) Element has no origin, using pick.
+\t (00:21:13) Pick new location for the element(s).
+\i (00:21:15) pick grid 9472.6 13151.2
+\t (00:21:15) last pick:  9500.0  13200.0
+\i (00:21:16) pick grid 9488.1 13151.2
+\t (00:21:16) last pick:  9500.0  13200.0
+\t (00:21:16) last pick:  9500.0  13200.0
+\t (00:21:16) Element has no origin, using pick.
+\t (00:21:16) Pick new location for the element(s).
+\i (00:21:20) pick grid 9477.8 14454.6
+\t (00:21:20) last pick:  9500.0  14500.0
+\i (00:21:22) undo 
+\i (00:21:22) trapsize 258
+\i (00:21:22) generaledit 
+\i (00:21:25) pick grid 9503.6 13213.0
+\t (00:21:25) last pick:  9500.0  13200.0
+\i (00:21:35) setwindow form.find
+\i (00:21:35) FORM find shapes YES 
+\i (00:21:37) setwindow pcb
+\i (00:21:37) pick grid 9513.9 12898.8
+\t (00:21:37) last pick:  9500.0  12900.0
+\i (00:21:37) prepopup 9513.9 12898.8
+\i (00:22:04) prepopup 9503.6 13115.1
+\i (00:22:18) change 
+\i (00:22:21) pick grid 9493.3 12981.2
+\t (00:22:21) last pick:  9500.0  13000.0
+\e (00:22:21) ERROR(SPMHGE-545): Rectangle already matches option panel settings.
+\i (00:22:24) pick grid 9508.7 12970.9
+\t (00:22:24) last pick:  9500.0  13000.0
+\e (00:22:24) ERROR(SPMHGE-545): Rectangle already matches option panel settings.
+\i (00:22:36) change 
+\i (00:23:05) move 
+\t (00:23:05) last pick:  9500.0  12900.0
+\t (00:23:05) Element has no origin, using pick.
+\t (00:23:05) Pick new location for the element(s).
+\i (00:23:06) prepopup 9209.9 12826.6
+\i (00:23:07) oops 
+\i (00:23:07) generaledit 
+\i (00:23:08) pick grid 7896.2 12172.4
+\t (00:23:08) last pick:  7900.0  12200.0
+\i (00:23:09) prepopup 7896.2 12172.4
+\i (00:23:10) pop dyn_option_select @:@Move 
+\i (00:23:10) move 
+\t (00:23:10) last pick:  7900.0  12200.0
+\t (00:23:10) last pick:  7550.0  11800.0
+\t (00:23:10) Moving U16 / IDS_C10 / CONN10.
+\t (00:23:10) Pick new location for the element(s).
+\i (00:23:12) pick grid 8148.7 12929.7
+\t (00:23:12) last pick:  8100.0  12900.0
+\i (00:23:12) generaledit 
+\i (00:23:14) pick grid 7865.3 11610.9
+\t (00:23:14) last pick:  7900.0  11600.0
+\i (00:23:16) move 
+\t (00:23:17) last pick:  7800.0  11550.0
+\t (00:23:17) Moving U13 / OPA4277 / SOIC14.
+\t (00:23:17) Pick new location for the element(s).
+\i (00:23:20) pick grid 8550.5 12419.7
+\t (00:23:20) last pick:  8600.0  12400.0
+\i (00:23:20) generaledit 
+\i (00:23:21) pick grid 8014.7 11595.4
+\t (00:23:21) last pick:  8000.0  11600.0
+\i (00:23:22) pick grid 7576.8 11683.0
+\t (00:23:22) last pick:  7600.0  11700.0
+\i (00:23:23) pick grid 7633.5 11688.1
+\t (00:23:23) last pick:  7600.0  11700.0
+\i (00:23:23) prepopup 7633.5 11688.1
+\i (00:23:25) pop dyn_option_select @:@Move 
+\i (00:23:25) move 
+\t (00:23:25) last pick:  7600.0  11700.0
+\t (00:23:25) last pick:  7600.0  11700.0
+\t (00:23:25) Element has no origin, using pick.
+\t (00:23:25) Pick new location for the element(s).
+\i (00:23:26) prepopup 7813.8 11883.9
+\i (00:23:27) cancel 
+\i (00:23:27) generaledit 
+\i (00:23:28) setwindow form.find
+\i (00:23:28) FORM find shapes NO 
+\i (00:23:29) setwindow pcb
+\i (00:23:29) pick grid 7597.5 11652.1
+\t (00:23:29) last pick:  7600.0  11700.0
+\i (00:23:29) prepopup 7597.5 11652.1
+\i (00:23:30) pop dyn_option_select @:@Move 
+\i (00:23:30) move 
+\t (00:23:31) last pick:  7600.0  11700.0
+\t (00:23:31) last pick:  7550.0  11550.0
+\t (00:23:31) Moving U14 / OPA4277 / SOIC14.
+\t (00:23:31) Pick new location for the element(s).
+\i (00:23:37) pick grid 8133.2 12445.4
+\t (00:23:37) last pick:  8100.0  12400.0
+\i (00:23:37) generaledit 
+\i (00:23:38) pick grid 8025.0 11585.1
+\t (00:23:38) last pick:  8000.0  11600.0
+\i (00:23:38) prepopup 8025.0 11585.1
+\i (00:23:39) pop dyn_option_select @:@Move 
+\i (00:23:39) move 
+\t (00:23:39) last pick:  8000.0  11600.0
+\t (00:23:39) last pick:  8050.0  11550.0
+\t (00:23:39) Moving U15 / OPA2277_SOIC / SOIC8.
+\t (00:23:39) Pick new location for the element(s).
+\i (00:23:45) pick grid 9122.3 12445.4
+\t (00:23:45) last pick:  9100.0  12400.0
+\i (00:23:45) generaledit 
+\i (00:23:48) pick grid 8282.6 11791.2
+\t (00:23:48) last pick:  8300.0  11800.0
+\i (00:23:49) pick grid 8323.8 11816.9
+\t (00:23:49) last pick:  8300.0  11800.0
+\i (00:23:50) prepopup 8298.1 11770.6
+\i (00:23:52) pop dyn_option_select @:@Move 
+\i (00:23:52) move 
+\t (00:23:52) last pick:  8300.0  11800.0
+\t (00:23:52) last pick:  8300.0  11800.0
+\t (00:23:52) Moving C21 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:23:52) Pick new location for the element(s).
+\i (00:23:53) pick grid 7406.8 12553.6
+\t (00:23:53) last pick:  7400.0  12600.0
+\i (00:23:53) generaledit 
+\i (00:23:54) pick grid 8617.5 11822.1
+\t (00:23:54) last pick:  8600.0  11800.0
+\i (00:23:55) pick grid 8272.3 11559.3
+\t (00:23:55) last pick:  8300.0  11600.0
+\i (00:23:55) prepopup 8277.5 11559.3
+\i (00:23:56) pop dyn_option_select @:@Move 
+\i (00:23:56) move 
+\t (00:23:56) last pick:  8300.0  11600.0
+\t (00:23:56) last pick:  8300.0  11550.0
+\t (00:23:56) Moving C17 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:23:56) Pick new location for the element(s).
+\i (00:23:58) pick grid 7391.4 12754.5
+\t (00:23:58) last pick:  7400.0  12800.0
+\i (00:23:58) generaledit 
+\i (00:23:58) pick grid 8684.4 11791.2
+\t (00:23:58) last pick:  8700.0  11800.0
+\i (00:23:58) prepopup 8684.4 11791.2
+\i (00:24:00) pop dyn_option_select @:@Move 
+\i (00:24:00) move 
+\t (00:24:00) last pick:  8700.0  11800.0
+\t (00:24:00) last pick:  8550.0  11550.0
+\t (00:24:00) Moving U6 / IDS_C10 / CONN10.
+\t (00:24:00) Pick new location for the element(s).
+\i (00:24:09) prepopup 8169.3 11492.4
+\i (00:24:11) rotate 
+\t (00:24:11) Spin the element(s).
+\i (00:24:12) iangle 180.000
+\t (00:24:12) last angle:  180.000 Degrees
+\i (00:24:17) pick grid 8550.5 11909.7
+\t (00:24:17) last pick:  8600.0  11900.0
+\i (00:24:17) generaledit 
+\i (00:27:27) zoom out 1 
+\i (00:27:27) setwindow pcb
+\i (00:27:27) zoom out 5001.0 12775.1
+\i (00:27:27) trapsize 515
+\i (00:27:37) place area room 
+\t (00:27:39) GT_DELAY room selected
+\i (00:27:39) fillin "GT_DELAY"
+\i (00:27:39) generaledit 
+\i (00:27:44) prepopup 8386.8 14454.6
+\i (00:27:45) pick grid 6841.4 14537.0
+\t (00:27:45) last pick:  6800.0  14500.0
+\i (00:27:46) roam y 96 
+\i (00:27:46) roam y 96
+\i (00:30:08) place manual 
+\i (00:30:12) prepopup 4296.5 14455.5
+\i (00:30:15) setwindow form.plc_manual
+\i (00:30:15) FORM plc_manual cancel  
+\i (00:30:15) setwindow pcb
+\i (00:30:15) generaledit 
+\i (00:30:21) quickplace 
+\i (00:30:23) setwindow form.quickplc
+\i (00:30:23) FORM quickplc cancel  
+\i (00:30:23) setwindow pcb
+\i (00:30:23) generaledit 
+\i (00:32:17) delete 
+\i (00:32:19) pick grid 5677.1 13631.2
+\t (00:32:19) last pick:  5700.0  13600.0
+\t (00:32:19) Rectangle "Board Geometry/Bottom_Room"
+\i (00:32:21) pick grid 5677.1 13631.2
+\t (00:32:21) last pick:  5700.0  13600.0
+\i (00:32:22) prepopup 5677.1 13631.2
+\i (00:32:23) done 
+\i (00:32:23) generaledit 
+\i (00:32:29) room outline 
+\i (00:32:40) setwindow form.fprmoutline
+\i (00:32:40) FORM fprmoutline done  
+\i (00:32:40) setwindow pcb
+\i (00:32:40) generaledit 
+\i (00:32:41) pick grid 11405.7 13404.6
+\t (00:32:41) last pick:  11400.0  13400.0
+\i (00:32:42) pick grid 11271.7 13363.3
+\t (00:32:42) last pick:  11300.0  13400.0
+\i (00:35:24) zoom out 1 
+\i (00:35:24) setwindow pcb
+\i (00:35:24) zoom out 8438.4 12302.1
+\i (00:35:24) trapsize 1044
+\i (00:35:24) zoom out 1 
+\i (00:35:24) setwindow pcb
+\i (00:35:24) zoom out 17104.4 9732.2
+\i (00:35:24) trapsize 1044
+\i (00:35:24) zoom out 1 
+\i (00:35:24) setwindow pcb
+\i (00:35:24) zoom out 17104.4 9732.2
+\i (00:35:24) trapsize 1044
+\i (00:35:25) zoom in 1 
+\i (00:35:25) setwindow pcb
+\i (00:35:25) zoom in 8520.9 11820.6
+\i (00:35:25) trapsize 522
+\i (00:35:25) zoom in 1 
+\i (00:35:25) setwindow pcb
+\i (00:35:25) zoom in 8573.7 11820.6
+\i (00:35:25) trapsize 261
+\i (00:42:44) zoom in 1 
+\i (00:42:44) setwindow pcb
+\i (00:42:44) zoom in 7983.8 12483.7
+\i (00:42:44) trapsize 131
+\i (00:42:44) zoom in 1 
+\i (00:42:44) setwindow pcb
+\i (00:42:44) zoom in 7983.8 12483.7
+\i (00:42:44) trapsize 65
+\i (00:42:45) prepopup 7959.0 12528.2
+\i (00:42:46) pop dyn_option_select @:@Spin 
+\i (00:42:46) spin 
+\t (00:42:46) Moving U14 / OPA4277 / SOIC14.
+\i (00:42:46) roam start
+\i (00:42:46) roam x 16
+\i (00:42:46) roam y 32
+\i (00:42:46) roam x 64
+\i (00:42:46) roam y 64
+\i (00:42:46) roam x 64
+\i (00:42:46) roam y 48
+\i (00:42:46) roam x 64
+\i (00:42:46) roam y 32
+\i (00:42:46) roam x 32
+\i (00:42:46) roam y 16
+\i (00:42:46) roam x 16
+\i (00:42:46) roam y 16
+\i (00:42:46) roam x 64
+\i (00:42:46) roam x 32
+\i (00:42:46) roam y 16
+\i (00:42:47) roam x 32
+\i (00:42:47) roam x -16
+\i (00:42:47) roam y 16
+\i (00:42:47) roam x 64
+\i (00:42:47) roam y 16
+\i (00:42:47) roam x 192
+\i (00:42:47) roam y 32
+\i (00:42:47) roam x 176
+\i (00:42:47) roam y 32
+\i (00:42:47) roam x 96
+\i (00:42:47) roam y 16
+\i (00:42:47) roam x 16
+\i (00:42:47) roam y 16
+\i (00:42:47) roam x 32
+\i (00:42:47) roam x -16
+\i (00:42:47) roam x -112
+\i (00:42:47) roam x -208
+\i (00:42:47) roam y -16
+\i (00:42:47) roam x -160
+\i (00:42:47) roam y -16
+\i (00:42:47) roam x -112
+\i (00:42:47) roam y -16
+\i (00:42:47) roam x -64
+\i (00:42:47) roam y -16
+\i (00:42:47) roam x -64
+\i (00:42:47) roam y -16
+\i (00:42:47) roam x -48
+\i (00:42:47) roam x -32
+\i (00:42:48) roam y 16
+\i (00:42:48) roam y 16
+\i (00:42:48) roam x -16
+\i (00:42:48) roam y 16
+\i (00:42:48) roam x -16
+\i (00:42:48) roam y 16
+\i (00:42:48) roam x -48
+\i (00:42:48) roam y 48
+\i (00:42:48) roam x -48
+\i (00:42:48) roam y 32
+\i (00:42:48) roam x -48
+\i (00:42:48) roam y 48
+\i (00:42:48) roam x -48
+\i (00:42:48) roam y 32
+\i (00:42:48) roam x -32
+\i (00:42:48) roam y 32
+\i (00:42:48) roam x -32
+\i (00:42:48) roam y 48
+\i (00:42:48) roam x -16
+\i (00:42:48) roam y 48
+\i (00:42:48) roam x -16
+\i (00:42:48) roam y 48
+\i (00:42:48) roam y 32
+\i (00:42:48) roam x 16
+\i (00:42:48) roam y 32
+\i (00:42:48) roam x 32
+\i (00:42:48) roam y 32
+\i (00:42:48) roam x 32
+\i (00:42:48) roam y 16
+\i (00:42:48) roam x 48
+\i (00:42:48) roam y 16
+\i (00:42:48) roam x 32
+\i (00:42:48) roam x 32
+\i (00:42:48) roam y -32
+\i (00:42:48) roam x 32
+\i (00:42:48) roam y -64
+\i (00:42:48) roam x 48
+\i (00:42:48) roam y -80
+\i (00:42:48) roam y -48
+\i (00:42:48) roam x 16
+\i (00:42:48) roam y -48
+\i (00:42:48) roam x 16
+\i (00:42:48) roam y -32
+\i (00:42:48) roam y -48
+\i (00:42:48) roam y -32
+\i (00:42:48) roam y -32
+\i (00:42:48) roam y -32
+\i (00:42:48) roam y -16
+\i (00:42:48) roam y -32
+\i (00:42:49) roam x -16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam x -16
+\i (00:42:49) roam y -32
+\i (00:42:49) roam x -16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam x -16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam y -32
+\i (00:42:49) roam x 16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam x 16
+\i (00:42:49) roam x 16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam x 32
+\i (00:42:49) roam y -16
+\i (00:42:49) roam x 32
+\i (00:42:49) roam y -16
+\i (00:42:49) roam x 48
+\i (00:42:49) roam y -16
+\i (00:42:49) roam x 32
+\i (00:42:49) roam x 16
+\i (00:42:49) roam y -16
+\i (00:42:49) roam x 16
+\i (00:42:50) roam y 16
+\i (00:42:50) roam y 16
+\i (00:42:50) roam x -16
+\i (00:42:50) roam y 16
+\i (00:42:50) roam x -16
+\i (00:42:50) roam x -16
+\i (00:42:50) roam x -16
+\i (00:42:50) roam x -16
+\i (00:42:50) roam y 16
+\i (00:42:50) roam x -16
+\i (00:42:50) roam y 16
+\i (00:42:50) roam y 16
+\i (00:42:50) roam y 16
+\i (00:42:52) roam end
+\i (00:42:53) undo 
+\i (00:42:53) trapsize 65
+\i (00:42:53) generaledit 
+\i (00:42:54) zoom out 1 
+\i (00:42:54) setwindow pcb
+\i (00:42:54) zoom out 7748.8 12468.1
+\i (00:42:54) trapsize 131
+\i (00:42:55) roam start
+\i (00:42:55) roam y -16
+\i (00:42:55) roam x -16
+\i (00:42:55) roam y -32
+\i (00:42:55) roam y -32
+\i (00:42:55) roam y -16
+\i (00:42:55) roam x 16
+\i (00:42:55) roam y -16
+\i (00:42:55) roam x 32
+\i (00:42:55) roam y -16
+\i (00:42:55) roam x 32
+\i (00:42:55) roam y -16
+\i (00:42:55) roam x 16
+\i (00:42:55) roam x 48
+\i (00:42:55) roam y 16
+\i (00:42:55) roam x 16
+\i (00:42:55) roam y 32
+\i (00:42:55) roam x 16
+\i (00:42:55) roam y 32
+\i (00:42:55) roam x -16
+\i (00:42:55) roam y 32
+\i (00:42:56) roam x -16
+\i (00:42:56) roam y 32
+\i (00:42:56) roam x -16
+\i (00:42:56) roam y 16
+\i (00:42:56) roam x -16
+\i (00:42:56) roam y 16
+\i (00:42:56) roam x 80
+\i (00:42:56) roam y 16
+\i (00:42:56) roam x 64
+\i (00:42:56) roam y 16
+\i (00:42:56) roam x 80
+\i (00:42:56) roam y 16
+\i (00:42:56) roam x 64
+\i (00:42:56) roam y 32
+\i (00:42:56) roam x 48
+\i (00:42:56) roam y 16
+\i (00:42:56) roam x 32
+\i (00:42:56) roam y 16
+\i (00:42:56) roam x 16
+\i (00:42:56) roam x 32
+\i (00:42:56) roam y 16
+\i (00:42:56) roam x 32
+\i (00:42:56) roam x 32
+\i (00:42:56) roam x 16
+\i (00:42:56) roam x 16
+\i (00:42:56) roam x 32
+\i (00:42:56) roam x -16
+\i (00:42:56) roam x -64
+\i (00:42:56) roam x -96
+\i (00:42:57) roam x -64
+\i (00:42:57) roam x -64
+\i (00:42:57) roam x -48
+\i (00:42:57) roam x -48
+\i (00:42:57) roam x -48
+\i (00:42:57) roam x -48
+\i (00:42:57) roam x -48
+\i (00:42:57) roam y 16
+\i (00:42:57) roam x -32
+\i (00:42:57) roam x -32
+\i (00:42:57) roam x -32
+\i (00:42:57) roam x -16
+\i (00:42:57) roam x -16
+\i (00:42:57) roam y 16
+\i (00:42:57) roam x -32
+\i (00:42:57) roam x -32
+\i (00:42:57) roam y 32
+\i (00:42:57) roam x -32
+\i (00:42:57) roam y 32
+\i (00:42:57) roam end
+\i (00:42:57) roam start
+\i (00:42:57) roam x -16
+\i (00:42:57) roam y 32
+\i (00:42:57) roam x -16
+\i (00:42:57) roam y 48
+\i (00:42:57) roam x -16
+\i (00:42:57) roam y 80
+\i (00:42:57) roam x 16
+\i (00:42:57) roam y 16
+\i (00:42:57) roam x 32
+\i (00:42:57) roam x 16
+\i (00:42:57) roam y -16
+\i (00:42:57) roam x 16
+\i (00:42:57) roam y -48
+\i (00:42:57) roam y -48
+\i (00:42:58) roam y -48
+\i (00:42:58) roam x -16
+\i (00:42:58) roam y -32
+\i (00:42:58) roam x -16
+\i (00:42:58) roam y -48
+\i (00:42:58) roam x -16
+\i (00:42:58) roam y -16
+\i (00:42:58) roam x -16
+\i (00:42:58) roam y -32
+\i (00:42:58) roam x -16
+\i (00:42:58) roam y -16
+\i (00:42:58) roam x -32
+\i (00:42:58) roam x -16
+\i (00:42:58) roam y -16
+\i (00:42:58) roam x -16
+\i (00:42:58) roam y -32
+\i (00:42:58) roam x -16
+\i (00:42:58) roam y -48
+\i (00:42:58) roam y -16
+\i (00:42:58) roam y -16
+\i (00:42:58) roam y -16
+\i (00:42:58) roam y -16
+\i (00:42:58) roam x -16
+\i (00:42:58) roam x -16
+\i (00:42:58) roam y -16
+\i (00:42:58) roam y -16
+\i (00:42:58) roam x -16
+\i (00:42:59) roam y -16
+\i (00:42:59) roam x -16
+\i (00:42:59) roam y -16
+\i (00:42:59) roam y -16
+\i (00:42:59) roam x -16
+\i (00:42:59) roam y -16
+\i (00:42:59) roam y -16
+\i (00:42:59) roam x -16
+\i (00:42:59) roam y -16
+\i (00:42:59) roam x -16
+\i (00:42:59) roam x -32
+\i (00:42:59) roam y -16
+\i (00:42:59) roam y -16
+\i (00:42:59) roam x -16
+\i (00:42:59) roam y -16
+\i (00:42:59) roam y -16
+\i (00:43:00) roam y -16
+\i (00:43:00) roam y -16
+\i (00:43:00) roam end
+\i (00:43:05) prepopup 7419.4 12765.8
+\i (00:43:06) pop dyn_option_select @:@Copy 
+\i (00:43:06) copy 
+\t (00:43:06) Mirror Geometry is not available for symbols or stand alone pins.
+\i (00:43:09) prepopup 7367.1 12802.4
+\i (00:43:09) done 
+\i (00:43:09) generaledit 
+\i (00:43:10) prepopup 7372.4 12791.9
+\i (00:43:11) pop dyn_option_select @:@Move 
+\i (00:43:11) move 
+\t (00:43:11) last pick:  7400.0  12800.0
+\t (00:43:11) last pick:  7400.0  12800.0
+\t (00:43:11) Moving C17 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:43:11) Pick new location for the element(s).
+\i (00:43:15) zoom in 1 
+\i (00:43:15) setwindow pcb
+\i (00:43:15) zoom in 8390.5 12494.3
+\i (00:43:15) trapsize 65
+\i (00:43:15) zoom in 1 
+\i (00:43:15) setwindow pcb
+\i (00:43:15) zoom in 8390.5 12494.3
+\i (00:43:15) trapsize 33
+\i (00:43:15) zoom in 1 
+\i (00:43:15) setwindow pcb
+\i (00:43:15) zoom in 8390.5 12494.3
+\i (00:43:15) trapsize 16
+\i (00:43:16) zoom out 1 
+\i (00:43:16) setwindow pcb
+\i (00:43:16) zoom out 8391.5 12462.1
+\i (00:43:16) trapsize 33
+\i (00:43:16) zoom out 1 
+\i (00:43:16) setwindow pcb
+\i (00:43:16) zoom out 8389.5 12462.0
+\i (00:43:16) trapsize 65
+\i (00:43:17) prepopup 8371.2 12154.0
+\i (00:43:20) roam y 96 
+\i (00:43:20) roam y 96
+\i (00:43:25) prepopup 8624.4 12669.2
+\i (00:43:26) rotate 
+\t (00:43:26) Spin the element(s).
+\i (00:43:28) iangle 90.000
+\t (00:43:28) last angle:  90.000 Degrees
+\i (00:43:31) pick grid 8591.8 12651.0
+\t (00:43:31) last pick:  8600.0  12700.0
+\i (00:43:32) generaledit 
+\i (00:43:32) roam x -96 
+\i (00:43:32) roam x -96
+\i (00:43:34) prepopup 7300.5 12323.3
+\i (00:43:35) pop dyn_option_select @:@Move 
+\i (00:43:35) move 
+\t (00:43:35) last pick:  7300.0  12300.0
+\t (00:43:35) last pick:  7300.0  12300.0
+\t (00:43:35) Moving C18 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:43:35) Pick new location for the element(s).
+\i (00:43:41) pick grid 8611.1 12149.7
+\t (00:43:41) last pick:  8600.0  12100.0
+\i (00:43:41) generaledit 
+\i (00:43:42) prepopup 8603.2 12066.2
+\i (00:43:46) pop dyn_option_select @:@Spin 
+\i (00:43:46) spin 
+\t (00:43:46) Moving C18 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\i (00:43:47) iangle -90.000
+\t (00:43:47) last angle:  270.000 Degrees
+\i (00:43:47) generaledit 
+\i (00:43:48) prepopup 8612.4 12118.4
+\i (00:43:49) pop dyn_option_select @:@Move 
+\i (00:43:49) move 
+\t (00:43:49) last pick:  8600.0  12100.0
+\t (00:43:49) last pick:  8600.0  12100.0
+\t (00:43:49) Moving C18 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:43:49) Pick new location for the element(s).
+\i (00:43:53) pick grid 8598.0 12149.7
+\t (00:43:53) last pick:  8600.0  12100.0
+\i (00:43:53) generaledit 
+\i (00:43:55) prepopup 7385.4 12589.6
+\i (00:43:56) pop dyn_option_select @:@Move 
+\i (00:43:56) move 
+\t (00:43:56) last pick:  7400.0  12600.0
+\t (00:43:56) last pick:  7400.0  12600.0
+\t (00:43:56) Moving C21 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:43:56) Pick new location for the element(s).
+\i (00:43:57) roam x 96 
+\i (00:43:57) roam x 96
+\i (00:43:59) prepopup 9091.4 12664.0
+\i (00:44:00) rotate 
+\t (00:44:00) Spin the element(s).
+\i (00:44:01) iangle 90.000
+\t (00:44:01) last angle:  270.000 Degrees
+\i (00:44:02) pick grid 9100.5 12700.6
+\t (00:44:02) last pick:  9100.0  12700.0
+\i (00:44:02) generaledit 
+\i (00:46:36) xrefdes U14 
+\i (00:46:36) xrefdes U13 
+\i (00:46:36) xrefdes U15 
+\i (00:46:36) xrefdes U16 
+\i (00:46:36) xrefdes U6 
+\i (00:46:36) xrefdes C21 
+\i (00:46:36) xrefdes C20 
+\i (00:46:36) xrefdes C19 
+\i (00:46:36) xrefdes C18 
+\i (00:46:36) xrefdes C17 
+\i (00:46:36) xrefdes C16 
+\i (00:46:36) xname_flush 
+\i (00:46:49) pick grid 7684.3 12290.7
+\t (00:46:49) last pick:  7700.0  12300.0
+\i (00:46:49) zoom out 1 
+\i (00:46:49) setwindow pcb
+\i (00:46:49) zoom out 7684.3 12290.7
+\i (00:46:49) trapsize 131
+\i (00:46:51) prepopup 7311.0 12079.2
+\i (00:46:52) pop dyn_option_select @:@Move 
+\i (00:46:52) move 
+\t (00:46:52) last pick:  7300.0  12100.0
+\t (00:46:52) last pick:  7300.0  12050.0
+\t (00:46:52) Moving C20 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:46:52) Pick new location for the element(s).
+\i (00:46:54) prepopup 9138.4 12188.9
+\i (00:46:55) rotate 
+\t (00:46:55) Spin the element(s).
+\i (00:46:58) iangle -90.000
+\t (00:46:58) last angle:  270.000 Degrees
+\i (00:46:59) prepopup 9099.2 12186.3
+\i (00:46:59) rotate 
+\t (00:46:59) Spin the element(s).
+\i (00:47:01) iangle -270.000
+\t (00:47:01) last angle:  90.000 Degrees
+\i (00:47:04) pick grid 9052.2 12108.0
+\t (00:47:04) last pick:  9100.0  12100.0
+\i (00:47:04) generaledit 
+\i (00:47:05) prepopup 7326.6 11797.3
+\i (00:47:07) pop dyn_option_select @:@Move 
+\i (00:47:07) move 
+\t (00:47:07) last pick:  7300.0  11800.0
+\t (00:47:07) last pick:  7300.0  11800.0
+\t (00:47:07) Moving C19 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:47:07) Pick new location for the element(s).
+\i (00:47:11) prepopup 8125.5 12658.8
+\i (00:47:12) rotate 
+\t (00:47:12) Spin the element(s).
+\i (00:47:15) iangle -90.000
+\t (00:47:15) last angle:  90.000 Degrees
+\i (00:47:16) pick grid 8102.0 12700.6
+\t (00:47:16) last pick:  8100.0  12700.0
+\i (00:47:16) generaledit 
+\i (00:47:17) prepopup 7305.7 11538.8
+\i (00:47:19) pop dyn_option_select @:@Move 
+\i (00:47:19) move 
+\t (00:47:19) last pick:  7300.0  11500.0
+\t (00:47:19) last pick:  7300.0  11550.0
+\t (00:47:19) Moving C16 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:47:19) Pick new location for the element(s).
+\i (00:47:23) pick grid 8135.9 12149.7
+\t (00:47:23) last pick:  8100.0  12100.0
+\i (00:47:23) generaledit 
+\i (00:47:28) drag_start grid 9360.3 12854.6
+\i (00:47:31) drag_stop 9240.2 12708.4
+\i (00:47:31) drag_start grid 9315.9 12781.5
+\i (00:47:33) drag_stop 7694.7 12037.5
+\i (00:47:33) prepopup 8185.5 12379.5
+\i (00:47:34) pop dyn_option_select @:@Move 
+\i (00:47:34) move 
+\t (00:47:34) last pick:  8200.0  12400.0
+\t (00:47:34) Moving C16 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:47:34) Moving U14 / OPA4277 / SOIC14.
+\t (00:47:34) Moving C19 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:47:34) Moving C18 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:47:34) Moving U13 / OPA4277 / SOIC14.
+\t (00:47:34) Moving C17 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:47:34) Moving U15 / OPA2277_SOIC / SOIC8.
+\t (00:47:34) Moving C20 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:47:34) Moving C21 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (00:47:34) Pick new location for the element(s).
+\i (00:47:39) pick grid 7950.6 12389.9
+\t (00:47:39) last pick:  8000.0  12400.0
+\i (00:47:39) generaledit 
+\i (00:47:41) pick grid 9399.4 12429.1
+\t (00:47:41) last pick:  9400.0  12400.0
+\i (00:47:58) auto_route 
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:58) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:47:59) Xtalk table in drawing BSTPLC.brd does not exist. For xtalk estimation or xtalk DRC update, xtalk tables must be generated.
+   (00:47:59) Loading vse.cxt 
+\i (00:48:02) setwindow form.vse_armain
+\i (00:48:02) FORM vse_armain select_modeselected YES 
+\i (00:48:04) FORM vse_armain select_srclist BACKPLANE_IN<1> 
+\i (00:48:04) FORM vse_armain select_srclist BACKPLANE_IN<10> 
+\i (00:48:05) FORM vse_armain select_srclist BACKPLANE_IN<2> 
+\i (00:48:05) FORM vse_armain select_srclist BACKPLANE_IN<3> 
+\i (00:48:06) FORM vse_armain select_srclist BACKPLANE_IN<4> 
+\i (00:48:06) FORM vse_armain select_srclist BACKPLANE_IN<5> 
+\i (00:48:07) FORM vse_armain select_srclist BACKPLANE_IN<6> 
+\i (00:48:07) FORM vse_armain select_srclist BACKPLANE_IN<7> 
+\i (00:48:07) FORM vse_armain select_srclist BACKPLANE_IN<8> 
+\i (00:48:08) FORM vse_armain select_srclist BACKPLANE_IN<9> 
+\i (00:48:08) FORM vse_armain select_srclist BACKPLANE_OUT<1> 
+\i (00:48:09) FORM vse_armain select_srclist BACKPLANE_OUT<10> 
+\i (00:48:09) FORM vse_armain select_srclist BACKPLANE_OUT<2> 
+\i (00:48:09) FORM vse_armain select_srclist BACKPLANE_OUT<3> 
+\i (00:48:10) FORM vse_armain select_srclist BACKPLANE_OUT<4> 
+\i (00:48:10) FORM vse_armain select_srclist BACKPLANE_OUT<5> 
+\i (00:48:11) FORM vse_armain select_srclist BACKPLANE_OUT<6> 
+\i (00:48:11) FORM vse_armain select_srclist BACKPLANE_OUT<7> 
+\i (00:48:11) FORM vse_armain select_srclist BACKPLANE_OUT<8> 
+\i (00:48:13) FORM vse_armain select_srclist BACKPLANE_OUT<9> 
+\i (00:48:15) FORM vse_armain execute  
+\i (00:49:25) FORM vse_armain undo  
+\i (00:49:26) FORM vse_armain routing_passes  
+\i (00:49:28) FORM vse_armain router_setup  
+\i (00:49:32) FORM vse_armain setup_routediagonal YES 
+\i (00:49:34) FORM vse_armain routing_passes  
+\i (00:49:36) FORM vse_armain route_postmiterenable YES 
+\i (00:49:38) FORM vse_armain route_postmiterparams  
+   (00:49:38) Loading skillExt.cxt 
+\i (00:49:41) setwindow form.vse_arparam
+\i (00:49:41) FORM vse_arparam cancel  
+\i (00:49:44) setwindow form.vse_armain
+\i (00:49:44) FORM vse_armain route_postspreadenable YES 
+\i (00:49:47) FORM vse_armain execute  
+\i (00:49:57) FORM vse_armain close  
+\i (00:49:57) setwindow pcb
+\i (00:49:57) generaledit 
+\i (00:59:31) zoom in 1 
+\i (00:59:31) setwindow pcb
+\i (00:59:31) zoom in 7906.2 12690.1
+\i (00:59:31) trapsize 65
+\i (00:59:32) zoom in 1 
+\i (00:59:32) setwindow pcb
+\i (00:59:32) zoom in 7933.6 12699.2
+\i (00:59:32) trapsize 33
+\i (00:59:32) zoom in 1 
+\i (00:59:32) setwindow pcb
+\i (00:59:32) zoom in 7933.7 12699.2
+\i (00:59:32) trapsize 16
+\i (00:59:33) pick grid 7944.5 12703.5
+\t (00:59:33) last pick:  7900.0  12700.0
+\i (00:59:35) add connect 
+\t (00:59:35) Selected item not valid for current operation, ignored: Symbol "C19"
+\t (00:59:35) No valid items selected for the current operation, exiting.
+\i (00:59:35) generaledit 
+\i (00:59:36) pick grid 7938.6 12701.5
+\t (00:59:36) last pick:  7950.0  12700.0
+\i (00:59:39) prepopup 7993.1 12704.8
+\i (00:59:40) pick grid 7980.3 12741.3
+\t (00:59:40) last pick:  7975.0  12750.0
+\i (00:59:41) add connect 
+\t (00:59:41) Pick first element.
+\i (00:59:42) pick grid 7940.2 12699.6
+\t (00:59:42) last pick:  7950.0  12700.0
+\t (00:59:42) last pick:  7939.4  12700.0
+\t (00:59:42) Target Symbol Pin is defined on TOP.
+\t (00:59:42) last pick:  7939.4  12700.0
+\i (00:59:49) prepopup 7955.2 12722.1
+\i (00:59:50) oops 
+\t (00:59:50) last pick:  7939.4  12700.0
+\t (00:59:50) Pick first element.
+\i (00:59:54) setwindow form.mini
+\i (00:59:54) FORM mini lock_direction 45 
+\i (00:59:57) setwindow pcb
+\i (00:59:57) pick grid 7934.7 12704.8
+\t (00:59:57) last pick:  7925.0  12700.0
+\t (00:59:57) last pick:  7939.4  12700.0
+\t (00:59:57) Target Symbol Pin is defined on TOP.
+\t (00:59:57) last pick:  7939.4  12700.0
+\i (01:00:07) prepopup 7945.4 12768.4
+\i (01:00:10) pop dyn_option_select 'Change Alternate Layer@:@VCC' 
+\i (01:00:12) pick grid 7948.4 12787.4
+\t (01:00:12) last pick:  7950.0  12775.0
+\t (01:00:12) No DRC errors detected.
+\i (01:00:12) pick grid dbl 7954.2 12772.3
+\t (01:00:12) last pick:  7950.0  12775.0
+\t (01:00:12) VIA used for drill.
+\t (01:00:12) No DRC errors detected.
+\i (01:00:14) prepopup 7981.6 12753.1
+\i (01:00:16) next 
+\t (01:00:16) Pick first element.
+\i (01:00:18) roam x 96 
+\i (01:00:18) roam x 96
+\i (01:00:18) roam x 96 
+\i (01:00:18) roam x 96
+\i (01:00:18) roam x 96 
+\i (01:00:18) roam x 96
+\i (01:00:18) roam x 96 
+\i (01:00:18) roam x 96
+\i (01:00:19) roam x 96 
+\i (01:00:19) roam x 96
+\i (01:00:19) roam x 96 
+\i (01:00:19) roam x 96
+\i (01:00:19) roam x 96 
+\i (01:00:19) roam x 96
+\i (01:00:20) pick grid 8439.1 12700.9
+\t (01:00:20) last pick:  8450.0  12700.0
+\t (01:00:20) last pick:  8439.4  12700.0
+\t (01:00:20) Target Symbol Pin is defined on TOP.
+\t (01:00:20) last pick:  8439.4  12700.0
+\i (01:00:21) pick grid 8495.2 12712.3
+\t (01:00:21) last pick:  8500.0  12700.0
+\t (01:00:21) No DRC errors detected.
+\i (01:00:21) pick grid dbl 8499.7 12702.2
+\t (01:00:21) last pick:  8500.0  12700.0
+\t (01:00:21) VIA used for drill.
+\t (01:00:21) No DRC errors detected.
+\i (01:00:24) prepopup 8509.5 12622.2
+\i (01:00:26) next 
+\t (01:00:26) Pick first element.
+\i (01:00:28) roam y 96 
+\i (01:00:28) roam y 96
+\i (01:00:28) roam y 96 
+\i (01:00:28) roam y 96
+\i (01:00:28) roam y 96 
+\i (01:00:28) roam y 96
+\i (01:00:29) zoom out 1 
+\i (01:00:29) setwindow pcb
+\i (01:00:29) zoom out 8371.5 12554.4
+\i (01:00:29) trapsize 33
+\i (01:00:29) roam y 96 
+\i (01:00:29) roam y 96
+\i (01:00:29) roam y 96 
+\i (01:00:29) roam y 96
+\i (01:00:30) roam y 96 
+\i (01:00:30) roam y 96
+\i (01:00:30) roam x -96 
+\i (01:00:30) roam x -96
+\i (01:00:30) roam x -96 
+\i (01:00:30) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) roam x -96 
+\i (01:00:31) roam x -96
+\i (01:00:31) zoom out 1 
+\i (01:00:31) setwindow pcb
+\i (01:00:31) zoom out 7039.1 12424.6
+\i (01:00:31) trapsize 65
+\i (01:00:31) zoom out 1 
+\i (01:00:31) setwindow pcb
+\i (01:00:31) zoom out 7039.1 12424.6
+\i (01:00:31) trapsize 131
+\i (01:00:31) roam x 96 
+\i (01:00:31) roam x 96
+\i (01:00:33) roam x 96 
+\i (01:00:33) roam x 96
+\i (01:00:34) roam y -96 
+\i (01:00:34) roam y -96
+\i (01:00:34) zoom in 1 
+\i (01:00:34) setwindow pcb
+\i (01:00:34) zoom in 8949.2 12932.9
+\i (01:00:34) trapsize 65
+\i (01:00:34) zoom in 1 
+\i (01:00:34) setwindow pcb
+\i (01:00:34) zoom in 8913.9 12735.8
+\i (01:00:34) trapsize 33
+\i (01:00:35) roam y 96 
+\i (01:00:35) roam y 96
+\i (01:00:36) pick grid 8853.9 12699.3
+\t (01:00:36) last pick:  8850.0  12700.0
+\t (01:00:36) last pick:  8860.6  12700.0
+\t (01:00:36) Target Symbol Pin is defined on TOP.
+\t (01:00:36) last pick:  8860.6  12700.0
+\i (01:00:42) pick grid 8788.0 12708.4
+\t (01:00:42) last pick:  8800.0  12700.0
+\t (01:00:42) No DRC errors detected.
+\i (01:00:42) pick grid dbl 8799.7 12705.8
+\t (01:00:42) last pick:  8800.0  12700.0
+\t (01:00:42) VIA used for drill.
+\t (01:00:42) No DRC errors detected.
+\i (01:00:43) prepopup 8917.2 12632.7
+\i (01:00:44) next 
+\t (01:00:44) Pick first element.
+\i (01:00:44) roam y 96 
+\i (01:00:44) roam y 96
+\i (01:00:45) roam y 96 
+\i (01:00:45) roam y 96
+\i (01:00:45) roam y 96 
+\i (01:00:45) roam y 96
+\i (01:00:45) roam y 96 
+\i (01:00:45) roam y 96
+\i (01:00:45) roam y 96 
+\i (01:00:45) roam y 96
+\i (01:00:45) roam y 96 
+\i (01:00:45) roam y 96
+\i (01:00:46) roam y 96 
+\i (01:00:46) roam y 96
+\i (01:00:47) zoom in 1 
+\i (01:00:47) setwindow pcb
+\i (01:00:47) zoom in 8857.8 12112.0
+\i (01:00:47) trapsize 16
+\i (01:00:47) zoom in 1 
+\i (01:00:47) setwindow pcb
+\i (01:00:47) zoom in 8857.9 12112.0
+\i (01:00:47) trapsize 8
+\i (01:00:48) zoom out 1 
+\i (01:00:48) setwindow pcb
+\i (01:00:48) zoom out 8860.2 12107.1
+\i (01:00:48) trapsize 16
+\i (01:00:51) zoom out 1 
+\i (01:00:51) setwindow pcb
+\i (01:00:51) zoom out 8940.5 12105.5
+\i (01:00:51) trapsize 33
+\i (01:00:57) undo 
+\i (01:00:57) trapsize 33
+\i (01:00:57) generaledit 
+\i (01:00:58) undo 
+\i (01:00:58) trapsize 16
+\i (01:00:58) undo 
+\i (01:00:58) trapsize 16
+\i (01:00:58) undo 
+\i (01:00:58) trapsize 16
+\i (01:00:58) generaledit 
+\i (01:00:58) undo 
+\i (01:00:58) trapsize 16
+\i (01:00:58) undo 
+\i (01:00:58) undo 
+\i (01:00:58) generaledit 
+\i (01:00:58) undo 
+\i (01:00:58) undo 
+\i (01:00:58) undo 
+\i (01:00:58) generaledit 
+\i (01:00:58) undo 
+\i (01:00:58) undo 
+\i (01:00:58) generaledit 
+\i (01:00:58) undo 
+\i (01:00:58) undo 
+\i (01:00:58) generaledit 
+\i (01:00:58) undo 
+\i (01:00:58) undo 
+\i (01:00:58) generaledit 
+\i (01:00:58) undo 
+\i (01:00:58) undo 
+\i (01:00:58) generaledit 
+\i (01:00:58) zoom out 1 
+\i (01:00:58) setwindow pcb
+\i (01:00:58) zoom out 8195.4 12609.8
+\i (01:00:58) trapsize 33
+\i (01:00:58) zoom out 1 
+\i (01:00:58) setwindow pcb
+\i (01:00:58) zoom out 8195.4 12609.9
+\i (01:00:58) trapsize 65
+\i (01:00:58) zoom out 1 
+\i (01:00:58) setwindow pcb
+\i (01:00:58) zoom out 8195.3 12609.9
+\i (01:00:58) trapsize 131
+\i (01:00:58) zoom out 1 
+\i (01:00:58) setwindow pcb
+\i (01:00:58) zoom out 8195.3 12609.9
+\i (01:00:58) trapsize 261
+\i (01:01:01) setwindow form.find
+\i (01:01:01) FORM find nets YES 
+\i (01:01:02) FORM find symbols NO 
+\i (01:01:02) FORM find nets NO 
+\i (01:01:03) FORM find clines YES 
+\i (01:01:05) setwindow pcb
+\i (01:01:05) pick grid 9589.3 13492.3
+\t (01:01:05) last pick:  9600.0  13500.0
+\i (01:01:08) drag_start grid 7365.1 13283.4
+\i (01:01:10) drag_stop 9276.1 11701.4
+\i (01:01:12) delete 
+\i (01:01:12) generaledit 
+\i (01:01:13) prepopup 7490.4 12547.2
+\i (01:01:16) setwindow form.find
+\i (01:01:16) FORM find vias YES 
+\i (01:01:17) setwindow pcb
+\i (01:01:17) drag_start grid 7506.1 13147.7
+\i (01:01:18) drag_stop 9636.3 11711.8
+\i (01:01:19) prepopup 9443.2 12150.4
+\i (01:01:21) delete 
+\i (01:01:21) generaledit 
+\i (01:01:22) delete 
+\i (01:01:23) setwindow form.find
+\i (01:01:23) FORM find vias NO 
+\i (01:01:24) FORM find clines NO 
+\i (01:01:24) FORM find lines NO 
+\i (01:01:25) FORM find text NO 
+\i (01:01:26) FORM find figures NO 
+\i (01:01:26) FORM find other_segs NO 
+\i (01:01:27) FORM find cline_segs NO 
+\i (01:01:40) setwindow pcb
+\i (01:01:40) auto_route 
+\i (01:01:42) setwindow form.vse_armain
+\i (01:01:42) FORM vse_armain router_setup  
+\i (01:01:43) FORM vse_armain selections  
+\i (01:01:44) FORM vse_armain select_modeselected YES 
+\i (01:01:47) FORM vse_armain select_objecttype Components 
+\i (01:01:49) setwindow pcb
+\i (01:01:49) pick 8665.2 13236.4
+\t (01:01:49) last pick:  8665.2  13236.4
+\i (01:01:50) pick 8529.4 13168.6
+\t (01:01:50) last pick:  8529.4  13168.6
+\i (01:01:50) pick 8310.1 13184.2
+\t (01:01:50) last pick:  8310.1  13184.2
+\i (01:01:54) setwindow form.vse_armain
+\i (01:01:54) FORM vse_armain close  
+\i (01:01:54) setwindow pcb
+\i (01:01:54) generaledit 
+\i (01:02:00) xhilite 
+\i (01:02:00) xrefdes U5 
+\t (01:02:00) Can not select unplaced component U5.
+\t (01:02:00) Can not select unplaced component U5.
+\i (01:02:00) xrefdes U65 
+\t (01:02:00) Can not select unplaced component U65.
+\t (01:02:00) Can not select unplaced component U65.
+\i (01:02:00) xname_flush 
+\i (01:02:00) done 
+\i (01:02:00) generaledit 
+\i (01:02:06) xhilite 
+\i (01:02:06) xrefdes Tp12 
+\t (01:02:06) Can not select unplaced component TP12.
+\t (01:02:06) Can not select unplaced component TP12.
+\i (01:02:06) xrefdes R182 
+\t (01:02:06) Can not select unplaced component R182.
+\t (01:02:06) Can not select unplaced component R182.
+\i (01:02:06) xrefdes R181 
+\t (01:02:06) Can not select unplaced component R181.
+\t (01:02:06) Can not select unplaced component R181.
+\i (01:02:06) xrefdes D18 
+\t (01:02:06) Can not select unplaced component D18.
+\t (01:02:06) Can not select unplaced component D18.
+\i (01:02:06) xrefdes D17 
+\t (01:02:06) Can not select unplaced component D17.
+\t (01:02:06) Can not select unplaced component D17.
+\i (01:02:06) xrefdes U95 
+\t (01:02:06) Can not select unplaced component U95.
+\t (01:02:06) Can not select unplaced component U95.
+\i (01:02:06) xrefdes C123 
+\t (01:02:06) Can not select unplaced component C123.
+\t (01:02:06) Can not select unplaced component C123.
+\i (01:02:06) xrefdes C136 
+\t (01:02:06) Can not select unplaced component C136.
+\t (01:02:06) Can not select unplaced component C136.
+\i (01:02:06) xrefdes C135 
+\t (01:02:06) Can not select unplaced component C135.
+\t (01:02:06) Can not select unplaced component C135.
+\i (01:02:06) xrefdes C133 
+\t (01:02:06) Can not select unplaced component C133.
+\t (01:02:06) Can not select unplaced component C133.
+\i (01:02:06) xrefdes C132 
+\t (01:02:06) Can not select unplaced component C132.
+\t (01:02:06) Can not select unplaced component C132.
+\i (01:02:06) xrefdes C131 
+\t (01:02:06) Can not select unplaced component C131.
+\t (01:02:06) Can not select unplaced component C131.
+\i (01:02:06) xrefdes C130 
+\t (01:02:06) Can not select unplaced component C130.
+\t (01:02:06) Can not select unplaced component C130.
+\i (01:02:06) xrefdes C129 
+\t (01:02:06) Can not select unplaced component C129.
+\t (01:02:06) Can not select unplaced component C129.
+\i (01:02:06) xrefdes C128 
+\t (01:02:06) Can not select unplaced component C128.
+\t (01:02:06) Can not select unplaced component C128.
+\i (01:02:06) xrefdes C127 
+\t (01:02:06) Can not select unplaced component C127.
+\t (01:02:06) Can not select unplaced component C127.
+\i (01:02:06) xrefdes C126 
+\t (01:02:06) Can not select unplaced component C126.
+\t (01:02:06) Can not select unplaced component C126.
+\i (01:02:06) xrefdes C125 
+\t (01:02:06) Can not select unplaced component C125.
+\t (01:02:06) Can not select unplaced component C125.
+\i (01:02:06) xrefdes C124 
+\t (01:02:06) Can not select unplaced component C124.
+\t (01:02:06) Can not select unplaced component C124.
+\i (01:02:06) xrefdes C105 
+\t (01:02:06) Can not select unplaced component C105.
+\t (01:02:06) Can not select unplaced component C105.
+\i (01:02:06) xrefdes C104 
+\t (01:02:06) Can not select unplaced component C104.
+\t (01:02:06) Can not select unplaced component C104.
+\i (01:02:06) xrefdes C103 
+\t (01:02:06) Can not select unplaced component C103.
+\t (01:02:06) Can not select unplaced component C103.
+\i (01:02:06) xrefdes C102 
+\t (01:02:06) Can not select unplaced component C102.
+\t (01:02:06) Can not select unplaced component C102.
+\i (01:02:06) xrefdes C101 
+\t (01:02:06) Can not select unplaced component C101.
+\t (01:02:06) Can not select unplaced component C101.
+\i (01:02:06) xrefdes C37 
+\t (01:02:06) Can not select unplaced component C37.
+\t (01:02:06) Can not select unplaced component C37.
+\i (01:02:06) xrefdes C36 
+\t (01:02:06) Can not select unplaced component C36.
+\t (01:02:06) Can not select unplaced component C36.
+\i (01:02:06) xrefdes C35 
+\t (01:02:06) Can not select unplaced component C35.
+\t (01:02:06) Can not select unplaced component C35.
+\i (01:02:06) xrefdes C34 
+\t (01:02:06) Can not select unplaced component C34.
+\t (01:02:06) Can not select unplaced component C34.
+\i (01:02:06) xrefdes C33 
+\t (01:02:06) Can not select unplaced component C33.
+\t (01:02:06) Can not select unplaced component C33.
+\i (01:02:06) xrefdes C32 
+\t (01:02:06) Can not select unplaced component C32.
+\t (01:02:06) Can not select unplaced component C32.
+\i (01:02:06) xrefdes C31 
+\t (01:02:06) Can not select unplaced component C31.
+\t (01:02:06) Can not select unplaced component C31.
+\i (01:02:06) xrefdes C30 
+\t (01:02:06) Can not select unplaced component C30.
+\t (01:02:06) Can not select unplaced component C30.
+\i (01:02:06) xrefdes C29 
+\t (01:02:06) Can not select unplaced component C29.
+\t (01:02:06) Can not select unplaced component C29.
+\i (01:02:06) xrefdes C28 
+\t (01:02:06) Can not select unplaced component C28.
+\t (01:02:06) Can not select unplaced component C28.
+\i (01:02:06) xrefdes C27 
+\t (01:02:06) Can not select unplaced component C27.
+\t (01:02:06) Can not select unplaced component C27.
+\i (01:02:06) xrefdes C26 
+\t (01:02:06) Can not select unplaced component C26.
+\t (01:02:06) Can not select unplaced component C26.
+\i (01:02:06) xrefdes U66 
+\t (01:02:06) Can not select unplaced component U66.
+\t (01:02:06) Can not select unplaced component U66.
+\i (01:02:06) xrefdes R179 
+\t (01:02:06) Can not select unplaced component R179.
+\t (01:02:06) Can not select unplaced component R179.
+\i (01:02:06) xrefdes R178 
+\t (01:02:06) Can not select unplaced component R178.
+\t (01:02:06) Can not select unplaced component R178.
+\i (01:02:06) xrefdes R177 
+\t (01:02:06) Can not select unplaced component R177.
+\t (01:02:06) Can not select unplaced component R177.
+\i (01:02:06) xrefdes R176 
+\t (01:02:06) Can not select unplaced component R176.
+\t (01:02:06) Can not select unplaced component R176.
+\i (01:02:06) xrefdes R175 
+\t (01:02:06) Can not select unplaced component R175.
+\t (01:02:06) Can not select unplaced component R175.
+\i (01:02:06) xrefdes R174 
+\t (01:02:06) Can not select unplaced component R174.
+\t (01:02:06) Can not select unplaced component R174.
+\i (01:02:06) xrefdes R173 
+\t (01:02:06) Can not select unplaced component R173.
+\t (01:02:06) Can not select unplaced component R173.
+\i (01:02:06) xrefdes R172 
+\t (01:02:06) Can not select unplaced component R172.
+\t (01:02:06) Can not select unplaced component R172.
+\i (01:02:06) xrefdes R171 
+\t (01:02:06) Can not select unplaced component R171.
+\t (01:02:06) Can not select unplaced component R171.
+\i (01:02:06) xrefdes R170 
+\t (01:02:06) Can not select unplaced component R170.
+\t (01:02:06) Can not select unplaced component R170.
+\i (01:02:06) xrefdes R169 
+\t (01:02:06) Can not select unplaced component R169.
+\t (01:02:06) Can not select unplaced component R169.
+\i (01:02:06) xrefdes R168 
+\t (01:02:06) Can not select unplaced component R168.
+\t (01:02:06) Can not select unplaced component R168.
+\i (01:02:06) xrefdes R167 
+\t (01:02:06) Can not select unplaced component R167.
+\t (01:02:06) Can not select unplaced component R167.
+\i (01:02:06) xrefdes R166 
+\t (01:02:06) Can not select unplaced component R166.
+\t (01:02:06) Can not select unplaced component R166.
+\i (01:02:06) xrefdes R165 
+\t (01:02:06) Can not select unplaced component R165.
+\t (01:02:06) Can not select unplaced component R165.
+\i (01:02:06) xrefdes R164 
+\t (01:02:06) Can not select unplaced component R164.
+\t (01:02:06) Can not select unplaced component R164.
+\i (01:02:06) xrefdes R163 
+\t (01:02:06) Can not select unplaced component R163.
+\t (01:02:06) Can not select unplaced component R163.
+\i (01:02:06) xrefdes R162 
+\t (01:02:06) Can not select unplaced component R162.
+\t (01:02:06) Can not select unplaced component R162.
+\i (01:02:06) xrefdes R161 
+\t (01:02:06) Can not select unplaced component R161.
+\t (01:02:06) Can not select unplaced component R161.
+\i (01:02:06) xrefdes R160 
+\t (01:02:06) Can not select unplaced component R160.
+\t (01:02:06) Can not select unplaced component R160.
+\i (01:02:06) xrefdes R159 
+\t (01:02:06) Can not select unplaced component R159.
+\t (01:02:06) Can not select unplaced component R159.
+\i (01:02:06) xrefdes R158 
+\t (01:02:06) Can not select unplaced component R158.
+\t (01:02:06) Can not select unplaced component R158.
+\i (01:02:06) xrefdes R157 
+\t (01:02:06) Can not select unplaced component R157.
+\t (01:02:06) Can not select unplaced component R157.
+\i (01:02:06) xrefdes R156 
+\t (01:02:06) Can not select unplaced component R156.
+\t (01:02:06) Can not select unplaced component R156.
+\i (01:02:06) xrefdes R155 
+\t (01:02:06) Can not select unplaced component R155.
+\t (01:02:06) Can not select unplaced component R155.
+\i (01:02:06) xrefdes R154 
+\t (01:02:06) Can not select unplaced component R154.
+\t (01:02:06) Can not select unplaced component R154.
+\i (01:02:06) xrefdes R153 
+\t (01:02:06) Can not select unplaced component R153.
+\t (01:02:06) Can not select unplaced component R153.
+\i (01:02:06) xrefdes R152 
+\t (01:02:06) Can not select unplaced component R152.
+\t (01:02:06) Can not select unplaced component R152.
+\i (01:02:06) xrefdes R151 
+\t (01:02:06) Can not select unplaced component R151.
+\t (01:02:06) Can not select unplaced component R151.
+\i (01:02:06) xrefdes R150 
+\t (01:02:06) Can not select unplaced component R150.
+\t (01:02:06) Can not select unplaced component R150.
+\i (01:02:06) xrefdes R149 
+\t (01:02:06) Can not select unplaced component R149.
+\t (01:02:06) Can not select unplaced component R149.
+\i (01:02:06) xrefdes R148 
+\t (01:02:06) Can not select unplaced component R148.
+\t (01:02:06) Can not select unplaced component R148.
+\i (01:02:06) xrefdes R27 
+\t (01:02:06) Can not select unplaced component R27.
+\t (01:02:06) Can not select unplaced component R27.
+\i (01:02:06) xrefdes R26 
+\t (01:02:06) Can not select unplaced component R26.
+\t (01:02:06) Can not select unplaced component R26.
+\i (01:02:06) xrefdes R25 
+\t (01:02:06) Can not select unplaced component R25.
+\t (01:02:06) Can not select unplaced component R25.
+\i (01:02:06) xrefdes R24 
+\t (01:02:06) Can not select unplaced component R24.
+\t (01:02:06) Can not select unplaced component R24.
+\i (01:02:06) xrefdes R23 
+\t (01:02:06) Can not select unplaced component R23.
+\t (01:02:06) Can not select unplaced component R23.
+\i (01:02:06) xrefdes R22 
+\t (01:02:06) Can not select unplaced component R22.
+\t (01:02:06) Can not select unplaced component R22.
+\i (01:02:06) xrefdes R21 
+\t (01:02:06) Can not select unplaced component R21.
+\t (01:02:06) Can not select unplaced component R21.
+\i (01:02:06) xrefdes R20 
+\t (01:02:06) Can not select unplaced component R20.
+\t (01:02:06) Can not select unplaced component R20.
+\i (01:02:06) xrefdes U84 
+\t (01:02:06) Can not select unplaced component U84.
+\t (01:02:06) Can not select unplaced component U84.
+\i (01:02:06) xrefdes U30 
+\t (01:02:06) Can not select unplaced component U30.
+\t (01:02:06) Can not select unplaced component U30.
+\i (01:02:06) xrefdes U83 
+\t (01:02:06) Can not select unplaced component U83.
+\t (01:02:06) Can not select unplaced component U83.
+\i (01:02:06) xrefdes U21 
+\t (01:02:06) Can not select unplaced component U21.
+\t (01:02:06) Can not select unplaced component U21.
+\i (01:02:06) xrefdes U27 
+\t (01:02:06) Can not select unplaced component U27.
+\t (01:02:06) Can not select unplaced component U27.
+\i (01:02:06) xrefdes U86 
+\t (01:02:06) Can not select unplaced component U86.
+\t (01:02:06) Can not select unplaced component U86.
+\i (01:02:06) xrefdes U28 
+\t (01:02:06) Can not select unplaced component U28.
+\t (01:02:06) Can not select unplaced component U28.
+\i (01:02:06) xrefdes U81 
+\t (01:02:06) Can not select unplaced component U81.
+\t (01:02:06) Can not select unplaced component U81.
+\i (01:02:06) xrefdes U23 
+\t (01:02:06) Can not select unplaced component U23.
+\t (01:02:06) Can not select unplaced component U23.
+\i (01:02:06) xrefdes U22 
+\t (01:02:06) Can not select unplaced component U22.
+\t (01:02:06) Can not select unplaced component U22.
+\i (01:02:06) xrefdes U25 
+\t (01:02:06) Can not select unplaced component U25.
+\t (01:02:06) Can not select unplaced component U25.
+\i (01:02:06) xrefdes U92 
+\t (01:02:06) Can not select unplaced component U92.
+\t (01:02:06) Can not select unplaced component U92.
+\i (01:02:06) xrefdes U91 
+\t (01:02:06) Can not select unplaced component U91.
+\t (01:02:06) Can not select unplaced component U91.
+\i (01:02:06) xrefdes U90 
+\t (01:02:06) Can not select unplaced component U90.
+\t (01:02:06) Can not select unplaced component U90.
+\i (01:02:06) xrefdes U89 
+\t (01:02:06) Can not select unplaced component U89.
+\t (01:02:06) Can not select unplaced component U89.
+\i (01:02:06) xrefdes U88 
+\t (01:02:06) Can not select unplaced component U88.
+\t (01:02:06) Can not select unplaced component U88.
+\i (01:02:06) xrefdes U87 
+\t (01:02:06) Can not select unplaced component U87.
+\t (01:02:06) Can not select unplaced component U87.
+\i (01:02:06) xrefdes R180 
+\t (01:02:06) Can not select unplaced component R180.
+\t (01:02:06) Can not select unplaced component R180.
+\i (01:02:06) xrefdes U85 
+\t (01:02:06) Can not select unplaced component U85.
+\t (01:02:06) Can not select unplaced component U85.
+\i (01:02:06) xrefdes U93 
+\t (01:02:06) Can not select unplaced component U93.
+\t (01:02:06) Can not select unplaced component U93.
+\i (01:02:06) xrefdes U24 
+\t (01:02:06) Can not select unplaced component U24.
+\t (01:02:06) Can not select unplaced component U24.
+\i (01:02:06) xrefdes U94 
+\t (01:02:06) Can not select unplaced component U94.
+\t (01:02:06) Can not select unplaced component U94.
+\i (01:02:06) xrefdes U68 
+\t (01:02:06) Can not select unplaced component U68.
+\t (01:02:06) Can not select unplaced component U68.
+\i (01:02:06) xrefdes U67 
+\t (01:02:06) Can not select unplaced component U67.
+\t (01:02:06) Can not select unplaced component U67.
+\i (01:02:06) xrefdes U29 
+\t (01:02:06) Can not select unplaced component U29.
+\t (01:02:06) Can not select unplaced component U29.
+\i (01:02:06) xrefdes U82 
+\t (01:02:06) Can not select unplaced component U82.
+\t (01:02:06) Can not select unplaced component U82.
+\i (01:02:06) xrefdes U26 
+\t (01:02:06) Can not select unplaced component U26.
+\t (01:02:06) Can not select unplaced component U26.
+\i (01:02:06) xrefdes C134 
+\t (01:02:06) Can not select unplaced component C134.
+\t (01:02:06) Can not select unplaced component C134.
+\i (01:02:06) xrefdes U96 
+\t (01:02:06) Can not select unplaced component U96.
+\t (01:02:06) Can not select unplaced component U96.
+\i (01:02:06) xname_flush 
+\i (01:02:06) done 
+\i (01:02:06) generaledit 
+\i (01:02:16) xhilite 
+\i (01:02:16) xrefdes U14 
+\i (01:02:16) xrefdes U13 
+\i (01:02:16) xrefdes U15 
+\i (01:02:16) xrefdes U16 
+\i (01:02:16) xrefdes U6 
+\i (01:02:16) xrefdes C21 
+\i (01:02:16) xrefdes C20 
+\i (01:02:16) xrefdes C19 
+\i (01:02:16) xrefdes C18 
+\i (01:02:16) xrefdes C17 
+\i (01:02:16) xrefdes C16 
+\i (01:02:16) xname_flush 
+\i (01:02:16) trapsize 297
+\t (01:02:16) 11 Component(s) highlighted.
+\i (01:02:16) done 
+\i (01:02:16) generaledit 
+\i (01:02:31) auto_route 
+\i (01:02:32) setwindow form.vse_armain
+\i (01:02:32) FORM vse_armain select_modeselected YES 
+\i (01:02:34) FORM vse_armain select_objecttype Components 
+\i (01:02:48) FORM vse_armain select_srclist C20 
+\i (01:02:49) FORM vse_armain select_srclist C21 
+\i (01:03:00) FORM vse_armain select_srclist C16 
+\i (01:03:01) FORM vse_armain select_srclist C17 
+\i (01:03:02) FORM vse_armain select_srclist C19 
+\i (01:03:03) FORM vse_armain select_srclist C18 
+\i (01:03:04) setwindow pcb
+\i (01:03:04) zoom in 1 
+\i (01:03:04) setwindow pcb
+\i (01:03:04) zoom in 8791.6 12542.4
+\i (01:03:04) trapsize 148
+\i (01:03:04) zoom in 1 
+\i (01:03:04) setwindow pcb
+\i (01:03:04) zoom in 8791.6 12542.5
+\i (01:03:04) trapsize 74
+\i (01:03:06) roam x -96 
+\i (01:03:06) roam x -96
+\i (01:03:06) roam x -96 
+\i (01:03:06) roam x -96
+\i (01:03:06) roam x -96 
+\i (01:03:06) roam x -96
+\i (01:03:07) roam x -96 
+\i (01:03:07) roam x -96
+\i (01:03:09) roam y -96 
+\i (01:03:09) roam y -96
+\i (01:03:09) roam y -96 
+\i (01:03:09) roam y -96
+\i (01:03:13) setwindow form.vse_armain
+\i (01:03:13) FORM vse_armain select_srclist U16 
+\i (01:03:14) FORM vse_armain select_srclist U15 
+\i (01:03:14) FORM vse_armain select_srclist U14 
+\i (01:03:15) FORM vse_armain select_srclist U13 
+\i (01:03:16) FORM vse_armain select_srclist TP9 
+\i (01:03:17) FORM vse_armain select_srclist TP8 
+\i (01:03:22) FORM vse_armain select_objlist 'Comp TP8' 
+\i (01:03:23) FORM vse_armain select_objlist 'Comp TP9' 
+\i (01:03:23) FORM vse_armain select_objlist 'Comp U13' 
+\i (01:03:24) FORM vse_armain select_objlist 'Comp U14' 
+\i (01:03:25) FORM vse_armain select_objlist 'Comp U15' 
+\i (01:03:26) setwindow pcb
+\i (01:03:26) roam y 96 
+\i (01:03:26) roam y 96
+\i (01:03:27) roam y 96 
+\i (01:03:27) roam y 96
+\i (01:03:27) roam y 96 
+\i (01:03:27) roam y 96
+\i (01:03:27) roam y 96 
+\i (01:03:27) roam y 96
+\i (01:03:27) roam y 96 
+\i (01:03:27) roam y 96
+\i (01:03:27) roam y 96 
+\i (01:03:27) roam y 96
+\i (01:03:35) setwindow form.vse_armain
+\i (01:03:35) FORM vse_armain select_srclist U6 
+\i (01:03:39) FORM vse_armain select_srclist U13 
+\i (01:03:39) FORM vse_armain select_srclist U14 
+\i (01:03:41) FORM vse_armain select_srclist U15 
+\i (01:03:46) FORM vse_armain execute  
+\i (01:03:50) setwindow pcb
+\i (01:03:50) zoom out 1 
+\i (01:03:50) setwindow pcb
+\i (01:03:50) zoom out 8222.6 12284.2
+\i (01:03:50) trapsize 148
+\i (01:03:51) roam y -96 
+\i (01:03:51) roam y -96
+\i (01:03:51) roam y -96 
+\i (01:03:51) roam y -96
+\i (01:03:53) zoom in 1 
+\i (01:03:53) setwindow pcb
+\i (01:03:53) zoom in 8777.4 12229.3
+\i (01:03:53) trapsize 74
+\i (01:03:53) zoom in 1 
+\i (01:03:53) setwindow pcb
+\i (01:03:53) zoom in 8793.7 12227.9
+\i (01:03:53) trapsize 37
+\i (01:03:54) roam x 96 
+\i (01:03:54) roam x 96
+\i (01:03:54) zoom in 1 
+\i (01:03:54) setwindow pcb
+\i (01:03:54) zoom in 9020.7 12359.3
+\i (01:03:54) trapsize 19
+\i (01:03:55) roam x 96 
+\i (01:03:55) roam x 96
+\i (01:03:55) roam y -96 
+\i (01:03:55) roam y -96
+\i (01:04:00) zoom out 1 
+\i (01:04:00) setwindow pcb
+\i (01:04:00) zoom out 8978.4 12386.1
+\i (01:04:00) trapsize 37
+\i (01:04:02) roam x 96 
+\i (01:04:02) roam x 96
+\i (01:04:05) setwindow form.vse_armain
+\i (01:04:05) FORM vse_armain close  
+\i (01:04:05) setwindow pcb
+\i (01:04:05) generaledit 
+\i (01:04:07) roam x 96 
+\i (01:04:07) roam x 96
+\i (01:04:10) add connect 
+\t (01:04:10) Pick first element.
+\i (01:04:14) pick grid 9003.6 12425.4
+\t (01:04:14) last pick:  9000.0  12425.0
+\t (01:04:14) last pick:  8997.5  12425.0
+\t (01:04:14) last pick:  8997.5  12425.0
+\i (01:04:14) mouse_pos 9037.7 12417.2
+\i (01:04:14) mouse_pos 9057.0 12412.1
+\i (01:04:14) mouse_pos 9037.0 12363.1
+\i (01:04:15) mouse_pos 9055.5 12387.6
+\i (01:04:15) mouse_pos 9048.9 12412.8
+\i (01:04:15) prepopup 9045.9 12415.8
+\i (01:04:17) done 
+\i (01:04:17) generaledit 
+\i (01:04:19) pick grid 8949.5 12417.2
+\t (01:04:19) last pick:  8950.0  12425.0
+\i (01:04:19) prepopup 8949.5 12418.0
+\i (01:04:20) pop dyn_option_select @:@Delete 
+\i (01:04:20) delete 
+\i (01:04:20) generaledit 
+\i (01:04:21) pick grid 8950.2 12386.1
+\t (01:04:21) last pick:  8950.0  12375.0
+\i (01:04:22) prepopup 8950.2 12386.1
+\i (01:04:22) pop dyn_option_select @:@Delete 
+\i (01:04:22) delete 
+\i (01:04:23) generaledit 
+\i (01:04:25) roam y -96 
+\i (01:04:25) roam y -96
+\i (01:04:25) undo 
+\i (01:04:25) trapsize 37
+\i (01:04:25) generaledit 
+\i (01:04:29) add connect 
+\t (01:04:29) Selected item not valid for current operation, ignored: Connect Line "Backplane_Out<10>, Etch/Top"
+\t (01:04:29) No valid items selected for the current operation, exiting.
+\i (01:04:29) generaledit 
+\i (01:04:31) pick grid 9001.4 12427.6
+\t (01:04:31) last pick:  9000.0  12425.0
+\i (01:04:32) prepopup 9235.8 12449.1
+\i (01:04:33) pick grid 9186.1 12473.6
+\t (01:04:33) last pick:  9175.0  12475.0
+\i (01:04:34) add connect 
+\t (01:04:34) Pick first element.
+\i (01:04:35) pick grid 8999.9 12429.1
+\t (01:04:35) last pick:  9000.0  12425.0
+\t (01:04:35) last pick:  8997.5  12425.0
+\t (01:04:35) Target Symbol Pin is defined on TOP.
+\t (01:04:35) last pick:  8997.5  12425.0
+\i (01:04:35) mouse_pos 9040.0 12426.9
+\i (01:04:35) mouse_pos 9063.0 12425.4
+\i (01:04:36) mouse_pos 9062.2 12428.4
+\i (01:04:36) pick grid 9062.2 12428.4
+\t (01:04:36) last pick:  9050.0  12425.0
+\t (01:04:36) No DRC errors detected.
+\t (01:04:36) Pick first element.
+\i (01:04:37) pick grid 9002.1 12372.7
+\t (01:04:37) last pick:  9000.0  12375.0
+\t (01:04:37) Pick first element.
+\t (01:04:37) last pick:  8997.5  12375.0
+\t (01:04:37) last pick:  8997.5  12375.0
+\i (01:04:38) mouse_pos 9062.2 12422.4
+\i (01:04:39) pick grid 9062.2 12422.4
+\t (01:04:39) last pick:  9050.0  12425.0
+\t (01:04:39) No DRC errors detected.
+\t (01:04:39) Pick first element.
+\i (01:04:41) zoom out 1 
+\i (01:04:41) setwindow pcb
+\i (01:04:41) zoom out 9060.0 12403.9
+\i (01:04:41) trapsize 74
+\i (01:04:41) zoom in 1 
+\i (01:04:41) setwindow pcb
+\i (01:04:41) zoom in 9060.0 12403.9
+\i (01:04:41) trapsize 37
+\i (01:04:43) roam x 96 
+\i (01:04:43) roam x 96
+\i (01:04:43) roam x 96 
+\i (01:04:43) roam x 96
+\i (01:04:44) roam y -96 
+\i (01:04:44) roam y -96
+\i (01:04:45) roam y -96 
+\i (01:04:45) roam y -96
+\i (01:04:45) roam y -96 
+\i (01:04:45) roam y -96
+\i (01:04:46) roam y -96 
+\i (01:04:46) roam y -96
+\i (01:04:49) slide 
+\t (01:04:49) Pick element to slide.
+\i (01:04:50) pick grid 9029.6 12569.3
+\t (01:04:50) last pick:  9025.0  12575.0
+\t (01:04:50) last pick:  9031.0  12569.3
+\t (01:04:50) Waiting for the destination pick.
+\i (01:04:52) pick grid 9011.8 12566.3
+\t (01:04:52) last pick:  9000.0  12575.0
+\t (01:04:52) No DRC errors detected.
+\t (01:04:52) Pick another element to slide.
+\i (01:04:55) pick grid 8991.0 12685.0
+\t (01:04:55) last pick:  9000.0  12675.0
+\t (01:04:55) last pick:  8991.0  12685.0
+\t (01:04:55) Waiting for the destination pick.
+\i (01:04:57) pick grid 8962.1 12664.2
+\t (01:04:57) last pick:  8950.0  12675.0
+\t (01:04:57) No DRC errors detected.
+\t (01:04:57) Pick another element to slide.
+\i (01:05:04) roam y 96 
+\i (01:05:04) roam y 96
+\i (01:05:06) roam y 96 
+\i (01:05:06) roam y 96
+\i (01:05:08) roam y 96 
+\i (01:05:08) roam y 96
+\i (01:05:08) roam y 96 
+\i (01:05:08) roam y 96
+\i (01:05:09) pick grid 9019.2 12095.3
+\t (01:05:09) last pick:  9025.0  12100.0
+\t (01:05:09) last pick:  9019.0  12095.5
+\t (01:05:09) Waiting for the destination pick.
+\i (01:05:11) pick grid 9023.6 12087.2
+\t (01:05:11) last pick:  9025.0  12075.0
+\t (01:05:11) No DRC errors detected.
+\t (01:05:11) Pick another element to slide.
+\i (01:05:11) roam y 96 
+\i (01:05:11) roam y 96
+\i (01:05:11) roam y 96 
+\i (01:05:11) roam y 96
+\i (01:05:12) roam x -96 
+\i (01:05:12) roam x -96
+\i (01:05:12) roam x -96 
+\i (01:05:12) roam x -96
+\i (01:05:12) zoom out 1 
+\i (01:05:12) setwindow pcb
+\i (01:05:12) zoom out 8692.1 12004.8
+\i (01:05:12) trapsize 74
+\i (01:05:13) roam x -96 
+\i (01:05:13) roam x -96
+\i (01:05:13) roam x -96 
+\i (01:05:13) roam x -96
+\i (01:05:17) zoom in 1 
+\i (01:05:17) setwindow pcb
+\i (01:05:17) zoom in 8451.7 12328.3
+\i (01:05:17) trapsize 37
+\i (01:05:21) pick grid 8462.1 12250.5
+\t (01:05:21) last pick:  8450.0  12250.0
+\t (01:05:21) last pick:  8464.0  12250.0
+\t (01:05:21) Waiting for the destination pick.
+\i (01:05:27) zoom in 1 
+\i (01:05:27) setwindow pcb
+\i (01:05:27) zoom in 8483.7 12282.4
+\i (01:05:27) trapsize 19
+\i (01:05:27) zoom in 1 
+\i (01:05:27) setwindow pcb
+\i (01:05:27) zoom in 8484.1 12282.4
+\i (01:05:27) trapsize 9
+\i (01:05:27) zoom in 1 
+\i (01:05:27) setwindow pcb
+\i (01:05:27) zoom in 8484.1 12282.4
+\i (01:05:27) trapsize 5
+\i (01:05:31) prepopup 8456.6 12264.3
+\i (01:05:33) done 
+\i (01:05:33) generaledit 
+\i (01:05:34) roam y 96 
+\i (01:05:34) roam y 96
+\i (01:05:35) zoom out 1 
+\i (01:05:35) setwindow pcb
+\i (01:05:35) zoom out 8468.2 12254.7
+\i (01:05:35) trapsize 9
+\i (01:05:39) pick grid 8467.2 12249.2
+\t (01:05:39) last pick:  8475.0  12250.0
+\i (01:05:41) pick grid 8464.4 12250.1
+\t (01:05:41) last pick:  8475.0  12250.0
+\i (01:05:44) pick grid 8566.4 12272.4
+\t (01:05:44) last pick:  8575.0  12275.0
+\i (01:05:46) add connect 
+\t (01:05:46) Pick first element.
+\i (01:05:46) pick grid 8493.9 12298.9
+\t (01:05:46) last pick:  8500.0  12300.0
+\t (01:05:46) last pick:  8497.5  12300.0
+\t (01:05:46) last pick:  8497.5  12300.0
+\i (01:05:47) mouse_pos 8496.5 12265.9
+\i (01:05:47) pick grid 8497.4 12252.4
+\t (01:05:47) last pick:  8500.0  12250.0
+\t (01:05:47) No DRC errors detected.
+\t (01:05:47) Pick first element.
+\i (01:05:49) pick grid 8465.5 12299.3
+\t (01:05:49) last pick:  8475.0  12300.0
+\t (01:05:49) Pick first element.
+\t (01:05:49) last pick:  8464.0  12300.0
+\t (01:05:49) last pick:  8464.0  12300.0
+\i (01:05:49) mouse_pos 8469.2 12299.1
+\i (01:05:50) pick grid 8499.3 12299.5
+\t (01:05:50) last pick:  8500.0  12300.0
+\t (01:05:50) Cannot edit Pin "U13.8". Symbol or drawing must have UNFIXED_PINS property.
+\t (01:05:50) No DRC errors detected.
+\t (01:05:50) Pick first element.
+\i (01:05:56) delete 
+\i (01:05:59) undo 
+\i (01:05:59) trapsize 9
+\i (01:05:59) generaledit 
+\i (01:06:00) pick grid 8533.2 12281.1
+\t (01:06:00) last pick:  8525.0  12275.0
+\i (01:06:01) pick grid 8465.7 12277.4
+\t (01:06:01) last pick:  8475.0  12275.0
+\i (01:06:03) delete 
+\i (01:06:03) generaledit 
+\i (01:06:06) zoom out 1 
+\i (01:06:06) setwindow pcb
+\i (01:06:06) zoom out 8492.4 12295.6
+\i (01:06:06) trapsize 19
+\i (01:06:10) pick grid 8573.3 12289.3
+\t (01:06:10) last pick:  8575.0  12300.0
+\i (01:06:11) add connect 
+\t (01:06:11) Pick first element.
+\i (01:06:12) pick grid 8500.9 12296.7
+\t (01:06:12) last pick:  8500.0  12300.0
+\t (01:06:12) last pick:  8497.5  12300.0
+\t (01:06:12) last pick:  8497.5  12300.0
+\i (01:06:13) prepopup 8500.9 12351.3
+\i (01:06:15) cancel 
+\i (01:06:15) generaledit 
+\i (01:06:17) roam x -96 
+\i (01:06:17) roam x -96
+\i (01:06:19) roam x -96 
+\i (01:06:19) roam x -96
+\i (01:06:22) slide 
+\t (01:06:22) Pick element to slide.
+\i (01:06:23) pick grid 8363.9 12319.4
+\t (01:06:23) last pick:  8375.0  12325.0
+\t (01:06:23) last pick:  8365.2  12320.8
+\t (01:06:23) Waiting for the destination pick.
+\i (01:06:24) pick grid 8360.2 12312.3
+\t (01:06:24) last pick:  8350.0  12300.0
+\t (01:06:24) No DRC errors detected.
+\t (01:06:24) Pick another element to slide.
+\i (01:06:25) pick grid 8341.6 12348.7
+\t (01:06:25) last pick:  8350.0  12350.0
+\t (01:06:25) last pick:  8340.0  12350.0
+\t (01:06:25) Waiting for the destination pick.
+\i (01:06:27) pick grid 8337.2 12330.9
+\t (01:06:27) last pick:  8325.0  12325.0
+\t (01:06:27) No DRC errors detected.
+\t (01:06:27) Pick another element to slide.
+\i (01:06:29) pick grid 8380.6 12326.4
+\t (01:06:29) last pick:  8375.0  12325.0
+\t (01:06:29) last pick:  8381.9  12327.7
+\t (01:06:29) Waiting for the destination pick.
+\i (01:06:32) pick grid 8365.4 12312.3
+\t (01:06:32) last pick:  8375.0  12300.0
+\t (01:06:32) No DRC errors detected.
+\t (01:06:32) Pick another element to slide.
+\i (01:06:33) pick grid 8376.1 12334.6
+\t (01:06:33) last pick:  8375.0  12325.0
+\t (01:06:33) last pick:  8378.0  12334.5
+\t (01:06:33) Waiting for the destination pick.
+\i (01:06:35) pick grid 8375.0 12337.6
+\t (01:06:35) last pick:  8375.0  12350.0
+\t (01:06:35) No DRC errors detected.
+\t (01:06:35) Pick another element to slide.
+\i (01:06:36) zoom out 1 
+\i (01:06:36) setwindow pcb
+\i (01:06:36) zoom out 8346.4 12353.1
+\i (01:06:36) trapsize 37
+\i (01:06:37) roam y -96 
+\i (01:06:37) roam y -96
+\i (01:06:37) roam y -96 
+\i (01:06:37) roam y -96
+\i (01:06:38) zoom out 1 
+\i (01:06:38) setwindow pcb
+\i (01:06:38) zoom out 8355.4 12467.2
+\i (01:06:38) trapsize 74
+\i (01:06:46) roam x -96 
+\i (01:06:46) roam x -96
+\i (01:06:46) roam x -96 
+\i (01:06:46) roam x -96
+\i (01:06:50) pick grid 8148.6 12425.6
+\t (01:06:50) last pick:  8150.0  12425.0
+\t (01:06:50) last pick:  8145.8  12428.3
+\t (01:06:50) Waiting for the destination pick.
+\i (01:06:53) roam y -96 
+\i (01:06:53) roam y -96
+\i (01:06:53) roam y -96 
+\i (01:06:53) roam y -96
+\i (01:06:57) prepopup 8194.6 12453.8
+\i (01:06:58) oops 
+\t (01:06:58) last pick:  8375.0  12350.0
+\t (01:06:58) Pick element to slide.
+\i (01:07:00) pick grid 8142.6 12450.9
+\t (01:07:00) last pick:  8150.0  12450.0
+\t (01:07:00) last pick:  8137.2  12450.0
+\t (01:07:00) Waiting for the destination pick.
+\i (01:07:02) pick grid 8111.5 12450.9
+\t (01:07:02) last pick:  8100.0  12450.0
+\t (01:07:02) No DRC errors detected.
+\t (01:07:02) Pick another element to slide.
+\i (01:07:09) pick grid 7768.5 12226.7
+\t (01:07:09) last pick:  7775.0  12225.0
+\t (01:07:09) last pick:  7765.5  12226.7
+\t (01:07:09) Waiting for the destination pick.
+\i (01:07:10) pick grid 7737.4 12222.3
+\t (01:07:10) last pick:  7725.0  12225.0
+\t (01:07:10) No DRC errors detected.
+\t (01:07:10) Pick another element to slide.
+\i (01:07:11) pick grid 7758.2 12354.4
+\t (01:07:11) last pick:  7750.0  12350.0
+\t (01:07:11) last pick:  7756.8  12355.8
+\t (01:07:11) Waiting for the destination pick.
+\i (01:07:13) pick grid 7737.4 12355.9
+\t (01:07:13) last pick:  7725.0  12350.0
+\t (01:07:13) No DRC errors detected.
+\t (01:07:13) Pick another element to slide.
+\i (01:07:15) roam y 96 
+\i (01:07:15) roam y 96
+\i (01:07:17) pick grid 7776.0 12104.9
+\t (01:07:17) last pick:  7775.0  12100.0
+\t (01:07:17) last pick:  7777.0  12106.0
+\t (01:07:17) Waiting for the destination pick.
+\i (01:07:18) pick grid 7761.1 12084.1
+\t (01:07:18) last pick:  7750.0  12075.0
+\t (01:07:18) No DRC errors detected.
+\t (01:07:18) Pick another element to slide.
+\i (01:07:19) zoom out 1 
+\i (01:07:19) setwindow pcb
+\i (01:07:19) zoom out 7811.6 12225.1
+\i (01:07:19) trapsize 148
+\i (01:07:20) zoom in 1 
+\i (01:07:20) setwindow pcb
+\i (01:07:20) zoom in 7698.8 12335.0
+\i (01:07:20) trapsize 74
+\i (01:07:20) roam y -96 
+\i (01:07:20) roam y -96
+\i (01:07:21) zoom in 1 
+\i (01:07:21) setwindow pcb
+\i (01:07:21) zoom in 7774.5 12531.0
+\i (01:07:21) trapsize 37
+\i (01:07:22) pick grid 7766.3 12514.0
+\t (01:07:22) last pick:  7775.0  12525.0
+\t (01:07:22) last pick:  7765.5  12514.0
+\t (01:07:22) Waiting for the destination pick.
+\i (01:07:24) pick grid 7737.4 12506.6
+\t (01:07:24) last pick:  7725.0  12500.0
+\t (01:07:24) No DRC errors detected.
+\t (01:07:24) Pick another element to slide.
+\i (01:07:25) pick grid 7724.0 12403.4
+\t (01:07:25) last pick:  7725.0  12400.0
+\t (01:07:25) Waiting for the destination pick.
+\i (01:07:29) pick grid 7738.1 12419.0
+\t (01:07:29) last pick:  7750.0  12425.0
+\t (01:07:29) No DRC errors detected.
+\t (01:07:29) Pick another element to slide.
+\i (01:07:30) pick grid 7747.0 12454.6
+\t (01:07:30) last pick:  7750.0  12450.0
+\t (01:07:30) last pick:  7750.0  12454.6
+\t (01:07:30) Waiting for the destination pick.
+\i (01:07:31) pick grid 7712.1 12439.8
+\t (01:07:31) last pick:  7700.0  12450.0
+\t (01:07:31) No DRC errors detected.
+\t (01:07:31) Pick another element to slide.
+\i (01:07:32) pick grid 7758.9 12421.9
+\t (01:07:32) last pick:  7750.0  12425.0
+\t (01:07:32) last pick:  7756.4  12418.6
+\t (01:07:32) Waiting for the destination pick.
+\i (01:07:33) pick grid 7753.0 12412.3
+\t (01:07:33) last pick:  7750.0  12400.0
+\t (01:07:33) No DRC errors detected.
+\t (01:07:33) Pick another element to slide.
+\i (01:07:34) zoom out 1 
+\i (01:07:34) setwindow pcb
+\i (01:07:34) zoom out 7744.1 12462.0
+\i (01:07:34) trapsize 74
+\i (01:07:39) pick grid 8040.9 12677.3
+\t (01:07:39) last pick:  8050.0  12675.0
+\t (01:07:39) last pick:  8045.0  12677.3
+\t (01:07:39) Waiting for the destination pick.
+\i (01:07:43) prepopup 8038.0 12680.3
+\i (01:07:44) oops 
+\t (01:07:44) last pick:  7750.0  12400.0
+\t (01:07:44) Pick element to slide.
+\i (01:07:47) zoom out 1 
+\i (01:07:47) setwindow pcb
+\i (01:07:47) zoom out 8256.2 12744.1
+\i (01:07:47) trapsize 148
+\i (01:07:55) zoom out 1 
+\i (01:07:55) setwindow pcb
+\i (01:07:55) zoom out 8529.3 11755.4
+\i (01:07:55) trapsize 297
+\i (01:07:56) zoom out 1 
+\i (01:07:56) setwindow pcb
+\i (01:07:56) zoom out 8529.3 11755.4
+\i (01:07:56) trapsize 594
+\i (01:07:57) zoom in 1 
+\i (01:07:57) setwindow pcb
+\i (01:07:57) zoom in 8695.6 11109.3
+\i (01:07:57) trapsize 297
+\i (01:07:58) prepopup 9515.1 12487.0
+\i (01:07:59) done 
+\i (01:07:59) generaledit 
+\i (01:08:00) setwindow form.find
+\i (01:08:00) FORM find shapes YES 
+\i (01:08:03) setwindow pcb
+\i (01:08:03) pick grid 9521.1 12665.2
+\t (01:08:03) last pick:  9525.0  12675.0
+\i (01:08:05) pick grid 9515.1 12665.2
+\t (01:08:05) last pick:  9525.0  12675.0
+\i (01:08:05) pick grid dbl 9515.1 12665.2
+\t (01:08:05) last pick:  9525.0  12675.0
+\i (01:08:07) pick grid 9491.4 12647.4
+\t (01:08:07) last pick:  9500.0  12650.0
+\i (01:08:07) prepopup 9503.3 12653.3
+\i (01:08:12) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
+\i (01:08:12) prmed 
+\i (01:08:15) setwindow form.prmedit
+\i (01:08:15) FORM prmedit shapes  
+\i (01:08:18) FORM prmedit cancel  
+\i (01:08:18) setwindow pcb
+\i (01:08:18) generaledit 
+\i (01:08:38) shape add 
+\i (01:08:40) prepopup 11189.7 12617.7
+\i (01:08:43) pop shape select 
+\i (01:08:44) prepopup 9473.6 12985.8
+\i (01:08:44) done 
+\i (01:08:44) generaledit 
+\i (01:08:46) pick grid 9509.2 13003.6
+\t (01:08:46) last pick:  9500.0  13000.0
+\i (01:08:46) prepopup 9509.2 13003.6
+\i (01:08:51) pop dyn_option_select '@:@3D View' 
+\i (01:08:51) 3d_viewer 
+\i (01:08:51) generaledit 
+\i (01:08:54) drag_start grid 9972.4 13751.9
+\i (01:08:54) drag_stop 6510.4 10859.9
+\i (01:08:55) prepopup 8648.2 12320.7
+\i (01:08:56) pop dyn_option_select '@:@3D View' 
+\i (01:08:56) 3d_viewer 
+\i (01:08:57) setwindow pcb3D
+\i (01:08:57) trapsize 297
+\i (01:08:57) setwindow pcb
+\i (01:08:57) generaledit 
+\i (01:09:10) zoom in 1 
+\i (01:09:10) setwindow pcb
+\i (01:09:10) zoom in 8256.2 12576.1
+\i (01:09:10) trapsize 148
+\i (01:09:11) zoom in 1 
+\i (01:09:11) setwindow pcb
+\i (01:09:11) zoom in 8149.3 12674.1
+\i (01:09:11) trapsize 74
+\i (01:09:13) zoom out 1 
+\i (01:09:13) setwindow pcb
+\i (01:09:13) zoom out 8349.8 12597.0
+\i (01:09:13) trapsize 148
+\i (01:09:14) roam y -96 
+\i (01:09:14) roam y -96
+\i (01:09:49) board outline 
+\i (01:09:51) setwindow form.fpbdoutline
+\i (01:09:51) FORM fpbdoutline cancel  
+\i (01:09:51) setwindow pcb
+\i (01:09:51) generaledit 
+\i (01:09:59) room outline 
+\i (01:10:10) setwindow form.fprmoutline
+\i (01:10:10) FORM fprmoutline fproedit YES 
+\i (01:10:12) setwindow pcb
+\i (01:10:12) pick grid 9498.8 12404.8
+\t (01:10:12) last pick:  9500.0  12400.0
+\i (01:10:15) pick grid 9332.5 12381.0
+\t (01:10:15) last pick:  9300.0  12400.0
+\i (01:10:17) pick grid 7203.7 12392.9
+\t (01:10:17) last pick:  7200.0  12400.0
+\i (01:10:18) pick grid 7557.0 12381.0
+\t (01:10:18) last pick:  7600.0  12400.0
+\i (01:10:20) setwindow form.fprmoutline
+\i (01:10:20) FORM fprmoutline done  
+\i (01:10:20) setwindow pcb
+\i (01:10:20) generaledit 
+\i (01:10:21) zoom out 1 
+\i (01:10:21) setwindow pcb
+\i (01:10:21) zoom out 9676.9 12630.4
+\i (01:10:21) trapsize 297
+\i (01:10:34) dfa_spreadsheet 
+\i (01:10:34) setwindow dfa.dialog
+\i (01:10:34) dfa read_from_design
+\i (01:10:53) dfa worksheet Top add_package 4 SOIC8
+\i (01:11:02) dfa save "Tubii_DFA.dfa"
+\i (01:11:02) dfa attach_to_design
+\i (01:11:02) dfa attach_to_design
+\i (01:11:02) dfa okay
+\i (01:11:02) setwindow pcb
+\i (01:11:02) generaledit 
+\i (01:11:05) move 
+\i (01:11:06) pick grid 8869.3 12440.4
+\t (01:11:06) last pick:  8900.0  12400.0
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Element has no origin, using pick.
+\t (01:11:06) Pick new location for the element(s).
+\i (01:11:07) prepopup 8904.9 12452.3
+\i (01:11:09) oops 
+\t (01:11:09) Reselect origin.
+\i (01:11:09) generaledit 
+\i (01:11:11) setwindow form.find
+\i (01:11:11) FORM find symbols YES 
+\i (01:11:11) setwindow pcb
+\i (01:11:11) zoom in 1 
+\i (01:11:11) setwindow pcb
+\i (01:11:11) zoom in 10686.4 11698.2
+\i (01:11:11) trapsize 148
+\i (01:11:11) zoom in 1 
+\i (01:11:11) setwindow pcb
+\i (01:11:11) zoom in 10425.1 11760.5
+\i (01:11:11) trapsize 74
+\i (01:11:13) move 
+\i (01:11:14) roam x -96 
+\i (01:11:14) roam x -96
+\i (01:11:14) roam y 96 
+\i (01:11:14) roam y 96
+\i (01:11:14) roam y -96 
+\i (01:11:14) roam y -96
+\i (01:11:15) roam x -96 
+\i (01:11:15) roam x -96
+\i (01:11:15) roam y -96 
+\i (01:11:15) roam y -96
+\i (01:11:15) roam x -96 
+\i (01:11:15) roam x -96
+\i (01:11:15) roam y -96 
+\i (01:11:15) roam y -96
+\i (01:11:16) pick grid 8895.4 12434.5
+\t (01:11:16) last pick:  8900.0  12400.0
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Element has no origin, using pick.
+\t (01:11:16) Moving U14 / OPA4277 / SOIC14.
+\t (01:11:16) Moving U6 / IDS_C10 / CONN10.
+\t (01:11:16) Moving C16 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (01:11:16) Moving C19 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (01:11:16) Moving U16 / IDS_C10 / CONN10.
+\t (01:11:16) Moving U13 / OPA4277 / SOIC14.
+\t (01:11:16) Moving C18 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (01:11:16) Moving C17 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (01:11:16) Moving C20 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (01:11:16) Moving U15 / OPA2277_SOIC / SOIC8.
+\t (01:11:16) Moving C21 / CSMD0805-1.0UF,10%,0805,25V / CAP805.
+\t (01:11:16) Pick new location for the element(s).
+\i (01:11:17) prepopup 9005.2 12439.0
+\i (01:11:18) oops 
+\t (01:11:18) Reselect origin.
+\i (01:11:18) generaledit 
+\i (01:11:18) pick grid 9530.7 12398.9
+\t (01:11:18) last pick:  9500.0  12400.0
+\i (01:11:18) pick grid dbl 9530.7 12398.9
+\t (01:11:18) last pick:  9500.0  12400.0
+\i (01:11:19) pick grid 9530.7 12398.9
+\t (01:11:19) last pick:  9500.0  12400.0
+\i (01:11:21) move 
+\t (01:11:21) Select element(s) to move.
+\i (01:11:22) pick grid 8880.5 12456.8
+\t (01:11:22) last pick:  8900.0  12500.0
+\t (01:11:22) last pick:  8900.0  12400.0
+\t (01:11:22) Moving U15 / OPA2277_SOIC / SOIC8.
+\t (01:11:22) Pick new location for the element(s).
+\i (01:11:25) prepopup 8876.1 12415.2
+\i (01:11:26) oops 
+\t (01:11:26) last pick:  8900.0  12500.0
+\i (01:11:26) roam x -96 
+\i (01:11:26) roam x -96
+\i (01:11:26) roam x -96 
+\i (01:11:26) roam x -96
+\i (01:11:27) pick grid 8442.6 12502.8
+\t (01:11:27) last pick:  8400.0  12500.0
+\t (01:11:27) last pick:  8400.0  12400.0
+\t (01:11:27) Moving U13 / OPA4277 / SOIC14.
+\t (01:11:27) Pick new location for the element(s).
+\i (01:11:28) roam x -96 
+\i (01:11:28) roam x -96
+\i (01:11:28) roam x -96 
+\i (01:11:28) roam x -96
+\i (01:11:29) prepopup 8411.4 12419.7
+\i (01:11:30) oops 
+\t (01:11:30) last pick:  8400.0  12500.0
+\i (01:11:31) zoom out 1 
+\i (01:11:31) setwindow pcb
+\i (01:11:31) zoom out 8411.4 12419.7
+\i (01:11:31) trapsize 148
+\i (01:11:41) roam y 96 
+\i (01:11:41) roam y 96
+\i (01:11:41) zoom out 1 
+\i (01:11:41) setwindow pcb
+\i (01:11:41) zoom out 9207.0 12021.8
+\i (01:11:41) trapsize 297
+\i (01:11:42) zoom in 1 
+\i (01:11:42) setwindow pcb
+\i (01:11:42) zoom in 9207.0 12021.8
+\i (01:11:42) trapsize 148
+\i (01:11:43) roam x -96 
+\i (01:11:43) roam x -96
+\i (01:11:43) roam x -96 
+\i (01:11:43) roam x -96
+\i (01:11:45) roam y 96 
+\i (01:11:45) roam y 96
+\i (01:11:45) zoom out 1 
+\i (01:11:45) setwindow pcb
+\i (01:11:45) zoom out 8634.0 11733.8
+\i (01:11:45) trapsize 297
+\i (01:11:45) zoom out 1 
+\i (01:11:45) setwindow pcb
+\i (01:11:45) zoom out 8628.1 11721.9
+\i (01:11:45) trapsize 594
+\i (01:11:46) roam x -96 
+\i (01:11:46) roam y -96 
+\i (01:11:46) roam y -96
+\i (01:11:54) room outline 
+\i (01:12:09) setwindow form.fprmoutline
+\i (01:12:09) FORM fprmoutline fproname RIBBON_DELAY 
+\i (01:12:14) setwindow pcb
+\i (01:12:14) pick grid 10742.1 13230.3
+\t (01:12:14) last pick:  10700.0  13200.0
+\i (01:12:18) pick grid 12416.7 11698.3
+\t (01:12:18) last pick:  12400.0  11700.0
+\i (01:12:20) setwindow form.fprmoutline
+\i (01:12:20) FORM fprmoutline done  
+\i (01:12:20) setwindow pcb
+\i (01:12:20) generaledit 
+\i (01:12:24) place area room 
+\t (01:12:30) RIBBON_DELAY room selected
+\i (01:12:30) fillin "RIBBON_DELAY"
+\w (01:12:30) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (01:12:30) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (01:12:30) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (01:12:30) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (01:12:30) generaledit 
+\i (01:15:13) place area room 
+\t (01:15:16) RIBBON_DELAY room selected
+\i (01:15:16) fillin "RIBBON_DELAY"
+\i (01:15:16) generaledit 
+\i (02:23:14) save 
+\i (02:23:15) fillin yes 
+\i (02:23:15) generaledit 
+\i (02:23:17) exit 
+\t (02:23:17)     Journal end - Sat Mar 07 22:20:11 2015
