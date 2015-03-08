@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 11 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -449,6 +449,7 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):dgt2"
+				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):dgt2") )
 				( objectStatus "dgt2" )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):lo_star2"
@@ -479,6 +480,9 @@
 					( Origin gPackager )
 				)
 				( objectStatus "dgt_p" )
+			)
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):dgt2"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):lo_sel"
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_sel") )
@@ -5093,7 +5097,7 @@
 	( BaseCopy "gt_delays"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 14 )
+				( logicalViewRevNum 15 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -5103,7 +5107,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "gt_delays"
@@ -5176,6 +5180,9 @@
 			)
 			( signal "@tubii_tk2_lib.gt_delays(sch_1):ddgt_bits"
 				( objectStatus "ddgt_bits" )
+			)
+			( signal "@tubii_tk2_lib.gt_delays(sch_1):dgt2"
+				( objectStatus "dgt2" )
 			)
 			( gate "@tubii_tk2_lib.gt_delays(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ttl"

@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 9 )
+			( logicalViewRevNum 10 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -296,6 +296,54 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -322,12 +370,6 @@
 			)
 			( signal "@tubii_tk2_lib.select_lo_src(sch_1):lo_sel"
 				( objectStatus "lo_sel" )
-			)
-			( signal "@tubii_tk2_lib.select_lo_src(sch_1):\lo*\"
-				( objectStatus "lo*" )
-			)
-			( signal "@tubii_tk2_lib.select_lo_src(sch_1):lo"
-				( objectStatus "lo" )
 			)
 			( signal "@tubii_tk2_lib.select_lo_src(sch_1):\ddgt*\"
 				( objectStatus "ddgt*" )
@@ -361,6 +403,15 @@
 			)
 			( signal "@tubii_tk2_lib.select_lo_src(sch_1):lo_star_raw"
 				( objectStatus "lo_star_raw" )
+			)
+			( signal "@tubii_tk2_lib.select_lo_src(sch_1):lo_star2"
+				( objectStatus "lo_star2" )
+			)
+			( signal "@tubii_tk2_lib.select_lo_src(sch_1):lo_star_out_n"
+				( objectStatus "lo_star_out_n" )
+			)
+			( signal "@tubii_tk2_lib.select_lo_src(sch_1):lo_star_out_p"
+				( objectStatus "lo_star_out_p" )
 			)
 			( gate "@tubii_tk2_lib.select_lo_src(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"

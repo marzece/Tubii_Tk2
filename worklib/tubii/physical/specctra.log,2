@@ -5,7 +5,7 @@
 # ===============================================================================
 # 
 # Software licensed for sale by Cadence Design Systems, Inc.
-# Current time = Sat Feb 28 16:36:42 2015
+# Current time = Sat Mar 07 20:44:54 2015
 # 
 # Allegro PCB Router v16-6-112 made 2012/09/12 at 23:00:45
 # Running on: eric_pc, OS Version: WindowsNT 6.1.7601, Architecture: Intel Pentium II, III, or 4
@@ -14,13 +14,28 @@
 # Design Name C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
 # Batch File Name: pasde.do
 # Did File Name: C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical/specctra.did
-# Current time = Sat Feb 28 16:37:56 2015
+# Current time = Sat Mar 07 20:46:08 2015
 # PCB C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical
 # Master Unit set up as: MIL 100
 # PCB Limits xlo= 40.0000 ylo=-920.0000 xhi=16760.0000 yhi=16560.0000
-# Total 13 Images Consolidated.
+# Total 21 Images Consolidated.
 # <<ERROR:>> Padstack unknown_padstack contains shapes without any size,
 #            please check the definition of the padstack in the design file.
+# <<ERROR:>> Unplaced component U26 has errors.
+#            To resolve, check Allegro symbols or
+#            set spif_no_unplaced_components on.
+# <<ERROR:>> Unplaced component U38 has errors.
+#            To resolve, check Allegro symbols or
+#            set spif_no_unplaced_components on.
+# <<ERROR:>> Unplaced component U47 has errors.
+#            To resolve, check Allegro symbols or
+#            set spif_no_unplaced_components on.
+# <<ERROR:>> Unplaced component U62 has errors.
+#            To resolve, check Allegro symbols or
+#            set spif_no_unplaced_components on.
+# <<ERROR:>> Unplaced component U95 has errors.
+#            To resolve, check Allegro symbols or
+#            set spif_no_unplaced_components on.
 # <<ERROR:>> Unplaced component U9 has errors.
 #            To resolve, check Allegro symbols or
 #            set spif_no_unplaced_components on.
@@ -31,15 +46,22 @@
 #    TOP  ------   VIA  
 # BOTTOM   VIA    ------
 # 
-# Wires Processed 0, Vias Processed 0
+# <<WARNING:>> The * character appears in a net name.
+# * has been disabled as a wildcard character for nets.
+# You can use the wildcard command to change the wildcard character.
+# <<WARNING:>> Net GND is defined as a signal net and contains 414 pins.
+# This is more pins than most signal nets contain.
+# Please verify whether net GND should be a signal net or a power net.
+# Note that a signal net will be routed as starburst or daisy chain.
+# Wires Processed 57, Vias Processed 18
 # Using colormap in design file.
 # Layers Processed: Signal Layers 2
 # Layers Processed: Power Layers 5
-# Components Placed 35, Images Processed 28, Padstacks Processed 12
-# Nets Processed 50, Net Terminals 133
-# PCB Area=231040000.000  EIC=26  Area/EIC=8886153.846  SMDs=22
-# Total Pin Count: 364
-# Signal Connections Created 64
+# Components Placed 879, Images Processed 60, Padstacks Processed 23
+# Nets Processed 690, Net Terminals 2727
+# PCB Area=231040000.000  EIC=240  Area/EIC=962666.667  SMDs=603
+# Total Pin Count: 3367
+# Signal Connections Created 1569
 # 
 # Design Rules --------------------------------------------
 # Via Grid 0.1000 with offset 0.0000
@@ -48,27 +70,110 @@
 # Cpu Time = 0:00:00  Elapsed Time = 0:00:00
 # 
 # Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
-# Nets 50 Connections 85 Unroutes 81
+# Nets 690 Connections 1985 Unroutes 1934
 # Signal Layers 2 Power Layers 5
-# Wire Junctions 0, at vias 0 Total Vias 0
-# Percent Connected    4.71
-# Manhattan Length 66112.4000 Horizontal 15174.5100 Vertical 50937.8900
-# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
-# Ratio Actual / Manhattan   0.0000
-# Unconnected Length 66112.4000 Horizontal 15406.3000 Vertical 50706.1000
-# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Wire Junctions 10, at vias 5 Total Vias 18
+# Percent Connected    1.91
+# Manhattan Length 5470950.2000 Horizontal 918673.4500 Vertical 4552276.7500
+# Routed Length 20997.2000 Horizontal 10907.4000 Vertical 10089.8000
+# Ratio Actual / Manhattan   0.0038
+# Unconnected Length 5452785.3000 Horizontal 993724.7000 Vertical 4459060.6000
+# Total Conflicts: 24 (Cross: 0, Clear: 24, Xtalk: 0, Length: 0, Polygon Clear: 0 )
 # Cpu Time = 0:00:00  Elapsed Time = 0:00:00
 # Loading Do File pasde.do ...
 # Loading Do File C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC_rules.do ...
-# <<WARNING:>> Could not form pair of nets DGT_P and DGT_N.
-# <<WARNING:>> Could not form pair of nets DDGT_P and DDGT_N.
+# Nets UNNAMED_1_FRONTPORTS_I2_SYNCP and UNNAMED_1_FRONTPORTS_I2_SYNCN have been defined as a balanced pair.
+# Nets CLK_BAD_P and CLK_BAD_N have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets DEF_CLK_DIV8_P and DEF_CLK_DIV8_N.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_MTCAM_4 and UNNAMED_1_FRONTPORTS_I2_MTCAM_3.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_MTCAM_1 and UNNAMED_1_FRONTPORTS_I2_MTCAMIM.
+# Nets UNNAMED_1_MC10E116_I4_Q3_1 and UNNAMED_1_MC10E116_I4_Q3 have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets DEF_CLK_DIV4_P and DEF_CLK_DIV4_N.
+# Nets UNNAMED_1_CAENCOMS_I8_GT2P and GT2_N have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_RIBBO_3 and UNNAMED_1_FRONTPORTS_I2_RIBBO_2.
+# Nets UNNAMED_1_MC10E116_I4_Q2_1 and UNNAMED_1_MC10E116_I4_Q2 have been defined as a balanced pair.
+# Nets UNNAMED_1_MC10E116_I3_Q3_1 and UNNAMED_1_MC10E116_I3_Q3 have been defined as a balanced pair.
+# Nets UNNAMED_1_MC10E116_I4_Q1_1 and UNNAMED_1_MC10E116_I4_Q1 have been defined as a balanced pair.
+# Nets UNNAMED_1_MC10E116_I3_Q2_1 and UNNAMED_1_MC10E116_I3_Q2 have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets DEF_CLK_DIV2_P and DEF_CLK_DIV2_N.
+# Nets UNNAMED_1_MC10E116_I4_Q0_1 and UNNAMED_1_MC10E116_I4_Q0 have been defined as a balanced pair.
+# Nets UNNAMED_1_MC10E116_I3_Q1_1 and UNNAMED_1_MC10E116_I3_Q1 have been defined as a balanced pair.
+# Nets UNNAMED_1_MC10E116_I1_Q3_1 and UNNAMED_1_MC10E116_I1_Q3 have been defined as a balanced pair.
+# Nets UNNAMED_1_MC10E116_I3_Q0_1 and UNNAMED_1_MC10E116_I3_Q0 have been defined as a balanced pair.
+# Nets CHOSEN_CLK_P and CHOSEN_CLK_N have been defined as a balanced pair.
+# Nets UNNAMED_1_MC10E116_I1_Q0_1 and UNNAMED_1_MC10E116_I1_Q0 have been defined as a balanced pair.
+# Nets UNNAMED_1_CHANGECLKS_I3_CHANG_1 and UNNAMED_1_CHANGECLKS_I3_CHANGEC have been defined as a balanced pair.
+# Nets USE_BCKP_P and USE_BCKP_N have been defined as a balanced pair.
+# Nets TRIG_GATE2_P and TRIG_GATE2_N have been defined as a balanced pair.
+# Nets UNNAMED_1_FRONTPORTS_I2_SYNC24P and UNNAMED_1_FRONTPORTS_I2_SYNC24N have been defined as a balanced pair.
+# Nets TRIG_GATE1_P and TRIG_GATE1_N have been defined as a balanced pair.
+# Nets UNNAMED_1_FRONTPORTS_I2_GTP and UNNAMED_1_FRONTPORTS_I2_GTN have been defined as a balanced pair.
+# Nets BCKP_CLK_BUFD_P and BCKP_CLK_BUFD_N have been defined as a balanced pair.
+# Nets USE_DEFAULT_P and USE_DEFAULT_N have been defined as a balanced pair.
+# Nets SYNC_2_P and SYNC_2_N have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets FUZZD_CLK_P and FUZZD_CLK_N.
+# Nets TELLIE_DELAY_BUF_P and TELLIE_DELAY_BUF_N have been defined as a balanced pair.
+# Nets UNNAMED_1_AD96687_I1_Q2_1 and UNNAMED_1_AD96687_I1_Q2 have been defined as a balanced pair.
+# Nets UNNAMED_1_AD96687_I1_Q1_1 and UNNAMED_1_AD96687_I1_Q1 have been defined as a balanced pair.
+# Nets RIB10_P and RIB10_N have been defined as a balanced pair.
+# Nets UNNAMED_1_DEFAULTCLKSEL_I1_DEFA and UNNAMED_1_MC10E116_I1_D0 have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_SYNCL_1 and UNNAMED_1_FRONTPORTS_I2_SYNCLVD.
+# Nets SYNC24_2_P and SYNC24_2_N have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_CLK100P and UNNAMED_1_FRONTPORTS_I2_CLK100N.
+# Nets UNNAMED_1_MC10E116_I22_Q1_1 and UNNAMED_1_MC10E116_I22_Q1 have been defined as a balanced pair.
+# Nets CHOSEN_CLK2_P and CHOSEN_CLK2_N have been defined as a balanced pair.
+# Nets UNNAMED_1_MC10E116_I22_Q0_1 and UNNAMED_1_MC10E116_I22_Q0 have been defined as a balanced pair.
+# Nets UNNAMED_1_CHANGECLKS_I3_BCKPC_3 and UNNAMED_1_CHANGECLKS_I3_BCKPC_2 have been defined as a balanced pair.
+# Nets UNNAMED_1_CHANGECLKS_I3_BCKPC_1 and UNNAMED_1_CHANGECLKS_I3_BCKPCLK have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_SYNC2_1 and UNNAMED_1_FRONTPORTS_I2_SYNC24L.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_RIBBO_1 and UNNAMED_1_FRONTPORTS_I2_RIBBONP.
+# Nets RIB9_P and RIB9_N have been defined as a balanced pair.
+# Nets RIB8_P and RIB8_N have been defined as a balanced pair.
+# Nets RIB7_P and RIB7_N have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_CSMD0805_I70_B and UNNAMED_1_CSMD0805_I64_B.
+# Nets RIB6_P and RIB6_N have been defined as a balanced pair.
+# Nets RIB5_P and RIB5_N have been defined as a balanced pair.
+# Nets RIB4_P and RIB4_N have been defined as a balanced pair.
+# Nets RIB3_P and RIB3_N have been defined as a balanced pair.
+# Nets RIB2_P and RIB2_N have been defined as a balanced pair.
+# Nets RIB1_P and RIB1_N have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_EXTT<4> and UNNAMED_1_CSMD0603_I55_A.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_EXTT<0> and UNNAMED_1_CSMD0603_I54_B.
+# Nets SMELLIE_DELAY_BUF_P and SMELLIE_DELAY_BUF_N have been defined as a balanced pair.
+# Nets CHANGE_CLK2_P and CHANGE_CLK2_N have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_LOSTA_1 and UNNAMED_1_FRONTPORTS_I2_LOSTARO.
+# <<WARNING:>> Could not form pair of nets DEF_CLK_DIVD_P and DEF_CLK_DIVD_N.
+# Nets TRIG_PULS2_P and TRIG_PULS2_N have been defined as a balanced pair.
+# Nets TRIG_PULS1_P and TRIG_PULS1_N have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_SMELLIE and UNNAMED_1_CSMD0603_I10_B_1.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_FRONTPORTS_I2_ECLTOLV and UNNAMED_1_MC10E116_I22_D0.
+# Nets UNNAMED_1_MC10E116_I2_D0 and LO_STAR_RAW have been defined as a balanced pair.
+# Nets UNNAMED_1_CHANGECLKS_I3_DEFAU_1 and UNNAMED_1_CHANGECLKS_I3_DEFAULT have been defined as a balanced pair.
+# <<WARNING:>> Could not form pair of nets UNNAMED_1_DEFAULTCLKSEL_I1_BCKP and BCKP_CLK*.
 # Colormap Written to File _notify.std
-# Enter command <# Loading Do File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaal08276.tmp ...
+# Enter command <# Loading Do File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagl09296.tmp ...
 # All Components Unselected.
 # All Nets Unselected.
-# Component U4 Selected.
-# Component U2 Selected.
-# Component U3 Selected.
+# Net BACKPLANE_IN<1> Selected.
+# Net BACKPLANE_IN<10> Selected.
+# Net BACKPLANE_IN<2> Selected.
+# Net BACKPLANE_IN<3> Selected.
+# Net BACKPLANE_IN<4> Selected.
+# Net BACKPLANE_IN<5> Selected.
+# Net BACKPLANE_IN<6> Selected.
+# Net BACKPLANE_IN<7> Selected.
+# Net BACKPLANE_IN<8> Selected.
+# Net BACKPLANE_IN<9> Selected.
+# Net BACKPLANE_OUT<1> Selected.
+# Net BACKPLANE_OUT<10> Selected.
+# Net BACKPLANE_OUT<2> Selected.
+# Net BACKPLANE_OUT<3> Selected.
+# Net BACKPLANE_OUT<4> Selected.
+# Net BACKPLANE_OUT<5> Selected.
+# Net BACKPLANE_OUT<6> Selected.
+# Net BACKPLANE_OUT<7> Selected.
+# Net BACKPLANE_OUT<8> Selected.
+# Net BACKPLANE_OUT<9> Selected.
 set route_diagonal 0
 grid wire 0.100000 (direction x) (offset 0.000000)
 grid wire 0.100000 (direction y) (offset 0.000000)
@@ -99,7 +204,7 @@ rule pcb (trombone_gap -1)
 unprotect selected
 # All Selected Wires Unprotected.
 route 25 1
-# Current time = Sat Feb 28 16:37:57 2015
+# Current time = Sat Mar 07 20:46:09 2015
 # 
 #    VIA     TOP  BOTTOM
 # 
@@ -113,50 +218,104 @@ route 25 1
 # Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
 # 
 # Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
-# Nets 50 Connections 85 Unroutes 81
+# Nets 690 Connections 1985 Unroutes 1934
 # Signal Layers 2 Power Layers 5
-# Wire Junctions 0, at vias 0 Total Vias 0
-# Percent Connected    4.71
-# Manhattan Length 66112.4000 Horizontal 15174.5100 Vertical 50937.8900
-# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
-# Ratio Actual / Manhattan   0.0000
-# Unconnected Length 66112.4000 Horizontal 15406.3000 Vertical 50706.1000
+# Wire Junctions 10, at vias 5 Total Vias 18
+# Percent Connected    1.91
+# Manhattan Length 5536934.7000 Horizontal 929894.2700 Vertical 4607040.4300
+# Routed Length 20997.2000 Horizontal 10907.4000 Vertical 10089.8000
+# Ratio Actual / Manhattan   0.0038
+# Unconnected Length 5518769.8000 Horizontal 1010480.0000 Vertical 4508289.8000
 # Start Route Pass 1 of 25
-# Routing 37 wires.
-# Total Conflicts: 17 (Cross: 17, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 44
-# Attempts 37 Successes 37 Failures 0 Vias 13
-# Cpu Time = 0:00:01  Elapsed Time = 0:00:00
+# Routing 30 wires.
+# Total Conflicts: 8 (Cross: 8, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1904
+# Attempts 30 Successes 30 Failures 0 Vias 28
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
 # End Pass 1 of 25
-# Start Route Pass 2 of 25
-# Routing 53 wires.
-# Total Conflicts: 13 (Cross: 13, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 44
-# Attempts 44 Successes 44 Failures 0 Vias 13
-# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
-# Conflict Reduction  0.2353
-# End Pass 2 of 25
-# Start Route Pass 3 of 25
-# Routing 59 wires.
-# Total Conflicts: 4 (Cross: 4, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 44
-# Attempts 46 Successes 46 Failures 0 Vias 19
-# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
-# Conflict Reduction  0.6923
-# End Pass 3 of 25
-# 6 bend points have been removed.
-# 0 bend points have been removed.
 # 1 bend points have been removed.
-# Start Route Pass 4 of 25
-# Routing 11 wires.
-# 2 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Start Route Pass 2 of 25
+# Routing 13 wires.
+# 1 bend points have been removed.
 # 0 bend points have been removed.
 # 0 bend points have been removed.
 # Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 44
-# Attempts 9 Successes 9 Failures 0 Vias 21
+# Total Unroutes: 1904
+# Attempts 13 Successes 13 Failures 0 Vias 31
 # Cpu Time = 0:00:00  Elapsed Time = 0:00:00
-# End Pass 4 of 25
+# End Pass 2 of 25
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     8|     0|   0| 1904|   28|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0| 1904|   31|    0|   0|100|  0:00:00|  0:00:00|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 690 Connections 1985 Unroutes 1904
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 16, at vias 5 Total Vias 31
+# Percent Connected    4.08
+# Manhattan Length 5536934.7000 Horizontal 929965.5600 Vertical 4606969.1400
+# Routed Length 41200.2000 Horizontal 19395.4000 Vertical 21804.8000
+# Ratio Actual / Manhattan   0.0074
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+clean 2
+# Current time = Sat Mar 07 20:46:09 2015
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 690 Connections 1985 Unroutes 1904
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 16, at vias 5 Total Vias 31
+# Percent Connected    4.08
+# Manhattan Length 5536934.7000 Horizontal 929965.5600 Vertical 4606969.1400
+# Routed Length 41200.2000 Horizontal 19395.4000 Vertical 21804.8000
+# Ratio Actual / Manhattan   0.0074
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+# Start Clean Pass 1 of 2
+# Routing 49 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1904
+# Attempts 38 Successes 38 Failures 0 Vias 26
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 1 of 2
+# Start Clean Pass 2 of 2
+# Routing 46 wires.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1904
+# Attempts 38 Successes 38 Failures 0 Vias 26
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 2 of 2
 # Cpu Time = 0:00:01  Elapsed Time = 0:00:00
 # 
 # Design Rules --------------------------------------------
@@ -167,10 +326,10 @@ route 25 1
 #     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
 #   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
 #----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
-# Route    |  1|    17|     0|   0|   44|   13|    0|   0|  0|  0:00:01|  0:00:01|
-# Route    |  2|    13|     0|   0|   44|   13|    0|   0| 23|  0:00:00|  0:00:01|
-# Route    |  3|     4|     0|   0|   44|   19|    0|   0| 69|  0:00:00|  0:00:01|
-# Route    |  4|     0|     0|   0|   44|   21|    0|   0|100|  0:00:00|  0:00:01|
+# Route    |  1|     8|     0|   0| 1904|   28|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0| 1904|   31|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    |  3|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    |  4|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
 # Conflicts between polygon wires and fixed objects:   0
 # Stub Violations:   0
 # Net Order Violations:   0
@@ -178,19 +337,132 @@ route 25 1
 # Diffpair Phase Tolerance  Violations:   0
 # Total layerset violations:   0
 # Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
-# Overall Routing Time: 0:00:01
+# Overall Routing Time: 0:00:00
 # 
 # Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
-# Nets 50 Connections 85 Unroutes 44
+# Nets 690 Connections 1985 Unroutes 1904
 # Signal Layers 2 Power Layers 5
-# Wire Junctions 12, at vias 6 Total Vias 21
-# Percent Connected   48.24
-# Manhattan Length 66498.6000 Horizontal 15410.3500 Vertical 51088.2500
-# Routed Length 20928.8000 Horizontal 10744.0000 Vertical 10184.8000
-# Ratio Actual / Manhattan   0.3147
-# Unconnected Length 48362.3000 Horizontal 6143.8000 Vertical 42218.5000
-clean 2
-# Current time = Sat Feb 28 16:37:57 2015
+# Wire Junctions 19, at vias 6 Total Vias 26
+# Percent Connected    4.08
+# Manhattan Length 5537315.2000 Horizontal 929957.8900 Vertical 4607357.3100
+# Routed Length 42013.5000 Horizontal 19721.7000 Vertical 22291.8000
+# Ratio Actual / Manhattan   0.0076
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagm09296.tmp
+# Routing Written to File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagm09296.tmp
+# Loading Do File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaago09296.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+# Net BACKPLANE_OUT<2> Selected.
+# Net BACKPLANE_OUT<6> Selected.
+# Net BACKPLANE_OUT<8> Selected.
+# Net BACKPLANE_OUT<9> Selected.
+# Net BACKPLANE_OUT<7> Selected.
+# Net BACKPLANE_OUT<4> Selected.
+# Net BACKPLANE_OUT<5> Selected.
+# Net BACKPLANE_OUT<3> Selected.
+# Net BACKPLANE_IN<4> Selected.
+# Net BACKPLANE_IN<8> Selected.
+# Net BACKPLANE_OUT<10> Selected.
+# Net BACKPLANE_OUT<1> Selected.
+# Net BACKPLANE_IN<9> Selected.
+# Net BACKPLANE_IN<6> Selected.
+# Net BACKPLANE_IN<7> Selected.
+# Net BACKPLANE_IN<5> Selected.
+# Net BACKPLANE_IN<2> Selected.
+# Net BACKPLANE_IN<3> Selected.
+# Net BACKPLANE_IN<10> Selected.
+# Net BACKPLANE_IN<1> Selected.
+# All Selected Wires Unprotected.
+# All unprotected selected wires were deleted.
+# Current time = Sat Mar 07 20:46:19 2015
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 690 Connections 1985 Unroutes 1934
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 10, at vias 5 Total Vias 18
+# Percent Connected    2.57
+# Manhattan Length 5536934.7000 Horizontal 929894.2700 Vertical 4607040.4300
+# Routed Length 20997.2000 Horizontal 10907.4000 Vertical 10089.8000
+# Ratio Actual / Manhattan   0.0038
+# Unconnected Length 5518769.8000 Horizontal 1010480.0000 Vertical 4508289.8000
+# All Components Unselected.
+# All Nets Unselected.
+# Current time = Sat Mar 07 20:46:19 2015
+# Nets Processed 691, Net Terminals 3390
+# Signal Connections Created 1369
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1934
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 10, at vias 5 Total Vias 18
+# Percent Connected    2.57
+# Manhattan Length 5536934.7000 Horizontal 929894.2700 Vertical 4607040.4300
+# Routed Length 20997.2000 Horizontal 10907.4000 Vertical 10089.8000
+# Ratio Actual / Manhattan   0.0038
+# Unconnected Length 5518769.8000 Horizontal 1010480.0000 Vertical 4508289.8000
+# Loading Do File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagp09296.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+# Net BACKPLANE_IN<1> Selected.
+# Net BACKPLANE_IN<10> Selected.
+# Net BACKPLANE_IN<2> Selected.
+# Net BACKPLANE_IN<3> Selected.
+# Net BACKPLANE_IN<4> Selected.
+# Net BACKPLANE_IN<5> Selected.
+# Net BACKPLANE_IN<6> Selected.
+# Net BACKPLANE_IN<7> Selected.
+# Net BACKPLANE_IN<8> Selected.
+# Net BACKPLANE_IN<9> Selected.
+# Net BACKPLANE_OUT<1> Selected.
+# Net BACKPLANE_OUT<10> Selected.
+# Net BACKPLANE_OUT<2> Selected.
+# Net BACKPLANE_OUT<3> Selected.
+# Net BACKPLANE_OUT<4> Selected.
+# Net BACKPLANE_OUT<5> Selected.
+# Net BACKPLANE_OUT<6> Selected.
+# Net BACKPLANE_OUT<7> Selected.
+# Net BACKPLANE_OUT<8> Selected.
+# Net BACKPLANE_OUT<9> Selected.
+set route_diagonal 4
+grid wire 0.100000 (direction x) (offset 0.000000)
+grid wire 0.100000 (direction y) (offset 0.000000)
+grid via 0.100000 (direction x) (offset 0.000000)
+grid via 0.100000 (direction y) (offset 0.000000)
+protect all wires
+# All Wires Protected.
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+# Wires on layer TOP were Unprotected.
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+# Wires on layer BOTTOM were Unprotected.
+cost via -1
+# System default cost will be used.
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+# All Selected Wires Unprotected.
+route 25 1
+# Current time = Sat Mar 07 20:46:41 2015
 # 
 #    VIA     TOP  BOTTOM
 # 
@@ -204,29 +476,108 @@ clean 2
 # Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
 # 
 # Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
-# Nets 50 Connections 85 Unroutes 44
+# Nets 691 Connections 1985 Unroutes 1934
 # Signal Layers 2 Power Layers 5
-# Wire Junctions 12, at vias 6 Total Vias 21
-# Percent Connected   48.24
-# Manhattan Length 66498.6000 Horizontal 15410.3500 Vertical 51088.2500
-# Routed Length 20928.8000 Horizontal 10744.0000 Vertical 10184.8000
-# Ratio Actual / Manhattan   0.3147
-# Unconnected Length 48362.3000 Horizontal 6143.8000 Vertical 42218.5000
-# Start Clean Pass 1 of 2
-# Routing 61 wires.
+# Wire Junctions 10, at vias 5 Total Vias 18
+# Percent Connected    2.57
+# Manhattan Length 5536934.7000 Horizontal 929894.2700 Vertical 4607040.4300
+# Routed Length 20997.2000 Horizontal 10907.4000 Vertical 10089.8000
+# Ratio Actual / Manhattan   0.0038
+# Unconnected Length 5518769.8000 Horizontal 1010480.0000 Vertical 4508289.8000
+# Start Route Pass 1 of 25
+# Routing 30 wires.
+# Total Conflicts: 9 (Cross: 9, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1904
+# Attempts 30 Successes 30 Failures 0 Vias 30
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 1 of 25
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Start Route Pass 2 of 25
+# Routing 18 wires.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
 # Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 44
-# Attempts 46 Successes 46 Failures 0 Vias 20
+# Total Unroutes: 1904
+# Attempts 17 Successes 17 Failures 0 Vias 32
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 2 of 25
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     8|     0|   0| 1904|   28|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0| 1904|   31|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    |  3|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    |  4|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Delete   |  4|     0|     0|   0| 1934|   18|    0|   0|   |  0:00:00|  0:00:00|
+# Read Rte |  4|     0|     0|   0| 1934|   18|    0|   0|   |  0:00:00|  0:00:00|
+# Route    |  5|     9|     0|   0| 1904|   30|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  6|     0|     0|   0| 1904|   32|    0|   0|100|  0:00:00|  0:00:00|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1904
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 17, at vias 5 Total Vias 32
+# Percent Connected    4.08
+# Manhattan Length 5537010.7000 Horizontal 929957.7700 Vertical 4607052.9300
+# Routed Length 39462.7061 Horizontal 19551.9000 Vertical 21403.8000
+# Ratio Actual / Manhattan   0.0071
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+clean 2
+# Current time = Sat Mar 07 20:46:41 2015
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1904
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 17, at vias 5 Total Vias 32
+# Percent Connected    4.08
+# Manhattan Length 5537010.7000 Horizontal 929957.7700 Vertical 4607052.9300
+# Routed Length 39462.7061 Horizontal 19551.9000 Vertical 21403.8000
+# Ratio Actual / Manhattan   0.0071
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+# Start Clean Pass 1 of 2
+# Routing 51 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1904
+# Attempts 39 Successes 39 Failures 0 Vias 27
 # Cpu Time = 0:00:00  Elapsed Time = 0:00:00
 # End Pass 1 of 2
 # Start Clean Pass 2 of 2
-# Routing 60 wires.
+# Routing 49 wires.
 # 0 bend points have been removed.
 # 0 bend points have been removed.
 # 0 bend points have been removed.
 # Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 44
-# Attempts 46 Successes 46 Failures 0 Vias 18
+# Total Unroutes: 1904
+# Attempts 36 Successes 36 Failures 0 Vias 26
 # Cpu Time = 0:00:00  Elapsed Time = 0:00:00
 # End Pass 2 of 2
 # Cpu Time = 0:00:00  Elapsed Time = 0:00:00
@@ -239,12 +590,16 @@ clean 2
 #     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
 #   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
 #----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
-# Route    |  1|    17|     0|   0|   44|   13|    0|   0|  0|  0:00:01|  0:00:01|
-# Route    |  2|    13|     0|   0|   44|   13|    0|   0| 23|  0:00:00|  0:00:01|
-# Route    |  3|     4|     0|   0|   44|   19|    0|   0| 69|  0:00:00|  0:00:01|
-# Route    |  4|     0|     0|   0|   44|   21|    0|   0|100|  0:00:00|  0:00:01|
-# Clean    |  5|     0|     0|   0|   44|   20|    0|   0|   |  0:00:00|  0:00:01|
-# Clean    |  6|     0|     0|   0|   44|   18|    0|   0|   |  0:00:00|  0:00:01|
+# Route    |  1|     8|     0|   0| 1904|   28|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0| 1904|   31|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    |  3|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    |  4|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Delete   |  4|     0|     0|   0| 1934|   18|    0|   0|   |  0:00:00|  0:00:00|
+# Read Rte |  4|     0|     0|   0| 1934|   18|    0|   0|   |  0:00:00|  0:00:00|
+# Route    |  5|     9|     0|   0| 1904|   30|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  6|     0|     0|   0| 1904|   32|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    |  7|     0|     0|   0| 1904|   27|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    |  8|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
 # Conflicts between polygon wires and fixed objects:   0
 # Stub Violations:   0
 # Net Order Violations:   0
@@ -252,17 +607,405 @@ clean 2
 # Diffpair Phase Tolerance  Violations:   0
 # Total layerset violations:   0
 # Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
-# Overall Routing Time: 0:00:01
+# Overall Routing Time: 0:00:00
 # 
 # Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
-# Nets 50 Connections 85 Unroutes 44
+# Nets 691 Connections 1985 Unroutes 1904
 # Signal Layers 2 Power Layers 5
-# Wire Junctions 10, at vias 5 Total Vias 18
-# Percent Connected   48.24
-# Manhattan Length 66527.2000 Horizontal 15442.4400 Vertical 51084.7600
-# Routed Length 20997.2000 Horizontal 10907.4000 Vertical 10089.8000
-# Ratio Actual / Manhattan   0.3156
-# Unconnected Length 48362.3000 Horizontal 6143.8000 Vertical 42218.5000
-write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaam08276.tmp
-# Routing Written to File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaam08276.tmp
+# Wire Junctions 18, at vias 5 Total Vias 26
+# Percent Connected    4.08
+# Manhattan Length 5537336.7000 Horizontal 930105.3600 Vertical 4607231.3400
+# Routed Length 39703.9703 Horizontal 19548.2000 Vertical 21699.3000
+# Ratio Actual / Manhattan   0.0072
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+spread (extra 3.500000)
+# Current time = Sat Mar 07 20:46:41 2015
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1904
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 26
+# Percent Connected    4.08
+# Manhattan Length 5537336.7000 Horizontal 930105.3600 Vertical 4607231.3400
+# Routed Length 39703.9703 Horizontal 19548.2000 Vertical 21699.3000
+# Ratio Actual / Manhattan   0.0072
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+# 6 bend points have been removed.
+# 1 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1904
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 26
+# Percent Connected    4.08
+# Manhattan Length 5537336.7000 Horizontal 930105.3600 Vertical 4607231.3400
+# Routed Length 39708.0708 Horizontal 19548.2000 Vertical 21699.3000
+# Ratio Actual / Manhattan   0.0072
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+miter 4 (style diagonal) (pin) (slant) (tjunction) (bend) (layer TOP BOTTOM)
+# Diagonal wire corners are preferred.
+# Current time = Sat Mar 07 20:46:41 2015
+# 0 bend points have been removed.
+# Convert orthogonal pin exit to diagonal...
+# Convert wire segment to diagonal...
+# Convert orthogonal corner to diagonal...
+# 0 bend points have been removed.
+# Corners changed 14
+# 90 degree wire corners are preferred.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:01
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1904
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 26
+# Percent Connected    4.08
+# Manhattan Length 5537336.7000 Horizontal 930105.3600 Vertical 4607231.3400
+# Routed Length 38836.6901 Horizontal 19548.2000 Vertical 21699.3000
+# Ratio Actual / Manhattan   0.0070
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagq09296.tmp
+# Routing Written to File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagq09296.tmp
+# Loading Do File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaags09296.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+# Net VCC Selected.
+# All Selected Wires Unprotected.
+# All unprotected selected wires were deleted.
+# Current time = Sat Mar 07 20:58:34 2015
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1907
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 23
+# Percent Connected    3.93
+# Manhattan Length 5537336.7000 Horizontal 930105.3600 Vertical 4607231.3400
+# Routed Length 38688.7901 Horizontal 19455.8000 Vertical 21643.8000
+# Ratio Actual / Manhattan   0.0070
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+# All Components Unselected.
+# All Nets Unselected.
+# Current time = Sat Mar 07 20:58:34 2015
+# Nets Processed 691, Net Terminals 3406
+# Signal Connections Created 1339
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1904
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 26
+# Percent Connected    4.08
+# Manhattan Length 5537449.2000 Horizontal 930129.9700 Vertical 4607319.2300
+# Routed Length 38836.6901 Horizontal 19548.2000 Vertical 21699.3000
+# Ratio Actual / Manhattan   0.0070
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+# Loading Do File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagt09296.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+# Component C20 Selected.
+# Component C21 Selected.
+# Component C16 Selected.
+# Component C17 Selected.
+# Component C19 Selected.
+# Component C18 Selected.
+# Component U16 Selected.
+# Component U6 Selected.
+# Component U13 Selected.
+# Component U14 Selected.
+# Component U15 Selected.
+set route_diagonal 4
+grid wire 0.100000 (direction x) (offset 0.000000)
+grid wire 0.100000 (direction y) (offset 0.000000)
+grid via 0.100000 (direction x) (offset 0.000000)
+grid via 0.100000 (direction y) (offset 0.000000)
+protect all wires
+# All Wires Protected.
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+# Wires on layer TOP were Unprotected.
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+# Wires on layer BOTTOM were Unprotected.
+cost via -1
+# System default cost will be used.
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+# All Selected Wires Unprotected.
+route 25 1
+# Current time = Sat Mar 07 21:00:40 2015
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1904
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 26
+# Percent Connected    4.08
+# Manhattan Length 5537449.2000 Horizontal 930129.9700 Vertical 4607319.2300
+# Routed Length 38836.6901 Horizontal 19548.2000 Vertical 21699.3000
+# Ratio Actual / Manhattan   0.0070
+# Unconnected Length 5500379.8000 Horizontal 1003290.0000 Vertical 4497089.8000
+# Start Route Pass 1 of 25
+# Routing 58 wires.
+# Total Conflicts: 4 (Cross: 4, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1892
+# Attempts 48 Successes 48 Failures 0 Vias 40
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 1 of 25
+# Start Route Pass 2 of 25
+# Routing 70 wires.
+# Total Conflicts: 1 (Cross: 1, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1892
+# Attempts 50 Successes 50 Failures 0 Vias 38
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:01
+# Conflict Reduction  0.7501
+# End Pass 2 of 25
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 1 bend points have been removed.
+# Start Route Pass 3 of 25
+# Routing 2 wires.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1892
+# Attempts 2 Successes 2 Failures 0 Vias 38
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 3 of 25
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:01
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     8|     0|   0| 1904|   28|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0| 1904|   31|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    |  3|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    |  4|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Delete   |  4|     0|     0|   0| 1934|   18|    0|   0|   |  0:00:00|  0:00:00|
+# Read Rte |  4|     0|     0|   0| 1934|   18|    0|   0|   |  0:00:00|  0:00:00|
+# Route    |  5|     9|     0|   0| 1904|   30|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  6|     0|     0|   0| 1904|   32|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    |  7|     0|     0|   0| 1904|   27|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    |  8|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Spread   |  8|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Miter    |  8|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Delete   |  8|     0|     0|   0| 1907|   23|    0|   0|   |  0:00:00|  0:00:00|
+# Read Rte |  8|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Route    |  9|     4|     0|   0| 1892|   40|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    | 10|     1|     0|   0| 1892|   38|    0|   0| 75|  0:00:00|  0:00:00|
+# Route    | 11|     0|     0|   0| 1892|   38|    0|   0|100|  0:00:00|  0:00:00|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1892
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 19, at vias 5 Total Vias 38
+# Percent Connected    4.69
+# Manhattan Length 5537312.1000 Horizontal 930094.7100 Vertical 4607217.3900
+# Routed Length 42142.4830 Horizontal 20179.9000 Vertical 23319.2000
+# Ratio Actual / Manhattan   0.0076
+# Unconnected Length 5498381.2000 Horizontal 1002941.4000 Vertical 4495439.8000
+clean 2
+# Current time = Sat Mar 07 21:00:41 2015
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1892
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 19, at vias 5 Total Vias 38
+# Percent Connected    4.69
+# Manhattan Length 5537312.1000 Horizontal 930094.7100 Vertical 4607217.3900
+# Routed Length 42142.4830 Horizontal 20179.9000 Vertical 23319.2000
+# Ratio Actual / Manhattan   0.0076
+# Unconnected Length 5498381.2000 Horizontal 1002941.4000 Vertical 4495439.8000
+# Start Clean Pass 1 of 2
+# Routing 65 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1892
+# Attempts 51 Successes 51 Failures 0 Vias 34
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 1 of 2
+# Start Clean Pass 2 of 2
+# Routing 62 wires.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 1892
+# Attempts 51 Successes 51 Failures 0 Vias 34
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 2 of 2
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     8|     0|   0| 1904|   28|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0| 1904|   31|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    |  3|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    |  4|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Delete   |  4|     0|     0|   0| 1934|   18|    0|   0|   |  0:00:00|  0:00:00|
+# Read Rte |  4|     0|     0|   0| 1934|   18|    0|   0|   |  0:00:00|  0:00:00|
+# Route    |  5|     9|     0|   0| 1904|   30|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  6|     0|     0|   0| 1904|   32|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    |  7|     0|     0|   0| 1904|   27|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    |  8|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Spread   |  8|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Miter    |  8|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Delete   |  8|     0|     0|   0| 1907|   23|    0|   0|   |  0:00:00|  0:00:00|
+# Read Rte |  8|     0|     0|   0| 1904|   26|    0|   0|   |  0:00:00|  0:00:00|
+# Route    |  9|     4|     0|   0| 1892|   40|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    | 10|     1|     0|   0| 1892|   38|    0|   0| 75|  0:00:00|  0:00:00|
+# Route    | 11|     0|     0|   0| 1892|   38|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    | 12|     0|     0|   0| 1892|   34|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    | 13|     0|     0|   0| 1892|   34|    0|   0|   |  0:00:00|  0:00:00|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1892
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 34
+# Percent Connected    4.69
+# Manhattan Length 5537338.2000 Horizontal 930080.1000 Vertical 4607258.1000
+# Routed Length 42987.5304 Horizontal 20851.5000 Vertical 23391.4000
+# Ratio Actual / Manhattan   0.0078
+# Unconnected Length 5498381.2000 Horizontal 1002941.4000 Vertical 4495439.8000
+spread (extra 3.500000)
+# Current time = Sat Mar 07 21:00:41 2015
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.1000 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.1000 with offset 0.0000, Width= 7.0000, Clearance= 7.0000
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1892
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 34
+# Percent Connected    4.69
+# Manhattan Length 5537338.2000 Horizontal 930080.1000 Vertical 4607258.1000
+# Routed Length 42987.5304 Horizontal 20851.5000 Vertical 23391.4000
+# Ratio Actual / Manhattan   0.0078
+# Unconnected Length 5498381.2000 Horizontal 1002941.4000 Vertical 4495439.8000
+# 8 bend points have been removed.
+# 1 bend points have been removed.
+# 2 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1892
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 34
+# Percent Connected    4.69
+# Manhattan Length 5537338.2000 Horizontal 930080.1000 Vertical 4607258.1000
+# Routed Length 42976.1959 Horizontal 20830.5000 Vertical 23391.4000
+# Ratio Actual / Manhattan   0.0078
+# Unconnected Length 5498381.2000 Horizontal 1002941.4000 Vertical 4495439.8000
+miter 4 (style diagonal) (pin) (slant) (tjunction) (bend) (layer TOP BOTTOM)
+# Diagonal wire corners are preferred.
+# Current time = Sat Mar 07 21:00:41 2015
+# 0 bend points have been removed.
+# Convert orthogonal pin exit to diagonal...
+# Convert wire segment to diagonal...
+# Convert orthogonal corner to diagonal...
+# 0 bend points have been removed.
+# Corners changed 34
+# 90 degree wire corners are preferred.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Nets 691 Connections 1985 Unroutes 1892
+# Signal Layers 2 Power Layers 5
+# Wire Junctions 18, at vias 5 Total Vias 34
+# Percent Connected    4.69
+# Manhattan Length 5537338.2000 Horizontal 930080.1000 Vertical 4607258.1000
+# Routed Length 41739.1906 Horizontal 20830.5000 Vertical 23391.4000
+# Ratio Actual / Manhattan   0.0075
+# Unconnected Length 5498381.2000 Horizontal 1002941.4000 Vertical 4495439.8000
+write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagu09296.tmp
+# Routing Written to File C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagu09296.tmp
 quit

@@ -5,7 +5,7 @@
 # 
 #            Command Line Parameters
 #            -----------------------
-# Design File Name : C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Design File Name : C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\TubiiPCB_V2.dsn
 # Initialization options:
 #   -do pasde.do
 # Status File Name : C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\monitor.sts
@@ -15,8 +15,7 @@
 #
 #
 #
-# do $/BSTPLC_rules.do
-define (class _difpr_DP_FUZZD_CLK FUZZD_CLK_P FUZZD_CLK_N )
+# do $/TubiiPCB_V2_rules.do
 define (class _difpr_DP_SYNC_2 SYNC_2_P SYNC_2_N )
 define (class _difpr_DP_USE_DEFAULT USE_DEFAULT_P USE_DEFAULT_N )
 define (class _difpr_DP_BCKP_CLK_BUFD BCKP_CLK_BUFD_P BCKP_CLK_BUFD_N )
@@ -37,21 +36,20 @@ define (class _difpr_DP_UNNAMED_1_MC10E116_I3_Q2 UNNAMED_1_MC10E116_I3_Q2_1 UNNA
 define (class _difpr_DP_UNNAMED_1_MC10E116_I4_Q1 UNNAMED_1_MC10E116_I4_Q1_1 UNNAMED_1_MC10E116_I4_Q1 )
 define (class _difpr_DP_UNNAMED_1_MC10E116_I3_Q3 UNNAMED_1_MC10E116_I3_Q3_1 UNNAMED_1_MC10E116_I3_Q3 )
 define (class _difpr_DP_UNNAMED_1_MC10E116_I4_Q2 UNNAMED_1_MC10E116_I4_Q2_1 UNNAMED_1_MC10E116_I4_Q2 )
-define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_RIBBONPULSEOUT UNNAMED_1_FRONTPORTS_I2_RIBBO_3 UNNAMED_1_FRONTPORTS_I2_RIBBO_2 )
 define (class _difpr_DP_GT2_N UNNAMED_1_CAENCOMS_I8_GT2P GT2_N )
 define (class _difpr_DP_DEF_CLK_DIV4 DEF_CLK_DIV4_P DEF_CLK_DIV4_N )
 define (class _difpr_DP_UNNAMED_1_MC10E116_I4_Q3 UNNAMED_1_MC10E116_I4_Q3_1 UNNAMED_1_MC10E116_I4_Q3 )
+define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_RIBBONPULSEOUT UNNAMED_1_FRONTPORTS_I2_RIBBO_3 UNNAMED_1_FRONTPORTS_I2_RIBBO_2 )
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCAMIMIC1OUT UNNAMED_1_FRONTPORTS_I2_MTCAM_1 UNNAMED_1_FRONTPORTS_I2_MTCAMIM )
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCAMIMIC2OUT UNNAMED_1_FRONTPORTS_I2_MTCAM_4 UNNAMED_1_FRONTPORTS_I2_MTCAM_3 )
 define (class _difpr_DP_DEF_CLK_DIV8 DEF_CLK_DIV8_P DEF_CLK_DIV8_N )
 define (class _difpr_DP_CLK_BAD CLK_BAD_P CLK_BAD_N )
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC UNNAMED_1_FRONTPORTS_I2_SYNCP UNNAMED_1_FRONTPORTS_I2_SYNCN )
-define (class _difpr_DP_BCKP_CLK* UNNAMED_1_DEFAULTCLKSEL_I1_BCKP BCKP_CLK* )
 define (class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_DEFAULTCLK2 UNNAMED_1_CHANGECLKS_I3_DEFAU_1 UNNAMED_1_CHANGECLKS_I3_DEFAULT )
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO UNNAMED_1_MC10E116_I2_D0 LO_STAR_RAW )
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN UNNAMED_1_FRONTPORTS_I2_ECLTOLV UNNAMED_1_MC10E116_I22_D0 )
-define (class _difpr_DP_UNNAMED_1_CSMD0603_I10_B UNNAMED_1_FRONTPORTS_I2_SMELLIE UNNAMED_1_CSMD0603_I10_B_1 )
 define (class _difpr_DP_TRIG_PULS1 TRIG_PULS1_P TRIG_PULS1_N )
+define (class _difpr_DP_UNNAMED_1_CSMD0603_I10_B UNNAMED_1_FRONTPORTS_I2_SMELLIE UNNAMED_1_CSMD0603_I10_B_1 )
 define (class _difpr_DP_TRIG_PULS2 TRIG_PULS2_P TRIG_PULS2_N )
 define (class _difpr_DP_DEF_CLK_DIVD DEF_CLK_DIVD_P DEF_CLK_DIVD_N )
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_LOSTAROUT UNNAMED_1_FRONTPORTS_I2_LOSTA_1 UNNAMED_1_FRONTPORTS_I2_LOSTARO )
@@ -64,8 +62,8 @@ define (class _difpr_DP_RIB2 RIB2_P RIB2_N )
 define (class _difpr_DP_RIB3 RIB3_P RIB3_N )
 define (class _difpr_DP_RIB4 RIB4_P RIB4_N )
 define (class _difpr_DP_RIB5 RIB5_P RIB5_N )
-define (class _difpr_DP_RIB6 RIB6_P RIB6_N )
 define (class _difpr_DP_UNNAMED_1_CSMD0805_I64_B UNNAMED_1_CSMD0805_I70_B UNNAMED_1_CSMD0805_I64_B )
+define (class _difpr_DP_RIB6 RIB6_P RIB6_N )
 define (class _difpr_DP_RIB7 RIB7_P RIB7_N )
 define (class _difpr_DP_RIB8 RIB8_P RIB8_N )
 define (class _difpr_DP_RIB9 RIB9_P RIB9_N )
@@ -79,7 +77,7 @@ define (class _difpr_DP_UNNAMED_1_MC10E116_I22_Q1 UNNAMED_1_MC10E116_I22_Q1_1 UN
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_CLK100 UNNAMED_1_FRONTPORTS_I2_CLK100P UNNAMED_1_FRONTPORTS_I2_CLK100N )
 define (class _difpr_DP_SYNC24_2 SYNC24_2_P SYNC24_2_N )
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNCLVDS UNNAMED_1_FRONTPORTS_I2_SYNCL_1 UNNAMED_1_FRONTPORTS_I2_SYNCLVD )
-define (class _difpr_DP_UNNAMED_1_DEFAULTCLKSEL_I1_DEFAULTCLK UNNAMED_1_DEFAULTCLKSEL_I1_DEFA UNNAMED_1_MC10E116_I1_D0 )
+define (class _difpr_DP_UNNAMED_1_DEFAULTCLKSEL_I1_DEFAULTCLK UNNAMED_1_DEFAULTCLKSEL_I1_BCKP UNNAMED_1_MC10E116_I1_D0 )
 define (class _difpr_DP_RIB10 RIB10_P RIB10_N )
 define (class _difpr_DP_UNNAMED_1_AD96687_I1_Q1 UNNAMED_1_AD96687_I1_Q1_1 UNNAMED_1_AD96687_I1_Q1 )
 define (class _difpr_DP_UNNAMED_1_AD96687_I1_Q2 UNNAMED_1_AD96687_I1_Q2_1 UNNAMED_1_AD96687_I1_Q2 )
@@ -119,10 +117,10 @@ define (pair (nets CLK_BAD_P CLK_BAD_N ))
 define (pair (nets DEF_CLK_DIV8_P DEF_CLK_DIV8_N ))
 define (pair (nets UNNAMED_1_FRONTPORTS_I2_MTCAM_4 UNNAMED_1_FRONTPORTS_I2_MTCAM_3 ))
 define (pair (nets UNNAMED_1_FRONTPORTS_I2_MTCAM_1 UNNAMED_1_FRONTPORTS_I2_MTCAMIM ))
+define (pair (nets UNNAMED_1_FRONTPORTS_I2_RIBBO_3 UNNAMED_1_FRONTPORTS_I2_RIBBO_2 ))
 define (pair (nets UNNAMED_1_MC10E116_I4_Q3_1 UNNAMED_1_MC10E116_I4_Q3 ))
 define (pair (nets DEF_CLK_DIV4_P DEF_CLK_DIV4_N ))
 define (pair (nets UNNAMED_1_CAENCOMS_I8_GT2P GT2_N ))
-define (pair (nets UNNAMED_1_FRONTPORTS_I2_RIBBO_3 UNNAMED_1_FRONTPORTS_I2_RIBBO_2 ))
 define (pair (nets UNNAMED_1_MC10E116_I4_Q2_1 UNNAMED_1_MC10E116_I4_Q2 ))
 define (pair (nets UNNAMED_1_MC10E116_I3_Q3_1 UNNAMED_1_MC10E116_I3_Q3 ))
 define (pair (nets UNNAMED_1_MC10E116_I4_Q1_1 UNNAMED_1_MC10E116_I4_Q1 ))
@@ -143,12 +141,11 @@ define (pair (nets UNNAMED_1_FRONTPORTS_I2_GTP UNNAMED_1_FRONTPORTS_I2_GTN ))
 define (pair (nets BCKP_CLK_BUFD_P BCKP_CLK_BUFD_N ))
 define (pair (nets USE_DEFAULT_P USE_DEFAULT_N ))
 define (pair (nets SYNC_2_P SYNC_2_N ))
-define (pair (nets FUZZD_CLK_P FUZZD_CLK_N ))
 define (pair (nets TELLIE_DELAY_BUF_P TELLIE_DELAY_BUF_N ))
 define (pair (nets UNNAMED_1_AD96687_I1_Q2_1 UNNAMED_1_AD96687_I1_Q2 ))
 define (pair (nets UNNAMED_1_AD96687_I1_Q1_1 UNNAMED_1_AD96687_I1_Q1 ))
 define (pair (nets RIB10_P RIB10_N ))
-define (pair (nets UNNAMED_1_DEFAULTCLKSEL_I1_DEFA UNNAMED_1_MC10E116_I1_D0 ))
+define (pair (nets UNNAMED_1_DEFAULTCLKSEL_I1_BCKP UNNAMED_1_MC10E116_I1_D0 ))
 define (pair (nets UNNAMED_1_FRONTPORTS_I2_SYNCL_1 UNNAMED_1_FRONTPORTS_I2_SYNCLVD ))
 define (pair (nets SYNC24_2_P SYNC24_2_N ))
 define (pair (nets UNNAMED_1_FRONTPORTS_I2_CLK100P UNNAMED_1_FRONTPORTS_I2_CLK100N ))
@@ -162,8 +159,8 @@ define (pair (nets UNNAMED_1_FRONTPORTS_I2_RIBBO_1 UNNAMED_1_FRONTPORTS_I2_RIBBO
 define (pair (nets RIB9_P RIB9_N ))
 define (pair (nets RIB8_P RIB8_N ))
 define (pair (nets RIB7_P RIB7_N ))
-define (pair (nets UNNAMED_1_CSMD0805_I70_B UNNAMED_1_CSMD0805_I64_B ))
 define (pair (nets RIB6_P RIB6_N ))
+define (pair (nets UNNAMED_1_CSMD0805_I70_B UNNAMED_1_CSMD0805_I64_B ))
 define (pair (nets RIB5_P RIB5_N ))
 define (pair (nets RIB4_P RIB4_N ))
 define (pair (nets RIB3_P RIB3_N ))
@@ -176,12 +173,11 @@ define (pair (nets CHANGE_CLK2_P CHANGE_CLK2_N ))
 define (pair (nets UNNAMED_1_FRONTPORTS_I2_LOSTA_1 UNNAMED_1_FRONTPORTS_I2_LOSTARO ))
 define (pair (nets DEF_CLK_DIVD_P DEF_CLK_DIVD_N ))
 define (pair (nets TRIG_PULS2_P TRIG_PULS2_N ))
-define (pair (nets TRIG_PULS1_P TRIG_PULS1_N ))
 define (pair (nets UNNAMED_1_FRONTPORTS_I2_SMELLIE UNNAMED_1_CSMD0603_I10_B_1 ))
+define (pair (nets TRIG_PULS1_P TRIG_PULS1_N ))
 define (pair (nets UNNAMED_1_FRONTPORTS_I2_ECLTOLV UNNAMED_1_MC10E116_I22_D0 ))
 define (pair (nets UNNAMED_1_MC10E116_I2_D0 LO_STAR_RAW ))
 define (pair (nets UNNAMED_1_CHANGECLKS_I3_DEFAU_1 UNNAMED_1_CHANGECLKS_I3_DEFAULT ))
-define (pair (nets UNNAMED_1_DEFAULTCLKSEL_I1_BCKP BCKP_CLK* ))
 rule PCB (width 7)
 rule PCB (clearance 5 (type buried_via_gap))
 rule PCB (clearance 7 (type wire_wire))
@@ -340,8 +336,6 @@ rule pcb (via_at_smd off)
 rule PCB (turn_under_pad off)
 rule layer TOP (restricted_layer_length_factor 1)
 rule layer BOTTOM (restricted_layer_length_factor 1)
-rule class _difpr_DP_FUZZD_CLK (diffpair_line_width 7)
-rule class _difpr_DP_FUZZD_CLK (neck_down_width 5)
 rule class _difpr_DP_SYNC_2 (diffpair_line_width 7)
 rule class _difpr_DP_SYNC_2 (neck_down_width 5)
 rule class _difpr_DP_USE_DEFAULT (diffpair_line_width 7)
@@ -382,14 +376,14 @@ rule class _difpr_DP_UNNAMED_1_MC10E116_I3_Q3 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_MC10E116_I3_Q3 (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_MC10E116_I4_Q2 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_MC10E116_I4_Q2 (neck_down_width 5)
-rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_RIBBONPULSEOUT (diffpair_line_width 7)
-rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_RIBBONPULSEOUT (neck_down_width 5)
 rule class _difpr_DP_GT2_N (diffpair_line_width 7)
 rule class _difpr_DP_GT2_N (neck_down_width 5)
 rule class _difpr_DP_DEF_CLK_DIV4 (diffpair_line_width 7)
 rule class _difpr_DP_DEF_CLK_DIV4 (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_MC10E116_I4_Q3 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_MC10E116_I4_Q3 (neck_down_width 5)
+rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_RIBBONPULSEOUT (diffpair_line_width 7)
+rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_RIBBONPULSEOUT (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCAMIMIC1OUT (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCAMIMIC1OUT (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCAMIMIC2OUT (diffpair_line_width 7)
@@ -400,18 +394,25 @@ rule class _difpr_DP_CLK_BAD (diffpair_line_width 7)
 rule class _difpr_DP_CLK_BAD (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC (neck_down_width 5)
-rule class _difpr_DP_BCKP_CLK* (diffpair_line_width 7)
-rule class _difpr_DP_BCKP_CLK* (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_DEFAULTCLK2 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_DEFAULTCLK2 (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (neck_down_width 5)
+define (drcv_group _DRgrp_LO_STAR_RAW
+ (drcv U12-3 U11-27 )
+ (drcv U12-3 U11-5 )
+)
+define (drcv_group _DRgrp_UNNAMED_1_MC10E116_I2_D0
+ (drcv U11-2 U11-4 )
+ (drcv U11-2 U11-6 )
+)
+define (drcv_groupset _DRgrpset_LO_STAR_RAW_UNNAMED_1_MC10E116_I2_D0 _DRgrp_LO_STAR_RAW _DRgrp_UNNAMED_1_MC10E116_I2_D0)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN (neck_down_width 5)
-rule class _difpr_DP_UNNAMED_1_CSMD0603_I10_B (diffpair_line_width 7)
-rule class _difpr_DP_UNNAMED_1_CSMD0603_I10_B (neck_down_width 5)
 rule class _difpr_DP_TRIG_PULS1 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_PULS1 (neck_down_width 5)
+rule class _difpr_DP_UNNAMED_1_CSMD0603_I10_B (diffpair_line_width 7)
+rule class _difpr_DP_UNNAMED_1_CSMD0603_I10_B (neck_down_width 5)
 rule class _difpr_DP_TRIG_PULS2 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_PULS2 (neck_down_width 5)
 rule class _difpr_DP_DEF_CLK_DIVD (diffpair_line_width 7)
@@ -428,26 +429,96 @@ rule class _difpr_DP_UNNAMED_1_CSMD0603_I55_A (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_CSMD0603_I55_A (neck_down_width 5)
 rule class _difpr_DP_RIB1 (diffpair_line_width 7)
 rule class _difpr_DP_RIB1 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB1_N
+ (drcv U52-3 U53-1 )
+)
+define (drcv_group _DRgrp_RIB1_P
+ (drcv U52-4 U53-2 )
+)
+define (drcv_groupset _DRgrpset_RIB1_N_RIB1_P _DRgrp_RIB1_N _DRgrp_RIB1_P)
 rule class _difpr_DP_RIB2 (diffpair_line_width 7)
 rule class _difpr_DP_RIB2 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB2_N
+ (drcv R95-2 U54-1 )
+)
+define (drcv_group _DRgrp_RIB2_P
+ (drcv R94-2 U54-2 )
+)
+define (drcv_groupset _DRgrpset_RIB2_N_RIB2_P _DRgrp_RIB2_N _DRgrp_RIB2_P)
 rule class _difpr_DP_RIB3 (diffpair_line_width 7)
 rule class _difpr_DP_RIB3 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB3_N
+ (drcv U51-3 U54-3 )
+)
+define (drcv_group _DRgrp_RIB3_P
+ (drcv U51-4 U54-4 )
+)
+define (drcv_groupset _DRgrpset_RIB3_N_RIB3_P _DRgrp_RIB3_N _DRgrp_RIB3_P)
 rule class _difpr_DP_RIB4 (diffpair_line_width 7)
 rule class _difpr_DP_RIB4 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB4_N
+ (drcv U53-3 U52-12 )
+)
+define (drcv_group _DRgrp_RIB4_P
+ (drcv U53-4 U52-13 )
+)
+define (drcv_groupset _DRgrpset_RIB4_N_RIB4_P _DRgrp_RIB4_N _DRgrp_RIB4_P)
 rule class _difpr_DP_RIB5 (diffpair_line_width 7)
 rule class _difpr_DP_RIB5 (neck_down_width 5)
-rule class _difpr_DP_RIB6 (diffpair_line_width 7)
-rule class _difpr_DP_RIB6 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB5_N
+ (drcv U52-8 U53-5 )
+)
+define (drcv_group _DRgrp_RIB5_P
+ (drcv U52-9 U53-6 )
+)
+define (drcv_groupset _DRgrpset_RIB5_N_RIB5_P _DRgrp_RIB5_N _DRgrp_RIB5_P)
 rule class _difpr_DP_UNNAMED_1_CSMD0805_I64_B (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_CSMD0805_I64_B (neck_down_width 5)
+rule class _difpr_DP_RIB6 (diffpair_line_width 7)
+rule class _difpr_DP_RIB6 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB6_N
+ (drcv U54-5 U51-12 )
+)
+define (drcv_group _DRgrp_RIB6_P
+ (drcv U54-6 U51-13 )
+)
+define (drcv_groupset _DRgrpset_RIB6_N_RIB6_P _DRgrp_RIB6_N _DRgrp_RIB6_P)
 rule class _difpr_DP_RIB7 (diffpair_line_width 7)
 rule class _difpr_DP_RIB7 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB7_N
+ (drcv U51-8 U54-7 )
+)
+define (drcv_group _DRgrp_RIB7_P
+ (drcv U51-9 U54-8 )
+)
+define (drcv_groupset _DRgrpset_RIB7_N_RIB7_P _DRgrp_RIB7_N _DRgrp_RIB7_P)
 rule class _difpr_DP_RIB8 (diffpair_line_width 7)
 rule class _difpr_DP_RIB8 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB8_N
+ (drcv U53-7 U52-15 )
+)
+define (drcv_group _DRgrp_RIB8_P
+ (drcv R92-2 U53-8 )
+)
+define (drcv_groupset _DRgrpset_RIB8_N_RIB8_P _DRgrp_RIB8_N _DRgrp_RIB8_P)
 rule class _difpr_DP_RIB9 (diffpair_line_width 7)
 rule class _difpr_DP_RIB9 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB9_N
+ (drcv U52-18 U53-9 )
+)
+define (drcv_group _DRgrp_RIB9_P
+ (drcv U52-19 U53-10 )
+)
+define (drcv_groupset _DRgrpset_RIB9_N_RIB9_P _DRgrp_RIB9_N _DRgrp_RIB9_P)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_RIBBONPULSEIN (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_RIBBONPULSEIN (neck_down_width 5)
+define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_RIBBONP
+ (drcv R89-2 U52-5 )
+)
+define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_RIBBO_1
+ (drcv R88-2 U52-7 )
+)
+define (drcv_groupset _DRgrpset_UNNAMED_1_FRONTPORTS_I2_RIBBONP_UNNAMED_1_FRONTPORTS_I2_RIBBO_1 _DRgrp_UNNAMED_1_FRONTPORTS_I2_RIBBONP _DRgrp_UNNAMED_1_FRONTPORTS_I2_RIBBO_1)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC24LVDS (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC24LVDS (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_BCKPCLK2 (diffpair_line_width 7)
@@ -470,6 +541,13 @@ rule class _difpr_DP_UNNAMED_1_DEFAULTCLKSEL_I1_DEFAULTCLK (diffpair_line_width 
 rule class _difpr_DP_UNNAMED_1_DEFAULTCLKSEL_I1_DEFAULTCLK (neck_down_width 5)
 rule class _difpr_DP_RIB10 (diffpair_line_width 7)
 rule class _difpr_DP_RIB10 (neck_down_width 5)
+define (drcv_group _DRgrp_RIB10_N
+ (drcv U54-9 U51-15 )
+)
+define (drcv_group _DRgrp_RIB10_P
+ (drcv U54-10 U51-17 )
+)
+define (drcv_groupset _DRgrpset_RIB10_N_RIB10_P _DRgrp_RIB10_N _DRgrp_RIB10_P)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q1 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q1 (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q2 (diffpair_line_width 7)
@@ -477,105 +555,9 @@ rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q2 (neck_down_width 5)
 rule class _difpr_DP_TELLIE_DELAY_BUF (diffpair_line_width 7)
 rule class _difpr_DP_TELLIE_DELAY_BUF (neck_down_width 5)
 write colormap _notify.std
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagl09296.tmp
+# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaan08284.tmp
 unselect all routing
-select net BACKPLANE_IN<1>
-select net BACKPLANE_IN<10>
-select net BACKPLANE_IN<2>
-select net BACKPLANE_IN<3>
-select net BACKPLANE_IN<4>
-select net BACKPLANE_IN<5>
-select net BACKPLANE_IN<6>
-select net BACKPLANE_IN<7>
-select net BACKPLANE_IN<8>
-select net BACKPLANE_IN<9>
-select net BACKPLANE_OUT<1>
-select net BACKPLANE_OUT<10>
-select net BACKPLANE_OUT<2>
-select net BACKPLANE_OUT<3>
-select net BACKPLANE_OUT<4>
-select net BACKPLANE_OUT<5>
-select net BACKPLANE_OUT<6>
-select net BACKPLANE_OUT<7>
-select net BACKPLANE_OUT<8>
-select net BACKPLANE_OUT<9>
-set route_diagonal 0
-grid wire 0.100000 (direction x) (offset 0.000000)
-grid wire 0.100000 (direction y) (offset 0.000000)
-grid via 0.100000 (direction x) (offset 0.000000)
-grid via 0.100000 (direction y) (offset 0.000000)
-protect all wires
-direction TOP horizontal
-select layer TOP
-unprotect layer_wires TOP
-direction BOTTOM vertical
-select layer BOTTOM
-unprotect layer_wires BOTTOM
-cost via -1
-set turbo_stagger off
-limit outside -1
-rule pcb (patterns_allowed  trombone accordion)
-set pattern_stacking on
-rule pcb (sawtooth_amplitude -1 -1)
-rule pcb (sawtooth_gap -1)
-rule pcb (accordion_amplitude -1 -1)
-rule pcb (accordion_gap -1)
-rule pcb (trombone_run_length -1)
-rule pcb (trombone_gap -1)
-unprotect selected
-route 25 1
-clean 2
-write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagm09296.tmp
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaago09296.tmp
-unselect all objects
-select net BACKPLANE_OUT<2>
-select net BACKPLANE_OUT<6>
-select net BACKPLANE_OUT<8>
-select net BACKPLANE_OUT<9>
-select net BACKPLANE_OUT<7>
-select net BACKPLANE_OUT<4>
-select net BACKPLANE_OUT<5>
-select net BACKPLANE_OUT<3>
-select net BACKPLANE_IN<4>
-select net BACKPLANE_IN<8>
-select net BACKPLANE_OUT<10>
-select net BACKPLANE_OUT<1>
-select net BACKPLANE_IN<9>
-select net BACKPLANE_IN<6>
-select net BACKPLANE_IN<7>
-select net BACKPLANE_IN<5>
-select net BACKPLANE_IN<2>
-select net BACKPLANE_IN<3>
-select net BACKPLANE_IN<10>
-select net BACKPLANE_IN<1>
-unprotect selected
-delete selected
-unprotect selected polygon
-delete selected polygon
-unselect all objects
-read route C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagn09296.tmp
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagp09296.tmp
-unselect all routing
-select net BACKPLANE_IN<1>
-select net BACKPLANE_IN<10>
-select net BACKPLANE_IN<2>
-select net BACKPLANE_IN<3>
-select net BACKPLANE_IN<4>
-select net BACKPLANE_IN<5>
-select net BACKPLANE_IN<6>
-select net BACKPLANE_IN<7>
-select net BACKPLANE_IN<8>
-select net BACKPLANE_IN<9>
-select net BACKPLANE_OUT<1>
-select net BACKPLANE_OUT<10>
-select net BACKPLANE_OUT<2>
-select net BACKPLANE_OUT<3>
-select net BACKPLANE_OUT<4>
-select net BACKPLANE_OUT<5>
-select net BACKPLANE_OUT<6>
-select net BACKPLANE_OUT<7>
-select net BACKPLANE_OUT<8>
-select net BACKPLANE_OUT<9>
+select component U12
 set route_diagonal 4
 grid wire 0.100000 (direction x) (offset 0.000000)
 grid wire 0.100000 (direction y) (offset 0.000000)
@@ -600,33 +582,28 @@ rule pcb (accordion_gap -1)
 rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
-route 25 1
-clean 2
-spread (extra 3.500000)
-miter 4 (style diagonal) (pin) (slant) (tjunction) (bend) (layer TOP BOTTOM)
-write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagq09296.tmp
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaags09296.tmp
+smart_route (auto_fanout off) (auto_testpoint off) (auto_miter on)
+write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaao08284.tmp
+# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaaq08284.tmp
 unselect all objects
-select net VCC
+select net UNNAMED_1_GTDELAYS_I1_DDGTN
+select net RIB8_N
+select net RIB8_P
+select net UNNAMED_1_MC10E116_I2_Q0
+select net UNNAMED_1_CSMD0603_I9_A
+select net UNNAMED_1_CSMD0603_I9_B
+select net LO_SEL_ECL_P
+select net LO_STAR_RAW
+select net LO_SEL_ECL_N
 unprotect selected
 delete selected
 unprotect selected polygon
 delete selected polygon
 unselect all objects
-read route C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagr09296.tmp
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagt09296.tmp
+read route C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaap08284.tmp
+# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaar08284.tmp
 unselect all routing
-select component C20
-select component C21
-select component C16
-select component C17
-select component C19
-select component C18
-select component U16
-select component U6
-select component U13
-select component U14
-select component U15
+select component U12
 set route_diagonal 4
 grid wire 0.100000 (direction x) (offset 0.000000)
 grid wire 0.100000 (direction y) (offset 0.000000)
@@ -651,9 +628,4 @@ rule pcb (accordion_gap -1)
 rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
-route 25 1
-clean 2
-spread (extra 3.500000)
-miter 4 (style diagonal) (pin) (slant) (tjunction) (bend) (layer TOP BOTTOM)
-write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaagu09296.tmp
-quit -c
+smart_route (min_via_grid 0.100000) (min_wire_grid 0.100000) (auto_fanout on) (auto_fanout_via_share on) (auto_fanout_pin_share on) (auto_testpoint off) (auto_miter on)

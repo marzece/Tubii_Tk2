@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 11 )
+			( logicalViewRevNum 12 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -452,9 +452,15 @@
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):dgt2") )
 				( objectStatus "dgt2" )
 			)
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):dgt2"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):lo_star2"
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star2") )
 				( objectStatus "lo_star2" )
+			)
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star2"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):\ddgt*\"
 				( objectFlag fObjectAlias )
@@ -480,9 +486,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "dgt_p" )
-			)
-			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):dgt2"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):lo_sel"
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_sel") )
@@ -540,9 +543,6 @@
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):data"
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):data") )
 				( objectStatus "data" )
-			)
-			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star2"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star_out_n"
 			)
@@ -5097,7 +5097,7 @@
 	( BaseCopy "gt_delays"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 15 )
+				( logicalViewRevNum 17 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -6901,7 +6901,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "select_lo_src"
