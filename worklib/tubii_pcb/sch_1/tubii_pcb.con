@@ -8,8 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 16)
-      (lastNetId 226)
-      (lastInstTermId 681)
+      (lastNetId 235)
+      (lastInstTermId 733)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -324,6 +324,7 @@
       ("N223" "pulse_inv_in" -1 -1 1 1)
       ("N224" "unnamed_1_clocks_i2_bckpused" -1 -1 0 )
       ("N225" "le_clks" -1 -1 0 )
+      ("N227" "unnamed_1_clocks_i2_reset" -1 -1 0 )
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2  inherited)
@@ -475,6 +476,9 @@
             )
           )
           ("M679" "T865" -1 -1
+            (conn
+              ("0" -1 -1 "N227" -1 -1)
+            )
           )
         )
       )
@@ -531,6 +535,9 @@
             )
           )
           ("M680" "T866" -1 -1
+            (conn
+              ("0" -1 -1 "N227" -1 -1)
+            )
           )
         )
       )

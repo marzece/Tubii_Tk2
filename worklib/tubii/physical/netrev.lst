@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : TubiiPCB_V2.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Feb 28 18:38:47 2015                      )
+(    Date/Time        : Sat Mar 07 19:48:45 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -26,41 +26,39 @@ CmdLine: netrev -proj C:\Users\Eric Marzec\Documents\Tubii_Tk2\tubii_tk2.cpm -y 
 ------ Preparing to read pst files ------
 
 Starting to read C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstchip.dat 
-   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstchip.dat (00:00:21.02)
+   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstchip.dat (00:00:21.29)
 Starting to read C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxprt.dat 
-   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxprt.dat (00:00:00.00)
+   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxprt.dat (00:00:00.05)
 Starting to read C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxnet.dat 
-   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxnet.dat (00:00:00.01)
+   Finished reading C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstxnet.dat (00:00:00.06)
 
 ------ Oversights/Warnings/Errors ------
 
 
 #1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
 
-WARNING(SPMHNI-194): Symbol 'DIP16' for device 'HCT123' not found in PSMPATH or must be "dbdoctor"ed.
-
-    Alternatively, the JEDEC_TYPE is not defined for the device in the pstchip.dat.
+WARNING(SPMHNI-194): Symbol 'SMD_FOX' for device 'FOXCLOCK' not found in PSMPATH or must be "dbdoctor"ed.
 
 #2   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
 
-ERROR(SPMHNI-196): Symbol 'PLCC20' for device 'MC10H124' has extra pin '6'.
+WARNING(SPMHNI-194): Symbol 'INDUCT805' for device 'INDUCTOR_L' not found in PSMPATH or must be "dbdoctor"ed.
 
-ERROR(SPMHNI-196): Symbol 'PLCC20' for device 'MC10H124' has extra pin '11'.
+#3   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
 
-ERROR(SPMHNI-196): Symbol 'PLCC20' for device 'MC10H124' has extra pin '16'.
+WARNING(SPMHNI-194): Symbol 'DIP16' for device 'HCT123' not found in PSMPATH or must be "dbdoctor"ed.
 
-ERROR(SPMHNI-196): Symbol 'PLCC20' for device 'MC10H124' has extra pin '1'.
+    Alternatively, the JEDEC_TYPE is not defined for the device in the pstchip.dat.
 
 
 
 ===========================================================
 Start Constraint Diff3 Import
 	Constraint File:    C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/packaged/pstcmdb.dat
-	Allegro Baseline:   C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaae08716.tmp
-	Start time: Sat Feb 28 18:38:47 2015
+	Allegro Baseline:   C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaae09624.tmp
+	Start time: Sat Mar 07 19:48:46 2015
 ===========================================================
 ===========================================================
-Finished Constraint Update	Time: Sat Feb 28 18:38:48 2015
+Finished Constraint Update	Time: Sat Mar 07 19:48:46 2015
 ===========================================================
 
 ------ Library Paths ------
@@ -87,9 +85,9 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Feb 28 18:38:26 2015
+netrev run on Mar 7 19:48:23 2015
    DESIGN NAME : 'TUBII'
-   PACKAGING ON 28-Feb-2015 AT 18:37:46
+   PACKAGING ON 07-Mar-2015 AT 19:47:18
 
    COMPILE 'logic'
    CHECK_PIN_NAMES OFF
@@ -115,8 +113,8 @@ netrev run on Feb 28 18:38:26 2015
 
  No error detected
  No oversight detected
-  2 warnings detected
+  3 warnings detected
 
-cpu time      1:12:08
-elapsed time  0:00:22
+cpu time      1:14:36
+elapsed time  0:00:24
 

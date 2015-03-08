@@ -5,14 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T18:32:17</modificationTime>
+    <modificationTime>2015-03-07T18:50:36</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>3</instanceid>
-        <netid>50</netid>
+        <netid>51</netid>
         <insttermid>306</insttermid>
       </lastids>
       <cells>
@@ -773,6 +774,12 @@
           <name>bckp_clk_in_use</name>
           <scope>interface</scope>
           <direction>input</direction>
+        </net>
+        <net>
+          <id>N51</id>
+          <name>reset_clk</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N23</id>
@@ -1694,6 +1701,7 @@
               <id>M230</id>
               <termid>T26</termid>
               <connections>
+                <connection net="N51" />
               </connections>
             </pin>
             <pin>
@@ -2198,6 +2206,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="bckp_clk_in_use">
             <pageScope number="1">
@@ -2295,6 +2304,12 @@
             </pageScope>
           </netScope>
           <netScope ref="read_cntrl_reg_bit">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="reset_clk">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
@@ -2422,6 +2437,7 @@
               </net>
               <net ref="mtca_mimic_data_rdy"></net>
               <net ref="read_cntrl_reg_bit"></net>
+              <net ref="reset_clk"></net>
               <net ref="scaler">
                 <msb>6</msb>
                 <lsb>4</lsb>

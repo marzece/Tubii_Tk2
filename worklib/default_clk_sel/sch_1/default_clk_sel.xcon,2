@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-04T11:39:07</modificationTime>
+    <modificationTime>2015-03-07T18:48:56</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="default_clk_sel" view="sch_1">
       <lastids>
         <instanceid>21</instanceid>
-        <netid>21</netid>
+        <netid>22</netid>
         <insttermid>102</insttermid>
       </lastids>
       <cells>
@@ -557,6 +557,12 @@
           <name>unnamed_1_rsmd0805_i17_b</name>
         </net>
         <net>
+          <id>N22</id>
+          <name>reset_ecl_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
           <id>N11</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -976,12 +982,14 @@
               <id>M46</id>
               <termid>T55</termid>
               <connections>
+                <connection net="N12" />
               </connections>
             </pin>
             <pin>
               <id>M47</id>
               <termid>T56</termid>
               <connections>
+                <connection net="N22" />
               </connections>
             </pin>
             <pin>
@@ -1821,6 +1829,12 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="reset_ecl_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="tub_clk_in">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1866,6 +1880,7 @@
               <net ref="gnd"></net>
               <net ref="reset"></net>
               <net ref="reset_clk_div_ecl"></net>
+              <net ref="reset_ecl_p"></net>
               <net ref="tub_clk_in"></net>
               <net ref="unnamed_1_rsmd0805_i16_b"></net>
               <net ref="unnamed_1_rsmd0805_i17_b"></net>

@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T18:51:15</modificationTime>
+    <modificationTime>2015-03-07T19:14:49</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>16</instanceid>
         <netid>226</netid>
-        <insttermid>680</insttermid>
+        <insttermid>681</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -616,6 +616,11 @@
               <name>tellie_pre_delay_ttl</name>
               <direction>output</direction>
             </term>
+            <term>
+              <id>T867</id>
+              <name>smellie_pulse</name>
+              <direction>input</direction>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -948,7 +953,7 @@
             <term>
               <id>T515</id>
               <name>ext_trig_out</name>
-              <direction>input</direction>
+              <direction>output</direction>
               <msb>15</msb>
               <lsb>0</lsb>
             </term>
@@ -1493,10 +1498,6 @@
           <name>le_clks</name>
         </net>
         <net>
-          <id>N226</id>
-          <name>unnamed_1_clocks_i2_reset</name>
-        </net>
-        <net>
           <id>gnd</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -1766,7 +1767,6 @@
               <id>M679</id>
               <termid>T865</termid>
               <connections>
-                <connection net="N226" />
               </connections>
             </pin>
           </pins>
@@ -1864,7 +1864,6 @@
               <id>M680</id>
               <termid>T866</termid>
               <connections>
-                <connection net="N226" />
               </connections>
             </pin>
           </pins>
@@ -2432,6 +2431,13 @@
               <termid>T582</termid>
               <connections>
                 <connection net="N202" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M681</id>
+              <termid>T867</termid>
+              <connections>
+                <connection net="N200" />
               </connections>
             </pin>
           </pins>
@@ -3354,7 +3360,7 @@
         <pages>
           <page number="1">
             <physicalPageNumber>1</physicalPageNumber>
-            <errorStatus>true</errorStatus>
+            <errorStatus>false</errorStatus>
             <nets>
               <net ref="caen_out_anal">
                 <msb>7</msb>
@@ -3452,7 +3458,6 @@
               <net ref="unnamed_1_clocks_i2_clk100ttl"></net>
               <net ref="unnamed_1_clocks_i2_clksel"></net>
               <net ref="unnamed_1_clocks_i2_datardy"></net>
-              <net ref="unnamed_1_clocks_i2_reset"></net>
               <net ref="unnamed_1_cntrlregister_i10_datardy"></net>
               <net ref="unnamed_1_cntrlregister_i10_ecalenable"></net>
               <net ref="unnamed_1_cntrlregister_i10_losel"></net>

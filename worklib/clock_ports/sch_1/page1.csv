@@ -2,60 +2,80 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"GND\G";
-2"CLK100_P";
-3"CLK100_N";
-4"TUB_CLK_IN";
+1"TUB_CLK_IN";
+2"GND\G";
+3"CLK100_P";
+4"CLK100_N";
 %"TESTPOINT_L"
 "1","(-1075,3375)","0","misc","I1";
 ;
-TITLE"TEST"
+$LOCATION"TP60"
+CDS_LOCATION"TP60"
+$SEC"1"
+CDS_SEC"1"
+CDS_LIB"misc"
 ABBREV"TP"
-CDS_LIB"misc";
-"A\NAC \B"2;
+TITLE"TEST";
+"A\NAC \B"
+$PN"1"3;
 %"TESTPOINT_L"
-"1","(-1075,3225)","0","misc","I2";
+"1","(-1075,3275)","0","misc","I2";
 ;
+$LOCATION"TP61"
+CDS_LOCATION"TP61"
+$SEC"1"
+CDS_SEC"1"
 TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
-"A\NAC \B"3;
+"A\NAC \B"
+$PN"1"4;
 %"TESTPOINT_L"
 "1","(-1075,3100)","2","misc","I3";
 ;
-CDS_LIB"misc"
-TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"4;
-%"TESTPOINT_L"
-"1","(-1075,3000)","2","misc","I4";
-;
+$LOCATION"TP62"
+CDS_LOCATION"TP62"
+$SEC"1"
+CDS_SEC"1"
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"1;
+"A\NAC \B"
+$PN"1"1;
+%"TESTPOINT_L"
+"1","(-1075,3000)","2","misc","I4";
+;
+$LOCATION"TP63"
+CDS_LOCATION"TP63"
+$SEC"1"
+CDS_SEC"1"
+CDS_LIB"misc"
+TITLE"TEST"
+ABBREV"TP";
+"A\NAC \B"
+$PN"1"2;
 %"OUTPORT"
 "1","(-75,3100)","0","standard","I5";
 ;
-OFFPAGE"TRUE"
-CDS_LIB"standard";
+CDS_LIB"standard"
+OFFPAGE"TRUE";
 "A"
-HDL_PORT"OUT"
-VHDL_PORT"OUT"4;
+VHDL_PORT"OUT"
+HDL_PORT"OUT"1;
 %"INPORT"
 "1","(-2025,3375)","0","standard","I7";
 ;
-OFFPAGE"TRUE"
-CDS_LIB"standard";
+CDS_LIB"standard"
+OFFPAGE"TRUE";
 "A"
-HDL_PORT"IN"
-VHDL_PORT"IN"2;
+VHDL_PORT"IN"
+HDL_PORT"IN"3;
 %"INPORT"
-"1","(-2025,3225)","0","standard","I8";
+"1","(-2025,3275)","0","standard","I8";
 ;
-OFFPAGE"TRUE"
-CDS_LIB"standard";
+CDS_LIB"standard"
+OFFPAGE"TRUE";
 "A"
-HDL_PORT"IN"
-VHDL_PORT"IN"3;
+VHDL_PORT"IN"
+HDL_PORT"IN"4;
 END.

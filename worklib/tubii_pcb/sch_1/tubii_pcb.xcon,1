@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T19:10:58</modificationTime>
+    <modificationTime>2015-03-07T19:17:29</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
       <lastids>
         <instanceid>16</instanceid>
-        <netid>226</netid>
+        <netid>227</netid>
         <insttermid>681</insttermid>
       </lastids>
       <cells>
@@ -953,7 +953,7 @@
             <term>
               <id>T515</id>
               <name>ext_trig_out</name>
-              <direction>input</direction>
+              <direction>output</direction>
               <msb>15</msb>
               <lsb>0</lsb>
             </term>
@@ -1498,6 +1498,10 @@
           <name>le_clks</name>
         </net>
         <net>
+          <id>N227</id>
+          <name>unnamed_1_clocks_i2_reset</name>
+        </net>
+        <net>
           <id>gnd</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -1767,6 +1771,7 @@
               <id>M679</id>
               <termid>T865</termid>
               <connections>
+                <connection net="N227" />
               </connections>
             </pin>
           </pins>
@@ -1864,6 +1869,7 @@
               <id>M680</id>
               <termid>T866</termid>
               <connections>
+                <connection net="N227" />
               </connections>
             </pin>
           </pins>
@@ -3458,6 +3464,7 @@
               <net ref="unnamed_1_clocks_i2_clk100ttl"></net>
               <net ref="unnamed_1_clocks_i2_clksel"></net>
               <net ref="unnamed_1_clocks_i2_datardy"></net>
+              <net ref="unnamed_1_clocks_i2_reset"></net>
               <net ref="unnamed_1_cntrlregister_i10_datardy"></net>
               <net ref="unnamed_1_cntrlregister_i10_ecalenable"></net>
               <net ref="unnamed_1_cntrlregister_i10_losel"></net>

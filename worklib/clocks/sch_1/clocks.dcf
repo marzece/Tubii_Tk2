@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 28 )
+			( logicalViewRevNum 29 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -588,6 +588,9 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy") )
 				( objectStatus "data_rdy" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_b"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_8MERGE_I14_B<6>"
 					( Origin gPackager )
@@ -603,6 +606,9 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset_ecl_p") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):clk_reset_ecl") )
 				( objectStatus "unnamed_1_defaultclksel_i1_reseteclp" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset_ecl_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_c"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_8MERGE_I14_C<5>"
@@ -672,9 +678,6 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_h"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_h" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):\load_count*\"
 			)
@@ -834,8 +837,9 @@
 				)
 				( objectStatus "count_data_ecl<0>" )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset_ecl_p"
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(0)"
 				( objectFlag fObjectAlias )
+				( objectStatus "page1_count_data_ecl<0>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(1)"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(1)") )
@@ -844,12 +848,20 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_b") )
 				( objectStatus "count_data_ecl<1>" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(1)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_count_data_ecl<1>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(2)"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(2)") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):max_count(2)") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_c") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_c") )
 				( objectStatus "count_data_ecl<2>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(2)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_count_data_ecl<2>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(3)"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(3)") )
@@ -858,12 +870,20 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_d") )
 				( objectStatus "count_data_ecl<3>" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(3)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_count_data_ecl<3>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(4)"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(4)") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):max_count(4)") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_e") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_e") )
 				( objectStatus "count_data_ecl<4>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(4)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_count_data_ecl<4>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(5)"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(5)") )
@@ -872,6 +892,10 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_f") )
 				( objectStatus "count_data_ecl<5>" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(5)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_count_data_ecl<5>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(6)"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(6)") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):max_count(6)") )
@@ -879,40 +903,16 @@
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_g") )
 				( objectStatus "count_data_ecl<6>" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(6)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_count_data_ecl<6>" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(7)"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(7)") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):max_count(7)") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_h") )
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_h") )
 				( objectStatus "count_data_ecl<7>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(0)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_count_data_ecl<0>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(1)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_count_data_ecl<1>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(2)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_count_data_ecl<2>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(3)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_count_data_ecl<3>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(4)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_count_data_ecl<4>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(5)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_count_data_ecl<5>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(6)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_count_data_ecl<6>" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(7)"
 				( objectFlag fObjectAlias )
@@ -8617,34 +8617,88 @@
 				( attribute "CDS_PART_NAME" "74F164_2"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U66"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U66"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "cp"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
 				( pin "dsa"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "dsb"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "\mr*\"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "q0"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 				( pin "q1"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "q2"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "q3"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
 				)
 				( pin "q4"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 				( pin "q5"
+					( attribute "PN" "11"
+						( Origin gPackager )
+					)
 				)
 				( pin "q6"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
 				)
 				( pin "q7"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
 				)
 				( pin "vcc"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i8"
@@ -8672,38 +8726,98 @@
 				( attribute "CDS_PART_NAME" "MC10H124"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U68"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U68"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a_in"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "a_out"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 				( pin "\a_out*\"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "b_in"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "b_out"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "\b_out*\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "c_in"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
 				)
 				( pin "c_out"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
 				)
 				( pin "\c_out*\"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
 				)
 				( pin "common"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
 				( pin "d_in"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
 				)
 				( pin "d_out"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d_out*\"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
 				)
 				( pin "vcc"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
 				)
 				( pin "vee"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i9"
@@ -8731,38 +8845,98 @@
 				( attribute "CDS_PART_NAME" "MC10H124"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U67"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U67"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a_in"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "a_out"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 				( pin "\a_out*\"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "b_in"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "b_out"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "\b_out*\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "c_in"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
 				)
 				( pin "c_out"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
 				)
 				( pin "\c_out*\"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
 				)
 				( pin "common"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
 				( pin "d_in"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
 				)
 				( pin "d_out"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d_out*\"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
 				)
 				( pin "vcc"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
 				)
 				( pin "vee"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i10"
@@ -8839,10 +9013,28 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C102"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C102"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i11"
@@ -8919,10 +9111,28 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C104"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C104"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I11" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i12"
@@ -8999,10 +9209,28 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C103"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C103"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I12" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i13"
@@ -9079,10 +9307,28 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C105"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C105"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I13" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i16"
@@ -9159,10 +9405,28 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C101"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C101"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I16" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page1_i1"
@@ -10234,7 +10498,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "default_clk_sel"
@@ -16752,7 +17016,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "change_clks"

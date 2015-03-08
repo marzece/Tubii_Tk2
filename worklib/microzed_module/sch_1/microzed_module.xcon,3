@@ -5,14 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T18:17:47</modificationTime>
+    <modificationTime>2015-03-07T18:50:28</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>3</instanceid>
-        <netid>49</netid>
+        <netid>51</netid>
         <insttermid>306</insttermid>
       </lastids>
       <cells>
@@ -765,6 +766,18 @@
         <net>
           <id>N49</id>
           <name>read_cntrl_reg_bit</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N50</id>
+          <name>bckp_clk_in_use</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N51</id>
+          <name>reset_clk</name>
           <scope>interface</scope>
           <direction>output</direction>
         </net>
@@ -1675,6 +1688,7 @@
               <id>M228</id>
               <termid>T24</termid>
               <connections>
+                <connection net="N50" />
               </connections>
             </pin>
             <pin>
@@ -1687,6 +1701,7 @@
               <id>M230</id>
               <termid>T26</termid>
               <connections>
+                <connection net="N51" />
               </connections>
             </pin>
             <pin>
@@ -2192,6 +2207,12 @@
         <extension name="schematic_extension">
         <schematicExtension>
         <netScopes>
+          <netScope ref="bckp_clk_in_use">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="caen_data_rdy">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2287,6 +2308,12 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
+          <netScope ref="reset_clk">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="scaler">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2369,6 +2396,7 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
+              <net ref="bckp_clk_in_use"></net>
               <net ref="caen_data_rdy"></net>
               <net ref="carrier_srst#"></net>
               <net ref="clk"></net>
@@ -2408,6 +2436,7 @@
               </net>
               <net ref="mtca_mimic_data_rdy"></net>
               <net ref="read_cntrl_reg_bit"></net>
+              <net ref="reset_clk"></net>
               <net ref="scaler">
                 <msb>6</msb>
                 <lsb>4</lsb>

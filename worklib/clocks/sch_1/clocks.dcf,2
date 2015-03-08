@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 26 )
+			( logicalViewRevNum 27 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -532,12 +532,14 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):clk_reset_ecl"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):count"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):tc"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):clk_reset_ttl"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):restart_count"
 			)
@@ -596,6 +598,11 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_unnamed_1_8merge_i14_b"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_b" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_defaultclksel_i1_reseteclp"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset_ecl_p") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):clk_reset_ecl") )
+				( objectStatus "unnamed_1_defaultclksel_i1_reseteclp" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_c"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_8MERGE_I14_C<5>"
@@ -804,6 +811,7 @@
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):reset"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset") )
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):clk_reset_ttl") )
 				( objectStatus "reset" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):tub_clk_in"
@@ -823,6 +831,9 @@
 					( Origin gPackager )
 				)
 				( objectStatus "count_data_ecl<0>" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset_ecl_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(1)"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(1)") )
@@ -10211,7 +10222,7 @@
 	( BaseCopy "default_clk_sel"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 5 )
+				( logicalViewRevNum 6 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -10221,7 +10232,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "default_clk_sel"
@@ -10285,6 +10296,9 @@
 			)
 			( signal "@tubii_tk2_lib.default_clk_sel(sch_1):v3p3"
 				( objectStatus "v3p3" )
+			)
+			( signal "@tubii_tk2_lib.default_clk_sel(sch_1):reset_ecl_p"
+				( objectStatus "reset_ecl_p" )
 			)
 			( gate "@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"

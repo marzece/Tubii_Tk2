@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T19:06:32</modificationTime>
+    <modificationTime>2015-03-07T19:07:18</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -668,20 +668,8 @@
           <name>unnamed_1_mpsh81_i17_c</name>
         </net>
         <net>
-          <id>N39</id>
-          <name>lvds_to_ecl_out_n</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
           <id>N40</id>
           <name>lvds_to_ecl_out_p</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
-          <id>N41</id>
-          <name>ttl_to_ecl_out_n</name>
           <scope>interface</scope>
           <direction>output</direction>
         </net>
@@ -956,7 +944,6 @@
               <id>M23</id>
               <termid>T34</termid>
               <connections>
-                <connection net="N41" />
               </connections>
             </pin>
             <pin>
@@ -977,7 +964,6 @@
               <id>M26</id>
               <termid>T37</termid>
               <connections>
-                <connection net="N39" />
               </connections>
             </pin>
             <pin>
@@ -2095,12 +2081,6 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
-          <netScope ref="lvds_to_ecl_out_n">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>output</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="lvds_to_ecl_out_p">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2123,12 +2103,6 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="ttl_to_ecl_out_n">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="ttl_to_ecl_out_p">
@@ -2168,12 +2142,10 @@
               <net ref="gnd"></net>
               <net ref="lvds_to_ecl_in_n"></net>
               <net ref="lvds_to_ecl_in_p"></net>
-              <net ref="lvds_to_ecl_out_n"></net>
               <net ref="lvds_to_ecl_out_p"></net>
               <net ref="nim_to_ecl_in"></net>
               <net ref="nim_to_ecl_out"></net>
               <net ref="ttl_to_ecl_in"></net>
-              <net ref="ttl_to_ecl_out_n"></net>
               <net ref="ttl_to_ecl_out_p"></net>
               <net ref="unnamed_1_csmd0805_i11_b"></net>
               <net ref="unnamed_1_csmd0805_i13_a"></net>

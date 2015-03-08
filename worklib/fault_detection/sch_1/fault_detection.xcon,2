@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-03T15:25:28</modificationTime>
+    <modificationTime>2015-03-03T16:35:22</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="fault_detection" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>68</instanceid>
-        <netid>57</netid>
+        <netid>58</netid>
         <insttermid>308</insttermid>
       </lastids>
       <cells>
@@ -1308,6 +1307,12 @@
           <name>bckp_clk3_p</name>
           <scope>interface</scope>
           <direction>output</direction>
+        </net>
+        <net>
+          <id>N58</id>
+          <name>data_rdy</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>N11</id>
@@ -3251,6 +3256,7 @@
               <id>M159</id>
               <termid>T120</termid>
               <connections>
+                <connection net="N58" />
               </connections>
             </pin>
             <pin>
@@ -4983,6 +4989,12 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="data_rdy">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="default_clk">
             <pageScope number="1">
               <scope>interface</scope>
@@ -5049,6 +5061,7 @@
               <net ref="clk_reset_ttl"></net>
               <net ref="clk_state"></net>
               <net ref="count"></net>
+              <net ref="data_rdy"></net>
               <net ref="def_clk_div2_n"></net>
               <net ref="def_clk_div2_p"></net>
               <net ref="def_clk_div4_n"></net>

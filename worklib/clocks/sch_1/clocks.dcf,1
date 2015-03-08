@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 25 )
+			( logicalViewRevNum 26 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -582,6 +582,10 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_8merge_i14_a" )
 			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):data_rdy"
+				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy") )
+				( objectStatus "data_rdy" )
+			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_8merge_i14_b"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_8MERGE_I14_B<6>"
 					( Origin gPackager )
@@ -819,10 +823,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "count_data_ecl<0>" )
-			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_faultdetection_i2_datardy"
-				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):data_rdy") )
-				( objectStatus "unnamed_1_faultdetection_i2_datardy" )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(1)"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_count_data_ecl(1)") )
