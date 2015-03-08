@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Mar 07 23:37:35 2015                      )
+(    Date/Time        : Sat Mar 07 23:37:56 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -15,7 +15,7 @@
 
  Will search while getting acceptable improvement
  Will not scale complete graph edges
- Start time Sat Mar 07 23:37:35 2015
+ Start time Sat Mar 07 23:37:56 2015
 
 
  
@@ -24,7 +24,7 @@
  
  Algorithm  : discrete
  Place within: room
- Room name: RIBBON_DELAY
+ Room name: PULSE_INV
  Map grid points to: library origin
  Place leftovers on bottom: YES
  Allow component overlap: NO
@@ -60,7 +60,7 @@
   line seg 	(800.0,15800.0) (800.0,600.0)
 
 ACTIVE ROOMS:
-    Room  1: RIBBON_DELAY    (11000.0 9100.0) (13100.0 9100.0) (13100.0 11100.0) (11000.0 11100.0)
+    Room  1: PULSE_INV       (7800.0 7200.0) (9300.0 7200.0) (9300.0 8400.0) (7800.0 8400.0)
 
 
  Top grid x increment will be 250.0
@@ -74,7 +74,7 @@ ACTIVE ROOMS:
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Mar 07 23:37:35 2015                      )
+(    Date/Time        : Sat Mar 07 23:37:56 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -128,9 +128,9 @@ Report methodology:
 
     Layout Statistics:
     -----------------
-        Components:  Placed 60  Unplaced 819  Total 879
+        Components:  Placed 92  Unplaced 787  Total 879
         Nets:  W/Rats 687  No/Rats 1  Total 688
-        Pins:  W/Rats 261  No/Rats 0  Unused 61  Unplaced 3045  Total 3367
+        Pins:  W/Rats 370  No/Rats 0  Unused 110  Unplaced 2887  Total 3367
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
@@ -138,16 +138,16 @@ Report methodology:
         Layout density (sq in/EIC) 0.963
         Pin density (Pins/sq in) 14.573
         Average ratlength (in)  0.5
-        Rat density (in/sq in) 0.363
+        Rat density (in/sq in) 0.484
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                171           0          171
+        Connections                246           0          246
         Already Connected           70           0           70
-        Missing Connections        101           0          101
+        Missing Connections        176           0          176
         Dangling Connections                                  0
-        Connection Completion       40.94%       0.00%       40.94%
-        Manh Distance (inches)      83.77
+        Connection Completion       28.46%       0.00%       28.46%
+        Manh Distance (inches)     111.71
         Etch Length (inches)        41.71        0.00        41.71
         Number of vias		    34           0           34
         Vias per Connection          0.49        0.00         0.49
@@ -160,31 +160,18 @@ Report methodology:
 
  
   ref_des    location_x  location_y  rotation mirror            package
-      U52      11550.0     10800.0       180                 PLCC20 (12)
-      U51      12050.0     10800.0       270                 PLCC20 (11)
-      C87      11300.0     11050.0       270                CAP0603 (41)
-      C86      11300.0     10800.0       180                CAP0603 (40)
-      R89      11050.0     10550.0       180                 RES805 (21)
-      R88      11050.0     10300.0         0                 RES805 (20)
-      R99      11300.0     10550.0       180                 RES805 (31)
-      R98      11050.0     10800.0       180                 RES805 (30)
-      R97      11300.0     10300.0         0                 RES805 (29)
-      R96      11300.0     10800.0       180                 RES805 (28)
-      R95      11050.0     10050.0         0                 RES805 (27)
-      R94      11550.0     10550.0        90                 RES805 (26)
-      R93      11300.0     10050.0         0                 RES805 (25)
-      U53      11550.0     10300.0       270                 CONN10 (9)
-      R92      11300.0      9800.0        90                 RES805 (24)
-      R91      11800.0     10550.0        90                 RES805 (23)
-      U54      12300.0     10550.0       270                 CONN10 (10)
-      R90      12050.0     10550.0        90                 RES805 (22)
+      C85       9300.0      8300.0       270                CAP0603 (49)
+      U50       9050.0      8050.0       180                  SOIC8 (2)
+      R87       8800.0      8050.0       180                 RES805 (23)
+      C84       8800.0      8050.0        90                CAP0603 (48)
+      R86       9050.0      7800.0       180                 RES805 (22)
 (---------------------------------------------------------------------)
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Mar 07 23:37:35 2015                      )
+(    Date/Time        : Sat Mar 07 23:37:56 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -238,36 +225,36 @@ Report methodology:
 
     Layout Statistics:
     -----------------
-        Components:  Placed 78  Unplaced 801  Total 879
+        Components:  Placed 97  Unplaced 782  Total 879
         Nets:  W/Rats 687  No/Rats 1  Total 688
-        Pins:  W/Rats 315  No/Rats 0  Unused 95  Unplaced 2957  Total 3367
+        Pins:  W/Rats 383  No/Rats 0  Unused 113  Unplaced 2871  Total 3367
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
         Layout area (sq in) 231.04
         Layout density (sq in/EIC) 0.963
         Pin density (Pins/sq in) 14.573
-        Average ratlength (in)  0.5
-        Rat density (in/sq in) 0.430
+        Average ratlength (in)  0.4
+        Rat density (in/sq in) 0.488
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                203           0          203
+        Connections                254           0          254
         Already Connected           70           0           70
-        Missing Connections        133           0          133
+        Missing Connections        184           0          184
         Dangling Connections                                  0
-        Connection Completion       34.48%       0.00%       34.48%
-        Manh Distance (inches)      99.40
+        Connection Completion       27.56%       0.00%       27.56%
+        Manh Distance (inches)     112.78
         Etch Length (inches)        41.71        0.00        41.71
         Number of vias		    34           0           34
         Vias per Connection          0.49        0.00         0.49
         Smd pins with attached clines                        93
 
 
- Successfully placed 18 components out of 18
+ Successfully placed 5 components out of 5
 
 
 
 Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
-Actual time of completion: Sat Mar 07 23:37:35 2015
+Actual time of completion: Sat Mar 07 23:37:56 2015
 

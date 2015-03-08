@@ -2,20 +2,20 @@
 (                                                                     )
 (    PLACEMENT LOG                                                    )
 (                                                                     )
-(    Drawing          : BSTPLC.brd                                    )
+(    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Mar 07 23:37:42 2015                      )
+(    Date/Time        : Sun Mar 08 18:53:29 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
 
- Autoplace BSTPLC.brd 
- Save as BSTPLC.brd 
+ Autoplace C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V3.brd 
+ Save as C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V3.brd 
 
  Will search while getting acceptable improvement
  Will not scale complete graph edges
- Start time Sat Mar 07 23:37:42 2015
+ Start time Sun Mar 08 18:53:29 2015
 
 
  
@@ -24,7 +24,7 @@
  
  Algorithm  : discrete
  Place within: room
- Room name: GENERIC_DELAYS
+ Room name: ECAL_CONTROL
  Map grid points to: library origin
  Place leftovers on bottom: YES
  Allow component overlap: NO
@@ -60,7 +60,7 @@
   line seg 	(800.0,15800.0) (800.0,600.0)
 
 ACTIVE ROOMS:
-    Room  1: GENERIC_DELAYS  (11100.0 7300.0) (12700.0 7300.0) (12700.0 8700.0) (11100.0 8700.0)
+    Room  1: ECAL_CONTROL    (3300.0 9400.0) (4800.0 9400.0) (4800.0 10900.0) (3300.0 10900.0)
 
 
  Top grid x increment will be 250.0
@@ -72,9 +72,9 @@ ACTIVE ROOMS:
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
-(    Drawing          : BSTPLC.brd                                    )
+(    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Mar 07 23:37:42 2015                      )
+(    Date/Time        : Sun Mar 08 18:53:29 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -92,45 +92,129 @@ Report methodology:
   - To suppress items in dangle report add the OK_DANGLE property to the via
     or connect line.
 
+<< Dangling Lines >>  - Location marked with a star (*) is dangling.
+  Net                 Layer                  Length       Location
+  ------------------------------------------------------------------------------------------
+  UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (12000.0 8175.0) to *(12375.0 7850.0)
+  UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (11950.0 8225.0) to *(12375.0 7900.0)
+  UNNAMED_1_FRONTPORTS_I2_GENER_2 TOP                    168.0     *(11593.0 8718.0) to  (11593.0 8550.0)
+  UNNAMED_1_FRONTPORTS_I2_GENER_1 TOP                    185.7      (11450.0 7865.0) to *(11500.0 7700.0)
+  UNNAMED_1_CAENCOMS_I8_GTTTL TOP                    325.0      (11475.0 13197.5) to *(11300.0 13450.0)
+  SR_DATA              TOP                    393.4     *(11050.0 8500.0) to  (11350.0 8402.5)
+  SR_DATA              TOP                    218.9      (11275.0 13197.5) to *(11175.0 13375.0)
+  SR_CLK               TOP                    307.9     *(11050.0 8475.0) to  (11300.0 8402.5)
+  SR_CLK               TOP                    254.3      (11325.0 13197.5) to *(11200.0 13400.0)
+  LE_GT_DELAYS         TOP                    300.0      (11425.0 13197.5) to *(11250.0 13425.0)
+  LE_GEN_UTILS         TOP                    189.4     *(11050.0 8450.0) to  (11200.0 8402.5)
+  VCC                  TOP                    568.2     *(10975.0 12500.0) to  (11475.0 12402.5)
+  GND                  TOP                    177.0     *(10975.0 12550.0) to  (11125.0 12597.5)
 
 
 << Dangling Vias >>
   Net                  Padstack               Location            Layers
   ---------------------------------------------------------------------------
+  VTT                  VIA                  (9275.0 9800.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8450.0 10475.0) TOP/BOTTOM 
+  VTT                  VIA                  (8950.0 10450.0) TOP/BOTTOM 
+  VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
+  VTT                  VIA                  (8525.0 10175.0) TOP/BOTTOM 
+  VEE                  VIA                  (8650.0 9850.0)  TOP/BOTTOM 
+  VEE                  VIA                  (8225.0 7850.0)  TOP/BOTTOM 
+  VEE                  VIA                  (11450.0 10150.0) TOP/BOTTOM 
+  VEE                  VIA                  (12450.0 10325.0) TOP/BOTTOM 
   VEE                  VIA                  (8318.6 12100.0) TOP/BOTTOM 
   VEE                  VIA                  (7814.0 12100.0) TOP/BOTTOM 
   VEE                  VIA                  (8994.5 12100.0) TOP/BOTTOM 
-  VCC                  VIA                  (8494.5 12700.0) TOP/BOTTOM 
-  VCC                  VIA                  (7994.5 12700.0) TOP/BOTTOM 
-  VCC                  VIA                  (8818.6 12723.6) TOP/BOTTOM 
-  VCC                  VIA                  (3235.5 13400.0) TOP/BOTTOM 
-  VCC                  VIA                  (3050.0 12744.5) TOP/BOTTOM 
-  VCC                  VIA                  (2887.6 13389.6) TOP/BOTTOM 
+  VEE                  VIA                  (11850.0 12350.0) TOP/BOTTOM 
+  VCC                  VIA                  (10975.0 12450.0) TOP/BOTTOM 
+  VCC                  VIA                  (11725.0 12925.0) TOP/BOTTOM 
+  VCC                  VIA                  (11624.0 8501.0) TOP/BOTTOM 
+  VCC                  VIA                  (11250.0 8650.0) TOP/BOTTOM 
+  VCC                  VIA                  (11400.0 7825.0) TOP/BOTTOM 
+  VCC                  VIA                  (12100.0 8000.0) TOP/BOTTOM 
+  VCC                  VIA                  (11800.0 8500.0) TOP/BOTTOM 
+  VCC                  VIA                  (11900.0 8025.0) TOP/BOTTOM 
+  VCC                  VIA                  (12050.0 8375.0) TOP/BOTTOM 
+  VCC                  VIA                  (12250.0 8275.0) TOP/BOTTOM 
+  VCC                  VIA                  (11850.0 12250.0) TOP/BOTTOM 
+  VCC                  VIA                  (11350.0 13075.0) TOP/BOTTOM 
+  VCC                  VIA                  (10975.0 13000.0) TOP/BOTTOM 
+  VCC                  VIA                  (12100.0 13250.0) TOP/BOTTOM 
+  VCC                  VIA                  (11950.0 12950.0) TOP/BOTTOM 
+  VCC                  VIA                  (12275.0 12750.0) TOP/BOTTOM 
+  VCC                  VIA                  (12175.0 13475.0) TOP/BOTTOM 
+  VCC                  VIA                  (11375.0 12475.0) TOP/BOTTOM 
+  UNNAMED_1_CSMD0603_I12_A VIA                  (12350.0 12250.0) TOP/BOTTOM 
+  GND                  VIA                  (10975.0 12600.0) TOP/BOTTOM 
+  GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
+  GND                  VIA                  (12003.8 8003.8) TOP/BOTTOM 
+  GND                  VIA                  (12250.0 8100.0) TOP/BOTTOM 
+  GND                  VIA                  (10975.0 13175.0) TOP/BOTTOM 
+  GND                  VIA                  (11725.0 13200.0) TOP/BOTTOM 
+  GND                  VIA                  (12200.0 13250.0) TOP/BOTTOM 
+  GND                  VIA                  (11850.0 12950.0) TOP/BOTTOM 
+  GND                  VIA                  (11950.0 13325.0) TOP/BOTTOM 
+  GND                  VIA                  (12100.0 13075.0) TOP/BOTTOM 
+  GND                  VIA                  (11225.0 12475.0) TOP/BOTTOM 
 
 
 << Antenna Vias >>
   Net                  Padstack               Location            Layers
   ---------------------------------------------------------------------------
+  VTT                  VIA                  (9275.0 9800.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8450.0 10475.0) TOP/BOTTOM 
+  VTT                  VIA                  (8950.0 10450.0) TOP/BOTTOM 
+  VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
+  VTT                  VIA                  (8525.0 10175.0) TOP/BOTTOM 
+  VEE                  VIA                  (8650.0 9850.0)  TOP/BOTTOM 
+  VEE                  VIA                  (8225.0 7850.0)  TOP/BOTTOM 
+  VEE                  VIA                  (11450.0 10150.0) TOP/BOTTOM 
+  VEE                  VIA                  (12450.0 10325.0) TOP/BOTTOM 
   VEE                  VIA                  (8318.6 12100.0) TOP/BOTTOM 
   VEE                  VIA                  (7814.0 12100.0) TOP/BOTTOM 
   VEE                  VIA                  (8994.5 12100.0) TOP/BOTTOM 
-  VCC                  VIA                  (8494.5 12700.0) TOP/BOTTOM 
-  VCC                  VIA                  (7994.5 12700.0) TOP/BOTTOM 
-  VCC                  VIA                  (8818.6 12723.6) TOP/BOTTOM 
-  VCC                  VIA                  (3235.5 13400.0) TOP/BOTTOM 
-  VCC                  VIA                  (3050.0 12744.5) TOP/BOTTOM 
-  VCC                  VIA                  (2887.6 13389.6) TOP/BOTTOM 
+  VEE                  VIA                  (11850.0 12350.0) TOP/BOTTOM 
+  VCC                  VIA                  (10975.0 12450.0) TOP/BOTTOM 
+  VCC                  VIA                  (11725.0 12925.0) TOP/BOTTOM 
+  VCC                  VIA                  (11624.0 8501.0) TOP/BOTTOM 
+  VCC                  VIA                  (11250.0 8650.0) TOP/BOTTOM 
+  VCC                  VIA                  (11400.0 7825.0) TOP/BOTTOM 
+  VCC                  VIA                  (12100.0 8000.0) TOP/BOTTOM 
+  VCC                  VIA                  (11800.0 8500.0) TOP/BOTTOM 
+  VCC                  VIA                  (11900.0 8025.0) TOP/BOTTOM 
+  VCC                  VIA                  (12050.0 8375.0) TOP/BOTTOM 
+  VCC                  VIA                  (12250.0 8275.0) TOP/BOTTOM 
+  VCC                  VIA                  (11850.0 12250.0) TOP/BOTTOM 
+  VCC                  VIA                  (11350.0 13075.0) TOP/BOTTOM 
+  VCC                  VIA                  (10975.0 13000.0) TOP/BOTTOM 
+  VCC                  VIA                  (12100.0 13250.0) TOP/BOTTOM 
+  VCC                  VIA                  (11950.0 12950.0) TOP/BOTTOM 
+  VCC                  VIA                  (12275.0 12750.0) TOP/BOTTOM 
+  VCC                  VIA                  (12175.0 13475.0) TOP/BOTTOM 
+  VCC                  VIA                  (11375.0 12475.0) TOP/BOTTOM 
+  UNNAMED_1_CSMD0603_I12_A VIA                  (12350.0 12250.0) TOP/BOTTOM 
+  GND                  VIA                  (10975.0 12600.0) TOP/BOTTOM 
+  GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
+  GND                  VIA                  (12003.8 8003.8) TOP/BOTTOM 
+  GND                  VIA                  (12250.0 8100.0) TOP/BOTTOM 
+  GND                  VIA                  (10975.0 13175.0) TOP/BOTTOM 
+  GND                  VIA                  (11725.0 13200.0) TOP/BOTTOM 
+  GND                  VIA                  (12200.0 13250.0) TOP/BOTTOM 
+  GND                  VIA                  (11850.0 12950.0) TOP/BOTTOM 
+  GND                  VIA                  (11950.0 13325.0) TOP/BOTTOM 
+  GND                  VIA                  (12100.0 13075.0) TOP/BOTTOM 
+  GND                  VIA                  (11225.0 12475.0) TOP/BOTTOM 
 
 << Summary >>
-  Total dangling lines:       0
-  Total dangling vias:        9
-  Total antenna vias:         9
+  Total dangling lines:      13
+  Total dangling vias:       43
+  Total antenna vias:        43
 
     Layout Statistics:
     -----------------
-        Components:  Placed 78  Unplaced 801  Total 879
-        Nets:  W/Rats 687  No/Rats 1  Total 688
-        Pins:  W/Rats 315  No/Rats 0  Unused 95  Unplaced 2957  Total 3367
+        Components:  Placed 97  Unplaced 782  Total 879
+        Nets:  W/Rats 680  No/Rats 1  Total 681
+        Pins:  W/Rats 408  No/Rats 0  Unused 88  Unplaced 2871  Total 3367
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
@@ -138,20 +222,20 @@ Report methodology:
         Layout density (sq in/EIC) 0.963
         Pin density (Pins/sq in) 14.573
         Average ratlength (in)  0.5
-        Rat density (in/sq in) 0.430
+        Rat density (in/sq in) 0.546
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                203           0          203
-        Already Connected           70           0           70
-        Missing Connections        133           0          133
-        Dangling Connections                                  0
-        Connection Completion       34.48%       0.00%       34.48%
-        Manh Distance (inches)      99.40
-        Etch Length (inches)        41.71        0.00        41.71
-        Number of vias		    34           0           34
-        Vias per Connection          0.49        0.00         0.49
-        Smd pins with attached clines                        93
+        Connections                284           0          284
+        Already Connected          162           0          162
+        Missing Connections        122           0          122
+        Dangling Connections                                 13
+        Connection Completion       57.04%       0.00%       57.04%
+        Manh Distance (inches)     126.24
+        Etch Length (inches)        92.46        0.00        92.46
+        Number of vias		   119           0          119
+        Vias per Connection          0.73        0.00         0.73
+        Smd pins with attached clines                       254
 
 
  Starting Connection Matrix construction.
@@ -160,33 +244,27 @@ Report methodology:
 
  
   ref_des    location_x  location_y  rotation mirror            package
-      U36      11550.0      8550.0       270                 SOIC16 (8)
-      U37      11550.0      8300.0       270                 SOIC16 (9)
-      U38      12050.0      8300.0        90                 SOIC16 (1)
-      R39      11800.0      8300.0       180                 RES805 (79)
-      R38      12300.0      8300.0         0                 RES805 (78)
-      R41      12050.0      8550.0       180                 RES805 (74)
-      R40      12050.0      8050.0         0                 RES805 (73)
-       D6      12050.0      7800.0       180        LED_SSFLXH1031D (69)
-       D5      12300.0      8550.0       180        LED_SSFLXH1031D (68)
-      C51      12300.0      8050.0       180                 CAP805 (62)
-      C49      11800.0      8550.0         0                 CAP805 (61)
+      R30       4550.0     10050.0         0                 RES805 (29)
+      R29       4550.0     10300.0       180                 RES805 (28)
+      R28       3550.0     10800.0         0                 RES805 (87)
+      R31       4300.0     10050.0         0                 RES805 (30)
+       D4       3550.0     10550.0       180        LED_SSFLXH1031D (81)
+      U32       4050.0     10050.0       180                 PLCC20 (26)
+      U31       4300.0     10550.0       180                 PLCC20 (19)
+      C39       4300.0     10800.0        90                CAP0603 (52)
 
  Warning: Unplaced components have no affinity to placed
-      C50      11300.0      7300.0       180                CAP0603 (55)
+      C40       3300.0      9550.0        90                CAP0603 (53)
 
  Warning: Unplaced components have no affinity to placed
-      C48      11550.0      7300.0       180                CAP0603 (44)
-
- Warning: Unplaced components have no affinity to placed
-      C47      11800.0      7300.0       180                CAP0603 (43)
+      C38       3550.0      9550.0         0                CAP0603 (51)
 (---------------------------------------------------------------------)
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
-(    Drawing          : BSTPLC.brd                                    )
+(    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Mar 07 23:37:42 2015                      )
+(    Date/Time        : Sun Mar 08 18:53:29 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -204,45 +282,129 @@ Report methodology:
   - To suppress items in dangle report add the OK_DANGLE property to the via
     or connect line.
 
+<< Dangling Lines >>  - Location marked with a star (*) is dangling.
+  Net                 Layer                  Length       Location
+  ------------------------------------------------------------------------------------------
+  UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (12000.0 8175.0) to *(12375.0 7850.0)
+  UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (11950.0 8225.0) to *(12375.0 7900.0)
+  UNNAMED_1_FRONTPORTS_I2_GENER_2 TOP                    168.0     *(11593.0 8718.0) to  (11593.0 8550.0)
+  UNNAMED_1_FRONTPORTS_I2_GENER_1 TOP                    185.7      (11450.0 7865.0) to *(11500.0 7700.0)
+  UNNAMED_1_CAENCOMS_I8_GTTTL TOP                    325.0      (11475.0 13197.5) to *(11300.0 13450.0)
+  SR_DATA              TOP                    393.4     *(11050.0 8500.0) to  (11350.0 8402.5)
+  SR_DATA              TOP                    218.9      (11275.0 13197.5) to *(11175.0 13375.0)
+  SR_CLK               TOP                    307.9     *(11050.0 8475.0) to  (11300.0 8402.5)
+  SR_CLK               TOP                    254.3      (11325.0 13197.5) to *(11200.0 13400.0)
+  LE_GT_DELAYS         TOP                    300.0      (11425.0 13197.5) to *(11250.0 13425.0)
+  LE_GEN_UTILS         TOP                    189.4     *(11050.0 8450.0) to  (11200.0 8402.5)
+  VCC                  TOP                    568.2     *(10975.0 12500.0) to  (11475.0 12402.5)
+  GND                  TOP                    177.0     *(10975.0 12550.0) to  (11125.0 12597.5)
 
 
 << Dangling Vias >>
   Net                  Padstack               Location            Layers
   ---------------------------------------------------------------------------
+  VTT                  VIA                  (9275.0 9800.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8450.0 10475.0) TOP/BOTTOM 
+  VTT                  VIA                  (8950.0 10450.0) TOP/BOTTOM 
+  VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
+  VTT                  VIA                  (8525.0 10175.0) TOP/BOTTOM 
+  VEE                  VIA                  (8650.0 9850.0)  TOP/BOTTOM 
+  VEE                  VIA                  (8225.0 7850.0)  TOP/BOTTOM 
+  VEE                  VIA                  (11450.0 10150.0) TOP/BOTTOM 
+  VEE                  VIA                  (12450.0 10325.0) TOP/BOTTOM 
   VEE                  VIA                  (8318.6 12100.0) TOP/BOTTOM 
   VEE                  VIA                  (7814.0 12100.0) TOP/BOTTOM 
   VEE                  VIA                  (8994.5 12100.0) TOP/BOTTOM 
-  VCC                  VIA                  (8494.5 12700.0) TOP/BOTTOM 
-  VCC                  VIA                  (7994.5 12700.0) TOP/BOTTOM 
-  VCC                  VIA                  (8818.6 12723.6) TOP/BOTTOM 
-  VCC                  VIA                  (3235.5 13400.0) TOP/BOTTOM 
-  VCC                  VIA                  (3050.0 12744.5) TOP/BOTTOM 
-  VCC                  VIA                  (2887.6 13389.6) TOP/BOTTOM 
+  VEE                  VIA                  (11850.0 12350.0) TOP/BOTTOM 
+  VCC                  VIA                  (10975.0 12450.0) TOP/BOTTOM 
+  VCC                  VIA                  (11725.0 12925.0) TOP/BOTTOM 
+  VCC                  VIA                  (11624.0 8501.0) TOP/BOTTOM 
+  VCC                  VIA                  (11250.0 8650.0) TOP/BOTTOM 
+  VCC                  VIA                  (11400.0 7825.0) TOP/BOTTOM 
+  VCC                  VIA                  (12100.0 8000.0) TOP/BOTTOM 
+  VCC                  VIA                  (11800.0 8500.0) TOP/BOTTOM 
+  VCC                  VIA                  (11900.0 8025.0) TOP/BOTTOM 
+  VCC                  VIA                  (12050.0 8375.0) TOP/BOTTOM 
+  VCC                  VIA                  (12250.0 8275.0) TOP/BOTTOM 
+  VCC                  VIA                  (11850.0 12250.0) TOP/BOTTOM 
+  VCC                  VIA                  (11350.0 13075.0) TOP/BOTTOM 
+  VCC                  VIA                  (10975.0 13000.0) TOP/BOTTOM 
+  VCC                  VIA                  (12100.0 13250.0) TOP/BOTTOM 
+  VCC                  VIA                  (11950.0 12950.0) TOP/BOTTOM 
+  VCC                  VIA                  (12275.0 12750.0) TOP/BOTTOM 
+  VCC                  VIA                  (12175.0 13475.0) TOP/BOTTOM 
+  VCC                  VIA                  (11375.0 12475.0) TOP/BOTTOM 
+  UNNAMED_1_CSMD0603_I12_A VIA                  (12350.0 12250.0) TOP/BOTTOM 
+  GND                  VIA                  (10975.0 12600.0) TOP/BOTTOM 
+  GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
+  GND                  VIA                  (12003.8 8003.8) TOP/BOTTOM 
+  GND                  VIA                  (12250.0 8100.0) TOP/BOTTOM 
+  GND                  VIA                  (10975.0 13175.0) TOP/BOTTOM 
+  GND                  VIA                  (11725.0 13200.0) TOP/BOTTOM 
+  GND                  VIA                  (12200.0 13250.0) TOP/BOTTOM 
+  GND                  VIA                  (11850.0 12950.0) TOP/BOTTOM 
+  GND                  VIA                  (11950.0 13325.0) TOP/BOTTOM 
+  GND                  VIA                  (12100.0 13075.0) TOP/BOTTOM 
+  GND                  VIA                  (11225.0 12475.0) TOP/BOTTOM 
 
 
 << Antenna Vias >>
   Net                  Padstack               Location            Layers
   ---------------------------------------------------------------------------
+  VTT                  VIA                  (9275.0 9800.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8450.0 10475.0) TOP/BOTTOM 
+  VTT                  VIA                  (8950.0 10450.0) TOP/BOTTOM 
+  VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
+  VTT                  VIA                  (8525.0 10175.0) TOP/BOTTOM 
+  VEE                  VIA                  (8650.0 9850.0)  TOP/BOTTOM 
+  VEE                  VIA                  (8225.0 7850.0)  TOP/BOTTOM 
+  VEE                  VIA                  (11450.0 10150.0) TOP/BOTTOM 
+  VEE                  VIA                  (12450.0 10325.0) TOP/BOTTOM 
   VEE                  VIA                  (8318.6 12100.0) TOP/BOTTOM 
   VEE                  VIA                  (7814.0 12100.0) TOP/BOTTOM 
   VEE                  VIA                  (8994.5 12100.0) TOP/BOTTOM 
-  VCC                  VIA                  (8494.5 12700.0) TOP/BOTTOM 
-  VCC                  VIA                  (7994.5 12700.0) TOP/BOTTOM 
-  VCC                  VIA                  (8818.6 12723.6) TOP/BOTTOM 
-  VCC                  VIA                  (3235.5 13400.0) TOP/BOTTOM 
-  VCC                  VIA                  (3050.0 12744.5) TOP/BOTTOM 
-  VCC                  VIA                  (2887.6 13389.6) TOP/BOTTOM 
+  VEE                  VIA                  (11850.0 12350.0) TOP/BOTTOM 
+  VCC                  VIA                  (10975.0 12450.0) TOP/BOTTOM 
+  VCC                  VIA                  (11725.0 12925.0) TOP/BOTTOM 
+  VCC                  VIA                  (11624.0 8501.0) TOP/BOTTOM 
+  VCC                  VIA                  (11250.0 8650.0) TOP/BOTTOM 
+  VCC                  VIA                  (11400.0 7825.0) TOP/BOTTOM 
+  VCC                  VIA                  (12100.0 8000.0) TOP/BOTTOM 
+  VCC                  VIA                  (11800.0 8500.0) TOP/BOTTOM 
+  VCC                  VIA                  (11900.0 8025.0) TOP/BOTTOM 
+  VCC                  VIA                  (12050.0 8375.0) TOP/BOTTOM 
+  VCC                  VIA                  (12250.0 8275.0) TOP/BOTTOM 
+  VCC                  VIA                  (11850.0 12250.0) TOP/BOTTOM 
+  VCC                  VIA                  (11350.0 13075.0) TOP/BOTTOM 
+  VCC                  VIA                  (10975.0 13000.0) TOP/BOTTOM 
+  VCC                  VIA                  (12100.0 13250.0) TOP/BOTTOM 
+  VCC                  VIA                  (11950.0 12950.0) TOP/BOTTOM 
+  VCC                  VIA                  (12275.0 12750.0) TOP/BOTTOM 
+  VCC                  VIA                  (12175.0 13475.0) TOP/BOTTOM 
+  VCC                  VIA                  (11375.0 12475.0) TOP/BOTTOM 
+  UNNAMED_1_CSMD0603_I12_A VIA                  (12350.0 12250.0) TOP/BOTTOM 
+  GND                  VIA                  (10975.0 12600.0) TOP/BOTTOM 
+  GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
+  GND                  VIA                  (12003.8 8003.8) TOP/BOTTOM 
+  GND                  VIA                  (12250.0 8100.0) TOP/BOTTOM 
+  GND                  VIA                  (10975.0 13175.0) TOP/BOTTOM 
+  GND                  VIA                  (11725.0 13200.0) TOP/BOTTOM 
+  GND                  VIA                  (12200.0 13250.0) TOP/BOTTOM 
+  GND                  VIA                  (11850.0 12950.0) TOP/BOTTOM 
+  GND                  VIA                  (11950.0 13325.0) TOP/BOTTOM 
+  GND                  VIA                  (12100.0 13075.0) TOP/BOTTOM 
+  GND                  VIA                  (11225.0 12475.0) TOP/BOTTOM 
 
 << Summary >>
-  Total dangling lines:       0
-  Total dangling vias:        9
-  Total antenna vias:         9
+  Total dangling lines:      13
+  Total dangling vias:       43
+  Total antenna vias:        43
 
     Layout Statistics:
     -----------------
-        Components:  Placed 92  Unplaced 787  Total 879
-        Nets:  W/Rats 687  No/Rats 1  Total 688
-        Pins:  W/Rats 370  No/Rats 0  Unused 110  Unplaced 2887  Total 3367
+        Components:  Placed 107  Unplaced 772  Total 879
+        Nets:  W/Rats 680  No/Rats 1  Total 681
+        Pins:  W/Rats 440  No/Rats 0  Unused 112  Unplaced 2815  Total 3367
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
@@ -250,26 +412,26 @@ Report methodology:
         Layout density (sq in/EIC) 0.963
         Pin density (Pins/sq in) 14.573
         Average ratlength (in)  0.5
-        Rat density (in/sq in) 0.484
+        Rat density (in/sq in) 0.590
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                246           0          246
-        Already Connected           70           0           70
-        Missing Connections        176           0          176
-        Dangling Connections                                  0
-        Connection Completion       28.46%       0.00%       28.46%
-        Manh Distance (inches)     111.71
-        Etch Length (inches)        41.71        0.00        41.71
-        Number of vias		    34           0           34
-        Vias per Connection          0.49        0.00         0.49
-        Smd pins with attached clines                        93
+        Connections                310           0          310
+        Already Connected          162           0          162
+        Missing Connections        148           0          148
+        Dangling Connections                                 13
+        Connection Completion       52.26%       0.00%       52.26%
+        Manh Distance (inches)     136.32
+        Etch Length (inches)        92.46        0.00        92.46
+        Number of vias		   119           0          119
+        Vias per Connection          0.73        0.00         0.73
+        Smd pins with attached clines                       254
 
 
- Successfully placed 14 components out of 14
+ Successfully placed 10 components out of 10
 
 
 
 Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
-Actual time of completion: Sat Mar 07 23:37:42 2015
+Actual time of completion: Sun Mar 08 18:53:29 2015
 

@@ -439,10 +439,10 @@ define (drcv_groupset _DRgrpset_RIB1_N_RIB1_P _DRgrp_RIB1_N _DRgrp_RIB1_P)
 rule class _difpr_DP_RIB2 (diffpair_line_width 7)
 rule class _difpr_DP_RIB2 (neck_down_width 5)
 define (drcv_group _DRgrp_RIB2_N
- (drcv U54-1 R95-2 )
+ (drcv R95-2 U54-1 )
 )
 define (drcv_group _DRgrp_RIB2_P
- (drcv U54-2 R94-2 )
+ (drcv R94-2 U54-2 )
 )
 define (drcv_groupset _DRgrpset_RIB2_N_RIB2_P _DRgrp_RIB2_N _DRgrp_RIB2_P)
 rule class _difpr_DP_RIB3 (diffpair_line_width 7)
@@ -480,7 +480,7 @@ define (drcv_group _DRgrp_RIB6_N
  (drcv U54-5 U51-12 )
 )
 define (drcv_group _DRgrp_RIB6_P
- (drcv U54-6 R96-2 )
+ (drcv U54-6 U51-13 )
 )
 define (drcv_groupset _DRgrpset_RIB6_N_RIB6_P _DRgrp_RIB6_N _DRgrp_RIB6_P)
 rule class _difpr_DP_RIB7 (diffpair_line_width 7)
@@ -498,7 +498,7 @@ define (drcv_group _DRgrp_RIB8_N
  (drcv U53-7 U52-15 )
 )
 define (drcv_group _DRgrp_RIB8_P
- (drcv U53-8 R92-2 )
+ (drcv R92-2 U53-8 )
 )
 define (drcv_groupset _DRgrpset_RIB8_N_RIB8_P _DRgrp_RIB8_N _DRgrp_RIB8_P)
 rule class _difpr_DP_RIB9 (diffpair_line_width 7)
@@ -555,28 +555,9 @@ rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q2 (neck_down_width 5)
 rule class _difpr_DP_TELLIE_DELAY_BUF (diffpair_line_width 7)
 rule class _difpr_DP_TELLIE_DELAY_BUF (neck_down_width 5)
 write colormap _notify.std
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaaf08284.tmp
+# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaan08284.tmp
 unselect all routing
-select net RIB10_N
-select net RIB10_P
-select net RIB1_N
-select net RIB1_P
-select net RIB2_N
-select net RIB2_P
-select net RIB3_N
-select net RIB3_P
-select net RIB4_N
-select net RIB4_P
-select net RIB5_N
-select net RIB5_P
-select net RIB6_N
-select net RIB6_P
-select net RIB7_N
-select net RIB7_P
-select net RIB8_N
-select net RIB8_P
-select net RIB9_N
-select net RIB9_P
+select component U12
 set route_diagonal 4
 grid wire 0.100000 (direction x) (offset 0.000000)
 grid wire 0.100000 (direction y) (offset 0.000000)
@@ -602,5 +583,49 @@ rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
 smart_route (auto_fanout off) (auto_testpoint off) (auto_miter on)
-write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaag08284.tmp
-quit -c
+write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaao08284.tmp
+# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaaq08284.tmp
+unselect all objects
+select net UNNAMED_1_GTDELAYS_I1_DDGTN
+select net RIB8_N
+select net RIB8_P
+select net UNNAMED_1_MC10E116_I2_Q0
+select net UNNAMED_1_CSMD0603_I9_A
+select net UNNAMED_1_CSMD0603_I9_B
+select net LO_SEL_ECL_P
+select net LO_STAR_RAW
+select net LO_SEL_ECL_N
+unprotect selected
+delete selected
+unprotect selected polygon
+delete selected polygon
+unselect all objects
+read route C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaap08284.tmp
+# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaar08284.tmp
+unselect all routing
+select component U12
+set route_diagonal 4
+grid wire 0.100000 (direction x) (offset 0.000000)
+grid wire 0.100000 (direction y) (offset 0.000000)
+grid via 0.100000 (direction x) (offset 0.000000)
+grid via 0.100000 (direction y) (offset 0.000000)
+protect all wires
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+cost via -1
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+smart_route (min_via_grid 0.100000) (min_wire_grid 0.100000) (auto_fanout on) (auto_fanout_via_share on) (auto_fanout_pin_share on) (auto_testpoint off) (auto_miter on)

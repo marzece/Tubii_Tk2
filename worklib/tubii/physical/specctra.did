@@ -5,17 +5,17 @@
 # 
 #            Command Line Parameters
 #            -----------------------
-# Design File Name : C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\TubiiPCB_V2.dsn
+# Design File Name : C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
 # Initialization options:
 #   -do pasde.do
-# Status File Name : C:/Users/Eric Marzec/Documents/Tubii_Tk2/worklib/tubii/physical\monitor.sts
+# Status File Name : C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical\monitor.sts
 # -nog specified. Graphics not utilized.
 # Use Colormap In Design File.
 #
 #
 #
 #
-# do $/TubiiPCB_V2_rules.do
+# do $/BSTPLC_rules.do
 define (class _difpr_DP_SYNC_2 SYNC_2_P SYNC_2_N )
 define (class _difpr_DP_USE_DEFAULT USE_DEFAULT_P USE_DEFAULT_N )
 define (class _difpr_DP_BCKP_CLK_BUFD BCKP_CLK_BUFD_P BCKP_CLK_BUFD_N )
@@ -399,12 +399,14 @@ rule class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_DEFAULTCLK2 (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (neck_down_width 5)
 define (drcv_group _DRgrp_LO_STAR_RAW
- (drcv U12-3 U11-27 )
+ (drcv U12-4 U11-5 )
+ (drcv U12-4 U11-27 )
  (drcv U12-3 U11-5 )
 )
 define (drcv_group _DRgrp_UNNAMED_1_MC10E116_I2_D0
- (drcv U11-2 U11-4 )
  (drcv U11-2 U11-6 )
+ (drcv U11-2 U11-28 )
+ (drcv U11-2 U11-4 )
 )
 define (drcv_groupset _DRgrpset_LO_STAR_RAW_UNNAMED_1_MC10E116_I2_D0 _DRgrp_LO_STAR_RAW _DRgrp_UNNAMED_1_MC10E116_I2_D0)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN (diffpair_line_width 7)
@@ -555,9 +557,10 @@ rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q2 (neck_down_width 5)
 rule class _difpr_DP_TELLIE_DELAY_BUF (diffpair_line_width 7)
 rule class _difpr_DP_TELLIE_DELAY_BUF (neck_down_width 5)
 write colormap _notify.std
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaan08284.tmp
+# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaaf07516.tmp
 unselect all routing
-select component U12
+select component U31
+select component U32
 set route_diagonal 4
 grid wire 0.100000 (direction x) (offset 0.000000)
 grid wire 0.100000 (direction y) (offset 0.000000)
@@ -583,49 +586,5 @@ rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
 smart_route (auto_fanout off) (auto_testpoint off) (auto_miter on)
-write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaao08284.tmp
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaaq08284.tmp
-unselect all objects
-select net UNNAMED_1_GTDELAYS_I1_DDGTN
-select net RIB8_N
-select net RIB8_P
-select net UNNAMED_1_MC10E116_I2_Q0
-select net UNNAMED_1_CSMD0603_I9_A
-select net UNNAMED_1_CSMD0603_I9_B
-select net LO_SEL_ECL_P
-select net LO_STAR_RAW
-select net LO_SEL_ECL_N
-unprotect selected
-delete selected
-unprotect selected polygon
-delete selected polygon
-unselect all objects
-read route C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaap08284.tmp
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaar08284.tmp
-unselect all routing
-select component U12
-set route_diagonal 4
-grid wire 0.100000 (direction x) (offset 0.000000)
-grid wire 0.100000 (direction y) (offset 0.000000)
-grid via 0.100000 (direction x) (offset 0.000000)
-grid via 0.100000 (direction y) (offset 0.000000)
-protect all wires
-direction TOP horizontal
-select layer TOP
-unprotect layer_wires TOP
-direction BOTTOM vertical
-select layer BOTTOM
-unprotect layer_wires BOTTOM
-cost via -1
-set turbo_stagger off
-limit outside -1
-rule pcb (patterns_allowed  trombone accordion)
-set pattern_stacking on
-rule pcb (sawtooth_amplitude -1 -1)
-rule pcb (sawtooth_gap -1)
-rule pcb (accordion_amplitude -1 -1)
-rule pcb (accordion_gap -1)
-rule pcb (trombone_run_length -1)
-rule pcb (trombone_gap -1)
-unprotect selected
-smart_route (min_via_grid 0.100000) (min_wire_grid 0.100000) (auto_fanout on) (auto_fanout_via_share on) (auto_fanout_pin_share on) (auto_testpoint off) (auto_miter on)
+write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaag07516.tmp
+quit -c
