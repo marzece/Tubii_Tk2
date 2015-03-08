@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-05T15:16:03</modificationTime>
+    <modificationTime>2015-03-07T19:12:13</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="lo_gen" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>4</instanceid>
-        <netid>31</netid>
-        <insttermid>41</insttermid>
+        <netid>35</netid>
+        <insttermid>48</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -64,6 +63,11 @@
               <id>T11</id>
               <name>le</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T91</id>
+              <name>dgt2</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -318,6 +322,13 @@
               <termid>T11</termid>
               <connections>
                 <connection net="N23" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M48</id>
+              <termid>T91</termid>
+              <connections>
+                <connection net="N28" />
               </connections>
             </pin>
           </pins>

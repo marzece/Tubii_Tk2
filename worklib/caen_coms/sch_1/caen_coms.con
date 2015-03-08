@@ -8,8 +8,8 @@
   (design "caen_coms"
     (lastIds
       (lastInstanceId 27)
-      (lastNetId 113)
-      (lastInstTermId 293)
+      (lastNetId 119)
+      (lastInstTermId 301)
     )
     (cells
       ("S8" "caen_analog_coms" "tubii_tk2_lib" "sym_1"
@@ -67,6 +67,8 @@
       ("N105" "gt_ttl" -1 -1 1 2)
       ("N106" "gt2_n" -1 -1 1 2)
       ("N107" "gt2_p" -1 -1 1 2)
+      ("N118" "sync24_ttl" -1 -1 1 2)
+      ("N119" "sync_ttl" -1 -1 1 2)
       ("N73" "gnd" -1 -1 2  inherited)
       ("N74" "vcc" -1 -1 2  inherited)
       ("vcc15" "vcc15" -1 -1 2  inherited)
@@ -188,8 +190,14 @@
             )
           )
           ("M292" "T212" -1 -1
+            (conn
+              ("0" -1 -1 "N118" -1 -1)
+            )
           )
           ("M293" "T213" -1 -1
+            (conn
+              ("0" -1 -1 "N119" -1 -1)
+            )
           )
         )
       )

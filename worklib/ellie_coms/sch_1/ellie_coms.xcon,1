@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-05T19:43:54</modificationTime>
+    <modificationTime>2015-03-07T19:10:38</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>16</instanceid>
-        <netid>42</netid>
+        <netid>44</netid>
         <insttermid>100</insttermid>
       </lastids>
       <cells>
@@ -406,14 +406,6 @@
           <direction>input</direction>
         </net>
         <net>
-          <id>N37</id>
-          <name>smellie_delay_pulse</name>
-        </net>
-        <net>
-          <id>N39</id>
-          <name>tellie_delay_pulse</name>
-        </net>
-        <net>
           <id>N41</id>
           <name>smellie_delay_out_ttl</name>
           <scope>interface</scope>
@@ -424,6 +416,18 @@
           <name>tellie_delay_out_ttl</name>
           <scope>interface</scope>
           <direction>input</direction>
+        </net>
+        <net>
+          <id>N43</id>
+          <name>smellie_pre_delay_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N44</id>
+          <name>tellie_pre_delay_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N12</id>
@@ -531,14 +535,14 @@
               <id>M10</id>
               <termid>T10</termid>
               <connections>
-                <connection net="N37" />
+                <connection net="N43" />
               </connections>
             </pin>
             <pin>
               <id>M11</id>
               <termid>T11</termid>
               <connections>
-                <connection net="N39" />
+                <connection net="N44" />
               </connections>
             </pin>
             <pin>
@@ -1342,6 +1346,12 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="smellie_pre_delay_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="smellie_pulse_out">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1370,6 +1380,12 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="tellie_pre_delay_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="tellie_pulse">
@@ -1410,16 +1426,16 @@
               <net ref="smellie_delay_buf_p"></net>
               <net ref="smellie_delay_out"></net>
               <net ref="smellie_delay_out_ttl"></net>
-              <net ref="smellie_delay_pulse"></net>
               <net ref="smellie_pre_delay_ecl"></net>
+              <net ref="smellie_pre_delay_ttl"></net>
               <net ref="smellie_pulse_out"></net>
               <net ref="smellile_pulse"></net>
               <net ref="tellie_delay_buf_n"></net>
               <net ref="tellie_delay_buf_p"></net>
               <net ref="tellie_delay_out"></net>
               <net ref="tellie_delay_out_ttl"></net>
-              <net ref="tellie_delay_pulse"></net>
               <net ref="tellie_pre_delay_ecl"></net>
+              <net ref="tellie_pre_delay_ttl"></net>
               <net ref="tellie_pulse"></net>
               <net ref="tellie_pulse_out"></net>
               <net ref="unnamed_1_csmd0603_i10_b"></net>

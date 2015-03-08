@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-03T19:18:37</modificationTime>
+    <modificationTime>2015-03-07T18:48:56</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="default_clk_sel" view="sch_1">
       <lastids>
         <instanceid>21</instanceid>
-        <netid>20</netid>
+        <netid>22</netid>
         <insttermid>102</insttermid>
       </lastids>
       <cells>
@@ -557,8 +557,10 @@
           <name>unnamed_1_rsmd0805_i17_b</name>
         </net>
         <net>
-          <id>N20</id>
-          <name>unnamed_1_sy100el91l_i15_vcc0</name>
+          <id>N22</id>
+          <name>reset_ecl_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N11</id>
@@ -578,6 +580,11 @@
         <net>
           <id>N19</id>
           <name>vtt</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N21</id>
+          <name>v3p3</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -975,12 +982,14 @@
               <id>M46</id>
               <termid>T55</termid>
               <connections>
+                <connection net="N12" />
               </connections>
             </pin>
             <pin>
               <id>M47</id>
               <termid>T56</termid>
               <connections>
+                <connection net="N22" />
               </connections>
             </pin>
             <pin>
@@ -1321,21 +1330,21 @@
               <id>M77</id>
               <termid>T80</termid>
               <connections>
-                <connection net="N20" />
+                <connection net="N21" />
               </connections>
             </pin>
             <pin>
               <id>M78</id>
               <termid>T81</termid>
               <connections>
-                <connection net="N20" />
+                <connection net="N21" />
               </connections>
             </pin>
             <pin>
               <id>M79</id>
               <termid>T82</termid>
               <connections>
-                <connection net="N20" />
+                <connection net="N21" />
               </connections>
             </pin>
             <pin>
@@ -1693,6 +1702,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N21" />
               </connections>
             </pin>
           </pins>
@@ -1819,10 +1829,21 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="reset_ecl_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="tub_clk_in">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="v3p3">
+            <pageScope number="1">
+              <scope>global</scope>
             </pageScope>
           </netScope>
           <netScope ref="vcc">
@@ -1859,10 +1880,11 @@
               <net ref="gnd"></net>
               <net ref="reset"></net>
               <net ref="reset_clk_div_ecl"></net>
+              <net ref="reset_ecl_p"></net>
               <net ref="tub_clk_in"></net>
               <net ref="unnamed_1_rsmd0805_i16_b"></net>
               <net ref="unnamed_1_rsmd0805_i17_b"></net>
-              <net ref="unnamed_1_sy100el91l_i15_vcc0"></net>
+              <net ref="v3p3"></net>
               <net ref="vcc"></net>
               <net ref="vee"></net>
               <net ref="vtt"></net>

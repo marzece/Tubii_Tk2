@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-03T15:17:23</modificationTime>
+    <modificationTime>2015-03-03T16:31:41</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="change_clks" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>10</instanceid>
-        <netid>25</netid>
+        <netid>32</netid>
         <insttermid>76</insttermid>
       </lastids>
       <cells>
@@ -458,6 +457,42 @@
           <direction>input</direction>
         </net>
         <net>
+          <id>N26</id>
+          <name>bckp_clk3_n</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N27</id>
+          <name>bckp_clk3_p</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N28</id>
+          <name>clk100_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N29</id>
+          <name>clk100_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N30</id>
+          <name>clk100_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N32</id>
+          <name>bckp_used</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
           <id>N7</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -651,12 +686,14 @@
               <id>M23</id>
               <termid>T28</termid>
               <connections>
+                <connection net="N28" />
               </connections>
             </pin>
             <pin>
               <id>M24</id>
               <termid>T29</termid>
               <connections>
+                <connection net="N29" />
               </connections>
             </pin>
             <pin>
@@ -877,12 +914,14 @@
               <id>M47</id>
               <termid>T44</termid>
               <connections>
+                <connection net="N27" />
               </connections>
             </pin>
             <pin>
               <id>M48</id>
               <termid>T45</termid>
               <connections>
+                <connection net="N26" />
               </connections>
             </pin>
             <pin>
@@ -983,12 +1022,14 @@
               <id>M60</id>
               <termid>T57</termid>
               <connections>
+                <connection net="N32" />
               </connections>
             </pin>
             <pin>
               <id>M61</id>
               <termid>T58</termid>
               <connections>
+                <connection net="N30" />
               </connections>
             </pin>
             <pin>
@@ -1236,6 +1277,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="bckp_clk2_n">
             <pageScope number="1">
@@ -1249,6 +1291,24 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="bckp_clk3_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="bckp_clk3_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="bckp_used">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="change_clk_n">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1259,6 +1319,24 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk100_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk100_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk100_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="default_clk2_n">
@@ -1296,6 +1374,9 @@
             <nets>
               <net ref="bckp_clk2_n"></net>
               <net ref="bckp_clk2_p"></net>
+              <net ref="bckp_clk3_n"></net>
+              <net ref="bckp_clk3_p"></net>
+              <net ref="bckp_used"></net>
               <net ref="change_clk2_n"></net>
               <net ref="change_clk2_p"></net>
               <net ref="change_clk_n"></net>
@@ -1304,6 +1385,9 @@
               <net ref="chosen_clk2_p"></net>
               <net ref="chosen_clk_n"></net>
               <net ref="chosen_clk_p"></net>
+              <net ref="clk100_n"></net>
+              <net ref="clk100_p"></net>
+              <net ref="clk100_ttl"></net>
               <net ref="default_clk2_n"></net>
               <net ref="default_clk2_p"></net>
               <net ref="gnd"></net>

@@ -8,7 +8,7 @@
   (design "caen_buffer"
     (lastIds
       (lastInstanceId 27)
-      (lastNetId 28)
+      (lastNetId 29)
       (lastInstTermId 66)
     )
     (cells
@@ -91,6 +91,7 @@
       ("N25" "vcc" -1 -1 2 )
       ("N26" "vcc15" -1 -1 2 )
       ("N27" "vcc15m" -1 -1 2 )
+      ("N29" "vtt" -1 -1 2 )
     )
 
     (instances
@@ -521,6 +522,9 @@
       ("I27" "page1_i28" "S7"
         (pins
           ("M65" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N29" -1 -1)
+            )
           )
           ("M66" "T30" -1 -1
             (conn

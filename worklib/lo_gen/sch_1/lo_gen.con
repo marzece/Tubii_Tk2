@@ -8,8 +8,8 @@
   (design "lo_gen"
     (lastIds
       (lastInstanceId 4)
-      (lastNetId 31)
-      (lastInstTermId 42)
+      (lastNetId 35)
+      (lastInstTermId 50)
     )
     (cells
       ("S2" "gt_delays" "tubii_tk2_lib" "sym_1"
@@ -22,7 +22,7 @@
           ("T9" "dgt_p" -1 -1 2)
           ("T10" "gt_ttl" -1 -1 1)
           ("T11" "le" -1 -1 1)
-          ("T69" "dgt2" -1 -1 2)
+          ("T91" "dgt2" -1 -1 2)
         )
       )
       ("S3" "select_lo_src" "tubii_tk2_lib" "sym_1"
@@ -31,6 +31,8 @@
           ("T40" "lo_sel" -1 -1 1)
           ("T41" "mtcd_lo*" -1 -1 1)
           ("T68" "lo_star2" -1 -1 2)
+          ("T92" "lo_star_out_n" -1 -1 2)
+          ("T93" "lo_star_out_p" -1 -1 2)
         )
       )
       ("S4" "rsmd0805" "resistors" "sym_1"
@@ -110,7 +112,7 @@
               ("0" -1 -1 "N23" -1 -1)
             )
           )
-          ("M42" "T69" -1 -1
+          ("M48" "T91" -1 -1
             (conn
               ("0" -1 -1 "N28" -1 -1)
             )
@@ -137,6 +139,16 @@
           ("M41" "T68" -1 -1
             (conn
               ("0" -1 -1 "N29" -1 -1)
+            )
+          )
+          ("M49" "T92" -1 -1
+            (conn
+              ("0" -1 -1 "N30" -1 -1)
+            )
+          )
+          ("M50" "T93" -1 -1
+            (conn
+              ("0" -1 -1 "N31" -1 -1)
             )
           )
         )

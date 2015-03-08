@@ -4,14 +4,14 @@ FILE_TYPE = CONNECTIVITY;
 0"NC";
 1"GND\G";
 2"GND\G";
-3"TELLIE_DELAY_IN";
-4"SMELLIE_DELAY_IN";
-5"TELLIE_PULSE_OUT";
-6"TELLIE_DELAY_OUT";
-7"SMELLIE_DELAY_OUT";
-8"SMELLIE_PULSE_OUT";
-9"GND\G";
-10"GND\G";
+3"GND\G";
+4"GND\G";
+5"SMELLIE_PULSE_OUT";
+6"SMELLIE_DELAY_OUT";
+7"TELLIE_DELAY_OUT";
+8"TELLIE_PULSE_OUT";
+9"SMELLIE_DELAY_IN";
+10"TELLIE_DELAY_IN";
 11"GND\G";
 12"GND\G";
 %"OUTPORT"
@@ -21,70 +21,70 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"3;
+HDL_PORT"OUT"10;
 %"TESTPOINT_L"
 "1","(-600,2400)","0","misc","I10";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"11;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"2;
 %"TESTPOINT_L"
 "1","(-600,2225)","0","misc","I11";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"8;
+"A\NAC \B"5;
 %"TESTPOINT_L"
 "1","(-600,2125)","0","misc","I12";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"9;
+"A\NAC \B"4;
 %"TESTPOINT_L"
 "1","(-600,1975)","0","misc","I13";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"5;
+"A\NAC \B"8;
 %"TESTPOINT_L"
 "1","(-600,1875)","0","misc","I14";
 ;
 CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
-"A\NAC \B"10;
+"A\NAC \B"3;
 %"TESTPOINT_L"
 "1","(-1700,1600)","2","misc","I15";
 ;
 CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
-"A\NAC \B"4;
+"A\NAC \B"9;
 %"TESTPOINT_L"
 "1","(-1700,1500)","2","misc","I16";
 ;
 CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
-"A\NAC \B"2;
+"A\NAC \B"11;
 %"TESTPOINT_L"
 "1","(-1700,1350)","2","misc","I17";
 ;
 CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
-"A\NAC \B"3;
+"A\NAC \B"10;
 %"TESTPOINT_L"
 "1","(-1700,1250)","2","misc","I18";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"1;
+"A\NAC \B"12;
 %"OUTPORT"
 "1","(-100,1600)","0","standard","I2";
 ;
@@ -92,15 +92,15 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"4;
+HDL_PORT"OUT"9;
 %"INPORT"
 "1","(-1825,1975)","0","standard","I3";
 ;
-CDS_LIB"standard"
-OFFPAGE"TRUE";
+OFFPAGE"TRUE"
+CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"5;
+VHDL_PORT"IN"8;
 %"INPORT"
 "1","(-1825,2225)","0","standard","I4";
 ;
@@ -108,7 +108,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"8;
+VHDL_PORT"IN"5;
 %"INPORT"
 "1","(-1825,2500)","0","standard","I5";
 ;
@@ -116,7 +116,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"6;
+HDL_PORT"IN"7;
 %"INPORT"
 "1","(-1850,2750)","0","standard","I6";
 ;
@@ -124,26 +124,26 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"7;
+HDL_PORT"IN"6;
 %"TESTPOINT_L"
 "1","(-600,2750)","0","misc","I7";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"7;
+"A\NAC \B"6;
 %"TESTPOINT_L"
 "1","(-600,2650)","0","misc","I8";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"12;
+"A\NAC \B"1;
 %"TESTPOINT_L"
 "1","(-600,2500)","0","misc","I9";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"6;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"7;
 END.

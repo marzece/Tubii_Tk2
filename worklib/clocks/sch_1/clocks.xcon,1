@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-05T16:20:53</modificationTime>
+    <modificationTime>2015-03-07T18:57:49</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="clocks" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>11</instanceid>
-        <netid>76</netid>
-        <insttermid>175</insttermid>
+        <netid>87</netid>
+        <insttermid>188</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -49,6 +48,11 @@
               <id>T18</id>
               <name>tub_clk_in</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T173</id>
+              <name>reset_ecl_p</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -518,22 +522,6 @@
           <name>page1_unnamed_1_8merge_i14_h</name>
         </net>
         <net>
-          <id>N50</id>
-          <name>unnamed_1_8merge_i14_y</name>
-          <msb>7</msb>
-          <lsb>0</lsb>
-        </net>
-        <net>
-          <id>N51</id>
-          <name>page1_unnamed_1_8merge_i14_y</name>
-          <msb>7</msb>
-          <lsb>0</lsb>
-        </net>
-        <net>
-          <id>N52</id>
-          <name>unnamed_1_faultdetection_i2_datardy</name>
-        </net>
-        <net>
           <id>N57</id>
           <name>unnamed_1_changeclks_i3_bckpclk2n</name>
         </net>
@@ -608,6 +596,28 @@
           <direction>input</direction>
         </net>
         <net>
+          <id>N84</id>
+          <name>count_data_ecl</name>
+          <msb>7</msb>
+          <lsb>0</lsb>
+        </net>
+        <net>
+          <id>N85</id>
+          <name>page1_count_data_ecl</name>
+          <msb>7</msb>
+          <lsb>0</lsb>
+        </net>
+        <net>
+          <id>N86</id>
+          <name>data_rdy</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N87</id>
+          <name>unnamed_1_defaultclksel_i1_reseteclp</name>
+        </net>
+        <net>
           <id>gnd</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -644,15 +654,15 @@
         <alias net1="N45" lsb1="-1" msb1="-1" net2="N44" lsb2="-1" msb2="-1" />
         <alias net1="N47" lsb1="-1" msb1="-1" net2="N46" lsb2="-1" msb2="-1" />
         <alias net1="N49" lsb1="-1" msb1="-1" net2="N48" lsb2="-1" msb2="-1" />
-        <alias net1="N51" lsb1="7" msb1="7" net2="N35" lsb2="-1" msb2="-1" />
-        <alias net1="N51" lsb1="6" msb1="6" net2="N37" lsb2="-1" msb2="-1" />
-        <alias net1="N51" lsb1="5" msb1="5" net2="N39" lsb2="-1" msb2="-1" />
-        <alias net1="N51" lsb1="4" msb1="4" net2="N41" lsb2="-1" msb2="-1" />
-        <alias net1="N51" lsb1="3" msb1="3" net2="N43" lsb2="-1" msb2="-1" />
-        <alias net1="N51" lsb1="2" msb1="2" net2="N45" lsb2="-1" msb2="-1" />
-        <alias net1="N51" lsb1="1" msb1="1" net2="N47" lsb2="-1" msb2="-1" />
-        <alias net1="N51" lsb1="0" msb1="0" net2="N49" lsb2="-1" msb2="-1" />
-        <alias net1="N51" lsb1="0" msb1="7" net2="N50" lsb2="0" msb2="7" />
+        <alias net1="N85" lsb1="0" msb1="0" net2="N35" lsb2="-1" msb2="-1" />
+        <alias net1="N85" lsb1="1" msb1="1" net2="N37" lsb2="-1" msb2="-1" />
+        <alias net1="N85" lsb1="2" msb1="2" net2="N39" lsb2="-1" msb2="-1" />
+        <alias net1="N85" lsb1="3" msb1="3" net2="N41" lsb2="-1" msb2="-1" />
+        <alias net1="N85" lsb1="4" msb1="4" net2="N43" lsb2="-1" msb2="-1" />
+        <alias net1="N85" lsb1="5" msb1="5" net2="N45" lsb2="-1" msb2="-1" />
+        <alias net1="N85" lsb1="6" msb1="6" net2="N47" lsb2="-1" msb2="-1" />
+        <alias net1="N85" lsb1="7" msb1="7" net2="N49" lsb2="-1" msb2="-1" />
+        <alias net1="N85" lsb1="0" msb1="7" net2="N84" lsb2="0" msb2="7" />
       </aliases>
       <differentialnets>
       </differentialnets>
@@ -709,6 +719,13 @@
                 <connection net="N71" />
               </connections>
             </pin>
+            <pin>
+              <id>M188</id>
+              <termid>T173</termid>
+              <connections>
+                <connection net="N87" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -741,12 +758,14 @@
               <id>M47</id>
               <termid>T36</termid>
               <connections>
+                <connection net="N87" />
               </connections>
             </pin>
             <pin>
               <id>M48</id>
               <termid>T37</termid>
               <connections>
+                <connection net="N70" />
               </connections>
             </pin>
             <pin>
@@ -762,7 +781,7 @@
               <msb>7</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="7" pinlsb="0" net="N50" netmsb="0" netlsb="7" />
+                <connection pinmsb="7" pinlsb="0" net="N84" netmsb="7" netlsb="0" />
               </connections>
             </pin>
             <pin>
@@ -825,7 +844,7 @@
               <id>M162</id>
               <termid>T143</termid>
               <connections>
-                <connection net="N52" />
+                <connection net="N86" />
               </connections>
             </pin>
           </pins>
@@ -979,6 +998,7 @@
               <id>M66</id>
               <termid>T62</termid>
               <connections>
+                <connection net="vcc" />
               </connections>
             </pin>
             <pin>
@@ -1515,7 +1535,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="bckp_used">
             <pageScope number="1">
@@ -1548,6 +1567,12 @@
             </pageScope>
           </netScope>
           <netScope ref="data">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="data_rdy">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
@@ -1596,14 +1621,19 @@
         <pages>
           <page number="1">
             <physicalPageNumber>1</physicalPageNumber>
-            <errorStatus>true</errorStatus>
+            <errorStatus>false</errorStatus>
             <nets>
               <net ref="bckp_used"></net>
               <net ref="clk100_n"></net>
               <net ref="clk100_p"></net>
               <net ref="clk100_ttl"></net>
               <net ref="clk_sel"></net>
+              <net ref="count_data_ecl">
+                <msb>7</msb>
+                <lsb>0</lsb>
+              </net>
               <net ref="data"></net>
+              <net ref="data_rdy"></net>
               <net ref="gnd"></net>
               <net ref="le"></net>
               <net ref="reset"></net>
@@ -1625,10 +1655,6 @@
               <net ref="unnamed_1_8merge_i14_f"></net>
               <net ref="unnamed_1_8merge_i14_g"></net>
               <net ref="unnamed_1_8merge_i14_h"></net>
-              <net ref="unnamed_1_8merge_i14_y">
-                <msb>7</msb>
-                <lsb>0</lsb>
-              </net>
               <net ref="unnamed_1_changeclks_i3_bckpclk2n"></net>
               <net ref="unnamed_1_changeclks_i3_bckpclk2p"></net>
               <net ref="unnamed_1_changeclks_i3_bckpclk3n"></net>
@@ -1639,7 +1665,7 @@
               <net ref="unnamed_1_changeclks_i3_defaultclk2p"></net>
               <net ref="unnamed_1_defaultclksel_i1_bckpclk"></net>
               <net ref="unnamed_1_defaultclksel_i1_defaultclk"></net>
-              <net ref="unnamed_1_faultdetection_i2_datardy"></net>
+              <net ref="unnamed_1_defaultclksel_i1_reseteclp"></net>
               <net ref="vcc"></net>
               <net ref="vee"></net>
             </nets>

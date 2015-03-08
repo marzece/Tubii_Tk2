@@ -5,14 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-05T11:43:27</modificationTime>
+    <modificationTime>2015-03-07T19:01:21</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecl_translation" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>23</instanceid>
-        <netid>36</netid>
+        <netid>42</netid>
         <insttermid>110</insttermid>
       </lastids>
       <cells>
@@ -585,18 +586,6 @@
           <direction>input</direction>
         </net>
         <net>
-          <id>N11</id>
-          <name>lvds_to_ecl_out_n</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
-          <id>N12</id>
-          <name>lvds_to_ecl_out_p</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
           <id>N13</id>
           <name>nim_to_ecl_in</name>
           <scope>interface</scope>
@@ -613,18 +602,6 @@
           <name>ttl_to_ecl_in</name>
           <scope>interface</scope>
           <direction>input</direction>
-        </net>
-        <net>
-          <id>N16</id>
-          <name>ttl_to_ecl_out_n</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
-          <id>N17</id>
-          <name>ttl_to_ecl_out_p</name>
-          <scope>interface</scope>
-          <direction>output</direction>
         </net>
         <net>
           <id>N18</id>
@@ -693,6 +670,30 @@
         <net>
           <id>N34</id>
           <name>unnamed_1_rsmd0805_i20_a</name>
+        </net>
+        <net>
+          <id>N39</id>
+          <name>lvds_to_ecl_out_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N40</id>
+          <name>lvds_to_ecl_out_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N41</id>
+          <name>ttl_to_ecl_out_n</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N42</id>
+          <name>ttl_to_ecl_out_p</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N8</id>
@@ -947,14 +948,14 @@
               <id>M22</id>
               <termid>T33</termid>
               <connections>
-                <connection net="N17" />
+                <connection net="N42" />
               </connections>
             </pin>
             <pin>
               <id>M23</id>
               <termid>T34</termid>
               <connections>
-                <connection net="N16" />
+                <connection net="N41" />
               </connections>
             </pin>
             <pin>
@@ -968,14 +969,14 @@
               <id>M25</id>
               <termid>T36</termid>
               <connections>
-                <connection net="N12" />
+                <connection net="N40" />
               </connections>
             </pin>
             <pin>
               <id>M26</id>
               <termid>T37</termid>
               <connections>
-                <connection net="N11" />
+                <connection net="N39" />
               </connections>
             </pin>
             <pin>

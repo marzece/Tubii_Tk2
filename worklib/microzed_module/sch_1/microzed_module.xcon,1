@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T18:04:46</modificationTime>
+    <modificationTime>2015-03-07T18:50:28</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>3</instanceid>
-        <netid>47</netid>
+        <netid>51</netid>
         <insttermid>306</insttermid>
       </lastids>
       <cells>
@@ -754,6 +754,30 @@
         <net>
           <id>N47</id>
           <name>generic_pulse</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N48</id>
+          <name>generic_delay_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N49</id>
+          <name>read_cntrl_reg_bit</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N50</id>
+          <name>bckp_clk_in_use</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N51</id>
+          <name>reset_clk</name>
           <scope>interface</scope>
           <direction>output</direction>
         </net>
@@ -1624,6 +1648,7 @@
               <id>M222</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N48" />
               </connections>
             </pin>
             <pin>
@@ -1636,6 +1661,7 @@
               <id>M224</id>
               <termid>T20</termid>
               <connections>
+                <connection net="N49" />
               </connections>
             </pin>
             <pin>
@@ -1662,6 +1688,7 @@
               <id>M228</id>
               <termid>T24</termid>
               <connections>
+                <connection net="N50" />
               </connections>
             </pin>
             <pin>
@@ -1674,6 +1701,7 @@
               <id>M230</id>
               <termid>T26</termid>
               <connections>
+                <connection net="N51" />
               </connections>
             </pin>
             <pin>
@@ -2178,8 +2206,13 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
+          <netScope ref="bckp_clk_in_use">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="caen_data_rdy">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2234,6 +2267,12 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="generic_delay_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="generic_pulse">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2258,6 +2297,18 @@
             </pageScope>
           </netScope>
           <netScope ref="mtca_mimic_data_rdy">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="read_cntrl_reg_bit">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="reset_clk">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
@@ -2345,6 +2396,7 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
+              <net ref="bckp_clk_in_use"></net>
               <net ref="caen_data_rdy"></net>
               <net ref="carrier_srst#"></net>
               <net ref="clk"></net>
@@ -2359,6 +2411,7 @@
               </net>
               <net ref="fpga_done"></net>
               <net ref="generic_delay_in"></net>
+              <net ref="generic_delay_out"></net>
               <net ref="generic_pulse"></net>
               <net ref="gnd"></net>
               <net ref="gpio0"></net>
@@ -2382,6 +2435,8 @@
                 <lsb>0</lsb>
               </net>
               <net ref="mtca_mimic_data_rdy"></net>
+              <net ref="read_cntrl_reg_bit"></net>
+              <net ref="reset_clk"></net>
               <net ref="scaler">
                 <msb>6</msb>
                 <lsb>4</lsb>

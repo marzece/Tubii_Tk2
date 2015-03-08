@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 13 )
+			( logicalViewRevNum 15 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -482,6 +482,7 @@
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):vtt"
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):vtt") )
+				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vtt") )
 				( objectStatus "vtt" )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i2@tubii_tk2_lib.ribbon_delay(sch_1):vtt"
@@ -609,6 +610,9 @@
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out") )
 				( objectStatus "lvds_to_ecl_out" )
 			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):vtt"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):ttl_to_ecl_out"
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out") )
 				( objectStatus "ttl_to_ecl_out" )
@@ -653,14 +657,6 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):unnamed_1_mc10e116_i22_q2"
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):unnamed_1_mpsh81_i17_c"
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):unnamed_1_rsmd0805_i20_a"
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):ecl_to_lvds_in"
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ecl_to_lvds_in") )
@@ -709,6 +705,12 @@
 			( signal "@tubii_tk2_lib.general_utilities(sch_1):ttl_to_ecl_in"
 				( alias ( signalRef "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_in") )
 				( objectStatus "ttl_to_ecl_in" )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out"
+				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -6550,7 +6552,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "pulse_inverter"
@@ -6965,7 +6967,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "ribbon_delay"
@@ -8406,7 +8408,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "generic_delays"
@@ -9464,7 +9466,7 @@
 	( BaseCopy "ecl_translation"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 5 )
+				( logicalViewRevNum 9 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -9566,20 +9568,20 @@
 			( signal "@tubii_tk2_lib.ecl_translation(sch_1):unnamed_1_mpsh81_i17_c"
 				( objectStatus "unnamed_1_mpsh81_i17_c" )
 			)
-			( signal "@tubii_tk2_lib.ecl_translation(sch_1):unnamed_1_rsmd0805_i20_a"
-				( objectStatus "unnamed_1_rsmd0805_i20_a" )
-			)
 			( signal "@tubii_tk2_lib.ecl_translation(sch_1):vcc"
 				( objectStatus "vcc" )
 			)
 			( signal "@tubii_tk2_lib.ecl_translation(sch_1):vee"
 				( objectStatus "vee" )
 			)
-			( signal "@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out"
-				( objectStatus "lvds_to_ecl_out" )
+			( signal "@tubii_tk2_lib.ecl_translation(sch_1):vtt"
+				( objectStatus "vtt" )
 			)
 			( signal "@tubii_tk2_lib.ecl_translation(sch_1):ttl_to_ecl_out"
 				( objectStatus "ttl_to_ecl_out" )
+			)
+			( signal "@tubii_tk2_lib.ecl_translation(sch_1):lvds_to_ecl_out"
+				( objectStatus "lvds_to_ecl_out" )
 			)
 			( gate "@tubii_tk2_lib.ecl_translation(sch_1):page1_i7"
 				( attribute "CDS_LIB" "capacitors"

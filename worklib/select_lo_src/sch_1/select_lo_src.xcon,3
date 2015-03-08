@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-28T18:35:41</modificationTime>
+    <modificationTime>2015-02-28T18:38:55</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="select_lo_src" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>29</instanceid>
-        <netid>35</netid>
+        <netid>36</netid>
         <insttermid>126</insttermid>
       </lastids>
       <cells>
@@ -496,6 +495,10 @@
           <name>unnamed_1_mc10e116_i2_q0</name>
         </net>
         <net>
+          <id>N36</id>
+          <name>lo_star_raw</name>
+        </net>
+        <net>
           <id>N2</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -669,6 +672,7 @@
               <id>M19</id>
               <termid>T19</termid>
               <connections>
+                <connection net="N36" />
               </connections>
             </pin>
             <pin>
@@ -1080,12 +1084,14 @@
               <id>M103</id>
               <termid>T64</termid>
               <connections>
+                <connection net="N36" />
               </connections>
             </pin>
             <pin>
               <id>M104</id>
               <termid>T65</termid>
               <connections>
+                <connection net="N36" />
               </connections>
             </pin>
             <pin>
@@ -1340,6 +1346,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N36" />
               </connections>
             </pin>
           </pins>
@@ -1522,7 +1529,7 @@
         <pages>
           <page number="1">
             <physicalPageNumber>1</physicalPageNumber>
-            <errorStatus>true</errorStatus>
+            <errorStatus>false</errorStatus>
             <nets>
               <net ref="ddgt*"></net>
               <net ref="gnd"></net>
@@ -1531,6 +1538,7 @@
               <net ref="lo_sel"></net>
               <net ref="lo_sel_ecl_n"></net>
               <net ref="lo_sel_ecl_p"></net>
+              <net ref="lo_star_raw"></net>
               <net ref="mtcd_lo*"></net>
               <net ref="unnamed_1_csmd0603_i6_a"></net>
               <net ref="unnamed_1_csmd0603_i6_b"></net>

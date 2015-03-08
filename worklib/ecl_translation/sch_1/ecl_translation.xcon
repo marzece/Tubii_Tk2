@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-05T12:44:05</modificationTime>
+    <modificationTime>2015-03-07T19:07:42</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecl_translation" view="sch_1">
       <lastids>
         <instanceid>23</instanceid>
-        <netid>38</netid>
+        <netid>45</netid>
         <insttermid>110</insttermid>
       </lastids>
       <cells>
@@ -667,17 +667,13 @@
           <name>unnamed_1_mpsh81_i17_c</name>
         </net>
         <net>
-          <id>N34</id>
-          <name>unnamed_1_rsmd0805_i20_a</name>
-        </net>
-        <net>
-          <id>N37</id>
+          <id>N44</id>
           <name>lvds_to_ecl_out</name>
           <scope>interface</scope>
           <direction>output</direction>
         </net>
         <net>
-          <id>N38</id>
+          <id>N45</id>
           <name>ttl_to_ecl_out</name>
           <scope>interface</scope>
           <direction>output</direction>
@@ -695,6 +691,11 @@
         <net>
           <id>N36</id>
           <name>vee</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N43</id>
+          <name>vtt</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -935,7 +936,7 @@
               <id>M22</id>
               <termid>T33</termid>
               <connections>
-                <connection net="N38" />
+                <connection net="N45" />
               </connections>
             </pin>
             <pin>
@@ -955,7 +956,7 @@
               <id>M25</id>
               <termid>T36</termid>
               <connections>
-                <connection net="N37" />
+                <connection net="N44" />
               </connections>
             </pin>
             <pin>
@@ -1425,7 +1426,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N34" />
+                <connection pinmsb="0" pinlsb="0" net="N43" />
               </connections>
             </pin>
             <pin>
@@ -1715,7 +1716,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N34" />
+                <connection pinmsb="0" pinlsb="0" net="N43" />
               </connections>
             </pin>
             <pin>
@@ -1754,7 +1755,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N34" />
+                <connection pinmsb="0" pinlsb="0" net="N43" />
               </connections>
             </pin>
             <pin>
@@ -1793,7 +1794,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N34" />
+                <connection pinmsb="0" pinlsb="0" net="N43" />
               </connections>
             </pin>
             <pin>
@@ -1832,7 +1833,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N34" />
+                <connection pinmsb="0" pinlsb="0" net="N43" />
               </connections>
             </pin>
             <pin>
@@ -1871,7 +1872,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N34" />
+                <connection pinmsb="0" pinlsb="0" net="N43" />
               </connections>
             </pin>
             <pin>
@@ -1910,7 +1911,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N34" />
+                <connection pinmsb="0" pinlsb="0" net="N43" />
               </connections>
             </pin>
             <pin>
@@ -1949,7 +1950,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N34" />
+                <connection pinmsb="0" pinlsb="0" net="N43" />
               </connections>
             </pin>
             <pin>
@@ -2018,6 +2019,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="ecl_to_lvds_in">
             <pageScope number="1">
@@ -2118,6 +2120,11 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="vtt">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
         </netScopes>
         <pages>
           <page number="1">
@@ -2155,9 +2162,9 @@
               <net ref="unnamed_1_mc10e116_i22_q1_1"></net>
               <net ref="unnamed_1_mc10e116_i22_q2"></net>
               <net ref="unnamed_1_mpsh81_i17_c"></net>
-              <net ref="unnamed_1_rsmd0805_i20_a"></net>
               <net ref="vcc"></net>
               <net ref="vee"></net>
+              <net ref="vtt"></net>
             </nets>
             <instances>
               <instance ref="i7"></instance>

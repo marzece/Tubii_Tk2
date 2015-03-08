@@ -8,7 +8,7 @@
   (design "microzed_module"
     (lastIds
       (lastInstanceId 3)
-      (lastNetId 49)
+      (lastNetId 51)
       (lastInstTermId 306)
     )
     (cells
@@ -164,6 +164,8 @@
       ("N47" "generic_pulse" -1 -1 1 2)
       ("N48" "generic_delay_out" -1 -1 1 2)
       ("N49" "read_cntrl_reg_bit" -1 -1 1 2)
+      ("N50" "bckp_clk_in_use" -1 -1 1 1)
+      ("N51" "reset_clk" -1 -1 1 2)
       ("N23" "v3p3" -1 -1 2 )
       ("N24" "vcc" -1 -1 2 )
       ("N27" "gnd" -1 -1 2 )
@@ -709,10 +711,16 @@
           ("M227" "T23" -1 -1
           )
           ("M228" "T24" -1 -1
+            (conn
+              ("0" -1 -1 "N50" -1 -1)
+            )
           )
           ("M229" "T25" -1 -1
           )
           ("M230" "T26" -1 -1
+            (conn
+              ("0" -1 -1 "N51" -1 -1)
+            )
           )
           ("M231" "T27" -1 -1
             (conn

@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-28T15:16:19</modificationTime>
+    <modificationTime>2015-03-07T19:12:11</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="gt_delays" view="sch_1">
       <lastids>
         <instanceid>32</instanceid>
-        <netid>41</netid>
+        <netid>43</netid>
         <insttermid>176</insttermid>
       </lastids>
       <cells>
@@ -559,6 +559,12 @@
           <name>ddgt_bits</name>
         </net>
         <net>
+          <id>N43</id>
+          <name>dgt2</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
           <id>N2</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -978,12 +984,14 @@
               <id>M113</id>
               <termid>T67</termid>
               <connections>
+                <connection net="N26" />
               </connections>
             </pin>
             <pin>
               <id>M114</id>
               <termid>T68</termid>
               <connections>
+                <connection net="N43" />
               </connections>
             </pin>
             <pin>
@@ -1602,6 +1610,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="clk">
             <pageScope number="1">
@@ -1622,6 +1631,12 @@
             </pageScope>
           </netScope>
           <netScope ref="ddgt_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="dgt2">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
@@ -1678,6 +1693,7 @@
               <net ref="ddgt_n"></net>
               <net ref="ddgt_p"></net>
               <net ref="ddgt_ttl"></net>
+              <net ref="dgt2"></net>
               <net ref="dgt_n"></net>
               <net ref="dgt_p"></net>
               <net ref="dgt_ttl"></net>

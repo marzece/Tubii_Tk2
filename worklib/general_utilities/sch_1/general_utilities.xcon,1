@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-05T12:04:10</modificationTime>
+    <modificationTime>2015-03-07T19:01:22</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="general_utilities" view="sch_1">
       <lastids>
         <instanceid>5</instanceid>
-        <netid>59</netid>
-        <insttermid>99</insttermid>
+        <netid>65</netid>
+        <insttermid>116</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -145,16 +145,6 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T70</id>
-              <name>lvds_to_ecl_out_n</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T71</id>
-              <name>lvds_to_ecl_out_p</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T72</id>
               <name>ttl_to_ecl_in</name>
               <direction>input</direction>
@@ -187,16 +177,6 @@
             <term>
               <id>T106</id>
               <name>nim_to_ecl_out</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T107</id>
-              <name>ttl_to_ecl_out_n</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T108</id>
-              <name>ttl_to_ecl_out_p</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -336,18 +316,6 @@
           <direction>input</direction>
         </net>
         <net>
-          <id>N53</id>
-          <name>lvds_to_ecl_out_n</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
-          <id>N54</id>
-          <name>lvds_to_ecl_out_p</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
           <id>N55</id>
           <name>nim_to_ecl_in</name>
           <scope>interface</scope>
@@ -366,14 +334,14 @@
           <direction>input</direction>
         </net>
         <net>
-          <id>N58</id>
-          <name>ttl_to_ecl_out_n</name>
+          <id>N60</id>
+          <name>lvds_to_ecl_out</name>
           <scope>interface</scope>
           <direction>output</direction>
         </net>
         <net>
-          <id>N59</id>
-          <name>ttl_to_ecl_out_p</name>
+          <id>N61</id>
+          <name>ttl_to_ecl_out</name>
           <scope>interface</scope>
           <direction>output</direction>
         </net>
@@ -614,20 +582,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M78</id>
-              <termid>T70</termid>
-              <connections>
-                <connection net="N53" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M79</id>
-              <termid>T71</termid>
-              <connections>
-                <connection net="N54" />
-              </connections>
-            </pin>
-            <pin>
               <id>M80</id>
               <termid>T72</termid>
               <connections>
@@ -676,20 +630,6 @@
                 <connection net="N56" />
               </connections>
             </pin>
-            <pin>
-              <id>M98</id>
-              <termid>T107</termid>
-              <connections>
-                <connection net="N58" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M99</id>
-              <termid>T108</termid>
-              <connections>
-                <connection net="N59" />
-              </connections>
-            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -708,7 +648,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="clk">
             <pageScope number="1">
@@ -806,13 +745,7 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
-          <netScope ref="lvds_to_ecl_out_n">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>output</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="lvds_to_ecl_out_p">
+          <netScope ref="lvds_to_ecl_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
@@ -872,13 +805,7 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
-          <netScope ref="ttl_to_ecl_out_n">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>output</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="ttl_to_ecl_out_p">
+          <netScope ref="ttl_to_ecl_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
@@ -906,8 +833,7 @@
               <net ref="le"></net>
               <net ref="lvds_to_ecl_in_n"></net>
               <net ref="lvds_to_ecl_in_p"></net>
-              <net ref="lvds_to_ecl_out_n"></net>
-              <net ref="lvds_to_ecl_out_p"></net>
+              <net ref="lvds_to_ecl_out"></net>
               <net ref="nim_to_ecl_in"></net>
               <net ref="nim_to_ecl_out"></net>
               <net ref="pulse_inv_in"></net>
@@ -917,8 +843,7 @@
               <net ref="ribbon_pulse_out_n"></net>
               <net ref="ribbon_pulse_out_p"></net>
               <net ref="ttl_to_ecl_in"></net>
-              <net ref="ttl_to_ecl_out_n"></net>
-              <net ref="ttl_to_ecl_out_p"></net>
+              <net ref="ttl_to_ecl_out"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>

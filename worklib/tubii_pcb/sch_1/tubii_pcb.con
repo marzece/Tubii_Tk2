@@ -8,8 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 16)
-      (lastNetId 214)
-      (lastInstTermId 619)
+      (lastNetId 226)
+      (lastInstTermId 681)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -40,15 +40,23 @@
           ("T730" "generic_pulse" -1 -1 2)
           ("T731" "generic_delay_out" -1 -1 2)
           ("T732" "read_cntrl_reg_bit" -1 -1 2)
+          ("T858" "bckp_clk_in_use" -1 -1 1)
+          ("T865" "reset_clk" -1 -1 2)
         )
       )
       ("S3" "clocks" "tubii_tk2_lib" "sym_1"
         (terms
           ("T306" "clk100_p" -1 -1 2)
           ("T307" "clk100_ttl" -1 -1 2)
-          ("T308" "tub_clk_in" -1 -1 2)
+          ("T308" "tub_clk_in" -1 -1 1)
           ("T503" "clk_sel" -1 -1 1)
-          ("T506" "data_rdy" -1 -1 1)
+          ("T859" "bckp_used" -1 -1 2)
+          ("T860" "clk100_n" -1 -1 2)
+          ("T861" "data" -1 -1 1)
+          ("T862" "le" -1 -1 1)
+          ("T863" "sr_clk" -1 -1 1)
+          ("T864" "data_rdy" -1 -1 1)
+          ("T866" "reset" -1 -1 1)
         )
       )
       ("S5" "general_utilities" "tubii_tk2_lib" "sym_1"
@@ -132,6 +140,7 @@
           ("T580" "tellie_delay_out_ttl" -1 -1 1)
           ("T581" "smellie_pre_delay_ttl" -1 -1 2)
           ("T582" "tellie_pre_delay_ttl" -1 -1 2)
+          ("T867" "smellie_pulse" -1 -1 1)
         )
       )
       ("S11" "cntrl_register" "tubii_tk2_lib" "sym_1"
@@ -209,7 +218,7 @@
       ("S17" "ext_trigs" "tubii_tk2_lib" "sym_1"
         (terms
           ("T514" "ext_trig_in" 15 0 1)
-          ("T515" "ext_trig_out" 15 0 1)
+          ("T515" "ext_trig_out" 15 0 2)
         )
       )
     )
@@ -241,7 +250,6 @@
       ("N101" "le_gen_utils" -1 -1 0 )
       ("N102" "le_gt_delays" -1 -1 0 )
       ("N103" "le_mtca_mimic" -1 -1 0 )
-      ("N104" "pulse_inv_n" -1 -1 1 1)
       ("N105" "pulse_inv_out" -1 -1 1 2)
       ("N106" "ribbon_pulse_in_n" -1 -1 1 1)
       ("N107" "ribbon_pulse_in_p" -1 -1 1 1)
@@ -313,6 +321,9 @@
       ("N204" "mtca_mimi2_pulse_anal" -1 -1 1 1)
       ("N205" "mtca_mimic1_pulse_anal" -1 -1 1 1)
       ("N214" "tubii_rt_out" -1 -1 1 2)
+      ("N223" "pulse_inv_in" -1 -1 1 1)
+      ("N224" "unnamed_1_clocks_i2_bckpused" -1 -1 0 )
+      ("N225" "le_clks" -1 -1 0 )
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2  inherited)
@@ -458,6 +469,13 @@
               ("0" -1 -1 "N155" -1 -1)
             )
           )
+          ("M672" "T858" -1 -1
+            (conn
+              ("0" -1 -1 "N224" -1 -1)
+            )
+          )
+          ("M679" "T865" -1 -1
+          )
         )
       )
       ("I2" "page1_i2" "S3"
@@ -482,10 +500,37 @@
               ("0" -1 -1 "N150" -1 -1)
             )
           )
-          ("M499" "T506" -1 -1
+          ("M673" "T859" -1 -1
+            (conn
+              ("0" -1 -1 "N224" -1 -1)
+            )
+          )
+          ("M674" "T860" -1 -1
+            (conn
+              ("0" -1 -1 "N157" -1 -1)
+            )
+          )
+          ("M675" "T861" -1 -1
+            (conn
+              ("0" -1 -1 "N88" -1 -1)
+            )
+          )
+          ("M676" "T862" -1 -1
+            (conn
+              ("0" -1 -1 "N225" -1 -1)
+            )
+          )
+          ("M677" "T863" -1 -1
+            (conn
+              ("0" -1 -1 "N87" -1 -1)
+            )
+          )
+          ("M678" "T864" -1 -1
             (conn
               ("0" -1 -1 "N159" -1 -1)
             )
+          )
+          ("M680" "T866" -1 -1
           )
         )
       )
@@ -518,7 +563,7 @@
           )
           ("M94" "T94" -1 -1
             (conn
-              ("0" -1 -1 "N104" -1 -1)
+              ("0" -1 -1 "N223" -1 -1)
             )
           )
           ("M96" "T96" -1 -1
@@ -761,10 +806,12 @@
           ("M527" "T537" -1 -1
             (conn
               ("0" -1 -1 "N196" -1 -1)
+              ("0" -1 -1 "N196" -1 -1)
             )
           )
           ("M528" "T538" -1 -1
             (conn
+              ("0" -1 -1 "N197" -1 -1)
               ("0" -1 -1 "N197" -1 -1)
             )
           )
@@ -825,6 +872,11 @@
           ("M539" "T582" -1 -1
             (conn
               ("0" -1 -1 "N202" -1 -1)
+            )
+          )
+          ("M681" "T867" -1 -1
+            (conn
+              ("0" -1 -1 "N200" -1 -1)
             )
           )
         )
@@ -1085,6 +1137,9 @@
             )
           )
           ("M487" "T493" -1 -1
+            (conn
+              ("0" -1 -1 "N225" -1 -1)
+            )
           )
           ("M488" "T494" -1 -1
           )
