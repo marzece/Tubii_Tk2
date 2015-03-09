@@ -2,20 +2,20 @@
 (                                                                     )
 (    PLACEMENT LOG                                                    )
 (                                                                     )
-(    Drawing          : BSTPLC.brd                                    )
+(    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sun Mar 08 19:15:18 2015                      )
+(    Date/Time        : Sun Mar 08 19:49:24 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
 
- Autoplace BSTPLC.brd 
- Save as BSTPLC.brd 
+ Autoplace C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V3.brd 
+ Save as C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V3.brd 
 
  Will search while getting acceptable improvement
  Will not scale complete graph edges
- Start time Sun Mar 08 19:15:18 2015
+ Start time Sun Mar 08 19:49:24 2015
 
 
  
@@ -72,9 +72,9 @@ ACTIVE ROOMS:
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
-(    Drawing          : BSTPLC.brd                                    )
+(    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sun Mar 08 19:15:18 2015                      )
+(    Date/Time        : Sun Mar 08 19:49:24 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -97,6 +97,8 @@ Report methodology:
   ------------------------------------------------------------------------------------------
   UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (12000.0 8175.0) to *(12375.0 7850.0)
   UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (11950.0 8225.0) to *(12375.0 7900.0)
+  UNNAMED_1_FRONTPORTS_I2_GTP TOP                    205.3      (5250.0 8520.0) to *(5128.6 8675.0)
+  UNNAMED_1_FRONTPORTS_I2_GTN TOP                     70.7      (5157.5 8575.0) to *(5107.5 8625.0)
   UNNAMED_1_FRONTPORTS_I2_GENER_2 TOP                    168.0     *(11593.0 8718.0) to  (11593.0 8550.0)
   UNNAMED_1_FRONTPORTS_I2_GENER_1 TOP                    185.7      (11450.0 7865.0) to *(11500.0 7700.0)
   UNNAMED_1_CNTRLREGISTER_I10_ECA TOP                    205.0      (4070.0 10650.0) to *(4275.0 10650.0)
@@ -116,6 +118,8 @@ Report methodology:
   VTT                  VIA                  (9275.0 9800.0)  TOP/BOTTOM 
   VTT                  VIA                  (3800.0 9825.0)  TOP/BOTTOM 
   VTT                  VIA                  (3850.0 9900.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5725.0 8400.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5775.0 7900.0)  TOP/BOTTOM 
   VTT                  VIA                  (8450.0 10475.0) TOP/BOTTOM 
   VTT                  VIA                  (8950.0 10450.0) TOP/BOTTOM 
   VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
@@ -140,6 +144,8 @@ Report methodology:
   VTT                  VIA                  (9275.0 9800.0)  TOP/BOTTOM 
   VTT                  VIA                  (3800.0 9825.0)  TOP/BOTTOM 
   VTT                  VIA                  (3850.0 9900.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5725.0 8400.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5775.0 7900.0)  TOP/BOTTOM 
   VTT                  VIA                  (8450.0 10475.0) TOP/BOTTOM 
   VTT                  VIA                  (8950.0 10450.0) TOP/BOTTOM 
   VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
@@ -158,36 +164,36 @@ Report methodology:
   GND                  VIA                  (11225.0 12475.0) TOP/BOTTOM 
 
 << Summary >>
-  Total dangling lines:      13
-  Total dangling vias:       19
-  Total antenna vias:        19
+  Total dangling lines:      15
+  Total dangling vias:       21
+  Total antenna vias:        21
 
     Layout Statistics:
     -----------------
-        Components:  Placed 107  Unplaced 772  Total 879
-        Nets:  W/Rats 680  No/Rats 1  Total 681
-        Pins:  W/Rats 440  No/Rats 0  Unused 112  Unplaced 2815  Total 3367
+        Components:  Placed 128  Unplaced 753  Total 881
+        Nets:  W/Rats 679  No/Rats 1  Total 680
+        Pins:  W/Rats 523  No/Rats 0  Unused 122  Unplaced 2726  Total 3371
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
         Layout area (sq in) 231.04
         Layout density (sq in/EIC) 0.963
-        Pin density (Pins/sq in) 14.573
+        Pin density (Pins/sq in) 14.591
         Average ratlength (in)  0.5
-        Rat density (in/sq in) 0.595
+        Rat density (in/sq in) 0.728
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                310           0          310
-        Already Connected          159           0          159
-        Missing Connections        151           0          151
-        Dangling Connections                                 13
-        Connection Completion       51.29%       0.00%       51.29%
-        Manh Distance (inches)     137.47
-        Etch Length (inches)        89.87        0.00        89.87
-        Number of vias		    88           0           88
+        Connections                372           0          372
+        Already Connected          173           0          173
+        Missing Connections        199           0          199
+        Dangling Connections                                 15
+        Connection Completion       46.51%       0.00%       46.51%
+        Manh Distance (inches)     168.12
+        Etch Length (inches)        96.50        0.00        96.50
+        Number of vias		    96           0           96
         Vias per Connection          0.55        0.00         0.55
-        Smd pins with attached clines                       233
+        Smd pins with attached clines                       257
 
 
  Starting Connection Matrix construction.
@@ -196,32 +202,15 @@ Report methodology:
 
  
   ref_des    location_x  location_y  rotation mirror            package
-      U18       6050.0      8300.0        90                 PLCC20 (21)
-      U17       5550.0      8300.0        90                 PLCC28 (30)
-      U20       6050.0      7800.0       270                  SOIC8 (11)
-      R19       6050.0      8550.0        90                 RES805 (27)
-      C23       6050.0      8550.0        90                CAP0603 (63)
-      C22       6050.0      8550.0       180                CAP0603 (62)
-      R13       6050.0      8050.0        90                 RES805 (34)
-      R17       5800.0      7800.0        90                 RES805 (38)
-      R16       5550.0      7800.0        90                 RES805 (37)
-      U19       6050.0      7550.0         0                  SOT23 (22)
-      R15       5800.0      7550.0        90                 RES805 (36)
-      R18       6050.0      7300.0         0                 RES805 (26)
-      R14       5300.0      7800.0        90                 RES805 (35)
-
- Warning: Unplaced components have no affinity to placed
-      C25       3800.0      7050.0        90                CAP0603 (65)
-
- Warning: Unplaced components have no affinity to placed
-      C24       4050.0      7050.0         0                CAP0603 (64)
+     R330       5800.0      8550.0         0                 RES805 (35)
+     R329       6050.0      8550.0        90                 RES805 (34)
 (---------------------------------------------------------------------)
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
-(    Drawing          : BSTPLC.brd                                    )
+(    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sun Mar 08 19:15:18 2015                      )
+(    Date/Time        : Sun Mar 08 19:49:24 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -244,6 +233,8 @@ Report methodology:
   ------------------------------------------------------------------------------------------
   UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (12000.0 8175.0) to *(12375.0 7850.0)
   UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (11950.0 8225.0) to *(12375.0 7900.0)
+  UNNAMED_1_FRONTPORTS_I2_GTP TOP                    205.3      (5250.0 8520.0) to *(5128.6 8675.0)
+  UNNAMED_1_FRONTPORTS_I2_GTN TOP                     70.7      (5157.5 8575.0) to *(5107.5 8625.0)
   UNNAMED_1_FRONTPORTS_I2_GENER_2 TOP                    168.0     *(11593.0 8718.0) to  (11593.0 8550.0)
   UNNAMED_1_FRONTPORTS_I2_GENER_1 TOP                    185.7      (11450.0 7865.0) to *(11500.0 7700.0)
   UNNAMED_1_CNTRLREGISTER_I10_ECA TOP                    205.0      (4070.0 10650.0) to *(4275.0 10650.0)
@@ -263,6 +254,8 @@ Report methodology:
   VTT                  VIA                  (9275.0 9800.0)  TOP/BOTTOM 
   VTT                  VIA                  (3800.0 9825.0)  TOP/BOTTOM 
   VTT                  VIA                  (3850.0 9900.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5725.0 8400.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5775.0 7900.0)  TOP/BOTTOM 
   VTT                  VIA                  (8450.0 10475.0) TOP/BOTTOM 
   VTT                  VIA                  (8950.0 10450.0) TOP/BOTTOM 
   VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
@@ -287,6 +280,8 @@ Report methodology:
   VTT                  VIA                  (9275.0 9800.0)  TOP/BOTTOM 
   VTT                  VIA                  (3800.0 9825.0)  TOP/BOTTOM 
   VTT                  VIA                  (3850.0 9900.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5725.0 8400.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5775.0 7900.0)  TOP/BOTTOM 
   VTT                  VIA                  (8450.0 10475.0) TOP/BOTTOM 
   VTT                  VIA                  (8950.0 10450.0) TOP/BOTTOM 
   VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
@@ -305,42 +300,42 @@ Report methodology:
   GND                  VIA                  (11225.0 12475.0) TOP/BOTTOM 
 
 << Summary >>
-  Total dangling lines:      13
-  Total dangling vias:       19
-  Total antenna vias:        19
+  Total dangling lines:      15
+  Total dangling vias:       21
+  Total antenna vias:        21
 
     Layout Statistics:
     -----------------
-        Components:  Placed 122  Unplaced 757  Total 879
-        Nets:  W/Rats 680  No/Rats 1  Total 681
-        Pins:  W/Rats 511  No/Rats 0  Unused 122  Unplaced 2734  Total 3367
+        Components:  Placed 130  Unplaced 751  Total 881
+        Nets:  W/Rats 679  No/Rats 1  Total 680
+        Pins:  W/Rats 527  No/Rats 0  Unused 122  Unplaced 2722  Total 3371
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
         Layout area (sq in) 231.04
         Layout density (sq in/EIC) 0.963
-        Pin density (Pins/sq in) 14.573
+        Pin density (Pins/sq in) 14.591
         Average ratlength (in)  0.5
-        Rat density (in/sq in) 0.705
+        Rat density (in/sq in) 0.732
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                359           0          359
-        Already Connected          159           0          159
-        Missing Connections        200           0          200
-        Dangling Connections                                 13
-        Connection Completion       44.29%       0.00%       44.29%
-        Manh Distance (inches)     162.79
-        Etch Length (inches)        89.87        0.00        89.87
-        Number of vias		    88           0           88
+        Connections                376           0          376
+        Already Connected          173           0          173
+        Missing Connections        203           0          203
+        Dangling Connections                                 15
+        Connection Completion       46.01%       0.00%       46.01%
+        Manh Distance (inches)     169.18
+        Etch Length (inches)        96.50        0.00        96.50
+        Number of vias		    96           0           96
         Vias per Connection          0.55        0.00         0.55
-        Smd pins with attached clines                       233
+        Smd pins with attached clines                       257
 
 
- Successfully placed 15 components out of 15
+ Successfully placed 2 components out of 2
 
 
 
 Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
-Actual time of completion: Sun Mar 08 19:15:18 2015
+Actual time of completion: Sun Mar 08 19:49:24 2015
 
