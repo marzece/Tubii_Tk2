@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 14 )
+			( logicalViewRevNum 15 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -379,12 +379,18 @@
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):vcc"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):vee"
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):vee") )
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):vee") )
 				( objectStatus "vee" )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):vee"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):vee"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):gt_ttl"
@@ -402,8 +408,6 @@
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):ddgt_ttl"
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):dgt_ttl"
-			)
-			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):unnamed_1_csmd0603_i12_a"
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):unnamed_1_csmd0805_i14_b"
 			)
@@ -545,12 +549,6 @@
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):lo_star_out_p"
 				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star_out_p") )
 				( objectStatus "lo_star_out_p" )
-			)
-			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):vee"
-				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ttl"
@@ -5095,7 +5093,7 @@
 	( BaseCopy "gt_delays"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 17 )
+				( logicalViewRevNum 18 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -5139,9 +5137,6 @@
 			)
 			( signal "@tubii_tk2_lib.gt_delays(sch_1):dgt_ttl"
 				( objectStatus "dgt_ttl" )
-			)
-			( signal "@tubii_tk2_lib.gt_delays(sch_1):unnamed_1_csmd0603_i12_a"
-				( objectStatus "unnamed_1_csmd0603_i12_a" )
 			)
 			( signal "@tubii_tk2_lib.gt_delays(sch_1):unnamed_1_csmd0805_i14_b"
 				( objectStatus "unnamed_1_csmd0805_i14_b" )
@@ -6899,7 +6894,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "select_lo_src"

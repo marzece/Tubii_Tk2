@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-08T16:49:01</modificationTime>
+    <modificationTime>2015-03-08T21:26:48</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecl_translation" view="sch_1">
       <lastids>
         <instanceid>23</instanceid>
-        <netid>45</netid>
+        <netid>46</netid>
         <insttermid>110</insttermid>
       </lastids>
       <cells>
@@ -615,28 +615,12 @@
           <name>unnamed_1_csmd0805_i13_b</name>
         </net>
         <net>
-          <id>N21</id>
-          <name>unnamed_1_csmd0805_i7_a</name>
-        </net>
-        <net>
-          <id>N22</id>
-          <name>unnamed_1_csmd0805_i7_b</name>
-        </net>
-        <net>
-          <id>N23</id>
-          <name>unnamed_1_csmd0805_i8_a</name>
-        </net>
-        <net>
           <id>N24</id>
           <name>unnamed_1_ds90lv019_i14_din</name>
         </net>
         <net>
           <id>N25</id>
           <name>unnamed_1_ds90lv019_i14_rout</name>
-        </net>
-        <net>
-          <id>N26</id>
-          <name>unnamed_1_mc10e116_i22_d0</name>
         </net>
         <net>
           <id>N27</id>
@@ -677,6 +661,10 @@
           <name>ttl_to_ecl_out</name>
           <scope>interface</scope>
           <direction>output</direction>
+        </net>
+        <net>
+          <id>N46</id>
+          <name>vbb_trans</name>
         </net>
         <net>
           <id>N8</id>
@@ -727,7 +715,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N21" />
+                <connection pinmsb="0" pinlsb="0" net="N8" />
               </connections>
             </pin>
             <pin>
@@ -736,7 +724,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N22" />
+                <connection pinmsb="0" pinlsb="0" net="N35" />
               </connections>
             </pin>
           </pins>
@@ -766,7 +754,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N23" />
+                <connection pinmsb="0" pinlsb="0" net="N36" />
               </connections>
             </pin>
             <pin>
@@ -775,7 +763,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N21" />
+                <connection pinmsb="0" pinlsb="0" net="N8" />
               </connections>
             </pin>
           </pins>
@@ -855,7 +843,7 @@
               <id>M13</id>
               <termid>T24</termid>
               <connections>
-                <connection net="N21" />
+                <connection net="N8" />
               </connections>
             </pin>
             <pin>
@@ -894,14 +882,14 @@
               <id>M19</id>
               <termid>T30</termid>
               <connections>
-                <connection net="N22" />
+                <connection net="N35" />
               </connections>
             </pin>
             <pin>
               <id>M20</id>
               <termid>T31</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N36" />
               </connections>
             </pin>
           </pins>
@@ -1509,7 +1497,7 @@
               <id>M68</id>
               <termid>T69</termid>
               <connections>
-                <connection net="N26" />
+                <connection net="N46" />
               </connections>
             </pin>
             <pin>
@@ -1523,7 +1511,7 @@
               <id>M70</id>
               <termid>T71</termid>
               <connections>
-                <connection net="N26" />
+                <connection net="N46" />
               </connections>
             </pin>
             <pin>
@@ -1537,7 +1525,7 @@
               <id>M72</id>
               <termid>T73</termid>
               <connections>
-                <connection net="N26" />
+                <connection net="N46" />
               </connections>
             </pin>
             <pin>
@@ -1551,7 +1539,7 @@
               <id>M74</id>
               <termid>T75</termid>
               <connections>
-                <connection net="N26" />
+                <connection net="N46" />
               </connections>
             </pin>
             <pin>
@@ -1564,7 +1552,6 @@
               <id>M76</id>
               <termid>T77</termid>
               <connections>
-                <connection net="N26" />
               </connections>
             </pin>
             <pin>
@@ -1679,7 +1666,7 @@
               <id>M93</id>
               <termid>T94</termid>
               <connections>
-                <connection net="N26" />
+                <connection net="N46" />
               </connections>
             </pin>
             <pin>
@@ -1998,7 +1985,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N26" />
+                <connection pinmsb="0" pinlsb="0" net="N46" />
               </connections>
             </pin>
           </pins>
@@ -2148,12 +2135,8 @@
               <net ref="unnamed_1_csmd0805_i11_b"></net>
               <net ref="unnamed_1_csmd0805_i13_a"></net>
               <net ref="unnamed_1_csmd0805_i13_b"></net>
-              <net ref="unnamed_1_csmd0805_i7_a"></net>
-              <net ref="unnamed_1_csmd0805_i7_b"></net>
-              <net ref="unnamed_1_csmd0805_i8_a"></net>
               <net ref="unnamed_1_ds90lv019_i14_din"></net>
               <net ref="unnamed_1_ds90lv019_i14_rout"></net>
-              <net ref="unnamed_1_mc10e116_i22_d0"></net>
               <net ref="unnamed_1_mc10e116_i22_d3"></net>
               <net ref="unnamed_1_mc10e116_i22_q0"></net>
               <net ref="unnamed_1_mc10e116_i22_q0_1"></net>
@@ -2161,6 +2144,7 @@
               <net ref="unnamed_1_mc10e116_i22_q1_1"></net>
               <net ref="unnamed_1_mc10e116_i22_q2"></net>
               <net ref="unnamed_1_mpsh81_i17_c"></net>
+              <net ref="vbb_trans"></net>
               <net ref="vcc"></net>
               <net ref="vee"></net>
               <net ref="vtt"></net>
