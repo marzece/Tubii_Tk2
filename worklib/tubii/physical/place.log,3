@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Mar 09 13:06:26 2015                      )
+(    Date/Time        : Mon Mar 09 14:33:57 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -15,7 +15,7 @@
 
  Will search while getting acceptable improvement
  Will not scale complete graph edges
- Start time Mon Mar 09 13:06:26 2015
+ Start time Mon Mar 09 14:33:57 2015
 
 
  
@@ -24,7 +24,7 @@
  
  Algorithm  : discrete
  Place within: room
- Room name: MTCA_MIMIC
+ Room name: CLK_PICK
  Map grid points to: library origin
  Place leftovers on bottom: YES
  Allow component overlap: NO
@@ -52,6 +52,8 @@
 
  Component straightness weight is 75
 
+ Warning: no unplaced component matches active room CLK_PICK.
+
  Placement Keepin
 
   line seg 	(800.0,600.0) (16000.0,600.0)
@@ -60,7 +62,7 @@
   line seg 	(800.0,15800.0) (800.0,600.0)
 
 ACTIVE ROOMS:
-    Room  1: MTCA_MIMIC      (10100.0 3900.0) (12800.0 3900.0) (12800.0 5700.0) (10100.0 5700.0)
+    Room  1: CLK_PICK        (6000.0 4000.0) (9800.0 4000.0) (9800.0 5700.0) (6000.0 5700.0)
 
 
  Top grid x increment will be 250.0
@@ -74,7 +76,7 @@ ACTIVE ROOMS:
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Mar 09 13:06:26 2015                      )
+(    Date/Time        : Mon Mar 09 14:33:57 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -262,9 +264,9 @@ Report methodology:
 
     Layout Statistics:
     -----------------
-        Components:  Placed 220  Unplaced 661  Total 881
+        Components:  Placed 292  Unplaced 589  Total 881
         Nets:  W/Rats 673  No/Rats 1  Total 674
-        Pins:  W/Rats 791  No/Rats 1  Unused 191  Unplaced 2388  Total 3371
+        Pins:  W/Rats 1080  No/Rats 1  Unused 280  Unplaced 2010  Total 3371
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
@@ -272,16 +274,16 @@ Report methodology:
         Layout density (sq in/EIC) 0.963
         Pin density (Pins/sq in) 14.591
         Average ratlength (in)  0.4
-        Rat density (in/sq in) 1.020
+        Rat density (in/sq in) 1.382
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                584           0          584
+        Connections                802           0          802
         Already Connected          225           0          225
-        Missing Connections        359           0          359
+        Missing Connections        577           0          577
         Dangling Connections                                 35
-        Connection Completion       38.52%       0.00%       38.52%
-        Manh Distance (inches)     235.72
+        Connection Completion       28.05%       0.00%       28.05%
+        Manh Distance (inches)     319.22
         Etch Length (inches)       125.58        0.00       125.58
         Number of vias		   163           0          163
         Vias per Connection          0.72        0.00         0.72
@@ -294,79 +296,13 @@ Report methodology:
 
  
   ref_des    location_x  location_y  rotation mirror            package
-      U42      10300.0      5300.0        90                 PLCC20 (52)
-      U41      10800.0      5300.0        90                 PLCC20 (51)
-      U44      10550.0      4800.0         0                 PLCC28 (40)
-      U45      10550.0      4300.0       270                 PLCC20 (49)
-      U39      11050.0      4800.0        90                 PLCC20 (98)
-      U40      11300.0      5300.0        90                 PLCC20 (99)
-      U46      11050.0      4300.0       180                 PLCC20 (53)
-      U43      11550.0      4300.0       180                 PLCC28 (93)
-      R68      11050.0      4050.0        90                 RES805 (65)
-      R66      12050.0      4050.0         0                 RES805 (64)
-      U47      11550.0      4800.0         0                 SOIC16 (2)
-      C65      11300.0      4800.0         0                 CAP805 (224)
-      C64      11800.0      4800.0         0                 CAP805 (223)
-      C63      10300.0      5550.0        90                CAP0603 (14)
-      C60      10300.0      5550.0       180                CAP0603 (12)
-      C57      10550.0      5550.0       180                CAP0603 (11)
-      C56      10550.0      5550.0        90                CAP0603 (10)
-      C55      10800.0      5550.0       180                CAP0603 (9)
-      C54      10800.0      5550.0        90                CAP0603 (8)
-      C53      10300.0      5050.0       270                CAP0603 (7)
-      C52      11050.0      5550.0       180                CAP0603 (6)
-      R53      11300.0      5050.0        90                 RES805 (130)
-      R48      11050.0      5050.0       270                 RES805 (125)
-      R47      11050.0      4550.0        90                 RES805 (124)
-      R46      11050.0      5300.0         0                 RES805 (123)
-      R45      11050.0      5550.0         0                 RES805 (122)
-      R44      10800.0      5550.0        90                 RES805 (121)
-      R43      10550.0      5300.0         0                 RES805 (120)
-      R59      10300.0      5550.0        90                 RES805 (136)
-      R42      10550.0      5550.0        90                 RES805 (119)
-      R74      10800.0      4300.0       180                 RES805 (148)
-      R73      10300.0      4300.0       180                 RES805 (147)
-      R64      10800.0      4050.0        90                 RES805 (141)
-      R55      11300.0      5550.0        90                 RES805 (132)
-      R54      11550.0      5300.0         0                 RES805 (131)
-      R71      10550.0      4050.0       270                 RES805 (146)
-      R69      10300.0      4050.0        90                 RES805 (144)
-      R61      11550.0      5050.0       270                 RES805 (138)
-      R60      11550.0      5550.0         0                 RES805 (137)
-      R58      11800.0      5300.0         0                 RES805 (135)
-      R57      11800.0      5550.0         0                 RES805 (134)
-      R62      11800.0      5050.0         0                 RES805 (139)
-      R56      12050.0      5550.0         0                 RES805 (133)
-      R65      12050.0      4300.0         0                 RES805 (142)
-      R70      12050.0      4550.0         0                 RES805 (145)
-      R67      12050.0      4800.0         0                 RES805 (143)
-      R52      12050.0      5050.0       180                 RES805 (129)
-      R51      12050.0      5300.0         0                 RES805 (128)
-      R50      12300.0      5550.0         0                 RES805 (127)
-      R63      12300.0      4300.0         0                 RES805 (140)
-      C61      12300.0      4050.0       270                 CAP805 (222)
-      R77      12300.0      4800.0        90                 RES805 (256)
-      C59      12550.0      4050.0       180                 CAP805 (221)
-      R76      12300.0      5050.0       180                 RES805 (255)
-       D7      12300.0      5300.0         0        LED_SSFLXH1031D (241)
-       D8      12550.0      4800.0       270        LED_SSFLXH1031D (242)
-      R75      12300.0      4550.0         0                 RES805 (263)
-      R72      12550.0      5050.0         0                 RES805 (262)
-      C58      12550.0      4300.0       180                 CAP805 (220)
-      R49      12550.0      5550.0         0                 RES805 (126)
-
- Warning: Unplaced components have no affinity to placed
-      C66      10300.0      4050.0         0                CAP0603 (15)
-
- Warning: Unplaced components have no affinity to placed
-      C62      10300.0      4050.0       180                CAP0603 (13)
 (---------------------------------------------------------------------)
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Mar 09 13:06:35 2015                      )
+(    Date/Time        : Mon Mar 09 14:33:57 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -554,9 +490,9 @@ Report methodology:
 
     Layout Statistics:
     -----------------
-        Components:  Placed 282  Unplaced 599  Total 881
+        Components:  Placed 292  Unplaced 589  Total 881
         Nets:  W/Rats 673  No/Rats 1  Total 674
-        Pins:  W/Rats 1016  No/Rats 1  Unused 264  Unplaced 2090  Total 3371
+        Pins:  W/Rats 1080  No/Rats 1  Unused 280  Unplaced 2010  Total 3371
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
@@ -564,26 +500,26 @@ Report methodology:
         Layout density (sq in/EIC) 0.963
         Pin density (Pins/sq in) 14.591
         Average ratlength (in)  0.4
-        Rat density (in/sq in) 1.347
+        Rat density (in/sq in) 1.382
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                762           0          762
+        Connections                802           0          802
         Already Connected          225           0          225
-        Missing Connections        537           0          537
+        Missing Connections        577           0          577
         Dangling Connections                                 35
-        Connection Completion       29.52%       0.00%       29.52%
-        Manh Distance (inches)     311.13
+        Connection Completion       28.05%       0.00%       28.05%
+        Manh Distance (inches)     319.22
         Etch Length (inches)       125.58        0.00       125.58
         Number of vias		   163           0          163
         Vias per Connection          0.72        0.00         0.72
         Smd pins with attached clines                       383
 
 
- Successfully placed 62 components out of 62
+ Successfully placed 0 components out of 0
 
 
 
-Elapsed time:  0 hr 0 min 8 sec ( 0.00 hr)
-Actual time of completion: Mon Mar 09 13:06:35 2015
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Mon Mar 09 14:33:57 2015
 

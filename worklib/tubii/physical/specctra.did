@@ -5,17 +5,17 @@
 # 
 #            Command Line Parameters
 #            -----------------------
-# Design File Name : C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical\TubiiPCB_V3.dsn
+# Design File Name : C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical\BSTPLC.dsn
 # Initialization options:
 #   -do pasde.do
-# Status File Name : C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical\monitor.sts
+# Status File Name : C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical\monitor.sts
 # -nog specified. Graphics not utilized.
 # Use Colormap In Design File.
 #
 #
 #
 #
-# do $/TubiiPCB_V3_rules.do
+# do $/BSTPLC_rules.do
 define (class _difpr_DP_SYNC_2 SYNC_2_P SYNC_2_N )
 define (class _difpr_DP_USE_DEFAULT USE_DEFAULT_P USE_DEFAULT_N )
 define (class _difpr_DP_BCKP_CLK_BUFD BCKP_CLK_BUFD_P BCKP_CLK_BUFD_N )
@@ -360,6 +360,13 @@ define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_GTP
 define (drcv_groupset _DRgrpset_UNNAMED_1_FRONTPORTS_I2_GTN_UNNAMED_1_FRONTPORTS_I2_GTP _DRgrp_UNNAMED_1_FRONTPORTS_I2_GTN _DRgrp_UNNAMED_1_FRONTPORTS_I2_GTP)
 rule class _difpr_DP_TRIG_GATE1 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_GATE1 (neck_down_width 5)
+define (drcv_group _DRgrp_TRIG_GATE1_N
+ (drcv U44-13 U45-3 )
+)
+define (drcv_group _DRgrp_TRIG_GATE1_P
+ (drcv U44-12 U45-4 )
+)
+define (drcv_groupset _DRgrpset_TRIG_GATE1_N_TRIG_GATE1_P _DRgrp_TRIG_GATE1_N _DRgrp_TRIG_GATE1_P)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC24 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC24 (neck_down_width 5)
 define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_SYNC24N
@@ -371,6 +378,13 @@ define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_SYNC24P
 define (drcv_groupset _DRgrpset_UNNAMED_1_FRONTPORTS_I2_SYNC24N_UNNAMED_1_FRONTPORTS_I2_SYNC24P _DRgrp_UNNAMED_1_FRONTPORTS_I2_SYNC24N _DRgrp_UNNAMED_1_FRONTPORTS_I2_SYNC24P)
 rule class _difpr_DP_TRIG_GATE2 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_GATE2 (neck_down_width 5)
+define (drcv_group _DRgrp_TRIG_GATE2_N
+ (drcv U44-15 U45-8 )
+)
+define (drcv_group _DRgrp_TRIG_GATE2_P
+ (drcv U44-14 U45-9 )
+)
+define (drcv_groupset _DRgrpset_TRIG_GATE2_N_TRIG_GATE2_P _DRgrp_TRIG_GATE2_N _DRgrp_TRIG_GATE2_P)
 rule class _difpr_DP_USE_BCKP (diffpair_line_width 7)
 rule class _difpr_DP_USE_BCKP (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_CHANGECLK (diffpair_line_width 7)
@@ -434,9 +448,9 @@ rule class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_DEFAULTCLK2 (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (neck_down_width 5)
 define (drcv_group _DRgrp_LO_STAR_RAW
- (drcv U12-3 U11-27 )
- (drcv U12-3 U11-5 )
  (drcv U12-4 U11-27 )
+ (drcv U12-4 U11-5 )
+ (drcv U12-3 U11-27 )
 )
 define (drcv_group _DRgrp_UNNAMED_1_MC10E116_I2_D0
  (drcv U11-2 U11-28 )
@@ -447,7 +461,7 @@ define (drcv_groupset _DRgrpset_LO_STAR_RAW_UNNAMED_1_MC10E116_I2_D0 _DRgrp_LO_S
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN (neck_down_width 5)
 define (drcv_group _DRgrp_VBB_TRANS
- (drcv U55-2 U55-4 )
+ (drcv U55-2 U55-26 )
 )
 define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_ECLTOLV
  (drcv R101-2 U55-5 )
@@ -455,10 +469,24 @@ define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_ECLTOLV
 define (drcv_groupset _DRgrpset_VBB_TRANS_UNNAMED_1_FRONTPORTS_I2_ECLTOLV _DRgrp_VBB_TRANS _DRgrp_UNNAMED_1_FRONTPORTS_I2_ECLTOLV)
 rule class _difpr_DP_TRIG_PULS1 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_PULS1 (neck_down_width 5)
+define (drcv_group _DRgrp_TRIG_PULS1_N
+ (drcv U46-4 U43-26 )
+)
+define (drcv_group _DRgrp_TRIG_PULS1_P
+ (drcv U46-3 U43-25 )
+)
+define (drcv_groupset _DRgrpset_TRIG_PULS1_N_TRIG_PULS1_P _DRgrp_TRIG_PULS1_N _DRgrp_TRIG_PULS1_P)
 rule class _difpr_DP_UNNAMED_1_CSMD0603_I10_B (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_CSMD0603_I10_B (neck_down_width 5)
 rule class _difpr_DP_TRIG_PULS2 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_PULS2 (neck_down_width 5)
+define (drcv_group _DRgrp_TRIG_PULS2_N
+ (drcv U46-18 U43-24 )
+)
+define (drcv_group _DRgrp_TRIG_PULS2_P
+ (drcv U46-19 U43-23 )
+)
+define (drcv_groupset _DRgrpset_TRIG_PULS2_N_TRIG_PULS2_P _DRgrp_TRIG_PULS2_N _DRgrp_TRIG_PULS2_P)
 rule class _difpr_DP_DEF_CLK_DIVD (diffpair_line_width 7)
 rule class _difpr_DP_DEF_CLK_DIVD (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_LOSTAROUT (diffpair_line_width 7)
@@ -518,6 +546,13 @@ define (drcv_group _DRgrp_RIB5_P
 define (drcv_groupset _DRgrpset_RIB5_N_RIB5_P _DRgrp_RIB5_N _DRgrp_RIB5_P)
 rule class _difpr_DP_UNNAMED_1_CSMD0805_I64_B (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_CSMD0805_I64_B (neck_down_width 5)
+define (drcv_group _DRgrp_UNNAMED_1_CSMD0805_I64_B
+ (drcv U43-2 U43-6 )
+)
+define (drcv_group _DRgrp_UNNAMED_1_CSMD0805_I70_B
+ (drcv C59-2 U43-5 )
+)
+define (drcv_groupset _DRgrpset_UNNAMED_1_CSMD0805_I64_B_UNNAMED_1_CSMD0805_I70_B _DRgrp_UNNAMED_1_CSMD0805_I64_B _DRgrp_UNNAMED_1_CSMD0805_I70_B)
 rule class _difpr_DP_RIB6 (diffpair_line_width 7)
 rule class _difpr_DP_RIB6 (neck_down_width 5)
 define (drcv_group _DRgrp_RIB6_N
@@ -542,7 +577,7 @@ define (drcv_group _DRgrp_RIB8_N
  (drcv U53-7 U52-15 )
 )
 define (drcv_group _DRgrp_RIB8_P
- (drcv U53-8 R92-2 )
+ (drcv R92-2 U53-8 )
 )
 define (drcv_groupset _DRgrpset_RIB8_N_RIB8_P _DRgrp_RIB8_N _DRgrp_RIB8_P)
 rule class _difpr_DP_RIB9 (diffpair_line_width 7)
@@ -615,14 +650,33 @@ define (drcv_group _DRgrp_RIB10_P
 define (drcv_groupset _DRgrpset_RIB10_N_RIB10_P _DRgrp_RIB10_N _DRgrp_RIB10_P)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q1 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q1 (neck_down_width 5)
+define (drcv_group _DRgrp_UNNAMED_1_AD96687_I1_Q1
+ (drcv R48-2 U39-5 )
+)
+define (drcv_group _DRgrp_UNNAMED_1_AD96687_I1_Q1_1
+ (drcv R46-2 U39-8 )
+)
+define (drcv_groupset _DRgrpset_UNNAMED_1_AD96687_I1_Q1_UNNAMED_1_AD96687_I1_Q1_1 _DRgrp_UNNAMED_1_AD96687_I1_Q1 _DRgrp_UNNAMED_1_AD96687_I1_Q1_1)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q2 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q2 (neck_down_width 5)
+define (drcv_group _DRgrp_UNNAMED_1_AD96687_I1_Q2
+ (drcv R45-2 U39-13 )
+)
+define (drcv_group _DRgrp_UNNAMED_1_AD96687_I1_Q2_1
+ (drcv R43-2 U39-15 )
+)
+define (drcv_groupset _DRgrpset_UNNAMED_1_AD96687_I1_Q2_UNNAMED_1_AD96687_I1_Q2_1 _DRgrp_UNNAMED_1_AD96687_I1_Q2 _DRgrp_UNNAMED_1_AD96687_I1_Q2_1)
 rule class _difpr_DP_TELLIE_DELAY_BUF (diffpair_line_width 7)
 rule class _difpr_DP_TELLIE_DELAY_BUF (neck_down_width 5)
 write colormap _notify.std
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaac01968.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaas02200.tmp
 unselect all routing
-select component U57
+select component Q2
+select component L1
+select component L2
+select component L4
+select component Q3
+select component Q4
 set route_diagonal 4
 grid wire 0.100000 (direction x) (offset 0.000000)
 grid wire 0.100000 (direction y) (offset 0.000000)
@@ -648,5 +702,5 @@ rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
 smart_route (auto_fanout off) (auto_testpoint off) (auto_miter on)
-write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaad01968.tmp
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaat02200.tmp
 quit -c

@@ -5,10 +5,10 @@
 # 
 #            Command Line Parameters
 #            -----------------------
-# Design File Name : C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical\BSTPLC.dsn
+# Design File Name : C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical\BSTPLC.dsn
 # Initialization options:
 #   -do pasde.do
-# Status File Name : C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical\monitor.sts
+# Status File Name : C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical\monitor.sts
 # -nog specified. Graphics not utilized.
 # Use Colormap In Design File.
 #
@@ -47,7 +47,7 @@ define (class _difpr_DP_CLK_BAD CLK_BAD_P CLK_BAD_N )
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC UNNAMED_1_FRONTPORTS_I2_SYNCP UNNAMED_1_FRONTPORTS_I2_SYNCN )
 define (class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_DEFAULTCLK2 UNNAMED_1_CHANGECLKS_I3_DEFAU_1 UNNAMED_1_CHANGECLKS_I3_DEFAULT )
 define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO UNNAMED_1_MC10E116_I2_D0 LO_STAR_RAW )
-define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN UNNAMED_1_FRONTPORTS_I2_ECLTOLV UNNAMED_1_MC10E116_I22_D0 )
+define (class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN UNNAMED_1_FRONTPORTS_I2_ECLTOLV VBB_TRANS )
 define (class _difpr_DP_TRIG_PULS1 TRIG_PULS1_P TRIG_PULS1_N )
 define (class _difpr_DP_UNNAMED_1_CSMD0603_I10_B UNNAMED_1_FRONTPORTS_I2_SMELLIE UNNAMED_1_CSMD0603_I10_B_1 )
 define (class _difpr_DP_TRIG_PULS2 TRIG_PULS2_P TRIG_PULS2_N )
@@ -175,7 +175,7 @@ define (pair (nets DEF_CLK_DIVD_P DEF_CLK_DIVD_N ))
 define (pair (nets TRIG_PULS2_P TRIG_PULS2_N ))
 define (pair (nets UNNAMED_1_FRONTPORTS_I2_SMELLIE UNNAMED_1_CSMD0603_I10_B_1 ))
 define (pair (nets TRIG_PULS1_P TRIG_PULS1_N ))
-define (pair (nets UNNAMED_1_FRONTPORTS_I2_ECLTOLV UNNAMED_1_MC10E116_I22_D0 ))
+define (pair (nets UNNAMED_1_FRONTPORTS_I2_ECLTOLV VBB_TRANS ))
 define (pair (nets UNNAMED_1_MC10E116_I2_D0 LO_STAR_RAW ))
 define (pair (nets UNNAMED_1_CHANGECLKS_I3_DEFAU_1 UNNAMED_1_CHANGECLKS_I3_DEFAULT ))
 rule PCB (width 7)
@@ -360,6 +360,13 @@ define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_GTP
 define (drcv_groupset _DRgrpset_UNNAMED_1_FRONTPORTS_I2_GTN_UNNAMED_1_FRONTPORTS_I2_GTP _DRgrp_UNNAMED_1_FRONTPORTS_I2_GTN _DRgrp_UNNAMED_1_FRONTPORTS_I2_GTP)
 rule class _difpr_DP_TRIG_GATE1 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_GATE1 (neck_down_width 5)
+define (drcv_group _DRgrp_TRIG_GATE1_N
+ (drcv U44-13 U45-3 )
+)
+define (drcv_group _DRgrp_TRIG_GATE1_P
+ (drcv U44-12 U45-4 )
+)
+define (drcv_groupset _DRgrpset_TRIG_GATE1_N_TRIG_GATE1_P _DRgrp_TRIG_GATE1_N _DRgrp_TRIG_GATE1_P)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC24 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_SYNC24 (neck_down_width 5)
 define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_SYNC24N
@@ -371,6 +378,13 @@ define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_SYNC24P
 define (drcv_groupset _DRgrpset_UNNAMED_1_FRONTPORTS_I2_SYNC24N_UNNAMED_1_FRONTPORTS_I2_SYNC24P _DRgrp_UNNAMED_1_FRONTPORTS_I2_SYNC24N _DRgrp_UNNAMED_1_FRONTPORTS_I2_SYNC24P)
 rule class _difpr_DP_TRIG_GATE2 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_GATE2 (neck_down_width 5)
+define (drcv_group _DRgrp_TRIG_GATE2_N
+ (drcv U44-15 U45-8 )
+)
+define (drcv_group _DRgrp_TRIG_GATE2_P
+ (drcv U44-14 U45-9 )
+)
+define (drcv_groupset _DRgrpset_TRIG_GATE2_N_TRIG_GATE2_P _DRgrp_TRIG_GATE2_N _DRgrp_TRIG_GATE2_P)
 rule class _difpr_DP_USE_BCKP (diffpair_line_width 7)
 rule class _difpr_DP_USE_BCKP (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_CHANGECLK (diffpair_line_width 7)
@@ -434,31 +448,45 @@ rule class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_DEFAULTCLK2 (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (neck_down_width 5)
 define (drcv_group _DRgrp_LO_STAR_RAW
- (drcv U12-3 U11-27 )
- (drcv U12-3 U11-5 )
+ (drcv U12-4 U11-5 )
  (drcv U12-4 U11-27 )
+ (drcv U12-3 U11-5 )
 )
 define (drcv_group _DRgrp_UNNAMED_1_MC10E116_I2_D0
- (drcv U11-2 U11-28 )
  (drcv U11-2 U11-6 )
+ (drcv U11-2 U11-28 )
  (drcv U11-2 U11-4 )
 )
 define (drcv_groupset _DRgrpset_LO_STAR_RAW_UNNAMED_1_MC10E116_I2_D0 _DRgrp_LO_STAR_RAW _DRgrp_UNNAMED_1_MC10E116_I2_D0)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN (neck_down_width 5)
-define (drcv_group _DRgrp_UNNAMED_1_MC10E116_I22_D0
- (drcv U55-2 U55-4 )
+define (drcv_group _DRgrp_VBB_TRANS
+ (drcv U55-2 U55-28 )
 )
 define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_ECLTOLV
  (drcv R101-2 U55-5 )
 )
-define (drcv_groupset _DRgrpset_UNNAMED_1_MC10E116_I22_D0_UNNAMED_1_FRONTPORTS_I2_ECLTOLV _DRgrp_UNNAMED_1_MC10E116_I22_D0 _DRgrp_UNNAMED_1_FRONTPORTS_I2_ECLTOLV)
+define (drcv_groupset _DRgrpset_VBB_TRANS_UNNAMED_1_FRONTPORTS_I2_ECLTOLV _DRgrp_VBB_TRANS _DRgrp_UNNAMED_1_FRONTPORTS_I2_ECLTOLV)
 rule class _difpr_DP_TRIG_PULS1 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_PULS1 (neck_down_width 5)
+define (drcv_group _DRgrp_TRIG_PULS1_N
+ (drcv U46-4 U43-26 )
+)
+define (drcv_group _DRgrp_TRIG_PULS1_P
+ (drcv U46-3 U43-25 )
+)
+define (drcv_groupset _DRgrpset_TRIG_PULS1_N_TRIG_PULS1_P _DRgrp_TRIG_PULS1_N _DRgrp_TRIG_PULS1_P)
 rule class _difpr_DP_UNNAMED_1_CSMD0603_I10_B (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_CSMD0603_I10_B (neck_down_width 5)
 rule class _difpr_DP_TRIG_PULS2 (diffpair_line_width 7)
 rule class _difpr_DP_TRIG_PULS2 (neck_down_width 5)
+define (drcv_group _DRgrp_TRIG_PULS2_N
+ (drcv U46-18 U43-24 )
+)
+define (drcv_group _DRgrp_TRIG_PULS2_P
+ (drcv U46-19 U43-23 )
+)
+define (drcv_groupset _DRgrpset_TRIG_PULS2_N_TRIG_PULS2_P _DRgrp_TRIG_PULS2_N _DRgrp_TRIG_PULS2_P)
 rule class _difpr_DP_DEF_CLK_DIVD (diffpair_line_width 7)
 rule class _difpr_DP_DEF_CLK_DIVD (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_LOSTAROUT (diffpair_line_width 7)
@@ -518,6 +546,13 @@ define (drcv_group _DRgrp_RIB5_P
 define (drcv_groupset _DRgrpset_RIB5_N_RIB5_P _DRgrp_RIB5_N _DRgrp_RIB5_P)
 rule class _difpr_DP_UNNAMED_1_CSMD0805_I64_B (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_CSMD0805_I64_B (neck_down_width 5)
+define (drcv_group _DRgrp_UNNAMED_1_CSMD0805_I64_B
+ (drcv U43-2 U43-4 )
+)
+define (drcv_group _DRgrp_UNNAMED_1_CSMD0805_I70_B
+ (drcv C59-2 U43-5 )
+)
+define (drcv_groupset _DRgrpset_UNNAMED_1_CSMD0805_I64_B_UNNAMED_1_CSMD0805_I70_B _DRgrp_UNNAMED_1_CSMD0805_I64_B _DRgrp_UNNAMED_1_CSMD0805_I70_B)
 rule class _difpr_DP_RIB6 (diffpair_line_width 7)
 rule class _difpr_DP_RIB6 (neck_down_width 5)
 define (drcv_group _DRgrp_RIB6_N
@@ -615,14 +650,32 @@ define (drcv_group _DRgrp_RIB10_P
 define (drcv_groupset _DRgrpset_RIB10_N_RIB10_P _DRgrp_RIB10_N _DRgrp_RIB10_P)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q1 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q1 (neck_down_width 5)
+define (drcv_group _DRgrp_UNNAMED_1_AD96687_I1_Q1
+ (drcv R48-2 U39-5 )
+)
+define (drcv_group _DRgrp_UNNAMED_1_AD96687_I1_Q1_1
+ (drcv R46-2 U39-8 )
+)
+define (drcv_groupset _DRgrpset_UNNAMED_1_AD96687_I1_Q1_UNNAMED_1_AD96687_I1_Q1_1 _DRgrp_UNNAMED_1_AD96687_I1_Q1 _DRgrp_UNNAMED_1_AD96687_I1_Q1_1)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q2 (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_AD96687_I1_Q2 (neck_down_width 5)
+define (drcv_group _DRgrp_UNNAMED_1_AD96687_I1_Q2
+ (drcv R45-2 U39-13 )
+)
+define (drcv_group _DRgrp_UNNAMED_1_AD96687_I1_Q2_1
+ (drcv R43-2 U39-15 )
+)
+define (drcv_groupset _DRgrpset_UNNAMED_1_AD96687_I1_Q2_UNNAMED_1_AD96687_I1_Q2_1 _DRgrp_UNNAMED_1_AD96687_I1_Q2 _DRgrp_UNNAMED_1_AD96687_I1_Q2_1)
 rule class _difpr_DP_TELLIE_DELAY_BUF (diffpair_line_width 7)
 rule class _difpr_DP_TELLIE_DELAY_BUF (neck_down_width 5)
 write colormap _notify.std
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaag08244.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaap02200.tmp
 unselect all routing
-select net UNNAMED_1_MC10E116_I22_D0
+select component U26
+select component U27
+select component U28
+select component U29
+select component U30
 set route_diagonal 4
 grid wire 0.100000 (direction x) (offset 0.000000)
 grid wire 0.100000 (direction y) (offset 0.000000)
@@ -648,59 +701,5 @@ rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
 smart_route (auto_fanout off) (auto_testpoint off) (auto_miter on)
-write routes (changed_only) (reset_changed) C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaah08244.tmp
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaaj08244.tmp
-unselect all objects
-select net UNNAMED_1_FRONTPORTS_I2_SYNCLVD
-select net UNNAMED_1_FRONTPORTS_I2_SYNCN
-select net UNNAMED_1_FRONTPORTS_I2_SYNCP
-select net UNNAMED_1_MC10E116_I22_D0
-select net UNNAMED_1_FRONTPORTS_I2_SYNCL_1
-select net UNNAMED_1_FRONTPORTS_I2_ECLTOLV
-select net UNNAMED_1_FRONTPORTS_I2_SYNC24N
-select net UNNAMED_1_FRONTPORTS_I2_SYNC24P
-select net UNNAMED_1_FRONTPORTS_I2_SYNC2_1
-select net UNNAMED_1_FRONTPORTS_I2_GTP
-select net UNNAMED_1_FRONTPORTS_I2_SYNC24L
-select net UNNAMED_1_FRONTPORTS_I2_GTN
-select net RIB8_N
-select net UNNAMED_1_CAENCOMS_I8_GT2P
-select net UNNAMED_1_CAENCOMS_I8_GTTTL
-select net RIB8_P
-select net UNNAMED_1_MC10E116_I2_D0
-select net LE_GEN_UTILS
-select net LO_STAR_RAW
-unprotect selected
-delete selected
-unprotect selected polygon
-delete selected polygon
-unselect all objects
-read route C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaai08244.tmp
-# do C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaak08244.tmp
-unselect all routing
-select net UNNAMED_1_MC10E116_I22_D0
-set route_diagonal 4
-grid wire 0.100000 (direction x) (offset 0.000000)
-grid wire 0.100000 (direction y) (offset 0.000000)
-grid via 0.100000 (direction x) (offset 0.000000)
-grid via 0.100000 (direction y) (offset 0.000000)
-protect all wires
-direction TOP horizontal
-select layer TOP
-unprotect layer_wires TOP
-direction BOTTOM vertical
-select layer BOTTOM
-unprotect layer_wires BOTTOM
-cost via -1
-set turbo_stagger off
-limit outside -1
-rule pcb (patterns_allowed  trombone accordion)
-set pattern_stacking on
-rule pcb (sawtooth_amplitude -1 -1)
-rule pcb (sawtooth_gap -1)
-rule pcb (accordion_amplitude -1 -1)
-rule pcb (accordion_gap -1)
-rule pcb (trombone_run_length -1)
-rule pcb (trombone_gap -1)
-unprotect selected
-smart_route (auto_fanout off) (auto_testpoint off) (auto_miter on)
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaaq02200.tmp
+quit -c
