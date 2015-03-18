@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 5 )
+			( logicalViewRevNum 7 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -296,6 +296,54 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -408,6 +456,9 @@
 				( attribute "CDS_PART_NAME" "MC10E116"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I1" )
 				( pin "d0"
 				)
@@ -491,6 +542,9 @@
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I2" )
 				( pin "d_a"
 				)
@@ -533,6 +587,9 @@
 				)
 				( attribute "CDS_PART_NAME" "SY100EL05"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I3" )
 				( pin "d_a"
@@ -577,6 +634,9 @@
 				( attribute "CDS_PART_NAME" "SS22SDP2"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "p1"
 				)
@@ -615,6 +675,9 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H125"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I5" )
 				( pin "d1"
@@ -724,6 +787,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a(0)"
 				)
@@ -803,6 +869,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I7" )
 				( pin "a(0)"
@@ -884,6 +953,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a(0)"
 				)
@@ -964,6 +1036,9 @@
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a(0)"
 				)
@@ -1043,6 +1118,9 @@
 				)
 				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "CHANGE_CLKS"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a(0)"
