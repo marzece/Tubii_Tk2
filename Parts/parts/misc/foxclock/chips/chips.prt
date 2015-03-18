@@ -10,9 +10,17 @@ primitive 'FOXCLOCK';
     'ED':
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
-    'NC':
-      PIN_NUMBER='(2)';
-      PINUSE='NC';
+    'VDD':
+      PIN_NUMBER='(6)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'GND':
+      PIN_NUMBER='(3)';
+      PINUSE='GROUND';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
       NO_ASSERT_CHECK='TRUE';
@@ -25,9 +33,7 @@ primitive 'FOXCLOCK';
     JEDEC_TYPE='smd_fox';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
-    GROUND_NETS='GND';
-    POWER_PINS='(VP3_3:6)';
-    POWER_PINS='(GND:3)';
+    NC_PINS='(2)';
   end_body;
 end_primitive;
 
