@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Mar 09 14:33:57 2015                      )
+(    Date/Time        : Mon Mar 09 14:35:15 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -15,7 +15,7 @@
 
  Will search while getting acceptable improvement
  Will not scale complete graph edges
- Start time Mon Mar 09 14:33:57 2015
+ Start time Mon Mar 09 14:35:15 2015
 
 
  
@@ -24,7 +24,7 @@
  
  Algorithm  : discrete
  Place within: room
- Room name: CLK_PICK
+ Room name: ELLIE
  Map grid points to: library origin
  Place leftovers on bottom: YES
  Allow component overlap: NO
@@ -52,8 +52,6 @@
 
  Component straightness weight is 75
 
- Warning: no unplaced component matches active room CLK_PICK.
-
  Placement Keepin
 
   line seg 	(800.0,600.0) (16000.0,600.0)
@@ -62,7 +60,7 @@
   line seg 	(800.0,15800.0) (800.0,600.0)
 
 ACTIVE ROOMS:
-    Room  1: CLK_PICK        (6000.0 4000.0) (9800.0 4000.0) (9800.0 5700.0) (6000.0 5700.0)
+    Room  1: ELLIE           (10500.0 700.0) (12600.0 700.0) (12600.0 2700.0) (10500.0 2700.0)
 
 
  Top grid x increment will be 250.0
@@ -76,7 +74,7 @@ ACTIVE ROOMS:
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Mar 09 14:33:57 2015                      )
+(    Date/Time        : Mon Mar 09 14:35:15 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -274,7 +272,7 @@ Report methodology:
         Layout density (sq in/EIC) 0.963
         Pin density (Pins/sq in) 14.591
         Average ratlength (in)  0.4
-        Rat density (in/sq in) 1.382
+        Rat density (in/sq in) 1.353
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
@@ -283,7 +281,7 @@ Report methodology:
         Missing Connections        577           0          577
         Dangling Connections                                 35
         Connection Completion       28.05%       0.00%       28.05%
-        Manh Distance (inches)     319.22
+        Manh Distance (inches)     312.48
         Etch Length (inches)       125.58        0.00       125.58
         Number of vias		   163           0          163
         Vias per Connection          0.72        0.00         0.72
@@ -296,13 +294,32 @@ Report methodology:
 
  
   ref_des    location_x  location_y  rotation mirror            package
+      U33      10800.0      2300.0       270                 PLCC20 (48)
+      C45      10550.0      2550.0        90                CAP0603 (220)
+      C44      10800.0      2550.0       180                CAP0603 (219)
+      C43      10800.0      2550.0        90                CAP0603 (218)
+      U35      11300.0      2300.0       270                 PLCC20 (52)
+      U34      11800.0      2300.0       270                 PLCC20 (41)
+      R33      11550.0      2550.0         0                 RES805 (128)
+      R32      11550.0      2300.0         0                 RES805 (127)
+      R37      11300.0      2550.0        90                 RES805 (132)
+      R36      11050.0      2550.0       270                 RES805 (131)
+      R35      10800.0      2550.0        90                 RES805 (130)
+      C41      11800.0      2050.0       270                CAP0603 (216)
+      R34      10550.0      2550.0         0                 RES805 (129)
+
+ Warning: Unplaced components have no affinity to placed
+      C46      10550.0       800.0        90                CAP0603 (221)
+
+ Warning: Unplaced components have no affinity to placed
+      C42      10800.0       800.0        90                CAP0603 (217)
 (---------------------------------------------------------------------)
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
 (    Drawing          : BSTPLC.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Mar 09 14:33:57 2015                      )
+(    Date/Time        : Mon Mar 09 14:35:17 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -490,9 +507,9 @@ Report methodology:
 
     Layout Statistics:
     -----------------
-        Components:  Placed 292  Unplaced 589  Total 881
+        Components:  Placed 307  Unplaced 574  Total 881
         Nets:  W/Rats 673  No/Rats 1  Total 674
-        Pins:  W/Rats 1080  No/Rats 1  Unused 280  Unplaced 2010  Total 3371
+        Pins:  W/Rats 1137  No/Rats 1  Unused 307  Unplaced 1926  Total 3371
         Equivalent ICs (1 pin = 1/14 EIC)  240
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
@@ -500,26 +517,26 @@ Report methodology:
         Layout density (sq in/EIC) 0.963
         Pin density (Pins/sq in) 14.591
         Average ratlength (in)  0.4
-        Rat density (in/sq in) 1.382
+        Rat density (in/sq in) 1.387
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                802           0          802
+        Connections                842           0          842
         Already Connected          225           0          225
-        Missing Connections        577           0          577
+        Missing Connections        617           0          617
         Dangling Connections                                 35
-        Connection Completion       28.05%       0.00%       28.05%
-        Manh Distance (inches)     319.22
+        Connection Completion       26.72%       0.00%       26.72%
+        Manh Distance (inches)     320.34
         Etch Length (inches)       125.58        0.00       125.58
         Number of vias		   163           0          163
         Vias per Connection          0.72        0.00         0.72
         Smd pins with attached clines                       383
 
 
- Successfully placed 0 components out of 0
+ Successfully placed 15 components out of 15
 
 
 
-Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
-Actual time of completion: Mon Mar 09 14:33:57 2015
+Elapsed time:  0 hr 0 min 3 sec ( 0.00 hr)
+Actual time of completion: Mon Mar 09 14:35:18 2015
 
