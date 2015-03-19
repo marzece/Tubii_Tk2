@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-08T21:26:48</modificationTime>
+    <modificationTime>2015-03-08T22:14:52</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -603,18 +603,6 @@
           <direction>input</direction>
         </net>
         <net>
-          <id>N18</id>
-          <name>unnamed_1_csmd0805_i11_b</name>
-        </net>
-        <net>
-          <id>N19</id>
-          <name>unnamed_1_csmd0805_i13_a</name>
-        </net>
-        <net>
-          <id>N20</id>
-          <name>unnamed_1_csmd0805_i13_b</name>
-        </net>
-        <net>
           <id>N24</id>
           <name>unnamed_1_ds90lv019_i14_din</name>
         </net>
@@ -1000,21 +988,21 @@
               <id>M34</id>
               <termid>T45</termid>
               <connections>
-                <connection net="N20" />
+                <connection net="N8" />
               </connections>
             </pin>
             <pin>
               <id>M35</id>
               <termid>T46</termid>
               <connections>
-                <connection net="N19" />
+                <connection net="N35" />
               </connections>
             </pin>
             <pin>
               <id>M36</id>
               <termid>T47</termid>
               <connections>
-                <connection net="N18" />
+                <connection net="N36" />
               </connections>
             </pin>
           </pins>
@@ -1044,7 +1032,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N20" />
+                <connection pinmsb="0" pinlsb="0" net="N8" />
               </connections>
             </pin>
             <pin>
@@ -1053,7 +1041,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N18" />
+                <connection pinmsb="0" pinlsb="0" net="N36" />
               </connections>
             </pin>
           </pins>
@@ -1122,7 +1110,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N19" />
+                <connection pinmsb="0" pinlsb="0" net="N35" />
               </connections>
             </pin>
             <pin>
@@ -1131,7 +1119,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N20" />
+                <connection pinmsb="0" pinlsb="0" net="N8" />
               </connections>
             </pin>
           </pins>
@@ -2132,9 +2120,6 @@
               <net ref="nim_to_ecl_out"></net>
               <net ref="ttl_to_ecl_in"></net>
               <net ref="ttl_to_ecl_out"></net>
-              <net ref="unnamed_1_csmd0805_i11_b"></net>
-              <net ref="unnamed_1_csmd0805_i13_a"></net>
-              <net ref="unnamed_1_csmd0805_i13_b"></net>
               <net ref="unnamed_1_ds90lv019_i14_din"></net>
               <net ref="unnamed_1_ds90lv019_i14_rout"></net>
               <net ref="unnamed_1_mc10e116_i22_d3"></net>

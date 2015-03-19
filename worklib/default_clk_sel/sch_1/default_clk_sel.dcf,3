@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 8 )
+			( logicalViewRevNum 11 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -459,11 +459,6 @@
 						( Origin gPackager )
 					)
 				)
-				( pin "nc"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 				( pin "\out\"
 					( attribute "PN" "4"
 						( Origin gPackager )
@@ -471,6 +466,16 @@
 				)
 				( pin "\out*\"
 					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
+				( pin "gnd"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "vdd"
+					( attribute "PN" "6"
 						( Origin gPackager )
 					)
 				)
@@ -2473,23 +2478,23 @@
 				( attribute "TOL_ON_OFF" "ON"
 					( Origin gFrontEnd )
 				)
-				( attribute "VALUE" "0.1UF"
+				( attribute "VALUE" "10NF"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "VOLTAGE" "50V"
+				( attribute "VOLTAGE" "25V"
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-3750,3725)"
+				( attribute "XY" "(-3800,3825)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CSMD0603"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+				( attribute "CDS_PART_NAME" "CSMD0603-10NF,10%,0603,25V"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "C31"
@@ -2514,6 +2519,11 @@
 					( attribute "PN" "2"
 						( Origin gPackager )
 					)
+				)
+			)
+			( pin "@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1:nc"
+				( attribute "PN" "2"
+					( Origin gPackager )
 				)
 			)
 		)
