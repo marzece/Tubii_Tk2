@@ -3,97 +3,77 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 10:29:48 2015  |
+|                                                    Thu Mar 19 15:31:46 2015  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  GND          pins ADDED TO this existing net (pins not previously on any net)
-                                 C31.2            7200.0  4452.0
+  UNNAMED_1_FRONTPORTS_I2_TUBCLKI pins ADDED TO this existing net (pins not previously on any net)
+                                 R349.2                         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_CSMD0603_I10_A pins MOVED FROM this net (to net name listed on right)
-                                 C26.1            7100.0  1674.0
-                                                                            VEE
-                                 U21.1            7100.0  1480.0
-                                                                            VEE
+  UNNAMED_1_SS22SDP2_I34_P2 pins ADDED TO this existing net (pins not previously on any net)
+                                 R350.2                         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_CSMD0603_I10_B pins MOVED FROM this net (to net name listed on right)
-                                 C26.2            7100.0  1726.0
-                                                                            GND
-                                 U21.7            7320.0  1650.0
-                                                                            GND
-                                 U21.10           7320.0  1800.0
-                                                                            GND
-                                 U21.13           7200.0  1920.0
-                                                                            GND
-                                 U21.16           7050.0  1920.0
-                                                                            GND
-                                 U21.19           6880.0  1850.0
-                                                                            GND
-                                 U21.22           6880.0  1700.0
-                                                                            GND
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  V3P3         pins ADDED TO this existing net (pins not previously on any net)
-                                 C31.1            7200.0  4400.0
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VP3_3        pins MOVED FROM this net (to net name listed on right)
-                                 U26.6            6457.7  5150.0
-                                                                           V3P3
+  VTT          pins ADDED TO this existing net (pins not previously on any net)
+                                 R349.1                         
+                                 R350.1                         
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 10:29:48 2015  |
+|                                                    Thu Mar 19 15:31:46 2015  |
 |------------------------------------------------------------------------------|
-| COMPONENT DEFINITION added to board drawing                                  |
+| COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    device type                                                               |
+|    ref des        |    device type                                           |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- CSMD0603-10NF,10%,0603,25V
- FOXCLOCK
+ R349                RSMD0805-50,1%,0805   
+ R350                RSMD0805-50,1%,0805   
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 10:29:48 2015  |
+|                                                    Thu Mar 19 15:31:46 2015  |
 |------------------------------------------------------------------------------|
-| COMPONENTS CHANGED from one device type to another in board drawing          |
+| COMPONENT PROPERTIES added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|   ref  des   |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C31                 CSMD0603-10NF,10%,0603,25V  7100.0  4400.0 CSMD0603-0.1UF,10%,0603,50V
- U26                 FOXCLOCK               6375.0  5250.0 FOXCLOCK
+ R349                           ROOM           CLK_PICK
+ R350                           ROOM           MTCA_MIMIC
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 10:29:48 2015  |
+|                                                    Thu Mar 19 15:31:46 2015  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C31.2           7100.0  4400.0 PRIM_FILE      ./Parts/parts/capacitors/csmd0603/chips/chips.prt
- C31.2           7100.0  4400.0 ROOM           CLK_PICK
- U26.6           6375.0  5250.0 PRIM_FILE      ./Parts/parts/misc/foxclock/chips/chips.prt
- U26.6           6375.0  5250.0 ROOM           CLK_PICK
+ R349.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
+ R349.2                         ROOM           CLK_PICK
+ R350.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
+ R350.2                         ROOM           MTCA_MIMIC
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   5  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 10:29:48 2015  |
+|                                                    Thu Mar 19 15:31:46 2015  |
 |------------------------------------------------------------------------------|
 | PIN PROPERTIES added to board drawing                                        |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    pin_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- U26.3           6292.3  5350.0 CDS_PINID      GND
- U26.6           6457.7  5150.0 CDS_PINID      VDD
+ R349.1                         CDS_PINID      A(0)
+ R349.2                         CDS_PINID      B(0)
+ R350.1                         CDS_PINID      A(0)
+ R350.2                         CDS_PINID      B(0)
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  22                                             |
+|   total ECO changes reported  16                                             |
 |------------------------------------------------------------------------------|

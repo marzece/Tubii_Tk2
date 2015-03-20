@@ -2,20 +2,20 @@
 (                                                                     )
 (    PLACEMENT LOG                                                    )
 (                                                                     )
-(    Drawing          : BSTPLC.brd                                    )
+(    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Mar 09 14:33:57 2015                      )
+(    Date/Time        : Wed Mar 18 11:21:31 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
 
- Autoplace BSTPLC.brd 
- Save as BSTPLC.brd 
+ Autoplace C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd 
+ Save as C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd 
 
  Will search while getting acceptable improvement
  Will not scale complete graph edges
- Start time Mon Mar 09 14:33:57 2015
+ Start time Wed Mar 18 11:21:31 2015
 
 
  
@@ -24,7 +24,7 @@
  
  Algorithm  : discrete
  Place within: room
- Room name: CLK_PICK
+ Room name: CHANGE_CLKS
  Map grid points to: library origin
  Place leftovers on bottom: YES
  Allow component overlap: NO
@@ -52,8 +52,6 @@
 
  Component straightness weight is 75
 
- Warning: no unplaced component matches active room CLK_PICK.
-
  Placement Keepin
 
   line seg 	(800.0,600.0) (16000.0,600.0)
@@ -62,7 +60,7 @@
   line seg 	(800.0,15800.0) (800.0,600.0)
 
 ACTIVE ROOMS:
-    Room  1: CLK_PICK        (6000.0 4000.0) (9800.0 4000.0) (9800.0 5700.0) (6000.0 5700.0)
+    Room  1: CHANGE_CLKS     (6800.0 700.0) (8800.0 700.0) (8800.0 2600.0) (6800.0 2600.0)
 
 
  Top grid x increment will be 250.0
@@ -74,9 +72,9 @@ ACTIVE ROOMS:
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
-(    Drawing          : BSTPLC.brd                                    )
+(    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Mar 09 14:33:57 2015                      )
+(    Date/Time        : Wed Mar 18 11:21:31 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -166,6 +164,7 @@ Report methodology:
   VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
   VTT                  VIA                  (8525.0 10175.0) TOP/BOTTOM 
   VEE                  VIA                  (3575.0 5375.0)  TOP/BOTTOM 
+  VEE                  VIA                  (8225.0 7850.0)  TOP/BOTTOM 
   VEE                  VIA                  (4400.0 4525.0)  TOP/BOTTOM 
   VEE                  VIA                  (5475.0 5200.0)  TOP/BOTTOM 
   VEE                  VIA                  (4725.0 5125.0)  TOP/BOTTOM 
@@ -180,6 +179,7 @@ Report methodology:
   VCC                  VIA                  (3599.0 9901.0)  TOP/BOTTOM 
   VCC                  VIA                  (3850.0 10850.0) TOP/BOTTOM 
   VCC                  VIA                  (3725.0 5375.0)  TOP/BOTTOM 
+  VCC                  VIA                  (8850.0 7950.0)  TOP/BOTTOM 
   VCC                  VIA                  (3800.0 4500.0)  TOP/BOTTOM 
   VCC                  VIA                  (4075.0 10750.0) TOP/BOTTOM 
   GND                  VIA                  (3875.0 4075.0)  TOP/BOTTOM 
@@ -188,6 +188,7 @@ Report methodology:
   GND                  VIA                  (10975.0 13175.0) TOP/BOTTOM 
   GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
   GND                  VIA                  (10975.0 12600.0) TOP/BOTTOM 
+  GND                  VIA                  (8375.0 7850.0)  TOP/BOTTOM 
   GND                  VIA                  (4097.5 4152.5)  TOP/BOTTOM 
   GND                  VIA                  (5574.5 5450.5)  TOP/BOTTOM 
   GND                  VIA                  (5400.0 5200.0)  TOP/BOTTOM 
@@ -228,6 +229,7 @@ Report methodology:
   VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
   VTT                  VIA                  (8525.0 10175.0) TOP/BOTTOM 
   VEE                  VIA                  (3575.0 5375.0)  TOP/BOTTOM 
+  VEE                  VIA                  (8225.0 7850.0)  TOP/BOTTOM 
   VEE                  VIA                  (4400.0 4525.0)  TOP/BOTTOM 
   VEE                  VIA                  (5475.0 5200.0)  TOP/BOTTOM 
   VEE                  VIA                  (4725.0 5125.0)  TOP/BOTTOM 
@@ -242,6 +244,7 @@ Report methodology:
   VCC                  VIA                  (3599.0 9901.0)  TOP/BOTTOM 
   VCC                  VIA                  (3850.0 10850.0) TOP/BOTTOM 
   VCC                  VIA                  (3725.0 5375.0)  TOP/BOTTOM 
+  VCC                  VIA                  (8850.0 7950.0)  TOP/BOTTOM 
   VCC                  VIA                  (3800.0 4500.0)  TOP/BOTTOM 
   VCC                  VIA                  (4075.0 10750.0) TOP/BOTTOM 
   GND                  VIA                  (3875.0 4075.0)  TOP/BOTTOM 
@@ -250,6 +253,7 @@ Report methodology:
   GND                  VIA                  (10975.0 13175.0) TOP/BOTTOM 
   GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
   GND                  VIA                  (10975.0 12600.0) TOP/BOTTOM 
+  GND                  VIA                  (8375.0 7850.0)  TOP/BOTTOM 
   GND                  VIA                  (4097.5 4152.5)  TOP/BOTTOM 
   GND                  VIA                  (5574.5 5450.5)  TOP/BOTTOM 
   GND                  VIA                  (5400.0 5200.0)  TOP/BOTTOM 
@@ -259,35 +263,35 @@ Report methodology:
 
 << Summary >>
   Total dangling lines:      35
-  Total dangling vias:       57
-  Total antenna vias:        57
+  Total dangling vias:       60
+  Total antenna vias:        60
 
     Layout Statistics:
     -----------------
-        Components:  Placed 292  Unplaced 589  Total 881
+        Components:  Placed 307  Unplaced 592  Total 899
         Nets:  W/Rats 673  No/Rats 1  Total 674
-        Pins:  W/Rats 1080  No/Rats 1  Unused 280  Unplaced 2010  Total 3371
-        Equivalent ICs (1 pin = 1/14 EIC)  240
+        Pins:  W/Rats 1137  No/Rats 1  Unused 307  Unplaced 1962  Total 3407
+        Equivalent ICs (1 pin = 1/14 EIC)  243
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
         Layout area (sq in) 231.04
-        Layout density (sq in/EIC) 0.963
-        Pin density (Pins/sq in) 14.591
+        Layout density (sq in/EIC) 0.951
+        Pin density (Pins/sq in) 14.746
         Average ratlength (in)  0.4
-        Rat density (in/sq in) 1.382
+        Rat density (in/sq in) 1.440
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                802           0          802
+        Connections                842           0          842
         Already Connected          225           0          225
-        Missing Connections        577           0          577
+        Missing Connections        617           0          617
         Dangling Connections                                 35
-        Connection Completion       28.05%       0.00%       28.05%
-        Manh Distance (inches)     319.22
-        Etch Length (inches)       125.58        0.00       125.58
-        Number of vias		   163           0          163
-        Vias per Connection          0.72        0.00         0.72
-        Smd pins with attached clines                       383
+        Connection Completion       26.72%       0.00%       26.72%
+        Manh Distance (inches)     332.65
+        Etch Length (inches)       125.77        0.00       125.77
+        Number of vias		   166           0          166
+        Vias per Connection          0.74        0.00         0.74
+        Smd pins with attached clines                       386
 
 
  Starting Connection Matrix construction.
@@ -296,13 +300,31 @@ Report methodology:
 
  
   ref_des    location_x  location_y  rotation mirror            package
+     R348       8300.0      1550.0         0                 RES805 (126)
+     R347       8300.0      2050.0       180                 RES805 (125)
+     R346       8300.0      1800.0         0                 RES805 (124)
+     R345       8300.0      2550.0       270                 RES805 (123)
+     R344       8050.0      2300.0       180                 RES805 (122)
+     R343       8050.0      2050.0       180                 RES805 (121)
+     R342       7800.0      2300.0       180                 RES805 (120)
+     R341       7800.0      2050.0       180                 RES805 (119)
+     R340       8550.0      2300.0         0                 RES805 (118)
+     R339       8550.0      2550.0        90                 RES805 (117)
+     R338       7550.0      2050.0       270                 RES805 (116)
+     R337       7800.0      2550.0        90                 RES805 (115)
+     R336       7550.0      1800.0       270                 RES805 (114)
+     R335       7550.0      2550.0        90                 RES805 (113)
+     R334       7550.0      1550.0       270                 RES805 (112)
+     R333       7300.0      2050.0       270                 RES805 (111)
+     R332       8550.0      1800.0         0                 RES805 (110)
+     R331       8050.0      2550.0        90                 RES805 (109)
 (---------------------------------------------------------------------)
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
-(    Drawing          : BSTPLC.brd                                    )
+(    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Mar 09 14:33:57 2015                      )
+(    Date/Time        : Wed Mar 18 11:21:33 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -392,6 +414,7 @@ Report methodology:
   VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
   VTT                  VIA                  (8525.0 10175.0) TOP/BOTTOM 
   VEE                  VIA                  (3575.0 5375.0)  TOP/BOTTOM 
+  VEE                  VIA                  (8225.0 7850.0)  TOP/BOTTOM 
   VEE                  VIA                  (4400.0 4525.0)  TOP/BOTTOM 
   VEE                  VIA                  (5475.0 5200.0)  TOP/BOTTOM 
   VEE                  VIA                  (4725.0 5125.0)  TOP/BOTTOM 
@@ -406,6 +429,7 @@ Report methodology:
   VCC                  VIA                  (3599.0 9901.0)  TOP/BOTTOM 
   VCC                  VIA                  (3850.0 10850.0) TOP/BOTTOM 
   VCC                  VIA                  (3725.0 5375.0)  TOP/BOTTOM 
+  VCC                  VIA                  (8850.0 7950.0)  TOP/BOTTOM 
   VCC                  VIA                  (3800.0 4500.0)  TOP/BOTTOM 
   VCC                  VIA                  (4075.0 10750.0) TOP/BOTTOM 
   GND                  VIA                  (3875.0 4075.0)  TOP/BOTTOM 
@@ -414,6 +438,7 @@ Report methodology:
   GND                  VIA                  (10975.0 13175.0) TOP/BOTTOM 
   GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
   GND                  VIA                  (10975.0 12600.0) TOP/BOTTOM 
+  GND                  VIA                  (8375.0 7850.0)  TOP/BOTTOM 
   GND                  VIA                  (4097.5 4152.5)  TOP/BOTTOM 
   GND                  VIA                  (5574.5 5450.5)  TOP/BOTTOM 
   GND                  VIA                  (5400.0 5200.0)  TOP/BOTTOM 
@@ -454,6 +479,7 @@ Report methodology:
   VTT                  VIA                  (9300.0 10025.0) TOP/BOTTOM 
   VTT                  VIA                  (8525.0 10175.0) TOP/BOTTOM 
   VEE                  VIA                  (3575.0 5375.0)  TOP/BOTTOM 
+  VEE                  VIA                  (8225.0 7850.0)  TOP/BOTTOM 
   VEE                  VIA                  (4400.0 4525.0)  TOP/BOTTOM 
   VEE                  VIA                  (5475.0 5200.0)  TOP/BOTTOM 
   VEE                  VIA                  (4725.0 5125.0)  TOP/BOTTOM 
@@ -468,6 +494,7 @@ Report methodology:
   VCC                  VIA                  (3599.0 9901.0)  TOP/BOTTOM 
   VCC                  VIA                  (3850.0 10850.0) TOP/BOTTOM 
   VCC                  VIA                  (3725.0 5375.0)  TOP/BOTTOM 
+  VCC                  VIA                  (8850.0 7950.0)  TOP/BOTTOM 
   VCC                  VIA                  (3800.0 4500.0)  TOP/BOTTOM 
   VCC                  VIA                  (4075.0 10750.0) TOP/BOTTOM 
   GND                  VIA                  (3875.0 4075.0)  TOP/BOTTOM 
@@ -476,6 +503,7 @@ Report methodology:
   GND                  VIA                  (10975.0 13175.0) TOP/BOTTOM 
   GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
   GND                  VIA                  (10975.0 12600.0) TOP/BOTTOM 
+  GND                  VIA                  (8375.0 7850.0)  TOP/BOTTOM 
   GND                  VIA                  (4097.5 4152.5)  TOP/BOTTOM 
   GND                  VIA                  (5574.5 5450.5)  TOP/BOTTOM 
   GND                  VIA                  (5400.0 5200.0)  TOP/BOTTOM 
@@ -485,41 +513,41 @@ Report methodology:
 
 << Summary >>
   Total dangling lines:      35
-  Total dangling vias:       57
-  Total antenna vias:        57
+  Total dangling vias:       60
+  Total antenna vias:        60
 
     Layout Statistics:
     -----------------
-        Components:  Placed 292  Unplaced 589  Total 881
+        Components:  Placed 325  Unplaced 574  Total 899
         Nets:  W/Rats 673  No/Rats 1  Total 674
-        Pins:  W/Rats 1080  No/Rats 1  Unused 280  Unplaced 2010  Total 3371
-        Equivalent ICs (1 pin = 1/14 EIC)  240
+        Pins:  W/Rats 1173  No/Rats 1  Unused 307  Unplaced 1926  Total 3407
+        Equivalent ICs (1 pin = 1/14 EIC)  243
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
         Layout area (sq in) 231.04
-        Layout density (sq in/EIC) 0.963
-        Pin density (Pins/sq in) 14.591
+        Layout density (sq in/EIC) 0.951
+        Pin density (Pins/sq in) 14.746
         Average ratlength (in)  0.4
-        Rat density (in/sq in) 1.382
+        Rat density (in/sq in) 1.494
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                802           0          802
+        Connections                878           0          878
         Already Connected          225           0          225
-        Missing Connections        577           0          577
+        Missing Connections        653           0          653
         Dangling Connections                                 35
-        Connection Completion       28.05%       0.00%       28.05%
-        Manh Distance (inches)     319.22
-        Etch Length (inches)       125.58        0.00       125.58
-        Number of vias		   163           0          163
-        Vias per Connection          0.72        0.00         0.72
-        Smd pins with attached clines                       383
+        Connection Completion       25.63%       0.00%       25.63%
+        Manh Distance (inches)     345.07
+        Etch Length (inches)       125.77        0.00       125.77
+        Number of vias		   166           0          166
+        Vias per Connection          0.74        0.00         0.74
+        Smd pins with attached clines                       386
 
 
- Successfully placed 0 components out of 0
+ Successfully placed 18 components out of 18
 
 
 
-Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
-Actual time of completion: Mon Mar 09 14:33:57 2015
+Elapsed time:  0 hr 0 min 2 sec ( 0.00 hr)
+Actual time of completion: Wed Mar 18 11:21:33 2015
 
