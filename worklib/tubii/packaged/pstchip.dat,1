@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 18-Mar-2015 AT 11:15:14 }
+{ Packager-XL run on 20-Mar-2015 AT 13:28:44 }
 primitive '1N4448';
   pin
     'IN':
@@ -1225,6 +1225,39 @@ primitive 'CSMD0603-1.0UF,10%,0603,25V';
       PARENT_PART_TYPE='CSMD0603';
       PARENT_PPT='CSMD0603';
       PARENT_PPT_PART='CSMD0603-1.0UF,10%,0603,25V';
+  end_body;
+end_primitive;
+primitive 'CSMD0603-10NF,10%,0603,25V';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='CSMD0603';
+      PATH='1P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
+      VER='1';
+      XY='(1400,2400)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='CSMD0603';
+      JEDEC_TYPE='CAP0603';
+      PHYS_DES_PREFIX='C';
+      CLASS='DISCRETE';
+      VALUE='10NF';
+      PARENT_PART_TYPE='CSMD0603';
+      PARENT_PPT='CSMD0603';
+      PARENT_PPT_PART='CSMD0603-10NF,10%,0603,25V';
   end_body;
 end_primitive;
 primitive 'CSMD0805-0.1UF,5%,0805,50V';
@@ -2765,9 +2798,17 @@ primitive 'FOXCLOCK';
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
-    'NC':
-      PIN_NUMBER='(2)';
-      PINUSE='NC';
+    'VDD':
+      PIN_NUMBER='(6)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'GND':
+      PIN_NUMBER='(3)';
+      PINUSE='GROUND';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
       NO_ASSERT_CHECK='TRUE';
@@ -2780,9 +2821,7 @@ primitive 'FOXCLOCK';
       JEDEC_TYPE='SMD_FOX';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
-      GROUND_NETS='GND';
-      POWER_PINS='(VP3_3:6)';
-      POWER_PINS='(GND:3)';
+      NC_PINS='(2)';
   end_body;
 end_primitive;
 primitive 'HCT123';

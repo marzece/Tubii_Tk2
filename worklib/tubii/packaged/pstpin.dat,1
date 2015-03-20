@@ -1,6 +1,6 @@
 FILE_TYPE=PINLIST;
-{ Packager-XL run on 18-Mar-2015 AT 11:15:14 }
-TIME=' COMPILATION ON 18-Mar-2015 AT 11:15:14';
+{ Packager-XL run on 20-Mar-2015 AT 13:28:44 }
+TIME=' COMPILATION ON 20-Mar-2015 AT 13:28:44';
 primitive '1N4448';      body '1N4448';
     'IN':'(1)';
     'OUT':'(2)';
@@ -199,6 +199,10 @@ primitive 'CSMD0603-0.1UF,5%,0603,50V';body 'CSMD0603';
     'B'<0>:'(2)';
 end_primitive;
 primitive 'CSMD0603-1.0UF,10%,0603,25V';body 'CSMD0603';
+    'A'<0>:'(1)';
+    'B'<0>:'(2)';
+end_primitive;
+primitive 'CSMD0603-10NF,10%,0603,25V';body 'CSMD0603';
     'A'<0>:'(1)';
     'B'<0>:'(2)';
 end_primitive;
@@ -414,7 +418,8 @@ primitive 'FOXCLOCK';    body 'FOXCLOCK';
     'OUT':'(4)';OUT;
     'OUT*':'(5)';OUT;
     'ED':'(1)';IN;
-    'NC':'(2)';
+    'VDD':'(6)';
+    'GND':'(3)';
 end_primitive;
 primitive 'HCT123';      body 'HCT123';
     'RD1*':'(3)';IN;

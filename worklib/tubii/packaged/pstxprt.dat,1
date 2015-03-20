@@ -1,9 +1,9 @@
 FILE_TYPE=EXPANDEDPARTLIST;
-{ Packager-XL run on 18-Mar-2015 AT 11:15:14 }
+{ Packager-XL run on 20-Mar-2015 AT 13:28:44 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='TUBII';
- POST_TIME='18-Mar-2015 AT 11:15:14';
+ POST_TIME='20-Mar-2015 AT 13:28:44';
  SOURCE_TOOL='PACKAGER_XL';
 END_DIRECTIVES;
 
@@ -1134,7 +1134,7 @@ e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page
  PRIM_FILE='./Parts/parts/capacitors/csmd0603/chips/chips.prt';
 
 PART_NAME
- C31 'CSMD0603-0.1UF,10%,0603,50V':
+ C31 'CSMD0603-10NF,10%,0603,25V':
  ROOM='CLK_PICK';
 
 SECTION_NUMBER 1
@@ -1159,16 +1159,16 @@ page1_i27@capacitors.csmd0603(chips)',
  DIST='FLAT',
  CURRENT='CIMAX',
  PHYS_PAGE='1',
- XY='(-3750,3725)',
+ XY='(-3800,3825)',
  ROT='0',
  VER='1',
- VALUE='0.1UF',
+ VALUE='10NF',
  PART_NAME='CSMD0603',
  TOL='10%',
  ROOM='CLK_PICK',
  CDS_LIB='capacitors',
- CDS_PART_NAME='CSMD0603-0.1UF,10%,0603,50V',
- VOLTAGE='50V',
+ CDS_PART_NAME='CSMD0603-10NF,10%,0603,25V',
+ VOLTAGE='25V',
  PRIM_FILE='./Parts/parts/capacitors/csmd0603/chips/chips.prt';
 
 PART_NAME
@@ -19977,6 +19977,80 @@ e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i3@tubii_tk2_lib.change_clks(sch_1):page
  PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
 
 PART_NAME
+ R349 'RSMD0805-50,1%,0805':
+ ROOM='CLK_PICK';
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1_I31@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i31@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i31@resistors.rsmd0805(chips)',
+ PATH='I31',
+ DRAWING='@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(-600,3075)',
+ ROT='1',
+ VER='1',
+ VALUE='50',
+ TOL='1%',
+ ROOM='CLK_PICK',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-50,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R350 'RSMD0805-50,1%,0805':
+ ROOM='MTCA_MIMIC';
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I3@TUBII_TK2_LIB.MTCA_MIMIC(SCH_1):PAGE1_I16@TUBII_TK2_LIB.TRIGGER_LOGIC(SCH_1):PAGE1_I99@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_~
+1):page1_i99@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_~
+1):page1_i99@resistors.rsmd0805(chips)',
+ PATH='I99',
+ DRAWING='@TUBII_TK2_LIB.TRIGGER_LOGIC(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(-2100,1500)',
+ ROT='1',
+ VER='1',
+ VALUE='50',
+ TOL='1%',
+ ROOM='MTCA_MIMIC',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-50,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
  TP1 'TESTPOINT_L':
  ROOM='CNTRL_REG';
 
@@ -22581,7 +22655,8 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_
  PRIM_FILE='./Parts/parts/misc/testpoint_l/chips/chips.prt';
 
 PART_NAME
- TP127 'TESTPOINT_L':;
+ TP127 'TESTPOINT_L':
+ ROOM='MTCA_MIMIC';
 
 SECTION_NUMBER 1
  '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I3@TUBII_TK2_LIB.MTCA_MIMIC(SCH_1):PAGE1_I16@TUBII_TK2_LIB.TRIGGER_LOGIC(SCH_1):PAGE1_I84@MISC.TESTPOINT_L(CHIPS)':
@@ -22598,6 +22673,7 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_
  XY='(-25,2575)',
  ROT='1',
  VER='1',
+ ROOM='MTCA_MIMIC',
  CDS_LIB='misc',
  CDS_PART_NAME='TESTPOINT_L',
  PRIM_FILE='./Parts/parts/misc/testpoint_l/chips/chips.prt';
@@ -22625,7 +22701,8 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_
  PRIM_FILE='./Parts/parts/misc/testpoint_l/chips/chips.prt';
 
 PART_NAME
- TP129 'TESTPOINT_L':;
+ TP129 'TESTPOINT_L':
+ ROOM='MTCA_MIMIC';
 
 SECTION_NUMBER 1
  '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I3@TUBII_TK2_LIB.MTCA_MIMIC(SCH_1):PAGE1_I16@TUBII_TK2_LIB.TRIGGER_LOGIC(SCH_1):PAGE1_I92@MISC.TESTPOINT_L(CHIPS)':
@@ -22642,12 +22719,14 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_
  XY='(850,2050)',
  ROT='3',
  VER='1',
+ ROOM='MTCA_MIMIC',
  CDS_LIB='misc',
  CDS_PART_NAME='TESTPOINT_L',
  PRIM_FILE='./Parts/parts/misc/testpoint_l/chips/chips.prt';
 
 PART_NAME
- TP130 'TESTPOINT_L':;
+ TP130 'TESTPOINT_L':
+ ROOM='MTCA_MIMIC';
 
 SECTION_NUMBER 1
  '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I3@TUBII_TK2_LIB.MTCA_MIMIC(SCH_1):PAGE1_I16@TUBII_TK2_LIB.TRIGGER_LOGIC(SCH_1):PAGE1_I85@MISC.TESTPOINT_L(CHIPS)':
@@ -22664,6 +22743,7 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_
  XY='(850,1675)',
  ROT='3',
  VER='1',
+ ROOM='MTCA_MIMIC',
  CDS_LIB='misc',
  CDS_PART_NAME='TESTPOINT_L',
  PRIM_FILE='./Parts/parts/misc/testpoint_l/chips/chips.prt';
@@ -24739,7 +24819,7 @@ page1_i1@misc.foxclock(chips)',
  PATH='I1',
  DRAWING='@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1',
  PHYS_PAGE='1',
- XY='(-3775,3425)',
+ XY='(-3800,3450)',
  ROT='0',
  VER='1',
  ROOM='CLK_PICK',
