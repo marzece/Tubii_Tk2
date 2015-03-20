@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 20-Mar-2015 AT 13:28:44 }
+{ Packager-XL run on 20-Mar-2015 AT 13:58:54 }
 primitive '1N4448';
   pin
     'IN':
@@ -4972,6 +4972,40 @@ primitive 'RSMD0805-499,1%,0805';
       PARENT_PART_TYPE='RSMD0805';
       PARENT_PPT='RSMD0805';
       PARENT_PPT_PART='RSMD0805-499,1%,0805';
+  end_body;
+end_primitive;
+primitive 'RSMD0805-5.1K,1%,0805';
+  pin
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='RSMD0805';
+      COMP_TYPE='RES';
+      PATH='2P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
+      VER='1';
+      XY='(1350,1350)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='RSMD0805';
+      JEDEC_TYPE='RES805';
+      PHYS_DES_PREFIX='R';
+      CLASS='DISCRETE';
+      VALUE='5.1K';
+      PARENT_PART_TYPE='RSMD0805';
+      PARENT_PPT='RSMD0805';
+      PARENT_PPT_PART='RSMD0805-5.1K,1%,0805';
   end_body;
 end_primitive;
 primitive 'RSMD0805-50,1%,0805';

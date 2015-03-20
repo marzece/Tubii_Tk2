@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Thu Mar 19 15:16:39 2015                      )
+(    Date/Time        : Thu Mar 19 16:05:15 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -15,7 +15,7 @@
 
  Will search while getting acceptable improvement
  Will not scale complete graph edges
- Start time Thu Mar 19 15:16:39 2015
+ Start time Thu Mar 19 16:05:15 2015
 
 
  
@@ -52,8 +52,6 @@
 
  Component straightness weight is 75
 
- Warning: no unplaced component matches active room MTCA_MIMIC.
-
  Placement Keepin
 
   line seg 	(800.0,600.0) (16000.0,600.0)
@@ -76,7 +74,7 @@ ACTIVE ROOMS:
 (                                                                     )
 (    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Thu Mar 19 15:16:39 2015                      )
+(    Date/Time        : Thu Mar 19 16:05:15 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -97,6 +95,8 @@ Report methodology:
 << Dangling Lines >>  - Location marked with a star (*) is dangling.
   Net                 Layer                  Length       Location
   ------------------------------------------------------------------------------------------
+  UNNAMED_1_SS22SDP2_I34_P2 TOP                    205.0      (10330.0 5500.0) to *(10125.0 5500.0)
+  UNNAMED_1_SS22SDP2_I34_P1 TOP                    405.0     *(10125.0 5650.0) to  (10450.0 5570.0)
   UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (12000.0 8175.0) to *(12375.0 7850.0)
   UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (11950.0 8225.0) to *(12375.0 7900.0)
   UNNAMED_1_FRONTPORTS_I2_TUBCLKI BOTTOM                 616.4      (7500.0 4525.0) to *(7400.0 3950.0)
@@ -140,6 +140,8 @@ Report methodology:
   UNNAMED_1_CAENCOMS_I8_GTTTL BOTTOM                  50.0     *(6100.0 8600.0) to  (6100.0 8550.0)
   UNNAMED_1_CAENCOMS_I8_GT2P BOTTOM                 781.1      (4150.0 9950.0) to *(3600.0 10225.0)
   UNNAMED_1_CAENCOMS_I8_GT2P TOP                    352.5     *(5225.0 8800.0) to  (5400.0 8520.0)
+  UNNAMED_1_AD96687_I1_Q1_1 TOP                    275.0      (10400.0 5570.0) to *(10125.0 5570.0)
+  UNNAMED_1_AD96687_I1_Q1 TOP                    530.0     *(10125.0 5675.0) to  (10550.0 5570.0)
   SR_DATA              TOP                    393.4     *(11050.0 8500.0) to  (11350.0 8402.5)
   SR_DATA              TOP                    218.9      (11275.0 13197.5) to *(11175.0 13375.0)
   SR_CLK               TOP                    307.9     *(11050.0 8475.0) to  (11300.0 8402.5)
@@ -370,36 +372,36 @@ Report methodology:
   GND                  VIA                  (11225.0 12475.0) TOP/BOTTOM 
 
 << Summary >>
-  Total dangling lines:      49
+  Total dangling lines:      53
   Total dangling vias:      106
   Total antenna vias:       106
 
     Layout Statistics:
     -----------------
-        Components:  Placed 325  Unplaced 574  Total 899
+        Components:  Placed 325  Unplaced 576  Total 901
         Nets:  W/Rats 671  No/Rats 0  Total 671
-        Pins:  W/Rats 1176  No/Rats 0  Unused 305  Unplaced 1926  Total 3407
+        Pins:  W/Rats 1176  No/Rats 0  Unused 305  Unplaced 1930  Total 3411
         Equivalent ICs (1 pin = 1/14 EIC)  243
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
         Layout area (sq in) 231.04
         Layout density (sq in/EIC) 0.951
-        Pin density (Pins/sq in) 14.746
-        Average ratlength (in)  0.4
-        Rat density (in/sq in) 1.481
+        Pin density (Pins/sq in) 14.764
+        Average ratlength (in)  0.5
+        Rat density (in/sq in) 1.621
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
         Connections                883           0          883
         Already Connected          321           0          321
         Missing Connections        562           0          562
-        Dangling Connections                                 49
+        Dangling Connections                                 53
         Connection Completion       36.35%       0.00%       36.35%
-        Manh Distance (inches)     342.11
-        Etch Length (inches)       179.29        0.00       179.29
+        Manh Distance (inches)     374.58
+        Etch Length (inches)       180.71        0.00       180.71
         Number of vias		   253           0          253
         Vias per Connection          0.79        0.00         0.79
-        Smd pins with attached clines                       557
+        Smd pins with attached clines                       561
 
 
  Starting Connection Matrix construction.
@@ -408,13 +410,14 @@ Report methodology:
 
  
   ref_des    location_x  location_y  rotation mirror            package
+     R350      10800.0      5550.0       270                 RES805 (110)
 (---------------------------------------------------------------------)
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
 (    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Thu Mar 19 15:16:39 2015                      )
+(    Date/Time        : Thu Mar 19 16:05:15 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -435,6 +438,8 @@ Report methodology:
 << Dangling Lines >>  - Location marked with a star (*) is dangling.
   Net                 Layer                  Length       Location
   ------------------------------------------------------------------------------------------
+  UNNAMED_1_SS22SDP2_I34_P2 TOP                    205.0      (10330.0 5500.0) to *(10125.0 5500.0)
+  UNNAMED_1_SS22SDP2_I34_P1 TOP                    405.0     *(10125.0 5650.0) to  (10450.0 5570.0)
   UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (12000.0 8175.0) to *(12375.0 7850.0)
   UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (11950.0 8225.0) to *(12375.0 7900.0)
   UNNAMED_1_FRONTPORTS_I2_TUBCLKI BOTTOM                 616.4      (7500.0 4525.0) to *(7400.0 3950.0)
@@ -478,6 +483,8 @@ Report methodology:
   UNNAMED_1_CAENCOMS_I8_GTTTL BOTTOM                  50.0     *(6100.0 8600.0) to  (6100.0 8550.0)
   UNNAMED_1_CAENCOMS_I8_GT2P BOTTOM                 781.1      (4150.0 9950.0) to *(3600.0 10225.0)
   UNNAMED_1_CAENCOMS_I8_GT2P TOP                    352.5     *(5225.0 8800.0) to  (5400.0 8520.0)
+  UNNAMED_1_AD96687_I1_Q1_1 TOP                    275.0      (10400.0 5570.0) to *(10125.0 5570.0)
+  UNNAMED_1_AD96687_I1_Q1 TOP                    530.0     *(10125.0 5675.0) to  (10550.0 5570.0)
   SR_DATA              TOP                    393.4     *(11050.0 8500.0) to  (11350.0 8402.5)
   SR_DATA              TOP                    218.9      (11275.0 13197.5) to *(11175.0 13375.0)
   SR_CLK               TOP                    307.9     *(11050.0 8475.0) to  (11300.0 8402.5)
@@ -708,42 +715,42 @@ Report methodology:
   GND                  VIA                  (11225.0 12475.0) TOP/BOTTOM 
 
 << Summary >>
-  Total dangling lines:      49
+  Total dangling lines:      53
   Total dangling vias:      106
   Total antenna vias:       106
 
     Layout Statistics:
     -----------------
-        Components:  Placed 325  Unplaced 574  Total 899
+        Components:  Placed 326  Unplaced 575  Total 901
         Nets:  W/Rats 671  No/Rats 0  Total 671
-        Pins:  W/Rats 1176  No/Rats 0  Unused 305  Unplaced 1926  Total 3407
+        Pins:  W/Rats 1178  No/Rats 0  Unused 305  Unplaced 1928  Total 3411
         Equivalent ICs (1 pin = 1/14 EIC)  243
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
         Layout area (sq in) 231.04
         Layout density (sq in/EIC) 0.951
-        Pin density (Pins/sq in) 14.746
-        Average ratlength (in)  0.4
-        Rat density (in/sq in) 1.481
+        Pin density (Pins/sq in) 14.764
+        Average ratlength (in)  0.5
+        Rat density (in/sq in) 1.631
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections                883           0          883
+        Connections                885           0          885
         Already Connected          321           0          321
-        Missing Connections        562           0          562
-        Dangling Connections                                 49
-        Connection Completion       36.35%       0.00%       36.35%
-        Manh Distance (inches)     342.11
-        Etch Length (inches)       179.29        0.00       179.29
+        Missing Connections        564           0          564
+        Dangling Connections                                 53
+        Connection Completion       36.27%       0.00%       36.27%
+        Manh Distance (inches)     376.79
+        Etch Length (inches)       180.71        0.00       180.71
         Number of vias		   253           0          253
         Vias per Connection          0.79        0.00         0.79
-        Smd pins with attached clines                       557
+        Smd pins with attached clines                       561
 
 
- Successfully placed 0 components out of 0
+ Successfully placed 1 components out of 1
 
 
 
 Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
-Actual time of completion: Thu Mar 19 15:16:39 2015
+Actual time of completion: Thu Mar 19 16:05:15 2015
 
