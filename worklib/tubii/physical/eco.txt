@@ -3,77 +3,55 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 15:31:46 2015  |
+|                                                    Fri Mar 20 13:31:20 2015  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  UNNAMED_1_FRONTPORTS_I2_TUBCLKI pins ADDED TO this existing net (pins not previously on any net)
-                                 R349.2                         
+  TRIG_GATE1_N pins MOVED FROM this net (to net name listed on right)
+                                 U45.3           10950.0  4045.0
+                                                                   TRIG_GATE2_N
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_SS22SDP2_I34_P2 pins ADDED TO this existing net (pins not previously on any net)
-                                 R350.2                         
+  TRIG_GATE1_P pins MOVED FROM this net (to net name listed on right)
+                                 U45.4           10880.0  3975.0
+                                                                   TRIG_GATE2_P
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VTT          pins ADDED TO this existing net (pins not previously on any net)
-                                 R349.1                         
-                                 R350.1                         
+  TRIG_GATE2_N pins MOVED FROM this net (to net name listed on right)
+                                 U45.8           10880.0  3775.0
+                                                                   TRIG_GATE1_N
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  TRIG_GATE2_P pins MOVED FROM this net (to net name listed on right)
+                                 U45.9           10950.0  3705.0
+                                                                   TRIG_GATE1_P
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 15:31:46 2015  |
-|------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R349                RSMD0805-50,1%,0805   
- R350                RSMD0805-50,1%,0805   
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   3  |
-|------------------------------------------------------------------------------|
-|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 15:31:46 2015  |
+|                                                    Fri Mar 20 13:31:20 2015  |
 |------------------------------------------------------------------------------|
 | COMPONENT PROPERTIES added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   ref  des   |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R349                           ROOM           CLK_PICK
- R350                           ROOM           MTCA_MIMIC
+ TP127                          ROOM           MTCA_MIMIC
+ TP129                          ROOM           MTCA_MIMIC
+ TP130                          ROOM           MTCA_MIMIC
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
-|                                                                    Page   4  |
+|                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 15:31:46 2015  |
+|                                                    Fri Mar 20 13:31:20 2015  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R349.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
- R349.2                         ROOM           CLK_PICK
- R350.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
- R350.2                         ROOM           MTCA_MIMIC
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   5  |
+ TP127.1                        ROOM           MTCA_MIMIC
+ TP129.1                        ROOM           MTCA_MIMIC
+ TP130.1                        ROOM           MTCA_MIMIC
 |------------------------------------------------------------------------------|
-|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V3.brd             |
-|                                                    Thu Mar 19 15:31:46 2015  |
-|------------------------------------------------------------------------------|
-| PIN PROPERTIES added to board drawing                                        |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    pin_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R349.1                         CDS_PINID      A(0)
- R349.2                         CDS_PINID      B(0)
- R350.1                         CDS_PINID      A(0)
- R350.2                         CDS_PINID      B(0)
-|------------------------------------------------------------------------------|
-|   total ECO changes reported  16                                             |
+|   total ECO changes reported  10                                             |
 |------------------------------------------------------------------------------|

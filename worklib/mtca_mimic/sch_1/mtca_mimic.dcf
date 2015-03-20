@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 17 )
+			( logicalViewRevNum 18 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -9950,6 +9950,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "MTCA_MIMIC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -10004,6 +10008,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "MTCA_MIMIC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a"
 					( attribute "PN" "1"
@@ -10389,6 +10397,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "MTCA_MIMIC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a"
 					( attribute "PN" "1"
@@ -11571,9 +11583,33 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R350"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R350"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( designInst "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16"
@@ -11602,7 +11638,7 @@
 	( BaseCopy "trigger_logic"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 14 )
+				( logicalViewRevNum 16 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -18079,6 +18115,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "MTCA_MIMIC"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I84" )
 				( pin "a"
 					( attribute "PN" "1"
@@ -18122,6 +18161,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "MTCA_MIMIC"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I85" )
 				( pin "a"
@@ -18430,6 +18472,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "MTCA_MIMIC"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I92" )
 				( pin "a"
@@ -18884,10 +18929,28 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R350"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R350"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I99" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 		)

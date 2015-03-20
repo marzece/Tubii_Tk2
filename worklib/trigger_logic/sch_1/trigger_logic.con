@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "trigger_logic"
     (lastIds
-      (lastInstanceId 81)
-      (lastNetId 60)
-      (lastInstTermId 311)
+      (lastInstanceId 84)
+      (lastNetId 63)
+      (lastInstTermId 317)
     )
     (cells
       ("S2" "mc10h104" "ecl" "sym_1"
@@ -237,6 +237,9 @@
       ("N58" "unnamed_1_mc10e116_i63_q0" -1 -1 0 )
       ("N59" "unnamed_1_mc10e116_i63_q1" -1 -1 0 )
       ("N60" "over_thresh1_p" -1 -1 1 1)
+      ("N61" "unnamed_1_mc10h131_i62_cc" -1 -1 0 )
+      ("N62" "unnamed_1_mc10h131_i62_d1" -1 -1 0 )
+      ("N63" "unnamed_1_mc10h131_i62_d2" -1 -1 0 )
       ("N2" "gnd" -1 -1 2 )
       ("N15" "vee" -1 -1 2 )
       ("N16" "vtt" -1 -1 2 )
@@ -1327,6 +1330,9 @@
       ("I50" "page1_i62" "S5"
         (pins
           ("M223" "T47" -1 -1
+            (conn
+              ("0" -1 -1 "N61" -1 -1)
+            )
           )
           ("M224" "T48" -1 -1
             (conn
@@ -1339,8 +1345,14 @@
             )
           )
           ("M226" "T50" -1 -1
+            (conn
+              ("0" -1 -1 "N62" -1 -1)
+            )
           )
           ("M227" "T51" -1 -1
+            (conn
+              ("0" -1 -1 "N63" -1 -1)
+            )
           )
           ("M228" "T52" -1 -1
             (conn
@@ -1860,6 +1872,48 @@
           ("M311" "T30" 0 0
             (conn
               ("0" 0 0 "N11" -1 -1)
+            )
+          )
+        )
+      )
+      ("I82" "page1_i100" "S3"
+        (pins
+          ("M312" "T29" 0 0
+            (conn
+              ("0" 0 0 "N62" -1 -1)
+            )
+          )
+          ("M313" "T30" 0 0
+            (conn
+              ("0" 0 0 "N2" -1 -1)
+            )
+          )
+        )
+      )
+      ("I83" "page1_i101" "S3"
+        (pins
+          ("M314" "T29" 0 0
+            (conn
+              ("0" 0 0 "N63" -1 -1)
+            )
+          )
+          ("M315" "T30" 0 0
+            (conn
+              ("0" 0 0 "N2" -1 -1)
+            )
+          )
+        )
+      )
+      ("I84" "page1_i102" "S3"
+        (pins
+          ("M316" "T29" 0 0
+            (conn
+              ("0" 0 0 "N61" -1 -1)
+            )
+          )
+          ("M317" "T30" 0 0
+            (conn
+              ("0" 0 0 "N2" -1 -1)
             )
           )
         )
