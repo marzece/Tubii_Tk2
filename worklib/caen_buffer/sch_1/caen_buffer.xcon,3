@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-02T00:53:41</modificationTime>
+    <modificationTime>2015-03-07T19:10:16</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_buffer" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>27</instanceid>
-        <netid>28</netid>
+        <netid>29</netid>
         <insttermid>66</insttermid>
       </lastids>
       <cells>
@@ -320,6 +319,11 @@
         <net>
           <id>N27</id>
           <name>vcc15m</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N29</id>
+          <name>vtt</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -1431,6 +1435,7 @@
               <id>M65</id>
               <termid>T29</termid>
               <connections>
+                <connection net="N29" />
               </connections>
             </pin>
             <pin>
@@ -1509,6 +1514,11 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="vtt">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
         </netScopes>
         <pages>
           <page number="1">
@@ -1543,6 +1553,7 @@
               <net ref="vcc15"></net>
               <net ref="vcc15m"></net>
               <net ref="vref5m"></net>
+              <net ref="vtt"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>
