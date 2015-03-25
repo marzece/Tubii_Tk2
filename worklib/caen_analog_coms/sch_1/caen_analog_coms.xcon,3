@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-20T19:45:19</modificationTime>
+    <modificationTime>2015-03-24T19:21:07</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_analog_coms" view="sch_1">
       <lastids>
-        <instanceid>25</instanceid>
-        <netid>70</netid>
-        <insttermid>584</insttermid>
+        <instanceid>26</instanceid>
+        <netid>73</netid>
+        <insttermid>624</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -397,6 +397,16 @@
               <name>vcc</name>
               <direction>input</direction>
             </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S9</id>
+          <library>tubii_tk2_lib</library>
+          <name>vref_gen</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
           </terms>
         </cell>
       </cells>
@@ -2261,6 +2271,27 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I26</id>
+          <cellid>S9</cellid>
+          <name>page1_i58</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2406,6 +2437,7 @@
               <instance ref="i47"></instance>
               <instance ref="i48"></instance>
               <instance ref="i49"></instance>
+              <instance ref="i58"></instance>
             </instances>
           </page>
         </pages>
