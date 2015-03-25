@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "caen_analog_coms"
     (lastIds
-      (lastInstanceId 25)
-      (lastNetId 70)
-      (lastInstTermId 584)
+      (lastInstanceId 26)
+      (lastNetId 77)
+      (lastInstTermId 671)
     )
     (cells
       ("S2" "caen_buffer" "tubii_tk2_lib" "sym_1"
@@ -101,6 +101,11 @@
           ("T76" "vcc" -1 -1 1)
         )
       )
+      ("S9" "vref_gen" "tubii_tk2_lib" "sym_1"
+        (terms
+          ("T97" "vref5m" -1 -1 2)
+        )
+      )
     )
 
     (nets
@@ -141,6 +146,7 @@
       ("N36" "unnamed_1_prma1c05b_i34_ctrlin" -1 -1 0 )
       ("N37" "unnamed_1_prma1c05b_i39_ctrlin" -1 -1 0 )
       ("N38" "unnamed_1_prma1c05b_i40_ctrlin" -1 -1 0 )
+      ("N77" "unnamed_1_caenbuffer_i18_vref5m" -1 -1 0 )
       ("N6" "gnd" -1 -1 2 )
       ("N39" "vcc" -1 -1 2 )
       ("vcc15" "vcc15" -1 -1 2  inherited)
@@ -172,6 +178,9 @@
             )
           )
           ("M9" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
           )
         )
       )
@@ -198,6 +207,9 @@
             )
           )
           ("M18" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
           )
         )
       )
@@ -224,6 +236,9 @@
             )
           )
           ("M27" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
           )
         )
       )
@@ -250,6 +265,9 @@
             )
           )
           ("M36" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
           )
         )
       )
@@ -276,6 +294,9 @@
             )
           )
           ("M45" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
           )
         )
       )
@@ -302,6 +323,9 @@
             )
           )
           ("M54" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
           )
         )
       )
@@ -328,6 +352,9 @@
             )
           )
           ("M63" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
           )
         )
       )
@@ -354,6 +381,9 @@
             )
           )
           ("M72" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
           )
         )
       )
@@ -964,6 +994,15 @@
           ("M192" "T76" -1 -1
             (conn
               ("0" -1 -1 "N39" -1 -1)
+            )
+          )
+        )
+      )
+      ("I26" "page1_i58" "S9"
+        (pins
+          ("M628" "T97" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
             )
           )
         )
