@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 4 )
+			( logicalViewRevNum 5 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -21698,6 +21698,27 @@
 				)
 				( objectStatus "page1_i24 (caen_buffer)" )
 			)
+			( designInst "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_tk2_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-425,4625)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i58 (vref_gen)" )
+			)
 		)
 	)
 	( BaseCopy "caen_buffer"
@@ -23575,6 +23596,28 @@
 				)
 				( pin "\out\"
 				)
+			)
+		)
+	)
+	( EndBaseCopy )
+	)
+	( BaseCopy "vref_gen"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 1 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "vref_gen"
 			)
 		)
 	)
