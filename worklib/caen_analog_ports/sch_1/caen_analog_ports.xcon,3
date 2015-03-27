@@ -5,12 +5,11 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T14:08:09</modificationTime>
+    <modificationTime>2015-03-07T14:13:52</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_analog_ports" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>56</instanceid>
         <netid>4</netid>
@@ -45,12 +44,16 @@
         <net>
           <id>N3</id>
           <name>caen_out_anal</name>
+          <scope>interface</scope>
+          <direction>input</direction>
           <msb>7</msb>
           <lsb>0</lsb>
         </net>
         <net>
           <id>N4</id>
           <name>scope_out_anal</name>
+          <scope>interface</scope>
+          <direction>input</direction>
           <msb>7</msb>
           <lsb>0</lsb>
         </net>
@@ -1649,6 +1652,12 @@
         <schematicExtension>
         <errorStatus>true</errorStatus>
         <netScopes>
+          <netScope ref="caen_out_anal">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
@@ -1658,6 +1667,12 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="scope_out_anal">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
             </pageScope>
           </netScope>
         </netScopes>

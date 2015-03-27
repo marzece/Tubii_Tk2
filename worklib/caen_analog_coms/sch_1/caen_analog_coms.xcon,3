@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-24T19:21:46</modificationTime>
+    <modificationTime>2015-03-25T11:36:45</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_analog_coms" view="sch_1">
       <lastids>
         <instanceid>26</instanceid>
-        <netid>73</netid>
-        <insttermid>628</insttermid>
+        <netid>77</netid>
+        <insttermid>671</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -587,6 +587,10 @@
           <name>unnamed_1_prma1c05b_i40_ctrlin</name>
         </net>
         <net>
+          <id>N77</id>
+          <name>unnamed_1_caenbuffer_i18_vref5m</name>
+        </net>
+        <net>
           <id>N6</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -669,6 +673,7 @@
               <id>M9</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -724,6 +729,7 @@
               <id>M18</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -779,6 +785,7 @@
               <id>M27</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -834,6 +841,7 @@
               <id>M36</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -889,6 +897,7 @@
               <id>M45</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -944,6 +953,7 @@
               <id>M54</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -999,6 +1009,7 @@
               <id>M63</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -1054,6 +1065,7 @@
               <id>M72</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -2291,6 +2303,7 @@
               <id>M628</id>
               <termid>T97</termid>
               <connections>
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -2413,6 +2426,7 @@
               <net ref="unnamed_1_74f164_i49_q6"></net>
               <net ref="unnamed_1_74f164_i49_q7"></net>
               <net ref="unnamed_1_caenbuffer_i18_inanal"></net>
+              <net ref="unnamed_1_caenbuffer_i18_vref5m"></net>
               <net ref="unnamed_1_caenbuffer_i19_inanal"></net>
               <net ref="unnamed_1_caenbuffer_i20_inanal"></net>
               <net ref="unnamed_1_caenbuffer_i5_inanal"></net>
