@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-01T15:57:09</modificationTime>
+    <modificationTime>2015-04-01T16:39:48</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_analog_coms" view="sch_1">
       <lastids>
         <instanceid>27</instanceid>
-        <netid>86</netid>
+        <netid>94</netid>
         <insttermid>802</insttermid>
       </lastids>
       <cells>
@@ -417,12 +417,6 @@
       </cells>
       <nets>
         <net>
-          <id>N1</id>
-          <name>caen_buff_cntrl</name>
-          <msb>7</msb>
-          <lsb>0</lsb>
-        </net>
-        <net>
           <id>N2</id>
           <name>caen_out_anal</name>
           <scope>interface</scope>
@@ -591,6 +585,38 @@
           <name>unnamed_1_caenbuffer_i18_vref5m</name>
         </net>
         <net>
+          <id>N87</id>
+          <name>unnamed_1_caenbuffer_i18_cntrl</name>
+        </net>
+        <net>
+          <id>N88</id>
+          <name>unnamed_1_caenbuffer_i19_cntrl</name>
+        </net>
+        <net>
+          <id>N89</id>
+          <name>unnamed_1_caenbuffer_i20_cntrl</name>
+        </net>
+        <net>
+          <id>N90</id>
+          <name>unnamed_1_caenbuffer_i21_cntrl</name>
+        </net>
+        <net>
+          <id>N91</id>
+          <name>unnamed_1_caenbuffer_i22_cntrl</name>
+        </net>
+        <net>
+          <id>N92</id>
+          <name>unnamed_1_caenbuffer_i23_cntrl</name>
+        </net>
+        <net>
+          <id>N93</id>
+          <name>unnamed_1_caenbuffer_i24_cntrl</name>
+        </net>
+        <net>
+          <id>N94</id>
+          <name>unnamed_1_caenbuffer_i5_cntrl</name>
+        </net>
+        <net>
           <id>N6</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -645,7 +671,7 @@
               <id>M5</id>
               <termid>T14</termid>
               <connections>
-                <connection net="N1" netmsb="0" netlsb="0" />
+                <connection net="N94" />
               </connections>
             </pin>
             <pin>
@@ -701,7 +727,7 @@
               <id>M14</id>
               <termid>T14</termid>
               <connections>
-                <connection net="N1" netmsb="1" netlsb="1" />
+                <connection net="N87" />
               </connections>
             </pin>
             <pin>
@@ -757,7 +783,7 @@
               <id>M23</id>
               <termid>T14</termid>
               <connections>
-                <connection net="N1" netmsb="2" netlsb="2" />
+                <connection net="N88" />
               </connections>
             </pin>
             <pin>
@@ -813,7 +839,7 @@
               <id>M32</id>
               <termid>T14</termid>
               <connections>
-                <connection net="N1" netmsb="3" netlsb="3" />
+                <connection net="N89" />
               </connections>
             </pin>
             <pin>
@@ -869,7 +895,7 @@
               <id>M41</id>
               <termid>T14</termid>
               <connections>
-                <connection net="N1" netmsb="4" netlsb="4" />
+                <connection net="N90" />
               </connections>
             </pin>
             <pin>
@@ -925,7 +951,7 @@
               <id>M50</id>
               <termid>T14</termid>
               <connections>
-                <connection net="N1" netmsb="5" netlsb="5" />
+                <connection net="N91" />
               </connections>
             </pin>
             <pin>
@@ -981,7 +1007,7 @@
               <id>M59</id>
               <termid>T14</termid>
               <connections>
-                <connection net="N1" netmsb="6" netlsb="6" />
+                <connection net="N92" />
               </connections>
             </pin>
             <pin>
@@ -1037,7 +1063,7 @@
               <id>M68</id>
               <termid>T14</termid>
               <connections>
-                <connection net="N1" netmsb="7" netlsb="7" />
+                <connection net="N93" />
               </connections>
             </pin>
             <pin>
@@ -1906,56 +1932,56 @@
               <id>M152</id>
               <termid>T54</termid>
               <connections>
-                <connection net="N1" netmsb="0" netlsb="0" />
+                <connection net="N88" />
               </connections>
             </pin>
             <pin>
               <id>M153</id>
               <termid>T55</termid>
               <connections>
-                <connection net="N1" netmsb="1" netlsb="1" />
+                <connection net="N93" />
               </connections>
             </pin>
             <pin>
               <id>M154</id>
               <termid>T56</termid>
               <connections>
-                <connection net="N1" netmsb="2" netlsb="2" />
+                <connection net="N89" />
               </connections>
             </pin>
             <pin>
               <id>M155</id>
               <termid>T57</termid>
               <connections>
-                <connection net="N1" netmsb="3" netlsb="3" />
+                <connection net="N94" />
               </connections>
             </pin>
             <pin>
               <id>M156</id>
               <termid>T58</termid>
               <connections>
-                <connection net="N1" netmsb="4" netlsb="4" />
+                <connection net="N90" />
               </connections>
             </pin>
             <pin>
               <id>M157</id>
               <termid>T59</termid>
               <connections>
-                <connection net="N1" netmsb="5" netlsb="5" />
+                <connection net="N91" />
               </connections>
             </pin>
             <pin>
               <id>M158</id>
               <termid>T60</termid>
               <connections>
-                <connection net="N1" netmsb="6" netlsb="6" />
+                <connection net="N92" />
               </connections>
             </pin>
             <pin>
               <id>M159</id>
               <termid>T61</termid>
               <connections>
-                <connection net="N1" netmsb="7" netlsb="7" />
+                <connection net="N87" />
               </connections>
             </pin>
             <pin>
@@ -2422,10 +2448,6 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="caen_buff_cntrl">
-                <msb>7</msb>
-                <lsb>0</lsb>
-              </net>
               <net ref="caen_out_anal">
                 <msb>7</msb>
                 <lsb>0</lsb>
@@ -2464,10 +2486,18 @@
               <net ref="unnamed_1_74f164_i49_q5"></net>
               <net ref="unnamed_1_74f164_i49_q6"></net>
               <net ref="unnamed_1_74f164_i49_q7"></net>
+              <net ref="unnamed_1_caenbuffer_i18_cntrl"></net>
               <net ref="unnamed_1_caenbuffer_i18_inanal"></net>
               <net ref="unnamed_1_caenbuffer_i18_vref5m"></net>
+              <net ref="unnamed_1_caenbuffer_i19_cntrl"></net>
               <net ref="unnamed_1_caenbuffer_i19_inanal"></net>
+              <net ref="unnamed_1_caenbuffer_i20_cntrl"></net>
               <net ref="unnamed_1_caenbuffer_i20_inanal"></net>
+              <net ref="unnamed_1_caenbuffer_i21_cntrl"></net>
+              <net ref="unnamed_1_caenbuffer_i22_cntrl"></net>
+              <net ref="unnamed_1_caenbuffer_i23_cntrl"></net>
+              <net ref="unnamed_1_caenbuffer_i24_cntrl"></net>
+              <net ref="unnamed_1_caenbuffer_i5_cntrl"></net>
               <net ref="unnamed_1_caenbuffer_i5_inanal"></net>
               <net ref="unnamed_1_prma1c05b_i33_ctrlin"></net>
               <net ref="unnamed_1_prma1c05b_i34_ctrlin"></net>
