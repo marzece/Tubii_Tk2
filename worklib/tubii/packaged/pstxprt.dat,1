@@ -1,9 +1,9 @@
 FILE_TYPE=EXPANDEDPARTLIST;
-{ Packager-XL run on 20-Mar-2015 AT 19:41:01 }
+{ Packager-XL run on 25-Mar-2015 AT 11:39:13 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='TUBII';
- POST_TIME='20-Mar-2015 AT 19:41:01';
+ POST_TIME='25-Mar-2015 AT 11:39:13';
  SOURCE_TOOL='PACKAGER_XL';
 END_DIRECTIVES;
 
@@ -6710,6 +6710,44 @@ s)',
  PRIM_FILE='./Parts/parts/capacitors/csmd0805/chips/chips.prt';
 
 PART_NAME
+ C181 'CSMD0805-0.1UF,5%,0805,50V':
+ ROOM='CAEN_ANALOG';
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I8@TUBII_TK2_LIB.CAEN_COMS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.CAEN_ANALOG_COMS(SCH_1):PAGE1_I58@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1_I7@CAPACITORS.CSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i7@capacitors.csmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i7@capacitors.csmd0805(chips)',
+ PATH='I7',
+ DRAWING='@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1',
+ TOL_ON_OFF='ON',
+ TC='0',
+ SLOPE='CSMAX',
+ POSTOL='10%',
+ PACKTYPE='0805',
+ NEGTOL='10%',
+ MAX_TEMP='CTMAX',
+ KNEE='CBMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ CURRENT='CIMAX',
+ PHYS_PAGE='1',
+ XY='(-2600,2625)',
+ ROT='0',
+ VER='1',
+ VALUE='0.1UF',
+ PART_NAME='CSMD0805',
+ TOL='5%',
+ ROOM='CAEN_ANALOG',
+ CDS_LIB='capacitors',
+ CDS_PART_NAME='CSMD0805-0.1UF,5%,0805,50V',
+ VOLTAGE='50V',
+ PRIM_FILE='./Parts/parts/capacitors/csmd0805/chips/chips.prt';
+
+PART_NAME
  D1 'LED_L':
  ROOM='GT_DELAY';
 
@@ -7189,7 +7227,7 @@ e1_i5@tubii_tk2_lib.power(sch_1):page1_i4@misc.inductor_l(chips)',
  DIST='FLAT',
  CURRENT='LMAX',
  PHYS_PAGE='1',
- XY='(-2400,3475)',
+ XY='(-2475,3475)',
  ROT='0',
  VER='1',
  VALUE='0.1',
@@ -20162,6 +20200,80 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_
  PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
 
 PART_NAME
+ R354 'RSMD0805-10K,1%,0805':
+ ROOM='CAEN_ANALOG';
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I8@TUBII_TK2_LIB.CAEN_COMS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.CAEN_ANALOG_COMS(SCH_1):PAGE1_I58@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1_I9@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i9@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i9@resistors.rsmd0805(chips)',
+ PATH='I9',
+ DRAWING='@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(-1550,2825)',
+ ROT='0',
+ VER='1',
+ VALUE='10K',
+ TOL='1%',
+ ROOM='CAEN_ANALOG',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-10K,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R355 'RSMD0805-10K,1%,0805':
+ ROOM='CAEN_ANALOG';
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I8@TUBII_TK2_LIB.CAEN_COMS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.CAEN_ANALOG_COMS(SCH_1):PAGE1_I58@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1_I10@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i10@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i10@resistors.rsmd0805(chips)',
+ PATH='I10',
+ DRAWING='@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(-975,3300)',
+ ROT='0',
+ VER='1',
+ VALUE='10K',
+ TOL='1%',
+ ROOM='CAEN_ANALOG',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-10K,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
  TP1 'TESTPOINT_L':
  ROOM='CNTRL_REG';
 
@@ -27565,5 +27677,51 @@ _1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i28@diodes.\1n4448\(chips)',
  CDS_LIB='diodes',
  CDS_PART_NAME='1N4448',
  PRIM_FILE='./Parts/parts/diodes/1n4448/chips/chips.prt';
+
+PART_NAME
+ U146 'REF02':
+ ROOM='CAEN_ANALOG';
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I8@TUBII_TK2_LIB.CAEN_COMS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.CAEN_ANALOG_COMS(SCH_1):PAGE1_I58@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1_I1@MISC.REF02(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i1@misc.ref02(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i1@misc.ref02(chips)',
+ PATH='I1',
+ DRAWING='@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1',
+ PHYS_PAGE='1',
+ XY='(-2250,2700)',
+ ROT='0',
+ VER='1',
+ ROOM='CAEN_ANALOG',
+ CDS_LIB='misc',
+ CDS_PART_NAME='REF02',
+ PRIM_FILE='./Parts/parts/misc/ref02/chips/chips.prt';
+
+PART_NAME
+ U147 'OPA277':
+ ROOM='CAEN_ANALOG';
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I8@TUBII_TK2_LIB.CAEN_COMS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.CAEN_ANALOG_COMS(SCH_1):PAGE1_I58@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1_I2@MISC.OPA277(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i2@misc.opa277(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch~
+_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i2@misc.opa277(chips)',
+ PATH='I2',
+ DRAWING='@TUBII_TK2_LIB.VREF_GEN(SCH_1):PAGE1',
+ PHYS_PAGE='1',
+ XY='(-1050,2575)',
+ ROT='0',
+ VER='1',
+ ROOM='CAEN_ANALOG',
+ CDS_LIB='misc',
+ CDS_PART_NAME='OPA277',
+ PRIM_FILE='./Parts/parts/misc/opa277/chips/chips.prt';
 
 END.
