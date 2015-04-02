@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 5 )
+			( logicalViewRevNum 10 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -344,6 +344,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -374,12 +390,6 @@
 			( signal "@tubii_tk2_lib.tubii_spkr(sch_1):unnamed_1_csmd0805_i23_b"
 				( objectStatus "unnamed_1_csmd0805_i23_b" )
 			)
-			( signal "@tubii_tk2_lib.tubii_spkr(sch_1):unnamed_1_ledl_i13_a"
-				( objectStatus "unnamed_1_ledl_i13_a" )
-			)
-			( signal "@tubii_tk2_lib.tubii_spkr(sch_1):unnamed_1_ledl_i14_a"
-				( objectStatus "unnamed_1_ledl_i14_a" )
-			)
 			( signal "@tubii_tk2_lib.tubii_spkr(sch_1):unnamed_1_rsmd0805_i4_b"
 				( objectStatus "unnamed_1_rsmd0805_i4_b" )
 			)
@@ -391,6 +401,12 @@
 			)
 			( signal "@tubii_tk2_lib.tubii_spkr(sch_1):spkr_sig"
 				( objectStatus "spkr_sig" )
+			)
+			( signal "@tubii_tk2_lib.tubii_spkr(sch_1):unnamed_1_led1206_i28_a"
+				( objectStatus "unnamed_1_led1206_i28_a" )
+			)
+			( signal "@tubii_tk2_lib.tubii_spkr(sch_1):unnamed_1_led1206_i29_a"
+				( objectStatus "unnamed_1_led1206_i29_a" )
 			)
 			( gate "@tubii_tk2_lib.tubii_spkr(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -431,6 +447,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I1" )
 				( pin "cext1"
@@ -551,6 +570,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I2" )
 				( pin "d1"
 					( attribute "PN" "1"
@@ -659,6 +681,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I3" )
 				( pin "d1"
@@ -1005,6 +1030,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -1099,6 +1127,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I7" )
 				( pin "a(0)"
@@ -1195,6 +1226,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -1289,6 +1323,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a(0)"
@@ -1388,6 +1425,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -1485,6 +1525,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I11" )
 				( pin "a(0)"
@@ -1584,6 +1627,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I12" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -1592,110 +1638,6 @@
 				)
 				( pin "b(0)"
 					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_tk2_lib.tubii_spkr(sch_1):page1_i13"
-				( attribute "ABBREV" "LED"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "4"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(75,3125)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "D15"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "D15"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I13" )
-				( pin "a"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "b"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_tk2_lib.tubii_spkr(sch_1):page1_i14"
-				( attribute "ABBREV" "LED"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "4"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(75,2075)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "D16"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "D16"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I14" )
-				( pin "a"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "b"
-					( attribute "PN" "1"
 						( Origin gPackager )
 					)
 				)
@@ -2246,6 +2188,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I23" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -2295,6 +2240,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I24" )
 				( pin "a"
 					( attribute "PN" "1"
@@ -2338,6 +2286,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I25" )
 				( pin "a"
@@ -2383,8 +2334,153 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I26" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.tubii_spkr(sch_1):page1_i28"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
+					( Origin gPackager )
+				)
+				( attribute "COLOR" "RED"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "1206"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "4"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "RED"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "16V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(75,3125)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_1206"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_1206-RED,RED,1206,16V"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LOCATION" "LED1"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "LED1"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I28" )
+				( pin "a"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "b"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.tubii_spkr(sch_1):page1_i29"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
+					( Origin gPackager )
+				)
+				( attribute "COLOR" "RED"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "1206"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "4"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "RED"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "16V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(75,2075)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_1206"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_1206-RED,RED,1206,16V"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "SPKR"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LOCATION" "LED2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "LED2"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I29" )
+				( pin "a"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "b"
 					( attribute "PN" "1"
 						( Origin gPackager )
 					)

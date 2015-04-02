@@ -1,6 +1,6 @@
 FILE_TYPE=PINLIST;
-{ Packager-XL run on 01-Apr-2015 AT 17:34:48 }
-TIME=' COMPILATION ON 01-Apr-2015 AT 17:34:48';
+{ Packager-XL run on 02-Apr-2015 AT 13:10:21 }
+TIME=' COMPILATION ON 02-Apr-2015 AT 13:10:21';
 primitive '1N4448';      body '1N4448';
     'IN':'(1)';
     'OUT':'(2)';
@@ -492,6 +492,10 @@ end_primitive;
 primitive 'INDUCTOR_L';  body 'INDUCTOR_L';
     'B'<0>:'(2)';
     'A'<0>:'(1)';
+end_primitive;
+primitive 'LED_1206-RED,RED,1206,16V';body 'LED_1206';
+    'B':'(1)';BIDI;
+    'A':'(2)';BIDI;
 end_primitive;
 primitive 'LED_L';       body 'LED_L';
     'B':'(1)';BIDI;
