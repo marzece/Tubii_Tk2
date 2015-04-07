@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 16 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -344,88 +344,48 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "caen_analog_coms"
 			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(0)"
-				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
-				( attribute "PHYS_NET_NAME" "CAEN_BUFF_CNTRL<0>"
-					( Origin gPackager )
-				)
-				( objectStatus "caen_buff_cntrl<0>" )
-			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):cntrl"
 				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(1)"
-				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
-				( attribute "PHYS_NET_NAME" "CAEN_BUFF_CNTRL<1>"
-					( Origin gPackager )
-				)
-				( objectStatus "caen_buff_cntrl<1>" )
 			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):cntrl"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(2)"
-				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
-				( attribute "PHYS_NET_NAME" "CAEN_BUFF_CNTRL<2>"
-					( Origin gPackager )
-				)
-				( objectStatus "caen_buff_cntrl<2>" )
-			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):cntrl"
 				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(3)"
-				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
-				( attribute "PHYS_NET_NAME" "CAEN_BUFF_CNTRL<3>"
-					( Origin gPackager )
-				)
-				( objectStatus "caen_buff_cntrl<3>" )
 			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):cntrl"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(4)"
-				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
-				( attribute "PHYS_NET_NAME" "CAEN_BUFF_CNTRL<4>"
-					( Origin gPackager )
-				)
-				( objectStatus "caen_buff_cntrl<4>" )
-			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):cntrl"
 				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(5)"
-				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
-				( attribute "PHYS_NET_NAME" "CAEN_BUFF_CNTRL<5>"
-					( Origin gPackager )
-				)
-				( objectStatus "caen_buff_cntrl<5>" )
 			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):cntrl"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(6)"
-				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
-				( attribute "PHYS_NET_NAME" "CAEN_BUFF_CNTRL<6>"
-					( Origin gPackager )
-				)
-				( objectStatus "caen_buff_cntrl<6>" )
-			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):cntrl"
 				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(7)"
-				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
-				( attribute "PHYS_NET_NAME" "CAEN_BUFF_CNTRL<7>"
-					( Origin gPackager )
-				)
-				( objectStatus "caen_buff_cntrl<7>" )
 			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):cntrl"
 				( objectFlag fObjectAlias )
@@ -828,18 +788,6 @@
 			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):in_anal"
 				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_prma1c05b_i33_ctrlin"
-				( objectStatus "unnamed_1_prma1c05b_i33_ctrlin" )
-			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_prma1c05b_i34_ctrlin"
-				( objectStatus "unnamed_1_prma1c05b_i34_ctrlin" )
-			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_prma1c05b_i39_ctrlin"
-				( objectStatus "unnamed_1_prma1c05b_i39_ctrlin" )
-			)
-			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_prma1c05b_i40_ctrlin"
-				( objectStatus "unnamed_1_prma1c05b_i40_ctrlin" )
 			)
 			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):vcc"
 				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):vcc") )
@@ -1255,6 +1203,50 @@
 					( Origin gPackager )
 				)
 				( objectStatus "unnamed_1_caenbuffer_i18_vref5m" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i18_cntrl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
+				( objectStatus "unnamed_1_caenbuffer_i18_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i19_cntrl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
+				( objectStatus "unnamed_1_caenbuffer_i19_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i20_cntrl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
+				( objectStatus "unnamed_1_caenbuffer_i20_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i21_cntrl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
+				( objectStatus "unnamed_1_caenbuffer_i21_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i22_cntrl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
+				( objectStatus "unnamed_1_caenbuffer_i22_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i23_cntrl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
+				( objectStatus "unnamed_1_caenbuffer_i23_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i24_cntrl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
+				( objectStatus "unnamed_1_caenbuffer_i24_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i5_cntrl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):cntrl") )
+				( objectStatus "unnamed_1_caenbuffer_i5_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_pickering113fc_i60_cntrl"
+				( objectStatus "unnamed_1_pickering113fc_i60_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_pickering113fc_i61_cntrl"
+				( objectStatus "unnamed_1_pickering113fc_i61_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_pickering113fc_i62_cntrl"
+				( objectStatus "unnamed_1_pickering113fc_i62_cntrl" )
+			)
+			( signal "@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_pickering113fc_i63_cntrl"
+				( objectStatus "unnamed_1_pickering113fc_i63_cntrl" )
 			)
 			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -19640,150 +19632,6 @@
 					( objectStatus "page1_i28.2" )
 				)
 			)
-			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i33"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,325,175,-200"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-750,3850)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "PRMA1C05B"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "PRMA1C05B"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U102"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U102"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "ROOM" "CAEN_ANALOG"
-					( Origin gFrontEnd )
-				)
-				( objectStatus "PAGE1_I33" )
-				( pin "ctrl_in"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "ctrl_out"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
-				)
-				( pin "\in\"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
-				)
-				( pin "in_cpy"
-					( attribute "PN" "8"
-						( Origin gPackager )
-					)
-				)
-				( pin "out1"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "out2"
-					( attribute "PN" "14"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i34"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,325,175,-200"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-700,3175)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "PRMA1C05B"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "PRMA1C05B"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U105"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U105"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "ROOM" "CAEN_ANALOG"
-					( Origin gFrontEnd )
-				)
-				( objectStatus "PAGE1_I34" )
-				( pin "ctrl_in"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "ctrl_out"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
-				)
-				( pin "\in\"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
-				)
-				( pin "in_cpy"
-					( attribute "PN" "8"
-						( Origin gPackager )
-					)
-				)
-				( pin "out1"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "out2"
-					( attribute "PN" "14"
-						( Origin gPackager )
-					)
-				)
-			)
 			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i35"
 				( attribute "CDS_LIB" "resistors"
 					( Origin gPackager )
@@ -19846,7 +19694,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1575,3550)"
+				( attribute "XY" "(-1600,3550)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "RSMD0805"
@@ -19944,7 +19792,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1575,3450)"
+				( attribute "XY" "(-1600,3400)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "RSMD0805"
@@ -20042,7 +19890,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1575,3500)"
+				( attribute "XY" "(-1600,3500)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "RSMD0805"
@@ -20140,7 +19988,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1575,3400)"
+				( attribute "XY" "(-1600,3450)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "RSMD0805"
@@ -20172,150 +20020,6 @@
 				)
 				( pin "b(0)"
 					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i39"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,325,175,-200"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-725,2425)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "PRMA1C05B"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "PRMA1C05B"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U104"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U104"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "ROOM" "CAEN_ANALOG"
-					( Origin gFrontEnd )
-				)
-				( objectStatus "PAGE1_I39" )
-				( pin "ctrl_in"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "ctrl_out"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
-				)
-				( pin "\in\"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
-				)
-				( pin "in_cpy"
-					( attribute "PN" "8"
-						( Origin gPackager )
-					)
-				)
-				( pin "out1"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "out2"
-					( attribute "PN" "14"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i40"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,325,175,-200"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-750,1725)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "PRMA1C05B"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "PRMA1C05B"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U103"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U103"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "ROOM" "CAEN_ANALOG"
-					( Origin gFrontEnd )
-				)
-				( objectStatus "PAGE1_I40" )
-				( pin "ctrl_in"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "ctrl_out"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
-				)
-				( pin "\in\"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
-				)
-				( pin "in_cpy"
-					( attribute "PN" "8"
-						( Origin gPackager )
-					)
-				)
-				( pin "out1"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "out2"
-					( attribute "PN" "14"
 						( Origin gPackager )
 					)
 				)
@@ -21981,6 +21685,274 @@
 					)
 				)
 			)
+			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i60"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-675,3950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "PICKERING113FC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "PICKERING113FC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U105"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U105"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "CAEN_ANALOG"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_I60" )
+				( pin "\cntrl+\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "\cntrl-\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "in1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "in2"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "\out\"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i61"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-725,3250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "PICKERING113FC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "PICKERING113FC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U102"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U102"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "CAEN_ANALOG"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_I61" )
+				( pin "\cntrl+\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "\cntrl-\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "in1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "in2"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "\out\"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i62"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-700,2475)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "PICKERING113FC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "PICKERING113FC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U104"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U104"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "CAEN_ANALOG"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_I62" )
+				( pin "\cntrl+\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "\cntrl-\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "in1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "in2"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "\out\"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i63"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-725,1800)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "PICKERING113FC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "PICKERING113FC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U103"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U103"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "CAEN_ANALOG"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_I63" )
+				( pin "\cntrl+\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "\cntrl-\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "in1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "in2"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "\out\"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
+			)
 			( pin "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5:cntrl"
 			)
 			( pin "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5:in_anal"
@@ -22060,21 +22032,6 @@
 			( pin "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24:out_clip"
 			)
 			( pin "@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24:vref5m"
-			)
-			( bus "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl"
-				( memberType ( signal ) )
-				( attribute "BUS_NAME" "CAEN_BUFF_CNTRL"
-					( Origin gPackager )
-				)
-				( member ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(0)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(1)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(2)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(3)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(4)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(5)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(6)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_buff_cntrl(7)") )
-				( objectStatus "CAEN_BUFF_CNTRL" )
 			)
 			( bus "@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal"
 				( memberType ( signal ) )
@@ -24224,7 +24181,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "vref_gen"
