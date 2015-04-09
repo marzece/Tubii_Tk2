@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 3 )
+			( logicalViewRevNum 6 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -330,6 +330,22 @@
 		)
 		( Attribute
 			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "COLOR" )
 			( Description " " )
 			( Value
 				( DataType ( dString ) )
@@ -944,12 +960,6 @@
 			( signal "@tubii_tk2_lib.ext_trigs(sch_1):unnamed_1_csmd0603_i44_b"
 				( objectStatus "unnamed_1_csmd0603_i44_b" )
 			)
-			( signal "@tubii_tk2_lib.ext_trigs(sch_1):unnamed_1_csmd0603_i45_a"
-				( objectStatus "unnamed_1_csmd0603_i45_a" )
-			)
-			( signal "@tubii_tk2_lib.ext_trigs(sch_1):unnamed_1_csmd0603_i45_b"
-				( objectStatus "unnamed_1_csmd0603_i45_b" )
-			)
 			( signal "@tubii_tk2_lib.ext_trigs(sch_1):unnamed_1_csmd0603_i54_b"
 				( objectStatus "unnamed_1_csmd0603_i54_b" )
 			)
@@ -1049,6 +1059,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I3" )
 				( pin "d0"
@@ -1229,6 +1242,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "d0"
 					( attribute "PN" "3"
@@ -1408,6 +1424,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I5" )
 				( pin "a0"
 					( attribute "PN" "1"
@@ -1507,6 +1526,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a0"
 					( attribute "PN" "1"
@@ -1605,6 +1627,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I7" )
 				( pin "d1"
@@ -1724,6 +1749,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I8" )
 				( pin "d1"
@@ -1890,6 +1918,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -1984,6 +2015,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a(0)"
@@ -2080,6 +2114,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I11" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -2174,6 +2211,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I12" )
 				( pin "a(0)"
@@ -2270,6 +2310,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I13" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -2364,6 +2407,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I14" )
 				( pin "a(0)"
@@ -2460,6 +2506,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I15" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -2554,6 +2603,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I16" )
 				( pin "a(0)"
@@ -2650,6 +2702,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I17" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -2744,6 +2799,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I18" )
 				( pin "a(0)"
@@ -2840,6 +2898,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I19" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -2934,6 +2995,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I20" )
 				( pin "a(0)"
@@ -3030,6 +3094,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I21" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -3124,6 +3191,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I22" )
 				( pin "a(0)"
@@ -3220,6 +3290,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I23" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -3314,6 +3387,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I24" )
 				( pin "a(0)"
@@ -3410,6 +3486,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I25" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -3504,6 +3583,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I26" )
 				( pin "a(0)"
@@ -3600,6 +3682,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I27" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -3694,6 +3779,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I28" )
 				( pin "a(0)"
@@ -3790,6 +3878,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I29" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -3884,6 +3975,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I30" )
 				( pin "a(0)"
@@ -3980,6 +4074,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I31" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -4074,6 +4171,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I36" )
 				( pin "a(0)"
@@ -4170,6 +4270,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I37" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -4264,6 +4367,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I38" )
 				( pin "a(0)"
@@ -4360,6 +4466,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I39" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -4454,6 +4563,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I40" )
 				( pin "a(0)"
@@ -4550,6 +4662,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I41" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -4645,6 +4760,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I42" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -4739,6 +4857,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I43" )
 				( pin "a(0)"
@@ -4838,6 +4959,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I44" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -4935,6 +5059,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I45" )
 				( pin "a(0)"
@@ -5034,6 +5161,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I46" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -5131,6 +5261,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I47" )
 				( pin "a(0)"
@@ -5230,6 +5363,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I48" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -5327,6 +5463,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I49" )
 				( pin "a(0)"
@@ -5426,6 +5565,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I50" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -5523,6 +5665,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I51" )
 				( pin "a(0)"
@@ -5622,6 +5767,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I54" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -5720,7 +5868,108 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I55" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.ext_trigs(sch_1):page1_i56"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROOM" "EXT_TRIG"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3600,75)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R363"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R363"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I56" )
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Origin gPackager )
