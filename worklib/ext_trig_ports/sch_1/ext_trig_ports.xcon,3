@@ -5,15 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T16:29:47</modificationTime>
+    <modificationTime>2015-03-07T16:54:27</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ext_trig_ports" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>36</instanceid>
-        <netid>4</netid>
-        <insttermid>36</insttermid>
+        <instanceid>38</instanceid>
+        <netid>5</netid>
+        <insttermid>38</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -52,6 +53,12 @@
           <name>ext_ped_in</name>
           <scope>interface</scope>
           <direction>output</direction>
+        </net>
+        <net>
+          <id>N5</id>
+          <name>tubii_rt_out</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>N3</id>
@@ -1078,6 +1085,62 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I37</id>
+          <cellid>S2</cellid>
+          <name>page1_i56</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M37</id>
+              <termid>T3</termid>
+              <connections>
+                <connection net="N3" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I38</id>
+          <cellid>S2</cellid>
+          <name>page1_i57</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M38</id>
+              <termid>T3</termid>
+              <connections>
+                <connection net="N5" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1086,7 +1149,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="ext_ped_in">
             <pageScope number="1">
@@ -1111,6 +1173,12 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="tubii_rt_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
         </netScopes>
         <pages>
           <page number="1">
@@ -1124,6 +1192,7 @@
                 <lsb>0</lsb>
               </net>
               <net ref="gnd"></net>
+              <net ref="tubii_rt_out"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>
@@ -1162,6 +1231,8 @@
               <instance ref="i49"></instance>
               <instance ref="i50"></instance>
               <instance ref="i51"></instance>
+              <instance ref="i56"></instance>
+              <instance ref="i57"></instance>
             </instances>
           </page>
         </pages>
