@@ -2,34 +2,34 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"UN$1$LED1206$I28$A";
-2"GND\G";
-3"UN$1$LED1206$I29$A";
-4"GND\G";
-5"UN$1$CSMD0805$I21$B";
-6"UN$1$RSMD0805$I5$B";
-7"GND\G";
-8"UN$1$CSMD0805$I23$B";
-9"VCC\G";
-10"GND\G";
+1"VCC\G";
+2"UN$1$74F06$I2$Q1";
+3"UN$1$74F06$I2$D1";
+4"VCC\G";
+5"GND\G";
+6"VCC\G";
+7"UN$1$74F06$I3$Q1";
+8"GND\G";
+9"GND\G";
+10"UN$1$RSMD0805$I4$B";
 11"VCC\G";
-12"GND\G";
-13"VCC\G";
-14"UN$1$CSMD0805$I23$A";
-15"UN$1$CSMD0805$I22$B";
-16"GND\G";
-17"SPKR_SIG";
+12"SPKR_SIG";
+13"GND\G";
+14"UN$1$CSMD0805$I22$B";
+15"UN$1$CSMD0805$I23$A";
+16"VCC\G";
+17"GND\G";
 18"VCC\G";
-19"UN$1$RSMD0805$I4$B";
-20"GND\G";
-21"GND\G";
-22"UN$1$74F06$I3$Q1";
-23"VCC\G";
-24"GND\G";
-25"VCC\G";
-26"UN$1$74F06$I2$D1";
-27"UN$1$74F06$I2$Q1";
-28"VCC\G";
+19"GND\G";
+20"VCC\G";
+21"UN$1$CSMD0805$I23$B";
+22"GND\G";
+23"UN$1$RSMD0805$I5$B";
+24"UN$1$CSMD0805$I21$B";
+25"GND\G";
+26"UN$1$LED1206$I29$A";
+27"GND\G";
+28"UN$1$LED1206$I28$A";
 %"HCT123"
 "1","(-1875,3000)","0","misc","I1";
 ;
@@ -43,25 +43,25 @@ VLOG_PARAM1"pulse_width:integer"
 CDS_LMAN_SYM_OUTLINE"-175,350,175,-250"
 CDS_LIB"misc";
 "GND"
-$PN"8"16;
+$PN"8"13;
 "VCC"
-$PN"16"13;
+$PN"16"16;
 "IN_B2"
 $PN"10"0;
 "IN_B1"
-$PN"2"17;
+$PN"2"12;
 "IN_A2* \B"
 $PN"9"0;
 "IN_A1* \B"
-$PN"1"12;
+$PN"1"17;
 "REXT/CEXT2"
 $PN"7"0;
 "REXT/CEXT1"
-$PN"15"8;
+$PN"15"21;
 "CEXT2"
 $PN"6"0;
 "CEXT1"
-$PN"14"14;
+$PN"14"15;
 "Q2* \B"
 $PN"12"0;
 "Q1* \B"
@@ -69,11 +69,11 @@ $PN"4"0;
 "Q2"
 $PN"5"0;
 "Q1"
-$PN"13"26;
+$PN"13"3;
 "RD2* \B"
 $PN"11"0;
 "RD1* \B"
-$PN"3"9;
+$PN"3"20;
 %"CSMD0603"
 "1","(-525,3075)","0","capacitors","I10";
 ;
@@ -101,9 +101,9 @@ NEGTOL"10%"
 NEEDS_NO_SIZE"TRUE"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25";
 "B<0>"
-$PN"2"23;
+$PN"2"6;
 "A<0>"
-$PN"1"21;
+$PN"1"8;
 %"CSMD0603"
 "1","(-575,3975)","0","capacitors","I11";
 ;
@@ -131,9 +131,9 @@ CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"5%";
 "B<0>"
-$PN"2"18;
+$PN"2"11;
 "A<0>"
-$PN"1"4;
+$PN"1"25;
 %"CSMD0603"
 "1","(-1825,2550)","0","capacitors","I12";
 ;
@@ -161,9 +161,9 @@ TC"0"
 CURRENT"CIMAX"
 TOL_ON_OFF"ON";
 "B<0>"
-$PN"2"16;
+$PN"2"13;
 "A<0>"
-$PN"1"13;
+$PN"1"16;
 %"TESTPOINT_L"
 "1","(1300,2400)","0","misc","I15";
 ;
@@ -175,7 +175,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"7;
+$PN"1"22;
 %"TESTPOINT_L"
 "1","(1300,2575)","0","misc","I16";
 ;
@@ -187,7 +187,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"15;
+$PN"1"14;
 %"TESTPOINT_L"
 "1","(1300,2875)","0","misc","I17";
 ;
@@ -199,7 +199,7 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"6;
+$PN"1"23;
 %"TESTPOINT_L"
 "1","(1300,3450)","0","misc","I18";
 ;
@@ -211,7 +211,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"20;
+$PN"1"9;
 %"TESTPOINT_L"
 "1","(1300,3550)","0","misc","I19";
 ;
@@ -223,7 +223,7 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"5;
+$PN"1"24;
 %"74F06"
 "1","(-475,3525)","0","ttl","I2";
 ;
@@ -235,33 +235,33 @@ ROOM"SPKR"
 CDS_LIB"ttl"
 CDS_LMAN_SYM_OUTLINE"-125,250,125,-150";
 "VCC"
-$PN"14"18;
+$PN"14"11;
 "GND"
-$PN"7"4;
+$PN"7"25;
 "Q6* \B"
-$PN"12"27;
+$PN"12"2;
 "Q5* \B"
-$PN"10"27;
+$PN"10"2;
 "Q4* \B"
-$PN"8"27;
+$PN"8"2;
 "Q3* \B"
-$PN"6"27;
+$PN"6"2;
 "Q2* \B"
-$PN"4"27;
+$PN"4"2;
 "Q1* \B"
-$PN"2"27;
+$PN"2"2;
 "D6"
-$PN"13"26;
+$PN"13"3;
 "D5"
-$PN"11"26;
+$PN"11"3;
 "D4"
-$PN"9"26;
+$PN"9"3;
 "D3"
-$PN"5"26;
+$PN"5"3;
 "D2"
-$PN"3"26;
+$PN"3"3;
 "D1"
-$PN"1"26;
+$PN"1"3;
 %"TESTPOINT_L"
 "1","(1300,3800)","0","misc","I20";
 ;
@@ -273,7 +273,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"19;
+$PN"1"10;
 %"CSMD0805"
 "1","(900,3550)","0","capacitors","I21";
 ;
@@ -300,9 +300,9 @@ NEEDS_NO_SIZE"TRUE"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 TOL"5%";
 "B<0>"
-$PN"2"5;
+$PN"2"24;
 "A<0>"
-$PN"1"27;
+$PN"1"2;
 %"CSMD0805"
 "1","(875,2575)","0","capacitors","I22";
 ;
@@ -329,9 +329,9 @@ IC"UNDEF"
 NEGTOL"10%"
 NEEDS_NO_SIZE"TRUE";
 "B<0>"
-$PN"2"15;
+$PN"2"14;
 "A<0>"
-$PN"1"22;
+$PN"1"7;
 %"CSMD0805"
 "1","(-2000,3575)","1","capacitors","I23";
 ;
@@ -359,9 +359,9 @@ IC"UNDEF"
 DIST"FLAT"
 POSTOL"10%";
 "B<0>"
-$PN"2"8;
+$PN"2"21;
 "A<0>"
-$PN"1"14;
+$PN"1"15;
 %"TESTPOINT_L"
 "1","(-2625,3650)","1","misc","I24";
 ;
@@ -374,7 +374,7 @@ CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
 "A\NAC \B"
-$PN"1"10;
+$PN"1"19;
 %"TESTPOINT_L"
 "1","(-2575,3750)","2","misc","I25";
 ;
@@ -387,7 +387,7 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"8;
+$PN"1"21;
 %"TESTPOINT_L"
 "1","(-2625,3850)","5","misc","I26";
 ;
@@ -400,7 +400,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"11;
+$PN"1"18;
 %"INPORT"
 "1","(-3025,3150)","0","standard","I27";
 ;
@@ -409,7 +409,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"17;
+HDL_PORT"IN"12;
 %"LED_1206"
 "1","(75,3125)","4","misc","I28";
 ;
@@ -428,9 +428,9 @@ ABBREV"LED"
 NEEDS_NO_SIZE"TRUE"
 CDS_LMAN_SYM_OUTLINE"-25,75,100,-25";
 "A"
-$PN"2"1;
+$PN"2"28;
 "B"
-$PN"1"24;
+$PN"1"5;
 %"LED_1206"
 "1","(75,2075)","4","misc","I29";
 ;
@@ -449,9 +449,9 @@ ABBREV"LED"
 NEEDS_NO_SIZE"TRUE"
 CDS_LMAN_SYM_OUTLINE"-25,75,100,-25";
 "A"
-$PN"2"3;
+$PN"2"26;
 "B"
-$PN"1"2;
+$PN"1"27;
 %"74F06"
 "1","(-475,2575)","0","ttl","I3";
 ;
@@ -463,33 +463,33 @@ ROOM"SPKR"
 CDS_LIB"ttl"
 CDS_LMAN_SYM_OUTLINE"-125,250,125,-150";
 "VCC"
-$PN"14"23;
+$PN"14"6;
 "GND"
-$PN"7"21;
+$PN"7"8;
 "Q6* \B"
-$PN"12"22;
+$PN"12"7;
 "Q5* \B"
-$PN"10"22;
+$PN"10"7;
 "Q4* \B"
-$PN"8"22;
+$PN"8"7;
 "Q3* \B"
-$PN"6"22;
+$PN"6"7;
 "Q2* \B"
-$PN"4"22;
+$PN"4"7;
 "Q1* \B"
-$PN"2"22;
+$PN"2"7;
 "D6"
-$PN"13"26;
+$PN"13"3;
 "D5"
-$PN"11"26;
+$PN"11"3;
 "D4"
-$PN"9"26;
+$PN"9"3;
 "D3"
-$PN"5"26;
+$PN"5"3;
 "D2"
-$PN"3"26;
+$PN"3"3;
 "D1"
-$PN"1"26;
+$PN"1"3;
 %"RSMD0805"
 "1","(900,3800)","0","resistors","I4";
 ;
@@ -515,9 +515,9 @@ NEEDS_NO_SIZE"TRUE"
 PACKTYPE"0805"
 POSTOL"5%";
 "A<0>"
-$PN"1"28;
+$PN"1"1;
 "B<0>"
-$PN"2"19;
+$PN"2"10;
 %"RSMD0805"
 "1","(775,2875)","0","resistors","I5";
 ;
@@ -543,9 +543,9 @@ POWER"0.1"
 PACKTYPE"0805"
 POSTOL"5%";
 "A<0>"
-$PN"1"25;
+$PN"1"4;
 "B<0>"
-$PN"2"6;
+$PN"2"23;
 %"RSMD0805"
 "1","(75,2750)","1","resistors","I6";
 ;
@@ -572,9 +572,9 @@ SLOPE"RSMAX"
 TC1"RTMPL"
 TC2"RTMPO";
 "A<0>"
-$PN"1"22;
+$PN"1"7;
 "B<0>"
-$PN"2"25;
+$PN"2"4;
 %"RSMD0805"
 "1","(75,3675)","1","resistors","I7";
 ;
@@ -601,9 +601,9 @@ MAX_TEMP"RTMAX"
 POWER"0.1"
 PACKTYPE"0805";
 "A<0>"
-$PN"1"27;
+$PN"1"2;
 "B<0>"
-$PN"2"28;
+$PN"2"1;
 %"RSMD0805"
 "1","(75,3325)","1","resistors","I8";
 ;
@@ -630,9 +630,9 @@ TOL_ON_OFF"ON"
 IC"UNDEF"
 NEGTOL"5%";
 "A<0>"
-$PN"1"1;
+$PN"1"28;
 "B<0>"
-$PN"2"27;
+$PN"2"2;
 %"RSMD0805"
 "1","(75,2325)","1","resistors","I9";
 ;
@@ -659,7 +659,7 @@ DIST"FLAT"
 IC"UNDEF"
 PACKTYPE"0805";
 "A<0>"
-$PN"1"3;
+$PN"1"26;
 "B<0>"
-$PN"2"22;
+$PN"2"7;
 END.

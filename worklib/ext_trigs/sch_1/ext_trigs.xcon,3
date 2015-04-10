@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-09T11:45:41</modificationTime>
+    <modificationTime>2015-04-09T16:49:12</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -743,11 +743,6 @@
         <net>
           <id>N5</id>
           <name>gnd</name>
-          <scope>global</scope>
-        </net>
-        <net>
-          <id>N6</id>
-          <name>gng</name>
           <scope>global</scope>
         </net>
         <net>
@@ -3204,7 +3199,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
+                <connection pinmsb="0" pinlsb="0" net="N5" />
               </connections>
             </pin>
           </pins>
@@ -3243,7 +3238,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
+                <connection pinmsb="0" pinlsb="0" net="N5" />
               </connections>
             </pin>
           </pins>
@@ -3399,11 +3394,6 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
-          <netScope ref="gng">
-            <pageScope number="1">
-              <scope>global</scope>
-            </pageScope>
-          </netScope>
           <netScope ref="vcc">
             <pageScope number="1">
               <scope>global</scope>
@@ -3434,7 +3424,6 @@
                 <lsb>0</lsb>
               </net>
               <net ref="gnd"></net>
-              <net ref="gng"></net>
               <net ref="unnamed_1_74f07_i5_a0"></net>
               <net ref="unnamed_1_74f07_i5_a1"></net>
               <net ref="unnamed_1_74f07_i5_a2"></net>
