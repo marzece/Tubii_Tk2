@@ -8,8 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 16)
-      (lastNetId 251)
-      (lastInstTermId 841)
+      (lastNetId 260)
+      (lastInstTermId 900)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -42,6 +42,8 @@
           ("T732" "read_cntrl_reg_bit" -1 -1 2)
           ("T858" "bckp_clk_in_use" -1 -1 1)
           ("T865" "reset_clk" -1 -1 2)
+          ("T994" "mtca_mimic_trig1" -1 -1 1)
+          ("T995" "mtca_mimic_trig2" -1 -1 1)
         )
       )
       ("S3" "clocks" "tubii_tk2_lib" "sym_1"
@@ -195,6 +197,8 @@
           ("T148" "data_rdy" -1 -1 1)
           ("T149" "pulse1_anal" -1 -1 1)
           ("T150" "pulse2_anal" -1 -1 1)
+          ("T992" "trig1_out_ttl" -1 -1 2)
+          ("T993" "trig2_out_ttl" -1 -1 2)
         )
       )
       ("S16" "hct238" "ttl" "sym_1"
@@ -325,6 +329,8 @@
       ("N224" "unnamed_1_clocks_i2_bckpused" -1 -1 0 )
       ("N225" "le_clks" -1 -1 0 )
       ("N227" "unnamed_1_clocks_i2_reset" -1 -1 0 )
+      ("N259" "unnamed_1_microzedmodule_i1_mtcamimictrig1" -1 -1 0 )
+      ("N260" "unnamed_1_microzedmodule_i1_mtcamimictrig2" -1 -1 0 )
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2  inherited)
@@ -477,6 +483,16 @@
           ("M679" "T865" -1 -1
             (conn
               ("0" -1 -1 "N227" -1 -1)
+            )
+          )
+          ("M899" "T994" -1 -1
+            (conn
+              ("0" -1 -1 "N259" -1 -1)
+            )
+          )
+          ("M900" "T995" -1 -1
+            (conn
+              ("0" -1 -1 "N260" -1 -1)
             )
           )
         )
@@ -1083,6 +1099,16 @@
               ("0" -1 -1 "N204" -1 -1)
             )
           )
+          ("M897" "T992" -1 -1
+            (conn
+              ("0" -1 -1 "N259" -1 -1)
+            )
+          )
+          ("M898" "T993" -1 -1
+            (conn
+              ("0" -1 -1 "N260" -1 -1)
+            )
+          )
         )
       )
       ("I15" "page1_i53" "S16"
@@ -1129,12 +1155,12 @@
           )
           ("M484" "T490" -1 -1
             (conn
-              ("0" -1 -1 "N102" -1 -1)
+              ("0" -1 -1 "N103" -1 -1)
             )
           )
           ("M485" "T491" -1 -1
             (conn
-              ("0" -1 -1 "N103" -1 -1)
+              ("0" -1 -1 "N102" -1 -1)
             )
           )
           ("M486" "T492" -1 -1

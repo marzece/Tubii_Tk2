@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-09T17:26:44</modificationTime>
+    <modificationTime>2015-04-16T14:54:30</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="mtca_mimic" view="sch_1">
       <lastids>
         <instanceid>30</instanceid>
-        <netid>70</netid>
-        <insttermid>210</insttermid>
+        <netid>73</netid>
+        <insttermid>216</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -316,6 +316,16 @@
             <term>
               <id>T94</id>
               <name>trig2_out_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T149</id>
+              <name>trig1_out_ttl</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T150</id>
+              <name>trig2_out_ttl</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -657,6 +667,18 @@
         <net>
           <id>N64</id>
           <name>unnamed_1_rsmd0805_i45_b</name>
+        </net>
+        <net>
+          <id>N72</id>
+          <name>trig1_out_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
+          <id>N73</id>
+          <name>trig2_out_ttl</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N1</id>
@@ -1373,6 +1395,20 @@
               <termid>T94</termid>
               <connections>
                 <connection net="N36" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M215</id>
+              <termid>T149</termid>
+              <connections>
+                <connection net="N72" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M216</id>
+              <termid>T150</termid>
+              <connections>
+                <connection net="N73" />
               </connections>
             </pin>
           </pins>
@@ -2211,6 +2247,12 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
+          <netScope ref="trig1_out_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="trig2_out_n">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2218,6 +2260,12 @@
             </pageScope>
           </netScope>
           <netScope ref="trig2_out_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="trig2_out_ttl">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
@@ -2269,8 +2317,10 @@
               <net ref="pulse2_anal"></net>
               <net ref="trig1_out_n"></net>
               <net ref="trig1_out_p"></net>
+              <net ref="trig1_out_ttl"></net>
               <net ref="trig2_out_n"></net>
               <net ref="trig2_out_p"></net>
+              <net ref="trig2_out_ttl"></net>
               <net ref="unnamed_1_ad7243_i2_refin"></net>
               <net ref="unnamed_1_ad7243_i2_vdd"></net>
               <net ref="unnamed_1_ad7243_i2_vss"></net>

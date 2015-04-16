@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T19:48:53</modificationTime>
+    <modificationTime>2015-04-16T14:45:09</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
       <lastids>
         <instanceid>3</instanceid>
-        <netid>51</netid>
+        <netid>53</netid>
         <insttermid>306</insttermid>
       </lastids>
       <cells>
@@ -781,6 +781,18 @@
           <direction>output</direction>
         </net>
         <net>
+          <id>N52</id>
+          <name>mtca_mimic_trig1</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N53</id>
+          <name>mtca_mimic_trig2</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
           <id>N23</id>
           <name>v3p3</name>
           <scope>global</scope>
@@ -932,7 +944,7 @@
               <id>M18</id>
               <termid>T18</termid>
               <connections>
-                <connection net="N12" netmsb="0" netlsb="0" />
+                <connection net="N12" netmsb="2" netlsb="2" />
               </connections>
             </pin>
             <pin>
@@ -974,7 +986,7 @@
               <id>M24</id>
               <termid>T24</termid>
               <connections>
-                <connection net="N12" netmsb="2" netlsb="2" />
+                <connection net="N12" netmsb="0" netlsb="0" />
               </connections>
             </pin>
             <pin>
@@ -988,7 +1000,7 @@
               <id>M26</id>
               <termid>T26</termid>
               <connections>
-                <connection net="N3" />
+                <connection net="N1" />
               </connections>
             </pin>
             <pin>
@@ -1016,7 +1028,7 @@
               <id>M30</id>
               <termid>T30</termid>
               <connections>
-                <connection net="N6" />
+                <connection net="N14" />
               </connections>
             </pin>
             <pin>
@@ -1030,7 +1042,7 @@
               <id>M32</id>
               <termid>T32</termid>
               <connections>
-                <connection net="N47" />
+                <connection net="N6" />
               </connections>
             </pin>
             <pin>
@@ -1058,7 +1070,7 @@
               <id>M36</id>
               <termid>T36</termid>
               <connections>
-                <connection net="N1" />
+                <connection net="N3" />
               </connections>
             </pin>
             <pin>
@@ -1072,7 +1084,7 @@
               <id>M38</id>
               <termid>T38</termid>
               <connections>
-                <connection net="N14" />
+                <connection net="N47" />
               </connections>
             </pin>
             <pin>
@@ -1727,6 +1739,7 @@
               <id>M234</id>
               <termid>T30</termid>
               <connections>
+                <connection net="N52" />
               </connections>
             </pin>
             <pin>
@@ -1739,6 +1752,7 @@
               <id>M236</id>
               <termid>T32</termid>
               <connections>
+                <connection net="N53" />
               </connections>
             </pin>
             <pin>
@@ -2301,6 +2315,18 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
+          <netScope ref="mtca_mimic_trig1">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="mtca_mimic_trig2">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="read_cntrl_reg_bit">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2434,6 +2460,8 @@
                 <lsb>0</lsb>
               </net>
               <net ref="mtca_mimic_data_rdy"></net>
+              <net ref="mtca_mimic_trig1"></net>
+              <net ref="mtca_mimic_trig2"></net>
               <net ref="read_cntrl_reg_bit"></net>
               <net ref="reset_clk"></net>
               <net ref="scaler">

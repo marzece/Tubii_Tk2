@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 13 )
+			( logicalViewRevNum 14 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -344,6 +344,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -550,6 +566,12 @@
 			)
 			( signal "@tubii_tk2_lib.microzed_module(sch_1):reset_clk"
 				( objectStatus "reset_clk" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):mtca_mimic_trig1"
+				( objectStatus "mtca_mimic_trig1" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):mtca_mimic_trig2"
+				( objectStatus "mtca_mimic_trig2" )
 			)
 			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"

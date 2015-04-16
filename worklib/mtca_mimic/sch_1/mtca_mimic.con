@@ -8,8 +8,8 @@
   (design "mtca_mimic"
     (lastIds
       (lastInstanceId 30)
-      (lastNetId 70)
-      (lastInstTermId 210)
+      (lastNetId 73)
+      (lastInstTermId 216)
     )
     (cells
       ("S1" "ad96687" "misc" "sym_1"
@@ -80,6 +80,8 @@
           ("T92" "trig1_out_p" -1 -1 2)
           ("T93" "trig2_out_n" -1 -1 2)
           ("T94" "trig2_out_p" -1 -1 2)
+          ("T149" "trig1_out_ttl" -1 -1 2)
+          ("T150" "trig2_out_ttl" -1 -1 2)
         )
       )
       ("S6" "mc10h131" "ecl" "sym_1"
@@ -160,6 +162,8 @@
       ("N62" "unnamed_1_ad96687_i1_le1" -1 -1 0 )
       ("N63" "unnamed_1_ad96687_i1_le2" -1 -1 0 )
       ("N64" "unnamed_1_rsmd0805_i45_b" -1 -1 0 )
+      ("N72" "trig1_out_ttl" -1 -1 1 2)
+      ("N73" "trig2_out_ttl" -1 -1 1 2)
       ("N1" "gnd" -1 -1 2 )
       ("N14" "vcc" -1 -1 2 )
       ("N15" "vee" -1 -1 2 )
@@ -504,6 +508,16 @@
           ("M98" "T94" -1 -1
             (conn
               ("0" -1 -1 "N36" -1 -1)
+            )
+          )
+          ("M215" "T149" -1 -1
+            (conn
+              ("0" -1 -1 "N72" -1 -1)
+            )
+          )
+          ("M216" "T150" -1 -1
+            (conn
+              ("0" -1 -1 "N73" -1 -1)
             )
           )
         )
