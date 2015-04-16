@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-16T14:58:47</modificationTime>
+    <modificationTime>2015-04-16T18:33:26</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -414,14 +414,6 @@
           <name>unnamed_1_74f164_i1_vcc</name>
         </net>
         <net>
-          <id>N15</id>
-          <name>unnamed_1_csmd0603_i6_a</name>
-        </net>
-        <net>
-          <id>N16</id>
-          <name>unnamed_1_csmd0603_i6_b</name>
-        </net>
-        <net>
           <id>N17</id>
           <name>unnamed_1_hct374_i2_q6</name>
         </net>
@@ -648,7 +640,7 @@
               <id>M24</id>
               <termid>T24</termid>
               <connections>
-                <connection net="N16" />
+                <connection net="N8" />
               </connections>
             </pin>
             <pin>
@@ -718,7 +710,7 @@
               <id>M34</id>
               <termid>T34</termid>
               <connections>
-                <connection net="N15" />
+                <connection net="N19" />
               </connections>
             </pin>
           </pins>
@@ -958,7 +950,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N15" />
+                <connection pinmsb="0" pinlsb="0" net="N19" />
               </connections>
             </pin>
             <pin>
@@ -967,7 +959,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N16" />
+                <connection pinmsb="0" pinlsb="0" net="N8" />
               </connections>
             </pin>
           </pins>
@@ -1365,8 +1357,6 @@
               <net ref="reg_val"></net>
               <net ref="unnamed_1_74f164_i1_gnd"></net>
               <net ref="unnamed_1_74f164_i1_vcc"></net>
-              <net ref="unnamed_1_csmd0603_i6_a"></net>
-              <net ref="unnamed_1_csmd0603_i6_b"></net>
               <net ref="unnamed_1_hct374_i2_q6"></net>
               <net ref="unnamed_1_hct374_i2_q7"></net>
               <net ref="vcc"></net>
