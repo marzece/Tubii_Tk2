@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Thu Apr 02 11:21:21 2015                      )
+(    Date/Time        : Wed Apr 08 19:08:45 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -15,7 +15,7 @@
 
  Will search while getting acceptable improvement
  Will not scale complete graph edges
- Start time Thu Apr 02 11:21:21 2015
+ Start time Wed Apr 08 19:08:45 2015
 
 
  
@@ -24,7 +24,7 @@
  
  Algorithm  : discrete
  Place within: room
- Room name: SPKR
+ Room name: EXT_TRIG
  Map grid points to: library origin
  Place leftovers on bottom: YES
  Allow component overlap: NO
@@ -60,7 +60,7 @@
   line seg 	(800.0,15800.0) (800.0,600.0)
 
 ACTIVE ROOMS:
-    Room  1: SPKR            (6100.0 12100.0) (8700.0 12100.0) (8700.0 14700.0) (6100.0 14700.0)
+    Room  1: EXT_TRIG        (11000.0 6300.0) (14800.0 6300.0) (14800.0 9400.0) (11000.0 9400.0)
 
 
  Top grid x increment will be 250.0
@@ -74,7 +74,7 @@ ACTIVE ROOMS:
 (                                                                     )
 (    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Thu Apr 02 11:21:21 2015                      )
+(    Date/Time        : Wed Apr 08 19:08:45 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -106,55 +106,47 @@ Report methodology:
   VCC15                TOP                    360.6      (11675.0 11860.6) to *(11675.0 11500.0)
   VCC15                TOP                    285.6      (1814.4 2525.0) to *(1814.4 2810.6)
   V3P3                 TOP                    200.0     *(3200.0 3825.0) to  (3200.0 3625.0)
-  UNNAMED_1_SS22SDP2_I35_P2 TOP                    860.4     *(9700.0 5125.0) to  (10550.0 5150.0)
-  UNNAMED_1_SS22SDP2_I35_P1 TOP                    700.0      (10400.0 5230.0) to *(9700.0 5230.0)
-  UNNAMED_1_SS22SDP2_I34_P2 TOP                    512.4      (10212.4 5500.0) to *(9700.0 5500.0)
-  UNNAMED_1_SS22SDP2_I34_P2 TOP                     14.4     *(10100.0 5400.0) to  (10114.4 5400.0)
-  UNNAMED_1_SS22SDP2_I34_P1 TOP                    758.9     *(9700.0 5625.0) to  (10450.0 5603.6)
-  UNNAMED_1_LOGEN_I13_LOSTAR2 BOTTOM                1391.4     *(12075.0 3425.0) to  (11975.0 4775.0)
+  UNNAMED_1_SS22SDP2_I35_P2 TOP                    860.4      (9550.0 4750.0) to *(8700.0 4725.0)
+  UNNAMED_1_SS22SDP2_I35_P1 TOP                    700.0      (9400.0 4830.0) to *(8700.0 4830.0)
+  UNNAMED_1_SS22SDP2_I34_P2 TOP                    512.4      (9212.4 5100.0) to *(8700.0 5100.0)
+  UNNAMED_1_SS22SDP2_I34_P2 TOP                     14.4     *(9100.0 5000.0) to  (9114.4 5000.0)
+  UNNAMED_1_SS22SDP2_I34_P1 TOP                    758.9      (9450.0 5203.6) to *(8700.0 5225.0)
+  UNNAMED_1_LOGEN_I13_LOSTAR2 BOTTOM                1391.4     *(11075.0 3025.0) to  (10975.0 4375.0)
   UNNAMED_1_INDUCTORL_I3_A TOP                      7.1     *(3330.0 1304.0) to  (3325.0 1309.0)
-  UNNAMED_1_HCT123_I54_Q2 TOP                    491.4     *(12275.0 4050.0) to  (11825.0 3997.5)
-  UNNAMED_1_HCT123_I54_Q1 TOP                    522.2      (11875.0 3802.5) to *(12275.0 4000.0)
-  UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (12000.0 8175.0) to *(12375.0 7850.0)
-  UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (11950.0 8225.0) to *(12375.0 7900.0)
-  UNNAMED_1_FRONTPORTS_I2_TUBCLKI BOTTOM                 616.4      (7500.0 4525.0) to *(7400.0 3950.0)
-  UNNAMED_1_FRONTPORTS_I2_TTLTO_1 TOP                    180.0     *(1825.0 9450.0) to  (2005.0 9450.0)
-  UNNAMED_1_FRONTPORTS_I2_TTLTOEC TOP                    450.9      (2225.0 9380.0) to *(1875.0 9275.0)
-  UNNAMED_1_FRONTPORTS_I2_TELLIED TOP                    487.4      (11062.4 1700.0) to *(10575.0 1700.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNCL_1 TOP                    277.5      (6147.5 7625.0) to *(6425.0 7625.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNCLVD TOP                    312.9      (6147.5 7675.0) to *(6450.0 7650.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNC2_1 TOP                    277.5      (6147.5 7575.0) to *(6425.0 7575.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNC24P TOP                    592.6     *(4575.0 8025.0) to  (5150.0 8067.5)
-  UNNAMED_1_FRONTPORTS_I2_SYNC24N TOP                    645.7     *(4575.0 8000.0) to  (5200.0 8000.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNC24L TOP                    287.9      (6147.5 7525.0) to *(6425.0 7550.0)
-  UNNAMED_1_FRONTPORTS_I2_SMELLIE TOP                    776.2     *(10575.0 1950.0) to  (11300.0 1970.0)
-  UNNAMED_1_FRONTPORTS_I2_PULS<3> TOP                    335.9     *(14275.0 15167.6) to  (14525.0 15375.0)
-  UNNAMED_1_FRONTPORTS_I2_NIMTOEC TOP                    916.2     *(3425.0 10925.0) to  (4240.0 10712.5)
-  UNNAMED_1_FRONTPORTS_I2_MTCAM_4 BOTTOM                 375.0      (9925.0 3925.0) to *(9550.0 3925.0)
-  UNNAMED_1_FRONTPORTS_I2_MTCAM_3 BOTTOM                 375.0      (9925.0 3875.0) to *(9550.0 3875.0)
-  UNNAMED_1_FRONTPORTS_I2_MTCAM_1 BOTTOM                 450.0      (10000.0 4100.0) to *(9550.0 4100.0)
-  UNNAMED_1_FRONTPORTS_I2_MTCAMIM BOTTOM                 380.0      (9930.0 4045.0) to *(9550.0 4045.0)
-  UNNAMED_1_FRONTPORTS_I2_LVDST_2 TOP                    180.0     *(1825.0 9500.0) to  (2005.0 9500.0)
-  UNNAMED_1_FRONTPORTS_I2_LVDST_1 TOP                    637.9      (2897.5 9525.0) to *(3075.0 9050.0)
-  UNNAMED_1_FRONTPORTS_I2_LVDSTOE TOP                    573.4      (2897.5 9475.0) to *(3050.0 9050.0)
-  UNNAMED_1_FRONTPORTS_I2_GTNIM TOP                    134.4     *(5100.0 7800.0) to  (5224.0 7825.0)
-  UNNAMED_1_FRONTPORTS_I2_GENER_2 TOP                    168.0     *(11593.0 8718.0) to  (11593.0 8550.0)
-  UNNAMED_1_FRONTPORTS_I2_GENER_1 TOP                    185.7      (11450.0 7865.0) to *(11500.0 7700.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTO_4 TOP                    712.3     *(3100.0 10825.0) to  (2970.0 10375.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTO_3 TOP                   1345.7     *(2250.0 9925.0) to  (3550.0 9850.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTO_2 TOP                    227.5      (2897.5 9625.0) to *(3125.0 9625.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTO_1 TOP                    237.9      (2897.5 9575.0) to *(3125.0 9600.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTOTT TOP                    244.4     *(3325.0 10825.0) to  (3500.0 10657.5)
-  UNNAMED_1_FRONTPORTS_I2_ECLTONI TOP                    404.7      (3700.0 10657.5) to *(3375.0 10850.0)
-  UNNAMED_1_ELLIECOMS_I9_TELLIEPR BOTTOM                 682.8      (11675.0 1825.0) to *(11475.0 2425.0)
-  UNNAMED_1_ELLIECOMS_I9_SMELLIEP BOTTOM                 697.5      (11725.0 1875.0) to *(11550.0 2500.0)
-  UNNAMED_1_DEFAULTCLKSEL_I1_RESE TOP                    541.0      (7175.0 4280.0) to *(7600.0 4000.0)
-  UNNAMED_1_DEFAULTCLKSEL_I1_DEFA TOP                    505.0      (7920.0 4375.0) to *(8425.0 4375.0)
-  UNNAMED_1_DEFAULTCLKSEL_I1_BCKP TOP                    602.1     *(8224.0 4324.0) to  (7643.0 4375.0)
+  UNNAMED_1_HCT123_I54_Q2 TOP                    491.4     *(11275.0 3650.0) to  (10825.0 3597.5)
+  UNNAMED_1_HCT123_I54_Q1 TOP                    522.2      (10875.0 3402.5) to *(11275.0 3600.0)
+  UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (4100.0 5550.0) to *(4475.0 5225.0)
+  UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (4050.0 5600.0) to *(4475.0 5275.0)
+  UNNAMED_1_FRONTPORTS_I2_TUBCLKI BOTTOM                 616.4      (5100.0 7200.0) to *(5000.0 6625.0)
+  UNNAMED_1_FRONTPORTS_I2_TTLTO_1 TOP                    180.0     *(5575.0 14900.0) to  (5575.0 14720.0)
+  UNNAMED_1_FRONTPORTS_I2_TTLTOEC TOP                    450.9      (5505.0 14500.0) to *(5400.0 14850.0)
+  UNNAMED_1_FRONTPORTS_I2_TELLIED TOP                    487.4      (6475.0 4812.6) to *(6475.0 5300.0)
+  UNNAMED_1_FRONTPORTS_I2_SMELLIE TOP                    776.2     *(6725.0 5300.0) to  (6745.0 4575.0)
+  UNNAMED_1_FRONTPORTS_I2_NIMTOEC TOP                    916.2     *(7050.0 13300.0) to  (6837.5 12485.0)
+  UNNAMED_1_FRONTPORTS_I2_MTCAM_4 BOTTOM                 375.0      (8925.0 3525.0) to *(8550.0 3525.0)
+  UNNAMED_1_FRONTPORTS_I2_MTCAM_3 BOTTOM                 375.0      (8925.0 3475.0) to *(8550.0 3475.0)
+  UNNAMED_1_FRONTPORTS_I2_MTCAM_1 BOTTOM                 450.0      (9000.0 3700.0) to *(8550.0 3700.0)
+  UNNAMED_1_FRONTPORTS_I2_MTCAMIM BOTTOM                 380.0      (8930.0 3645.0) to *(8550.0 3645.0)
+  UNNAMED_1_FRONTPORTS_I2_LVDST_2 TOP                    180.0     *(5625.0 14900.0) to  (5625.0 14720.0)
+  UNNAMED_1_FRONTPORTS_I2_LVDST_1 TOP                    637.9      (5650.0 13827.5) to *(5175.0 13650.0)
+  UNNAMED_1_FRONTPORTS_I2_LVDSTOE TOP                    573.4      (5600.0 13827.5) to *(5175.0 13675.0)
+  UNNAMED_1_FRONTPORTS_I2_GENER_2 TOP                    168.0     *(3693.0 6093.0) to  (3693.0 5925.0)
+  UNNAMED_1_FRONTPORTS_I2_GENER_1 TOP                    185.7      (3550.0 5240.0) to *(3600.0 5075.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTO_4 TOP                    712.3     *(6950.0 13625.0) to  (6500.0 13755.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTO_3 TOP                   1345.7     *(6050.0 14475.0) to  (5975.0 13175.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTO_2 TOP                    227.5      (5750.0 13827.5) to *(5750.0 13600.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTO_1 TOP                    237.9      (5700.0 13827.5) to *(5725.0 13600.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTOTT TOP                    244.4     *(6950.0 13400.0) to  (6782.5 13225.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTONI TOP                    404.7      (6782.5 13025.0) to *(6975.0 13350.0)
+  UNNAMED_1_ELLIECOMS_I9_TELLIEPR BOTTOM                 682.8      (6600.0 4200.0) to *(7200.0 4400.0)
+  UNNAMED_1_ELLIECOMS_I9_SMELLIEP BOTTOM                 697.5      (6650.0 4150.0) to *(7275.0 4325.0)
+  UNNAMED_1_DEFAULTCLKSEL_I1_RESE TOP                    541.0      (4775.0 6955.0) to *(5200.0 6675.0)
+  UNNAMED_1_DEFAULTCLKSEL_I1_DEFA TOP                    505.0      (5520.0 7050.0) to *(6025.0 7050.0)
+  UNNAMED_1_DEFAULTCLKSEL_I1_BCKP TOP                    602.1      (5243.0 7050.0) to *(5824.0 6999.0)
   UNNAMED_1_COTO2342_I1_CTRLIN_6 TOP                    249.5     *(14573.0 12025.0) to  (14750.0 12200.0)
   UNNAMED_1_CNTRLREGISTER_I10_ECA TOP                    205.0      (6520.0 10600.0) to *(6725.0 10600.0)
-  UNNAMED_1_CLOCKS_I2_RESET TOP                    367.4      (6657.0 4550.0) to *(6300.0 4525.0)
-  UNNAMED_1_CLOCKS_I2_CLKSEL TOP                    846.8      (7025.0 4620.0) to *(6325.0 4725.0)
+  UNNAMED_1_CLOCKS_I2_RESET TOP                    367.4      (4257.0 7225.0) to *(3900.0 7200.0)
+  UNNAMED_1_CLOCKS_I2_CLKSEL TOP                    846.8      (4625.0 7295.0) to *(3925.0 7400.0)
   UNNAMED_1_CHANGECLKS_I3_DEFAU_1 BOTTOM                 876.8      (8100.0 1600.0) to *(7975.0 2425.0)
   UNNAMED_1_CHANGECLKS_I3_DEFAULT BOTTOM                 926.8      (8125.0 1550.0) to *(8000.0 2425.0)
   UNNAMED_1_CHANGECLKS_I3_CHANG_1 TOP                    511.1      (7000.0 1480.0) to *(6925.0 1000.0)
@@ -163,23 +155,22 @@ Report methodology:
   UNNAMED_1_CHANGECLKS_I3_BCKPC_2 TOP                    541.6     *(8875.0 2075.0) to  (8700.0 1675.0)
   UNNAMED_1_CHANGECLKS_I3_BCKPC_1 TOP                    568.4     *(8100.0 2475.0) to  (8052.5 1950.0)
   UNNAMED_1_CHANGECLKS_I3_BCKPCLK TOP                    612.2     *(8125.0 2475.0) to  (8065.0 1900.0)
-  UNNAMED_1_CAENCOMS_I8_SYNCTTL BOTTOM                 231.1      (6025.0 7625.0) to *(6100.0 7425.0)
-  UNNAMED_1_CAENCOMS_I8_SYNC24TTL TOP                    176.8      (6025.0 7575.0) to *(6150.0 7450.0)
-  UNNAMED_1_CAENCOMS_I8_GTTTL BOTTOM                  50.0     *(6100.0 8600.0) to  (6100.0 8550.0)
+  UNNAMED_1_CAENCOMS_I8_SYNCTTL BOTTOM                 231.1      (4325.0 14175.0) to *(4525.0 14250.0)
+  UNNAMED_1_CAENCOMS_I8_SYNC24TTL TOP                    176.8      (4375.0 14175.0) to *(4500.0 14300.0)
   UNNAMED_1_CAENCOMS_I8_GT2P BOTTOM                 781.1      (6600.0 9900.0) to *(6050.0 10175.0)
-  UNNAMED_1_CAENCOMS_I8_GT2P TOP                    352.5     *(5225.0 8800.0) to  (5400.0 8520.0)
-  UNNAMED_1_CAENCOMS_I8_GT2P TOP                    504.3     *(11550.0 5950.0) to  (11850.0 5570.0)
-  UNNAMED_1_CAENBUFFER_I5_INANAL TOP                    514.4     *(14825.0 14550.0) to  (14950.0 14110.6)
-  UNNAMED_1_AD96687_I1_Q2_1 TOP                    758.9     *(9700.0 5175.0) to  (10450.0 5196.4)
-  UNNAMED_1_AD96687_I1_Q2 TOP                    425.0     *(9700.0 5300.0) to  (10125.0 5300.0)
-  UNNAMED_1_AD96687_I1_Q1_1 TOP                    700.0      (10400.0 5570.0) to *(9700.0 5570.0)
-  UNNAMED_1_AD96687_I1_Q1 TOP                    850.0      (10550.0 5675.0) to *(9700.0 5675.0)
-  SR_DATA              TOP                    393.4     *(11050.0 8500.0) to  (11350.0 8402.5)
-  SR_DATA              TOP                    218.9      (3675.0 5997.5) to *(3575.0 6175.0)
-  GT2_N                TOP                    342.1      (5350.0 8520.0) to *(5200.0 8800.0)
-  DGT_GATE             TOP                    448.2      (11150.0 5570.0) to *(10925.0 5925.0)
+  UNNAMED_1_CAENCOMS_I8_GT2P TOP                    352.5     *(3150.0 13375.0) to  (3430.0 13550.0)
+  UNNAMED_1_CAENCOMS_I8_GT2P TOP                    504.3     *(10550.0 5550.0) to  (10850.0 5170.0)
+  UNNAMED_1_AD96687_I1_Q2_1 TOP                    758.9      (9450.0 4796.4) to *(8700.0 4775.0)
+  UNNAMED_1_AD96687_I1_Q2 TOP                    425.0      (9125.0 4900.0) to *(8700.0 4900.0)
+  UNNAMED_1_AD96687_I1_Q1_1 TOP                    700.0      (9400.0 5170.0) to *(8700.0 5170.0)
+  UNNAMED_1_AD96687_I1_Q1 TOP                    850.0      (9550.0 5275.0) to *(8700.0 5275.0)
+  SR_DATA              TOP                    393.4     *(3150.0 5875.0) to  (3450.0 5777.5)
+  SR_DATA              TOP                    218.9      (1327.5 12175.0) to *(1150.0 12075.0)
+  SPKR                 TOP                    377.5      (1352.5 10525.0) to *(975.0 10525.0)
+  GT2_N                TOP                    342.1      (3430.0 13500.0) to *(3150.0 13350.0)
+  DGT_GATE             TOP                    448.2      (10150.0 5170.0) to *(9925.0 5525.0)
   UNNAMED_1_CAENBUFFER_I23_CNTRL TOP                   3180.5     *(14575.0 11925.0) to  (12000.0 11125.0)
-  VCC                  TOP                      0.1     *(12025.0 3802.6) to  (12025.0 3802.5)
+  VCC                  TOP                      0.1     *(11025.0 3402.6) to  (11025.0 3402.5)
   Dummy Net            TOP                    169.9      (6450.0 10720.0) to *(6546.4 10850.0)
   Not a Net            TOP                     66.7     *(14600.0 12200.0) to *(14554.5 12154.5)
 
@@ -187,8 +178,8 @@ Report methodology:
 << Dangling Vias >>
   Net                  Padstack               Location            Layers
   ---------------------------------------------------------------------------
-  SET_RETRIG2          VIA                  (11950.0 5700.0) TOP/BOTTOM 
-  SET_RETRIG2          VIA                  (11950.0 5700.0) TOP/BOTTOM 
+  SET_RETRIG2          VIA                  (10950.0 5300.0) TOP/BOTTOM 
+  SET_RETRIG2          VIA                  (10950.0 5300.0) TOP/BOTTOM 
   VTT                  VIA                  (15425.0 12525.0) TOP/BOTTOM 
   VTT                  VIA                  (15400.0 14075.0) TOP/BOTTOM 
   VTT                  VIA                  (11575.0 14075.0) TOP/BOTTOM 
@@ -198,8 +189,8 @@ Report methodology:
   VTT                  VIA                  (11600.0 12600.0) TOP/BOTTOM 
   VTT                  VIA                  (14100.0 14050.0) TOP/BOTTOM 
   VTT                  VIA                  (14175.0 12600.0) TOP/BOTTOM 
-  VTT                  VIA                  (12025.0 4325.0) TOP/BOTTOM 
-  VTT                  VIA                  (9975.0 5400.0)  TOP/BOTTOM 
+  VTT                  VIA                  (11025.0 3925.0) TOP/BOTTOM 
+  VTT                  VIA                  (8975.0 5000.0)  TOP/BOTTOM 
   VTT                  VIA                  (6725.0 1400.0)  TOP/BOTTOM 
   VTT                  VIA                  (7850.0 1750.0)  TOP/BOTTOM 
   VTT                  VIA                  (8075.0 1125.0)  TOP/BOTTOM 
@@ -218,98 +209,100 @@ Report methodology:
   VTT                  VIA                  (8900.0 1325.0)  TOP/BOTTOM 
   VTT                  VIA                  (8700.0 2175.0)  TOP/BOTTOM 
   VTT                  VIA                  (8700.0 1325.0)  TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10525.0) TOP/BOTTOM 
-  VTT                  VIA                  (6450.0 8575.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6300.0 8650.0)  TOP/BOTTOM 
-  VTT                  VIA                  (15300.0 5725.0) TOP/BOTTOM 
-  VTT                  VIA                  (7860.6 4939.4)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4550.0)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4500.0)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4775.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7400.0 4975.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7425.0 5200.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7550.0 5750.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7764.4 4985.6)  TOP/BOTTOM 
-  VTT                  VIA                  (3875.0 10000.0) TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10025.0) TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10375.0) TOP/BOTTOM 
-  VTT                  VIA                  (3050.0 10725.0) TOP/BOTTOM 
-  VTT                  VIA                  (3200.0 10325.0) TOP/BOTTOM 
-  VTT                  VIA                  (4000.0 10825.0) TOP/BOTTOM 
-  VTT                  VIA                  (3725.0 10825.0) TOP/BOTTOM 
+  VTT                  VIA                  (6650.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (3375.0 14600.0) TOP/BOTTOM 
+  VTT                  VIA                  (3300.0 14450.0) TOP/BOTTOM 
+  VTT                  VIA                  (5460.6 7614.4)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7225.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7175.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7450.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5000.0 7650.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5025.0 7875.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5150.0 8425.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5364.4 7660.6)  TOP/BOTTOM 
+  VTT                  VIA                  (6125.0 12850.0) TOP/BOTTOM 
+  VTT                  VIA                  (6150.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (6500.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (6850.0 13675.0) TOP/BOTTOM 
+  VTT                  VIA                  (6450.0 13525.0) TOP/BOTTOM 
+  VTT                  VIA                  (6950.0 12725.0) TOP/BOTTOM 
+  VTT                  VIA                  (6950.0 13000.0) TOP/BOTTOM 
   VTT                  VIA                  (3775.0 3850.0)  TOP/BOTTOM 
   VTT                  VIA                  (6250.0 9775.0)  TOP/BOTTOM 
   VTT                  VIA                  (6300.0 9850.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5475.0 7900.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6350.0 7975.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6450.0 8075.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5725.0 8400.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5775.0 7900.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4800.0 8425.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4725.0 8125.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4750.0 7875.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4775.0 7825.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5350.0 8325.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5350.0 8175.0)  TOP/BOTTOM 
-  VTT                  VIA                  (11375.0 2275.0) TOP/BOTTOM 
-  VTT                  VIA                  (10775.0 1575.0) TOP/BOTTOM 
-  VTT                  VIA                  (11475.0 5050.0) TOP/BOTTOM 
-  VTT                  VIA                  (10700.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10475.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10150.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10150.0 4925.0) TOP/BOTTOM 
-  VTT                  VIA                  (10500.0 4950.0) TOP/BOTTOM 
-  VTT                  VIA                  (10675.0 5075.0) TOP/BOTTOM 
-  VTT                  VIA                  (10925.0 5150.0) TOP/BOTTOM 
-  VTT                  VIA                  (11300.0 4825.0) TOP/BOTTOM 
-  VTT                  VIA                  (10800.0 5050.0) TOP/BOTTOM 
-  VTT                  VIA                  (11525.0 4650.0) TOP/BOTTOM 
-  VTT                  VIA                  (12350.0 5300.0) TOP/BOTTOM 
-  VTT                  VIA                  (11975.0 5850.0) TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4625.0) TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4900.0) TOP/BOTTOM 
-  VTT                  VIA                  (10750.0 4725.0) TOP/BOTTOM 
-  VTT                  VIA                  (11264.4 4935.6) TOP/BOTTOM 
-  VTT                  VIA                  (10650.0 4175.0) TOP/BOTTOM 
-  VTT                  VIA                  (10575.0 3575.0) TOP/BOTTOM 
-  VTT                  VIA                  (11075.0 4175.0) TOP/BOTTOM 
-  VTT                  VIA                  (10610.6 4564.4) TOP/BOTTOM 
-  VTT                  VIA                  (9975.0 4350.0)  TOP/BOTTOM 
-  VTT                  VIA                  (10225.0 3250.0) TOP/BOTTOM 
-  VTT                  VIA                  (9900.0 3400.0)  TOP/BOTTOM 
-  VTT                  VIA                  (10650.0 4075.0) TOP/BOTTOM 
-  VTT                  VIA                  (9775.0 3525.0)  TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4775.0) TOP/BOTTOM 
-  VTT                  VIA                  (14475.0 6400.0) TOP/BOTTOM 
-  VTT                  VIA                  (14975.0 6375.0) TOP/BOTTOM 
-  VTT                  VIA                  (15325.0 5950.0) TOP/BOTTOM 
-  VTT                  VIA                  (14550.0 6100.0) TOP/BOTTOM 
+  VTT                  VIA                  (4050.0 13625.0) TOP/BOTTOM 
+  VTT                  VIA                  (3975.0 14500.0) TOP/BOTTOM 
+  VTT                  VIA                  (3875.0 14600.0) TOP/BOTTOM 
+  VTT                  VIA                  (3550.0 13875.0) TOP/BOTTOM 
+  VTT                  VIA                  (4050.0 13925.0) TOP/BOTTOM 
+  VTT                  VIA                  (3525.0 12950.0) TOP/BOTTOM 
+  VTT                  VIA                  (3825.0 12875.0) TOP/BOTTOM 
+  VTT                  VIA                  (4075.0 12900.0) TOP/BOTTOM 
+  VTT                  VIA                  (4125.0 12925.0) TOP/BOTTOM 
+  VTT                  VIA                  (3625.0 13500.0) TOP/BOTTOM 
+  VTT                  VIA                  (3775.0 13500.0) TOP/BOTTOM 
+  VTT                  VIA                  (7050.0 4500.0)  TOP/BOTTOM 
+  VTT                  VIA                  (6350.0 5100.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10475.0 4650.0) TOP/BOTTOM 
+  VTT                  VIA                  (9700.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9475.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9150.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9150.0 4525.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9500.0 4550.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9675.0 4675.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9925.0 4750.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10300.0 4425.0) TOP/BOTTOM 
+  VTT                  VIA                  (9800.0 4650.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10525.0 4250.0) TOP/BOTTOM 
+  VTT                  VIA                  (11350.0 4900.0) TOP/BOTTOM 
+  VTT                  VIA                  (10975.0 5450.0) TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4225.0) TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4500.0) TOP/BOTTOM 
+  VTT                  VIA                  (9750.0 4325.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10264.4 4535.6) TOP/BOTTOM 
+  VTT                  VIA                  (9650.0 3775.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9575.0 3175.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10075.0 3775.0) TOP/BOTTOM 
+  VTT                  VIA                  (9610.6 4164.4)  TOP/BOTTOM 
+  VTT                  VIA                  (8975.0 3950.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9225.0 2850.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8900.0 3000.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9650.0 3675.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8775.0 3125.0)  TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4375.0) TOP/BOTTOM 
+  VTT                  VIA                  (1850.0 13625.0) TOP/BOTTOM 
+  VTT                  VIA                  (1775.0 14375.0) TOP/BOTTOM 
+  VTT                  VIA                  (2275.0 14350.0) TOP/BOTTOM 
+  VTT                  VIA                  (1850.0 14075.0) TOP/BOTTOM 
   VEE                  VIA                  (7125.0 1425.0)  TOP/BOTTOM 
-  VEE                  VIA                  (2375.0 10600.0) TOP/BOTTOM 
-  VEE                  VIA                  (7874.0 5726.0)  TOP/BOTTOM 
-  VEE                  VIA                  (7776.0 4051.0)  TOP/BOTTOM 
-  VEE                  VIA                  (6825.0 4500.0)  TOP/BOTTOM 
-  VEE                  VIA                  (7074.0 4826.0)  TOP/BOTTOM 
+  VEE                  VIA                  (6725.0 14350.0) TOP/BOTTOM 
+  VEE                  VIA                  (1150.0 13750.0) TOP/BOTTOM 
+  VEE                  VIA                  (1801.0 14499.0) TOP/BOTTOM 
+  VEE                  VIA                  (2175.0 12775.0) TOP/BOTTOM 
+  VEE                  VIA                  (5474.0 8401.0)  TOP/BOTTOM 
+  VEE                  VIA                  (5376.0 6726.0)  TOP/BOTTOM 
+  VEE                  VIA                  (4425.0 7175.0)  TOP/BOTTOM 
+  VEE                  VIA                  (4674.0 7501.0)  TOP/BOTTOM 
   VEE                  VIA                  (8199.0 2249.0)  TOP/BOTTOM 
   VEE                  VIA                  (7375.0 1025.0)  TOP/BOTTOM 
   VEE                  VIA                  (8324.0 1376.0)  TOP/BOTTOM 
   VEE                  VIA                  (5025.0 1700.0)  TOP/BOTTOM 
-  VEE                  VIA                  (3200.0 9750.0)  TOP/BOTTOM 
-  VEE                  VIA                  (4275.0 10425.0) TOP/BOTTOM 
-  VEE                  VIA                  (3525.0 10350.0) TOP/BOTTOM 
+  VEE                  VIA                  (5875.0 13525.0) TOP/BOTTOM 
+  VEE                  VIA                  (6550.0 12450.0) TOP/BOTTOM 
+  VEE                  VIA                  (6475.0 13200.0) TOP/BOTTOM 
   VEE                  VIA                  (3775.0 2850.0)  TOP/BOTTOM 
   VEE                  VIA                  (6400.0 10800.0) TOP/BOTTOM 
-  VEE                  VIA                  (6325.0 8250.0)  TOP/BOTTOM 
-  VEE                  VIA                  (5500.0 7525.0)  TOP/BOTTOM 
-  VEE                  VIA                  (4925.0 8425.0)  TOP/BOTTOM 
-  VEE                  VIA                  (11975.0 1600.0) TOP/BOTTOM 
-  VEE                  VIA                  (10250.0 5450.0) TOP/BOTTOM 
-  VEE                  VIA                  (10950.0 5450.0) TOP/BOTTOM 
-  VEE                  VIA                  (12175.0 5350.0) TOP/BOTTOM 
-  VEE                  VIA                  (11375.0 4575.0) TOP/BOTTOM 
-  VEE                  VIA                  (11000.0 3625.0) TOP/BOTTOM 
-  VEE                  VIA                  (10350.0 4800.0) TOP/BOTTOM 
-  VEE                  VIA                  (10225.0 3525.0) TOP/BOTTOM 
+  VEE                  VIA                  (3700.0 14475.0) TOP/BOTTOM 
+  VEE                  VIA                  (4425.0 13625.0) TOP/BOTTOM 
+  VEE                  VIA                  (3525.0 13075.0) TOP/BOTTOM 
+  VEE                  VIA                  (6375.0 3900.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9250.0 5050.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9950.0 5050.0)  TOP/BOTTOM 
+  VEE                  VIA                  (11175.0 4950.0) TOP/BOTTOM 
+  VEE                  VIA                  (10375.0 4175.0) TOP/BOTTOM 
+  VEE                  VIA                  (10000.0 3225.0) TOP/BOTTOM 
+  VEE                  VIA                  (9350.0 4400.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9225.0 3125.0)  TOP/BOTTOM 
   VCC                  VIA                  (11500.0 14775.0) TOP/BOTTOM 
   VCC                  VIA                  (14725.0 13200.0) TOP/BOTTOM 
   VCC                  VIA                  (10900.0 13200.0) TOP/BOTTOM 
@@ -319,18 +312,22 @@ Report methodology:
   VCC                  VIA                  (10925.0 11725.0) TOP/BOTTOM 
   VCC                  VIA                  (13450.0 13200.0) TOP/BOTTOM 
   VCC                  VIA                  (13475.0 11725.0) TOP/BOTTOM 
-  VCC                  VIA                  (2875.0 9300.0)  TOP/BOTTOM 
-  VCC                  VIA                  (2275.0 9422.0)  TOP/BOTTOM 
-  VCC                  VIA                  (5825.0 7675.0)  TOP/BOTTOM 
-  VCC                  VIA                  (6325.0 8350.0)  TOP/BOTTOM 
+  VCC                  VIA                  (5425.0 13850.0) TOP/BOTTOM 
+  VCC                  VIA                  (5547.0 14450.0) TOP/BOTTOM 
+  VCC                  VIA                  (4275.0 13975.0) TOP/BOTTOM 
+  VCC                  VIA                  (3600.0 14475.0) TOP/BOTTOM 
   VCC                  VIA                  (6049.0 9851.0)  TOP/BOTTOM 
   VCC                  VIA                  (6300.0 10800.0) TOP/BOTTOM 
-  VCC                  VIA                  (2525.0 10600.0) TOP/BOTTOM 
-  VCC                  VIA                  (6975.0 4700.0)  TOP/BOTTOM 
-  VCC                  VIA                  (6825.0 4400.0)  TOP/BOTTOM 
+  VCC                  VIA                  (6725.0 14200.0) TOP/BOTTOM 
+  VCC                  VIA                  (1525.0 12625.0) TOP/BOTTOM 
+  VCC                  VIA                  (1500.0 11875.0) TOP/BOTTOM 
+  VCC                  VIA                  (2275.0 12775.0) TOP/BOTTOM 
+  VCC                  VIA                  (1150.0 13650.0) TOP/BOTTOM 
+  VCC                  VIA                  (4575.0 7375.0)  TOP/BOTTOM 
+  VCC                  VIA                  (4425.0 7075.0)  TOP/BOTTOM 
   VCC                  VIA                  (7375.0 925.0)   TOP/BOTTOM 
   VCC                  VIA                  (5650.0 1800.0)  TOP/BOTTOM 
-  VCC                  VIA                  (2600.0 9725.0)  TOP/BOTTOM 
+  VCC                  VIA                  (5850.0 14125.0) TOP/BOTTOM 
   VCC                  VIA                  (3325.0 3025.0)  TOP/BOTTOM 
   VCC                  VIA                  (6525.0 10700.0) TOP/BOTTOM 
   VCC                  VIA                  (10700.0 14325.0) TOP/BOTTOM 
@@ -338,11 +335,20 @@ Report methodology:
   VCC                  VIA                  (10574.0 13474.0) TOP/BOTTOM 
   VCC                  VIA                  (11049.0 11299.0) TOP/BOTTOM 
   VCC                  VIA                  (11175.0 10850.0) TOP/BOTTOM 
-  VCC                  VIA                  (12075.0 1600.0) TOP/BOTTOM 
-  VCC                  VIA                  (12000.0 3475.0) TOP/BOTTOM 
-  VCC                  VIA                  (11525.0 4175.0) TOP/BOTTOM 
-  VCC                  VIA                  (12224.0 3874.0) TOP/BOTTOM 
-  VCC                  VIA                  (11100.0 3625.0) TOP/BOTTOM 
+  VCC                  VIA                  (6375.0 3800.0)  TOP/BOTTOM 
+  VCC                  VIA                  (1973.0 10077.0) TOP/BOTTOM 
+  VCC                  VIA                  (1923.0 9477.0)  TOP/BOTTOM 
+  VCC                  VIA                  (1500.0 10700.0) TOP/BOTTOM 
+  VCC                  VIA                  (11000.0 3075.0) TOP/BOTTOM 
+  VCC                  VIA                  (10525.0 3775.0) TOP/BOTTOM 
+  VCC                  VIA                  (11224.0 3474.0) TOP/BOTTOM 
+  VCC                  VIA                  (10100.0 3225.0) TOP/BOTTOM 
+  VCC                  VIA                  (1250.0 13000.0) TOP/BOTTOM 
+  VCC                  VIA                  (1600.0 12850.0) TOP/BOTTOM 
+  VCC                  VIA                  (1725.0 13100.0) TOP/BOTTOM 
+  VCC                  VIA                  (1150.0 13000.0) TOP/BOTTOM 
+  GND                  VIA                  (2300.0 14425.0) TOP/BOTTOM 
+  GND                  VIA                  (1050.0 12875.0) TOP/BOTTOM 
   GND                  VIA                  (11600.0 10850.0) TOP/BOTTOM 
   GND                  VIA                  (11500.0 14700.0) TOP/BOTTOM 
   GND                  VIA                  (11500.0 11325.0) TOP/BOTTOM 
@@ -371,7 +377,7 @@ Report methodology:
   GND                  VIA                  (14125.0 13425.0) TOP/BOTTOM 
   GND                  VIA                  (14025.0 13100.0) TOP/BOTTOM 
   GND                  VIA                  (12650.0 14025.0) TOP/BOTTOM 
-  GND                  VIA                  (14050.0 14400.0) TOP/BOTTOM 
+  GND                  VIA                  (14025.0 14400.0) TOP/BOTTOM 
   GND                  VIA                  (12900.0 13475.0) TOP/BOTTOM 
   GND                  VIA                  (12725.0 13100.0) TOP/BOTTOM 
   GND                  VIA                  (12700.0 12550.0) TOP/BOTTOM 
@@ -402,33 +408,37 @@ Report methodology:
   GND                  VIA                  (14375.0 12600.0) TOP/BOTTOM 
   GND                  VIA                  (13975.0 12200.0) TOP/BOTTOM 
   GND                  VIA                  (13300.0 12125.0) TOP/BOTTOM 
-  GND                  VIA                  (9825.0 4925.0)  TOP/BOTTOM 
+  GND                  VIA                  (8825.0 4525.0)  TOP/BOTTOM 
   GND                  VIA                  (3550.0 2675.0)  TOP/BOTTOM 
   GND                  VIA                  (3700.0 2600.0)  TOP/BOTTOM 
-  GND                  VIA                  (11550.0 3550.0) TOP/BOTTOM 
-  GND                  VIA                  (12000.0 4225.0) TOP/BOTTOM 
-  GND                  VIA                  (9825.0 4400.0)  TOP/BOTTOM 
-  GND                  VIA                  (10000.0 4700.0) TOP/BOTTOM 
+  GND                  VIA                  (10550.0 3150.0) TOP/BOTTOM 
+  GND                  VIA                  (11000.0 3825.0) TOP/BOTTOM 
+  GND                  VIA                  (8825.0 4000.0)  TOP/BOTTOM 
+  GND                  VIA                  (9000.0 4300.0)  TOP/BOTTOM 
   GND                  VIA                  (6800.0 1700.0)  TOP/BOTTOM 
-  GND                  VIA                  (2675.0 9300.0)  TOP/BOTTOM 
-  GND                  VIA                  (2300.0 10425.0) TOP/BOTTOM 
-  GND                  VIA                  (4500.0 5875.0)  TOP/BOTTOM 
-  GND                  VIA                  (3375.0 5975.0)  TOP/BOTTOM 
-  GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
-  GND                  VIA                  (3375.0 5400.0)  TOP/BOTTOM 
+  GND                  VIA                  (5425.0 14050.0) TOP/BOTTOM 
+  GND                  VIA                  (6550.0 14425.0) TOP/BOTTOM 
+  GND                  VIA                  (2275.0 13225.0) TOP/BOTTOM 
+  GND                  VIA                  (1725.0 12975.0) TOP/BOTTOM 
+  GND                  VIA                  (1450.0 13000.0) TOP/BOTTOM 
+  GND                  VIA                  (1350.0 11875.0) TOP/BOTTOM 
+  GND                  VIA                  (3724.0 5824.0)  TOP/BOTTOM 
+  GND                  VIA                  (1925.0 11875.0) TOP/BOTTOM 
   GND                  VIA                  (14600.0 3875.0) TOP/BOTTOM 
   GND                  VIA                  (14550.0 3875.0) TOP/BOTTOM 
-  GND                  VIA                  (7874.0 5674.0)  TOP/BOTTOM 
-  GND                  VIA                  (7724.0 4051.0)  TOP/BOTTOM 
-  GND                  VIA                  (7325.0 4400.0)  TOP/BOTTOM 
-  GND                  VIA                  (7074.0 5099.0)  TOP/BOTTOM 
+  GND                  VIA                  (1801.0 14551.0) TOP/BOTTOM 
+  GND                  VIA                  (1675.0 13650.0) TOP/BOTTOM 
+  GND                  VIA                  (5474.0 8349.0)  TOP/BOTTOM 
+  GND                  VIA                  (5324.0 6726.0)  TOP/BOTTOM 
+  GND                  VIA                  (4925.0 7075.0)  TOP/BOTTOM 
+  GND                  VIA                  (4674.0 7774.0)  TOP/BOTTOM 
   GND                  VIA                  (7925.0 925.0)   TOP/BOTTOM 
   GND                  VIA                  (8251.0 2249.0)  TOP/BOTTOM 
   GND                  VIA                  (8324.0 1324.0)  TOP/BOTTOM 
   GND                  VIA                  (5175.0 1700.0)  TOP/BOTTOM 
-  GND                  VIA                  (2897.5 9377.5)  TOP/BOTTOM 
-  GND                  VIA                  (4374.5 10675.5) TOP/BOTTOM 
-  GND                  VIA                  (4200.0 10425.0) TOP/BOTTOM 
+  GND                  VIA                  (5502.5 13827.5) TOP/BOTTOM 
+  GND                  VIA                  (6800.5 12350.5) TOP/BOTTOM 
+  GND                  VIA                  (6550.0 12525.0) TOP/BOTTOM 
   GND                  VIA                  (2625.0 1475.0)  TOP/BOTTOM 
   GND                  VIA                  (2725.0 1475.0)  TOP/BOTTOM 
   GND                  VIA                  (3725.0 1475.0)  TOP/BOTTOM 
@@ -441,30 +451,38 @@ Report methodology:
   GND                  VIA                  (10575.0 13400.0) TOP/BOTTOM 
   GND                  VIA                  (10970.2 11179.8) TOP/BOTTOM 
   GND                  VIA                  (10902.5 10727.5) TOP/BOTTOM 
-  GND                  VIA                  (11125.0 1375.0) TOP/BOTTOM 
-  GND                  VIA                  (12075.0 2075.0) TOP/BOTTOM 
-  GND                  VIA                  (10750.0 5350.0) TOP/BOTTOM 
-  GND                  VIA                  (11450.0 5350.0) TOP/BOTTOM 
-  GND                  VIA                  (11625.0 4775.0) TOP/BOTTOM 
-  GND                  VIA                  (11650.0 5450.0) TOP/BOTTOM 
-  GND                  VIA                  (11025.0 4275.0) TOP/BOTTOM 
-  GND                  VIA                  (12224.0 3926.0) TOP/BOTTOM 
-  GND                  VIA                  (11100.0 4125.0) TOP/BOTTOM 
-  GND                  VIA                  (10250.0 4300.0) TOP/BOTTOM 
-  GND                  VIA                  (10350.0 4300.0) TOP/BOTTOM 
-  GND                  VIA                  (10325.0 4100.0) TOP/BOTTOM 
-  GND                  VIA                  (10525.0 3925.0) TOP/BOTTOM 
-  GND                  VIA                  (10475.0 3400.0) TOP/BOTTOM 
-  GND                  VIA                  (10950.0 3550.0) TOP/BOTTOM 
-  GND                  VIA                  (10875.0 3325.0) TOP/BOTTOM 
-  GND                  VIA                  (14400.0 15550.0) TOP/BOTTOM 
-  GND                  VIA                  (14401.0 15701.0) TOP/BOTTOM 
-  GND                  VIA                  (14749.0 15474.0) TOP/BOTTOM 
+  GND                  VIA                  (6150.0 4750.0)  TOP/BOTTOM 
+  GND                  VIA                  (6850.0 3800.0)  TOP/BOTTOM 
+  GND                  VIA                  (1448.0 10698.0) TOP/BOTTOM 
+  GND                  VIA                  (1975.0 9475.0)  TOP/BOTTOM 
+  GND                  VIA                  (2025.0 10075.0) TOP/BOTTOM 
+  GND                  VIA                  (9750.0 4950.0)  TOP/BOTTOM 
+  GND                  VIA                  (10450.0 4950.0) TOP/BOTTOM 
+  GND                  VIA                  (10625.0 4375.0) TOP/BOTTOM 
+  GND                  VIA                  (10650.0 5050.0) TOP/BOTTOM 
+  GND                  VIA                  (10025.0 3875.0) TOP/BOTTOM 
+  GND                  VIA                  (11224.0 3526.0) TOP/BOTTOM 
+  GND                  VIA                  (10100.0 3725.0) TOP/BOTTOM 
+  GND                  VIA                  (9250.0 3900.0)  TOP/BOTTOM 
+  GND                  VIA                  (9350.0 3900.0)  TOP/BOTTOM 
+  GND                  VIA                  (9325.0 3700.0)  TOP/BOTTOM 
+  GND                  VIA                  (9525.0 3525.0)  TOP/BOTTOM 
+  GND                  VIA                  (9475.0 3000.0)  TOP/BOTTOM 
+  GND                  VIA                  (9950.0 3150.0)  TOP/BOTTOM 
+  GND                  VIA                  (9875.0 2925.0)  TOP/BOTTOM 
+  GND                  VIA                  (3725.0 12125.0) TOP/BOTTOM 
+  GND                  VIA                  (3725.0 12400.0) TOP/BOTTOM 
+  GND                  VIA                  (3825.0 12125.0) TOP/BOTTOM 
+  GND                  VIA                  (3825.0 12400.0) TOP/BOTTOM 
+  GND                  VIA                  (3400.0 15450.0) TOP/BOTTOM 
+  GND                  VIA                  (14400.0 15650.0) TOP/BOTTOM 
+  GND                  VIA                  (14401.0 15576.0) TOP/BOTTOM 
   GND                  VIA                  (14749.0 15374.0) TOP/BOTTOM 
-  GND                  VIA                  (12526.0 15724.0) TOP/BOTTOM 
+  GND                  VIA                  (14749.0 15474.0) TOP/BOTTOM 
   GND                  VIA                  (12651.0 15724.0) TOP/BOTTOM 
-  GND                  VIA                  (13899.0 15674.0) TOP/BOTTOM 
-  GND                  VIA                  (13900.0 15575.0) TOP/BOTTOM 
+  GND                  VIA                  (12551.0 15724.0) TOP/BOTTOM 
+  GND                  VIA                  (13899.0 15549.0) TOP/BOTTOM 
+  GND                  VIA                  (13900.0 15700.0) TOP/BOTTOM 
   GND                  VIA                  (12776.0 15276.0) TOP/BOTTOM 
   GND                  VIA                  (13800.0 15225.0) TOP/BOTTOM 
   GND                  VIA                  (14726.0 15274.0) TOP/BOTTOM 
@@ -486,17 +504,19 @@ Report methodology:
   GND                  VIA                  (15151.0 15676.0) TOP/BOTTOM 
   GND                  VIA                  (12399.0 15399.0) TOP/BOTTOM 
   GND                  VIA                  (11225.0 15075.0) TOP/BOTTOM 
-  GND                  VIA                  (6174.0 5151.0)  TOP/BOTTOM 
-  GND                  VIA                  (4600.0 6050.0)  TOP/BOTTOM 
-  GND                  VIA                  (4250.0 5750.0)  TOP/BOTTOM 
-  GND                  VIA                  (3625.0 5275.0)  TOP/BOTTOM 
+  GND                  VIA                  (3774.0 7826.0)  TOP/BOTTOM 
+  GND                  VIA                  (1424.0 12576.0) TOP/BOTTOM 
+  GND                  VIA                  (1275.0 13100.0) TOP/BOTTOM 
+  GND                  VIA                  (1575.0 12750.0) TOP/BOTTOM 
+  GND                  VIA                  (2050.0 12125.0) TOP/BOTTOM 
+  Not on a Net         VIA                  (2600.0 13700.0) TOP/BOTTOM 
 
 
 << Antenna Vias >>
   Net                  Padstack               Location            Layers
   ---------------------------------------------------------------------------
-  SET_RETRIG2          VIA                  (11950.0 5700.0) TOP/BOTTOM 
-  SET_RETRIG2          VIA                  (11950.0 5700.0) TOP/BOTTOM 
+  SET_RETRIG2          VIA                  (10950.0 5300.0) TOP/BOTTOM 
+  SET_RETRIG2          VIA                  (10950.0 5300.0) TOP/BOTTOM 
   VTT                  VIA                  (15425.0 12525.0) TOP/BOTTOM 
   VTT                  VIA                  (15400.0 14075.0) TOP/BOTTOM 
   VTT                  VIA                  (11575.0 14075.0) TOP/BOTTOM 
@@ -506,8 +526,8 @@ Report methodology:
   VTT                  VIA                  (11600.0 12600.0) TOP/BOTTOM 
   VTT                  VIA                  (14100.0 14050.0) TOP/BOTTOM 
   VTT                  VIA                  (14175.0 12600.0) TOP/BOTTOM 
-  VTT                  VIA                  (12025.0 4325.0) TOP/BOTTOM 
-  VTT                  VIA                  (9975.0 5400.0)  TOP/BOTTOM 
+  VTT                  VIA                  (11025.0 3925.0) TOP/BOTTOM 
+  VTT                  VIA                  (8975.0 5000.0)  TOP/BOTTOM 
   VTT                  VIA                  (6725.0 1400.0)  TOP/BOTTOM 
   VTT                  VIA                  (7850.0 1750.0)  TOP/BOTTOM 
   VTT                  VIA                  (8075.0 1125.0)  TOP/BOTTOM 
@@ -526,98 +546,100 @@ Report methodology:
   VTT                  VIA                  (8900.0 1325.0)  TOP/BOTTOM 
   VTT                  VIA                  (8700.0 2175.0)  TOP/BOTTOM 
   VTT                  VIA                  (8700.0 1325.0)  TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10525.0) TOP/BOTTOM 
-  VTT                  VIA                  (6450.0 8575.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6300.0 8650.0)  TOP/BOTTOM 
-  VTT                  VIA                  (15300.0 5725.0) TOP/BOTTOM 
-  VTT                  VIA                  (7860.6 4939.4)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4550.0)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4500.0)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4775.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7400.0 4975.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7425.0 5200.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7550.0 5750.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7764.4 4985.6)  TOP/BOTTOM 
-  VTT                  VIA                  (3875.0 10000.0) TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10025.0) TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10375.0) TOP/BOTTOM 
-  VTT                  VIA                  (3050.0 10725.0) TOP/BOTTOM 
-  VTT                  VIA                  (3200.0 10325.0) TOP/BOTTOM 
-  VTT                  VIA                  (4000.0 10825.0) TOP/BOTTOM 
-  VTT                  VIA                  (3725.0 10825.0) TOP/BOTTOM 
+  VTT                  VIA                  (6650.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (3375.0 14600.0) TOP/BOTTOM 
+  VTT                  VIA                  (3300.0 14450.0) TOP/BOTTOM 
+  VTT                  VIA                  (5460.6 7614.4)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7225.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7175.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7450.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5000.0 7650.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5025.0 7875.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5150.0 8425.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5364.4 7660.6)  TOP/BOTTOM 
+  VTT                  VIA                  (6125.0 12850.0) TOP/BOTTOM 
+  VTT                  VIA                  (6150.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (6500.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (6850.0 13675.0) TOP/BOTTOM 
+  VTT                  VIA                  (6450.0 13525.0) TOP/BOTTOM 
+  VTT                  VIA                  (6950.0 12725.0) TOP/BOTTOM 
+  VTT                  VIA                  (6950.0 13000.0) TOP/BOTTOM 
   VTT                  VIA                  (3775.0 3850.0)  TOP/BOTTOM 
   VTT                  VIA                  (6250.0 9775.0)  TOP/BOTTOM 
   VTT                  VIA                  (6300.0 9850.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5475.0 7900.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6350.0 7975.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6450.0 8075.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5725.0 8400.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5775.0 7900.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4800.0 8425.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4725.0 8125.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4750.0 7875.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4775.0 7825.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5350.0 8325.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5350.0 8175.0)  TOP/BOTTOM 
-  VTT                  VIA                  (11375.0 2275.0) TOP/BOTTOM 
-  VTT                  VIA                  (10775.0 1575.0) TOP/BOTTOM 
-  VTT                  VIA                  (11475.0 5050.0) TOP/BOTTOM 
-  VTT                  VIA                  (10700.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10475.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10150.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10150.0 4925.0) TOP/BOTTOM 
-  VTT                  VIA                  (10500.0 4950.0) TOP/BOTTOM 
-  VTT                  VIA                  (10675.0 5075.0) TOP/BOTTOM 
-  VTT                  VIA                  (10925.0 5150.0) TOP/BOTTOM 
-  VTT                  VIA                  (11300.0 4825.0) TOP/BOTTOM 
-  VTT                  VIA                  (10800.0 5050.0) TOP/BOTTOM 
-  VTT                  VIA                  (11525.0 4650.0) TOP/BOTTOM 
-  VTT                  VIA                  (12350.0 5300.0) TOP/BOTTOM 
-  VTT                  VIA                  (11975.0 5850.0) TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4625.0) TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4900.0) TOP/BOTTOM 
-  VTT                  VIA                  (10750.0 4725.0) TOP/BOTTOM 
-  VTT                  VIA                  (11264.4 4935.6) TOP/BOTTOM 
-  VTT                  VIA                  (10650.0 4175.0) TOP/BOTTOM 
-  VTT                  VIA                  (10575.0 3575.0) TOP/BOTTOM 
-  VTT                  VIA                  (11075.0 4175.0) TOP/BOTTOM 
-  VTT                  VIA                  (10610.6 4564.4) TOP/BOTTOM 
-  VTT                  VIA                  (9975.0 4350.0)  TOP/BOTTOM 
-  VTT                  VIA                  (10225.0 3250.0) TOP/BOTTOM 
-  VTT                  VIA                  (9900.0 3400.0)  TOP/BOTTOM 
-  VTT                  VIA                  (10650.0 4075.0) TOP/BOTTOM 
-  VTT                  VIA                  (9775.0 3525.0)  TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4775.0) TOP/BOTTOM 
-  VTT                  VIA                  (14475.0 6400.0) TOP/BOTTOM 
-  VTT                  VIA                  (14975.0 6375.0) TOP/BOTTOM 
-  VTT                  VIA                  (15325.0 5950.0) TOP/BOTTOM 
-  VTT                  VIA                  (14550.0 6100.0) TOP/BOTTOM 
+  VTT                  VIA                  (4050.0 13625.0) TOP/BOTTOM 
+  VTT                  VIA                  (3975.0 14500.0) TOP/BOTTOM 
+  VTT                  VIA                  (3875.0 14600.0) TOP/BOTTOM 
+  VTT                  VIA                  (3550.0 13875.0) TOP/BOTTOM 
+  VTT                  VIA                  (4050.0 13925.0) TOP/BOTTOM 
+  VTT                  VIA                  (3525.0 12950.0) TOP/BOTTOM 
+  VTT                  VIA                  (3825.0 12875.0) TOP/BOTTOM 
+  VTT                  VIA                  (4075.0 12900.0) TOP/BOTTOM 
+  VTT                  VIA                  (4125.0 12925.0) TOP/BOTTOM 
+  VTT                  VIA                  (3625.0 13500.0) TOP/BOTTOM 
+  VTT                  VIA                  (3775.0 13500.0) TOP/BOTTOM 
+  VTT                  VIA                  (7050.0 4500.0)  TOP/BOTTOM 
+  VTT                  VIA                  (6350.0 5100.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10475.0 4650.0) TOP/BOTTOM 
+  VTT                  VIA                  (9700.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9475.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9150.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9150.0 4525.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9500.0 4550.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9675.0 4675.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9925.0 4750.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10300.0 4425.0) TOP/BOTTOM 
+  VTT                  VIA                  (9800.0 4650.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10525.0 4250.0) TOP/BOTTOM 
+  VTT                  VIA                  (11350.0 4900.0) TOP/BOTTOM 
+  VTT                  VIA                  (10975.0 5450.0) TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4225.0) TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4500.0) TOP/BOTTOM 
+  VTT                  VIA                  (9750.0 4325.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10264.4 4535.6) TOP/BOTTOM 
+  VTT                  VIA                  (9650.0 3775.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9575.0 3175.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10075.0 3775.0) TOP/BOTTOM 
+  VTT                  VIA                  (9610.6 4164.4)  TOP/BOTTOM 
+  VTT                  VIA                  (8975.0 3950.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9225.0 2850.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8900.0 3000.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9650.0 3675.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8775.0 3125.0)  TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4375.0) TOP/BOTTOM 
+  VTT                  VIA                  (1850.0 13625.0) TOP/BOTTOM 
+  VTT                  VIA                  (1775.0 14375.0) TOP/BOTTOM 
+  VTT                  VIA                  (2275.0 14350.0) TOP/BOTTOM 
+  VTT                  VIA                  (1850.0 14075.0) TOP/BOTTOM 
   VEE                  VIA                  (7125.0 1425.0)  TOP/BOTTOM 
-  VEE                  VIA                  (2375.0 10600.0) TOP/BOTTOM 
-  VEE                  VIA                  (7874.0 5726.0)  TOP/BOTTOM 
-  VEE                  VIA                  (7776.0 4051.0)  TOP/BOTTOM 
-  VEE                  VIA                  (6825.0 4500.0)  TOP/BOTTOM 
-  VEE                  VIA                  (7074.0 4826.0)  TOP/BOTTOM 
+  VEE                  VIA                  (6725.0 14350.0) TOP/BOTTOM 
+  VEE                  VIA                  (1150.0 13750.0) TOP/BOTTOM 
+  VEE                  VIA                  (1801.0 14499.0) TOP/BOTTOM 
+  VEE                  VIA                  (2175.0 12775.0) TOP/BOTTOM 
+  VEE                  VIA                  (5474.0 8401.0)  TOP/BOTTOM 
+  VEE                  VIA                  (5376.0 6726.0)  TOP/BOTTOM 
+  VEE                  VIA                  (4425.0 7175.0)  TOP/BOTTOM 
+  VEE                  VIA                  (4674.0 7501.0)  TOP/BOTTOM 
   VEE                  VIA                  (8199.0 2249.0)  TOP/BOTTOM 
   VEE                  VIA                  (7375.0 1025.0)  TOP/BOTTOM 
   VEE                  VIA                  (8324.0 1376.0)  TOP/BOTTOM 
   VEE                  VIA                  (5025.0 1700.0)  TOP/BOTTOM 
-  VEE                  VIA                  (3200.0 9750.0)  TOP/BOTTOM 
-  VEE                  VIA                  (4275.0 10425.0) TOP/BOTTOM 
-  VEE                  VIA                  (3525.0 10350.0) TOP/BOTTOM 
+  VEE                  VIA                  (5875.0 13525.0) TOP/BOTTOM 
+  VEE                  VIA                  (6550.0 12450.0) TOP/BOTTOM 
+  VEE                  VIA                  (6475.0 13200.0) TOP/BOTTOM 
   VEE                  VIA                  (3775.0 2850.0)  TOP/BOTTOM 
   VEE                  VIA                  (6400.0 10800.0) TOP/BOTTOM 
-  VEE                  VIA                  (6325.0 8250.0)  TOP/BOTTOM 
-  VEE                  VIA                  (5500.0 7525.0)  TOP/BOTTOM 
-  VEE                  VIA                  (4925.0 8425.0)  TOP/BOTTOM 
-  VEE                  VIA                  (11975.0 1600.0) TOP/BOTTOM 
-  VEE                  VIA                  (10250.0 5450.0) TOP/BOTTOM 
-  VEE                  VIA                  (10950.0 5450.0) TOP/BOTTOM 
-  VEE                  VIA                  (12175.0 5350.0) TOP/BOTTOM 
-  VEE                  VIA                  (11375.0 4575.0) TOP/BOTTOM 
-  VEE                  VIA                  (11000.0 3625.0) TOP/BOTTOM 
-  VEE                  VIA                  (10350.0 4800.0) TOP/BOTTOM 
-  VEE                  VIA                  (10225.0 3525.0) TOP/BOTTOM 
+  VEE                  VIA                  (3700.0 14475.0) TOP/BOTTOM 
+  VEE                  VIA                  (4425.0 13625.0) TOP/BOTTOM 
+  VEE                  VIA                  (3525.0 13075.0) TOP/BOTTOM 
+  VEE                  VIA                  (6375.0 3900.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9250.0 5050.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9950.0 5050.0)  TOP/BOTTOM 
+  VEE                  VIA                  (11175.0 4950.0) TOP/BOTTOM 
+  VEE                  VIA                  (10375.0 4175.0) TOP/BOTTOM 
+  VEE                  VIA                  (10000.0 3225.0) TOP/BOTTOM 
+  VEE                  VIA                  (9350.0 4400.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9225.0 3125.0)  TOP/BOTTOM 
   VCC                  VIA                  (11500.0 14775.0) TOP/BOTTOM 
   VCC                  VIA                  (14725.0 13200.0) TOP/BOTTOM 
   VCC                  VIA                  (10900.0 13200.0) TOP/BOTTOM 
@@ -627,18 +649,22 @@ Report methodology:
   VCC                  VIA                  (10925.0 11725.0) TOP/BOTTOM 
   VCC                  VIA                  (13450.0 13200.0) TOP/BOTTOM 
   VCC                  VIA                  (13475.0 11725.0) TOP/BOTTOM 
-  VCC                  VIA                  (2875.0 9300.0)  TOP/BOTTOM 
-  VCC                  VIA                  (2275.0 9422.0)  TOP/BOTTOM 
-  VCC                  VIA                  (5825.0 7675.0)  TOP/BOTTOM 
-  VCC                  VIA                  (6325.0 8350.0)  TOP/BOTTOM 
+  VCC                  VIA                  (5425.0 13850.0) TOP/BOTTOM 
+  VCC                  VIA                  (5547.0 14450.0) TOP/BOTTOM 
+  VCC                  VIA                  (4275.0 13975.0) TOP/BOTTOM 
+  VCC                  VIA                  (3600.0 14475.0) TOP/BOTTOM 
   VCC                  VIA                  (6049.0 9851.0)  TOP/BOTTOM 
   VCC                  VIA                  (6300.0 10800.0) TOP/BOTTOM 
-  VCC                  VIA                  (2525.0 10600.0) TOP/BOTTOM 
-  VCC                  VIA                  (6975.0 4700.0)  TOP/BOTTOM 
-  VCC                  VIA                  (6825.0 4400.0)  TOP/BOTTOM 
+  VCC                  VIA                  (6725.0 14200.0) TOP/BOTTOM 
+  VCC                  VIA                  (1525.0 12625.0) TOP/BOTTOM 
+  VCC                  VIA                  (1500.0 11875.0) TOP/BOTTOM 
+  VCC                  VIA                  (2275.0 12775.0) TOP/BOTTOM 
+  VCC                  VIA                  (1150.0 13650.0) TOP/BOTTOM 
+  VCC                  VIA                  (4575.0 7375.0)  TOP/BOTTOM 
+  VCC                  VIA                  (4425.0 7075.0)  TOP/BOTTOM 
   VCC                  VIA                  (7375.0 925.0)   TOP/BOTTOM 
   VCC                  VIA                  (5650.0 1800.0)  TOP/BOTTOM 
-  VCC                  VIA                  (2600.0 9725.0)  TOP/BOTTOM 
+  VCC                  VIA                  (5850.0 14125.0) TOP/BOTTOM 
   VCC                  VIA                  (3325.0 3025.0)  TOP/BOTTOM 
   VCC                  VIA                  (6525.0 10700.0) TOP/BOTTOM 
   VCC                  VIA                  (10700.0 14325.0) TOP/BOTTOM 
@@ -646,11 +672,20 @@ Report methodology:
   VCC                  VIA                  (10574.0 13474.0) TOP/BOTTOM 
   VCC                  VIA                  (11049.0 11299.0) TOP/BOTTOM 
   VCC                  VIA                  (11175.0 10850.0) TOP/BOTTOM 
-  VCC                  VIA                  (12075.0 1600.0) TOP/BOTTOM 
-  VCC                  VIA                  (12000.0 3475.0) TOP/BOTTOM 
-  VCC                  VIA                  (11525.0 4175.0) TOP/BOTTOM 
-  VCC                  VIA                  (12224.0 3874.0) TOP/BOTTOM 
-  VCC                  VIA                  (11100.0 3625.0) TOP/BOTTOM 
+  VCC                  VIA                  (6375.0 3800.0)  TOP/BOTTOM 
+  VCC                  VIA                  (1973.0 10077.0) TOP/BOTTOM 
+  VCC                  VIA                  (1923.0 9477.0)  TOP/BOTTOM 
+  VCC                  VIA                  (1500.0 10700.0) TOP/BOTTOM 
+  VCC                  VIA                  (11000.0 3075.0) TOP/BOTTOM 
+  VCC                  VIA                  (10525.0 3775.0) TOP/BOTTOM 
+  VCC                  VIA                  (11224.0 3474.0) TOP/BOTTOM 
+  VCC                  VIA                  (10100.0 3225.0) TOP/BOTTOM 
+  VCC                  VIA                  (1250.0 13000.0) TOP/BOTTOM 
+  VCC                  VIA                  (1600.0 12850.0) TOP/BOTTOM 
+  VCC                  VIA                  (1725.0 13100.0) TOP/BOTTOM 
+  VCC                  VIA                  (1150.0 13000.0) TOP/BOTTOM 
+  GND                  VIA                  (2300.0 14425.0) TOP/BOTTOM 
+  GND                  VIA                  (1050.0 12875.0) TOP/BOTTOM 
   GND                  VIA                  (11600.0 10850.0) TOP/BOTTOM 
   GND                  VIA                  (11500.0 14700.0) TOP/BOTTOM 
   GND                  VIA                  (11500.0 11325.0) TOP/BOTTOM 
@@ -679,7 +714,7 @@ Report methodology:
   GND                  VIA                  (14125.0 13425.0) TOP/BOTTOM 
   GND                  VIA                  (14025.0 13100.0) TOP/BOTTOM 
   GND                  VIA                  (12650.0 14025.0) TOP/BOTTOM 
-  GND                  VIA                  (14050.0 14400.0) TOP/BOTTOM 
+  GND                  VIA                  (14025.0 14400.0) TOP/BOTTOM 
   GND                  VIA                  (12900.0 13475.0) TOP/BOTTOM 
   GND                  VIA                  (12725.0 13100.0) TOP/BOTTOM 
   GND                  VIA                  (12700.0 12550.0) TOP/BOTTOM 
@@ -710,33 +745,37 @@ Report methodology:
   GND                  VIA                  (14375.0 12600.0) TOP/BOTTOM 
   GND                  VIA                  (13975.0 12200.0) TOP/BOTTOM 
   GND                  VIA                  (13300.0 12125.0) TOP/BOTTOM 
-  GND                  VIA                  (9825.0 4925.0)  TOP/BOTTOM 
+  GND                  VIA                  (8825.0 4525.0)  TOP/BOTTOM 
   GND                  VIA                  (3550.0 2675.0)  TOP/BOTTOM 
   GND                  VIA                  (3700.0 2600.0)  TOP/BOTTOM 
-  GND                  VIA                  (11550.0 3550.0) TOP/BOTTOM 
-  GND                  VIA                  (12000.0 4225.0) TOP/BOTTOM 
-  GND                  VIA                  (9825.0 4400.0)  TOP/BOTTOM 
-  GND                  VIA                  (10000.0 4700.0) TOP/BOTTOM 
+  GND                  VIA                  (10550.0 3150.0) TOP/BOTTOM 
+  GND                  VIA                  (11000.0 3825.0) TOP/BOTTOM 
+  GND                  VIA                  (8825.0 4000.0)  TOP/BOTTOM 
+  GND                  VIA                  (9000.0 4300.0)  TOP/BOTTOM 
   GND                  VIA                  (6800.0 1700.0)  TOP/BOTTOM 
-  GND                  VIA                  (2675.0 9300.0)  TOP/BOTTOM 
-  GND                  VIA                  (2300.0 10425.0) TOP/BOTTOM 
-  GND                  VIA                  (4500.0 5875.0)  TOP/BOTTOM 
-  GND                  VIA                  (3375.0 5975.0)  TOP/BOTTOM 
-  GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
-  GND                  VIA                  (3375.0 5400.0)  TOP/BOTTOM 
+  GND                  VIA                  (5425.0 14050.0) TOP/BOTTOM 
+  GND                  VIA                  (6550.0 14425.0) TOP/BOTTOM 
+  GND                  VIA                  (2275.0 13225.0) TOP/BOTTOM 
+  GND                  VIA                  (1725.0 12975.0) TOP/BOTTOM 
+  GND                  VIA                  (1450.0 13000.0) TOP/BOTTOM 
+  GND                  VIA                  (1350.0 11875.0) TOP/BOTTOM 
+  GND                  VIA                  (3724.0 5824.0)  TOP/BOTTOM 
+  GND                  VIA                  (1925.0 11875.0) TOP/BOTTOM 
   GND                  VIA                  (14600.0 3875.0) TOP/BOTTOM 
   GND                  VIA                  (14550.0 3875.0) TOP/BOTTOM 
-  GND                  VIA                  (7874.0 5674.0)  TOP/BOTTOM 
-  GND                  VIA                  (7724.0 4051.0)  TOP/BOTTOM 
-  GND                  VIA                  (7325.0 4400.0)  TOP/BOTTOM 
-  GND                  VIA                  (7074.0 5099.0)  TOP/BOTTOM 
+  GND                  VIA                  (1801.0 14551.0) TOP/BOTTOM 
+  GND                  VIA                  (1675.0 13650.0) TOP/BOTTOM 
+  GND                  VIA                  (5474.0 8349.0)  TOP/BOTTOM 
+  GND                  VIA                  (5324.0 6726.0)  TOP/BOTTOM 
+  GND                  VIA                  (4925.0 7075.0)  TOP/BOTTOM 
+  GND                  VIA                  (4674.0 7774.0)  TOP/BOTTOM 
   GND                  VIA                  (7925.0 925.0)   TOP/BOTTOM 
   GND                  VIA                  (8251.0 2249.0)  TOP/BOTTOM 
   GND                  VIA                  (8324.0 1324.0)  TOP/BOTTOM 
   GND                  VIA                  (5175.0 1700.0)  TOP/BOTTOM 
-  GND                  VIA                  (2897.5 9377.5)  TOP/BOTTOM 
-  GND                  VIA                  (4374.5 10675.5) TOP/BOTTOM 
-  GND                  VIA                  (4200.0 10425.0) TOP/BOTTOM 
+  GND                  VIA                  (5502.5 13827.5) TOP/BOTTOM 
+  GND                  VIA                  (6800.5 12350.5) TOP/BOTTOM 
+  GND                  VIA                  (6550.0 12525.0) TOP/BOTTOM 
   GND                  VIA                  (2625.0 1475.0)  TOP/BOTTOM 
   GND                  VIA                  (2725.0 1475.0)  TOP/BOTTOM 
   GND                  VIA                  (3725.0 1475.0)  TOP/BOTTOM 
@@ -749,30 +788,38 @@ Report methodology:
   GND                  VIA                  (10575.0 13400.0) TOP/BOTTOM 
   GND                  VIA                  (10970.2 11179.8) TOP/BOTTOM 
   GND                  VIA                  (10902.5 10727.5) TOP/BOTTOM 
-  GND                  VIA                  (11125.0 1375.0) TOP/BOTTOM 
-  GND                  VIA                  (12075.0 2075.0) TOP/BOTTOM 
-  GND                  VIA                  (10750.0 5350.0) TOP/BOTTOM 
-  GND                  VIA                  (11450.0 5350.0) TOP/BOTTOM 
-  GND                  VIA                  (11625.0 4775.0) TOP/BOTTOM 
-  GND                  VIA                  (11650.0 5450.0) TOP/BOTTOM 
-  GND                  VIA                  (11025.0 4275.0) TOP/BOTTOM 
-  GND                  VIA                  (12224.0 3926.0) TOP/BOTTOM 
-  GND                  VIA                  (11100.0 4125.0) TOP/BOTTOM 
-  GND                  VIA                  (10250.0 4300.0) TOP/BOTTOM 
-  GND                  VIA                  (10350.0 4300.0) TOP/BOTTOM 
-  GND                  VIA                  (10325.0 4100.0) TOP/BOTTOM 
-  GND                  VIA                  (10525.0 3925.0) TOP/BOTTOM 
-  GND                  VIA                  (10475.0 3400.0) TOP/BOTTOM 
-  GND                  VIA                  (10950.0 3550.0) TOP/BOTTOM 
-  GND                  VIA                  (10875.0 3325.0) TOP/BOTTOM 
-  GND                  VIA                  (14400.0 15550.0) TOP/BOTTOM 
-  GND                  VIA                  (14401.0 15701.0) TOP/BOTTOM 
-  GND                  VIA                  (14749.0 15474.0) TOP/BOTTOM 
+  GND                  VIA                  (6150.0 4750.0)  TOP/BOTTOM 
+  GND                  VIA                  (6850.0 3800.0)  TOP/BOTTOM 
+  GND                  VIA                  (1448.0 10698.0) TOP/BOTTOM 
+  GND                  VIA                  (1975.0 9475.0)  TOP/BOTTOM 
+  GND                  VIA                  (2025.0 10075.0) TOP/BOTTOM 
+  GND                  VIA                  (9750.0 4950.0)  TOP/BOTTOM 
+  GND                  VIA                  (10450.0 4950.0) TOP/BOTTOM 
+  GND                  VIA                  (10625.0 4375.0) TOP/BOTTOM 
+  GND                  VIA                  (10650.0 5050.0) TOP/BOTTOM 
+  GND                  VIA                  (10025.0 3875.0) TOP/BOTTOM 
+  GND                  VIA                  (11224.0 3526.0) TOP/BOTTOM 
+  GND                  VIA                  (10100.0 3725.0) TOP/BOTTOM 
+  GND                  VIA                  (9250.0 3900.0)  TOP/BOTTOM 
+  GND                  VIA                  (9350.0 3900.0)  TOP/BOTTOM 
+  GND                  VIA                  (9325.0 3700.0)  TOP/BOTTOM 
+  GND                  VIA                  (9525.0 3525.0)  TOP/BOTTOM 
+  GND                  VIA                  (9475.0 3000.0)  TOP/BOTTOM 
+  GND                  VIA                  (9950.0 3150.0)  TOP/BOTTOM 
+  GND                  VIA                  (9875.0 2925.0)  TOP/BOTTOM 
+  GND                  VIA                  (3725.0 12125.0) TOP/BOTTOM 
+  GND                  VIA                  (3725.0 12400.0) TOP/BOTTOM 
+  GND                  VIA                  (3825.0 12125.0) TOP/BOTTOM 
+  GND                  VIA                  (3825.0 12400.0) TOP/BOTTOM 
+  GND                  VIA                  (3400.0 15450.0) TOP/BOTTOM 
+  GND                  VIA                  (14400.0 15650.0) TOP/BOTTOM 
+  GND                  VIA                  (14401.0 15576.0) TOP/BOTTOM 
   GND                  VIA                  (14749.0 15374.0) TOP/BOTTOM 
-  GND                  VIA                  (12526.0 15724.0) TOP/BOTTOM 
+  GND                  VIA                  (14749.0 15474.0) TOP/BOTTOM 
   GND                  VIA                  (12651.0 15724.0) TOP/BOTTOM 
-  GND                  VIA                  (13899.0 15674.0) TOP/BOTTOM 
-  GND                  VIA                  (13900.0 15575.0) TOP/BOTTOM 
+  GND                  VIA                  (12551.0 15724.0) TOP/BOTTOM 
+  GND                  VIA                  (13899.0 15549.0) TOP/BOTTOM 
+  GND                  VIA                  (13900.0 15700.0) TOP/BOTTOM 
   GND                  VIA                  (12776.0 15276.0) TOP/BOTTOM 
   GND                  VIA                  (13800.0 15225.0) TOP/BOTTOM 
   GND                  VIA                  (14726.0 15274.0) TOP/BOTTOM 
@@ -794,42 +841,43 @@ Report methodology:
   GND                  VIA                  (15151.0 15676.0) TOP/BOTTOM 
   GND                  VIA                  (12399.0 15399.0) TOP/BOTTOM 
   GND                  VIA                  (11225.0 15075.0) TOP/BOTTOM 
-  GND                  VIA                  (6174.0 5151.0)  TOP/BOTTOM 
-  GND                  VIA                  (4600.0 6050.0)  TOP/BOTTOM 
-  GND                  VIA                  (4250.0 5750.0)  TOP/BOTTOM 
-  GND                  VIA                  (3625.0 5275.0)  TOP/BOTTOM 
+  GND                  VIA                  (3774.0 7826.0)  TOP/BOTTOM 
+  GND                  VIA                  (1424.0 12576.0) TOP/BOTTOM 
+  GND                  VIA                  (1275.0 13100.0) TOP/BOTTOM 
+  GND                  VIA                  (1575.0 12750.0) TOP/BOTTOM 
+  GND                  VIA                  (2050.0 12125.0) TOP/BOTTOM 
 
 << Summary >>
-  Total dangling lines:      87
-  Total dangling vias:      303
-  Total antenna vias:       303
+  Total dangling lines:      78
+  Total dangling vias:      332
+  Total antenna vias:       331
 
     Layout Statistics:
     -----------------
-        Components:  Placed 631  Unplaced 286  Total 917
+        Components:  Placed 670  Unplaced 247  Total 917
         Nets:  W/Rats 641  No/Rats 0  Total 641
-        Pins:  W/Rats 2019  No/Rats 0  Unused 489  Unplaced 947  Total 3455
-        Equivalent ICs (1 pin = 1/14 EIC)  246
+        Pins:  W/Rats 2114  No/Rats 0  Unused 461  Unplaced 844  Total 3419
+        Equivalent ICs (1 pin = 1/14 EIC)  244
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
         Layout area (sq in) 231.04
-        Layout density (sq in/EIC) 0.939
-        Pin density (Pins/sq in) 14.954
+        Layout density (sq in/EIC) 0.947
+        Pin density (Pins/sq in) 14.798
         Average ratlength (in)  0.6
-        Rat density (in/sq in) 3.407
+        Rat density (in/sq in) 3.866
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections               1491           0         1491
-        Already Connected          872           0          872
-        Missing Connections        619           0          619
-        Dangling Connections                                 87
-        Connection Completion       58.48%       0.00%       58.48%
-        Manh Distance (inches)     787.11
-        Etch Length (inches)       502.58        0.00       502.58
-        Number of vias		   595           0          595
+        Connections               1575           0         1575
+        Already Connected          949           0          949
+        Missing Connections        626           0          626
+        Dangling Connections                                 78
+        Connection Completion       60.25%       0.00%       60.25%
+        Manh Distance (inches)     893.13
+        Etch Length (inches)       557.74        0.00       557.74
+        Number of vias		   644           0          644
         Vias per Connection          0.68        0.00         0.68
-        Smd pins with attached clines                      1368
+        Smd pins with attached clines                      1460
 
 
  Starting Connection Matrix construction.
@@ -838,57 +886,66 @@ Report methodology:
 
  
   ref_des    location_x  location_y  rotation mirror            package
-      U62       7300.0     12300.0       180                 SOIC16 (10)
-      C95       7050.0     12300.0         0                 CAP805 (62)
-      U64       7550.0     12300.0       180                 SOIC14 (28)
-      U63       7800.0     12300.0       180                 SOIC14 (27)
-     TP20       6800.0     12300.0         0               FEC32DTP (579)
-     R112       7550.0     12550.0       180                 RES805 (276)
-     R110       8050.0     12300.0        90                 RES805 (274)
-     C100       7800.0     12550.0       180                 CAP805 (521)
-      C99       7300.0     12550.0       270                 CAP805 (520)
-     R111       8050.0     12550.0         0                 RES805 (275)
-     R113       7550.0     12800.0         0                 RES805 (277)
-      D16       7550.0     13050.0         0        LED_SSFLXH1031D (547)
-      D15       8050.0     12800.0         0        LED_SSFLXH1031D (546)
-     TP25       7050.0     12550.0         0               FEC32DTP (584)
-     TP22       7800.0     12800.0         0               FEC32DTP (581)
+      U79      11300.0      7300.0         0                 PLCC20 (143)
+      U74      11300.0      7800.0         0                 PLCC28 (358)
+      U78      11300.0      6800.0       180                 PLCC20 (142)
+      U75      11800.0      6800.0       270                 PLCC28 (359)
+      U77      11800.0      7300.0         0                 SOIC14 (36)
+      U76      12300.0      7050.0         0                 SOIC14 (35)
+     C114      12050.0      6800.0        90                CAP0603 (530)
+     C116      11300.0      8050.0       180                CAP0603 (532)
+     R123      11300.0      6550.0        90                 RES805 (465)
+     R122      11050.0      6800.0         0                 RES805 (464)
+     R121      11300.0      7050.0        90                 RES805 (463)
+     R120      11050.0      7050.0         0                 RES805 (462)
+     R119      11300.0      8300.0        90                 RES805 (461)
+     R118      11050.0      8300.0         0                 RES805 (460)
+     R117      11050.0      8550.0         0                 RES805 (459)
+     R139      11050.0      7300.0         0                 RES805 (481)
+     R138      11300.0      8550.0       180                 RES805 (480)
+     R137      11550.0      7300.0         0                 RES805 (479)
+     R136      11050.0      6550.0       180                 RES805 (478)
+     R135      11800.0      7550.0         0                 RES805 (477)
+     R134      11550.0      8300.0       180                 RES805 (476)
+     R133      11800.0      7800.0         0                 RES805 (475)
+     R132      11300.0      8800.0       180                 RES805 (474)
+     R131      11050.0      8800.0         0                 RES805 (473)
+     R130      11550.0      8550.0       180                 RES805 (472)
+     R129      11800.0      8050.0         0                 RES805 (471)
+     R128      11550.0      8800.0       180                 RES805 (470)
+     R127      12050.0      7300.0         0                 RES805 (469)
+     R126      11300.0      9050.0       180                 RES805 (468)
+     C120      11050.0      8300.0         0                CAP0603 (536)
+     R125      11050.0      9050.0         0                 RES805 (467)
+     R147      12300.0      7300.0         0                 RES805 (311)
+     R146      12550.0      7050.0       270                 RES805 (310)
+     R145      12300.0      6800.0       180                 RES805 (309)
+     R143      12050.0      7550.0         0                 RES805 (307)
+     R142      12550.0      7300.0       270                 RES805 (306)
+     R141      12550.0      6800.0       180                 RES805 (305)
+     C113      11300.0      8300.0         0                CAP0603 (529)
+     R144      12300.0      6550.0       180                 RES805 (308)
+     R140      12550.0      6550.0       180                 RES805 (304)
+     C115      12300.0      6800.0       270                CAP0603 (531)
+     C119      11050.0      8550.0         0                CAP0603 (535)
+     R124      11800.0      8300.0       180                 RES805 (466)
 
  Warning: Unplaced components have no affinity to placed
-     TP26       6300.0     12300.0         0               FEC32DTP (585)
+     C122      11300.0      6300.0       180                CAP0603 (538)
 
  Warning: Unplaced components have no affinity to placed
-     TP24       6550.0     12300.0         0               FEC32DTP (583)
-     R114       6550.0     12550.0         0                 RES805 (278)
+     C121      11550.0      6300.0       180                CAP0603 (537)
 
  Warning: Unplaced components have no affinity to placed
-     TP23       8300.0     12300.0         0               FEC32DTP (582)
-
- Warning: Unplaced components have no affinity to placed
-     TP21       8550.0     12300.0         0               FEC32DTP (580)
-     R115       8550.0     12550.0         0                 RES805 (279)
-
- Warning: Unplaced components have no affinity to placed
-     TP19       6300.0     12550.0         0               FEC32DTP (578)
-
- Warning: Unplaced components have no affinity to placed
-     TP18       6800.0     12550.0         0               FEC32DTP (577)
-
- Warning: Unplaced components have no affinity to placed
-      C98       6300.0     12300.0         0                CAP0603 (53)
-
- Warning: Unplaced components have no affinity to placed
-      C97       6300.0     12300.0        90                CAP0603 (52)
-
- Warning: Unplaced components have no affinity to placed
-      C96       6300.0     12300.0       180                CAP0603 (51)
+     C118      11800.0      6300.0       180                CAP0603 (534)
+     C117      11800.0      6550.0         0                CAP0603 (533)
 (---------------------------------------------------------------------)
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
 (    Drawing          : TubiiPCB_V3.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Thu Apr 02 11:21:27 2015                      )
+(    Date/Time        : Wed Apr 08 19:08:56 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -920,55 +977,47 @@ Report methodology:
   VCC15                TOP                    360.6      (11675.0 11860.6) to *(11675.0 11500.0)
   VCC15                TOP                    285.6      (1814.4 2525.0) to *(1814.4 2810.6)
   V3P3                 TOP                    200.0     *(3200.0 3825.0) to  (3200.0 3625.0)
-  UNNAMED_1_SS22SDP2_I35_P2 TOP                    860.4     *(9700.0 5125.0) to  (10550.0 5150.0)
-  UNNAMED_1_SS22SDP2_I35_P1 TOP                    700.0      (10400.0 5230.0) to *(9700.0 5230.0)
-  UNNAMED_1_SS22SDP2_I34_P2 TOP                    512.4      (10212.4 5500.0) to *(9700.0 5500.0)
-  UNNAMED_1_SS22SDP2_I34_P2 TOP                     14.4     *(10100.0 5400.0) to  (10114.4 5400.0)
-  UNNAMED_1_SS22SDP2_I34_P1 TOP                    758.9     *(9700.0 5625.0) to  (10450.0 5603.6)
-  UNNAMED_1_LOGEN_I13_LOSTAR2 BOTTOM                1391.4     *(12075.0 3425.0) to  (11975.0 4775.0)
+  UNNAMED_1_SS22SDP2_I35_P2 TOP                    860.4      (9550.0 4750.0) to *(8700.0 4725.0)
+  UNNAMED_1_SS22SDP2_I35_P1 TOP                    700.0      (9400.0 4830.0) to *(8700.0 4830.0)
+  UNNAMED_1_SS22SDP2_I34_P2 TOP                    512.4      (9212.4 5100.0) to *(8700.0 5100.0)
+  UNNAMED_1_SS22SDP2_I34_P2 TOP                     14.4     *(9100.0 5000.0) to  (9114.4 5000.0)
+  UNNAMED_1_SS22SDP2_I34_P1 TOP                    758.9      (9450.0 5203.6) to *(8700.0 5225.0)
+  UNNAMED_1_LOGEN_I13_LOSTAR2 BOTTOM                1391.4     *(11075.0 3025.0) to  (10975.0 4375.0)
   UNNAMED_1_INDUCTORL_I3_A TOP                      7.1     *(3330.0 1304.0) to  (3325.0 1309.0)
-  UNNAMED_1_HCT123_I54_Q2 TOP                    491.4     *(12275.0 4050.0) to  (11825.0 3997.5)
-  UNNAMED_1_HCT123_I54_Q1 TOP                    522.2      (11875.0 3802.5) to *(12275.0 4000.0)
-  UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (12000.0 8175.0) to *(12375.0 7850.0)
-  UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (11950.0 8225.0) to *(12375.0 7900.0)
-  UNNAMED_1_FRONTPORTS_I2_TUBCLKI BOTTOM                 616.4      (7500.0 4525.0) to *(7400.0 3950.0)
-  UNNAMED_1_FRONTPORTS_I2_TTLTO_1 TOP                    180.0     *(1825.0 9450.0) to  (2005.0 9450.0)
-  UNNAMED_1_FRONTPORTS_I2_TTLTOEC TOP                    450.9      (2225.0 9380.0) to *(1875.0 9275.0)
-  UNNAMED_1_FRONTPORTS_I2_TELLIED TOP                    487.4      (11062.4 1700.0) to *(10575.0 1700.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNCL_1 TOP                    277.5      (6147.5 7625.0) to *(6425.0 7625.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNCLVD TOP                    312.9      (6147.5 7675.0) to *(6450.0 7650.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNC2_1 TOP                    277.5      (6147.5 7575.0) to *(6425.0 7575.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNC24P TOP                    592.6     *(4575.0 8025.0) to  (5150.0 8067.5)
-  UNNAMED_1_FRONTPORTS_I2_SYNC24N TOP                    645.7     *(4575.0 8000.0) to  (5200.0 8000.0)
-  UNNAMED_1_FRONTPORTS_I2_SYNC24L TOP                    287.9      (6147.5 7525.0) to *(6425.0 7550.0)
-  UNNAMED_1_FRONTPORTS_I2_SMELLIE TOP                    776.2     *(10575.0 1950.0) to  (11300.0 1970.0)
-  UNNAMED_1_FRONTPORTS_I2_PULS<3> TOP                    335.9     *(14275.0 15167.6) to  (14525.0 15375.0)
-  UNNAMED_1_FRONTPORTS_I2_NIMTOEC TOP                    916.2     *(3425.0 10925.0) to  (4240.0 10712.5)
-  UNNAMED_1_FRONTPORTS_I2_MTCAM_4 BOTTOM                 375.0      (9925.0 3925.0) to *(9550.0 3925.0)
-  UNNAMED_1_FRONTPORTS_I2_MTCAM_3 BOTTOM                 375.0      (9925.0 3875.0) to *(9550.0 3875.0)
-  UNNAMED_1_FRONTPORTS_I2_MTCAM_1 BOTTOM                 450.0      (10000.0 4100.0) to *(9550.0 4100.0)
-  UNNAMED_1_FRONTPORTS_I2_MTCAMIM BOTTOM                 380.0      (9930.0 4045.0) to *(9550.0 4045.0)
-  UNNAMED_1_FRONTPORTS_I2_LVDST_2 TOP                    180.0     *(1825.0 9500.0) to  (2005.0 9500.0)
-  UNNAMED_1_FRONTPORTS_I2_LVDST_1 TOP                    637.9      (2897.5 9525.0) to *(3075.0 9050.0)
-  UNNAMED_1_FRONTPORTS_I2_LVDSTOE TOP                    573.4      (2897.5 9475.0) to *(3050.0 9050.0)
-  UNNAMED_1_FRONTPORTS_I2_GTNIM TOP                    134.4     *(5100.0 7800.0) to  (5224.0 7825.0)
-  UNNAMED_1_FRONTPORTS_I2_GENER_2 TOP                    168.0     *(11593.0 8718.0) to  (11593.0 8550.0)
-  UNNAMED_1_FRONTPORTS_I2_GENER_1 TOP                    185.7      (11450.0 7865.0) to *(11500.0 7700.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTO_4 TOP                    712.3     *(3100.0 10825.0) to  (2970.0 10375.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTO_3 TOP                   1345.7     *(2250.0 9925.0) to  (3550.0 9850.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTO_2 TOP                    227.5      (2897.5 9625.0) to *(3125.0 9625.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTO_1 TOP                    237.9      (2897.5 9575.0) to *(3125.0 9600.0)
-  UNNAMED_1_FRONTPORTS_I2_ECLTOTT TOP                    244.4     *(3325.0 10825.0) to  (3500.0 10657.5)
-  UNNAMED_1_FRONTPORTS_I2_ECLTONI TOP                    404.7      (3700.0 10657.5) to *(3375.0 10850.0)
-  UNNAMED_1_ELLIECOMS_I9_TELLIEPR BOTTOM                 682.8      (11675.0 1825.0) to *(11475.0 2425.0)
-  UNNAMED_1_ELLIECOMS_I9_SMELLIEP BOTTOM                 697.5      (11725.0 1875.0) to *(11550.0 2500.0)
-  UNNAMED_1_DEFAULTCLKSEL_I1_RESE TOP                    541.0      (7175.0 4280.0) to *(7600.0 4000.0)
-  UNNAMED_1_DEFAULTCLKSEL_I1_DEFA TOP                    505.0      (7920.0 4375.0) to *(8425.0 4375.0)
-  UNNAMED_1_DEFAULTCLKSEL_I1_BCKP TOP                    602.1     *(8224.0 4324.0) to  (7643.0 4375.0)
+  UNNAMED_1_HCT123_I54_Q2 TOP                    491.4     *(11275.0 3650.0) to  (10825.0 3597.5)
+  UNNAMED_1_HCT123_I54_Q1 TOP                    522.2      (10875.0 3402.5) to *(11275.0 3600.0)
+  UNNAMED_1_HCT123_I22_Q2 BOTTOM                 509.6      (4100.0 5550.0) to *(4475.0 5225.0)
+  UNNAMED_1_HCT123_I22_Q1 BOTTOM                 559.6      (4050.0 5600.0) to *(4475.0 5275.0)
+  UNNAMED_1_FRONTPORTS_I2_TUBCLKI BOTTOM                 616.4      (5100.0 7200.0) to *(5000.0 6625.0)
+  UNNAMED_1_FRONTPORTS_I2_TTLTO_1 TOP                    180.0     *(5575.0 14900.0) to  (5575.0 14720.0)
+  UNNAMED_1_FRONTPORTS_I2_TTLTOEC TOP                    450.9      (5505.0 14500.0) to *(5400.0 14850.0)
+  UNNAMED_1_FRONTPORTS_I2_TELLIED TOP                    487.4      (6475.0 4812.6) to *(6475.0 5300.0)
+  UNNAMED_1_FRONTPORTS_I2_SMELLIE TOP                    776.2     *(6725.0 5300.0) to  (6745.0 4575.0)
+  UNNAMED_1_FRONTPORTS_I2_NIMTOEC TOP                    916.2     *(7050.0 13300.0) to  (6837.5 12485.0)
+  UNNAMED_1_FRONTPORTS_I2_MTCAM_4 BOTTOM                 375.0      (8925.0 3525.0) to *(8550.0 3525.0)
+  UNNAMED_1_FRONTPORTS_I2_MTCAM_3 BOTTOM                 375.0      (8925.0 3475.0) to *(8550.0 3475.0)
+  UNNAMED_1_FRONTPORTS_I2_MTCAM_1 BOTTOM                 450.0      (9000.0 3700.0) to *(8550.0 3700.0)
+  UNNAMED_1_FRONTPORTS_I2_MTCAMIM BOTTOM                 380.0      (8930.0 3645.0) to *(8550.0 3645.0)
+  UNNAMED_1_FRONTPORTS_I2_LVDST_2 TOP                    180.0     *(5625.0 14900.0) to  (5625.0 14720.0)
+  UNNAMED_1_FRONTPORTS_I2_LVDST_1 TOP                    637.9      (5650.0 13827.5) to *(5175.0 13650.0)
+  UNNAMED_1_FRONTPORTS_I2_LVDSTOE TOP                    573.4      (5600.0 13827.5) to *(5175.0 13675.0)
+  UNNAMED_1_FRONTPORTS_I2_GENER_2 TOP                    168.0     *(3693.0 6093.0) to  (3693.0 5925.0)
+  UNNAMED_1_FRONTPORTS_I2_GENER_1 TOP                    185.7      (3550.0 5240.0) to *(3600.0 5075.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTO_4 TOP                    712.3     *(6950.0 13625.0) to  (6500.0 13755.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTO_3 TOP                   1345.7     *(6050.0 14475.0) to  (5975.0 13175.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTO_2 TOP                    227.5      (5750.0 13827.5) to *(5750.0 13600.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTO_1 TOP                    237.9      (5700.0 13827.5) to *(5725.0 13600.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTOTT TOP                    244.4     *(6950.0 13400.0) to  (6782.5 13225.0)
+  UNNAMED_1_FRONTPORTS_I2_ECLTONI TOP                    404.7      (6782.5 13025.0) to *(6975.0 13350.0)
+  UNNAMED_1_ELLIECOMS_I9_TELLIEPR BOTTOM                 682.8      (6600.0 4200.0) to *(7200.0 4400.0)
+  UNNAMED_1_ELLIECOMS_I9_SMELLIEP BOTTOM                 697.5      (6650.0 4150.0) to *(7275.0 4325.0)
+  UNNAMED_1_DEFAULTCLKSEL_I1_RESE TOP                    541.0      (4775.0 6955.0) to *(5200.0 6675.0)
+  UNNAMED_1_DEFAULTCLKSEL_I1_DEFA TOP                    505.0      (5520.0 7050.0) to *(6025.0 7050.0)
+  UNNAMED_1_DEFAULTCLKSEL_I1_BCKP TOP                    602.1      (5243.0 7050.0) to *(5824.0 6999.0)
   UNNAMED_1_COTO2342_I1_CTRLIN_6 TOP                    249.5     *(14573.0 12025.0) to  (14750.0 12200.0)
   UNNAMED_1_CNTRLREGISTER_I10_ECA TOP                    205.0      (6520.0 10600.0) to *(6725.0 10600.0)
-  UNNAMED_1_CLOCKS_I2_RESET TOP                    367.4      (6657.0 4550.0) to *(6300.0 4525.0)
-  UNNAMED_1_CLOCKS_I2_CLKSEL TOP                    846.8      (7025.0 4620.0) to *(6325.0 4725.0)
+  UNNAMED_1_CLOCKS_I2_RESET TOP                    367.4      (4257.0 7225.0) to *(3900.0 7200.0)
+  UNNAMED_1_CLOCKS_I2_CLKSEL TOP                    846.8      (4625.0 7295.0) to *(3925.0 7400.0)
   UNNAMED_1_CHANGECLKS_I3_DEFAU_1 BOTTOM                 876.8      (8100.0 1600.0) to *(7975.0 2425.0)
   UNNAMED_1_CHANGECLKS_I3_DEFAULT BOTTOM                 926.8      (8125.0 1550.0) to *(8000.0 2425.0)
   UNNAMED_1_CHANGECLKS_I3_CHANG_1 TOP                    511.1      (7000.0 1480.0) to *(6925.0 1000.0)
@@ -977,23 +1026,22 @@ Report methodology:
   UNNAMED_1_CHANGECLKS_I3_BCKPC_2 TOP                    541.6     *(8875.0 2075.0) to  (8700.0 1675.0)
   UNNAMED_1_CHANGECLKS_I3_BCKPC_1 TOP                    568.4     *(8100.0 2475.0) to  (8052.5 1950.0)
   UNNAMED_1_CHANGECLKS_I3_BCKPCLK TOP                    612.2     *(8125.0 2475.0) to  (8065.0 1900.0)
-  UNNAMED_1_CAENCOMS_I8_SYNCTTL BOTTOM                 231.1      (6025.0 7625.0) to *(6100.0 7425.0)
-  UNNAMED_1_CAENCOMS_I8_SYNC24TTL TOP                    176.8      (6025.0 7575.0) to *(6150.0 7450.0)
-  UNNAMED_1_CAENCOMS_I8_GTTTL BOTTOM                  50.0     *(6100.0 8600.0) to  (6100.0 8550.0)
+  UNNAMED_1_CAENCOMS_I8_SYNCTTL BOTTOM                 231.1      (4325.0 14175.0) to *(4525.0 14250.0)
+  UNNAMED_1_CAENCOMS_I8_SYNC24TTL TOP                    176.8      (4375.0 14175.0) to *(4500.0 14300.0)
   UNNAMED_1_CAENCOMS_I8_GT2P BOTTOM                 781.1      (6600.0 9900.0) to *(6050.0 10175.0)
-  UNNAMED_1_CAENCOMS_I8_GT2P TOP                    352.5     *(5225.0 8800.0) to  (5400.0 8520.0)
-  UNNAMED_1_CAENCOMS_I8_GT2P TOP                    504.3     *(11550.0 5950.0) to  (11850.0 5570.0)
-  UNNAMED_1_CAENBUFFER_I5_INANAL TOP                    514.4     *(14825.0 14550.0) to  (14950.0 14110.6)
-  UNNAMED_1_AD96687_I1_Q2_1 TOP                    758.9     *(9700.0 5175.0) to  (10450.0 5196.4)
-  UNNAMED_1_AD96687_I1_Q2 TOP                    425.0     *(9700.0 5300.0) to  (10125.0 5300.0)
-  UNNAMED_1_AD96687_I1_Q1_1 TOP                    700.0      (10400.0 5570.0) to *(9700.0 5570.0)
-  UNNAMED_1_AD96687_I1_Q1 TOP                    850.0      (10550.0 5675.0) to *(9700.0 5675.0)
-  SR_DATA              TOP                    393.4     *(11050.0 8500.0) to  (11350.0 8402.5)
-  SR_DATA              TOP                    218.9      (3675.0 5997.5) to *(3575.0 6175.0)
-  GT2_N                TOP                    342.1      (5350.0 8520.0) to *(5200.0 8800.0)
-  DGT_GATE             TOP                    448.2      (11150.0 5570.0) to *(10925.0 5925.0)
+  UNNAMED_1_CAENCOMS_I8_GT2P TOP                    352.5     *(3150.0 13375.0) to  (3430.0 13550.0)
+  UNNAMED_1_CAENCOMS_I8_GT2P TOP                    504.3     *(10550.0 5550.0) to  (10850.0 5170.0)
+  UNNAMED_1_AD96687_I1_Q2_1 TOP                    758.9      (9450.0 4796.4) to *(8700.0 4775.0)
+  UNNAMED_1_AD96687_I1_Q2 TOP                    425.0      (9125.0 4900.0) to *(8700.0 4900.0)
+  UNNAMED_1_AD96687_I1_Q1_1 TOP                    700.0      (9400.0 5170.0) to *(8700.0 5170.0)
+  UNNAMED_1_AD96687_I1_Q1 TOP                    850.0      (9550.0 5275.0) to *(8700.0 5275.0)
+  SR_DATA              TOP                    393.4     *(3150.0 5875.0) to  (3450.0 5777.5)
+  SR_DATA              TOP                    218.9      (1327.5 12175.0) to *(1150.0 12075.0)
+  SPKR                 TOP                    377.5      (1352.5 10525.0) to *(975.0 10525.0)
+  GT2_N                TOP                    342.1      (3430.0 13500.0) to *(3150.0 13350.0)
+  DGT_GATE             TOP                    448.2      (10150.0 5170.0) to *(9925.0 5525.0)
   UNNAMED_1_CAENBUFFER_I23_CNTRL TOP                   3180.5     *(14575.0 11925.0) to  (12000.0 11125.0)
-  VCC                  TOP                      0.1     *(12025.0 3802.6) to  (12025.0 3802.5)
+  VCC                  TOP                      0.1     *(11025.0 3402.6) to  (11025.0 3402.5)
   Dummy Net            TOP                    169.9      (6450.0 10720.0) to *(6546.4 10850.0)
   Not a Net            TOP                     66.7     *(14600.0 12200.0) to *(14554.5 12154.5)
 
@@ -1001,8 +1049,8 @@ Report methodology:
 << Dangling Vias >>
   Net                  Padstack               Location            Layers
   ---------------------------------------------------------------------------
-  SET_RETRIG2          VIA                  (11950.0 5700.0) TOP/BOTTOM 
-  SET_RETRIG2          VIA                  (11950.0 5700.0) TOP/BOTTOM 
+  SET_RETRIG2          VIA                  (10950.0 5300.0) TOP/BOTTOM 
+  SET_RETRIG2          VIA                  (10950.0 5300.0) TOP/BOTTOM 
   VTT                  VIA                  (15425.0 12525.0) TOP/BOTTOM 
   VTT                  VIA                  (15400.0 14075.0) TOP/BOTTOM 
   VTT                  VIA                  (11575.0 14075.0) TOP/BOTTOM 
@@ -1012,8 +1060,8 @@ Report methodology:
   VTT                  VIA                  (11600.0 12600.0) TOP/BOTTOM 
   VTT                  VIA                  (14100.0 14050.0) TOP/BOTTOM 
   VTT                  VIA                  (14175.0 12600.0) TOP/BOTTOM 
-  VTT                  VIA                  (12025.0 4325.0) TOP/BOTTOM 
-  VTT                  VIA                  (9975.0 5400.0)  TOP/BOTTOM 
+  VTT                  VIA                  (11025.0 3925.0) TOP/BOTTOM 
+  VTT                  VIA                  (8975.0 5000.0)  TOP/BOTTOM 
   VTT                  VIA                  (6725.0 1400.0)  TOP/BOTTOM 
   VTT                  VIA                  (7850.0 1750.0)  TOP/BOTTOM 
   VTT                  VIA                  (8075.0 1125.0)  TOP/BOTTOM 
@@ -1032,98 +1080,100 @@ Report methodology:
   VTT                  VIA                  (8900.0 1325.0)  TOP/BOTTOM 
   VTT                  VIA                  (8700.0 2175.0)  TOP/BOTTOM 
   VTT                  VIA                  (8700.0 1325.0)  TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10525.0) TOP/BOTTOM 
-  VTT                  VIA                  (6450.0 8575.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6300.0 8650.0)  TOP/BOTTOM 
-  VTT                  VIA                  (15300.0 5725.0) TOP/BOTTOM 
-  VTT                  VIA                  (7860.6 4939.4)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4550.0)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4500.0)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4775.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7400.0 4975.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7425.0 5200.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7550.0 5750.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7764.4 4985.6)  TOP/BOTTOM 
-  VTT                  VIA                  (3875.0 10000.0) TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10025.0) TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10375.0) TOP/BOTTOM 
-  VTT                  VIA                  (3050.0 10725.0) TOP/BOTTOM 
-  VTT                  VIA                  (3200.0 10325.0) TOP/BOTTOM 
-  VTT                  VIA                  (4000.0 10825.0) TOP/BOTTOM 
-  VTT                  VIA                  (3725.0 10825.0) TOP/BOTTOM 
+  VTT                  VIA                  (6650.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (3375.0 14600.0) TOP/BOTTOM 
+  VTT                  VIA                  (3300.0 14450.0) TOP/BOTTOM 
+  VTT                  VIA                  (5460.6 7614.4)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7225.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7175.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7450.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5000.0 7650.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5025.0 7875.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5150.0 8425.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5364.4 7660.6)  TOP/BOTTOM 
+  VTT                  VIA                  (6125.0 12850.0) TOP/BOTTOM 
+  VTT                  VIA                  (6150.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (6500.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (6850.0 13675.0) TOP/BOTTOM 
+  VTT                  VIA                  (6450.0 13525.0) TOP/BOTTOM 
+  VTT                  VIA                  (6950.0 12725.0) TOP/BOTTOM 
+  VTT                  VIA                  (6950.0 13000.0) TOP/BOTTOM 
   VTT                  VIA                  (3775.0 3850.0)  TOP/BOTTOM 
   VTT                  VIA                  (6250.0 9775.0)  TOP/BOTTOM 
   VTT                  VIA                  (6300.0 9850.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5475.0 7900.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6350.0 7975.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6450.0 8075.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5725.0 8400.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5775.0 7900.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4800.0 8425.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4725.0 8125.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4750.0 7875.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4775.0 7825.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5350.0 8325.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5350.0 8175.0)  TOP/BOTTOM 
-  VTT                  VIA                  (11375.0 2275.0) TOP/BOTTOM 
-  VTT                  VIA                  (10775.0 1575.0) TOP/BOTTOM 
-  VTT                  VIA                  (11475.0 5050.0) TOP/BOTTOM 
-  VTT                  VIA                  (10700.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10475.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10150.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10150.0 4925.0) TOP/BOTTOM 
-  VTT                  VIA                  (10500.0 4950.0) TOP/BOTTOM 
-  VTT                  VIA                  (10675.0 5075.0) TOP/BOTTOM 
-  VTT                  VIA                  (10925.0 5150.0) TOP/BOTTOM 
-  VTT                  VIA                  (11300.0 4825.0) TOP/BOTTOM 
-  VTT                  VIA                  (10800.0 5050.0) TOP/BOTTOM 
-  VTT                  VIA                  (11525.0 4650.0) TOP/BOTTOM 
-  VTT                  VIA                  (12350.0 5300.0) TOP/BOTTOM 
-  VTT                  VIA                  (11975.0 5850.0) TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4625.0) TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4900.0) TOP/BOTTOM 
-  VTT                  VIA                  (10750.0 4725.0) TOP/BOTTOM 
-  VTT                  VIA                  (11264.4 4935.6) TOP/BOTTOM 
-  VTT                  VIA                  (10650.0 4175.0) TOP/BOTTOM 
-  VTT                  VIA                  (10575.0 3575.0) TOP/BOTTOM 
-  VTT                  VIA                  (11075.0 4175.0) TOP/BOTTOM 
-  VTT                  VIA                  (10610.6 4564.4) TOP/BOTTOM 
-  VTT                  VIA                  (9975.0 4350.0)  TOP/BOTTOM 
-  VTT                  VIA                  (10225.0 3250.0) TOP/BOTTOM 
-  VTT                  VIA                  (9900.0 3400.0)  TOP/BOTTOM 
-  VTT                  VIA                  (10650.0 4075.0) TOP/BOTTOM 
-  VTT                  VIA                  (9775.0 3525.0)  TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4775.0) TOP/BOTTOM 
-  VTT                  VIA                  (14475.0 6400.0) TOP/BOTTOM 
-  VTT                  VIA                  (14975.0 6375.0) TOP/BOTTOM 
-  VTT                  VIA                  (15325.0 5950.0) TOP/BOTTOM 
-  VTT                  VIA                  (14550.0 6100.0) TOP/BOTTOM 
+  VTT                  VIA                  (4050.0 13625.0) TOP/BOTTOM 
+  VTT                  VIA                  (3975.0 14500.0) TOP/BOTTOM 
+  VTT                  VIA                  (3875.0 14600.0) TOP/BOTTOM 
+  VTT                  VIA                  (3550.0 13875.0) TOP/BOTTOM 
+  VTT                  VIA                  (4050.0 13925.0) TOP/BOTTOM 
+  VTT                  VIA                  (3525.0 12950.0) TOP/BOTTOM 
+  VTT                  VIA                  (3825.0 12875.0) TOP/BOTTOM 
+  VTT                  VIA                  (4075.0 12900.0) TOP/BOTTOM 
+  VTT                  VIA                  (4125.0 12925.0) TOP/BOTTOM 
+  VTT                  VIA                  (3625.0 13500.0) TOP/BOTTOM 
+  VTT                  VIA                  (3775.0 13500.0) TOP/BOTTOM 
+  VTT                  VIA                  (7050.0 4500.0)  TOP/BOTTOM 
+  VTT                  VIA                  (6350.0 5100.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10475.0 4650.0) TOP/BOTTOM 
+  VTT                  VIA                  (9700.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9475.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9150.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9150.0 4525.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9500.0 4550.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9675.0 4675.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9925.0 4750.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10300.0 4425.0) TOP/BOTTOM 
+  VTT                  VIA                  (9800.0 4650.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10525.0 4250.0) TOP/BOTTOM 
+  VTT                  VIA                  (11350.0 4900.0) TOP/BOTTOM 
+  VTT                  VIA                  (10975.0 5450.0) TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4225.0) TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4500.0) TOP/BOTTOM 
+  VTT                  VIA                  (9750.0 4325.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10264.4 4535.6) TOP/BOTTOM 
+  VTT                  VIA                  (9650.0 3775.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9575.0 3175.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10075.0 3775.0) TOP/BOTTOM 
+  VTT                  VIA                  (9610.6 4164.4)  TOP/BOTTOM 
+  VTT                  VIA                  (8975.0 3950.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9225.0 2850.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8900.0 3000.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9650.0 3675.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8775.0 3125.0)  TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4375.0) TOP/BOTTOM 
+  VTT                  VIA                  (1850.0 13625.0) TOP/BOTTOM 
+  VTT                  VIA                  (1775.0 14375.0) TOP/BOTTOM 
+  VTT                  VIA                  (2275.0 14350.0) TOP/BOTTOM 
+  VTT                  VIA                  (1850.0 14075.0) TOP/BOTTOM 
   VEE                  VIA                  (7125.0 1425.0)  TOP/BOTTOM 
-  VEE                  VIA                  (2375.0 10600.0) TOP/BOTTOM 
-  VEE                  VIA                  (7874.0 5726.0)  TOP/BOTTOM 
-  VEE                  VIA                  (7776.0 4051.0)  TOP/BOTTOM 
-  VEE                  VIA                  (6825.0 4500.0)  TOP/BOTTOM 
-  VEE                  VIA                  (7074.0 4826.0)  TOP/BOTTOM 
+  VEE                  VIA                  (6725.0 14350.0) TOP/BOTTOM 
+  VEE                  VIA                  (1150.0 13750.0) TOP/BOTTOM 
+  VEE                  VIA                  (1801.0 14499.0) TOP/BOTTOM 
+  VEE                  VIA                  (2175.0 12775.0) TOP/BOTTOM 
+  VEE                  VIA                  (5474.0 8401.0)  TOP/BOTTOM 
+  VEE                  VIA                  (5376.0 6726.0)  TOP/BOTTOM 
+  VEE                  VIA                  (4425.0 7175.0)  TOP/BOTTOM 
+  VEE                  VIA                  (4674.0 7501.0)  TOP/BOTTOM 
   VEE                  VIA                  (8199.0 2249.0)  TOP/BOTTOM 
   VEE                  VIA                  (7375.0 1025.0)  TOP/BOTTOM 
   VEE                  VIA                  (8324.0 1376.0)  TOP/BOTTOM 
   VEE                  VIA                  (5025.0 1700.0)  TOP/BOTTOM 
-  VEE                  VIA                  (3200.0 9750.0)  TOP/BOTTOM 
-  VEE                  VIA                  (4275.0 10425.0) TOP/BOTTOM 
-  VEE                  VIA                  (3525.0 10350.0) TOP/BOTTOM 
+  VEE                  VIA                  (5875.0 13525.0) TOP/BOTTOM 
+  VEE                  VIA                  (6550.0 12450.0) TOP/BOTTOM 
+  VEE                  VIA                  (6475.0 13200.0) TOP/BOTTOM 
   VEE                  VIA                  (3775.0 2850.0)  TOP/BOTTOM 
   VEE                  VIA                  (6400.0 10800.0) TOP/BOTTOM 
-  VEE                  VIA                  (6325.0 8250.0)  TOP/BOTTOM 
-  VEE                  VIA                  (5500.0 7525.0)  TOP/BOTTOM 
-  VEE                  VIA                  (4925.0 8425.0)  TOP/BOTTOM 
-  VEE                  VIA                  (11975.0 1600.0) TOP/BOTTOM 
-  VEE                  VIA                  (10250.0 5450.0) TOP/BOTTOM 
-  VEE                  VIA                  (10950.0 5450.0) TOP/BOTTOM 
-  VEE                  VIA                  (12175.0 5350.0) TOP/BOTTOM 
-  VEE                  VIA                  (11375.0 4575.0) TOP/BOTTOM 
-  VEE                  VIA                  (11000.0 3625.0) TOP/BOTTOM 
-  VEE                  VIA                  (10350.0 4800.0) TOP/BOTTOM 
-  VEE                  VIA                  (10225.0 3525.0) TOP/BOTTOM 
+  VEE                  VIA                  (3700.0 14475.0) TOP/BOTTOM 
+  VEE                  VIA                  (4425.0 13625.0) TOP/BOTTOM 
+  VEE                  VIA                  (3525.0 13075.0) TOP/BOTTOM 
+  VEE                  VIA                  (6375.0 3900.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9250.0 5050.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9950.0 5050.0)  TOP/BOTTOM 
+  VEE                  VIA                  (11175.0 4950.0) TOP/BOTTOM 
+  VEE                  VIA                  (10375.0 4175.0) TOP/BOTTOM 
+  VEE                  VIA                  (10000.0 3225.0) TOP/BOTTOM 
+  VEE                  VIA                  (9350.0 4400.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9225.0 3125.0)  TOP/BOTTOM 
   VCC                  VIA                  (11500.0 14775.0) TOP/BOTTOM 
   VCC                  VIA                  (14725.0 13200.0) TOP/BOTTOM 
   VCC                  VIA                  (10900.0 13200.0) TOP/BOTTOM 
@@ -1133,18 +1183,22 @@ Report methodology:
   VCC                  VIA                  (10925.0 11725.0) TOP/BOTTOM 
   VCC                  VIA                  (13450.0 13200.0) TOP/BOTTOM 
   VCC                  VIA                  (13475.0 11725.0) TOP/BOTTOM 
-  VCC                  VIA                  (2875.0 9300.0)  TOP/BOTTOM 
-  VCC                  VIA                  (2275.0 9422.0)  TOP/BOTTOM 
-  VCC                  VIA                  (5825.0 7675.0)  TOP/BOTTOM 
-  VCC                  VIA                  (6325.0 8350.0)  TOP/BOTTOM 
+  VCC                  VIA                  (5425.0 13850.0) TOP/BOTTOM 
+  VCC                  VIA                  (5547.0 14450.0) TOP/BOTTOM 
+  VCC                  VIA                  (4275.0 13975.0) TOP/BOTTOM 
+  VCC                  VIA                  (3600.0 14475.0) TOP/BOTTOM 
   VCC                  VIA                  (6049.0 9851.0)  TOP/BOTTOM 
   VCC                  VIA                  (6300.0 10800.0) TOP/BOTTOM 
-  VCC                  VIA                  (2525.0 10600.0) TOP/BOTTOM 
-  VCC                  VIA                  (6975.0 4700.0)  TOP/BOTTOM 
-  VCC                  VIA                  (6825.0 4400.0)  TOP/BOTTOM 
+  VCC                  VIA                  (6725.0 14200.0) TOP/BOTTOM 
+  VCC                  VIA                  (1525.0 12625.0) TOP/BOTTOM 
+  VCC                  VIA                  (1500.0 11875.0) TOP/BOTTOM 
+  VCC                  VIA                  (2275.0 12775.0) TOP/BOTTOM 
+  VCC                  VIA                  (1150.0 13650.0) TOP/BOTTOM 
+  VCC                  VIA                  (4575.0 7375.0)  TOP/BOTTOM 
+  VCC                  VIA                  (4425.0 7075.0)  TOP/BOTTOM 
   VCC                  VIA                  (7375.0 925.0)   TOP/BOTTOM 
   VCC                  VIA                  (5650.0 1800.0)  TOP/BOTTOM 
-  VCC                  VIA                  (2600.0 9725.0)  TOP/BOTTOM 
+  VCC                  VIA                  (5850.0 14125.0) TOP/BOTTOM 
   VCC                  VIA                  (3325.0 3025.0)  TOP/BOTTOM 
   VCC                  VIA                  (6525.0 10700.0) TOP/BOTTOM 
   VCC                  VIA                  (10700.0 14325.0) TOP/BOTTOM 
@@ -1152,11 +1206,20 @@ Report methodology:
   VCC                  VIA                  (10574.0 13474.0) TOP/BOTTOM 
   VCC                  VIA                  (11049.0 11299.0) TOP/BOTTOM 
   VCC                  VIA                  (11175.0 10850.0) TOP/BOTTOM 
-  VCC                  VIA                  (12075.0 1600.0) TOP/BOTTOM 
-  VCC                  VIA                  (12000.0 3475.0) TOP/BOTTOM 
-  VCC                  VIA                  (11525.0 4175.0) TOP/BOTTOM 
-  VCC                  VIA                  (12224.0 3874.0) TOP/BOTTOM 
-  VCC                  VIA                  (11100.0 3625.0) TOP/BOTTOM 
+  VCC                  VIA                  (6375.0 3800.0)  TOP/BOTTOM 
+  VCC                  VIA                  (1973.0 10077.0) TOP/BOTTOM 
+  VCC                  VIA                  (1923.0 9477.0)  TOP/BOTTOM 
+  VCC                  VIA                  (1500.0 10700.0) TOP/BOTTOM 
+  VCC                  VIA                  (11000.0 3075.0) TOP/BOTTOM 
+  VCC                  VIA                  (10525.0 3775.0) TOP/BOTTOM 
+  VCC                  VIA                  (11224.0 3474.0) TOP/BOTTOM 
+  VCC                  VIA                  (10100.0 3225.0) TOP/BOTTOM 
+  VCC                  VIA                  (1250.0 13000.0) TOP/BOTTOM 
+  VCC                  VIA                  (1600.0 12850.0) TOP/BOTTOM 
+  VCC                  VIA                  (1725.0 13100.0) TOP/BOTTOM 
+  VCC                  VIA                  (1150.0 13000.0) TOP/BOTTOM 
+  GND                  VIA                  (2300.0 14425.0) TOP/BOTTOM 
+  GND                  VIA                  (1050.0 12875.0) TOP/BOTTOM 
   GND                  VIA                  (11600.0 10850.0) TOP/BOTTOM 
   GND                  VIA                  (11500.0 14700.0) TOP/BOTTOM 
   GND                  VIA                  (11500.0 11325.0) TOP/BOTTOM 
@@ -1185,7 +1248,7 @@ Report methodology:
   GND                  VIA                  (14125.0 13425.0) TOP/BOTTOM 
   GND                  VIA                  (14025.0 13100.0) TOP/BOTTOM 
   GND                  VIA                  (12650.0 14025.0) TOP/BOTTOM 
-  GND                  VIA                  (14050.0 14400.0) TOP/BOTTOM 
+  GND                  VIA                  (14025.0 14400.0) TOP/BOTTOM 
   GND                  VIA                  (12900.0 13475.0) TOP/BOTTOM 
   GND                  VIA                  (12725.0 13100.0) TOP/BOTTOM 
   GND                  VIA                  (12700.0 12550.0) TOP/BOTTOM 
@@ -1216,33 +1279,37 @@ Report methodology:
   GND                  VIA                  (14375.0 12600.0) TOP/BOTTOM 
   GND                  VIA                  (13975.0 12200.0) TOP/BOTTOM 
   GND                  VIA                  (13300.0 12125.0) TOP/BOTTOM 
-  GND                  VIA                  (9825.0 4925.0)  TOP/BOTTOM 
+  GND                  VIA                  (8825.0 4525.0)  TOP/BOTTOM 
   GND                  VIA                  (3550.0 2675.0)  TOP/BOTTOM 
   GND                  VIA                  (3700.0 2600.0)  TOP/BOTTOM 
-  GND                  VIA                  (11550.0 3550.0) TOP/BOTTOM 
-  GND                  VIA                  (12000.0 4225.0) TOP/BOTTOM 
-  GND                  VIA                  (9825.0 4400.0)  TOP/BOTTOM 
-  GND                  VIA                  (10000.0 4700.0) TOP/BOTTOM 
+  GND                  VIA                  (10550.0 3150.0) TOP/BOTTOM 
+  GND                  VIA                  (11000.0 3825.0) TOP/BOTTOM 
+  GND                  VIA                  (8825.0 4000.0)  TOP/BOTTOM 
+  GND                  VIA                  (9000.0 4300.0)  TOP/BOTTOM 
   GND                  VIA                  (6800.0 1700.0)  TOP/BOTTOM 
-  GND                  VIA                  (2675.0 9300.0)  TOP/BOTTOM 
-  GND                  VIA                  (2300.0 10425.0) TOP/BOTTOM 
-  GND                  VIA                  (4500.0 5875.0)  TOP/BOTTOM 
-  GND                  VIA                  (3375.0 5975.0)  TOP/BOTTOM 
-  GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
-  GND                  VIA                  (3375.0 5400.0)  TOP/BOTTOM 
+  GND                  VIA                  (5425.0 14050.0) TOP/BOTTOM 
+  GND                  VIA                  (6550.0 14425.0) TOP/BOTTOM 
+  GND                  VIA                  (2275.0 13225.0) TOP/BOTTOM 
+  GND                  VIA                  (1725.0 12975.0) TOP/BOTTOM 
+  GND                  VIA                  (1450.0 13000.0) TOP/BOTTOM 
+  GND                  VIA                  (1350.0 11875.0) TOP/BOTTOM 
+  GND                  VIA                  (3724.0 5824.0)  TOP/BOTTOM 
+  GND                  VIA                  (1925.0 11875.0) TOP/BOTTOM 
   GND                  VIA                  (14600.0 3875.0) TOP/BOTTOM 
   GND                  VIA                  (14550.0 3875.0) TOP/BOTTOM 
-  GND                  VIA                  (7874.0 5674.0)  TOP/BOTTOM 
-  GND                  VIA                  (7724.0 4051.0)  TOP/BOTTOM 
-  GND                  VIA                  (7325.0 4400.0)  TOP/BOTTOM 
-  GND                  VIA                  (7074.0 5099.0)  TOP/BOTTOM 
+  GND                  VIA                  (1801.0 14551.0) TOP/BOTTOM 
+  GND                  VIA                  (1675.0 13650.0) TOP/BOTTOM 
+  GND                  VIA                  (5474.0 8349.0)  TOP/BOTTOM 
+  GND                  VIA                  (5324.0 6726.0)  TOP/BOTTOM 
+  GND                  VIA                  (4925.0 7075.0)  TOP/BOTTOM 
+  GND                  VIA                  (4674.0 7774.0)  TOP/BOTTOM 
   GND                  VIA                  (7925.0 925.0)   TOP/BOTTOM 
   GND                  VIA                  (8251.0 2249.0)  TOP/BOTTOM 
   GND                  VIA                  (8324.0 1324.0)  TOP/BOTTOM 
   GND                  VIA                  (5175.0 1700.0)  TOP/BOTTOM 
-  GND                  VIA                  (2897.5 9377.5)  TOP/BOTTOM 
-  GND                  VIA                  (4374.5 10675.5) TOP/BOTTOM 
-  GND                  VIA                  (4200.0 10425.0) TOP/BOTTOM 
+  GND                  VIA                  (5502.5 13827.5) TOP/BOTTOM 
+  GND                  VIA                  (6800.5 12350.5) TOP/BOTTOM 
+  GND                  VIA                  (6550.0 12525.0) TOP/BOTTOM 
   GND                  VIA                  (2625.0 1475.0)  TOP/BOTTOM 
   GND                  VIA                  (2725.0 1475.0)  TOP/BOTTOM 
   GND                  VIA                  (3725.0 1475.0)  TOP/BOTTOM 
@@ -1255,30 +1322,38 @@ Report methodology:
   GND                  VIA                  (10575.0 13400.0) TOP/BOTTOM 
   GND                  VIA                  (10970.2 11179.8) TOP/BOTTOM 
   GND                  VIA                  (10902.5 10727.5) TOP/BOTTOM 
-  GND                  VIA                  (11125.0 1375.0) TOP/BOTTOM 
-  GND                  VIA                  (12075.0 2075.0) TOP/BOTTOM 
-  GND                  VIA                  (10750.0 5350.0) TOP/BOTTOM 
-  GND                  VIA                  (11450.0 5350.0) TOP/BOTTOM 
-  GND                  VIA                  (11625.0 4775.0) TOP/BOTTOM 
-  GND                  VIA                  (11650.0 5450.0) TOP/BOTTOM 
-  GND                  VIA                  (11025.0 4275.0) TOP/BOTTOM 
-  GND                  VIA                  (12224.0 3926.0) TOP/BOTTOM 
-  GND                  VIA                  (11100.0 4125.0) TOP/BOTTOM 
-  GND                  VIA                  (10250.0 4300.0) TOP/BOTTOM 
-  GND                  VIA                  (10350.0 4300.0) TOP/BOTTOM 
-  GND                  VIA                  (10325.0 4100.0) TOP/BOTTOM 
-  GND                  VIA                  (10525.0 3925.0) TOP/BOTTOM 
-  GND                  VIA                  (10475.0 3400.0) TOP/BOTTOM 
-  GND                  VIA                  (10950.0 3550.0) TOP/BOTTOM 
-  GND                  VIA                  (10875.0 3325.0) TOP/BOTTOM 
-  GND                  VIA                  (14400.0 15550.0) TOP/BOTTOM 
-  GND                  VIA                  (14401.0 15701.0) TOP/BOTTOM 
-  GND                  VIA                  (14749.0 15474.0) TOP/BOTTOM 
+  GND                  VIA                  (6150.0 4750.0)  TOP/BOTTOM 
+  GND                  VIA                  (6850.0 3800.0)  TOP/BOTTOM 
+  GND                  VIA                  (1448.0 10698.0) TOP/BOTTOM 
+  GND                  VIA                  (1975.0 9475.0)  TOP/BOTTOM 
+  GND                  VIA                  (2025.0 10075.0) TOP/BOTTOM 
+  GND                  VIA                  (9750.0 4950.0)  TOP/BOTTOM 
+  GND                  VIA                  (10450.0 4950.0) TOP/BOTTOM 
+  GND                  VIA                  (10625.0 4375.0) TOP/BOTTOM 
+  GND                  VIA                  (10650.0 5050.0) TOP/BOTTOM 
+  GND                  VIA                  (10025.0 3875.0) TOP/BOTTOM 
+  GND                  VIA                  (11224.0 3526.0) TOP/BOTTOM 
+  GND                  VIA                  (10100.0 3725.0) TOP/BOTTOM 
+  GND                  VIA                  (9250.0 3900.0)  TOP/BOTTOM 
+  GND                  VIA                  (9350.0 3900.0)  TOP/BOTTOM 
+  GND                  VIA                  (9325.0 3700.0)  TOP/BOTTOM 
+  GND                  VIA                  (9525.0 3525.0)  TOP/BOTTOM 
+  GND                  VIA                  (9475.0 3000.0)  TOP/BOTTOM 
+  GND                  VIA                  (9950.0 3150.0)  TOP/BOTTOM 
+  GND                  VIA                  (9875.0 2925.0)  TOP/BOTTOM 
+  GND                  VIA                  (3725.0 12125.0) TOP/BOTTOM 
+  GND                  VIA                  (3725.0 12400.0) TOP/BOTTOM 
+  GND                  VIA                  (3825.0 12125.0) TOP/BOTTOM 
+  GND                  VIA                  (3825.0 12400.0) TOP/BOTTOM 
+  GND                  VIA                  (3400.0 15450.0) TOP/BOTTOM 
+  GND                  VIA                  (14400.0 15650.0) TOP/BOTTOM 
+  GND                  VIA                  (14401.0 15576.0) TOP/BOTTOM 
   GND                  VIA                  (14749.0 15374.0) TOP/BOTTOM 
-  GND                  VIA                  (12526.0 15724.0) TOP/BOTTOM 
+  GND                  VIA                  (14749.0 15474.0) TOP/BOTTOM 
   GND                  VIA                  (12651.0 15724.0) TOP/BOTTOM 
-  GND                  VIA                  (13899.0 15674.0) TOP/BOTTOM 
-  GND                  VIA                  (13900.0 15575.0) TOP/BOTTOM 
+  GND                  VIA                  (12551.0 15724.0) TOP/BOTTOM 
+  GND                  VIA                  (13899.0 15549.0) TOP/BOTTOM 
+  GND                  VIA                  (13900.0 15700.0) TOP/BOTTOM 
   GND                  VIA                  (12776.0 15276.0) TOP/BOTTOM 
   GND                  VIA                  (13800.0 15225.0) TOP/BOTTOM 
   GND                  VIA                  (14726.0 15274.0) TOP/BOTTOM 
@@ -1300,17 +1375,19 @@ Report methodology:
   GND                  VIA                  (15151.0 15676.0) TOP/BOTTOM 
   GND                  VIA                  (12399.0 15399.0) TOP/BOTTOM 
   GND                  VIA                  (11225.0 15075.0) TOP/BOTTOM 
-  GND                  VIA                  (6174.0 5151.0)  TOP/BOTTOM 
-  GND                  VIA                  (4600.0 6050.0)  TOP/BOTTOM 
-  GND                  VIA                  (4250.0 5750.0)  TOP/BOTTOM 
-  GND                  VIA                  (3625.0 5275.0)  TOP/BOTTOM 
+  GND                  VIA                  (3774.0 7826.0)  TOP/BOTTOM 
+  GND                  VIA                  (1424.0 12576.0) TOP/BOTTOM 
+  GND                  VIA                  (1275.0 13100.0) TOP/BOTTOM 
+  GND                  VIA                  (1575.0 12750.0) TOP/BOTTOM 
+  GND                  VIA                  (2050.0 12125.0) TOP/BOTTOM 
+  Not on a Net         VIA                  (2600.0 13700.0) TOP/BOTTOM 
 
 
 << Antenna Vias >>
   Net                  Padstack               Location            Layers
   ---------------------------------------------------------------------------
-  SET_RETRIG2          VIA                  (11950.0 5700.0) TOP/BOTTOM 
-  SET_RETRIG2          VIA                  (11950.0 5700.0) TOP/BOTTOM 
+  SET_RETRIG2          VIA                  (10950.0 5300.0) TOP/BOTTOM 
+  SET_RETRIG2          VIA                  (10950.0 5300.0) TOP/BOTTOM 
   VTT                  VIA                  (15425.0 12525.0) TOP/BOTTOM 
   VTT                  VIA                  (15400.0 14075.0) TOP/BOTTOM 
   VTT                  VIA                  (11575.0 14075.0) TOP/BOTTOM 
@@ -1320,8 +1397,8 @@ Report methodology:
   VTT                  VIA                  (11600.0 12600.0) TOP/BOTTOM 
   VTT                  VIA                  (14100.0 14050.0) TOP/BOTTOM 
   VTT                  VIA                  (14175.0 12600.0) TOP/BOTTOM 
-  VTT                  VIA                  (12025.0 4325.0) TOP/BOTTOM 
-  VTT                  VIA                  (9975.0 5400.0)  TOP/BOTTOM 
+  VTT                  VIA                  (11025.0 3925.0) TOP/BOTTOM 
+  VTT                  VIA                  (8975.0 5000.0)  TOP/BOTTOM 
   VTT                  VIA                  (6725.0 1400.0)  TOP/BOTTOM 
   VTT                  VIA                  (7850.0 1750.0)  TOP/BOTTOM 
   VTT                  VIA                  (8075.0 1125.0)  TOP/BOTTOM 
@@ -1340,98 +1417,100 @@ Report methodology:
   VTT                  VIA                  (8900.0 1325.0)  TOP/BOTTOM 
   VTT                  VIA                  (8700.0 2175.0)  TOP/BOTTOM 
   VTT                  VIA                  (8700.0 1325.0)  TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10525.0) TOP/BOTTOM 
-  VTT                  VIA                  (6450.0 8575.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6300.0 8650.0)  TOP/BOTTOM 
-  VTT                  VIA                  (15300.0 5725.0) TOP/BOTTOM 
-  VTT                  VIA                  (7860.6 4939.4)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4550.0)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4500.0)  TOP/BOTTOM 
-  VTT                  VIA                  (8250.0 4775.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7400.0 4975.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7425.0 5200.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7550.0 5750.0)  TOP/BOTTOM 
-  VTT                  VIA                  (7764.4 4985.6)  TOP/BOTTOM 
-  VTT                  VIA                  (3875.0 10000.0) TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10025.0) TOP/BOTTOM 
-  VTT                  VIA                  (2700.0 10375.0) TOP/BOTTOM 
-  VTT                  VIA                  (3050.0 10725.0) TOP/BOTTOM 
-  VTT                  VIA                  (3200.0 10325.0) TOP/BOTTOM 
-  VTT                  VIA                  (4000.0 10825.0) TOP/BOTTOM 
-  VTT                  VIA                  (3725.0 10825.0) TOP/BOTTOM 
+  VTT                  VIA                  (6650.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (3375.0 14600.0) TOP/BOTTOM 
+  VTT                  VIA                  (3300.0 14450.0) TOP/BOTTOM 
+  VTT                  VIA                  (5460.6 7614.4)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7225.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7175.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5850.0 7450.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5000.0 7650.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5025.0 7875.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5150.0 8425.0)  TOP/BOTTOM 
+  VTT                  VIA                  (5364.4 7660.6)  TOP/BOTTOM 
+  VTT                  VIA                  (6125.0 12850.0) TOP/BOTTOM 
+  VTT                  VIA                  (6150.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (6500.0 14025.0) TOP/BOTTOM 
+  VTT                  VIA                  (6850.0 13675.0) TOP/BOTTOM 
+  VTT                  VIA                  (6450.0 13525.0) TOP/BOTTOM 
+  VTT                  VIA                  (6950.0 12725.0) TOP/BOTTOM 
+  VTT                  VIA                  (6950.0 13000.0) TOP/BOTTOM 
   VTT                  VIA                  (3775.0 3850.0)  TOP/BOTTOM 
   VTT                  VIA                  (6250.0 9775.0)  TOP/BOTTOM 
   VTT                  VIA                  (6300.0 9850.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5475.0 7900.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6350.0 7975.0)  TOP/BOTTOM 
-  VTT                  VIA                  (6450.0 8075.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5725.0 8400.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5775.0 7900.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4800.0 8425.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4725.0 8125.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4750.0 7875.0)  TOP/BOTTOM 
-  VTT                  VIA                  (4775.0 7825.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5350.0 8325.0)  TOP/BOTTOM 
-  VTT                  VIA                  (5350.0 8175.0)  TOP/BOTTOM 
-  VTT                  VIA                  (11375.0 2275.0) TOP/BOTTOM 
-  VTT                  VIA                  (10775.0 1575.0) TOP/BOTTOM 
-  VTT                  VIA                  (11475.0 5050.0) TOP/BOTTOM 
-  VTT                  VIA                  (10700.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10475.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10150.0 5750.0) TOP/BOTTOM 
-  VTT                  VIA                  (10150.0 4925.0) TOP/BOTTOM 
-  VTT                  VIA                  (10500.0 4950.0) TOP/BOTTOM 
-  VTT                  VIA                  (10675.0 5075.0) TOP/BOTTOM 
-  VTT                  VIA                  (10925.0 5150.0) TOP/BOTTOM 
-  VTT                  VIA                  (11300.0 4825.0) TOP/BOTTOM 
-  VTT                  VIA                  (10800.0 5050.0) TOP/BOTTOM 
-  VTT                  VIA                  (11525.0 4650.0) TOP/BOTTOM 
-  VTT                  VIA                  (12350.0 5300.0) TOP/BOTTOM 
-  VTT                  VIA                  (11975.0 5850.0) TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4625.0) TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4900.0) TOP/BOTTOM 
-  VTT                  VIA                  (10750.0 4725.0) TOP/BOTTOM 
-  VTT                  VIA                  (11264.4 4935.6) TOP/BOTTOM 
-  VTT                  VIA                  (10650.0 4175.0) TOP/BOTTOM 
-  VTT                  VIA                  (10575.0 3575.0) TOP/BOTTOM 
-  VTT                  VIA                  (11075.0 4175.0) TOP/BOTTOM 
-  VTT                  VIA                  (10610.6 4564.4) TOP/BOTTOM 
-  VTT                  VIA                  (9975.0 4350.0)  TOP/BOTTOM 
-  VTT                  VIA                  (10225.0 3250.0) TOP/BOTTOM 
-  VTT                  VIA                  (9900.0 3400.0)  TOP/BOTTOM 
-  VTT                  VIA                  (10650.0 4075.0) TOP/BOTTOM 
-  VTT                  VIA                  (9775.0 3525.0)  TOP/BOTTOM 
-  VTT                  VIA                  (12450.0 4775.0) TOP/BOTTOM 
-  VTT                  VIA                  (14475.0 6400.0) TOP/BOTTOM 
-  VTT                  VIA                  (14975.0 6375.0) TOP/BOTTOM 
-  VTT                  VIA                  (15325.0 5950.0) TOP/BOTTOM 
-  VTT                  VIA                  (14550.0 6100.0) TOP/BOTTOM 
+  VTT                  VIA                  (4050.0 13625.0) TOP/BOTTOM 
+  VTT                  VIA                  (3975.0 14500.0) TOP/BOTTOM 
+  VTT                  VIA                  (3875.0 14600.0) TOP/BOTTOM 
+  VTT                  VIA                  (3550.0 13875.0) TOP/BOTTOM 
+  VTT                  VIA                  (4050.0 13925.0) TOP/BOTTOM 
+  VTT                  VIA                  (3525.0 12950.0) TOP/BOTTOM 
+  VTT                  VIA                  (3825.0 12875.0) TOP/BOTTOM 
+  VTT                  VIA                  (4075.0 12900.0) TOP/BOTTOM 
+  VTT                  VIA                  (4125.0 12925.0) TOP/BOTTOM 
+  VTT                  VIA                  (3625.0 13500.0) TOP/BOTTOM 
+  VTT                  VIA                  (3775.0 13500.0) TOP/BOTTOM 
+  VTT                  VIA                  (7050.0 4500.0)  TOP/BOTTOM 
+  VTT                  VIA                  (6350.0 5100.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10475.0 4650.0) TOP/BOTTOM 
+  VTT                  VIA                  (9700.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9475.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9150.0 5350.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9150.0 4525.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9500.0 4550.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9675.0 4675.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9925.0 4750.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10300.0 4425.0) TOP/BOTTOM 
+  VTT                  VIA                  (9800.0 4650.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10525.0 4250.0) TOP/BOTTOM 
+  VTT                  VIA                  (11350.0 4900.0) TOP/BOTTOM 
+  VTT                  VIA                  (10975.0 5450.0) TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4225.0) TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4500.0) TOP/BOTTOM 
+  VTT                  VIA                  (9750.0 4325.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10264.4 4535.6) TOP/BOTTOM 
+  VTT                  VIA                  (9650.0 3775.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9575.0 3175.0)  TOP/BOTTOM 
+  VTT                  VIA                  (10075.0 3775.0) TOP/BOTTOM 
+  VTT                  VIA                  (9610.6 4164.4)  TOP/BOTTOM 
+  VTT                  VIA                  (8975.0 3950.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9225.0 2850.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8900.0 3000.0)  TOP/BOTTOM 
+  VTT                  VIA                  (9650.0 3675.0)  TOP/BOTTOM 
+  VTT                  VIA                  (8775.0 3125.0)  TOP/BOTTOM 
+  VTT                  VIA                  (11450.0 4375.0) TOP/BOTTOM 
+  VTT                  VIA                  (1850.0 13625.0) TOP/BOTTOM 
+  VTT                  VIA                  (1775.0 14375.0) TOP/BOTTOM 
+  VTT                  VIA                  (2275.0 14350.0) TOP/BOTTOM 
+  VTT                  VIA                  (1850.0 14075.0) TOP/BOTTOM 
   VEE                  VIA                  (7125.0 1425.0)  TOP/BOTTOM 
-  VEE                  VIA                  (2375.0 10600.0) TOP/BOTTOM 
-  VEE                  VIA                  (7874.0 5726.0)  TOP/BOTTOM 
-  VEE                  VIA                  (7776.0 4051.0)  TOP/BOTTOM 
-  VEE                  VIA                  (6825.0 4500.0)  TOP/BOTTOM 
-  VEE                  VIA                  (7074.0 4826.0)  TOP/BOTTOM 
+  VEE                  VIA                  (6725.0 14350.0) TOP/BOTTOM 
+  VEE                  VIA                  (1150.0 13750.0) TOP/BOTTOM 
+  VEE                  VIA                  (1801.0 14499.0) TOP/BOTTOM 
+  VEE                  VIA                  (2175.0 12775.0) TOP/BOTTOM 
+  VEE                  VIA                  (5474.0 8401.0)  TOP/BOTTOM 
+  VEE                  VIA                  (5376.0 6726.0)  TOP/BOTTOM 
+  VEE                  VIA                  (4425.0 7175.0)  TOP/BOTTOM 
+  VEE                  VIA                  (4674.0 7501.0)  TOP/BOTTOM 
   VEE                  VIA                  (8199.0 2249.0)  TOP/BOTTOM 
   VEE                  VIA                  (7375.0 1025.0)  TOP/BOTTOM 
   VEE                  VIA                  (8324.0 1376.0)  TOP/BOTTOM 
   VEE                  VIA                  (5025.0 1700.0)  TOP/BOTTOM 
-  VEE                  VIA                  (3200.0 9750.0)  TOP/BOTTOM 
-  VEE                  VIA                  (4275.0 10425.0) TOP/BOTTOM 
-  VEE                  VIA                  (3525.0 10350.0) TOP/BOTTOM 
+  VEE                  VIA                  (5875.0 13525.0) TOP/BOTTOM 
+  VEE                  VIA                  (6550.0 12450.0) TOP/BOTTOM 
+  VEE                  VIA                  (6475.0 13200.0) TOP/BOTTOM 
   VEE                  VIA                  (3775.0 2850.0)  TOP/BOTTOM 
   VEE                  VIA                  (6400.0 10800.0) TOP/BOTTOM 
-  VEE                  VIA                  (6325.0 8250.0)  TOP/BOTTOM 
-  VEE                  VIA                  (5500.0 7525.0)  TOP/BOTTOM 
-  VEE                  VIA                  (4925.0 8425.0)  TOP/BOTTOM 
-  VEE                  VIA                  (11975.0 1600.0) TOP/BOTTOM 
-  VEE                  VIA                  (10250.0 5450.0) TOP/BOTTOM 
-  VEE                  VIA                  (10950.0 5450.0) TOP/BOTTOM 
-  VEE                  VIA                  (12175.0 5350.0) TOP/BOTTOM 
-  VEE                  VIA                  (11375.0 4575.0) TOP/BOTTOM 
-  VEE                  VIA                  (11000.0 3625.0) TOP/BOTTOM 
-  VEE                  VIA                  (10350.0 4800.0) TOP/BOTTOM 
-  VEE                  VIA                  (10225.0 3525.0) TOP/BOTTOM 
+  VEE                  VIA                  (3700.0 14475.0) TOP/BOTTOM 
+  VEE                  VIA                  (4425.0 13625.0) TOP/BOTTOM 
+  VEE                  VIA                  (3525.0 13075.0) TOP/BOTTOM 
+  VEE                  VIA                  (6375.0 3900.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9250.0 5050.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9950.0 5050.0)  TOP/BOTTOM 
+  VEE                  VIA                  (11175.0 4950.0) TOP/BOTTOM 
+  VEE                  VIA                  (10375.0 4175.0) TOP/BOTTOM 
+  VEE                  VIA                  (10000.0 3225.0) TOP/BOTTOM 
+  VEE                  VIA                  (9350.0 4400.0)  TOP/BOTTOM 
+  VEE                  VIA                  (9225.0 3125.0)  TOP/BOTTOM 
   VCC                  VIA                  (11500.0 14775.0) TOP/BOTTOM 
   VCC                  VIA                  (14725.0 13200.0) TOP/BOTTOM 
   VCC                  VIA                  (10900.0 13200.0) TOP/BOTTOM 
@@ -1441,18 +1520,22 @@ Report methodology:
   VCC                  VIA                  (10925.0 11725.0) TOP/BOTTOM 
   VCC                  VIA                  (13450.0 13200.0) TOP/BOTTOM 
   VCC                  VIA                  (13475.0 11725.0) TOP/BOTTOM 
-  VCC                  VIA                  (2875.0 9300.0)  TOP/BOTTOM 
-  VCC                  VIA                  (2275.0 9422.0)  TOP/BOTTOM 
-  VCC                  VIA                  (5825.0 7675.0)  TOP/BOTTOM 
-  VCC                  VIA                  (6325.0 8350.0)  TOP/BOTTOM 
+  VCC                  VIA                  (5425.0 13850.0) TOP/BOTTOM 
+  VCC                  VIA                  (5547.0 14450.0) TOP/BOTTOM 
+  VCC                  VIA                  (4275.0 13975.0) TOP/BOTTOM 
+  VCC                  VIA                  (3600.0 14475.0) TOP/BOTTOM 
   VCC                  VIA                  (6049.0 9851.0)  TOP/BOTTOM 
   VCC                  VIA                  (6300.0 10800.0) TOP/BOTTOM 
-  VCC                  VIA                  (2525.0 10600.0) TOP/BOTTOM 
-  VCC                  VIA                  (6975.0 4700.0)  TOP/BOTTOM 
-  VCC                  VIA                  (6825.0 4400.0)  TOP/BOTTOM 
+  VCC                  VIA                  (6725.0 14200.0) TOP/BOTTOM 
+  VCC                  VIA                  (1525.0 12625.0) TOP/BOTTOM 
+  VCC                  VIA                  (1500.0 11875.0) TOP/BOTTOM 
+  VCC                  VIA                  (2275.0 12775.0) TOP/BOTTOM 
+  VCC                  VIA                  (1150.0 13650.0) TOP/BOTTOM 
+  VCC                  VIA                  (4575.0 7375.0)  TOP/BOTTOM 
+  VCC                  VIA                  (4425.0 7075.0)  TOP/BOTTOM 
   VCC                  VIA                  (7375.0 925.0)   TOP/BOTTOM 
   VCC                  VIA                  (5650.0 1800.0)  TOP/BOTTOM 
-  VCC                  VIA                  (2600.0 9725.0)  TOP/BOTTOM 
+  VCC                  VIA                  (5850.0 14125.0) TOP/BOTTOM 
   VCC                  VIA                  (3325.0 3025.0)  TOP/BOTTOM 
   VCC                  VIA                  (6525.0 10700.0) TOP/BOTTOM 
   VCC                  VIA                  (10700.0 14325.0) TOP/BOTTOM 
@@ -1460,11 +1543,20 @@ Report methodology:
   VCC                  VIA                  (10574.0 13474.0) TOP/BOTTOM 
   VCC                  VIA                  (11049.0 11299.0) TOP/BOTTOM 
   VCC                  VIA                  (11175.0 10850.0) TOP/BOTTOM 
-  VCC                  VIA                  (12075.0 1600.0) TOP/BOTTOM 
-  VCC                  VIA                  (12000.0 3475.0) TOP/BOTTOM 
-  VCC                  VIA                  (11525.0 4175.0) TOP/BOTTOM 
-  VCC                  VIA                  (12224.0 3874.0) TOP/BOTTOM 
-  VCC                  VIA                  (11100.0 3625.0) TOP/BOTTOM 
+  VCC                  VIA                  (6375.0 3800.0)  TOP/BOTTOM 
+  VCC                  VIA                  (1973.0 10077.0) TOP/BOTTOM 
+  VCC                  VIA                  (1923.0 9477.0)  TOP/BOTTOM 
+  VCC                  VIA                  (1500.0 10700.0) TOP/BOTTOM 
+  VCC                  VIA                  (11000.0 3075.0) TOP/BOTTOM 
+  VCC                  VIA                  (10525.0 3775.0) TOP/BOTTOM 
+  VCC                  VIA                  (11224.0 3474.0) TOP/BOTTOM 
+  VCC                  VIA                  (10100.0 3225.0) TOP/BOTTOM 
+  VCC                  VIA                  (1250.0 13000.0) TOP/BOTTOM 
+  VCC                  VIA                  (1600.0 12850.0) TOP/BOTTOM 
+  VCC                  VIA                  (1725.0 13100.0) TOP/BOTTOM 
+  VCC                  VIA                  (1150.0 13000.0) TOP/BOTTOM 
+  GND                  VIA                  (2300.0 14425.0) TOP/BOTTOM 
+  GND                  VIA                  (1050.0 12875.0) TOP/BOTTOM 
   GND                  VIA                  (11600.0 10850.0) TOP/BOTTOM 
   GND                  VIA                  (11500.0 14700.0) TOP/BOTTOM 
   GND                  VIA                  (11500.0 11325.0) TOP/BOTTOM 
@@ -1493,7 +1585,7 @@ Report methodology:
   GND                  VIA                  (14125.0 13425.0) TOP/BOTTOM 
   GND                  VIA                  (14025.0 13100.0) TOP/BOTTOM 
   GND                  VIA                  (12650.0 14025.0) TOP/BOTTOM 
-  GND                  VIA                  (14050.0 14400.0) TOP/BOTTOM 
+  GND                  VIA                  (14025.0 14400.0) TOP/BOTTOM 
   GND                  VIA                  (12900.0 13475.0) TOP/BOTTOM 
   GND                  VIA                  (12725.0 13100.0) TOP/BOTTOM 
   GND                  VIA                  (12700.0 12550.0) TOP/BOTTOM 
@@ -1524,33 +1616,37 @@ Report methodology:
   GND                  VIA                  (14375.0 12600.0) TOP/BOTTOM 
   GND                  VIA                  (13975.0 12200.0) TOP/BOTTOM 
   GND                  VIA                  (13300.0 12125.0) TOP/BOTTOM 
-  GND                  VIA                  (9825.0 4925.0)  TOP/BOTTOM 
+  GND                  VIA                  (8825.0 4525.0)  TOP/BOTTOM 
   GND                  VIA                  (3550.0 2675.0)  TOP/BOTTOM 
   GND                  VIA                  (3700.0 2600.0)  TOP/BOTTOM 
-  GND                  VIA                  (11550.0 3550.0) TOP/BOTTOM 
-  GND                  VIA                  (12000.0 4225.0) TOP/BOTTOM 
-  GND                  VIA                  (9825.0 4400.0)  TOP/BOTTOM 
-  GND                  VIA                  (10000.0 4700.0) TOP/BOTTOM 
+  GND                  VIA                  (10550.0 3150.0) TOP/BOTTOM 
+  GND                  VIA                  (11000.0 3825.0) TOP/BOTTOM 
+  GND                  VIA                  (8825.0 4000.0)  TOP/BOTTOM 
+  GND                  VIA                  (9000.0 4300.0)  TOP/BOTTOM 
   GND                  VIA                  (6800.0 1700.0)  TOP/BOTTOM 
-  GND                  VIA                  (2675.0 9300.0)  TOP/BOTTOM 
-  GND                  VIA                  (2300.0 10425.0) TOP/BOTTOM 
-  GND                  VIA                  (4500.0 5875.0)  TOP/BOTTOM 
-  GND                  VIA                  (3375.0 5975.0)  TOP/BOTTOM 
-  GND                  VIA                  (11624.0 8449.0) TOP/BOTTOM 
-  GND                  VIA                  (3375.0 5400.0)  TOP/BOTTOM 
+  GND                  VIA                  (5425.0 14050.0) TOP/BOTTOM 
+  GND                  VIA                  (6550.0 14425.0) TOP/BOTTOM 
+  GND                  VIA                  (2275.0 13225.0) TOP/BOTTOM 
+  GND                  VIA                  (1725.0 12975.0) TOP/BOTTOM 
+  GND                  VIA                  (1450.0 13000.0) TOP/BOTTOM 
+  GND                  VIA                  (1350.0 11875.0) TOP/BOTTOM 
+  GND                  VIA                  (3724.0 5824.0)  TOP/BOTTOM 
+  GND                  VIA                  (1925.0 11875.0) TOP/BOTTOM 
   GND                  VIA                  (14600.0 3875.0) TOP/BOTTOM 
   GND                  VIA                  (14550.0 3875.0) TOP/BOTTOM 
-  GND                  VIA                  (7874.0 5674.0)  TOP/BOTTOM 
-  GND                  VIA                  (7724.0 4051.0)  TOP/BOTTOM 
-  GND                  VIA                  (7325.0 4400.0)  TOP/BOTTOM 
-  GND                  VIA                  (7074.0 5099.0)  TOP/BOTTOM 
+  GND                  VIA                  (1801.0 14551.0) TOP/BOTTOM 
+  GND                  VIA                  (1675.0 13650.0) TOP/BOTTOM 
+  GND                  VIA                  (5474.0 8349.0)  TOP/BOTTOM 
+  GND                  VIA                  (5324.0 6726.0)  TOP/BOTTOM 
+  GND                  VIA                  (4925.0 7075.0)  TOP/BOTTOM 
+  GND                  VIA                  (4674.0 7774.0)  TOP/BOTTOM 
   GND                  VIA                  (7925.0 925.0)   TOP/BOTTOM 
   GND                  VIA                  (8251.0 2249.0)  TOP/BOTTOM 
   GND                  VIA                  (8324.0 1324.0)  TOP/BOTTOM 
   GND                  VIA                  (5175.0 1700.0)  TOP/BOTTOM 
-  GND                  VIA                  (2897.5 9377.5)  TOP/BOTTOM 
-  GND                  VIA                  (4374.5 10675.5) TOP/BOTTOM 
-  GND                  VIA                  (4200.0 10425.0) TOP/BOTTOM 
+  GND                  VIA                  (5502.5 13827.5) TOP/BOTTOM 
+  GND                  VIA                  (6800.5 12350.5) TOP/BOTTOM 
+  GND                  VIA                  (6550.0 12525.0) TOP/BOTTOM 
   GND                  VIA                  (2625.0 1475.0)  TOP/BOTTOM 
   GND                  VIA                  (2725.0 1475.0)  TOP/BOTTOM 
   GND                  VIA                  (3725.0 1475.0)  TOP/BOTTOM 
@@ -1563,30 +1659,38 @@ Report methodology:
   GND                  VIA                  (10575.0 13400.0) TOP/BOTTOM 
   GND                  VIA                  (10970.2 11179.8) TOP/BOTTOM 
   GND                  VIA                  (10902.5 10727.5) TOP/BOTTOM 
-  GND                  VIA                  (11125.0 1375.0) TOP/BOTTOM 
-  GND                  VIA                  (12075.0 2075.0) TOP/BOTTOM 
-  GND                  VIA                  (10750.0 5350.0) TOP/BOTTOM 
-  GND                  VIA                  (11450.0 5350.0) TOP/BOTTOM 
-  GND                  VIA                  (11625.0 4775.0) TOP/BOTTOM 
-  GND                  VIA                  (11650.0 5450.0) TOP/BOTTOM 
-  GND                  VIA                  (11025.0 4275.0) TOP/BOTTOM 
-  GND                  VIA                  (12224.0 3926.0) TOP/BOTTOM 
-  GND                  VIA                  (11100.0 4125.0) TOP/BOTTOM 
-  GND                  VIA                  (10250.0 4300.0) TOP/BOTTOM 
-  GND                  VIA                  (10350.0 4300.0) TOP/BOTTOM 
-  GND                  VIA                  (10325.0 4100.0) TOP/BOTTOM 
-  GND                  VIA                  (10525.0 3925.0) TOP/BOTTOM 
-  GND                  VIA                  (10475.0 3400.0) TOP/BOTTOM 
-  GND                  VIA                  (10950.0 3550.0) TOP/BOTTOM 
-  GND                  VIA                  (10875.0 3325.0) TOP/BOTTOM 
-  GND                  VIA                  (14400.0 15550.0) TOP/BOTTOM 
-  GND                  VIA                  (14401.0 15701.0) TOP/BOTTOM 
-  GND                  VIA                  (14749.0 15474.0) TOP/BOTTOM 
+  GND                  VIA                  (6150.0 4750.0)  TOP/BOTTOM 
+  GND                  VIA                  (6850.0 3800.0)  TOP/BOTTOM 
+  GND                  VIA                  (1448.0 10698.0) TOP/BOTTOM 
+  GND                  VIA                  (1975.0 9475.0)  TOP/BOTTOM 
+  GND                  VIA                  (2025.0 10075.0) TOP/BOTTOM 
+  GND                  VIA                  (9750.0 4950.0)  TOP/BOTTOM 
+  GND                  VIA                  (10450.0 4950.0) TOP/BOTTOM 
+  GND                  VIA                  (10625.0 4375.0) TOP/BOTTOM 
+  GND                  VIA                  (10650.0 5050.0) TOP/BOTTOM 
+  GND                  VIA                  (10025.0 3875.0) TOP/BOTTOM 
+  GND                  VIA                  (11224.0 3526.0) TOP/BOTTOM 
+  GND                  VIA                  (10100.0 3725.0) TOP/BOTTOM 
+  GND                  VIA                  (9250.0 3900.0)  TOP/BOTTOM 
+  GND                  VIA                  (9350.0 3900.0)  TOP/BOTTOM 
+  GND                  VIA                  (9325.0 3700.0)  TOP/BOTTOM 
+  GND                  VIA                  (9525.0 3525.0)  TOP/BOTTOM 
+  GND                  VIA                  (9475.0 3000.0)  TOP/BOTTOM 
+  GND                  VIA                  (9950.0 3150.0)  TOP/BOTTOM 
+  GND                  VIA                  (9875.0 2925.0)  TOP/BOTTOM 
+  GND                  VIA                  (3725.0 12125.0) TOP/BOTTOM 
+  GND                  VIA                  (3725.0 12400.0) TOP/BOTTOM 
+  GND                  VIA                  (3825.0 12125.0) TOP/BOTTOM 
+  GND                  VIA                  (3825.0 12400.0) TOP/BOTTOM 
+  GND                  VIA                  (3400.0 15450.0) TOP/BOTTOM 
+  GND                  VIA                  (14400.0 15650.0) TOP/BOTTOM 
+  GND                  VIA                  (14401.0 15576.0) TOP/BOTTOM 
   GND                  VIA                  (14749.0 15374.0) TOP/BOTTOM 
-  GND                  VIA                  (12526.0 15724.0) TOP/BOTTOM 
+  GND                  VIA                  (14749.0 15474.0) TOP/BOTTOM 
   GND                  VIA                  (12651.0 15724.0) TOP/BOTTOM 
-  GND                  VIA                  (13899.0 15674.0) TOP/BOTTOM 
-  GND                  VIA                  (13900.0 15575.0) TOP/BOTTOM 
+  GND                  VIA                  (12551.0 15724.0) TOP/BOTTOM 
+  GND                  VIA                  (13899.0 15549.0) TOP/BOTTOM 
+  GND                  VIA                  (13900.0 15700.0) TOP/BOTTOM 
   GND                  VIA                  (12776.0 15276.0) TOP/BOTTOM 
   GND                  VIA                  (13800.0 15225.0) TOP/BOTTOM 
   GND                  VIA                  (14726.0 15274.0) TOP/BOTTOM 
@@ -1608,48 +1712,49 @@ Report methodology:
   GND                  VIA                  (15151.0 15676.0) TOP/BOTTOM 
   GND                  VIA                  (12399.0 15399.0) TOP/BOTTOM 
   GND                  VIA                  (11225.0 15075.0) TOP/BOTTOM 
-  GND                  VIA                  (6174.0 5151.0)  TOP/BOTTOM 
-  GND                  VIA                  (4600.0 6050.0)  TOP/BOTTOM 
-  GND                  VIA                  (4250.0 5750.0)  TOP/BOTTOM 
-  GND                  VIA                  (3625.0 5275.0)  TOP/BOTTOM 
+  GND                  VIA                  (3774.0 7826.0)  TOP/BOTTOM 
+  GND                  VIA                  (1424.0 12576.0) TOP/BOTTOM 
+  GND                  VIA                  (1275.0 13100.0) TOP/BOTTOM 
+  GND                  VIA                  (1575.0 12750.0) TOP/BOTTOM 
+  GND                  VIA                  (2050.0 12125.0) TOP/BOTTOM 
 
 << Summary >>
-  Total dangling lines:      87
-  Total dangling vias:      303
-  Total antenna vias:       303
+  Total dangling lines:      78
+  Total dangling vias:      332
+  Total antenna vias:       331
 
     Layout Statistics:
     -----------------
-        Components:  Placed 657  Unplaced 260  Total 917
+        Components:  Placed 717  Unplaced 200  Total 917
         Nets:  W/Rats 641  No/Rats 0  Total 641
-        Pins:  W/Rats 2092  No/Rats 0  Unused 497  Unplaced 866  Total 3455
-        Equivalent ICs (1 pin = 1/14 EIC)  246
+        Pins:  W/Rats 2294  No/Rats 0  Unused 487  Unplaced 638  Total 3419
+        Equivalent ICs (1 pin = 1/14 EIC)  244
         RatTs              0
         Router Keepin (in) (0.8000,0.6000) by (16.0000,15.8000)
         Layout area (sq in) 231.04
-        Layout density (sq in/EIC) 0.939
-        Pin density (Pins/sq in) 14.954
+        Layout density (sq in/EIC) 0.947
+        Pin density (Pins/sq in) 14.798
         Average ratlength (in)  0.6
-        Rat density (in/sq in) 3.453
+        Rat density (in/sq in) 4.366
 
     Connection Statistics:        W/Rats      No/Rats      Total
     ----------------------        ------      -------      -----
-        Connections               1553           0         1553
-        Already Connected          872           0          872
-        Missing Connections        681           0          681
-        Dangling Connections                                 87
-        Connection Completion       56.15%       0.00%       56.15%
-        Manh Distance (inches)     797.89
-        Etch Length (inches)       502.58        0.00       502.58
-        Number of vias		   595           0          595
+        Connections               1716           0         1716
+        Already Connected          949           0          949
+        Missing Connections        767           0          767
+        Dangling Connections                                 78
+        Connection Completion       55.30%       0.00%       55.30%
+        Manh Distance (inches)    1008.80
+        Etch Length (inches)       557.74        0.00       557.74
+        Number of vias		   644           0          644
         Vias per Connection          0.68        0.00         0.68
-        Smd pins with attached clines                      1368
+        Smd pins with attached clines                      1460
 
 
- Successfully placed 26 components out of 26
+ Successfully placed 47 components out of 47
 
 
 
-Elapsed time:  0 hr 0 min 7 sec ( 0.00 hr)
-Actual time of completion: Thu Apr 02 11:21:28 2015
+Elapsed time:  0 hr 0 min 12 sec ( 0.00 hr)
+Actual time of completion: Wed Apr 08 19:08:57 2015
 
