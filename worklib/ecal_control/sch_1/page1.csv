@@ -2,21 +2,21 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"GND\G";
-2"GND\G";
-3"UN$1$LEDL$I3$A";
-4"VCC\G";
-5"VTT\G";
-6"GND\G";
-7"VCC\G";
+1"ECAL_ACTIVE";
+2"VEE\G";
+3"VCC\G";
+4"ECAL_ACTIVE_ECL_N";
+5"ECAL_ACTIVE_ECL_P";
+6"EXT_PED_IN";
+7"GT";
 8"EXT_PED_OUT";
-9"GT";
-10"EXT_PED_IN";
-11"ECAL_ACTIVE_ECL_P";
-12"ECAL_ACTIVE_ECL_N";
-13"VCC\G";
-14"VEE\G";
-15"ECAL_ACTIVE";
+9"VCC\G";
+10"GND\G";
+11"VTT\G";
+12"VCC\G";
+13"UN$1$LEDL$I3$A";
+14"GND\G";
+15"GND\G";
 %"MC10H124"
 "1","(-2875,3025)","0","ecl","I1";
 ;
@@ -28,13 +28,13 @@ ROOM"ECAL_CONTROL"
 CDS_LMAN_SYM_OUTLINE"-175,375,175,-200"
 CDS_LIB"ecl";
 "COMMON"
-$PN"8"4;
+$PN"8"12;
 "GND"
-$PN"20"6;
+$PN"20"10;
 "VCC"
-$PN"12"13;
+$PN"12"3;
 "VEE"
-$PN"10"14;
+$PN"10"2;
 "D_OUT* \B"
 $PN"17"0;
 "C_OUT* \B"
@@ -42,7 +42,7 @@ $PN"15"0;
 "B_OUT* \B"
 $PN"4"0;
 "A_OUT* \B"
-$PN"5"12;
+$PN"5"4;
 "D_OUT"
 $PN"18"0;
 "C_OUT"
@@ -50,7 +50,7 @@ $PN"19"0;
 "B_OUT"
 $PN"2"0;
 "A_OUT"
-$PN"3"11;
+$PN"3"5;
 "D_IN"
 $PN"14"0;
 "C_IN"
@@ -58,7 +58,7 @@ $PN"13"0;
 "B_IN"
 $PN"9"0;
 "A_IN"
-$PN"7"15;
+$PN"7"1;
 %"INPORT"
 "1","(-3900,3275)","0","standard","I10";
 ;
@@ -67,7 +67,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"15;
+HDL_PORT"IN"1;
 %"INPORT"
 "1","(-2400,3175)","0","standard","I11";
 ;
@@ -76,7 +76,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"9;
+VHDL_PORT"IN"7;
 %"INPORT"
 "1","(-2450,3100)","0","standard","I12";
 ;
@@ -85,7 +85,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"10;
+VHDL_PORT"IN"6;
 %"OUTPORT"
 "1","(-175,3150)","0","standard","I13";
 ;
@@ -122,9 +122,9 @@ NEGTOL"10%"
 NEEDS_NO_SIZE"TRUE"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25";
 "B<0>"
-$PN"2"6;
+$PN"2"10;
 "A<0>"
-$PN"1"13;
+$PN"1"3;
 %"CSMD0603"
 "1","(-2625,2625)","0","capacitors","I15";
 ;
@@ -152,9 +152,9 @@ CDS_LIB"capacitors"
 TOL"10%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25";
 "B<0>"
-$PN"2"14;
+$PN"2"2;
 "A<0>"
-$PN"1"6;
+$PN"1"10;
 %"CSMD0603"
 "1","(-1325,3575)","0","capacitors","I16";
 ;
@@ -182,9 +182,9 @@ CURRENT"CIMAX"
 TOL_ON_OFF"ON"
 POSTOL"10%";
 "B<0>"
-$PN"2"7;
+$PN"2"9;
 "A<0>"
-$PN"1"2;
+$PN"1"14;
 %"RSMD0805"
 "1","(-1775,1775)","1","resistors","I17";
 ;
@@ -211,9 +211,9 @@ IC"UNDEF"
 NEGTOL"5%"
 NEEDS_NO_SIZE"TRUE";
 "A<0>"
-$PN"1"5;
+$PN"1"11;
 "B<0>"
-$PN"2"10;
+$PN"2"6;
 %"MC10H104"
 "1","(-1350,3025)","0","ecl","I2";
 ;
@@ -225,11 +225,11 @@ ROOM"ECAL_CONTROL"
 CDS_LIB"ecl"
 CDS_LMAN_SYM_OUTLINE"-125,325,125,-200";
 "VEE"
-$PN"10"7;
+$PN"10"9;
 "GND2"
-$PN"20"2;
+$PN"20"14;
 "GND1"
-$PN"2"2;
+$PN"2"14;
 "Q4* \B"
 $PN"12"0;
 "Q4"
@@ -245,17 +245,17 @@ $PN"17"0;
 "B3"
 $PN"14"0;
 "B2"
-$PN"9"10;
+$PN"9"6;
 "B1"
-$PN"7"9;
+$PN"7"7;
 "A4"
 $PN"15"0;
 "A3"
 $PN"13"0;
 "A2"
-$PN"8"12;
+$PN"8"4;
 "A1"
-$PN"5"11;
+$PN"5"5;
 %"LED_L"
 "1","(-3225,3700)","0","misc","I3";
 ;
@@ -269,9 +269,9 @@ NEEDS_NO_SIZE"TRUE"
 TITLE"LED"
 ABBREV"LED";
 "A\NAC"
-$PN"2"3;
+$PN"2"13;
 "B\NAC"
-$PN"1"1;
+$PN"1"15;
 %"RSMD0805"
 "1","(-3225,3500)","1","resistors","I4";
 ;
@@ -298,9 +298,9 @@ TOL"1%"
 POSTOL"5%"
 PACKTYPE"0805";
 "A<0>"
-$PN"1"15;
+$PN"1"1;
 "B<0>"
-$PN"2"3;
+$PN"2"13;
 %"RSMD0805"
 "1","(-1850,2250)","1","resistors","I5";
 ;
@@ -327,9 +327,9 @@ TOL"1%"
 PACKTYPE"0805"
 POSTOL"5%";
 "A<0>"
-$PN"1"5;
+$PN"1"11;
 "B<0>"
-$PN"2"12;
+$PN"2"4;
 %"RSMD0805"
 "1","(-1825,2075)","1","resistors","I6";
 ;
@@ -356,7 +356,7 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors"
 POSTOL"5%";
 "A<0>"
-$PN"1"5;
+$PN"1"11;
 "B<0>"
-$PN"2"11;
+$PN"2"5;
 END.
