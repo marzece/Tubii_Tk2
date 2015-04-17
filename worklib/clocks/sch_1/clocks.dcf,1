@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 35 )
+			( logicalViewRevNum 37 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -330,6 +330,22 @@
 		)
 		( Attribute
 			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "COLOR" )
 			( Description " " )
 			( Value
 				( DataType ( dString ) )
@@ -3650,6 +3666,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "d0"
 					( attribute "PN" "3"
 						( Status sBlockFlattened )
@@ -3867,6 +3887,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "clk"
 					( attribute "PN" "13"
 						( Status sBlockFlattened )
@@ -4006,6 +4030,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "\1\"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -4066,6 +4094,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "\1\"
 					( attribute "PN" "1"
@@ -4128,6 +4160,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "\1\"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -4188,6 +4224,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "\1\"
 					( attribute "PN" "1"
@@ -4250,6 +4290,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "\1\"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -4310,6 +4354,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "\1\"
 					( attribute "PN" "1"
@@ -4433,6 +4481,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -4554,6 +4606,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -4677,6 +4733,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -4798,6 +4858,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -4921,6 +4985,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -5042,6 +5110,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -5165,6 +5237,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -5286,6 +5362,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -5409,6 +5489,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -5530,6 +5614,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -5653,6 +5741,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -5775,6 +5867,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -5835,6 +5931,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "d1"
 					( attribute "PN" "4"
@@ -6042,6 +6142,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -6163,6 +6267,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -6290,6 +6398,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -6416,6 +6528,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -6480,6 +6596,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "cext1"
 					( attribute "PN" "14"
@@ -6691,6 +6811,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -6751,6 +6875,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "cp"
 					( attribute "PN" "11"
@@ -6925,6 +7053,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a"
 					( attribute "PN" "2"
 						( Status sBlockFlattened )
@@ -6989,6 +7121,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a"
 					( attribute "PN" "2"
@@ -7112,6 +7248,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -7233,6 +7373,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -7360,6 +7504,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -7481,6 +7629,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -7608,6 +7760,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -7668,6 +7824,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a_in"
 					( attribute "PN" "7"
@@ -7879,6 +8039,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -8005,6 +8169,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -8065,6 +8233,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "d_a"
 					( attribute "PN" "1"
@@ -8228,6 +8400,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -8349,6 +8525,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -8472,6 +8652,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -8593,6 +8777,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -8716,6 +8904,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -8773,6 +8965,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "\ce*\"
 					( attribute "PN" "24"
@@ -8985,6 +9181,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "cc"
 					( attribute "PN" "12"
 						( Status sBlockFlattened )
@@ -9129,6 +9329,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a1"
 					( attribute "PN" "5"
@@ -9336,6 +9540,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -9457,6 +9665,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -9580,6 +9792,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -9701,6 +9917,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -9824,6 +10044,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -9945,6 +10169,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -10068,6 +10296,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -10189,6 +10421,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -10312,6 +10548,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -10434,6 +10674,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -10555,6 +10799,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -10682,6 +10930,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -10807,6 +11059,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -10934,6 +11190,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -11055,6 +11315,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -11178,6 +11442,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -11299,6 +11567,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -11426,6 +11698,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Status sBlockFlattened )
@@ -11551,6 +11827,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -13828,6 +14108,10 @@
 				( attribute "SEC" "1"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
 				)
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -16329,9 +16613,37 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R362"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R362"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):page1_i92"
@@ -16427,9 +16739,37 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R361"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R361"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):page1_i93"
@@ -16525,9 +16865,37 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R360"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R360"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):page1_i94"
@@ -16623,9 +16991,37 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R359"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R359"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( pin "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1:nc"
@@ -16754,7 +17150,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "default_clk_sel"
@@ -19040,7 +19436,7 @@
 	( BaseCopy "fault_detection"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 15 )
+				( logicalViewRevNum 17 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -19260,6 +19656,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I1" )
 				( pin "d0"
 					( attribute "PN" "3"
@@ -19439,6 +19838,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "clk"
 					( attribute "PN" "13"
@@ -19553,6 +19955,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I5" )
 				( pin "\1\"
 					( attribute "PN" "1"
@@ -19601,6 +20006,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I6" )
 				( pin "\1\"
@@ -19651,6 +20059,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I7" )
 				( pin "\1\"
 					( attribute "PN" "1"
@@ -19699,6 +20110,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I8" )
 				( pin "\1\"
@@ -19749,6 +20163,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "\1\"
 					( attribute "PN" "1"
@@ -19797,6 +20214,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I10" )
 				( pin "\1\"
@@ -19893,6 +20313,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I12" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -19987,6 +20410,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I13" )
 				( pin "a(0)"
@@ -20083,6 +20509,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I14" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -20177,6 +20606,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I15" )
 				( pin "a(0)"
@@ -20273,6 +20705,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I16" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -20367,6 +20802,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I17" )
 				( pin "a(0)"
@@ -20463,6 +20901,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I18" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -20557,6 +20998,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I19" )
 				( pin "a(0)"
@@ -20653,6 +21097,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I20" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -20747,6 +21194,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I21" )
 				( pin "a(0)"
@@ -20843,6 +21293,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I22" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -20938,6 +21391,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I23" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -20986,6 +21442,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I24" )
 				( pin "d1"
@@ -21152,6 +21611,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I25" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -21246,6 +21708,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I26" )
 				( pin "a(0)"
@@ -21345,6 +21810,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I27" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -21443,6 +21911,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I28" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -21494,6 +21965,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I29" )
 				( pin "cext1"
@@ -21663,6 +22137,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I30" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -21711,6 +22188,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I31" )
 				( pin "cp"
@@ -21854,6 +22334,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I32" )
 				( pin "a"
 					( attribute "PN" "2"
@@ -21905,6 +22388,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I33" )
 				( pin "a"
@@ -22001,6 +22487,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I34" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -22095,6 +22584,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I35" )
 				( pin "a(0)"
@@ -22194,6 +22686,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I36" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -22288,6 +22783,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I37" )
 				( pin "a(0)"
@@ -22387,6 +22885,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I38" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -22435,6 +22936,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I39" )
 				( pin "a_in"
@@ -22604,6 +23108,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I40" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -22702,6 +23209,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I41" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -22750,6 +23260,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I42" )
 				( pin "d_a"
@@ -22879,6 +23392,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I43" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -22973,6 +23489,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I44" )
 				( pin "a(0)"
@@ -23069,6 +23588,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I45" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -23163,6 +23685,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I46" )
 				( pin "a(0)"
@@ -23259,6 +23784,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I47" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -23307,6 +23835,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I48" )
 				( pin "\ce*\"
@@ -23482,6 +24013,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I59" )
 				( pin "cc"
 					( attribute "PN" "12"
@@ -23600,6 +24134,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I60" )
 				( pin "a1"
@@ -23766,6 +24303,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I61" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -23860,6 +24400,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I62" )
 				( pin "a(0)"
@@ -23956,6 +24499,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I63" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -24050,6 +24596,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I64" )
 				( pin "a(0)"
@@ -24146,6 +24695,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I65" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -24240,6 +24792,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I66" )
 				( pin "a(0)"
@@ -24336,6 +24891,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I67" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -24430,6 +24988,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I68" )
 				( pin "a(0)"
@@ -24526,6 +25087,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I69" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -24621,6 +25185,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I70" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -24715,6 +25282,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I71" )
 				( pin "a(0)"
@@ -24814,6 +25384,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I72" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -24911,6 +25484,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I73" )
 				( pin "a(0)"
@@ -25010,6 +25586,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I76" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -25104,6 +25683,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I77" )
 				( pin "a(0)"
@@ -25200,6 +25782,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I78" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -25294,6 +25879,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I79" )
 				( pin "a(0)"
@@ -25393,6 +25981,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I81" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -25490,6 +26081,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I82" )
 				( pin "a(0)"
@@ -25589,6 +26183,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I83" )
 				( pin "a(0)"
 					( attribute "PN" "1"
@@ -25672,10 +26269,31 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R362"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R362"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I91" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i92"
@@ -25749,10 +26367,31 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R361"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R361"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I92" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i93"
@@ -25826,10 +26465,31 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R360"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R360"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I93" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.fault_detection(sch_1):page1_i94"
@@ -25903,10 +26563,31 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R359"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R359"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I94" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( bus "@tubii_tk2_lib.fault_detection(sch_1):max_count"
@@ -25938,7 +26619,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "change_clks"
