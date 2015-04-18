@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "power"
     (lastIds
-      (lastInstanceId 47)
+      (lastInstanceId 48)
       (lastNetId 21)
-      (lastInstTermId 97)
+      (lastInstTermId 99)
     )
     (cells
       ("S1" "ostoq047150" "misc" "sym_1"
@@ -84,6 +84,12 @@
         (terms
           ("T33" "a" 0 0 1)
           ("T34" "b" 0 0 2)
+        )
+      )
+      ("S12" "csmd0603" "capacitors" "sym_1"
+        (terms
+          ("T42" "a" 0 0 1)
+          ("T43" "b" 0 0 2)
         )
       )
     )
@@ -772,14 +778,14 @@
           )
         )
       )
-      ("I47" "page1_i48" "S3"
+      ("I48" "page1_i48" "S12"
         (pins
-          ("M96" "T7" 0 0
+          ("M98" "T42" 0 0
             (conn
               ("0" 0 0 "N17" -1 -1)
             )
           )
-          ("M97" "T8" 0 0
+          ("M99" "T43" 0 0
             (conn
               ("0" 0 0 "N1" -1 -1)
             )
