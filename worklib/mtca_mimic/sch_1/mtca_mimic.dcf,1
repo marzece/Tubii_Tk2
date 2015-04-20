@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 23 )
+			( logicalViewRevNum 25 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -344,6 +344,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -504,9 +520,19 @@
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):unnamed_1_csmd0805_i71_a"
 			)
-			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):unnamed_1_hct123_i54_inb1"
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):trig1_out_ttl"
+				( alias ( signalRef "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):trig1_out_ttl") )
+				( attribute "PHYS_NET_NAME" "TRIG1_OUT_TTL"
+					( Origin gPackager )
+				)
+				( objectStatus "trig1_out_ttl" )
 			)
-			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):unnamed_1_hct123_i54_inb2"
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):trig2_out_ttl"
+				( alias ( signalRef "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):trig2_out_ttl") )
+				( attribute "PHYS_NET_NAME" "TRIG2_OUT_TTL"
+					( Origin gPackager )
+				)
+				( objectStatus "trig2_out_ttl" )
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):unnamed_1_hct123_i54_q1"
 			)
@@ -657,6 +683,12 @@
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):vcc15m"
 				( objectStatus "vcc15m" )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):trig1_out_ttl"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):trig2_out_ttl"
+				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -12083,10 +12115,28 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R357"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R357"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I43" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i44"
@@ -12160,10 +12210,28 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R356"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R356"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I44" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i45"
@@ -12237,10 +12305,28 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-5.1K,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R358"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R358"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I45" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( designInst "@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16"
@@ -12269,7 +12355,7 @@
 	( BaseCopy "trigger_logic"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 21 )
+				( logicalViewRevNum 22 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -12279,7 +12365,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "trigger_logic"
@@ -12386,12 +12472,6 @@
 			( signal "@tubii_tk2_lib.trigger_logic(sch_1):unnamed_1_csmd0805_i71_a"
 				( objectStatus "unnamed_1_csmd0805_i71_a" )
 			)
-			( signal "@tubii_tk2_lib.trigger_logic(sch_1):unnamed_1_hct123_i54_inb1"
-				( objectStatus "unnamed_1_hct123_i54_inb1" )
-			)
-			( signal "@tubii_tk2_lib.trigger_logic(sch_1):unnamed_1_hct123_i54_inb2"
-				( objectStatus "unnamed_1_hct123_i54_inb2" )
-			)
 			( signal "@tubii_tk2_lib.trigger_logic(sch_1):unnamed_1_hct123_i54_q1"
 				( objectStatus "unnamed_1_hct123_i54_q1" )
 			)
@@ -12445,6 +12525,12 @@
 			)
 			( signal "@tubii_tk2_lib.trigger_logic(sch_1):unnamed_1_mc10h131_i62_d2"
 				( objectStatus "unnamed_1_mc10h131_i62_d2" )
+			)
+			( signal "@tubii_tk2_lib.trigger_logic(sch_1):trig1_out_ttl"
+				( objectStatus "trig1_out_ttl" )
+			)
+			( signal "@tubii_tk2_lib.trigger_logic(sch_1):trig2_out_ttl"
+				( objectStatus "trig2_out_ttl" )
 			)
 			( gate "@tubii_tk2_lib.trigger_logic(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"

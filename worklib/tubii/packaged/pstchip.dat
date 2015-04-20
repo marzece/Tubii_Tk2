@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 18-Apr-2015 AT 13:57:07 }
+{ Packager-XL run on 20-Apr-2015 AT 11:50:41 }
 primitive '1N4448';
   pin
     'IN':
@@ -25,6 +25,44 @@ primitive '1N4448';
       PART_NAME='1N4448';
       BODY_NAME='1N4448';
       JEDEC_TYPE='DO35';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
+primitive '3006P_TRIMPOT';
+  pin
+    'CW':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'CCW':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUT':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='3006P_TRIMPOT';
+      BODY_NAME='3006P_TRIMPOT';
+      JEDEC_TYPE='3006_TRIMPOT';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
   end_body;
