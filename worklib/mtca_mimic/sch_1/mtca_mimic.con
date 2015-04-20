@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "mtca_mimic"
     (lastIds
-      (lastInstanceId 30)
-      (lastNetId 76)
-      (lastInstTermId 228)
+      (lastInstanceId 31)
+      (lastNetId 77)
+      (lastInstTermId 235)
     )
     (cells
       ("S1" "ad96687" "misc" "sym_1"
@@ -124,6 +124,13 @@
         (terms
           ("T124" "a" 0 0 1)
           ("T125" "b" 0 0 2)
+        )
+      )
+      ("S10" "3006p_trimpot" "resistors" "sym_1"
+        (terms
+          ("T176" "ccw" -1 -1 3)
+          ("T177" "cw" -1 -1 3)
+          ("T178" "out" -1 -1 3)
         )
       )
     )
@@ -337,33 +344,6 @@
           ("M33" "T36" -1 -1
             (conn
               ("0" -1 -1 "N16" -1 -1)
-            )
-          )
-        )
-      )
-      ("I4" "page1_i4" "S3"
-        (pins
-          ("M34" "T36" -1 -1
-            (conn
-              ("0" -1 -1 "N12" -1 -1)
-            )
-          )
-        )
-      )
-      ("I5" "page1_i5" "S3"
-        (pins
-          ("M35" "T36" -1 -1
-            (conn
-              ("0" -1 -1 "N13" -1 -1)
-            )
-          )
-        )
-      )
-      ("I6" "page1_i6" "S3"
-        (pins
-          ("M36" "T36" -1 -1
-            (conn
-              ("0" -1 -1 "N17" -1 -1)
             )
           )
         )
@@ -810,6 +790,25 @@
           ("M194" "T125" 0 0
             (conn
               ("0" 0 0 "N64" -1 -1)
+            )
+          )
+        )
+      )
+      ("I31" "page1_i48" "S10"
+        (pins
+          ("M233" "T176" -1 -1
+            (conn
+              ("0" -1 -1 "N13" -1 -1)
+            )
+          )
+          ("M234" "T177" -1 -1
+            (conn
+              ("0" -1 -1 "N12" -1 -1)
+            )
+          )
+          ("M235" "T178" -1 -1
+            (conn
+              ("0" -1 -1 "N17" -1 -1)
             )
           )
         )
