@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-20T11:53:38</modificationTime>
+    <modificationTime>2015-04-21T13:28:07</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="clocks" view="sch_1">
       <lastids>
-        <instanceid>11</instanceid>
-        <netid>207</netid>
-        <insttermid>496</insttermid>
+        <instanceid>14</instanceid>
+        <netid>219</netid>
+        <insttermid>542</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -402,6 +402,140 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S7</id>
+          <library>misc</library>
+          <name>dr610f1_button</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T204</id>
+              <name>a1</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T205</id>
+              <name>a2</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T206</id>
+              <name>b1</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T207</id>
+              <name>b2</name>
+              <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S8</id>
+          <library>ttl</library>
+          <name>sn74s32</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T237</id>
+              <name>a1</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T238</id>
+              <name>a2</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T239</id>
+              <name>a3</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T240</id>
+              <name>a4</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T241</id>
+              <name>b1</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T242</id>
+              <name>b2</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T243</id>
+              <name>b3</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T244</id>
+              <name>b4</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T245</id>
+              <name>gnd</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T246</id>
+              <name>vcc</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T247</id>
+              <name>y1</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T248</id>
+              <name>y2</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T249</id>
+              <name>y3</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T250</id>
+              <name>y4</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S9</id>
+          <library>resistors</library>
+          <name>rsmd0805</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T251</id>
+              <name>a</name>
+              <direction>input</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T252</id>
+              <name>b</name>
+              <direction>output</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -623,6 +757,14 @@
           <name>unnamed_1_defaultclksel_i1_reseteclp</name>
         </net>
         <net>
+          <id>N218</id>
+          <name>unnamed_1_defaultclksel_i1_reset</name>
+        </net>
+        <net>
+          <id>N219</id>
+          <name>unnamed_1_dr610f1button_i24_b1</name>
+        </net>
+        <net>
           <id>gnd</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -714,7 +856,7 @@
               <id>M13</id>
               <termid>T17</termid>
               <connections>
-                <connection net="N70" />
+                <connection net="N218" />
               </connections>
             </pin>
             <pin>
@@ -770,7 +912,7 @@
               <id>M48</id>
               <termid>T37</termid>
               <connections>
-                <connection net="N70" />
+                <connection net="N218" />
               </connections>
             </pin>
             <pin>
@@ -1539,6 +1681,200 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I12</id>
+          <cellid>S7</cellid>
+          <name>page1_i24</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M510</id>
+              <termid>T204</termid>
+              <connections>
+                <connection net="vcc" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M511</id>
+              <termid>T205</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M512</id>
+              <termid>T206</termid>
+              <connections>
+                <connection net="N219" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M513</id>
+              <termid>T207</termid>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I13</id>
+          <cellid>S8</cellid>
+          <name>page1_i25</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M527</id>
+              <termid>T237</termid>
+              <connections>
+                <connection net="N70" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M528</id>
+              <termid>T238</termid>
+              <connections>
+                <connection net="N219" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M529</id>
+              <termid>T239</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M530</id>
+              <termid>T240</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M531</id>
+              <termid>T241</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M532</id>
+              <termid>T242</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M533</id>
+              <termid>T243</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M534</id>
+              <termid>T244</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M535</id>
+              <termid>T245</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M536</id>
+              <termid>T246</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M537</id>
+              <termid>T247</termid>
+              <connections>
+                <connection net="N218" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M538</id>
+              <termid>T248</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M539</id>
+              <termid>T249</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M540</id>
+              <termid>T250</termid>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I14</id>
+          <cellid>S9</cellid>
+          <name>page1_i26</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M541</id>
+              <termid>T251</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="gnd" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M542</id>
+              <termid>T252</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N219" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1677,7 +2013,9 @@
               <net ref="unnamed_1_changeclks_i3_defaultclk2p"></net>
               <net ref="unnamed_1_defaultclksel_i1_bckpclk"></net>
               <net ref="unnamed_1_defaultclksel_i1_defaultclk"></net>
+              <net ref="unnamed_1_defaultclksel_i1_reset"></net>
               <net ref="unnamed_1_defaultclksel_i1_reseteclp"></net>
+              <net ref="unnamed_1_dr610f1button_i24_b1"></net>
               <net ref="vcc"></net>
               <net ref="vee"></net>
             </nets>
@@ -1693,6 +2031,9 @@
               <instance ref="i12"></instance>
               <instance ref="i13"></instance>
               <instance ref="i16"></instance>
+              <instance ref="i24"></instance>
+              <instance ref="i25"></instance>
+              <instance ref="i26"></instance>
             </instances>
           </page>
         </pages>
