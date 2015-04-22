@@ -1,4 +1,4 @@
-; Packager-XL run on 20-Apr-2015 AT 11:50:41 CONSTRAINTS_VIEW_GENERATED
+; Packager-XL run on 21-Apr-2015 AT 15:18:36 CONSTRAINTS_VIEW_GENERATED
 ( ConstraintFile "tubii"
 	( constraintHeader
 		( objectKey
@@ -8,7 +8,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 175 )
+			( logicalViewRevNum 183 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -2199,7 +2199,7 @@
 			( signal "LE_CLKS"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):le_clks" )
 			)
-			( signal "UNNAMED_1_CLOCKS_I2_RESET"
+			( signal "RESET"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_clocks_i2_reset" )
 			)
 			( signal "UNNAMED_1_DEFAULTCLKSEL_I1_RESE"
@@ -2300,6 +2300,12 @@
 			)
 			( signal "UNNAMED_1_MICROZEDMODULE_I1_M_2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):unnamed_1_microzedmodule_i1_mtcamimictrig2" )
+			)
+			( signal "UNNAMED_1_DEFAULTCLKSEL_I1_RESE"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):unnamed_1_defaultclksel_i1_reset" )
+			)
+			( signal "UNNAMED_1_DR610F1BUTTON_I24_B1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):unnamed_1_dr610f1button_i24_b1" )
 			)
 			( gate "U5"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i1" )
@@ -4928,6 +4934,15 @@
 			)
 			( gate "U149"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i30" )
+			)
+			( gate "U151"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i24" )
+			)
+			( gate "U152"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25" )
+			)
+			( gate "R167"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i26" )
 			)
 			( pin "U5.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i1:\1\" )
@@ -14457,6 +14472,66 @@
 			( pin "U149.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i30:\out\" )
 			)
+			( pin "U151.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i24:a1" )
+			)
+			( pin "U151.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i24:a2" )
+			)
+			( pin "U151.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i24:b1" )
+			)
+			( pin "U151.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i24:b2" )
+			)
+			( pin "U152.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:a1" )
+			)
+			( pin "U152.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:a2" )
+			)
+			( pin "U152.9"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:a3" )
+			)
+			( pin "U152.12"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:a4" )
+			)
+			( pin "U152.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:b1" )
+			)
+			( pin "U152.5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:b2" )
+			)
+			( pin "U152.10"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:b3" )
+			)
+			( pin "U152.13"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:b4" )
+			)
+			( pin "U152.7"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:gnd" )
+			)
+			( pin "U152.14"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:vcc" )
+			)
+			( pin "U152.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:y1" )
+			)
+			( pin "U152.6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:y2" )
+			)
+			( pin "U152.8"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:y3" )
+			)
+			( pin "U152.11"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25:y4" )
+			)
+			( pin "R167.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i26:a(0)" )
+			)
+			( pin "R167.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i26:b(0)" )
+			)
 			( differentialPair "DP_UNNAMED_1_FRONTPORTS_I2_CLK100"
 				( memberType ( signal ) )
 				( objectFlag fObjectLibdefined )
@@ -14984,14 +15059,6 @@
 				( member ( signalRef "UNNAMED_1_MC10E116_I22_D3") )
 				( member ( signalRef "VBB_TRANS") )
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):\DP_2_1\" )
-			)
-			( differentialPair "DP_UNNAMED_1_CSMD0805_I64_B"
-				( memberType ( signal ) )
-				( objectFlag fObjectLibdefined )
-				( objectFlag fObjectRenamed )
-				( member ( signalRef "UNNAMED_1_CSMD0805_I64_B") )
-				( member ( signalRef "UNNAMED_1_CSMD0805_I71_A") )
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):\DP_2\" )
 			)
 			( bus "CNTRL_RAW"
 				( memberType ( signal ) )

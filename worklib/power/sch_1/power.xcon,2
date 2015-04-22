@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-18T14:00:48</modificationTime>
+    <modificationTime>2015-04-21T14:43:12</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="power" view="sch_1">
       <lastids>
-        <instanceid>47</instanceid>
+        <instanceid>48</instanceid>
         <netid>21</netid>
-        <insttermid>97</insttermid>
+        <insttermid>99</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -270,6 +270,30 @@
             </term>
             <term>
               <id>T34</id>
+              <name>b</name>
+              <direction>output</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S12</id>
+          <library>capacitors</library>
+          <name>csmd0603</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T42</id>
+              <name>a</name>
+              <direction>input</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T43</id>
               <name>b</name>
               <direction>output</direction>
               <msb>0</msb>
@@ -2130,8 +2154,8 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I47</id>
-          <cellid>S3</cellid>
+          <id>I48</id>
+          <cellid>S12</cellid>
           <name>page1_i48</name>
           <parameters>
           </parameters>
@@ -2141,8 +2165,8 @@
           </powers>
           <pins>
             <pin>
-              <id>M96</id>
-              <termid>T7</termid>
+              <id>M98</id>
+              <termid>T42</termid>
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
@@ -2150,8 +2174,8 @@
               </connections>
             </pin>
             <pin>
-              <id>M97</id>
-              <termid>T8</termid>
+              <id>M99</id>
+              <termid>T43</termid>
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>

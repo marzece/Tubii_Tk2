@@ -1,9 +1,9 @@
 FILE_TYPE=EXPANDEDPARTLIST;
-{ Packager-XL run on 20-Apr-2015 AT 11:50:41 }
+{ Packager-XL run on 21-Apr-2015 AT 15:18:36 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='TUBII';
- POST_TIME='20-Apr-2015 AT 11:50:41';
+ POST_TIME='21-Apr-2015 AT 15:18:36';
  SOURCE_TOOL='PACKAGER_XL';
 END_DIRECTIVES;
 
@@ -13599,6 +13599,39 @@ page1_i78@resistors.rsmd0805(chips)',
  PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
 
 PART_NAME
+ R167 'RSMD0805-499,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I26@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i26@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i26@resistors.rsmd0805(chips)',
+ PATH='I26',
+ DRAWING='@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(-2850,3850)',
+ ROT='1',
+ VER='1',
+ VALUE='499',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-499,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
  R175 'RSMD0805-50,1%,0805':
  ROOM='FAULT_DETECT';
 
@@ -21136,7 +21169,8 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i26@misc.testpoint_l(chips)',
  PRIM_FILE='./Parts/parts/misc/testpoint_l/chips/chips.prt';
 
 PART_NAME
- TP34 'TESTPOINT_L':;
+ TP34 'TESTPOINT_L':
+ ROOM='MTCA_MIMIC';
 
 SECTION_NUMBER 1
  '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I3@TUBII_TK2_LIB.MTCA_MIMIC(SCH_1):PAGE1_I28@MISC.TESTPOINT_L(CHIPS)':
@@ -21151,12 +21185,14 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i28@misc.testpoint_l(chips)',
  XY='(925,3025)',
  ROT='1',
  VER='1',
+ ROOM='MTCA_MIMIC',
  CDS_LIB='misc',
  CDS_PART_NAME='TESTPOINT_L',
  PRIM_FILE='./Parts/parts/misc/testpoint_l/chips/chips.prt';
 
 PART_NAME
- TP35 'TESTPOINT_L':;
+ TP35 'TESTPOINT_L':
+ ROOM='MTCA_MIMIC';
 
 SECTION_NUMBER 1
  '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I3@TUBII_TK2_LIB.MTCA_MIMIC(SCH_1):PAGE1_I29@MISC.TESTPOINT_L(CHIPS)':
@@ -21171,6 +21207,7 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i29@misc.testpoint_l(chips)',
  XY='(1125,3050)',
  ROT='1',
  VER='1',
+ ROOM='MTCA_MIMIC',
  CDS_LIB='misc',
  CDS_PART_NAME='TESTPOINT_L',
  PRIM_FILE='./Parts/parts/misc/testpoint_l/chips/chips.prt';
@@ -27598,5 +27635,43 @@ e1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i48@resistors.\3006p_trimpot\(chips)
  CDS_LIB='resistors',
  CDS_PART_NAME='3006P_TRIMPOT',
  PRIM_FILE='./Parts/parts/resistors/3006p_trimpot/chips/chips.prt';
+
+PART_NAME
+ U151 'DR610F1_BUTTON':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I24@MISC.DR610F1_BUTTON(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i24@misc.dr610f1_button(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i24@misc.dr610f1_button(chips)',
+ PATH='I24',
+ DRAWING='@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1',
+ PHYS_PAGE='1',
+ XY='(-3125,3950)',
+ ROT='0',
+ VER='1',
+ CDS_LIB='misc',
+ CDS_PART_NAME='DR610F1_BUTTON',
+ PRIM_FILE='./Parts/parts/misc/dr610f1_button/chips/chips.prt';
+
+PART_NAME
+ U152 'SN74S32':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I25@TTL.SN74S32(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25@ttl.sn74s32(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25@ttl.sn74s32(chips)',
+ PATH='I25',
+ DRAWING='@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1',
+ PHYS_PAGE='1',
+ XY='(-2575,3975)',
+ ROT='0',
+ VER='1',
+ CDS_LIB='ttl',
+ CDS_PART_NAME='SN74S32',
+ PRIM_FILE='./Parts/parts/ttl/sn74s32/chips/chips.prt';
 
 END.
