@@ -2,59 +2,59 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"UN$1$AD96687$I1$Q2";
-2"UN$1$AD96687$I1$Q2$1";
-3"LO*";
-4"GT";
-5"DGT";
-6"UN$1$SS22SDP2$I35$P1";
-7"UN$1$RSMD0805$I45$B";
-8"UN$1$SS22SDP2$I34$P2";
-9"UN$1$SS22SDP2$I34$P1";
-10"UN$1$SS22SDP2$I35$P2";
-11"UN$1$AD96687$I1$Q1$1";
-12"UN$1$AD96687$I1$Q1";
-13"UN$1$SS22SDP2$I34$TA2";
-14"GND\G";
-15"VCC\G";
-16"COMP1_THRESH";
-17"TRIG2_OUT_N";
-18"TRIG1_OUT_N";
-19"TRIG2_OUT_P";
-20"TRIG1_OUT_P";
-21"TRIG1_OUT_TTL";
-22"TRIG2_OUT_TTL";
-23"DGT_GATE";
-24"VCC15\G";
-25"UN$1$AD7243$I2$REFIN";
-26"GND\G";
+1"VCC\G";
+2"GND\G";
+3"COMP2_THRESH";
+4"UN$1$CSMD0805$I8$B";
+5"VCC\G";
+6"VEE\G";
+7"UN$1$CSMD0805$I9$B";
+8"PULSE2_ANAL";
+9"PULSE1_ANAL";
+10"GND\G";
+11"VEE\G";
+12"GND\G";
+13"GND\G";
+14"VTT\G";
+15"GND\G";
+16"CLK";
+17"VCC\G";
+18"DATA_RDY";
+19"LE";
+20"DATA";
+21"VCC15M\G";
+22"VEE\G";
+23"UN$1$AD7243$I2$VDD";
+24"UN$1$AD7243$I2$VSS";
+25"GND\G";
+26"UN$1$AD96687$I1$LE2";
 27"UN$1$AD96687$I1$LE1";
-28"UN$1$AD96687$I1$LE2";
-29"GND\G";
-30"UN$1$AD7243$I2$VSS";
-31"UN$1$AD7243$I2$VDD";
-32"VEE\G";
-33"VCC15M\G";
-34"DATA";
-35"LE";
-36"DATA_RDY";
-37"VCC\G";
-38"CLK";
-39"GND\G";
-40"VTT\G";
-41"GND\G";
-42"GND\G";
-43"VEE\G";
-44"GND\G";
-45"PULSE1_ANAL";
-46"PULSE2_ANAL";
-47"UN$1$CSMD0805$I9$B";
-48"VEE\G";
-49"VCC\G";
-50"UN$1$CSMD0805$I8$B";
-51"COMP2_THRESH";
-52"GND\G";
-53"VCC\G";
+28"GND\G";
+29"UN$1$AD7243$I2$REFIN";
+30"VCC15\G";
+31"DGT_GATE";
+32"TRIG2_OUT_TTL";
+33"TRIG1_OUT_TTL";
+34"TRIG1_OUT_P";
+35"TRIG2_OUT_P";
+36"TRIG1_OUT_N";
+37"TRIG2_OUT_N";
+38"COMP1_THRESH";
+39"VCC\G";
+40"GND\G";
+41"UN$1$SS22SDP2$I34$TA2";
+42"UN$1$AD96687$I1$Q1";
+43"UN$1$AD96687$I1$Q1$1";
+44"UN$1$SS22SDP2$I35$P2";
+45"UN$1$SS22SDP2$I34$P1";
+46"UN$1$SS22SDP2$I34$P2";
+47"UN$1$RSMD0805$I45$B";
+48"UN$1$SS22SDP2$I35$P1";
+49"DGT";
+50"GT";
+51"LO*";
+52"UN$1$AD96687$I1$Q2$1";
+53"UN$1$AD96687$I1$Q2";
 %"AD96687"
 "1","(-150,2950)","0","misc","I1";
 ;
@@ -65,37 +65,37 @@ CDS_SEC"1"
 CDS_LIB"misc"
 CDS_LMAN_SYM_OUTLINE"-125,425,125,-300";
 "IN_N2"
-$PN"10"51;
+$PN"10"3;
 "IN_N1"
-$PN"7"16;
+$PN"7"38;
 "IN_P2"
-$PN"9"46;
+$PN"9"8;
 "IN_P1"
-$PN"8"45;
+$PN"8"9;
 "LE2* \B"
 $PN"12"0;
 "LE1* \B"
 $PN"5"0;
 "VS+"
-$PN"11"15;
+$PN"11"39;
 "VS-"
-$PN"6"43;
+$PN"6"11;
 "GND2"
-$PN"14"44;
+$PN"14"10;
 "GND1"
-$PN"3"44;
+$PN"3"10;
 "LE2"
-$PN"13"28;
+$PN"13"26;
 "LE1"
 $PN"4"27;
 "Q2* \B"
-$PN"15"2;
+$PN"15"52;
 "Q1* \B"
-$PN"2"11;
+$PN"2"43;
 "Q2"
-$PN"16"1;
+$PN"16"53;
 "Q1"
-$PN"1"12;
+$PN"1"42;
 %"CSMD0805"
 "1","(-2375,4200)","0","capacitors","I10";
 ;
@@ -122,9 +122,9 @@ TOL_ON_OFF"ON"
 CDS_LIB"capacitors"
 TOL"10%";
 "B<0>"
-$PN"2"31;
+$PN"2"23;
 "A<0>"
-$PN"1"24;
+$PN"1"30;
 %"CSMD0805"
 "1","(-2400,4125)","0","capacitors","I11";
 ;
@@ -151,9 +151,9 @@ CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"10%";
 "B<0>"
-$PN"2"30;
+$PN"2"24;
 "A<0>"
-$PN"1"33;
+$PN"1"21;
 %"INPORT"
 "1","(-3000,4025)","0","standard","I12";
 ;
@@ -161,7 +161,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"34;
+VHDL_PORT"IN"20;
 %"INPORT"
 "1","(-3000,3950)","0","standard","I13";
 ;
@@ -169,7 +169,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"38;
+VHDL_PORT"IN"16;
 %"INPORT"
 "1","(-3000,3850)","0","standard","I14";
 ;
@@ -177,7 +177,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"35;
+VHDL_PORT"IN"19;
 %"INPORT"
 "1","(-3000,3750)","0","standard","I15";
 ;
@@ -185,46 +185,46 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"36;
+VHDL_PORT"IN"18;
 %"TRIGGER_LOGIC"
 "1","(2400,3025)","0","tubii_tk2_lib","I16";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_tk2_lib";
 "TRIG2_OUT_TTL"
-VHDL_MODE"OUT"22;
+VHDL_MODE"OUT"32;
 "TRIG1_OUT_TTL"
-VHDL_MODE"OUT"21;
+VHDL_MODE"OUT"33;
 "POSNEG2_N \B"
-VHDL_MODE"IN"10;
+VHDL_MODE"IN"44;
 "POSNEG2_P"
-VHDL_MODE"IN"6;
+VHDL_MODE"IN"48;
 "POSNEG1_N \B"
-VHDL_MODE"IN"8;
+VHDL_MODE"IN"46;
 "POSNEG1_P"
-VHDL_MODE"IN"9;
+VHDL_MODE"IN"45;
 "OVER_THRESH2_N \B"
-VHDL_MODE"IN"2;
+VHDL_MODE"IN"52;
 "OVER_THRESH2_P"
-VHDL_MODE"IN"1;
+VHDL_MODE"IN"53;
 "OVER_THRESH1_N \B"
-VHDL_MODE"IN"11;
+VHDL_MODE"IN"43;
 "OVER_THRESH1_P"
-VHDL_MODE"IN"12;
+VHDL_MODE"IN"42;
 "LO* \B"
-VHDL_MODE"IN"3;
+VHDL_MODE"IN"51;
 "DGT_GATE"
-VHDL_MODE"IN"23;
+VHDL_MODE"IN"31;
 "GT"
-VHDL_MODE"IN"4;
+VHDL_MODE"IN"50;
 "TRIG1_OUT_P"
-VHDL_MODE"OUT"20;
+VHDL_MODE"OUT"34;
 "TRIG1_OUT_N \B"
-VHDL_MODE"OUT"18;
+VHDL_MODE"OUT"36;
 "TRIG2_OUT_P"
-VHDL_MODE"OUT"19;
+VHDL_MODE"OUT"35;
 "TRIG2_OUT_N \B"
-VHDL_MODE"OUT"17;
+VHDL_MODE"OUT"37;
 %"INPORT"
 "1","(525,2450)","0","standard","I17";
 ;
@@ -232,7 +232,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"4;
+HDL_PORT"IN"50;
 %"INPORT"
 "1","(475,2275)","0","standard","I18";
 ;
@@ -240,7 +240,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"3;
+HDL_PORT"IN"51;
 %"MC10H131"
 "1","(1525,1600)","0","ecl","I19";
 ;
@@ -251,7 +251,7 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-125,350,125,-225"
 CDS_LIB"ecl";
 "VEE"
-$PN"10"32;
+$PN"10"22;
 "CC"
 $PN"12"0;
 "D2"
@@ -265,11 +265,11 @@ $PN"8"0;
 "S2"
 $PN"15"0;
 "S1"
-$PN"7"5;
+$PN"7"49;
 "R2"
 $PN"17"0;
 "R1"
-$PN"5"4;
+$PN"5"50;
 "Q2* \B"
 $PN"18"0;
 "Q1* \B"
@@ -277,11 +277,11 @@ $PN"4"0;
 "Q2"
 $PN"19"0;
 "Q1"
-$PN"3"23;
+$PN"3"31;
 "GND2"
-$PN"20"41;
+$PN"20"13;
 "GND1"
-$PN"2"41;
+$PN"2"13;
 %"AD7243"
 "1","(-1800,3850)","0","misc","I2";
 ;
@@ -295,37 +295,37 @@ TITLE"AD7243"
 ABBREV"AD7243"
 CDS_LIB"misc";
 "AGND"
-$PN"12"52;
+$PN"12"2;
 "REFIN"
-$PN"1"25;
+$PN"1"29;
 "REFOUT"
-$PN"2"25;
+$PN"2"29;
 "DGND"
-$PN"8"52;
+$PN"8"2;
 "ROFS"
-$PN"13"25;
+$PN"13"29;
 "SDIN"
-$PN"6"34;
+$PN"6"20;
 "SCLK"
-$PN"5"38;
+$PN"5"16;
 "SYNC* \B"
-$PN"7"35;
+$PN"7"19;
 "VSS"
-$PN"15"30;
+$PN"15"24;
 "VDD"
-$PN"16"31;
+$PN"16"23;
 "DCEN"
-$PN"10"39;
+$PN"10"15;
 "VOUT"
-$PN"14"16;
+$PN"14"38;
 "SDO"
 $PN"11"0;
 "LDAC* \B"
-$PN"9"36;
+$PN"9"18;
 "CLR* \B"
-$PN"3"53;
+$PN"3"1;
 "BNCP"
-$PN"4"37;
+$PN"4"17;
 %"INPORT"
 "1","(450,1725)","0","standard","I20";
 ;
@@ -333,7 +333,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"5;
+HDL_PORT"IN"49;
 %"CSMD0603"
 "1","(1450,2200)","0","capacitors","I21";
 ;
@@ -360,9 +360,9 @@ TC"0"
 CURRENT"CIMAX"
 TOL_ON_OFF"ON";
 "B<0>"
-$PN"2"32;
+$PN"2"22;
 "A<0>"
-$PN"1"41;
+$PN"1"13;
 %"OUTPORT"
 "1","(4250,3250)","0","standard","I22";
 ;
@@ -370,7 +370,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"20;
+VHDL_PORT"OUT"34;
 %"OUTPORT"
 "1","(4250,3150)","0","standard","I23";
 ;
@@ -378,7 +378,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"18;
+VHDL_PORT"OUT"36;
 %"OUTPORT"
 "1","(4250,2800)","0","standard","I24";
 ;
@@ -386,7 +386,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"19;
+VHDL_PORT"OUT"35;
 %"OUTPORT"
 "1","(4250,2725)","0","standard","I25";
 ;
@@ -394,7 +394,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"17;
+HDL_PORT"OUT"37;
 %"TESTPOINT_L"
 "1","(625,3750)","1","misc","I26";
 ;
@@ -406,7 +406,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"11;
+$PN"1"43;
 %"TESTPOINT_L"
 "1","(575,3850)","1","misc","I27";
 ;
@@ -418,7 +418,7 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"12;
+$PN"1"42;
 %"TESTPOINT_L"
 "1","(925,3025)","1","misc","I28";
 ;
@@ -431,7 +431,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"2;
+$PN"1"52;
 %"TESTPOINT_L"
 "1","(1125,3050)","1","misc","I29";
 ;
@@ -444,7 +444,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"1;
+$PN"1"53;
 %"TESTPOINT_L"
 "1","(-1000,4150)","1","misc","I3";
 ;
@@ -456,7 +456,7 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"16;
+$PN"1"38;
 %"INPORT"
 "1","(-950,3100)","0","standard","I30";
 ;
@@ -464,7 +464,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"45;
+HDL_PORT"IN"9;
 %"INPORT"
 "1","(-975,2800)","0","standard","I31";
 ;
@@ -472,7 +472,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"46;
+HDL_PORT"IN"8;
 %"SS22SDP2"
 "1","(1525,3925)","2","misc","I34";
 ;
@@ -483,17 +483,17 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-150,150,150,-150"
 CDS_LIB"misc";
 "T_B2"
-$PN"6"7;
+$PN"6"47;
 "T_B1"
-$PN"3"13;
+$PN"3"41;
 "T_A2"
-$PN"4"13;
+$PN"4"41;
 "T_A1"
-$PN"1"7;
+$PN"1"47;
 "P1"
-$PN"2"9;
+$PN"2"45;
 "P2"
-$PN"5"8;
+$PN"5"46;
 %"SS22SDP2"
 "1","(1525,3575)","2","misc","I35";
 ;
@@ -504,17 +504,17 @@ CDS_SEC"1"
 CDS_LIB"misc"
 CDS_LMAN_SYM_OUTLINE"-150,150,150,-150";
 "T_B2"
-$PN"6"7;
+$PN"6"47;
 "T_B1"
-$PN"3"13;
+$PN"3"41;
 "T_A2"
-$PN"4"13;
+$PN"4"41;
 "T_A1"
-$PN"1"7;
+$PN"1"47;
 "P1"
-$PN"2"6;
+$PN"2"48;
 "P2"
-$PN"5"10;
+$PN"5"44;
 %"TESTPOINT_L"
 "1","(2275,4000)","0","misc","I36";
 ;
@@ -526,7 +526,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"9;
+$PN"1"45;
 %"TESTPOINT_L"
 "1","(2275,3900)","0","misc","I37";
 ;
@@ -538,7 +538,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"8;
+$PN"1"46;
 %"TESTPOINT_L"
 "1","(2275,3800)","0","misc","I38";
 ;
@@ -550,7 +550,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"6;
+$PN"1"48;
 %"TESTPOINT_L"
 "1","(2275,3700)","0","misc","I39";
 ;
@@ -562,7 +562,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"10;
+$PN"1"44;
 %"RSMD0805"
 "1","(1150,1575)","1","resistors","I40";
 ;
@@ -588,9 +588,9 @@ MAX_TEMP"RTMAX"
 POWER"0.1"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
 "A<0>"
-$PN"1"40;
+$PN"1"14;
 "B<0>"
-$PN"2"5;
+$PN"2"49;
 %"CSMD0603"
 "1","(-250,3550)","0","capacitors","I41";
 ;
@@ -617,9 +617,9 @@ NEEDS_NO_SIZE"TRUE"
 POSTOL"10%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25";
 "B<0>"
-$PN"2"15;
+$PN"2"39;
 "A<0>"
-$PN"1"44;
+$PN"1"10;
 %"CSMD0603"
 "1","(-275,2475)","0","capacitors","I42";
 ;
@@ -646,9 +646,9 @@ TC"0"
 CURRENT"CIMAX"
 TOL_ON_OFF"ON";
 "B<0>"
-$PN"2"43;
+$PN"2"11;
 "A<0>"
-$PN"1"42;
+$PN"1"12;
 %"RSMD0805"
 "1","(-700,2925)","0","resistors","I43";
 ;
@@ -674,9 +674,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"29;
+$PN"1"25;
 "B<0>"
-$PN"2"28;
+$PN"2"26;
 %"RSMD0805"
 "1","(-700,3225)","0","resistors","I44";
 ;
@@ -702,7 +702,7 @@ PACKTYPE"0805"
 CDS_LIB"resistors"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
 "A<0>"
-$PN"1"26;
+$PN"1"28;
 "B<0>"
 $PN"2"27;
 %"RSMD0805"
@@ -730,9 +730,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"14;
+$PN"1"40;
 "B<0>"
-$PN"2"7;
+$PN"2"47;
 %"OUTPORT"
 "1","(4200,2475)","0","standard","I46";
 ;
@@ -740,7 +740,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"21;
+HDL_PORT"OUT"33;
 %"OUTPORT"
 "1","(4200,2375)","0","standard","I47";
 ;
@@ -748,7 +748,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"22;
+HDL_PORT"OUT"32;
 %"3006P_TRIMPOT"
 "1","(-2000,2450)","5","resistors","I48";
 ;
@@ -759,11 +759,11 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-100,25,125,-25"
 CDS_LIB"resistors";
 "CW"
-$PN"3"50;
+$PN"3"4;
 "CCW"
-$PN"1"47;
+$PN"1"7;
 "OUT"
-$PN"2"51;
+$PN"2"3;
 %"TESTPOINT_L"
 "1","(-1350,2225)","5","misc","I7";
 ;
@@ -775,7 +775,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"51;
+$PN"1"3;
 %"CSMD0805"
 "1","(-2250,2800)","0","capacitors","I8";
 ;
@@ -802,9 +802,9 @@ CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"10%";
 "B<0>"
-$PN"2"50;
+$PN"2"4;
 "A<0>"
-$PN"1"49;
+$PN"1"5;
 %"CSMD0805"
 "1","(-2250,2150)","0","capacitors","I9";
 ;
@@ -831,7 +831,7 @@ CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"10%";
 "B<0>"
-$PN"2"47;
+$PN"2"7;
 "A<0>"
-$PN"1"48;
+$PN"1"6;
 END.

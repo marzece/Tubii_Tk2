@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-22T23:35:30</modificationTime>
+    <modificationTime>2015-04-23T00:42:41</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
       <lastids>
         <instanceid>3</instanceid>
-        <netid>61</netid>
+        <netid>63</netid>
         <insttermid>306</insttermid>
       </lastids>
       <cells>
@@ -763,12 +763,6 @@
           <direction>output</direction>
         </net>
         <net>
-          <id>N49</id>
-          <name>read_cntrl_reg_bit</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
           <id>N50</id>
           <name>bckp_clk_in_use</name>
           <scope>interface</scope>
@@ -791,6 +785,12 @@
           <name>mtca_mimic_trig2</name>
           <scope>interface</scope>
           <direction>input</direction>
+        </net>
+        <net>
+          <id>N63</id>
+          <name>read_cntrl_reg_bit</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N23</id>
@@ -944,7 +944,6 @@
               <id>M18</id>
               <termid>T18</termid>
               <connections>
-                <connection net="N12" netmsb="2" netlsb="2" />
               </connections>
             </pin>
             <pin>
@@ -958,7 +957,6 @@
               <id>M20</id>
               <termid>T20</termid>
               <connections>
-                <connection net="N12" netmsb="1" netlsb="1" />
               </connections>
             </pin>
             <pin>
@@ -985,7 +983,6 @@
               <id>M24</id>
               <termid>T24</termid>
               <connections>
-                <connection net="N12" netmsb="0" netlsb="0" />
               </connections>
             </pin>
             <pin>
@@ -1149,6 +1146,7 @@
               <id>M49</id>
               <termid>T49</termid>
               <connections>
+                <connection net="N12" netmsb="0" netlsb="0" />
               </connections>
             </pin>
             <pin>
@@ -1176,6 +1174,7 @@
               <id>M53</id>
               <termid>T53</termid>
               <connections>
+                <connection net="N12" netmsb="1" netlsb="1" />
               </connections>
             </pin>
             <pin>
@@ -1189,6 +1188,7 @@
               <id>M55</id>
               <termid>T55</termid>
               <connections>
+                <connection net="N12" netmsb="2" netlsb="2" />
               </connections>
             </pin>
             <pin>
@@ -1644,7 +1644,7 @@
               <id>M222</id>
               <termid>T18</termid>
               <connections>
-                <connection net="N5" />
+                <connection net="N21" />
               </connections>
             </pin>
             <pin>
@@ -1658,7 +1658,7 @@
               <id>M224</id>
               <termid>T20</termid>
               <connections>
-                <connection net="N49" />
+                <connection net="N15" netmsb="4" netlsb="4" />
               </connections>
             </pin>
             <pin>
@@ -1686,7 +1686,7 @@
               <id>M228</id>
               <termid>T24</termid>
               <connections>
-                <connection net="N26" />
+                <connection net="N15" netmsb="5" netlsb="5" />
               </connections>
             </pin>
             <pin>
@@ -1700,7 +1700,7 @@
               <id>M230</id>
               <termid>T26</termid>
               <connections>
-                <connection net="N51" />
+                <connection net="N15" netmsb="6" netlsb="6" />
               </connections>
             </pin>
             <pin>
@@ -1727,7 +1727,7 @@
               <id>M234</id>
               <termid>T30</termid>
               <connections>
-                <connection net="N15" netmsb="4" netlsb="4" />
+                <connection net="N5" />
               </connections>
             </pin>
             <pin>
@@ -1740,7 +1740,7 @@
               <id>M236</id>
               <termid>T32</termid>
               <connections>
-                <connection net="N15" netmsb="5" netlsb="5" />
+                <connection net="N63" />
               </connections>
             </pin>
             <pin>
@@ -1767,7 +1767,7 @@
               <id>M240</id>
               <termid>T36</termid>
               <connections>
-                <connection net="N15" netmsb="6" netlsb="6" />
+                <connection net="N26" />
               </connections>
             </pin>
             <pin>
@@ -1807,7 +1807,6 @@
               <id>M246</id>
               <termid>T42</termid>
               <connections>
-                <connection net="N21" />
               </connections>
             </pin>
             <pin>
@@ -1841,6 +1840,7 @@
               <id>M251</id>
               <termid>T47</termid>
               <connections>
+                <connection net="N51" />
               </connections>
             </pin>
             <pin>
@@ -2219,6 +2219,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="bckp_clk_in_use">
             <pageScope number="1">

@@ -8,8 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 16)
-      (lastNetId 260)
-      (lastInstTermId 900)
+      (lastNetId 267)
+      (lastInstTermId 955)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -39,11 +39,11 @@
           ("T729" "spkr" -1 -1 2)
           ("T730" "generic_pulse" -1 -1 2)
           ("T731" "generic_delay_out" -1 -1 2)
-          ("T732" "read_cntrl_reg_bit" -1 -1 2)
           ("T858" "bckp_clk_in_use" -1 -1 1)
           ("T865" "reset_clk" -1 -1 2)
           ("T994" "mtca_mimic_trig1" -1 -1 1)
           ("T995" "mtca_mimic_trig2" -1 -1 1)
+          ("T1119" "read_cntrl_reg_bit" -1 -1 2)
         )
       )
       ("S3" "clocks" "tubii_tk2_lib" "sym_1"
@@ -470,11 +470,6 @@
               ("0" -1 -1 "N81" -1 -1)
             )
           )
-          ("M619" "T732" -1 -1
-            (conn
-              ("0" -1 -1 "N155" -1 -1)
-            )
-          )
           ("M672" "T858" -1 -1
             (conn
               ("0" -1 -1 "N224" -1 -1)
@@ -493,6 +488,11 @@
           ("M900" "T995" -1 -1
             (conn
               ("0" -1 -1 "N260" -1 -1)
+            )
+          )
+          ("M955" "T1119" -1 -1
+            (conn
+              ("0" -1 -1 "N155" -1 -1)
             )
           )
         )
