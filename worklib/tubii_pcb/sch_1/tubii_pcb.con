@@ -9,7 +9,7 @@
     (lastIds
       (lastInstanceId 16)
       (lastNetId 267)
-      (lastInstTermId 955)
+      (lastInstTermId 956)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -30,7 +30,6 @@
           ("T720" "clk100_in" -1 -1 1)
           ("T721" "cntrl_reg_chk" -1 -1 1)
           ("T722" "ext_trig" 15 0 1)
-          ("T723" "gt" -1 -1 1)
           ("T724" "smellie_pre_delay" -1 -1 1)
           ("T725" "sync" -1 -1 1)
           ("T726" "sync24" -1 -1 1)
@@ -44,6 +43,7 @@
           ("T994" "mtca_mimic_trig1" -1 -1 1)
           ("T995" "mtca_mimic_trig2" -1 -1 1)
           ("T1119" "read_cntrl_reg_bit" -1 -1 2)
+          ("T1120" "gt" -1 -1 1)
         )
       )
       ("S3" "clocks" "tubii_tk2_lib" "sym_1"
@@ -425,11 +425,6 @@
               ("0" 15 0 "N162" 15 0)
             )
           )
-          ("M610" "T723" -1 -1
-            (conn
-              ("0" -1 -1 "N132" -1 -1)
-            )
-          )
           ("M611" "T724" -1 -1
             (conn
               ("0" -1 -1 "N199" -1 -1)
@@ -493,6 +488,11 @@
           ("M955" "T1119" -1 -1
             (conn
               ("0" -1 -1 "N155" -1 -1)
+            )
+          )
+          ("M956" "T1120" -1 -1
+            (conn
+              ("0" -1 -1 "N132" -1 -1)
             )
           )
         )
