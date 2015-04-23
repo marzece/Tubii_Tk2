@@ -8,8 +8,8 @@
   (design "tubii"
     (lastIds
       (lastInstanceId 3)
-      (lastNetId 102)
-      (lastInstTermId 250)
+      (lastNetId 110)
+      (lastInstTermId 261)
     )
     (cells
       ("S1" "tubii_pcb" "tubii_tk2_lib" "sym_1"
@@ -96,7 +96,6 @@
           ("T134" "ecl_to_ttl_out" -1 -1 1)
           ("T135" "mtca_mimic1_out_n" -1 -1 1)
           ("T136" "mtca_mimic1_out_p" -1 -1 1)
-          ("T137" "mtca_mimic1_pulse_anal" -1 -1 2)
           ("T138" "mtca_mimic2_out_n" -1 -1 1)
           ("T139" "mtca_mimic2_out_p" -1 -1 1)
           ("T142" "smellie_delay_in" -1 -1 2)
@@ -142,6 +141,7 @@
           ("T204" "lo_star_out_n" -1 -1 1)
           ("T205" "lo_star_out_p" -1 -1 1)
           ("T206" "tubii_rt_out" -1 -1 1)
+          ("T245" "mtca_mimic1_pulse_anal" -1 -1 2)
         )
       )
       ("S3" "back_ports" "tubii_tk2_lib" "sym_1"
@@ -218,7 +218,6 @@
       ("vcc15" "vcc15" -1 -1 2  inherited)
       ("vcc15m" "vcc15m" -1 -1 2  inherited)
       ("v3p3" "v3p3" -1 -1 2  inherited)
-      ("gng" "gng" -1 -1 2  inherited)
     )
 
     (instances
@@ -618,11 +617,6 @@
               ("0" -1 -1 "N56" -1 -1)
             )
           )
-          ("M177" "T137" -1 -1
-            (conn
-              ("0" -1 -1 "N57" -1 -1)
-            )
-          )
           ("M178" "T138" -1 -1
             (conn
               ("0" -1 -1 "N58" -1 -1)
@@ -846,6 +840,11 @@
           ("M238" "T206" -1 -1
             (conn
               ("0" -1 -1 "N94" -1 -1)
+            )
+          )
+          ("M261" "T245" -1 -1
+            (conn
+              ("0" -1 -1 "N57" -1 -1)
             )
           )
         )

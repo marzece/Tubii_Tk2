@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-07T19:49:26</modificationTime>
+    <modificationTime>2015-04-23T09:59:49</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="general_utilities_ports" view="sch_1">
       <lastids>
-        <instanceid>14</instanceid>
-        <netid>10</netid>
-        <insttermid>14</insttermid>
+        <instanceid>22</instanceid>
+        <netid>16</netid>
+        <insttermid>22</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -40,18 +40,6 @@
           <direction>output</direction>
         </net>
         <net>
-          <id>N2</id>
-          <name>generic_delay_out</name>
-          <scope>interface</scope>
-          <direction>input</direction>
-        </net>
-        <net>
-          <id>N3</id>
-          <name>generic_pulse_out</name>
-          <scope>interface</scope>
-          <direction>input</direction>
-        </net>
-        <net>
           <id>N5</id>
           <name>pulse_inv_in</name>
           <scope>interface</scope>
@@ -60,30 +48,6 @@
         <net>
           <id>N6</id>
           <name>pulse_inv_out</name>
-          <scope>interface</scope>
-          <direction>input</direction>
-        </net>
-        <net>
-          <id>N7</id>
-          <name>ribbon_pulse_in_n</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
-          <id>N8</id>
-          <name>ribbon_pulse_in_p</name>
-          <scope>interface</scope>
-          <direction>output</direction>
-        </net>
-        <net>
-          <id>N9</id>
-          <name>ribbon_pulse_out_n</name>
-          <scope>interface</scope>
-          <direction>input</direction>
-        </net>
-        <net>
-          <id>N10</id>
-          <name>ribbon_pulse_out_p</name>
           <scope>interface</scope>
           <direction>input</direction>
         </net>
@@ -104,174 +68,6 @@
       <netinterfaces>
       </netinterfaces>
       <instances>
-        <instance>
-          <id>I1</id>
-          <cellid>S2</cellid>
-          <name>page1_i1</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M1</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N3" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I2</id>
-          <cellid>S2</cellid>
-          <name>page1_i2</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M2</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N4" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I3</id>
-          <cellid>S2</cellid>
-          <name>page1_i3</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M3</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N2" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I4</id>
-          <cellid>S2</cellid>
-          <name>page1_i4</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M4</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N4" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I5</id>
-          <cellid>S2</cellid>
-          <name>page1_i5</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M5</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N10" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I6</id>
-          <cellid>S2</cellid>
-          <name>page1_i6</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M6</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N9" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
         <instance>
           <id>I7</id>
           <cellid>S2</cellid>
@@ -385,62 +181,6 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I11</id>
-          <cellid>S2</cellid>
-          <name>page1_i11</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M11</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N8" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I12</id>
-          <cellid>S2</cellid>
-          <name>page1_i12</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M12</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N7" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I13</id>
           <cellid>S2</cellid>
           <name>page1_i13</name>
@@ -512,18 +252,6 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
-          <netScope ref="generic_delay_out">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>input</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="generic_pulse_out">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>input</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
@@ -541,30 +269,6 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
-          <netScope ref="ribbon_pulse_in_n">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>output</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="ribbon_pulse_in_p">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>output</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="ribbon_pulse_out_n">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>input</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="ribbon_pulse_out_p">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>input</direction>
-            </pageScope>
-          </netScope>
         </netScopes>
         <pages>
           <page number="1">
@@ -572,29 +276,15 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="generic_delay_in"></net>
-              <net ref="generic_delay_out"></net>
-              <net ref="generic_pulse_out"></net>
               <net ref="gnd"></net>
               <net ref="pulse_inv_in"></net>
               <net ref="pulse_inv_out"></net>
-              <net ref="ribbon_pulse_in_n"></net>
-              <net ref="ribbon_pulse_in_p"></net>
-              <net ref="ribbon_pulse_out_n"></net>
-              <net ref="ribbon_pulse_out_p"></net>
             </nets>
             <instances>
-              <instance ref="i1"></instance>
-              <instance ref="i2"></instance>
-              <instance ref="i3"></instance>
-              <instance ref="i4"></instance>
-              <instance ref="i5"></instance>
-              <instance ref="i6"></instance>
               <instance ref="i7"></instance>
               <instance ref="i8"></instance>
               <instance ref="i9"></instance>
               <instance ref="i10"></instance>
-              <instance ref="i11"></instance>
-              <instance ref="i12"></instance>
               <instance ref="i13"></instance>
               <instance ref="i14"></instance>
             </instances>

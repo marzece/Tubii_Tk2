@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-06T14:26:25</modificationTime>
+    <modificationTime>2015-04-23T10:29:53</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -44,12 +44,6 @@
           <name>mtca_mimic1_out_p</name>
           <scope>interface</scope>
           <direction>input</direction>
-        </net>
-        <net>
-          <id>N4</id>
-          <name>mtca_mimic1_pulse_anal</name>
-          <scope>interface</scope>
-          <direction>output</direction>
         </net>
         <net>
           <id>N5</id>
@@ -199,62 +193,6 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I5</id>
-          <cellid>S2</cellid>
-          <name>page1_i15</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M5</id>
-              <termid>T8</termid>
-              <connections>
-                <connection net="N4" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I6</id>
-          <cellid>S2</cellid>
-          <name>page1_i16</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M6</id>
-              <termid>T8</termid>
-              <connections>
-                <connection net="N1" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I7</id>
           <cellid>S2</cellid>
           <name>page1_i17</name>
@@ -318,7 +256,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="gnd">
             <pageScope number="1">
@@ -335,12 +272,6 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="mtca_mimic1_pulse_anal">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="mtca_mimic2_out_n">
@@ -370,7 +301,6 @@
               <net ref="gnd"></net>
               <net ref="mtca_mimic1_out_n"></net>
               <net ref="mtca_mimic1_out_p"></net>
-              <net ref="mtca_mimic1_pulse_anal"></net>
               <net ref="mtca_mimic2_out_n"></net>
               <net ref="mtca_mimic2_out_p"></net>
               <net ref="mtca_mimic2_pulse_anal"></net>
@@ -380,8 +310,6 @@
               <instance ref="i8"></instance>
               <instance ref="i11"></instance>
               <instance ref="i12"></instance>
-              <instance ref="i15"></instance>
-              <instance ref="i16"></instance>
               <instance ref="i17"></instance>
               <instance ref="i18"></instance>
             </instances>

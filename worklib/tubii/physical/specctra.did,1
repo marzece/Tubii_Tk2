@@ -448,20 +448,20 @@ rule class _difpr_DP_UNNAMED_1_CHANGECLKS_I3_DEFAULTCLK2 (neck_down_width 5)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_MTCDLO (neck_down_width 5)
 define (drcv_group _DRgrp_LO_STAR_RAW
- (drcv U12-4 U11-5 )
  (drcv U12-4 U11-27 )
- (drcv U12-3 U11-5 )
+ (drcv U12-4 U11-5 )
+ (drcv U12-3 U11-27 )
 )
 define (drcv_group _DRgrp_UNNAMED_1_MC10E116_I2_D0
- (drcv U11-2 U11-6 )
  (drcv U11-2 U11-28 )
+ (drcv U11-2 U11-6 )
  (drcv U11-2 U11-4 )
 )
 define (drcv_groupset _DRgrpset_LO_STAR_RAW_UNNAMED_1_MC10E116_I2_D0 _DRgrp_LO_STAR_RAW _DRgrp_UNNAMED_1_MC10E116_I2_D0)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_FRONTPORTS_I2_ECLTOLVDSIN (neck_down_width 5)
 define (drcv_group _DRgrp_VBB_TRANS
- (drcv U55-2 U55-28 )
+ (drcv U55-2 U55-26 )
 )
 define (drcv_group _DRgrp_UNNAMED_1_FRONTPORTS_I2_ECLTOLV
  (drcv R101-2 U55-5 )
@@ -547,7 +547,7 @@ define (drcv_groupset _DRgrpset_RIB5_N_RIB5_P _DRgrp_RIB5_N _DRgrp_RIB5_P)
 rule class _difpr_DP_UNNAMED_1_CSMD0805_I64_B (diffpair_line_width 7)
 rule class _difpr_DP_UNNAMED_1_CSMD0805_I64_B (neck_down_width 5)
 define (drcv_group _DRgrp_UNNAMED_1_CSMD0805_I64_B
- (drcv U43-2 U43-4 )
+ (drcv U43-2 U43-6 )
 )
 define (drcv_group _DRgrp_UNNAMED_1_CSMD0805_I70_B
  (drcv C59-2 U43-5 )
@@ -577,7 +577,7 @@ define (drcv_group _DRgrp_RIB8_N
  (drcv U53-7 U52-15 )
 )
 define (drcv_group _DRgrp_RIB8_P
- (drcv U53-8 R92-2 )
+ (drcv R92-2 U53-8 )
 )
 define (drcv_groupset _DRgrpset_RIB8_N_RIB8_P _DRgrp_RIB8_N _DRgrp_RIB8_P)
 rule class _difpr_DP_RIB9 (diffpair_line_width 7)
@@ -669,13 +669,14 @@ define (drcv_groupset _DRgrpset_UNNAMED_1_AD96687_I1_Q2_UNNAMED_1_AD96687_I1_Q2_
 rule class _difpr_DP_TELLIE_DELAY_BUF (diffpair_line_width 7)
 rule class _difpr_DP_TELLIE_DELAY_BUF (neck_down_width 5)
 write colormap _notify.std
-# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaap02200.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaas02200.tmp
 unselect all routing
-select component U26
-select component U27
-select component U28
-select component U29
-select component U30
+select component Q2
+select component L1
+select component L2
+select component L4
+select component Q3
+select component Q4
 set route_diagonal 4
 grid wire 0.100000 (direction x) (offset 0.000000)
 grid wire 0.100000 (direction y) (offset 0.000000)
@@ -701,5 +702,5 @@ rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
 smart_route (auto_fanout off) (auto_testpoint off) (auto_miter on)
-write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaaq02200.tmp
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaat02200.tmp
 quit -c

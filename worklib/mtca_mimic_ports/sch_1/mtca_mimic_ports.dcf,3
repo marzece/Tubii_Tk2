@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 2 )
+			( logicalViewRevNum 6 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -344,14 +344,27 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "mtca_mimic_ports"
-			)
-			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):gnd"
-				( objectStatus "gnd" )
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_out_n"
 				( objectStatus "mtca_mimic1_out_n" )
@@ -359,17 +372,11 @@
 			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_out_p"
 				( objectStatus "mtca_mimic1_out_p" )
 			)
-			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic1_pulse_anal"
-				( objectStatus "mtca_mimic1_pulse_anal" )
-			)
 			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_out_n"
 				( objectStatus "mtca_mimic2_out_n" )
 			)
 			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_out_p"
 				( objectStatus "mtca_mimic2_out_p" )
-			)
-			( signal "@tubii_tk2_lib.mtca_mimic_ports(sch_1):mtca_mimic2_pulse_anal"
-				( objectStatus "mtca_mimic2_pulse_anal" )
 			)
 			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i7"
 				( attribute "ABBREV" "TP"
@@ -396,8 +403,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP44"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP44"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I7" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i8"
@@ -425,8 +447,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP45"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP45"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i11"
@@ -454,8 +491,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP46"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP46"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I11" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i12"
@@ -483,124 +535,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP47"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP47"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I12" )
 				( pin "a"
-				)
-			)
-			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i15"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-2150,2625)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I15" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i16"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-2150,2525)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I16" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i17"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-2150,2400)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I17" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_tk2_lib.mtca_mimic_ports(sch_1):page1_i18"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-2150,2300)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I18" )
-				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 		)
