@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-23T11:02:23</modificationTime>
+    <modificationTime>2015-04-23T11:08:20</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -93,26 +93,6 @@
               <id>T90</id>
               <name>ecl_to_ttl_out</name>
               <direction>input</direction>
-            </term>
-          </terms>
-        </cell>
-        <cell>
-          <id>S4</id>
-          <library>tubii_tk2_lib</library>
-          <name>ellie_ports</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T112</id>
-              <name>smellie_delay_in</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T115</id>
-              <name>tellie_delay_in</name>
-              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -1028,41 +1008,6 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I4</id>
-          <cellid>S4</cellid>
-          <name>page1_i43</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M57</id>
-              <termid>T112</termid>
-              <connections>
-                <connection net="N37" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M60</id>
-              <termid>T115</termid>
-              <connections>
-                <connection net="N40" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I6</id>
           <cellid>S6</cellid>
           <name>page1_i54</name>
@@ -1619,24 +1564,28 @@
               <id>M209</id>
               <termid>T439</termid>
               <connections>
+                <connection net="gnd" />
               </connections>
             </pin>
             <pin>
               <id>M210</id>
               <termid>T440</termid>
               <connections>
+                <connection net="N37" />
               </connections>
             </pin>
             <pin>
               <id>M211</id>
               <termid>T441</termid>
               <connections>
+                <connection net="gnd" />
               </connections>
             </pin>
             <pin>
               <id>M212</id>
               <termid>T442</termid>
               <connections>
+                <connection net="N40" />
               </connections>
             </pin>
           </pins>
@@ -2122,7 +2071,6 @@
             </nets>
             <instances>
               <instance ref="i21"></instance>
-              <instance ref="i43"></instance>
               <instance ref="i54"></instance>
               <instance ref="i61"></instance>
               <instance ref="i71"></instance>
