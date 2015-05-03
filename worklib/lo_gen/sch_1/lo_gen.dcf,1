@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 12 )
+			( logicalViewRevNum 13 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -545,13 +545,17 @@
 				( objectStatus "data" )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star_out_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star_out_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):lo_star_out_n"
+				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star_out_n") )
 				( objectStatus "lo_star_out_n" )
 			)
 			( signal "@tubii_tk2_lib.lo_gen(sch_1):lo_star_out_p"
+				( alias ( signalRef "@tubii_tk2_lib.lo_gen(sch_1):page1_i2@tubii_tk2_lib.select_lo_src(sch_1):lo_star_out_p") )
 				( objectStatus "lo_star_out_p" )
 			)
 			( gate "@tubii_tk2_lib.lo_gen(sch_1):page1_i1@tubii_tk2_lib.gt_delays(sch_1):page1_i1"
@@ -6901,7 +6905,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "select_lo_src"

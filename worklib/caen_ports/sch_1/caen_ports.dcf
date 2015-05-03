@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 6 )
+			( logicalViewRevNum 7 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -344,6 +344,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -354,133 +370,232 @@
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(0)") )
 				( objectStatus "caen_out_anal<0>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(0)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal(1)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(1)") )
 				( objectStatus "caen_out_anal<1>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(1)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal(2)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(2)") )
 				( objectStatus "caen_out_anal<2>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(2)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal(3)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(3)") )
 				( objectStatus "caen_out_anal<3>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(3)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal(4)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(4)") )
 				( objectStatus "caen_out_anal<4>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(4)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal(5)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(5)") )
 				( objectStatus "caen_out_anal<5>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(5)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal(6)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(6)") )
 				( objectStatus "caen_out_anal<6>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(6)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal(7)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(7)") )
 				( objectStatus "caen_out_anal<7>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(7)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):gt_nim"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):gt_nim") )
 				( objectStatus "gt_nim" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):gt_nim"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(0)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(0)") )
 				( objectStatus "pulse_in_anal<0>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(0)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(1)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(1)") )
 				( objectStatus "pulse_in_anal<1>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(1)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(2)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(2)") )
 				( objectStatus "pulse_in_anal<2>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(2)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(3)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(3)") )
 				( objectStatus "pulse_in_anal<3>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(3)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(4)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(4)") )
 				( objectStatus "pulse_in_anal<4>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(4)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(5)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(5)") )
 				( objectStatus "pulse_in_anal<5>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(5)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(6)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(6)") )
 				( objectStatus "pulse_in_anal<6>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(6)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(7)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(7)") )
 				( objectStatus "pulse_in_anal<7>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(7)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(8)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(8)") )
 				( objectStatus "pulse_in_anal<8>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(8)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(9)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(9)") )
 				( objectStatus "pulse_in_anal<9>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(9)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(10)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(10)") )
 				( objectStatus "pulse_in_anal<10>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(10)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(11)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(11)") )
 				( objectStatus "pulse_in_anal<11>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(11)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(0)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(0)") )
 				( objectStatus "scope_out_anal<0>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(0)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(1)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(1)") )
 				( objectStatus "scope_out_anal<1>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(1)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(2)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(2)") )
 				( objectStatus "scope_out_anal<2>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(2)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(3)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(3)") )
 				( objectStatus "scope_out_anal<3>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(3)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(4)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(4)") )
 				( objectStatus "scope_out_anal<4>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(4)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(5)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(5)") )
 				( objectStatus "scope_out_anal<5>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(5)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(6)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(6)") )
 				( objectStatus "scope_out_anal<6>" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(6)"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(7)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(7)") )
 				( objectStatus "scope_out_anal<7>" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(7)"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):sync24_lvds_n"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync24_lvds_n") )
 				( objectStatus "sync24_lvds_n" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync24_lvds_n"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):sync24_lvds_p"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync24_lvds_p") )
 				( objectStatus "sync24_lvds_p" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync24_lvds_p"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):sync_lvds_n"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync_lvds_n") )
 				( objectStatus "sync_lvds_n" )
 			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync_lvds_n"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):sync_lvds_p"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync_lvds_p") )
 				( objectStatus "sync_lvds_p" )
+			)
+			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync_lvds_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):gnd"
 				( alias ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):gnd") )
@@ -490,106 +605,7 @@
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):gt_nim"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync24_lvds_n"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync24_lvds_p"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync_lvds_n"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):sync_lvds_p"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(0)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(1)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(2)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(3)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(4)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(5)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(6)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(7)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(8)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(9)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(10)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(11)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(0)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(1)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(2)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(3)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(4)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(5)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(6)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(7)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(0)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(1)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(2)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(3)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(4)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(5)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(6)"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal(7)"
 				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i1"
@@ -624,7 +640,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP137"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP137"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i2"
@@ -659,7 +695,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP138"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP138"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i3"
@@ -694,7 +750,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP139"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP139"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i4"
@@ -729,7 +805,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP140"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP140"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i5"
@@ -764,7 +860,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP141"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP141"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i6"
@@ -799,7 +915,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP142"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP142"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i1"
@@ -834,7 +970,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP175"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP175"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i2"
@@ -869,7 +1025,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP176"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP176"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i3"
@@ -904,7 +1080,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP177"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP177"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i4"
@@ -939,7 +1135,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP178"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP178"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i5"
@@ -974,7 +1190,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP179"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP179"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i6"
@@ -1009,7 +1245,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP180"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP180"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i7"
@@ -1044,7 +1300,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP181"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP181"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i8"
@@ -1079,7 +1355,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP182"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP182"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i9"
@@ -1114,7 +1410,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP183"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP183"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i10"
@@ -1149,7 +1465,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP184"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP184"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i11"
@@ -1184,7 +1520,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP185"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP185"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i12"
@@ -1219,7 +1575,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP186"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP186"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i13"
@@ -1254,7 +1630,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP187"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP187"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i14"
@@ -1289,7 +1685,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP188"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP188"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i15"
@@ -1324,7 +1740,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP189"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP189"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i16"
@@ -1359,7 +1795,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP190"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP190"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i17"
@@ -1394,7 +1850,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP191"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP191"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i18"
@@ -1429,7 +1905,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP192"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP192"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i19"
@@ -1464,7 +1960,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP193"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP193"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i20"
@@ -1499,7 +2015,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP194"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP194"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i21"
@@ -1534,7 +2070,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP195"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP195"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i22"
@@ -1569,7 +2125,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP196"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP196"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i23"
@@ -1604,7 +2180,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP197"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP197"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i24"
@@ -1639,7 +2235,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP198"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP198"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i37"
@@ -1674,7 +2290,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP159"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP159"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i38"
@@ -1709,7 +2345,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP160"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP160"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i39"
@@ -1744,7 +2400,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP161"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP161"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i40"
@@ -1779,7 +2455,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP162"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP162"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i41"
@@ -1814,7 +2510,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP163"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP163"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i42"
@@ -1849,7 +2565,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP164"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP164"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i43"
@@ -1884,7 +2620,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP165"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP165"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i44"
@@ -1919,7 +2675,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP166"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP166"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i45"
@@ -1954,7 +2730,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP167"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP167"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i46"
@@ -1989,7 +2785,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP168"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP168"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i47"
@@ -2024,7 +2840,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP169"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP169"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i48"
@@ -2059,7 +2895,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP170"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP170"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i49"
@@ -2094,7 +2950,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP171"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP171"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i50"
@@ -2129,7 +3005,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP172"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP172"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i51"
@@ -2164,7 +3060,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP173"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP173"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i52"
@@ -2199,7 +3115,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP174"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP174"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i53"
@@ -2234,7 +3170,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP143"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP143"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i54"
@@ -2269,7 +3225,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP144"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP144"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i55"
@@ -2304,7 +3280,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP145"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP145"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i56"
@@ -2339,7 +3335,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP146"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP146"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i57"
@@ -2374,7 +3390,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP147"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP147"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i58"
@@ -2409,7 +3445,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP148"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP148"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i59"
@@ -2444,7 +3500,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP149"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP149"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i60"
@@ -2479,7 +3555,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP150"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP150"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i61"
@@ -2514,7 +3610,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP151"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP151"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i62"
@@ -2549,7 +3665,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP152"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP152"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i63"
@@ -2584,7 +3720,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP153"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP153"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i64"
@@ -2619,7 +3775,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP154"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP154"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i65"
@@ -2654,7 +3830,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP155"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP155"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i66"
@@ -2689,7 +3885,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP156"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP156"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i67"
@@ -2724,7 +3940,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP157"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP157"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i68"
@@ -2759,7 +3995,27 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP158"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP158"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( bus "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal"
@@ -2774,6 +4030,18 @@
 				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal(6)") )
 				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):caen_out_anal(7)") )
 				( objectStatus "CAEN_OUT_ANAL" )
+			)
+			( bus "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal"
+				( memberType ( signal ) )
+				( objectFlag fObjectAlias )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(0)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(1)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(2)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(3)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(4)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(5)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(6)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(7)") )
 			)
 			( bus "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal"
 				( memberType ( signal ) )
@@ -2792,19 +4060,6 @@
 				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):pulse_in_anal(11)") )
 				( objectStatus "PULSE_IN_ANAL" )
 			)
-			( bus "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal"
-				( memberType ( signal ) )
-				( alias ( busRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(0)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(1)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(2)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(3)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(4)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(5)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(6)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(7)") )
-				( objectStatus "SCOPE_OUT_ANAL" )
-			)
 			( bus "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal"
 				( memberType ( signal ) )
 				( objectFlag fObjectAlias )
@@ -2821,17 +4076,18 @@
 				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(10)") )
 				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal(11)") )
 			)
-			( bus "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal"
+			( bus "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal"
 				( memberType ( signal ) )
-				( objectFlag fObjectAlias )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(0)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(1)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(2)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(3)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(4)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(5)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(6)") )
-				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):caen_out_anal(7)") )
+				( alias ( busRef "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(0)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(1)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(2)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(3)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(4)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(5)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(6)") )
+				( member ( signalRef "@tubii_tk2_lib.caen_ports(sch_1):scope_out_anal(7)") )
+				( objectStatus "SCOPE_OUT_ANAL" )
 			)
 			( bus "@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):scope_out_anal"
 				( memberType ( signal ) )
@@ -2892,7 +4148,7 @@
 	( BaseCopy "caen_digital_ports"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 2 )
+				( logicalViewRevNum 3 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -2950,8 +4206,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP137"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP137"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I1" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i2"
@@ -2979,8 +4250,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP138"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP138"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I2" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i3"
@@ -3008,8 +4294,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP139"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP139"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I3" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i4"
@@ -3037,8 +4338,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP140"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP140"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i5"
@@ -3066,8 +4382,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP141"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP141"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I5" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i6"
@@ -3095,8 +4426,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP142"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP142"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 		)
@@ -3106,7 +4452,7 @@
 	( BaseCopy "caen_analog_ports"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 3 )
+				( logicalViewRevNum 6 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -3233,8 +4579,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP175"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP175"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I1" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i2"
@@ -3262,8 +4623,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP176"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP176"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I2" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i3"
@@ -3291,8 +4667,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP177"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP177"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I3" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i4"
@@ -3320,8 +4711,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP178"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP178"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i5"
@@ -3349,8 +4755,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP179"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP179"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I5" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i6"
@@ -3378,8 +4799,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP180"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP180"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i7"
@@ -3407,8 +4843,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP181"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP181"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I7" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i8"
@@ -3436,8 +4887,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP182"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP182"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I8" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i9"
@@ -3465,8 +4931,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP183"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP183"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i10"
@@ -3494,8 +4975,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP184"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP184"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I10" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i11"
@@ -3523,8 +5019,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP185"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP185"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I11" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i12"
@@ -3552,8 +5063,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP186"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP186"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I12" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i13"
@@ -3581,8 +5107,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP187"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP187"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I13" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i14"
@@ -3610,8 +5151,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP188"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP188"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I14" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i15"
@@ -3639,8 +5195,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP189"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP189"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I15" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i16"
@@ -3668,8 +5239,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP190"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP190"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I16" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i17"
@@ -3697,8 +5283,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP191"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP191"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I17" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i18"
@@ -3726,8 +5327,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP192"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP192"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I18" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i19"
@@ -3755,8 +5371,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP193"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP193"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I19" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i20"
@@ -3784,8 +5415,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP194"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP194"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I20" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i21"
@@ -3813,8 +5459,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP195"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP195"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I21" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i22"
@@ -3842,8 +5503,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP196"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP196"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I22" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i23"
@@ -3871,8 +5547,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP197"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP197"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I23" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i24"
@@ -3900,8 +5591,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP198"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP198"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I24" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i37"
@@ -3929,8 +5635,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP159"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP159"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I37" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i38"
@@ -3958,8 +5679,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP160"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP160"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I38" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i39"
@@ -3987,8 +5723,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP161"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP161"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I39" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i40"
@@ -4016,8 +5767,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP162"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP162"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I40" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i41"
@@ -4045,8 +5811,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP163"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP163"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I41" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i42"
@@ -4074,8 +5855,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP164"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP164"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I42" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i43"
@@ -4103,8 +5899,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP165"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP165"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I43" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i44"
@@ -4132,8 +5943,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP166"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP166"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I44" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i45"
@@ -4161,8 +5987,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP167"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP167"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I45" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i46"
@@ -4190,8 +6031,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP168"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP168"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I46" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i47"
@@ -4219,8 +6075,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP169"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP169"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I47" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i48"
@@ -4248,8 +6119,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP170"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP170"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I48" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i49"
@@ -4277,8 +6163,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP171"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP171"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I49" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i50"
@@ -4306,8 +6207,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP172"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP172"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I50" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i51"
@@ -4335,8 +6251,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP173"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP173"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I51" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i52"
@@ -4364,8 +6295,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP174"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP174"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I52" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i53"
@@ -4393,8 +6339,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP143"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP143"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I53" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i54"
@@ -4422,8 +6383,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP144"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP144"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I54" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i55"
@@ -4451,8 +6427,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP145"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP145"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I55" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i56"
@@ -4480,8 +6471,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP146"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP146"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I56" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i57"
@@ -4509,8 +6515,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP147"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP147"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I57" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i58"
@@ -4538,8 +6559,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP148"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP148"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I58" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i59"
@@ -4567,8 +6603,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP149"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP149"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I59" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i60"
@@ -4596,8 +6647,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP150"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP150"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I60" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i61"
@@ -4625,8 +6691,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP151"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP151"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I61" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i62"
@@ -4654,8 +6735,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP152"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP152"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I62" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i63"
@@ -4683,8 +6779,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP153"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP153"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I63" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i64"
@@ -4712,8 +6823,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP154"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP154"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I64" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i65"
@@ -4741,8 +6867,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP155"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP155"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I65" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i66"
@@ -4770,8 +6911,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP156"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP156"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I66" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i67"
@@ -4799,8 +6955,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP157"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP157"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I67" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i68"
@@ -4828,8 +6999,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP158"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP158"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I68" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( bus "@tubii_tk2_lib.caen_analog_ports(sch_1):pulse_in_anal"
