@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 6 )
+			( logicalViewRevNum 7 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -330,6 +330,22 @@
 		)
 		( Attribute
 			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "COLOR" )
 			( Description " " )
 			( Value
 				( DataType ( dString ) )
@@ -1255,9 +1271,6 @@
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "ROOM" "GENERIC_DELAYS"
-					( Origin gFrontEnd )
-				)
 				( attribute "ROT" "5"
 					( Origin gFrontEnd )
 				)
@@ -1308,9 +1321,6 @@
 					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROOM" "GENERIC_DELAYS"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "5"
@@ -1384,9 +1394,6 @@
 					( Origin gFrontEnd )
 				)
 				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROOM" "GENERIC_DELAYS"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"
@@ -1482,9 +1489,6 @@
 					( Origin gFrontEnd )
 				)
 				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROOM" "GENERIC_DELAYS"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"

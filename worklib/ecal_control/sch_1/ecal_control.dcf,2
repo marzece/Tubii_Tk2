@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 3 )
+			( logicalViewRevNum 4 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -296,6 +296,54 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -363,38 +411,98 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "U31"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U31"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I1" )
 				( pin "a_in"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "a_out"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 				( pin "\a_out*\"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "b_in"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "b_out"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "\b_out*\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "c_in"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
 				)
 				( pin "c_out"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
 				)
 				( pin "\c_out*\"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
 				)
 				( pin "common"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
 				( pin "d_in"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
 				)
 				( pin "d_out"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d_out*\"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
 				)
 				( pin "vcc"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
 				)
 				( pin "vee"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ecal_control(sch_1):page1_i2"
@@ -425,38 +533,98 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "U32"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U32"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I2" )
 				( pin "a1"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "a2"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
 				( pin "a3"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
 				)
 				( pin "a4"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
 				)
 				( pin "b1"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "b2"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "b3"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
 				)
 				( pin "b4"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd1"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "gnd2"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
 				)
 				( pin "q1"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 				( pin "q2"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "q3"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
 				)
 				( pin "q4"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q4*\"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
 				)
 				( pin "vee"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ecal_control(sch_1):page1_i3"
@@ -490,10 +658,28 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "D4"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "D4"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I3" )
 				( pin "a"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "b"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ecal_control(sch_1):page1_i4"
@@ -570,10 +756,28 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R28"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R28"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I4" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ecal_control(sch_1):page1_i5"
@@ -650,10 +854,28 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R29"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R29"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I5" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ecal_control(sch_1):page1_i6"
@@ -730,10 +952,28 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R30"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R30"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ecal_control(sch_1):page1_i14"
@@ -813,10 +1053,28 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "C38"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C38"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I14" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ecal_control(sch_1):page1_i15"
@@ -896,10 +1154,28 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "C39"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C39"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I15" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ecal_control(sch_1):page1_i16"
@@ -979,10 +1255,28 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "C40"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C40"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I16" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.ecal_control(sch_1):page1_i17"
@@ -1059,10 +1353,28 @@
 				( attribute "ROOM" "ECAL_CONTROL"
 					( Origin gFrontEnd )
 				)
+				( attribute "CDS_LOCATION" "R31"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R31"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I17" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 		)

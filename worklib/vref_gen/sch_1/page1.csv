@@ -2,14 +2,14 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"GND\G";
-2"UN$1$OPA277$I2$IN";
-3"UN$1$REF02$I1$VOUT";
-4"GND\G";
-5"VREF5M";
+1"UN$1$REF02$I1$VOUT";
+2"VCC15M\G";
+3"VREF5M";
+4"UN$1$OPA277$I2$IN";
+5"GND\G";
 7"VCC15\G";
 6"VCC15\G";
-8"VCC15M\G";
+8"GND\G";
 %"REF02"
 "1","(-2250,2700)","0","misc","I1";
 ;
@@ -22,9 +22,9 @@ CDS_LIB"misc";
 "TRIM"
 $PN"6"0;
 "VOUT"
-$PN"5"3;
+$PN"5"1;
 "GND"
-$PN"4"1;
+$PN"4"5;
 "TEMP"
 $PN"3"0;
 "VIN"
@@ -54,9 +54,9 @@ CDS_LIB"resistors"
 TOL"1%"
 PACKTYPE"0805";
 "A<0>"
-$PN"1"2;
+$PN"1"4;
 "B<0>"
-$PN"2"5;
+$PN"2"3;
 %"OPA277"
 "1","(-1050,2575)","0","misc","I2";
 ;
@@ -71,13 +71,13 @@ $PN"7"7,6;
 "TRIM_A"
 $PN"1"0;
 "IN+"
-$PN"3"4;
+$PN"3"8;
 "IN-"
-$PN"2"2;
+$PN"2"4;
 "OUT"
-$PN"6"5;
+$PN"6"3;
 "V-"
-$PN"4"8;
+$PN"4"2;
 "TRIM_B"
 $PN"8"0;
 %"CSMD0805"
@@ -89,8 +89,8 @@ $SEC"1"
 CDS_SEC"1"
 PACKTYPE"0805"
 VOLTAGE"50V"
-VALUE"0.1UF"
 PART_NAME"CSMD0805"
+VALUE"0.1UF"
 TOL_ON_OFF"ON"
 CURRENT"CIMAX"
 TC"0"
@@ -106,7 +106,7 @@ CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"5%";
 "B<0>"
-$PN"2"1;
+$PN"2"5;
 "A<0>"
 $PN"1"7,6;
 %"OUTPORT"
@@ -116,7 +116,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"5;
+VHDL_PORT"OUT"3;
 %"RSMD0805"
 "1","(-1550,2825)","0","resistors","I9";
 ;
@@ -142,7 +142,7 @@ CDS_LIB"resistors"
 TOL"1%"
 PACKTYPE"0805";
 "A<0>"
-$PN"1"3;
+$PN"1"1;
 "B<0>"
-$PN"2"2;
+$PN"2"4;
 END.

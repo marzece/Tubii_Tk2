@@ -2,32 +2,32 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"GND\G";
-2"UN$1$RESL$I16$B";
-3"GND\G";
-4"UN$1$COTO2342$I1$NC2";
-5"UN$1$COTO2342$I1$CTRLIN";
-6"UN$1$COTO2342$I1$NO1";
-7"VCC15M\G";
-8"GND\G";
-9"UN$1$RESL$I11$B";
-10"GND\G";
-11"VCC15\G";
-12"VCC15M\G";
+1"VCC15M\G";
+2"UN$1$RESL$I7$A";
+3"UN$1$COTO2342$I1$NO1";
+4"UN$1$COTO2342$I1$CTRLIN";
+5"VREF5M";
+6"UN$1$RESL$I11$A";
+7"IN_ANAL";
+8"UN$1$RESL$I16$A";
+9"UN$1$RESL$I10$B";
+10"UN$1$COTO2342$I1$IN1";
+11"GND\G";
+12"UN$1$RESL$I16$B";
 13"GND\G";
-14"VCC15\G";
-15"UN$1$RESL$I16$A";
-16"UN$1$RSMD0805$I18$B";
-17"UN$1$RESL$I10$B";
-18"OUT_CLIP";
-19"UN$1$COTO2342$I1$IN1";
+14"UN$1$COTO2342$I1$NC2";
+15"GND\G";
+16"UN$1$RESL$I11$B";
+17"GND\G";
+18"VCC15\G";
+19"VCC15M\G";
 20"GND\G";
-21"UN$1$RESL$I7$A";
-22"UN$1$CSMD0805$I20$B";
-23"UN$1$RESL$I11$A";
-24"CNTRL";
-25"IN_ANAL";
-26"VREF5M";
+21"VCC15\G";
+22"UN$1$RSMD0805$I18$B";
+23"OUT_CLIP";
+24"GND\G";
+25"UN$1$CSMD0805$I20$B";
+26"CNTRL";
 27"GND\G";
 28"UN$1$COTO2342$I1$NO2";
 29"UN$1$COTO2342$I1$NC1";
@@ -42,12 +42,12 @@ FILE_TYPE = CONNECTIVITY;
 CDS_LMAN_SYM_OUTLINE"-125,325,125,-275"
 CDS_LIB"misc";
 "CTRL_OUT"32;
-"CTRL_IN"5;
-"NO1"6;
+"CTRL_IN"4;
+"NO1"3;
 "NO2"28;
 "NC1"29;
-"NC2"4;
-"IN1"19;
+"NC2"14;
+"IN1"10;
 "IN2"30;
 %"RES_L"
 "1","(-1875,3600)","0","resistors","I10";
@@ -67,8 +67,8 @@ TC1"RTMPL"
 TC2"RTMPQ"
 ABBREV"res_l"
 TITLE"RES_L";
-"A <SIZE-1..0>\NAC"26;
-"B <SIZE-1..0>\NAC"17;
+"A <SIZE-1..0>\NAC"5;
+"B <SIZE-1..0>\NAC"9;
 %"RES_L"
 "1","(-900,4175)","0","resistors","I11";
 ;
@@ -87,8 +87,8 @@ TC1"RTMPL"
 TC2"RTMPQ"
 ABBREV"res_l"
 TITLE"RES_L";
-"A <SIZE-1..0>\NAC"23;
-"B <SIZE-1..0>\NAC"9;
+"A <SIZE-1..0>\NAC"6;
+"B <SIZE-1..0>\NAC"16;
 %"RES_L"
 "1","(-2225,1600)","0","resistors","I12";
 ;
@@ -107,8 +107,8 @@ POSTOL"RTOL%"
 TOL_ON_OFF"ON"
 SIZE"1B"
 CDS_LIB"resistors";
-"A <SIZE-1..0>\NAC"22;
-"B <SIZE-1..0>\NAC"4;
+"A <SIZE-1..0>\NAC"25;
+"B <SIZE-1..0>\NAC"14;
 %"RSMD0805"
 "1","(-1925,1450)","1","resistors","I13";
 ;
@@ -131,7 +131,7 @@ NEGTOL"5%"
 NEEDS_NO_SIZE"TRUE"
 POSTOL"5%";
 "A<0>"27;
-"B<0>"4;
+"B<0>"14;
 %"RSMD0805"
 "1","(-2275,2925)","0","resistors","I14";
 ;
@@ -153,8 +153,8 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
-"A<0>"24;
-"B<0>"5;
+"A<0>"26;
+"B<0>"4;
 %"RSMD0805"
 "1","(-2325,2175)","0","resistors","I15";
 ;
@@ -176,8 +176,8 @@ NEEDS_NO_SIZE"TRUE"
 POSTOL"5%"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
-"A<0>"25;
-"B<0>"21;
+"A<0>"7;
+"B<0>"2;
 %"RES_L"
 "1","(400,2725)","0","resistors","I16";
 ;
@@ -196,8 +196,8 @@ TC1"RTMPL"
 TC2"RTMPQ"
 ABBREV"res_l"
 TITLE"RES_L";
-"A <SIZE-1..0>\NAC"15;
-"B <SIZE-1..0>\NAC"2;
+"A <SIZE-1..0>\NAC"8;
+"B <SIZE-1..0>\NAC"12;
 %"RSMD0805"
 "1","(-375,2225)","0","resistors","I17";
 ;
@@ -219,8 +219,8 @@ NEEDS_NO_SIZE"TRUE"
 POSTOL"5%"
 CDS_LIB"resistors"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
-"A<0>"19;
-"B<0>"15;
+"A<0>"10;
+"B<0>"8;
 %"RSMD0805"
 "1","(-400,1950)","0","resistors","I18";
 ;
@@ -243,7 +243,7 @@ CDS_LIB"resistors"
 TOL"1%"
 PACKTYPE"0805";
 "A<0>"30;
-"B<0>"16;
+"B<0>"22;
 %"RSMD0805"
 "1","(-1575,2075)","0","resistors","I19";
 ;
@@ -265,18 +265,18 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors"
 TOL"1%"
 PACKTYPE"0805";
-"A<0>"21;
-"B<0>"20;
+"A<0>"2;
+"B<0>"24;
 %"THS3062"
 "1","(-800,3650)","0","misc","I2";
 ;
 CDS_LIB"misc"
 CDS_LMAN_SYM_OUTLINE"-125,75,25,-75";
-"VCC+"11;
-"IN+"17;
-"IN-"23;
-"OUT"9;
-"VCC-"7;
+"VCC+"18;
+"IN+"9;
+"IN-"6;
+"OUT"16;
+"VCC-"1;
 %"CSMD0805"
 "1","(-2700,2000)","0","capacitors","I20";
 ;
@@ -298,8 +298,8 @@ POSTOL"10%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"10%";
-"B<0>"22;
-"A<0>"26;
+"B<0>"25;
+"A<0>"5;
 %"CSMD0805"
 "1","(-725,3350)","1","capacitors","I21";
 ;
@@ -321,8 +321,8 @@ NEGTOL"10%"
 NEEDS_NO_SIZE"TRUE"
 POSTOL"10%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25";
-"B<0>"10;
-"A<0>"7;
+"B<0>"17;
+"A<0>"1;
 %"CSMD0805"
 "1","(-750,3900)","1","capacitors","I22";
 ;
@@ -344,8 +344,8 @@ TC"0"
 CURRENT"CIMAX"
 TOL_ON_OFF"ON"
 TOL"10%";
-"B<0>"11;
-"A<0>"8;
+"B<0>"18;
+"A<0>"15;
 %"CSMD0805"
 "1","(575,2500)","1","capacitors","I23";
 ;
@@ -367,8 +367,8 @@ TC"0"
 CURRENT"CIMAX"
 TOL_ON_OFF"ON"
 TOL"10%";
-"B<0>"14;
-"A<0>"1;
+"B<0>"21;
+"A<0>"11;
 %"CSMD0805"
 "1","(575,1950)","1","capacitors","I24";
 ;
@@ -390,8 +390,8 @@ NEEDS_NO_SIZE"TRUE"
 POSTOL"10%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors";
-"B<0>"13;
-"A<0>"12;
+"B<0>"20;
+"A<0>"19;
 %"RSMD0805"
 "1","(-250,3650)","0","resistors","I25";
 ;
@@ -413,8 +413,8 @@ MAX_TEMP"RTMAX"
 POWER"0.1"
 TOL"1%"
 PACKTYPE"0805";
-"A<0>"9;
-"B<0>"18;
+"A<0>"16;
+"B<0>"23;
 %"RSMD0805"
 "1","(925,2200)","0","resistors","I26";
 ;
@@ -436,7 +436,7 @@ MAX_TEMP"RTMAX"
 POWER"0.1"
 TOL"1%"
 PACKTYPE"0805";
-"A<0>"2;
+"A<0>"12;
 "B<0>"31;
 %"1N4448"
 "1","(1425,2575)","1","diodes","I27";
@@ -459,17 +459,17 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"26;
+HDL_PORT"IN"5;
 %"THS3062"
 "1","(475,2200)","0","misc","I3";
 ;
 CDS_LIB"misc"
 CDS_LMAN_SYM_OUTLINE"-125,75,25,-75";
-"VCC+"14;
-"IN+"16;
-"IN-"15;
-"OUT"2;
-"VCC-"12;
+"VCC+"21;
+"IN+"22;
+"IN-"8;
+"OUT"12;
+"VCC-"19;
 %"INPORT"
 "1","(-3225,2925)","0","standard","I30";
 ;
@@ -477,7 +477,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"24;
+HDL_PORT"IN"26;
 %"INPORT"
 "1","(-2900,3700)","0","standard","I31";
 ;
@@ -485,7 +485,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"25;
+VHDL_PORT"IN"7;
 %"OUTPORT"
 "1","(2275,2200)","0","standard","I32";
 ;
@@ -501,7 +501,30 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"18;
+VHDL_PORT"OUT"23;
+%"RSMD0805"
+"1","(-1600,3400)","0","resistors","I34";
+;
+$LOCATION"?"
+POSTOL"5%"
+NEEDS_NO_SIZE"TRUE"
+NEGTOL"5%"
+IC"UNDEF"
+TOL_ON_OFF"ON"
+DIST"FLAT"
+VOLTAGE"25V"
+SLOPE"RSMAX"
+TC1"RTMPL"
+TC2"RTMPO"
+MAX_TEMP"RTMAX"
+POWER"0.1"
+CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
+CDS_LIB"resistors"
+VALUE"50"
+TOL"1%"
+PACKTYPE"0805";
+"A<0>"0;
+"B<0>"0;
 %"RES_L"
 "1","(-1925,1850)","1","resistors","I4";
 ;
@@ -520,7 +543,7 @@ NEGTOL"RTOL%"
 POSTOL"RTOL%"
 TOL_ON_OFF"ON"
 SIZE"1B";
-"A <SIZE-1..0>\NAC"3;
+"A <SIZE-1..0>\NAC"13;
 "B <SIZE-1..0>\NAC"28;
 %"RES_L"
 "1","(-2250,2000)","0","resistors","I6";
@@ -540,7 +563,7 @@ TC1"RTMPL"
 TC2"RTMPQ"
 ABBREV"res_l"
 TITLE"RES_L";
-"A <SIZE-1..0>\NAC"22;
+"A <SIZE-1..0>\NAC"25;
 "B <SIZE-1..0>\NAC"28;
 %"RES_L"
 "1","(-1375,2175)","0","resistors","I7";
@@ -560,7 +583,7 @@ TC1"RTMPL"
 TC2"RTMPQ"
 ABBREV"res_l"
 TITLE"RES_L";
-"A <SIZE-1..0>\NAC"21;
+"A <SIZE-1..0>\NAC"2;
 "B <SIZE-1..0>\NAC"29;
 %"RES_L"
 "1","(-2300,2275)","0","resistors","I8";
@@ -580,8 +603,8 @@ POSTOL"RTOL%"
 TOL_ON_OFF"ON"
 SIZE"1B"
 CDS_LIB"resistors";
-"A <SIZE-1..0>\NAC"25;
-"B <SIZE-1..0>\NAC"6;
+"A <SIZE-1..0>\NAC"7;
+"B <SIZE-1..0>\NAC"3;
 %"RES_L"
 "1","(-2175,3700)","0","resistors","I9";
 ;
@@ -600,6 +623,6 @@ TC1"RTMPL"
 TC2"RTMPQ"
 ABBREV"res_l"
 TITLE"RES_L";
-"A <SIZE-1..0>\NAC"25;
-"B <SIZE-1..0>\NAC"23;
+"A <SIZE-1..0>\NAC"7;
+"B <SIZE-1..0>\NAC"6;
 END.
