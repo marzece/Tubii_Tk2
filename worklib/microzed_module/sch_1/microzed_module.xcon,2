@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-23T01:58:38</modificationTime>
+    <modificationTime>2015-05-03T16:45:14</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
       <lastids>
         <instanceid>3</instanceid>
-        <netid>63</netid>
+        <netid>73</netid>
         <insttermid>306</insttermid>
       </lastids>
       <cells>
@@ -793,6 +793,46 @@
           <direction>output</direction>
         </net>
         <net>
+          <id>N64</id>
+          <name>init#</name>
+        </net>
+        <net>
+          <id>N65</id>
+          <name>jtag_tck</name>
+        </net>
+        <net>
+          <id>N66</id>
+          <name>jtag_tdo</name>
+        </net>
+        <net>
+          <id>N67</id>
+          <name>jx1_se_)</name>
+        </net>
+        <net>
+          <id>N68</id>
+          <name>jx2_se_0</name>
+        </net>
+        <net>
+          <id>N69</id>
+          <name>jx2_se_1</name>
+        </net>
+        <net>
+          <id>N70</id>
+          <name>pwr_en</name>
+        </net>
+        <net>
+          <id>N71</id>
+          <name>pwr_good</name>
+        </net>
+        <net>
+          <id>N72</id>
+          <name>vbat</name>
+        </net>
+        <net>
+          <id>N73</id>
+          <name>vccio_en_o</name>
+        </net>
+        <net>
           <id>N23</id>
           <name>v3p3</name>
           <scope>global</scope>
@@ -834,6 +874,7 @@
               <id>M1</id>
               <termid>T1</termid>
               <connections>
+                <connection net="N65" />
               </connections>
             </pin>
             <pin>
@@ -847,6 +888,7 @@
               <id>M3</id>
               <termid>T3</termid>
               <connections>
+                <connection net="N66" />
               </connections>
             </pin>
             <pin>
@@ -860,6 +902,7 @@
               <id>M5</id>
               <termid>T5</termid>
               <connections>
+                <connection net="N70" />
               </connections>
             </pin>
             <pin>
@@ -873,6 +916,7 @@
               <id>M7</id>
               <termid>T7</termid>
               <connections>
+                <connection net="N72" />
               </connections>
             </pin>
             <pin>
@@ -886,6 +930,7 @@
               <id>M9</id>
               <termid>T9</termid>
               <connections>
+                <connection net="N67" />
               </connections>
             </pin>
             <pin>
@@ -1587,36 +1632,42 @@
               <id>M213</id>
               <termid>T9</termid>
               <connections>
+                <connection net="N64" />
               </connections>
             </pin>
             <pin>
               <id>M214</id>
               <termid>T10</termid>
               <connections>
+                <connection net="N73" />
               </connections>
             </pin>
             <pin>
               <id>M215</id>
               <termid>T11</termid>
               <connections>
+                <connection net="N71" />
               </connections>
             </pin>
             <pin>
               <id>M216</id>
               <termid>T12</termid>
               <connections>
+                <connection net="N24" />
               </connections>
             </pin>
             <pin>
               <id>M217</id>
               <termid>T13</termid>
               <connections>
+                <connection net="N68" />
               </connections>
             </pin>
             <pin>
               <id>M218</id>
               <termid>T14</termid>
               <connections>
+                <connection net="N69" />
               </connections>
             </pin>
             <pin>
@@ -1686,7 +1737,7 @@
               <id>M228</id>
               <termid>T24</termid>
               <connections>
-                <connection net="N15" netmsb="5" netlsb="5" />
+                <connection net="N15" netmsb="6" netlsb="6" />
               </connections>
             </pin>
             <pin>
@@ -1700,7 +1751,7 @@
               <id>M230</id>
               <termid>T26</termid>
               <connections>
-                <connection net="N15" netmsb="6" netlsb="6" />
+                <connection net="N15" netmsb="5" netlsb="5" />
               </connections>
             </pin>
             <pin>
@@ -2448,13 +2499,19 @@
               <net ref="gt"></net>
               <net ref="i2c_scl"></net>
               <net ref="i2c_sda"></net>
+              <net ref="init#"></net>
+              <net ref="jtag_tck"></net>
               <net ref="jtag_tdi"></net>
+              <net ref="jtag_tdo"></net>
               <net ref="jtag_tms"></net>
               <net ref="jx1_guide_pin1"></net>
               <net ref="jx1_guide_pin2"></net>
+              <net ref="jx1_se_)"></net>
               <net ref="jx1_se_1"></net>
               <net ref="jx2_guide_pin1"></net>
               <net ref="jx2_guide_pin2"></net>
+              <net ref="jx2_se_0"></net>
+              <net ref="jx2_se_1"></net>
               <net ref="le">
                 <msb>2</msb>
                 <lsb>0</lsb>
@@ -2462,6 +2519,8 @@
               <net ref="mtca_mimic_data_rdy"></net>
               <net ref="mtca_mimic_trig1"></net>
               <net ref="mtca_mimic_trig2"></net>
+              <net ref="pwr_en"></net>
+              <net ref="pwr_good"></net>
               <net ref="read_cntrl_reg_bit"></net>
               <net ref="reset_clk"></net>
               <net ref="scaler">
@@ -2479,7 +2538,9 @@
               <net ref="tellie_pulse"></net>
               <net ref="tubii_rt_out"></net>
               <net ref="v3p3"></net>
+              <net ref="vbat"></net>
               <net ref="vcc"></net>
+              <net ref="vccio_en_o"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>

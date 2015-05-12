@@ -7,9 +7,10 @@
   (library "tubii_tk2_lib")
   (design "mtca_mimic"
     (lastIds
-      (lastInstanceId 32)
-      (lastNetId 94)
-      (lastInstTermId 305)
+      (lastInstanceId 34)
+      (lastNetId 98)
+      (lastInstTermId 325)
+      (lastDPInstTermId 2)
     )
     (cells
       ("S1" "ad96687" "misc" "sym_1"
@@ -813,13 +814,57 @@
           )
         )
       )
-      ("I32" "page1_i49" "S9"
+      ("I33" "page1_i50" "S9"
         (pins
-          ("M296" "T124" 0 0
+          ("M310" "T124" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
           )
-          ("M297" "T125" 0 0
+          ("M311" "T125" 0 0
+            (conn
+              ("0" 0 0 "N38" -1 -1)
+            )
           )
         )
+      )
+      ("I34" "page1_i51" "S9"
+        (pins
+          ("M312" "T124" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M313" "T125" 0 0
+            (conn
+              ("0" 0 0 "N37" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
+    (container "DPINSTTERM"
+      ("R1" "dp_q1"
+         (members
+            (M "M11" 1 -1)
+            (M "M12" -1 -1)
+         )
+      )
+      ("R2" "dp_q2"
+         (members
+            (M "M13" 1 -1)
+            (M "M14" -1 -1)
+         )
+      )
+    )
+
+    (container "INSTANCE"
+      ("I1" "page1_i1"
+         (members
+            (R "R1" 2 -1)
+            (R "R2" 2 -1)
+         )
       )
     )
 

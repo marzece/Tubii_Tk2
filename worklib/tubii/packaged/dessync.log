@@ -2,7 +2,7 @@ Design Differences 16.6-p001 (v16-6-112A) 9/10/2012
     Cadence Design Systems, Inc.
     (C) Copyright 1994, Cadence Design Systems, Inc.
 
-Load design differences view at 23:14:55 Saturday, March 07, 2015
+Load design differences view at 17:28:14 Tuesday, May 12, 2015
 --- Ignored Instance Property List ---
    SCH_SIZE
    HAS_FIXED_SIZE
@@ -19,30 +19,41 @@ Load design differences view at 23:14:55 Saturday, March 07, 2015
 
 Setting design view directives...
 
-Loading... C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\packaged\pstchip.dat
+Loading... C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged\pstchip.dat
 
-Loading... C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\packaged\pstxprt.dat
+Loading... C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged\pstxprt.dat
 
-Loading... C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\packaged\pstxnet.dat
-packaging the design view...
+Loading... C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged\pstxnet.dat
+Error #38:  WARNING(SPCODD-38): Terminating character '=' not found on line 2827.
+
+Error #-1:  ERROR(SPCODD-47): Packaging can not complete because the file C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged\pstxnet.dat could not be loaded. There might be syntax errors in this file. Ensure that the syntax is correct before proceeding.
+
+ERROR(SPCODD-383): Error at line 2827 in file C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged\pstxnet.dat. Error loading the net list file
+
+
  *****************************************************
  *  End loading logical design view of tubii(sch_1)  *
  *****************************************************
 
 
+ *********************************************************************************
+ *  Design Differences failed to create the logical design view of tubii(sch_1)  *
+ *********************************************************************************
+
+
  ************************************************************
- *  Loading physical design view of tubii(TubiiPCB_V2.brd)  *
+ *  Loading physical design view of tubii(TubiiPCB_V5.brd)  *
  ************************************************************
 
 Setting design view directives...
-Loading... C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\packaged/funcview.dat
-Loading... C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\packaged/compview.dat
-Loading... C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\packaged/netview.dat
-Loading... C:\Users\Eric Marzec\Documents\Tubii_Tk2\worklib\tubii\packaged/pinview.dat
+Loading... C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged/funcview.dat
+Loading... C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged/compview.dat
+Loading... C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged/netview.dat
+Loading... C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged/pinview.dat
 packaging the design view...
 
  ****************************************************************
- *  End loading physical design view of tubii(TubiiPCB_V2.brd)  *
+ *  End loading physical design view of tubii(TubiiPCB_V5.brd)  *
  ****************************************************************
 
 
@@ -50,11 +61,25 @@ packaging the design view...
  *  Generating the design view difference  *
  *******************************************
 
+--- Ignored Net List ---
+--- Ignored Inst List ---
 
  ***********************************************
  *  End generating the design view difference  *
  ***********************************************
 
-Found Pin-net Connection Difference: tubii(sch_1) vs. tubii(TubiiPCB_V2.brd)
+Found Instance Difference: tubii(sch_1) vs. tubii(TubiiPCB_V5.brd)
+Found Net Difference: tubii(sch_1) vs. tubii(TubiiPCB_V5.brd)
+Found Pin-net Connection Difference: tubii(sch_1) vs. tubii(TubiiPCB_V5.brd)
+
+ ********************************************************************
+ *  Start extracting terminators from board tubii(TubiiPCB_V5.brd)  *
+ ********************************************************************
+
+
+ ********************************
+ *  End extracting terminators  *
+ ********************************
+
 Writing project directives...
 Exit Design Differences

@@ -5,15 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-11T17:02:13</modificationTime>
+    <modificationTime>2015-05-12T18:08:58</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="mtca_mimic" view="sch_1">
       <lastids>
-        <instanceid>32</instanceid>
-        <netid>94</netid>
-        <insttermid>305</insttermid>
+        <instanceid>34</instanceid>
+        <netid>98</netid>
+        <insttermid>325</insttermid>
+        <dpinsttermid>2</dpinsttermid>
       </lastids>
       <cells>
         <cell>
@@ -870,6 +871,36 @@
             </pin>
           </pins>
           <differentialpins>
+            <differentialpin>
+              <id>R1</id>
+              <name>dp_q1</name>
+              <source>library</source>
+              <differentialpinmembers>
+                <differentialpinmember>
+                  <id>M11</id>
+                  <polarity>positive</polarity>
+                </differentialpinmember>
+                <differentialpinmember>
+                  <id>M12</id>
+                  <polarity>negative</polarity>
+                </differentialpinmember>
+              </differentialpinmembers>
+            </differentialpin>
+            <differentialpin>
+              <id>R2</id>
+              <name>dp_q2</name>
+              <source>library</source>
+              <differentialpinmembers>
+                <differentialpinmember>
+                  <id>M13</id>
+                  <polarity>positive</polarity>
+                </differentialpinmember>
+                <differentialpinmember>
+                  <id>M14</id>
+                  <polarity>negative</polarity>
+                </differentialpinmember>
+              </differentialpinmembers>
+            </differentialpin>
           </differentialpins>
           <differentialbuspins>
           </differentialbuspins>
@@ -2151,9 +2182,9 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I32</id>
+          <id>I33</id>
           <cellid>S9</cellid>
-          <name>page1_i49</name>
+          <name>page1_i50</name>
           <parameters>
           </parameters>
           <masks>
@@ -2162,19 +2193,60 @@
           </powers>
           <pins>
             <pin>
-              <id>M296</id>
+              <id>M310</id>
               <termid>T124</termid>
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N1" />
               </connections>
             </pin>
             <pin>
-              <id>M297</id>
+              <id>M311</id>
               <termid>T125</termid>
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N38" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I34</id>
+          <cellid>S9</cellid>
+          <name>page1_i51</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M312</id>
+              <termid>T124</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N1" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M313</id>
+              <termid>T125</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N37" />
               </connections>
             </pin>
           </pins>
@@ -2393,7 +2465,8 @@
               <instance ref="i44"></instance>
               <instance ref="i45"></instance>
               <instance ref="i48"></instance>
-              <instance ref="i49"></instance>
+              <instance ref="i50"></instance>
+              <instance ref="i51"></instance>
             </instances>
           </page>
         </pages>

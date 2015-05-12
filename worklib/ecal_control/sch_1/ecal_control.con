@@ -10,6 +10,7 @@
       (lastInstanceId 10)
       (lastNetId 11)
       (lastInstTermId 48)
+      (lastDPInstTermId 1)
     )
     (cells
       ("S1" "mc10h124" "ecl" "sym_1"
@@ -318,6 +319,23 @@
             )
           )
         )
+      )
+    )
+
+    (container "DPINSTTERM"
+      ("R1" "dp_q4"
+         (members
+            (M "M30" 1 -1)
+            (M "M31" -1 -1)
+         )
+      )
+    )
+
+    (container "INSTANCE"
+      ("I2" "page1_i2"
+         (members
+            (R "R1" 2 -1)
+         )
       )
     )
 

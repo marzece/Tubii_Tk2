@@ -10,6 +10,7 @@
       (lastInstanceId 16)
       (lastNetId 45)
       (lastInstTermId 100)
+      (lastDPInstTermId 10)
     )
     (cells
       ("S1" "mc10h125" "ecl" "sym_1"
@@ -485,6 +486,90 @@
             )
           )
         )
+      )
+    )
+
+    (container "DPINSTTERM"
+      ("R1" "dp_d1"
+         (members
+            (M "M1" 1 -1)
+            (M "M2" -1 -1)
+         )
+      )
+      ("R2" "dp_d2"
+         (members
+            (M "M3" 1 -1)
+            (M "M4" -1 -1)
+         )
+      )
+      ("R3" "dp_d3"
+         (members
+            (M "M5" 1 -1)
+            (M "M6" -1 -1)
+         )
+      )
+      ("R4" "dp_d4"
+         (members
+            (M "M7" 1 -1)
+            (M "M8" -1 -1)
+         )
+      )
+      ("R5" "dp_d1"
+         (members
+            (M "M85" 1 -1)
+            (M "M86" -1 -1)
+         )
+      )
+      ("R6" "dp_d2"
+         (members
+            (M "M87" 1 -1)
+            (M "M88" -1 -1)
+         )
+      )
+      ("R7" "dp_d3"
+         (members
+            (M "M89" 1 -1)
+            (M "M90" -1 -1)
+         )
+      )
+      ("R8" "dp_q1"
+         (members
+            (M "M93" 1 -1)
+            (M "M94" -1 -1)
+         )
+      )
+      ("R9" "dp_q2"
+         (members
+            (M "M95" 1 -1)
+            (M "M96" -1 -1)
+         )
+      )
+      ("R10" "dp_q3"
+         (members
+            (M "M97" 1 -1)
+            (M "M98" -1 -1)
+         )
+      )
+    )
+
+    (container "INSTANCE"
+      ("I1" "page1_i1"
+         (members
+            (R "R1" 2 -1)
+            (R "R2" 2 -1)
+            (R "R3" 2 -1)
+            (R "R4" 2 -1)
+         )
+      )
+      ("I16" "page1_i30"
+         (members
+            (R "R5" 2 -1)
+            (R "R6" 2 -1)
+            (R "R7" 2 -1)
+            (R "R8" 2 -1)
+            (R "R9" 2 -1)
+            (R "R10" 2 -1)
+         )
       )
     )
 
