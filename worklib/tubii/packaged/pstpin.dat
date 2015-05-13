@@ -1,6 +1,6 @@
 FILE_TYPE=PINLIST;
-{ Packager-XL run on 13-May-2015 AT 14:16:39 }
-TIME=' COMPILATION ON 13-May-2015 AT 14:16:39';
+{ Packager-XL run on 13-May-2015 AT 15:10:40 }
+TIME=' COMPILATION ON 13-May-2015 AT 15:10:40';
 primitive '1N4448';      body '1N4448';
     'IN':'(1)';
     'OUT':'(2)';
@@ -967,11 +967,11 @@ end_primitive;
 primitive 'TESTPOINT_L'; body 'TESTPOINT_L';
     'A':'(1)';
 end_primitive;
-primitive 'THS3062';     body 'THS3062';
-    'VCC-':'(4,4)';
-    'OUT':'(1,7)';$S;
-    'IN-':'(2,6)';$S;
-    'IN+':'(3,5)';$S;
-    'VCC+':'(8,8)';
+primitive 'THS3061';     body 'THS3061';
+    'VS-':'(4)';
+    'VS+':'(7)';
+    'VIN-':'(2)';
+    'VIN+':'(3)';
+    'VOUT':'(6)';
 end_primitive;
 END.

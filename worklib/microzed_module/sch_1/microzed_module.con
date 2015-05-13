@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "microzed_module"
     (lastIds
-      (lastInstanceId 4)
-      (lastNetId 75)
-      (lastInstTermId 308)
+      (lastInstanceId 5)
+      (lastNetId 76)
+      (lastInstTermId 310)
     )
     (cells
       ("S1" "fci_61083-101400lf" "misc" "sym_1"
@@ -124,6 +124,12 @@
           ("T137" "b" -1 -1 3)
         )
       )
+      ("S3" "rsmd0805" "resistors" "sym_1"
+        (terms
+          ("T171" "a" 0 0 1)
+          ("T172" "b" 0 0 2)
+        )
+      )
     )
 
     (nets
@@ -185,6 +191,7 @@
       ("N73" "vccio_en_o" -1 -1 0 )
       ("N74" "mz_happy" -1 -1 0 )
       ("N75" "jx1_se_0" -1 -1 0 )
+      ("N76" "unnamed_1_ledl_i102_a" -1 -1 0 )
       ("N23" "v3p3" -1 -1 2 )
       ("N24" "vcc" -1 -1 2 )
       ("N27" "gnd" -1 -1 2 )
@@ -1025,12 +1032,26 @@
         (pins
           ("M307" "T136" -1 -1
             (conn
-              ("0" -1 -1 "N74" -1 -1)
+              ("0" -1 -1 "N76" -1 -1)
             )
           )
           ("M308" "T137" -1 -1
             (conn
               ("0" -1 -1 "N27" -1 -1)
+            )
+          )
+        )
+      )
+      ("I5" "page1_i103" "S3"
+        (pins
+          ("M309" "T171" 0 0
+            (conn
+              ("0" 0 0 "N76" -1 -1)
+            )
+          )
+          ("M310" "T172" 0 0
+            (conn
+              ("0" 0 0 "N74" -1 -1)
             )
           )
         )
