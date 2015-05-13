@@ -5,15 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-12T17:49:56</modificationTime>
+    <modificationTime>2015-05-12T18:08:58</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="mtca_mimic" view="sch_1">
       <lastids>
         <instanceid>34</instanceid>
-        <netid>97</netid>
-        <insttermid>321</insttermid>
+        <netid>98</netid>
+        <insttermid>325</insttermid>
+        <dpinsttermid>2</dpinsttermid>
       </lastids>
       <cells>
         <cell>
@@ -870,6 +871,36 @@
             </pin>
           </pins>
           <differentialpins>
+            <differentialpin>
+              <id>R1</id>
+              <name>dp_q1</name>
+              <source>library</source>
+              <differentialpinmembers>
+                <differentialpinmember>
+                  <id>M11</id>
+                  <polarity>positive</polarity>
+                </differentialpinmember>
+                <differentialpinmember>
+                  <id>M12</id>
+                  <polarity>negative</polarity>
+                </differentialpinmember>
+              </differentialpinmembers>
+            </differentialpin>
+            <differentialpin>
+              <id>R2</id>
+              <name>dp_q2</name>
+              <source>library</source>
+              <differentialpinmembers>
+                <differentialpinmember>
+                  <id>M13</id>
+                  <polarity>positive</polarity>
+                </differentialpinmember>
+                <differentialpinmember>
+                  <id>M14</id>
+                  <polarity>negative</polarity>
+                </differentialpinmember>
+              </differentialpinmembers>
+            </differentialpin>
           </differentialpins>
           <differentialbuspins>
           </differentialbuspins>

@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-12T17:49:30</modificationTime>
+    <modificationTime>2015-05-12T18:08:16</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -14,6 +14,7 @@
         <instanceid>16</instanceid>
         <netid>19</netid>
         <insttermid>66</insttermid>
+        <dpinsttermid>1</dpinsttermid>
       </lastids>
       <cells>
         <cell>
@@ -847,6 +848,21 @@
             </pin>
           </pins>
           <differentialpins>
+            <differentialpin>
+              <id>R1</id>
+              <name>dp_q7</name>
+              <source>library</source>
+              <differentialpinmembers>
+                <differentialpinmember>
+                  <id>M48</id>
+                  <polarity>positive</polarity>
+                </differentialpinmember>
+                <differentialpinmember>
+                  <id>M49</id>
+                  <polarity>negative</polarity>
+                </differentialpinmember>
+              </differentialpinmembers>
+            </differentialpin>
           </differentialpins>
           <differentialbuspins>
           </differentialbuspins>
