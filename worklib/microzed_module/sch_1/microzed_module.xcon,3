@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-12T16:36:29</modificationTime>
+    <modificationTime>2015-05-13T14:16:19</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
       <lastids>
         <instanceid>4</instanceid>
-        <netid>74</netid>
+        <netid>75</netid>
         <insttermid>308</insttermid>
       </lastids>
       <cells>
@@ -825,10 +825,6 @@
           <name>jtag_tdo</name>
         </net>
         <net>
-          <id>N67</id>
-          <name>jx1_se_)</name>
-        </net>
-        <net>
           <id>N68</id>
           <name>jx2_se_0</name>
         </net>
@@ -855,6 +851,10 @@
         <net>
           <id>N74</id>
           <name>mz_happy</name>
+        </net>
+        <net>
+          <id>N75</id>
+          <name>jx1_se_0</name>
         </net>
         <net>
           <id>N23</id>
@@ -954,7 +954,7 @@
               <id>M9</id>
               <termid>T9</termid>
               <connections>
-                <connection net="N67" />
+                <connection net="N75" />
               </connections>
             </pin>
             <pin>
@@ -2566,7 +2566,7 @@
               <net ref="jtag_tms"></net>
               <net ref="jx1_guide_pin1"></net>
               <net ref="jx1_guide_pin2"></net>
-              <net ref="jx1_se_)"></net>
+              <net ref="jx1_se_0"></net>
               <net ref="jx1_se_1"></net>
               <net ref="jx2_guide_pin1"></net>
               <net ref="jx2_guide_pin2"></net>
