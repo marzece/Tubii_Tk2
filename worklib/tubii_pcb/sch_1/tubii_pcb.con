@@ -8,8 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 16)
-      (lastNetId 267)
-      (lastInstTermId 956)
+      (lastNetId 276)
+      (lastInstTermId 1011)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -50,7 +50,6 @@
         (terms
           ("T306" "clk100_p" -1 -1 2)
           ("T307" "clk100_ttl" -1 -1 2)
-          ("T308" "tub_clk_in" -1 -1 1)
           ("T503" "clk_sel" -1 -1 1)
           ("T859" "bckp_used" -1 -1 2)
           ("T860" "clk100_n" -1 -1 2)
@@ -59,6 +58,8 @@
           ("T863" "sr_clk" -1 -1 1)
           ("T864" "data_rdy" -1 -1 1)
           ("T866" "reset" -1 -1 1)
+          ("T1243" "tub_clk_in_n" -1 -1 1)
+          ("T1244" "tub_clk_in_p" -1 -1 1)
         )
       )
       ("S5" "general_utilities" "tubii_tk2_lib" "sym_1"
@@ -313,7 +314,6 @@
       ("N192" "tellie_delay_in" -1 -1 1 1)
       ("N193" "tellie_delay_out" -1 -1 1 2)
       ("N194" "tellie_pulse_out" -1 -1 1 2)
-      ("N195" "tub_clk_in" -1 -1 1 1)
       ("N196" "unnamed_1_caencoms_i8_sync24ttl" -1 -1 0 )
       ("N197" "unnamed_1_caencoms_i8_syncttl" -1 -1 0 )
       ("N198" "unnamed_1_elliecoms_i9_smelliedelayoutttl" -1 -1 0 )
@@ -331,6 +331,8 @@
       ("N227" "unnamed_1_clocks_i2_reset" -1 -1 0 )
       ("N259" "unnamed_1_microzedmodule_i1_mtcamimictrig1" -1 -1 0 )
       ("N260" "unnamed_1_microzedmodule_i1_mtcamimictrig2" -1 -1 0 )
+      ("N275" "tub_clk_in_n" -1 -1 1 1)
+      ("N276" "tub_clk_in_p" -1 -1 1 1)
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2  inherited)
@@ -509,11 +511,6 @@
               ("0" -1 -1 "N153" -1 -1)
             )
           )
-          ("M357" "T308" -1 -1
-            (conn
-              ("0" -1 -1 "N195" -1 -1)
-            )
-          )
           ("M496" "T503" -1 -1
             (conn
               ("0" -1 -1 "N150" -1 -1)
@@ -552,6 +549,16 @@
           ("M680" "T866" -1 -1
             (conn
               ("0" -1 -1 "N227" -1 -1)
+            )
+          )
+          ("M1010" "T1243" -1 -1
+            (conn
+              ("0" -1 -1 "N275" -1 -1)
+            )
+          )
+          ("M1011" "T1244" -1 -1
+            (conn
+              ("0" -1 -1 "N276" -1 -1)
             )
           )
         )

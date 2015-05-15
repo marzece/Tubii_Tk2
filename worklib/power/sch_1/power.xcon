@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-14T14:52:14</modificationTime>
+    <modificationTime>2015-05-15T11:50:12</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="power" view="sch_1">
       <lastids>
         <instanceid>48</instanceid>
-        <netid>25</netid>
+        <netid>27</netid>
         <insttermid>99</insttermid>
       </lastids>
       <cells>
@@ -304,14 +304,6 @@
       </cells>
       <nets>
         <net>
-          <id>N2</id>
-          <name>unnamed_1_7815sl_i15_input</name>
-        </net>
-        <net>
-          <id>N3</id>
-          <name>unnamed_1_7915l_i16_input</name>
-        </net>
-        <net>
           <id>N8</id>
           <name>unnamed_1_ledl_i12_a</name>
         </net>
@@ -358,6 +350,14 @@
         <net>
           <id>N25</id>
           <name>vee_raw</name>
+        </net>
+        <net>
+          <id>N26</id>
+          <name>vcc24</name>
+        </net>
+        <net>
+          <id>N27</id>
+          <name>vcc24m</name>
         </net>
         <net>
           <id>N1</id>
@@ -608,7 +608,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N2" />
+                <connection pinmsb="0" pinlsb="0" net="N26" />
               </connections>
             </pin>
           </pins>
@@ -647,7 +647,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N3" />
+                <connection pinmsb="0" pinlsb="0" net="N27" />
               </connections>
             </pin>
           </pins>
@@ -985,7 +985,7 @@
               <id>M35</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N2" />
+                <connection net="N26" />
               </connections>
             </pin>
             <pin>
@@ -1027,7 +1027,7 @@
               <id>M38</id>
               <termid>T24</termid>
               <connections>
-                <connection net="N3" />
+                <connection net="N27" />
               </connections>
             </pin>
             <pin>
@@ -1745,7 +1745,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N2" />
+                <connection pinmsb="0" pinlsb="0" net="N26" />
               </connections>
             </pin>
           </pins>
@@ -1823,7 +1823,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N3" />
+                <connection pinmsb="0" pinlsb="0" net="N27" />
               </connections>
             </pin>
           </pins>
@@ -2243,8 +2243,6 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="gnd"></net>
-              <net ref="unnamed_1_7815sl_i15_input"></net>
-              <net ref="unnamed_1_7915l_i16_input"></net>
               <net ref="unnamed_1_ledl_i12_a"></net>
               <net ref="unnamed_1_ledl_i19_b"></net>
               <net ref="unnamed_1_ledl_i25_a"></net>
@@ -2257,7 +2255,9 @@
               <net ref="vcc"></net>
               <net ref="vcc15"></net>
               <net ref="vcc15m"></net>
+              <net ref="vcc24"></net>
               <net ref="vcc24_raw"></net>
+              <net ref="vcc24m"></net>
               <net ref="vcc24m_raw"></net>
               <net ref="vcc_raw"></net>
               <net ref="vee"></net>

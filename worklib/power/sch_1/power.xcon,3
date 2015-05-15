@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-12T17:48:59</modificationTime>
+    <modificationTime>2015-05-14T14:47:17</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="power" view="sch_1">
       <lastids>
         <instanceid>48</instanceid>
-        <netid>21</netid>
+        <netid>25</netid>
         <insttermid>99</insttermid>
       </lastids>
       <cells>
@@ -312,22 +312,6 @@
           <name>unnamed_1_7915l_i16_input</name>
         </net>
         <net>
-          <id>N4</id>
-          <name>unnamed_1_inductorl_i3_a</name>
-        </net>
-        <net>
-          <id>N5</id>
-          <name>unnamed_1_inductorl_i4_a</name>
-        </net>
-        <net>
-          <id>N6</id>
-          <name>unnamed_1_inductorl_i5_a</name>
-        </net>
-        <net>
-          <id>N7</id>
-          <name>unnamed_1_inductorl_i6_a</name>
-        </net>
-        <net>
           <id>N8</id>
           <name>unnamed_1_ledl_i12_a</name>
         </net>
@@ -358,6 +342,22 @@
         <net>
           <id>N15</id>
           <name>unnamed_1_rsmd0805_i31_a</name>
+        </net>
+        <net>
+          <id>N22</id>
+          <name>vcc24_raw</name>
+        </net>
+        <net>
+          <id>N23</id>
+          <name>vcc24m_raw</name>
+        </net>
+        <net>
+          <id>N24</id>
+          <name>vcc_raw</name>
+        </net>
+        <net>
+          <id>N25</id>
+          <name>vee_raw</name>
         </net>
         <net>
           <id>N1</id>
@@ -421,7 +421,7 @@
               <id>M1</id>
               <termid>T1</termid>
               <connections>
-                <connection net="N4" />
+                <connection net="N24" />
               </connections>
             </pin>
             <pin>
@@ -442,7 +442,7 @@
               <id>M4</id>
               <termid>T4</termid>
               <connections>
-                <connection net="N5" />
+                <connection net="N25" />
               </connections>
             </pin>
           </pins>
@@ -470,7 +470,7 @@
               <id>M5</id>
               <termid>T1</termid>
               <connections>
-                <connection net="N6" />
+                <connection net="N22" />
               </connections>
             </pin>
             <pin>
@@ -491,7 +491,7 @@
               <id>M8</id>
               <termid>T4</termid>
               <connections>
-                <connection net="N7" />
+                <connection net="N23" />
               </connections>
             </pin>
           </pins>
@@ -521,7 +521,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
+                <connection pinmsb="0" pinlsb="0" net="N24" />
               </connections>
             </pin>
             <pin>
@@ -560,7 +560,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N5" />
+                <connection pinmsb="0" pinlsb="0" net="N25" />
               </connections>
             </pin>
             <pin>
@@ -599,7 +599,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
+                <connection pinmsb="0" pinlsb="0" net="N22" />
               </connections>
             </pin>
             <pin>
@@ -638,7 +638,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N7" />
+                <connection pinmsb="0" pinlsb="0" net="N23" />
               </connections>
             </pin>
             <pin>
@@ -2245,10 +2245,6 @@
               <net ref="gnd"></net>
               <net ref="unnamed_1_7815sl_i15_input"></net>
               <net ref="unnamed_1_7915l_i16_input"></net>
-              <net ref="unnamed_1_inductorl_i3_a"></net>
-              <net ref="unnamed_1_inductorl_i4_a"></net>
-              <net ref="unnamed_1_inductorl_i5_a"></net>
-              <net ref="unnamed_1_inductorl_i6_a"></net>
               <net ref="unnamed_1_ledl_i12_a"></net>
               <net ref="unnamed_1_ledl_i19_b"></net>
               <net ref="unnamed_1_ledl_i25_a"></net>
@@ -2261,7 +2257,11 @@
               <net ref="vcc"></net>
               <net ref="vcc15"></net>
               <net ref="vcc15m"></net>
+              <net ref="vcc24_raw"></net>
+              <net ref="vcc24m_raw"></net>
+              <net ref="vcc_raw"></net>
               <net ref="vee"></net>
+              <net ref="vee_raw"></net>
               <net ref="vtt"></net>
             </nets>
             <instances>

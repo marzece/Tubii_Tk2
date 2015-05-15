@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-23T01:36:27</modificationTime>
+    <modificationTime>2015-05-15T14:42:17</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
       <lastids>
         <instanceid>16</instanceid>
-        <netid>267</netid>
-        <insttermid>956</insttermid>
+        <netid>276</netid>
+        <insttermid>1011</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -201,11 +201,6 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T308</id>
-              <name>tub_clk_in</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T503</id>
               <name>clk_sel</name>
               <direction>input</direction>
@@ -243,6 +238,16 @@
             <term>
               <id>T866</id>
               <name>reset</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T1243</id>
+              <name>tub_clk_in_n</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T1244</id>
+              <name>tub_clk_in_p</name>
               <direction>input</direction>
             </term>
           </terms>
@@ -1448,12 +1453,6 @@
           <direction>output</direction>
         </net>
         <net>
-          <id>N195</id>
-          <name>tub_clk_in</name>
-          <scope>interface</scope>
-          <direction>input</direction>
-        </net>
-        <net>
           <id>N196</id>
           <name>unnamed_1_caencoms_i8_sync24ttl</name>
         </net>
@@ -1528,6 +1527,18 @@
         <net>
           <id>N260</id>
           <name>unnamed_1_microzedmodule_i1_mtcamimictrig2</name>
+        </net>
+        <net>
+          <id>N275</id>
+          <name>tub_clk_in_n</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N276</id>
+          <name>tub_clk_in_p</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>gnd</id>
@@ -1846,13 +1857,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M357</id>
-              <termid>T308</termid>
-              <connections>
-                <connection net="N195" />
-              </connections>
-            </pin>
-            <pin>
               <id>M496</id>
               <termid>T503</termid>
               <connections>
@@ -1906,6 +1910,20 @@
               <termid>T866</termid>
               <connections>
                 <connection net="N227" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1010</id>
+              <termid>T1243</termid>
+              <connections>
+                <connection net="N275" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1011</id>
+              <termid>T1244</termid>
+              <connections>
+                <connection net="N276" />
               </connections>
             </pin>
           </pins>
@@ -3395,7 +3413,13 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tub_clk_in">
+          <netScope ref="tub_clk_in_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="tub_clk_in_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
@@ -3503,7 +3527,8 @@
               <net ref="tellie_pulse_out"></net>
               <net ref="ttl_to_ecl_in"></net>
               <net ref="ttl_to_ecl_out"></net>
-              <net ref="tub_clk_in"></net>
+              <net ref="tub_clk_in_n"></net>
+              <net ref="tub_clk_in_p"></net>
               <net ref="tubii_rt_out"></net>
               <net ref="unnamed_1_caencoms_i8_datardy"></net>
               <net ref="unnamed_1_caencoms_i8_gt2p"></net>
