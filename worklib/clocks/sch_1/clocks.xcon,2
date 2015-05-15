@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-15T11:49:35</modificationTime>
+    <modificationTime>2015-05-15T17:10:44</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="clocks" view="sch_1">
       <lastids>
         <instanceid>14</instanceid>
-        <netid>329</netid>
-        <insttermid>828</insttermid>
+        <netid>341</netid>
+        <insttermid>856</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -45,14 +45,19 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T18</id>
-              <name>tub_clk_in</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T173</id>
               <name>reset_ecl_p</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T283</id>
+              <name>tub_clk_in_n</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T284</id>
+              <name>tub_clk_in_p</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -729,12 +734,6 @@
           <direction>input</direction>
         </net>
         <net>
-          <id>N71</id>
-          <name>tub_clk_in</name>
-          <scope>interface</scope>
-          <direction>input</direction>
-        </net>
-        <net>
           <id>N84</id>
           <name>count_data_ecl</name>
           <msb>7</msb>
@@ -763,6 +762,18 @@
         <net>
           <id>N219</id>
           <name>unnamed_1_dr610f1button_i24_b1</name>
+        </net>
+        <net>
+          <id>N335</id>
+          <name>tub_clk_in_n</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N336</id>
+          <name>tub_clk_in_p</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>gnd</id>
@@ -860,17 +871,24 @@
               </connections>
             </pin>
             <pin>
-              <id>M14</id>
-              <termid>T18</termid>
-              <connections>
-                <connection net="N71" />
-              </connections>
-            </pin>
-            <pin>
               <id>M188</id>
               <termid>T173</termid>
               <connections>
                 <connection net="N87" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M855</id>
+              <termid>T283</termid>
+              <connections>
+                <connection net="N335" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M856</id>
+              <termid>T284</termid>
+              <connections>
+                <connection net="N336" />
               </connections>
             </pin>
           </pins>
@@ -1950,7 +1968,13 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tub_clk_in">
+          <netScope ref="tub_clk_in_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="tub_clk_in_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
@@ -1970,7 +1994,7 @@
         <pages>
           <page number="1">
             <physicalPageNumber>1</physicalPageNumber>
-            <errorStatus>false</errorStatus>
+            <errorStatus>true</errorStatus>
             <nets>
               <net ref="bckp_used"></net>
               <net ref="clk100_n"></net>
@@ -1987,7 +2011,8 @@
               <net ref="le"></net>
               <net ref="reset"></net>
               <net ref="sr_clk"></net>
-              <net ref="tub_clk_in"></net>
+              <net ref="tub_clk_in_n"></net>
+              <net ref="tub_clk_in_p"></net>
               <net ref="unnamed_1_74f164_i4_q0"></net>
               <net ref="unnamed_1_74f164_i4_q1"></net>
               <net ref="unnamed_1_74f164_i4_q2"></net>

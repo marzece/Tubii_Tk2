@@ -1,9 +1,9 @@
 FILE_TYPE=EXPANDEDPARTLIST;
-{ Packager-XL run on 15-May-2015 AT 11:13:18 }
+{ Packager-XL run on 15-May-2015 AT 17:12:08 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='TUBII';
- POST_TIME='15-May-2015 AT 11:13:18';
+ POST_TIME='15-May-2015 AT 17:12:08';
  SOURCE_TOOL='PACKAGER_XL';
 END_DIRECTIVES;
 
@@ -6884,6 +6884,44 @@ e1_i5@tubii_tk2_lib.power(sch_1):page1_i48@capacitors.csmd0603(chips)',
  TOL='5%',
  CDS_LIB='capacitors',
  CDS_PART_NAME='CSMD0603-0.1UF,5%,0603,50V',
+ VOLTAGE='50V',
+ PRIM_FILE='./Parts/parts/capacitors/csmd0603/chips/chips.prt';
+
+PART_NAME
+ C184 'CSMD0603-0.1UF,10%,0603,50V':
+ ROOM='CLK_PICK';
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1_I33@CAPACITORS.CSMD0603(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i33@capacitors.csmd0603(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i33@capacitors.csmd0603(chips)',
+ PATH='I33',
+ DRAWING='@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1',
+ TOL_ON_OFF='ON',
+ TC='0',
+ SLOPE='CSMAX',
+ POSTOL='10%',
+ PACKTYPE='0603',
+ NEGTOL='10%',
+ MAX_TEMP='CTMAX',
+ KNEE='CBMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ CURRENT='CIMAX',
+ PHYS_PAGE='1',
+ XY='(-925,2450)',
+ ROT='0',
+ VER='1',
+ VALUE='0.1UF',
+ PART_NAME='CSMD0603',
+ TOL='10%',
+ ROOM='CLK_PICK',
+ CDS_LIB='capacitors',
+ CDS_PART_NAME='CSMD0603-0.1UF,10%,0603,50V',
  VOLTAGE='50V',
  PRIM_FILE='./Parts/parts/capacitors/csmd0603/chips/chips.prt';
 
@@ -20977,6 +21015,41 @@ e1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i103@resistors.rsmd0805(chips)'
  PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
 
 PART_NAME
+ R368 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I4@TUBII_TK2_LIB.GENERAL_UTILITIES(SCH_1):PAGE1_I20@TUBII_TK2_LIB.ECL_TRANSLATION(SCH_1):PAGE1_I40@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_transla~
+tion(sch_1):page1_i40@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i20@tubii_tk2_lib.ecl_transla~
+tion(sch_1):page1_i40@resistors.rsmd0805(chips)',
+ PATH='I40',
+ DRAWING='@TUBII_TK2_LIB.ECL_TRANSLATION(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(750,800)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
  TP1 'TESTPOINT_L':
  ROOM='CNTRL_REG';
 
@@ -27683,5 +27756,26 @@ e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i25@ttl.sn74s32(chips)',
  CDS_LIB='ttl',
  CDS_PART_NAME='SN74S32',
  PRIM_FILE='./Parts/parts/ttl/sn74s32/chips/chips.prt';
+
+PART_NAME
+ U153 'MC10H116':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1_I32@ECL.MC10H116(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i32@ecl.mc10h116(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i32@ecl.mc10h116(chips)',
+ PATH='I32',
+ DRAWING='@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1',
+ PHYS_PAGE='1',
+ XY='(-875,2025)',
+ ROT='0',
+ VER='1',
+ CDS_LIB='ecl',
+ CDS_PART_NAME='MC10H116',
+ PRIM_FILE='./Parts/parts/ecl/mc10h116/chips/chips.prt';
 
 END.

@@ -8,8 +8,8 @@
   (design "clocks"
     (lastIds
       (lastInstanceId 14)
-      (lastNetId 336)
-      (lastInstTermId 841)
+      (lastNetId 341)
+      (lastInstTermId 856)
     )
     (cells
       ("S1" "default_clk_sel" "tubii_tk2_lib" "sym_1"
@@ -19,6 +19,8 @@
           ("T16" "default_clk" -1 -1 2)
           ("T17" "reset" -1 -1 1)
           ("T173" "reset_ecl_p" -1 -1 2)
+          ("T283" "tub_clk_in_n" -1 -1 1)
+          ("T284" "tub_clk_in_p" -1 -1 1)
         )
       )
       ("S2" "fault_detection" "tubii_tk2_lib" "sym_1"
@@ -238,6 +240,16 @@
           ("M188" "T173" -1 -1
             (conn
               ("0" -1 -1 "N87" -1 -1)
+            )
+          )
+          ("M855" "T283" -1 -1
+            (conn
+              ("0" -1 -1 "N335" -1 -1)
+            )
+          )
+          ("M856" "T284" -1 -1
+            (conn
+              ("0" -1 -1 "N336" -1 -1)
             )
           )
         )
