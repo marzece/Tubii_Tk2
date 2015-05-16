@@ -3,80 +3,134 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Fri May 15 18:10:24 2015  |
+|                                                    Sat May 16 16:30:32 2015  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
   GND          pins ADDED TO this existing net (pins not previously on any net)
-                                 U153.20         14095.0  5195.0
+                                 C185.1                         
+                                 U154.2                         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_2_FRONTPORTS_I2_TUBCLKI pins ADDED TO this existing net (pins not previously on any net)
-                                 R370.1                         
+  UNNAMED_1_RSMD0805_I31_A pins MOVED FROM this net (to net name listed on right)
+                                 C75.1            3800.0  5289.4
+                                                                            GND
+                                 C79.1            3800.0  5289.4
+                                                                            GND
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_2_FRONTPORTS_I2_TUBCL_1 pins ADDED TO this existing net (pins not previously on any net)
-                                 R369.1                         
+  VEE          pins MOVED FROM this net (to net name listed on right)
+                                 C75.2            3800.0  5210.6
+                                                                            VTT
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   VTT          pins ADDED TO this existing net (pins not previously on any net)
-                                 R369.2                         
-                                 R370.2                         
+                                 C185.2                         
+                                 L5.2                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VTT_RAW      pins ADDED TO this new net
+                                 L5.1                           
+                                 U154.1                         
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Fri May 15 18:10:24 2015  |
+|                                                    Sat May 16 16:30:32 2015  |
 |------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
+| COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
+|    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R369                RSMD0805-50,1%,0805   
- R370                RSMD0805-50,1%,0805   
+ OSTOQ027150
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Fri May 15 18:10:24 2015  |
+|                                                    Sat May 16 16:30:32 2015  |
 |------------------------------------------------------------------------------|
-| COMPONENT PROPERTIES added to board drawing                                  |
+| COMPONENTS DELETED from board drawing                                        |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   ref  des   |   x   |   y   |   property   |             value              |
+|    ref des        |    device type      |   x   |   y                        |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R369                           ROOM           CLK_PICK
- R370                           ROOM           CLK_PICK
+ Q3                  LM337T_L               4100.5  5374.0
+ R80                 RSMD0805-71.5,1%,0805  3800.0  5500.0
+ R81                 RSMD0805-120,1%,0805   3800.0  5700.0
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Fri May 15 18:10:24 2015  |
+|                                                    Sat May 16 16:30:32 2015  |
 |------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to board drawing                                       |
+| COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
+|    ref des        |    device type                                           |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R369.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
- R369.2                         ROOM           CLK_PICK
- R370.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
- R370.2                         ROOM           CLK_PICK
+ C185                TANT0805-0.1UF,5%,0805,50V 
+ L5                  INDUCTOR_L            
+ U154                OSTOQ027150           
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   5  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Fri May 15 18:10:24 2015  |
+|                                                    Sat May 16 16:30:32 2015  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in board drawing          |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C75                 TANT0805-10UF,5%,0805,25V  3800.0  5250.0 TANT0805-1UF,10%,0805,25V
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Sat May 16 16:30:32 2015  |
+|------------------------------------------------------------------------------|
+| COMPONENT PROPERTIES added to board drawing                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   ref  des   |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C185                           ROOM           POWER
+ L5                             ROOM           POWER
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   7  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Sat May 16 16:30:32 2015  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to board drawing                                       |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C75.2           3800.0  5250.0 PRIM_FILE      ./Parts/parts/capacitors/tant0805/chips/chips.prt
+ C75.2           3800.0  5250.0 ROOM           POWER
+ C185.2                         PRIM_FILE      ./Parts/parts/capacitors/tant0805/chips/chips.prt
+ C185.2                         ROOM           POWER
+ L5.2                           PRIM_FILE      ./Parts/parts/misc/inductor_l/chips/chips.prt
+ L5.2                           ROOM           POWER
+ L5.2                           SIZE           1
+ U154.2                         PRIM_FILE      ./Parts/parts/misc/ostoq027150/chips/chips.prt
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   8  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Sat May 16 16:30:32 2015  |
 |------------------------------------------------------------------------------|
 | PIN PROPERTIES added to board drawing                                        |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    pin_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R369.1                         CDS_PINID      A(0)
- R369.2                         CDS_PINID      B(0)
- R370.1                         CDS_PINID      A(0)
- R370.2                         CDS_PINID      B(0)
+ C185.1                         CDS_PINID      A(0)
+ C185.2                         CDS_PINID      B(0)
+ L5.1                           CDS_PINID      A(0)
+ L5.2                           CDS_PINID      B(0)
+ U154.1                         CDS_PINID      \1\
+ U154.2                         CDS_PINID      \2\
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  17                                             |
+|   total ECO changes reported  33                                             |
 |------------------------------------------------------------------------------|

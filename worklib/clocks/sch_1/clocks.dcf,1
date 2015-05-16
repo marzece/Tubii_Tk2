@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 47 )
+			( logicalViewRevNum 48 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -455,7 +455,6 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):reset_clk_div_ecl"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):tub_clk_in"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):unnamed_1_rsmd0805_i16_b"
 			)
@@ -840,10 +839,6 @@
 				)
 				( objectStatus "reset" )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):tub_clk_in"
-				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):tub_clk_in") )
-				( objectStatus "tub_clk_in" )
-			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):v3p3"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):count_data_ecl(0)"
@@ -955,6 +950,12 @@
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_dr610f1button_i24_b1"
 				( objectStatus "unnamed_1_dr610f1button_i24_b1" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):tub_clk_in_n"
+				( objectStatus "tub_clk_in_n" )
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):tub_clk_in_p"
+				( objectStatus "tub_clk_in_p" )
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -16431,7 +16432,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "default_clk_sel"
@@ -18727,7 +18728,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "fault_detection"
@@ -25104,7 +25105,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "change_clks"
