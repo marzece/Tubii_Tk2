@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "default_clk_sel"
     (lastIds
-      (lastInstanceId 26)
-      (lastNetId 25)
-      (lastInstTermId 128)
+      (lastInstanceId 30)
+      (lastNetId 27)
+      (lastInstTermId 136)
       (lastDPInstTermId 4)
     )
     (cells
@@ -142,6 +142,12 @@
           ("T127" "vee" -1 -1 1)
         )
       )
+      ("S10" "z4ke" "diodes" "sym_1"
+        (terms
+          ("T140" "and" -1 -1 3)
+          ("T141" "cat" -1 -1 3)
+        )
+      )
     )
 
     (nets
@@ -163,6 +169,8 @@
       ("N23" "tub_clk_in_n" -1 -1 1 1)
       ("N24" "tub_clk_in_p" -1 -1 1 1)
       ("N25" "unnamed_1_mc10h104_i4_a2" -1 -1 0 )
+      ("N26" "unnamed_1_rsmd0805_i39_a" -1 -1 0 )
+      ("N27" "unnamed_1_z4ke_i37_cat" -1 -1 0 )
       ("N11" "gnd" -1 -1 2 )
       ("N17" "vcc" -1 -1 2 )
       ("N18" "vee" -1 -1 2 )
@@ -816,6 +824,62 @@
           ("M128" "T63" 0 0
             (conn
               ("0" 0 0 "N19" -1 -1)
+            )
+          )
+        )
+      )
+      ("I27" "page1_i37" "S10"
+        (pins
+          ("M129" "T140" -1 -1
+            (conn
+              ("0" -1 -1 "N21" -1 -1)
+            )
+          )
+          ("M130" "T141" -1 -1
+            (conn
+              ("0" -1 -1 "N27" -1 -1)
+            )
+          )
+        )
+      )
+      ("I28" "page1_i38" "S10"
+        (pins
+          ("M131" "T140" -1 -1
+            (conn
+              ("0" -1 -1 "N27" -1 -1)
+            )
+          )
+          ("M132" "T141" -1 -1
+            (conn
+              ("0" -1 -1 "N26" -1 -1)
+            )
+          )
+        )
+      )
+      ("I29" "page1_i39" "S6"
+        (pins
+          ("M133" "T62" 0 0
+            (conn
+              ("0" 0 0 "N26" -1 -1)
+            )
+          )
+          ("M134" "T63" 0 0
+            (conn
+              ("0" 0 0 "N2" -1 -1)
+            )
+          )
+        )
+      )
+      ("I30" "page1_i40" "S6"
+        (pins
+          ("M135" "T62" 0 0
+            (conn
+              ("0" 0 0 "N26" -1 -1)
+            )
+          )
+          ("M136" "T63" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
             )
           )
         )
