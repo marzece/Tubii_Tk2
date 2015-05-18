@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 52 )
+			( logicalViewRevNum 53 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -1209,6 +1209,9 @@
 			)
 			( signal "@tubii_tk2_lib.front_ports(sch_1):tub_clk_in_p"
 				( objectStatus "tub_clk_in_p" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):gt_ttl_out"
+				( objectStatus "gt_ttl_out" )
 			)
 			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i59"
 				( attribute "CDS_LIB" "misc"
@@ -7663,6 +7666,64 @@
 					)
 				)
 			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i122"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2325,3975)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I122" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i123"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2325,3875)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I123" )
+				( pin "a"
+				)
+			)
 			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i43:tellie_pulse_out"
 			)
 			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i43:tellie_delay_out"
@@ -9609,7 +9670,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "caen_ports"

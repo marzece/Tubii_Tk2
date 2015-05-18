@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-15T18:12:50</modificationTime>
+    <modificationTime>2015-05-18T15:57:52</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="front_ports" view="sch_1">
       <lastids>
-        <instanceid>14</instanceid>
-        <netid>105</netid>
-        <insttermid>236</insttermid>
+        <instanceid>16</instanceid>
+        <netid>108</netid>
+        <insttermid>246</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -481,6 +481,21 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S14</id>
+          <library>misc</library>
+          <name>testpoint_l</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T517</id>
+              <name>a</name>
+              <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -870,6 +885,12 @@
           <name>tub_clk_in_p</name>
           <scope>interface</scope>
           <direction>output</direction>
+        </net>
+        <net>
+          <id>N108</id>
+          <name>gt_ttl_out</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>gnd</id>
@@ -1604,6 +1625,62 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I15</id>
+          <cellid>S14</cellid>
+          <name>page1_i122</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M245</id>
+              <termid>T517</termid>
+              <connections>
+                <connection net="N108" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I16</id>
+          <cellid>S14</cellid>
+          <name>page1_i123</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M246</id>
+              <termid>T517</termid>
+              <connections>
+                <connection net="gnd" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1742,6 +1819,12 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="gt_ttl_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
             </pageScope>
           </netScope>
           <netScope ref="lo_star_out_n">
@@ -2030,6 +2113,7 @@
               <net ref="gt_n"></net>
               <net ref="gt_nim"></net>
               <net ref="gt_p"></net>
+              <net ref="gt_ttl_out"></net>
               <net ref="lo_star_out_n"></net>
               <net ref="lo_star_out_p"></net>
               <net ref="lvds_to_ecl_in_n"></net>
@@ -2092,6 +2176,8 @@
               <instance ref="i87"></instance>
               <instance ref="i94"></instance>
               <instance ref="i108"></instance>
+              <instance ref="i122"></instance>
+              <instance ref="i123"></instance>
             </instances>
           </page>
         </pages>

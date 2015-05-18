@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 51 )
+			( logicalViewRevNum 52 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -550,9 +550,6 @@
 			)
 			( signal "@tubii_tk2_lib.front_ports(sch_1):clk100_p"
 				( objectStatus "clk100_p" )
-			)
-			( signal "@tubii_tk2_lib.front_ports(sch_1):tub_clk_in"
-				( objectStatus "tub_clk_in" )
 			)
 			( signal "@tubii_tk2_lib.front_ports(sch_1):gt_n"
 				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i54@tubii_tk2_lib.time_bus_ports(sch_1):gt_n") )
@@ -1206,6 +1203,12 @@
 			( signal "@tubii_tk2_lib.front_ports(sch_1):tubii_rt_out"
 				( alias ( signalRef "@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):tubii_rt_out") )
 				( objectStatus "tubii_rt_out" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):tub_clk_in_n"
+				( objectStatus "tub_clk_in_n" )
+			)
+			( signal "@tubii_tk2_lib.front_ports(sch_1):tub_clk_in_p"
+				( objectStatus "tub_clk_in_p" )
 			)
 			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i59"
 				( attribute "CDS_LIB" "misc"
@@ -9596,7 +9599,7 @@
 	( BaseCopy "caen_ports"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 6 )
+				( logicalViewRevNum 7 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)

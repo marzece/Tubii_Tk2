@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-18T15:59:52</modificationTime>
+    <modificationTime>2015-05-18T16:07:32</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>17</instanceid>
-        <netid>298</netid>
+        <netid>299</netid>
         <insttermid>1178</insttermid>
       </lastids>
       <cells>
@@ -1557,6 +1556,12 @@
           <direction>input</direction>
         </net>
         <net>
+          <id>N299</id>
+          <name>gt_ttl_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
           <id>gnd</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -2415,6 +2420,7 @@
               <id>M1178</id>
               <termid>T1371</termid>
               <connections>
+                <connection net="N299" />
               </connections>
             </pin>
           </pins>
@@ -3090,6 +3096,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="caen_out_anal">
             <pageScope number="1">
@@ -3220,6 +3227,12 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="gt_ttl_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="lo_star_out_n">
@@ -3513,6 +3526,7 @@
               <net ref="gt_n"></net>
               <net ref="gt_nim"></net>
               <net ref="gt_p"></net>
+              <net ref="gt_ttl_out"></net>
               <net ref="le_caen"></net>
               <net ref="le_clks"></net>
               <net ref="le_cntrl_reg"></net>
