@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 15-May-2015 AT 18:06:09 }
+{ Packager-XL run on 16-May-2015 AT 16:26:51 }
 primitive '1N4448';
   pin
     'IN':
@@ -3656,33 +3656,6 @@ primitive 'LM1117';
       NC_PINS='(4)';
   end_body;
 end_primitive;
-primitive 'LM337T_L';
-  pin
-    'REF':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    'AN':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    'CAT':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-      LAST_MODIFIED='Fri Dec  4 14:30:01 PST 1992';
-      ABBREV='LM337T_L';
-      NEEDS_NO_SIZE='TRUE';
-      PHYS_DES_PREFIX='Q';
-      CLASS='DISCRETE';
-      JEDEC_TYPE='TO220ABV';
-      NC_PINS='(4)';
-      LEADOUT_STYLE='TO220AB_12';
-      PINCOUNT='4';
-      PATH='10P';
-      SIZE='1';
-      PART_NAME='LM337T_L';
-  end_body;
-end_primitive;
 primitive 'MC10E016';
   pin
     'VEE':
@@ -5006,6 +4979,35 @@ primitive 'OPA4277';
       CLASS='IC';
   end_body;
 end_primitive;
+primitive 'OSTOQ027150';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='OSTOQ027150';
+      BODY_NAME='OSTOQ027150';
+      JEDEC_TYPE='OSTOQ027150';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
 primitive 'OSTOQ047150';
   pin
     '1':
@@ -5402,40 +5404,6 @@ primitive 'RSMD0805-111,1%,0805';
       PARENT_PPT_PART='RSMD0805-111,1%,0805';
   end_body;
 end_primitive;
-primitive 'RSMD0805-120,1%,0805';
-  pin
-    'B'<0>:
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-    'A'<0>:
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-  end_pin;
-  body
-      PART_NAME='RSMD0805';
-      COMP_TYPE='RES';
-      PATH='2P';
-      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
-      PRIM_TYPE='CHIPS_PRT';
-      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
-      VER='1';
-      XY='(1350,1350)';
-      DIR='ELEMENT.LIB';
-      ROT='0';
-      PINCOUNT='2';
-      SIZE='1';
-      BODY_NAME='RSMD0805';
-      JEDEC_TYPE='RES805';
-      PHYS_DES_PREFIX='R';
-      CLASS='DISCRETE';
-      VALUE='120';
-      PARENT_PART_TYPE='RSMD0805';
-      PARENT_PPT='RSMD0805';
-      PARENT_PPT_PART='RSMD0805-120,1%,0805';
-  end_body;
-end_primitive;
 primitive 'RSMD0805-2K,1%,0805';
   pin
     'B'<0>:
@@ -5570,40 +5538,6 @@ primitive 'RSMD0805-50,1%,0805';
       PARENT_PART_TYPE='RSMD0805';
       PARENT_PPT='RSMD0805';
       PARENT_PPT_PART='RSMD0805-50,1%,0805';
-  end_body;
-end_primitive;
-primitive 'RSMD0805-71.5,1%,0805';
-  pin
-    'B'<0>:
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-    'A'<0>:
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-  end_pin;
-  body
-      PART_NAME='RSMD0805';
-      COMP_TYPE='RES';
-      PATH='2P';
-      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
-      PRIM_TYPE='CHIPS_PRT';
-      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
-      VER='1';
-      XY='(1350,1350)';
-      DIR='ELEMENT.LIB';
-      ROT='0';
-      PINCOUNT='2';
-      SIZE='1';
-      BODY_NAME='RSMD0805';
-      JEDEC_TYPE='RES805';
-      PHYS_DES_PREFIX='R';
-      CLASS='DISCRETE';
-      VALUE='71.5';
-      PARENT_PART_TYPE='RSMD0805';
-      PARENT_PPT='RSMD0805';
-      PARENT_PPT_PART='RSMD0805-71.5,1%,0805';
   end_body;
 end_primitive;
 primitive 'SIP_HEADER_16PIN';

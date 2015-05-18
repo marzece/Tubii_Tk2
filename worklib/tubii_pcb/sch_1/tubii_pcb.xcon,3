@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-23T00:40:50</modificationTime>
+    <modificationTime>2015-04-23T01:36:27</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>16</instanceid>
         <netid>267</netid>
-        <insttermid>954</insttermid>
+        <insttermid>956</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -111,11 +111,6 @@
               <lsb>0</lsb>
             </term>
             <term>
-              <id>T723</id>
-              <name>gt</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T724</id>
               <name>smellie_pre_delay</name>
               <direction>input</direction>
@@ -173,6 +168,16 @@
             <term>
               <id>T995</id>
               <name>mtca_mimic_trig2</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T1119</id>
+              <name>read_cntrl_reg_bit</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1120</id>
+              <name>gt</name>
               <direction>input</direction>
             </term>
           </terms>
@@ -1708,13 +1713,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M610</id>
-              <termid>T723</termid>
-              <connections>
-                <connection net="N132" />
-              </connections>
-            </pin>
-            <pin>
               <id>M611</id>
               <termid>T724</termid>
               <connections>
@@ -1796,6 +1794,20 @@
               <termid>T995</termid>
               <connections>
                 <connection net="N260" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M955</id>
+              <termid>T1119</termid>
+              <connections>
+                <connection net="N155" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M956</id>
+              <termid>T1120</termid>
+              <connections>
+                <connection net="N132" />
               </connections>
             </pin>
           </pins>
