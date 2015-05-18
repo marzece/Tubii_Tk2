@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "front_ports"
     (lastIds
-      (lastInstanceId 14)
-      (lastNetId 105)
-      (lastInstTermId 236)
+      (lastInstanceId 16)
+      (lastNetId 108)
+      (lastInstTermId 246)
     )
     (cells
       ("S2" "translation_ports" "tubii_tk2_lib" "sym_1"
@@ -121,6 +121,11 @@
           ("T442" "20" -1 -1 3)
         )
       )
+      ("S14" "testpoint_l" "misc" "sym_1"
+        (terms
+          ("T517" "a" -1 -1 3)
+        )
+      )
     )
 
     (nets
@@ -187,6 +192,7 @@
       ("N93" "mtca_mimic1_pulse_anal" -1 -1 1 2)
       ("N102" "tub_clk_in_n" -1 -1 1 2)
       ("N103" "tub_clk_in_p" -1 -1 1 2)
+      ("N108" "gt_ttl_out" -1 -1 1 1)
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2  inherited)
     )
@@ -589,6 +595,24 @@
           ("M212" "T442" -1 -1
             (conn
               ("0" -1 -1 "N40" -1 -1)
+            )
+          )
+        )
+      )
+      ("I15" "page1_i122" "S14"
+        (pins
+          ("M245" "T517" -1 -1
+            (conn
+              ("0" -1 -1 "N108" -1 -1)
+            )
+          )
+        )
+      )
+      ("I16" "page1_i123" "S14"
+        (pins
+          ("M246" "T517" -1 -1
+            (conn
+              ("0" -1 -1 "gnd" -1 -1)
             )
           )
         )

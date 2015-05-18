@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 21 )
+			( logicalViewRevNum 22 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -1222,6 +1222,7 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync24_ttl"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_lvds_n"
 				( objectFlag fObjectAlias )
@@ -1230,6 +1231,7 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_ttl"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):caen_out_anal(1)"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):caen_out_anal(1)") )
@@ -1499,6 +1501,14 @@
 			( signal "@tubii_tk2_lib.caen_coms(sch_1):gt2_p"
 				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_p") )
 				( objectStatus "gt2_p" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):sync24_ttl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync24_ttl") )
+				( objectStatus "sync24_ttl" )
+			)
+			( signal "@tubii_tk2_lib.caen_coms(sch_1):sync_ttl"
+				( alias ( signalRef "@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_ttl") )
+				( objectStatus "sync_ttl" )
 			)
 			( gate "@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -45824,7 +45834,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "caen_dig_coms"

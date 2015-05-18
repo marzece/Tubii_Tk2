@@ -8,8 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 17)
-      (lastNetId 290)
-      (lastInstTermId 1121)
+      (lastNetId 300)
+      (lastInstTermId 1178)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -128,6 +128,7 @@
           ("T505" "gt2_p" -1 -1 2)
           ("T537" "sync24_ttl" -1 -1 2)
           ("T538" "sync_ttl" -1 -1 2)
+          ("T1371" "gt_ttl_out" -1 -1 2)
         )
       )
       ("S10" "ellie_coms" "tubii_tk2_lib" "sym_1"
@@ -335,6 +336,7 @@
       ("N260" "unnamed_1_microzedmodule_i1_mtcamimictrig2" -1 -1 0 )
       ("N275" "tub_clk_in_n" -1 -1 1 1)
       ("N276" "tub_clk_in_p" -1 -1 1 1)
+      ("N300" "gt_ttl_out" -1 -1 1 2)
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2  inherited)
@@ -844,6 +846,11 @@
             (conn
               ("0" -1 -1 "N197" -1 -1)
               ("0" -1 -1 "N197" -1 -1)
+            )
+          )
+          ("M1178" "T1371" -1 -1
+            (conn
+              ("0" -1 -1 "N300" -1 -1)
             )
           )
         )

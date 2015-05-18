@@ -5,15 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-18T11:56:45</modificationTime>
+    <modificationTime>2015-05-18T16:08:49</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>17</instanceid>
-        <netid>283</netid>
-        <insttermid>1065</insttermid>
+        <netid>299</netid>
+        <insttermid>1178</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -564,6 +565,11 @@
             <term>
               <id>T538</id>
               <name>sync_ttl</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1371</id>
+              <name>gt_ttl_out</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -2403,6 +2409,12 @@
               <connections>
                 <connection net="N197" />
                 <connection net="N197" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1178</id>
+              <termid>T1371</termid>
+              <connections>
               </connections>
             </pin>
           </pins>

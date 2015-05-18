@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-18T14:30:22</modificationTime>
+    <modificationTime>2015-05-18T15:57:25</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_dig_coms" view="sch_1">
       <lastids>
         <instanceid>23</instanceid>
-        <netid>29</netid>
+        <netid>30</netid>
         <insttermid>93</insttermid>
         <dpinsttermid>16</dpinsttermid>
       </lastids>
@@ -511,6 +511,12 @@
           <direction>output</direction>
         </net>
         <net>
+          <id>N30</id>
+          <name>gt_ttl_out</name>
+          <scope>interface</scope>
+          <direction>output</direction>
+        </net>
+        <net>
           <id>N1</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -964,12 +970,14 @@
               <id>M35</id>
               <termid>T45</termid>
               <connections>
+                <connection net="N27" />
               </connections>
             </pin>
             <pin>
               <id>M36</id>
               <termid>T46</termid>
               <connections>
+                <connection net="N26" />
               </connections>
             </pin>
             <pin>
@@ -1004,6 +1012,7 @@
               <id>M41</id>
               <termid>T51</termid>
               <connections>
+                <connection net="N30" />
               </connections>
             </pin>
             <pin>
@@ -2036,6 +2045,12 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
+          <netScope ref="gt_ttl_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="sync24_lvds_n">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2125,6 +2140,7 @@
               <net ref="gt_nim"></net>
               <net ref="gt_p"></net>
               <net ref="gt_ttl"></net>
+              <net ref="gt_ttl_out"></net>
               <net ref="sync24_2_n"></net>
               <net ref="sync24_2_p"></net>
               <net ref="sync24_lvds_n"></net>

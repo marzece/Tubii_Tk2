@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 11 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -344,6 +344,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -433,6 +449,9 @@
 			)
 			( signal "@tubii_tk2_lib.caen_dig_coms(sch_1):gt2_p"
 				( objectStatus "gt2_p" )
+			)
+			( signal "@tubii_tk2_lib.caen_dig_coms(sch_1):gt_ttl_out"
+				( objectStatus "gt_ttl_out" )
 			)
 			( gate "@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"

@@ -5,15 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-04-23T01:36:27</modificationTime>
+    <modificationTime>2015-05-18T15:59:52</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>16</instanceid>
-        <netid>267</netid>
-        <insttermid>956</insttermid>
+        <instanceid>17</instanceid>
+        <netid>298</netid>
+        <insttermid>1178</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -201,11 +202,6 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T308</id>
-              <name>tub_clk_in</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T503</id>
               <name>clk_sel</name>
               <direction>input</direction>
@@ -243,6 +239,16 @@
             <term>
               <id>T866</id>
               <name>reset</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T1243</id>
+              <name>tub_clk_in_n</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T1244</id>
+              <name>tub_clk_in_p</name>
               <direction>input</direction>
             </term>
           </terms>
@@ -559,6 +565,11 @@
             <term>
               <id>T538</id>
               <name>sync_ttl</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1371</id>
+              <name>gt_ttl_out</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -977,6 +988,16 @@
               <msb>15</msb>
               <lsb>0</lsb>
             </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S18</id>
+          <library>tubii_tk2_lib</library>
+          <name>fan_connections</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
           </terms>
         </cell>
       </cells>
@@ -1448,12 +1469,6 @@
           <direction>output</direction>
         </net>
         <net>
-          <id>N195</id>
-          <name>tub_clk_in</name>
-          <scope>interface</scope>
-          <direction>input</direction>
-        </net>
-        <net>
           <id>N196</id>
           <name>unnamed_1_caencoms_i8_sync24ttl</name>
         </net>
@@ -1528,6 +1543,18 @@
         <net>
           <id>N260</id>
           <name>unnamed_1_microzedmodule_i1_mtcamimictrig2</name>
+        </net>
+        <net>
+          <id>N275</id>
+          <name>tub_clk_in_n</name>
+          <scope>interface</scope>
+          <direction>input</direction>
+        </net>
+        <net>
+          <id>N276</id>
+          <name>tub_clk_in_p</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>gnd</id>
@@ -1846,13 +1873,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M357</id>
-              <termid>T308</termid>
-              <connections>
-                <connection net="N195" />
-              </connections>
-            </pin>
-            <pin>
               <id>M496</id>
               <termid>T503</termid>
               <connections>
@@ -1906,6 +1926,20 @@
               <termid>T866</termid>
               <connections>
                 <connection net="N227" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1010</id>
+              <termid>T1243</termid>
+              <connections>
+                <connection net="N275" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1011</id>
+              <termid>T1244</termid>
+              <connections>
+                <connection net="N276" />
               </connections>
             </pin>
           </pins>
@@ -2375,6 +2409,12 @@
               <connections>
                 <connection net="N197" />
                 <connection net="N197" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1178</id>
+              <termid>T1371</termid>
+              <connections>
               </connections>
             </pin>
           </pins>
@@ -3021,6 +3061,27 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I17</id>
+          <cellid>S18</cellid>
+          <name>page1_i82</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -3395,7 +3456,13 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tub_clk_in">
+          <netScope ref="tub_clk_in_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="tub_clk_in_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
@@ -3503,7 +3570,8 @@
               <net ref="tellie_pulse_out"></net>
               <net ref="ttl_to_ecl_in"></net>
               <net ref="ttl_to_ecl_out"></net>
-              <net ref="tub_clk_in"></net>
+              <net ref="tub_clk_in_n"></net>
+              <net ref="tub_clk_in_p"></net>
               <net ref="tubii_rt_out"></net>
               <net ref="unnamed_1_caencoms_i8_datardy"></net>
               <net ref="unnamed_1_caencoms_i8_gt2p"></net>
@@ -3557,6 +3625,7 @@
               <instance ref="i13"></instance>
               <instance ref="i53"></instance>
               <instance ref="i70"></instance>
+              <instance ref="i82"></instance>
             </instances>
           </page>
         </pages>

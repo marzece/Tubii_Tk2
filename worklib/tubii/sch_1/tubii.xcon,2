@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-15T14:12:48</modificationTime>
+    <modificationTime>2015-05-18T15:58:39</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>3</instanceid>
-        <netid>186</netid>
-        <insttermid>281</insttermid>
+        <netid>518</netid>
+        <insttermid>304</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -331,11 +330,6 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T120</id>
-              <name>tub_clk_in</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T207</id>
               <name>tubii_rt_out</name>
               <direction>output</direction>
@@ -344,6 +338,21 @@
               <id>T226</id>
               <name>pulse_inv_in</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T281</id>
+              <name>tub_clk_in_n</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T282</id>
+              <name>tub_clk_in_p</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T299</id>
+              <name>gt_ttl_out</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -675,6 +684,16 @@
               <name>tub_clk_in_p</name>
               <direction>output</direction>
             </term>
+            <term>
+              <id>T280</id>
+              <name>tub_clk_in_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T300</id>
+              <name>gt_ttl_out</name>
+              <direction>input</direction>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -690,262 +709,270 @@
       </cells>
       <nets>
         <net>
-          <id>N125</id>
-          <name>unnamed_2_frontports_i2_caenoutanal</name>
+          <id>N455</id>
+          <name>unnamed_1_frontports_i2_caenoutanal</name>
           <msb>7</msb>
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N126</id>
-          <name>unnamed_2_frontports_i2_clk100n</name>
+          <id>N456</id>
+          <name>unnamed_1_frontports_i2_clk100n</name>
         </net>
         <net>
-          <id>N127</id>
-          <name>unnamed_2_frontports_i2_clk100p</name>
+          <id>N457</id>
+          <name>unnamed_1_frontports_i2_clk100p</name>
         </net>
         <net>
-          <id>N128</id>
-          <name>unnamed_2_frontports_i2_dgtn</name>
+          <id>N458</id>
+          <name>unnamed_1_frontports_i2_dgtn</name>
         </net>
         <net>
-          <id>N129</id>
-          <name>unnamed_2_frontports_i2_dgtp</name>
+          <id>N459</id>
+          <name>unnamed_1_frontports_i2_dgtp</name>
         </net>
         <net>
-          <id>N130</id>
-          <name>unnamed_2_frontports_i2_ecltolvdsin</name>
+          <id>N460</id>
+          <name>unnamed_1_frontports_i2_ecltolvdsin</name>
         </net>
         <net>
-          <id>N131</id>
-          <name>unnamed_2_frontports_i2_ecltolvdsoutn</name>
+          <id>N461</id>
+          <name>unnamed_1_frontports_i2_ecltolvdsoutn</name>
         </net>
         <net>
-          <id>N132</id>
-          <name>unnamed_2_frontports_i2_ecltolvdsoutp</name>
+          <id>N462</id>
+          <name>unnamed_1_frontports_i2_ecltolvdsoutp</name>
         </net>
         <net>
-          <id>N133</id>
-          <name>unnamed_2_frontports_i2_ecltonimin</name>
+          <id>N463</id>
+          <name>unnamed_1_frontports_i2_ecltonimin</name>
         </net>
         <net>
-          <id>N134</id>
-          <name>unnamed_2_frontports_i2_ecltonimout</name>
+          <id>N464</id>
+          <name>unnamed_1_frontports_i2_ecltonimout</name>
         </net>
         <net>
-          <id>N135</id>
-          <name>unnamed_2_frontports_i2_ecltottlin</name>
+          <id>N465</id>
+          <name>unnamed_1_frontports_i2_ecltottlin</name>
         </net>
         <net>
-          <id>N136</id>
-          <name>unnamed_2_frontports_i2_ecltottlout</name>
+          <id>N466</id>
+          <name>unnamed_1_frontports_i2_ecltottlout</name>
         </net>
         <net>
-          <id>N137</id>
-          <name>unnamed_2_frontports_i2_extpedin</name>
+          <id>N467</id>
+          <name>unnamed_1_frontports_i2_extpedin</name>
         </net>
         <net>
-          <id>N138</id>
-          <name>unnamed_2_frontports_i2_extpedout</name>
+          <id>N468</id>
+          <name>unnamed_1_frontports_i2_extpedout</name>
         </net>
         <net>
-          <id>N139</id>
-          <name>unnamed_2_frontports_i2_exttrigin</name>
+          <id>N469</id>
+          <name>unnamed_1_frontports_i2_exttrigin</name>
           <msb>15</msb>
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N140</id>
-          <name>unnamed_2_frontports_i2_genericdelayin</name>
+          <id>N470</id>
+          <name>unnamed_1_frontports_i2_genericdelayin</name>
         </net>
         <net>
-          <id>N141</id>
-          <name>unnamed_2_frontports_i2_genericdelayout</name>
+          <id>N471</id>
+          <name>unnamed_1_frontports_i2_genericdelayout</name>
         </net>
         <net>
-          <id>N142</id>
-          <name>unnamed_2_frontports_i2_genericpulseout</name>
+          <id>N472</id>
+          <name>unnamed_1_frontports_i2_genericpulseout</name>
         </net>
         <net>
-          <id>N143</id>
-          <name>unnamed_2_frontports_i2_gtn</name>
+          <id>N473</id>
+          <name>unnamed_1_frontports_i2_gtn</name>
         </net>
         <net>
-          <id>N144</id>
-          <name>unnamed_2_frontports_i2_gtnim</name>
+          <id>N474</id>
+          <name>unnamed_1_frontports_i2_gtnim</name>
         </net>
         <net>
-          <id>N145</id>
-          <name>unnamed_2_frontports_i2_gtp</name>
+          <id>N475</id>
+          <name>unnamed_1_frontports_i2_gtp</name>
         </net>
         <net>
-          <id>N146</id>
-          <name>unnamed_2_frontports_i2_lostaroutn</name>
+          <id>N476</id>
+          <name>unnamed_1_frontports_i2_gtttlout</name>
         </net>
         <net>
-          <id>N147</id>
-          <name>unnamed_2_frontports_i2_lostaroutp</name>
+          <id>N477</id>
+          <name>unnamed_1_frontports_i2_lostaroutn</name>
         </net>
         <net>
-          <id>N148</id>
-          <name>unnamed_2_frontports_i2_lvdstoeclinn</name>
+          <id>N478</id>
+          <name>unnamed_1_frontports_i2_lostaroutp</name>
         </net>
         <net>
-          <id>N149</id>
-          <name>unnamed_2_frontports_i2_lvdstoeclinp</name>
+          <id>N479</id>
+          <name>unnamed_1_frontports_i2_lvdstoeclinn</name>
         </net>
         <net>
-          <id>N150</id>
-          <name>unnamed_2_frontports_i2_lvdstoeclout</name>
+          <id>N480</id>
+          <name>unnamed_1_frontports_i2_lvdstoeclinp</name>
         </net>
         <net>
-          <id>N151</id>
-          <name>unnamed_2_frontports_i2_mtcamimic1outn</name>
+          <id>N481</id>
+          <name>unnamed_1_frontports_i2_lvdstoeclout</name>
         </net>
         <net>
-          <id>N152</id>
-          <name>unnamed_2_frontports_i2_mtcamimic1outp</name>
+          <id>N482</id>
+          <name>unnamed_1_frontports_i2_mtcamimic1outn</name>
         </net>
         <net>
-          <id>N153</id>
-          <name>unnamed_2_frontports_i2_mtcamimic1pulseanal</name>
+          <id>N483</id>
+          <name>unnamed_1_frontports_i2_mtcamimic1outp</name>
         </net>
         <net>
-          <id>N154</id>
-          <name>unnamed_2_frontports_i2_mtcamimic2outn</name>
+          <id>N484</id>
+          <name>unnamed_1_frontports_i2_mtcamimic1pulseanal</name>
         </net>
         <net>
-          <id>N155</id>
-          <name>unnamed_2_frontports_i2_mtcamimic2outp</name>
+          <id>N485</id>
+          <name>unnamed_1_frontports_i2_mtcamimic2outn</name>
         </net>
         <net>
-          <id>N156</id>
-          <name>unnamed_2_frontports_i2_mtcamimic2pulseanal</name>
+          <id>N486</id>
+          <name>unnamed_1_frontports_i2_mtcamimic2outp</name>
         </net>
         <net>
-          <id>N157</id>
-          <name>unnamed_2_frontports_i2_mtcdlo</name>
+          <id>N487</id>
+          <name>unnamed_1_frontports_i2_mtcamimic2pulseanal</name>
         </net>
         <net>
-          <id>N158</id>
-          <name>unnamed_2_frontports_i2_nimtoeclin</name>
+          <id>N488</id>
+          <name>unnamed_1_frontports_i2_mtcdlo</name>
         </net>
         <net>
-          <id>N159</id>
-          <name>unnamed_2_frontports_i2_nimtoeclout</name>
+          <id>N489</id>
+          <name>unnamed_1_frontports_i2_nimtoeclin</name>
         </net>
         <net>
-          <id>N160</id>
-          <name>unnamed_2_frontports_i2_pulseinanal</name>
+          <id>N490</id>
+          <name>unnamed_1_frontports_i2_nimtoeclout</name>
+        </net>
+        <net>
+          <id>N491</id>
+          <name>unnamed_1_frontports_i2_pulseinanal</name>
           <msb>11</msb>
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N161</id>
-          <name>unnamed_2_frontports_i2_pulseinvin</name>
+          <id>N492</id>
+          <name>unnamed_1_frontports_i2_pulseinvin</name>
         </net>
         <net>
-          <id>N162</id>
-          <name>unnamed_2_frontports_i2_pulseinvout</name>
+          <id>N493</id>
+          <name>unnamed_1_frontports_i2_pulseinvout</name>
         </net>
         <net>
-          <id>N163</id>
-          <name>unnamed_2_frontports_i2_ribbonpulseinn</name>
+          <id>N494</id>
+          <name>unnamed_1_frontports_i2_ribbonpulseinn</name>
         </net>
         <net>
-          <id>N164</id>
-          <name>unnamed_2_frontports_i2_ribbonpulseinp</name>
+          <id>N495</id>
+          <name>unnamed_1_frontports_i2_ribbonpulseinp</name>
         </net>
         <net>
-          <id>N165</id>
-          <name>unnamed_2_frontports_i2_ribbonpulseoutn</name>
+          <id>N496</id>
+          <name>unnamed_1_frontports_i2_ribbonpulseoutn</name>
         </net>
         <net>
-          <id>N166</id>
-          <name>unnamed_2_frontports_i2_ribbonpulseoutp</name>
+          <id>N497</id>
+          <name>unnamed_1_frontports_i2_ribbonpulseoutp</name>
         </net>
         <net>
-          <id>N167</id>
-          <name>unnamed_2_frontports_i2_scaler</name>
+          <id>N498</id>
+          <name>unnamed_1_frontports_i2_scaler</name>
           <msb>6</msb>
           <lsb>1</lsb>
         </net>
         <net>
-          <id>N168</id>
-          <name>unnamed_2_frontports_i2_scopeoutanal</name>
+          <id>N499</id>
+          <name>unnamed_1_frontports_i2_scopeoutanal</name>
           <msb>7</msb>
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N169</id>
-          <name>unnamed_2_frontports_i2_smelliedelayin</name>
+          <id>N500</id>
+          <name>unnamed_1_frontports_i2_smelliedelayin</name>
         </net>
         <net>
-          <id>N170</id>
-          <name>unnamed_2_frontports_i2_smelliedelayout</name>
+          <id>N501</id>
+          <name>unnamed_1_frontports_i2_smelliedelayout</name>
         </net>
         <net>
-          <id>N171</id>
-          <name>unnamed_2_frontports_i2_smelliepulseout</name>
+          <id>N502</id>
+          <name>unnamed_1_frontports_i2_smelliepulseout</name>
         </net>
         <net>
-          <id>N172</id>
-          <name>unnamed_2_frontports_i2_sync24lvdsn</name>
+          <id>N503</id>
+          <name>unnamed_1_frontports_i2_sync24lvdsn</name>
         </net>
         <net>
-          <id>N173</id>
-          <name>unnamed_2_frontports_i2_sync24lvdsp</name>
+          <id>N504</id>
+          <name>unnamed_1_frontports_i2_sync24lvdsp</name>
         </net>
         <net>
-          <id>N174</id>
-          <name>unnamed_2_frontports_i2_sync24n</name>
+          <id>N505</id>
+          <name>unnamed_1_frontports_i2_sync24n</name>
         </net>
         <net>
-          <id>N175</id>
-          <name>unnamed_2_frontports_i2_sync24p</name>
+          <id>N506</id>
+          <name>unnamed_1_frontports_i2_sync24p</name>
         </net>
         <net>
-          <id>N176</id>
-          <name>unnamed_2_frontports_i2_synclvdsn</name>
+          <id>N507</id>
+          <name>unnamed_1_frontports_i2_synclvdsn</name>
         </net>
         <net>
-          <id>N177</id>
-          <name>unnamed_2_frontports_i2_synclvdsp</name>
+          <id>N508</id>
+          <name>unnamed_1_frontports_i2_synclvdsp</name>
         </net>
         <net>
-          <id>N178</id>
-          <name>unnamed_2_frontports_i2_syncn</name>
+          <id>N509</id>
+          <name>unnamed_1_frontports_i2_syncn</name>
         </net>
         <net>
-          <id>N179</id>
-          <name>unnamed_2_frontports_i2_syncp</name>
+          <id>N510</id>
+          <name>unnamed_1_frontports_i2_syncp</name>
         </net>
         <net>
-          <id>N180</id>
-          <name>unnamed_2_frontports_i2_telliedelayin</name>
+          <id>N511</id>
+          <name>unnamed_1_frontports_i2_telliedelayin</name>
         </net>
         <net>
-          <id>N181</id>
-          <name>unnamed_2_frontports_i2_telliedelayout</name>
+          <id>N512</id>
+          <name>unnamed_1_frontports_i2_telliedelayout</name>
         </net>
         <net>
-          <id>N182</id>
-          <name>unnamed_2_frontports_i2_telliepulseout</name>
+          <id>N513</id>
+          <name>unnamed_1_frontports_i2_telliepulseout</name>
         </net>
         <net>
-          <id>N183</id>
-          <name>unnamed_2_frontports_i2_ttltoeclin</name>
+          <id>N514</id>
+          <name>unnamed_1_frontports_i2_ttltoeclin</name>
         </net>
         <net>
-          <id>N184</id>
-          <name>unnamed_2_frontports_i2_ttltoeclout</name>
+          <id>N515</id>
+          <name>unnamed_1_frontports_i2_ttltoeclout</name>
         </net>
         <net>
-          <id>N185</id>
-          <name>unnamed_2_frontports_i2_tubclkinp</name>
+          <id>N516</id>
+          <name>unnamed_1_frontports_i2_tubclkinn</name>
         </net>
         <net>
-          <id>N186</id>
-          <name>unnamed_2_frontports_i2_tubiirtout</name>
+          <id>N517</id>
+          <name>unnamed_1_frontports_i2_tubclkinp</name>
+        </net>
+        <net>
+          <id>N518</id>
+          <name>unnamed_1_frontports_i2_tubiirtout</name>
         </net>
         <net>
           <id>gnd</id>
@@ -1016,98 +1043,98 @@
               <id>M24</id>
               <termid>T31</termid>
               <connections>
-                <connection net="N150" />
+                <connection net="N481" />
               </connections>
             </pin>
             <pin>
               <id>M25</id>
               <termid>T32</termid>
               <connections>
-                <connection net="N184" />
+                <connection net="N515" />
               </connections>
             </pin>
             <pin>
               <id>M40</id>
               <termid>T47</termid>
               <connections>
-                <connection net="N130" />
+                <connection net="N460" />
               </connections>
             </pin>
             <pin>
               <id>M41</id>
               <termid>T48</termid>
               <connections>
-                <connection net="N131" />
+                <connection net="N461" />
               </connections>
             </pin>
             <pin>
               <id>M42</id>
               <termid>T49</termid>
               <connections>
-                <connection net="N132" />
+                <connection net="N462" />
               </connections>
             </pin>
             <pin>
               <id>M43</id>
               <termid>T50</termid>
               <connections>
-                <connection net="N133" />
+                <connection net="N463" />
               </connections>
             </pin>
             <pin>
               <id>M44</id>
               <termid>T51</termid>
               <connections>
-                <connection net="N134" />
+                <connection net="N464" />
               </connections>
             </pin>
             <pin>
               <id>M45</id>
               <termid>T52</termid>
               <connections>
-                <connection net="N135" />
+                <connection net="N465" />
               </connections>
             </pin>
             <pin>
               <id>M46</id>
               <termid>T53</termid>
               <connections>
-                <connection net="N136" />
+                <connection net="N466" />
               </connections>
             </pin>
             <pin>
               <id>M47</id>
               <termid>T54</termid>
               <connections>
-                <connection net="N148" />
+                <connection net="N479" />
               </connections>
             </pin>
             <pin>
               <id>M48</id>
               <termid>T55</termid>
               <connections>
-                <connection net="N149" />
+                <connection net="N480" />
               </connections>
             </pin>
             <pin>
               <id>M49</id>
               <termid>T56</termid>
               <connections>
-                <connection net="N158" />
+                <connection net="N489" />
               </connections>
             </pin>
             <pin>
               <id>M50</id>
               <termid>T57</termid>
               <connections>
-                <connection net="N159" />
+                <connection net="N490" />
               </connections>
             </pin>
             <pin>
               <id>M51</id>
               <termid>T58</termid>
               <connections>
-                <connection net="N183" />
+                <connection net="N514" />
               </connections>
             </pin>
             <pin>
@@ -1116,49 +1143,49 @@
               <msb>7</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="7" pinlsb="0" net="N125" netmsb="7" netlsb="0" />
+                <connection pinmsb="7" pinlsb="0" net="N455" netmsb="7" netlsb="0" />
               </connections>
             </pin>
             <pin>
               <id>M116</id>
               <termid>T76</termid>
               <connections>
-                <connection net="N126" />
+                <connection net="N456" />
               </connections>
             </pin>
             <pin>
               <id>M117</id>
               <termid>T77</termid>
               <connections>
-                <connection net="N127" />
+                <connection net="N457" />
               </connections>
             </pin>
             <pin>
               <id>M118</id>
               <termid>T78</termid>
               <connections>
-                <connection net="N128" />
+                <connection net="N458" />
               </connections>
             </pin>
             <pin>
               <id>M119</id>
               <termid>T79</termid>
               <connections>
-                <connection net="N129" />
+                <connection net="N459" />
               </connections>
             </pin>
             <pin>
               <id>M120</id>
               <termid>T80</termid>
               <connections>
-                <connection net="N137" />
+                <connection net="N467" />
               </connections>
             </pin>
             <pin>
               <id>M121</id>
               <termid>T81</termid>
               <connections>
-                <connection net="N138" />
+                <connection net="N468" />
               </connections>
             </pin>
             <pin>
@@ -1167,112 +1194,112 @@
               <msb>15</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="15" pinlsb="0" net="N139" netmsb="15" netlsb="0" />
+                <connection pinmsb="15" pinlsb="0" net="N469" netmsb="15" netlsb="0" />
               </connections>
             </pin>
             <pin>
               <id>M123</id>
               <termid>T83</termid>
               <connections>
-                <connection net="N140" />
+                <connection net="N470" />
               </connections>
             </pin>
             <pin>
               <id>M124</id>
               <termid>T84</termid>
               <connections>
-                <connection net="N141" />
+                <connection net="N471" />
               </connections>
             </pin>
             <pin>
               <id>M125</id>
               <termid>T85</termid>
               <connections>
-                <connection net="N142" />
+                <connection net="N472" />
               </connections>
             </pin>
             <pin>
               <id>M126</id>
               <termid>T86</termid>
               <connections>
-                <connection net="N143" />
+                <connection net="N473" />
               </connections>
             </pin>
             <pin>
               <id>M127</id>
               <termid>T87</termid>
               <connections>
-                <connection net="N144" />
+                <connection net="N474" />
               </connections>
             </pin>
             <pin>
               <id>M128</id>
               <termid>T88</termid>
               <connections>
-                <connection net="N145" />
+                <connection net="N475" />
               </connections>
             </pin>
             <pin>
               <id>M129</id>
               <termid>T89</termid>
               <connections>
-                <connection net="N146" />
+                <connection net="N477" />
               </connections>
             </pin>
             <pin>
               <id>M130</id>
               <termid>T90</termid>
               <connections>
-                <connection net="N147" />
+                <connection net="N478" />
               </connections>
             </pin>
             <pin>
               <id>M131</id>
               <termid>T91</termid>
               <connections>
-                <connection net="N156" />
+                <connection net="N487" />
               </connections>
             </pin>
             <pin>
               <id>M132</id>
               <termid>T92</termid>
               <connections>
-                <connection net="N151" />
+                <connection net="N482" />
               </connections>
             </pin>
             <pin>
               <id>M133</id>
               <termid>T93</termid>
               <connections>
-                <connection net="N152" />
+                <connection net="N483" />
               </connections>
             </pin>
             <pin>
               <id>M134</id>
               <termid>T94</termid>
               <connections>
-                <connection net="N153" />
+                <connection net="N484" />
               </connections>
             </pin>
             <pin>
               <id>M135</id>
               <termid>T95</termid>
               <connections>
-                <connection net="N154" />
+                <connection net="N485" />
               </connections>
             </pin>
             <pin>
               <id>M136</id>
               <termid>T96</termid>
               <connections>
-                <connection net="N155" />
+                <connection net="N486" />
               </connections>
             </pin>
             <pin>
               <id>M137</id>
               <termid>T97</termid>
               <connections>
-                <connection net="N157" />
+                <connection net="N488" />
               </connections>
             </pin>
             <pin>
@@ -1281,42 +1308,42 @@
               <msb>11</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="11" pinlsb="0" net="N160" netmsb="11" netlsb="0" />
+                <connection pinmsb="11" pinlsb="0" net="N491" netmsb="11" netlsb="0" />
               </connections>
             </pin>
             <pin>
               <id>M139</id>
               <termid>T99</termid>
               <connections>
-                <connection net="N162" />
+                <connection net="N493" />
               </connections>
             </pin>
             <pin>
               <id>M140</id>
               <termid>T100</termid>
               <connections>
-                <connection net="N163" />
+                <connection net="N494" />
               </connections>
             </pin>
             <pin>
               <id>M141</id>
               <termid>T101</termid>
               <connections>
-                <connection net="N164" />
+                <connection net="N495" />
               </connections>
             </pin>
             <pin>
               <id>M142</id>
               <termid>T102</termid>
               <connections>
-                <connection net="N165" />
+                <connection net="N496" />
               </connections>
             </pin>
             <pin>
               <id>M143</id>
               <termid>T103</termid>
               <connections>
-                <connection net="N166" />
+                <connection net="N497" />
               </connections>
             </pin>
             <pin>
@@ -1325,7 +1352,7 @@
               <msb>6</msb>
               <lsb>1</lsb>
               <connections>
-                <connection pinmsb="6" pinlsb="1" net="N167" netmsb="6" netlsb="1" />
+                <connection pinmsb="6" pinlsb="1" net="N498" netmsb="6" netlsb="1" />
               </connections>
             </pin>
             <pin>
@@ -1334,126 +1361,140 @@
               <msb>7</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="7" pinlsb="0" net="N168" netmsb="7" netlsb="0" />
+                <connection pinmsb="7" pinlsb="0" net="N499" netmsb="7" netlsb="0" />
               </connections>
             </pin>
             <pin>
               <id>M146</id>
               <termid>T106</termid>
               <connections>
-                <connection net="N169" />
+                <connection net="N500" />
               </connections>
             </pin>
             <pin>
               <id>M147</id>
               <termid>T107</termid>
               <connections>
-                <connection net="N170" />
+                <connection net="N501" />
               </connections>
             </pin>
             <pin>
               <id>M148</id>
               <termid>T108</termid>
               <connections>
-                <connection net="N171" />
+                <connection net="N502" />
               </connections>
             </pin>
             <pin>
               <id>M149</id>
               <termid>T109</termid>
               <connections>
-                <connection net="N172" />
+                <connection net="N503" />
               </connections>
             </pin>
             <pin>
               <id>M150</id>
               <termid>T110</termid>
               <connections>
-                <connection net="N173" />
+                <connection net="N504" />
               </connections>
             </pin>
             <pin>
               <id>M151</id>
               <termid>T111</termid>
               <connections>
-                <connection net="N174" />
+                <connection net="N505" />
               </connections>
             </pin>
             <pin>
               <id>M152</id>
               <termid>T112</termid>
               <connections>
-                <connection net="N175" />
+                <connection net="N506" />
               </connections>
             </pin>
             <pin>
               <id>M153</id>
               <termid>T113</termid>
               <connections>
-                <connection net="N176" />
+                <connection net="N507" />
               </connections>
             </pin>
             <pin>
               <id>M154</id>
               <termid>T114</termid>
               <connections>
-                <connection net="N177" />
+                <connection net="N508" />
               </connections>
             </pin>
             <pin>
               <id>M155</id>
               <termid>T115</termid>
               <connections>
-                <connection net="N178" />
+                <connection net="N509" />
               </connections>
             </pin>
             <pin>
               <id>M156</id>
               <termid>T116</termid>
               <connections>
-                <connection net="N179" />
+                <connection net="N510" />
               </connections>
             </pin>
             <pin>
               <id>M157</id>
               <termid>T117</termid>
               <connections>
-                <connection net="N180" />
+                <connection net="N511" />
               </connections>
             </pin>
             <pin>
               <id>M158</id>
               <termid>T118</termid>
               <connections>
-                <connection net="N181" />
+                <connection net="N512" />
               </connections>
             </pin>
             <pin>
               <id>M159</id>
               <termid>T119</termid>
               <connections>
-                <connection net="N182" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M160</id>
-              <termid>T120</termid>
-              <connections>
-                <connection net="N185" />
+                <connection net="N513" />
               </connections>
             </pin>
             <pin>
               <id>M239</id>
               <termid>T207</termid>
               <connections>
-                <connection net="N186" />
+                <connection net="N518" />
               </connections>
             </pin>
             <pin>
               <id>M250</id>
               <termid>T226</termid>
               <connections>
-                <connection net="N161" />
+                <connection net="N492" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M292</id>
+              <termid>T281</termid>
+              <connections>
+                <connection net="N516" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M293</id>
+              <termid>T282</termid>
+              <connections>
+                <connection net="N517" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M303</id>
+              <termid>T299</termid>
+              <connections>
+                <connection net="N476" />
               </connections>
             </pin>
           </pins>
@@ -1481,287 +1522,287 @@
               <id>M161</id>
               <termid>T121</termid>
               <connections>
-                <connection net="N131" />
+                <connection net="N461" />
               </connections>
             </pin>
             <pin>
               <id>M162</id>
               <termid>T122</termid>
               <connections>
-                <connection net="N132" />
+                <connection net="N462" />
               </connections>
             </pin>
             <pin>
               <id>M163</id>
               <termid>T123</termid>
               <connections>
-                <connection net="N133" />
+                <connection net="N463" />
               </connections>
             </pin>
             <pin>
               <id>M164</id>
               <termid>T124</termid>
               <connections>
-                <connection net="N134" />
+                <connection net="N464" />
               </connections>
             </pin>
             <pin>
               <id>M165</id>
               <termid>T125</termid>
               <connections>
-                <connection net="N135" />
+                <connection net="N465" />
               </connections>
             </pin>
             <pin>
               <id>M166</id>
               <termid>T126</termid>
               <connections>
-                <connection net="N148" />
+                <connection net="N479" />
               </connections>
             </pin>
             <pin>
               <id>M167</id>
               <termid>T127</termid>
               <connections>
-                <connection net="N149" />
+                <connection net="N480" />
               </connections>
             </pin>
             <pin>
               <id>M168</id>
               <termid>T128</termid>
               <connections>
-                <connection net="N150" />
+                <connection net="N481" />
               </connections>
             </pin>
             <pin>
               <id>M169</id>
               <termid>T129</termid>
               <connections>
-                <connection net="N158" />
+                <connection net="N489" />
               </connections>
             </pin>
             <pin>
               <id>M170</id>
               <termid>T130</termid>
               <connections>
-                <connection net="N159" />
+                <connection net="N490" />
               </connections>
             </pin>
             <pin>
               <id>M171</id>
               <termid>T131</termid>
               <connections>
-                <connection net="N183" />
+                <connection net="N514" />
               </connections>
             </pin>
             <pin>
               <id>M172</id>
               <termid>T132</termid>
               <connections>
-                <connection net="N184" />
+                <connection net="N515" />
               </connections>
             </pin>
             <pin>
               <id>M173</id>
               <termid>T133</termid>
               <connections>
-                <connection net="N130" />
+                <connection net="N460" />
               </connections>
             </pin>
             <pin>
               <id>M174</id>
               <termid>T134</termid>
               <connections>
-                <connection net="N136" />
+                <connection net="N466" />
               </connections>
             </pin>
             <pin>
               <id>M175</id>
               <termid>T135</termid>
               <connections>
-                <connection net="N151" />
+                <connection net="N482" />
               </connections>
             </pin>
             <pin>
               <id>M176</id>
               <termid>T136</termid>
               <connections>
-                <connection net="N152" />
+                <connection net="N483" />
               </connections>
             </pin>
             <pin>
               <id>M178</id>
               <termid>T138</termid>
               <connections>
-                <connection net="N154" />
+                <connection net="N485" />
               </connections>
             </pin>
             <pin>
               <id>M179</id>
               <termid>T139</termid>
               <connections>
-                <connection net="N155" />
+                <connection net="N486" />
               </connections>
             </pin>
             <pin>
               <id>M182</id>
               <termid>T142</termid>
               <connections>
-                <connection net="N169" />
+                <connection net="N500" />
               </connections>
             </pin>
             <pin>
               <id>M183</id>
               <termid>T143</termid>
               <connections>
-                <connection net="N170" />
+                <connection net="N501" />
               </connections>
             </pin>
             <pin>
               <id>M184</id>
               <termid>T144</termid>
               <connections>
-                <connection net="N171" />
+                <connection net="N502" />
               </connections>
             </pin>
             <pin>
               <id>M185</id>
               <termid>T145</termid>
               <connections>
-                <connection net="N180" />
+                <connection net="N511" />
               </connections>
             </pin>
             <pin>
               <id>M186</id>
               <termid>T146</termid>
               <connections>
-                <connection net="N181" />
+                <connection net="N512" />
               </connections>
             </pin>
             <pin>
               <id>M187</id>
               <termid>T147</termid>
               <connections>
-                <connection net="N182" />
+                <connection net="N513" />
               </connections>
             </pin>
             <pin>
               <id>M188</id>
               <termid>T148</termid>
               <connections>
-                <connection net="N126" />
+                <connection net="N456" />
               </connections>
             </pin>
             <pin>
               <id>M189</id>
               <termid>T149</termid>
               <connections>
-                <connection net="N127" />
+                <connection net="N457" />
               </connections>
             </pin>
             <pin>
               <id>M191</id>
               <termid>T151</termid>
               <connections>
-                <connection net="N143" />
+                <connection net="N473" />
               </connections>
             </pin>
             <pin>
               <id>M192</id>
               <termid>T152</termid>
               <connections>
-                <connection net="N145" />
+                <connection net="N475" />
               </connections>
             </pin>
             <pin>
               <id>M193</id>
               <termid>T153</termid>
               <connections>
-                <connection net="N174" />
+                <connection net="N505" />
               </connections>
             </pin>
             <pin>
               <id>M194</id>
               <termid>T154</termid>
               <connections>
-                <connection net="N175" />
+                <connection net="N506" />
               </connections>
             </pin>
             <pin>
               <id>M195</id>
               <termid>T155</termid>
               <connections>
-                <connection net="N178" />
+                <connection net="N509" />
               </connections>
             </pin>
             <pin>
               <id>M196</id>
               <termid>T156</termid>
               <connections>
-                <connection net="N179" />
+                <connection net="N510" />
               </connections>
             </pin>
             <pin>
               <id>M197</id>
               <termid>T157</termid>
               <connections>
-                <connection net="N140" />
+                <connection net="N470" />
               </connections>
             </pin>
             <pin>
               <id>M198</id>
               <termid>T158</termid>
               <connections>
-                <connection net="N141" />
+                <connection net="N471" />
               </connections>
             </pin>
             <pin>
               <id>M199</id>
               <termid>T159</termid>
               <connections>
-                <connection net="N142" />
+                <connection net="N472" />
               </connections>
             </pin>
             <pin>
               <id>M200</id>
               <termid>T160</termid>
               <connections>
-                <connection net="N161" />
+                <connection net="N492" />
               </connections>
             </pin>
             <pin>
               <id>M201</id>
               <termid>T161</termid>
               <connections>
-                <connection net="N162" />
+                <connection net="N493" />
               </connections>
             </pin>
             <pin>
               <id>M202</id>
               <termid>T162</termid>
               <connections>
-                <connection net="N163" />
+                <connection net="N494" />
               </connections>
             </pin>
             <pin>
               <id>M203</id>
               <termid>T163</termid>
               <connections>
-                <connection net="N164" />
+                <connection net="N495" />
               </connections>
             </pin>
             <pin>
               <id>M204</id>
               <termid>T164</termid>
               <connections>
-                <connection net="N165" />
+                <connection net="N496" />
               </connections>
             </pin>
             <pin>
               <id>M205</id>
               <termid>T165</termid>
               <connections>
-                <connection net="N166" />
+                <connection net="N497" />
               </connections>
             </pin>
             <pin>
@@ -1770,14 +1811,14 @@
               <msb>7</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="7" pinlsb="0" net="N125" netmsb="7" netlsb="0" />
+                <connection pinmsb="7" pinlsb="0" net="N455" netmsb="7" netlsb="0" />
               </connections>
             </pin>
             <pin>
               <id>M207</id>
               <termid>T167</termid>
               <connections>
-                <connection net="N144" />
+                <connection net="N474" />
               </connections>
             </pin>
             <pin>
@@ -1786,7 +1827,7 @@
               <msb>11</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="11" pinlsb="0" net="N160" netmsb="11" netlsb="0" />
+                <connection pinmsb="11" pinlsb="0" net="N491" netmsb="11" netlsb="0" />
               </connections>
             </pin>
             <pin>
@@ -1795,35 +1836,35 @@
               <msb>7</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="7" pinlsb="0" net="N168" netmsb="7" netlsb="0" />
+                <connection pinmsb="7" pinlsb="0" net="N499" netmsb="7" netlsb="0" />
               </connections>
             </pin>
             <pin>
               <id>M210</id>
               <termid>T170</termid>
               <connections>
-                <connection net="N172" />
+                <connection net="N503" />
               </connections>
             </pin>
             <pin>
               <id>M211</id>
               <termid>T171</termid>
               <connections>
-                <connection net="N173" />
+                <connection net="N504" />
               </connections>
             </pin>
             <pin>
               <id>M212</id>
               <termid>T172</termid>
               <connections>
-                <connection net="N176" />
+                <connection net="N507" />
               </connections>
             </pin>
             <pin>
               <id>M213</id>
               <termid>T173</termid>
               <connections>
-                <connection net="N177" />
+                <connection net="N508" />
               </connections>
             </pin>
             <pin>
@@ -1832,14 +1873,14 @@
               <msb>6</msb>
               <lsb>1</lsb>
               <connections>
-                <connection pinmsb="6" pinlsb="1" net="N167" netmsb="6" netlsb="1" />
+                <connection pinmsb="6" pinlsb="1" net="N498" netmsb="6" netlsb="1" />
               </connections>
             </pin>
             <pin>
               <id>M225</id>
               <termid>T193</termid>
               <connections>
-                <connection net="N156" />
+                <connection net="N487" />
               </connections>
             </pin>
             <pin>
@@ -1848,77 +1889,91 @@
               <msb>15</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="15" pinlsb="0" net="N139" netmsb="15" netlsb="0" />
+                <connection pinmsb="15" pinlsb="0" net="N469" netmsb="15" netlsb="0" />
               </connections>
             </pin>
             <pin>
               <id>M227</id>
               <termid>T195</termid>
               <connections>
-                <connection net="N138" />
+                <connection net="N468" />
               </connections>
             </pin>
             <pin>
               <id>M230</id>
               <termid>T198</termid>
               <connections>
-                <connection net="N137" />
+                <connection net="N467" />
               </connections>
             </pin>
             <pin>
               <id>M231</id>
               <termid>T199</termid>
               <connections>
-                <connection net="N128" />
+                <connection net="N458" />
               </connections>
             </pin>
             <pin>
               <id>M232</id>
               <termid>T200</termid>
               <connections>
-                <connection net="N129" />
+                <connection net="N459" />
               </connections>
             </pin>
             <pin>
               <id>M235</id>
               <termid>T203</termid>
               <connections>
-                <connection net="N157" />
+                <connection net="N488" />
               </connections>
             </pin>
             <pin>
               <id>M236</id>
               <termid>T204</termid>
               <connections>
-                <connection net="N146" />
+                <connection net="N477" />
               </connections>
             </pin>
             <pin>
               <id>M237</id>
               <termid>T205</termid>
               <connections>
-                <connection net="N147" />
+                <connection net="N478" />
               </connections>
             </pin>
             <pin>
               <id>M238</id>
               <termid>T206</termid>
               <connections>
-                <connection net="N186" />
+                <connection net="N518" />
               </connections>
             </pin>
             <pin>
               <id>M261</id>
               <termid>T245</termid>
               <connections>
-                <connection net="N153" />
+                <connection net="N484" />
               </connections>
             </pin>
             <pin>
               <id>M281</id>
               <termid>T263</termid>
               <connections>
-                <connection net="N185" />
+                <connection net="N517" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M291</id>
+              <termid>T280</termid>
+              <connections>
+                <connection net="N516" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M304</id>
+              <termid>T300</termid>
+              <connections>
+                <connection net="N476" />
               </connections>
             </pin>
           </pins>
@@ -1967,83 +2022,85 @@
             <physicalPageNumber>2</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="unnamed_2_frontports_i2_caenoutanal">
+              <net ref="unnamed_1_frontports_i2_caenoutanal">
                 <msb>7</msb>
                 <lsb>0</lsb>
               </net>
-              <net ref="unnamed_2_frontports_i2_clk100n"></net>
-              <net ref="unnamed_2_frontports_i2_clk100p"></net>
-              <net ref="unnamed_2_frontports_i2_dgtn"></net>
-              <net ref="unnamed_2_frontports_i2_dgtp"></net>
-              <net ref="unnamed_2_frontports_i2_ecltolvdsin"></net>
-              <net ref="unnamed_2_frontports_i2_ecltolvdsoutn"></net>
-              <net ref="unnamed_2_frontports_i2_ecltolvdsoutp"></net>
-              <net ref="unnamed_2_frontports_i2_ecltonimin"></net>
-              <net ref="unnamed_2_frontports_i2_ecltonimout"></net>
-              <net ref="unnamed_2_frontports_i2_ecltottlin"></net>
-              <net ref="unnamed_2_frontports_i2_ecltottlout"></net>
-              <net ref="unnamed_2_frontports_i2_extpedin"></net>
-              <net ref="unnamed_2_frontports_i2_extpedout"></net>
-              <net ref="unnamed_2_frontports_i2_exttrigin">
+              <net ref="unnamed_1_frontports_i2_clk100n"></net>
+              <net ref="unnamed_1_frontports_i2_clk100p"></net>
+              <net ref="unnamed_1_frontports_i2_dgtn"></net>
+              <net ref="unnamed_1_frontports_i2_dgtp"></net>
+              <net ref="unnamed_1_frontports_i2_ecltolvdsin"></net>
+              <net ref="unnamed_1_frontports_i2_ecltolvdsoutn"></net>
+              <net ref="unnamed_1_frontports_i2_ecltolvdsoutp"></net>
+              <net ref="unnamed_1_frontports_i2_ecltonimin"></net>
+              <net ref="unnamed_1_frontports_i2_ecltonimout"></net>
+              <net ref="unnamed_1_frontports_i2_ecltottlin"></net>
+              <net ref="unnamed_1_frontports_i2_ecltottlout"></net>
+              <net ref="unnamed_1_frontports_i2_extpedin"></net>
+              <net ref="unnamed_1_frontports_i2_extpedout"></net>
+              <net ref="unnamed_1_frontports_i2_exttrigin">
                 <msb>15</msb>
                 <lsb>0</lsb>
               </net>
-              <net ref="unnamed_2_frontports_i2_genericdelayin"></net>
-              <net ref="unnamed_2_frontports_i2_genericdelayout"></net>
-              <net ref="unnamed_2_frontports_i2_genericpulseout"></net>
-              <net ref="unnamed_2_frontports_i2_gtn"></net>
-              <net ref="unnamed_2_frontports_i2_gtnim"></net>
-              <net ref="unnamed_2_frontports_i2_gtp"></net>
-              <net ref="unnamed_2_frontports_i2_lostaroutn"></net>
-              <net ref="unnamed_2_frontports_i2_lostaroutp"></net>
-              <net ref="unnamed_2_frontports_i2_lvdstoeclinn"></net>
-              <net ref="unnamed_2_frontports_i2_lvdstoeclinp"></net>
-              <net ref="unnamed_2_frontports_i2_lvdstoeclout"></net>
-              <net ref="unnamed_2_frontports_i2_mtcamimic1outn"></net>
-              <net ref="unnamed_2_frontports_i2_mtcamimic1outp"></net>
-              <net ref="unnamed_2_frontports_i2_mtcamimic1pulseanal"></net>
-              <net ref="unnamed_2_frontports_i2_mtcamimic2outn"></net>
-              <net ref="unnamed_2_frontports_i2_mtcamimic2outp"></net>
-              <net ref="unnamed_2_frontports_i2_mtcamimic2pulseanal"></net>
-              <net ref="unnamed_2_frontports_i2_mtcdlo"></net>
-              <net ref="unnamed_2_frontports_i2_nimtoeclin"></net>
-              <net ref="unnamed_2_frontports_i2_nimtoeclout"></net>
-              <net ref="unnamed_2_frontports_i2_pulseinanal">
+              <net ref="unnamed_1_frontports_i2_genericdelayin"></net>
+              <net ref="unnamed_1_frontports_i2_genericdelayout"></net>
+              <net ref="unnamed_1_frontports_i2_genericpulseout"></net>
+              <net ref="unnamed_1_frontports_i2_gtn"></net>
+              <net ref="unnamed_1_frontports_i2_gtnim"></net>
+              <net ref="unnamed_1_frontports_i2_gtp"></net>
+              <net ref="unnamed_1_frontports_i2_gtttlout"></net>
+              <net ref="unnamed_1_frontports_i2_lostaroutn"></net>
+              <net ref="unnamed_1_frontports_i2_lostaroutp"></net>
+              <net ref="unnamed_1_frontports_i2_lvdstoeclinn"></net>
+              <net ref="unnamed_1_frontports_i2_lvdstoeclinp"></net>
+              <net ref="unnamed_1_frontports_i2_lvdstoeclout"></net>
+              <net ref="unnamed_1_frontports_i2_mtcamimic1outn"></net>
+              <net ref="unnamed_1_frontports_i2_mtcamimic1outp"></net>
+              <net ref="unnamed_1_frontports_i2_mtcamimic1pulseanal"></net>
+              <net ref="unnamed_1_frontports_i2_mtcamimic2outn"></net>
+              <net ref="unnamed_1_frontports_i2_mtcamimic2outp"></net>
+              <net ref="unnamed_1_frontports_i2_mtcamimic2pulseanal"></net>
+              <net ref="unnamed_1_frontports_i2_mtcdlo"></net>
+              <net ref="unnamed_1_frontports_i2_nimtoeclin"></net>
+              <net ref="unnamed_1_frontports_i2_nimtoeclout"></net>
+              <net ref="unnamed_1_frontports_i2_pulseinanal">
                 <msb>11</msb>
                 <lsb>0</lsb>
               </net>
-              <net ref="unnamed_2_frontports_i2_pulseinvin"></net>
-              <net ref="unnamed_2_frontports_i2_pulseinvout"></net>
-              <net ref="unnamed_2_frontports_i2_ribbonpulseinn"></net>
-              <net ref="unnamed_2_frontports_i2_ribbonpulseinp"></net>
-              <net ref="unnamed_2_frontports_i2_ribbonpulseoutn"></net>
-              <net ref="unnamed_2_frontports_i2_ribbonpulseoutp"></net>
-              <net ref="unnamed_2_frontports_i2_scaler">
+              <net ref="unnamed_1_frontports_i2_pulseinvin"></net>
+              <net ref="unnamed_1_frontports_i2_pulseinvout"></net>
+              <net ref="unnamed_1_frontports_i2_ribbonpulseinn"></net>
+              <net ref="unnamed_1_frontports_i2_ribbonpulseinp"></net>
+              <net ref="unnamed_1_frontports_i2_ribbonpulseoutn"></net>
+              <net ref="unnamed_1_frontports_i2_ribbonpulseoutp"></net>
+              <net ref="unnamed_1_frontports_i2_scaler">
                 <msb>6</msb>
                 <lsb>1</lsb>
               </net>
-              <net ref="unnamed_2_frontports_i2_scopeoutanal">
+              <net ref="unnamed_1_frontports_i2_scopeoutanal">
                 <msb>7</msb>
                 <lsb>0</lsb>
               </net>
-              <net ref="unnamed_2_frontports_i2_smelliedelayin"></net>
-              <net ref="unnamed_2_frontports_i2_smelliedelayout"></net>
-              <net ref="unnamed_2_frontports_i2_smelliepulseout"></net>
-              <net ref="unnamed_2_frontports_i2_sync24lvdsn"></net>
-              <net ref="unnamed_2_frontports_i2_sync24lvdsp"></net>
-              <net ref="unnamed_2_frontports_i2_sync24n"></net>
-              <net ref="unnamed_2_frontports_i2_sync24p"></net>
-              <net ref="unnamed_2_frontports_i2_synclvdsn"></net>
-              <net ref="unnamed_2_frontports_i2_synclvdsp"></net>
-              <net ref="unnamed_2_frontports_i2_syncn"></net>
-              <net ref="unnamed_2_frontports_i2_syncp"></net>
-              <net ref="unnamed_2_frontports_i2_telliedelayin"></net>
-              <net ref="unnamed_2_frontports_i2_telliedelayout"></net>
-              <net ref="unnamed_2_frontports_i2_telliepulseout"></net>
-              <net ref="unnamed_2_frontports_i2_ttltoeclin"></net>
-              <net ref="unnamed_2_frontports_i2_ttltoeclout"></net>
-              <net ref="unnamed_2_frontports_i2_tubclkinp"></net>
-              <net ref="unnamed_2_frontports_i2_tubiirtout"></net>
+              <net ref="unnamed_1_frontports_i2_smelliedelayin"></net>
+              <net ref="unnamed_1_frontports_i2_smelliedelayout"></net>
+              <net ref="unnamed_1_frontports_i2_smelliepulseout"></net>
+              <net ref="unnamed_1_frontports_i2_sync24lvdsn"></net>
+              <net ref="unnamed_1_frontports_i2_sync24lvdsp"></net>
+              <net ref="unnamed_1_frontports_i2_sync24n"></net>
+              <net ref="unnamed_1_frontports_i2_sync24p"></net>
+              <net ref="unnamed_1_frontports_i2_synclvdsn"></net>
+              <net ref="unnamed_1_frontports_i2_synclvdsp"></net>
+              <net ref="unnamed_1_frontports_i2_syncn"></net>
+              <net ref="unnamed_1_frontports_i2_syncp"></net>
+              <net ref="unnamed_1_frontports_i2_telliedelayin"></net>
+              <net ref="unnamed_1_frontports_i2_telliedelayout"></net>
+              <net ref="unnamed_1_frontports_i2_telliepulseout"></net>
+              <net ref="unnamed_1_frontports_i2_ttltoeclin"></net>
+              <net ref="unnamed_1_frontports_i2_ttltoeclout"></net>
+              <net ref="unnamed_1_frontports_i2_tubclkinn"></net>
+              <net ref="unnamed_1_frontports_i2_tubclkinp"></net>
+              <net ref="unnamed_1_frontports_i2_tubiirtout"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>
