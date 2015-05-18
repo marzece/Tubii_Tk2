@@ -1,6 +1,6 @@
 FILE_TYPE=PINLIST;
-{ Packager-XL run on 18-May-2015 AT 12:03:56 }
-TIME=' COMPILATION ON 18-May-2015 AT 12:03:56';
+{ Packager-XL run on 18-May-2015 AT 14:24:57 }
+TIME=' COMPILATION ON 18-May-2015 AT 14:24:57';
 primitive '1N4448';      body '1N4448';
     'IN':'(1)';
     'OUT':'(2)';
@@ -40,11 +40,9 @@ primitive '74F07';       body '74F07';
     'Y4':'(10)';OUT;
     'Y5':'(12)';OUT;
 end_primitive;
-primitive '74F164_2';    body '74F164';
+primitive '74HCT164';    body '74HCT164';
     'DSA':'(1)';IN;
-    'MR*':'(9)';IN;
     'DSB':'(2)';IN;
-    'CP':'(8)';IN;
     'Q0':'(3)';OUT;
     'Q1':'(4)';OUT;
     'Q2':'(5)';OUT;
@@ -53,8 +51,10 @@ primitive '74F164_2';    body '74F164';
     'Q5':'(11)';OUT;
     'Q6':'(12)';OUT;
     'Q7':'(13)';OUT;
+    'CP':'(8)';IN;
     'GND':'(7)';
     'VCC':'(14)';
+    'MR*':'(9)';IN;
 end_primitive;
 primitive '74HCT165';    body '74HCT165';
     'D0':'(11)';IN;
