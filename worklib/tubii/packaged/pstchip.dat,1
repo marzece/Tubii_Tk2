@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 18-May-2015 AT 12:03:56 }
+{ Packager-XL run on 18-May-2015 AT 14:24:57 }
 primitive '1N4448';
   pin
     'IN':
@@ -204,56 +204,52 @@ primitive '74F07';
       POWER_PINS='(VCC:14)';
   end_body;
 end_primitive;
-primitive '74F164_2';
+primitive '74HCT164';
   pin
     'DSA':
       PIN_NUMBER='(1)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'MR*':
-      PIN_NUMBER='(9)';
-      INPUT_LOAD='(-0.01,0.01)';
+      INPUT_LOAD='(-0.010000,0.010000)';
       PINUSE='IN';
     'DSB':
       PIN_NUMBER='(2)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'CP':
-      PIN_NUMBER='(8)';
-      INPUT_LOAD='(-0.01,0.01)';
+      INPUT_LOAD='(-0.010000,0.010000)';
       PINUSE='IN';
     'Q0':
       PIN_NUMBER='(3)';
-      OUTPUT_LOAD='(1.0,-1.0)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
       PINUSE='OUT';
     'Q1':
       PIN_NUMBER='(4)';
-      OUTPUT_LOAD='(1.0,-1.0)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
       PINUSE='OUT';
     'Q2':
       PIN_NUMBER='(5)';
-      OUTPUT_LOAD='(1.0,-1.0)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
       PINUSE='OUT';
     'Q3':
       PIN_NUMBER='(6)';
-      OUTPUT_LOAD='(1.0,-1.0)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
       PINUSE='OUT';
     'Q4':
       PIN_NUMBER='(10)';
-      OUTPUT_LOAD='(1.0,-1.0)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
       PINUSE='OUT';
     'Q5':
       PIN_NUMBER='(11)';
-      OUTPUT_LOAD='(1.0,-1.0)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
       PINUSE='OUT';
     'Q6':
       PIN_NUMBER='(12)';
-      OUTPUT_LOAD='(1.0,-1.0)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
       PINUSE='OUT';
     'Q7':
       PIN_NUMBER='(13)';
-      OUTPUT_LOAD='(1.0,-1.0)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
       PINUSE='OUT';
+    'CP':
+      PIN_NUMBER='(8)';
+      INPUT_LOAD='(-0.010000,0.010000)';
+      PINUSE='IN';
     'GND':
       PIN_NUMBER='(7)';
       PINUSE='GROUND';
@@ -270,10 +266,14 @@ primitive '74F164_2';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+    'MR*':
+      PIN_NUMBER='(9)';
+      INPUT_LOAD='(-0.010000,0.010000)';
+      PINUSE='IN';
   end_pin;
   body
-      PART_NAME='74F164';
-      BODY_NAME='74F164';
+      PART_NAME='74HCT164';
+      BODY_NAME='74HCT164';
       JEDEC_TYPE='SOIC14';
       PHYS_DES_PREFIX='U';
       CLASS='IC';

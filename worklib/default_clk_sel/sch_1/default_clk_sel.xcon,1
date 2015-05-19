@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-18T18:02:44</modificationTime>
+    <modificationTime>2015-05-18T18:43:02</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="default_clk_sel" view="sch_1">
       <lastids>
-        <instanceid>26</instanceid>
-        <netid>25</netid>
-        <insttermid>128</insttermid>
+        <instanceid>30</instanceid>
+        <netid>27</netid>
+        <insttermid>136</insttermid>
         <dpinsttermid>4</dpinsttermid>
       </lastids>
       <cells>
@@ -580,6 +580,26 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S10</id>
+          <library>diodes</library>
+          <name>z4ke</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T140</id>
+              <name>and</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T141</id>
+              <name>cat</name>
+              <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -667,6 +687,14 @@
         <net>
           <id>N25</id>
           <name>unnamed_1_mc10h104_i4_a2</name>
+        </net>
+        <net>
+          <id>N26</id>
+          <name>unnamed_1_rsmd0805_i39_a</name>
+        </net>
+        <net>
+          <id>N27</id>
+          <name>unnamed_1_z4ke_i37_cat</name>
         </net>
         <net>
           <id>N11</id>
@@ -2246,6 +2274,154 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I27</id>
+          <cellid>S10</cellid>
+          <name>page1_i37</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M129</id>
+              <termid>T140</termid>
+              <connections>
+                <connection net="N21" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M130</id>
+              <termid>T141</termid>
+              <connections>
+                <connection net="N27" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I28</id>
+          <cellid>S10</cellid>
+          <name>page1_i38</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M131</id>
+              <termid>T140</termid>
+              <connections>
+                <connection net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M132</id>
+              <termid>T141</termid>
+              <connections>
+                <connection net="N26" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I29</id>
+          <cellid>S6</cellid>
+          <name>page1_i39</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M133</id>
+              <termid>T62</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N26" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M134</id>
+              <termid>T63</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N2" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I30</id>
+          <cellid>S6</cellid>
+          <name>page1_i40</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M135</id>
+              <termid>T62</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N26" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M136</id>
+              <termid>T63</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N1" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2347,6 +2523,8 @@
               <net ref="unnamed_1_mc10h104_i4_a2"></net>
               <net ref="unnamed_1_rsmd0805_i16_b"></net>
               <net ref="unnamed_1_rsmd0805_i17_b"></net>
+              <net ref="unnamed_1_rsmd0805_i39_a"></net>
+              <net ref="unnamed_1_z4ke_i37_cat"></net>
               <net ref="v3p3"></net>
               <net ref="vcc"></net>
               <net ref="vee"></net>
@@ -2379,6 +2557,10 @@
               <instance ref="i33"></instance>
               <instance ref="i35"></instance>
               <instance ref="i36"></instance>
+              <instance ref="i37"></instance>
+              <instance ref="i38"></instance>
+              <instance ref="i39"></instance>
+              <instance ref="i40"></instance>
             </instances>
           </page>
         </pages>

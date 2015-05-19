@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "default_clk_sel"
     (lastIds
-      (lastInstanceId 30)
+      (lastInstanceId 31)
       (lastNetId 27)
-      (lastInstTermId 136)
+      (lastInstTermId 138)
       (lastDPInstTermId 4)
     )
     (cells
@@ -146,6 +146,12 @@
         (terms
           ("T140" "and" -1 -1 3)
           ("T141" "cat" -1 -1 3)
+        )
+      )
+      ("S11" "csmd0805" "capacitors" "sym_1"
+        (terms
+          ("T154" "a" 0 0 1)
+          ("T155" "b" 0 0 2)
         )
       )
     )
@@ -880,6 +886,20 @@
           ("M136" "T63" 0 0
             (conn
               ("0" 0 0 "N1" -1 -1)
+            )
+          )
+        )
+      )
+      ("I31" "page1_i41" "S11"
+        (pins
+          ("M137" "T154" 0 0
+            (conn
+              ("0" 0 0 "N11" -1 -1)
+            )
+          )
+          ("M138" "T155" 0 0
+            (conn
+              ("0" 0 0 "N26" -1 -1)
             )
           )
         )
