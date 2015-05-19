@@ -3,57 +3,90 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Mon May 18 16:15:52 2015  |
+|                                                    Mon May 18 18:42:32 2015  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  GND          pins ADDED TO this existing net (pins not previously on any net)
-                                 TP53.1                         
+  FOX_CLK_LVPECL_N pins ADDED TO this existing net (pins not previously on any net)
+                                 R379.2                         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_2_FRONTPORTS_I2_GTTTLOU pins ADDED TO this new net
-                                 TP52.1                         
-                                 U18.17           3480.0 14150.0
+  FOX_CLK_LVPECL_P pins ADDED TO this existing net (pins not previously on any net)
+                                 R380.2                         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  UNNAMED_1_RSMD0805_I39_A pins ADDED TO this new net
+                                 R379.1                         
+                                 R380.1                         
+                                 U156.1                         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  UNNAMED_1_Z4KE_I37_CAT pins ADDED TO this new net
+                                 U155.1                         
+                                 U156.2                         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  V3P3         pins ADDED TO this existing net (pins not previously on any net)
+                                 U155.2                         
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Mon May 18 16:15:52 2015  |
+|                                                    Mon May 18 18:42:32 2015  |
 |------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
+| COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
+|    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- TP52                TESTPOINT_L           
- TP53                TESTPOINT_L           
+ Z4KE
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Mon May 18 16:15:52 2015  |
+|                                                    Mon May 18 18:42:32 2015  |
 |------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to board drawing                                       |
+| COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
+|    ref des        |    device type                                           |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- TP52.1                         PRIM_FILE      ./Parts/parts/misc/testpoint_l/chips/chips.prt
- TP53.1                         PRIM_FILE      ./Parts/parts/misc/testpoint_l/chips/chips.prt
+ R379                RSMD0805-50,1%,0805   
+ R380                RSMD0805-50,1%,0805   
+ U155                Z4KE                  
+ U156                Z4KE                  
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Mon May 18 16:15:52 2015  |
+|                                                    Mon May 18 18:42:32 2015  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to board drawing                                       |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ R379.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
+ R380.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
+ U155.1                         PRIM_FILE      ./Parts/parts/diodes/z4ke/chips/chips.prt
+ U156.1                         PRIM_FILE      ./Parts/parts/diodes/z4ke/chips/chips.prt
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Mon May 18 18:42:32 2015  |
 |------------------------------------------------------------------------------|
 | PIN PROPERTIES added to board drawing                                        |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    pin_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- TP52.1                         CDS_PINID      A
- TP53.1                         CDS_PINID      A
+ R379.1                         CDS_PINID      A(0)
+ R379.2                         CDS_PINID      B(0)
+ R380.1                         CDS_PINID      A(0)
+ R380.2                         CDS_PINID      B(0)
+ U155.1                         CDS_PINID      CAT
+ U155.2                         CDS_PINID      \and\
+ U156.1                         CDS_PINID      CAT
+ U156.2                         CDS_PINID      \and\
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  9                                              |
+|   total ECO changes reported  25                                             |
 |------------------------------------------------------------------------------|
