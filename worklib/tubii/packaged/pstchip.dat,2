@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 19-May-2015 AT 14:58:57 }
+{ Packager-XL run on 19-May-2015 AT 16:37:27 }
 primitive '1N4448';
   pin
     'IN':
@@ -3696,14 +3696,17 @@ primitive 'LED_L';
 end_primitive;
 primitive 'LM1117';
   pin
-    'OUTPUT':
-      PIN_NUMBER='(2)';
+    'GROUND':
+      PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
     'INPUT':
       PIN_NUMBER='(3)';
       PINUSE='UNSPEC';
-    'GROUND':
-      PIN_NUMBER='(1)';
+    'OUTPUT':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'OUTPUT_2':
+      PIN_NUMBER='(4)';
       PINUSE='UNSPEC';
   end_pin;
   body
@@ -3719,7 +3722,6 @@ primitive 'LM1117';
       JEDEC_TYPE='SOT223';
       PHYS_DES_PREFIX='Q';
       CLASS='IC';
-      NC_PINS='(4)';
   end_body;
 end_primitive;
 primitive 'MC10E016';

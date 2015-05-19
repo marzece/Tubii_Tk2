@@ -3,63 +3,71 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Tue May 19 16:41:01 2015  |
+|                                                    Tue May 19 17:00:52 2015  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  V3P3         pins ADDED TO this existing net (pins not previously on any net)
-                                 Q4.4             3425.0  5774.0
+  VCC15        pins ADDED TO this existing net (pins not previously on any net)
+                                 Q2.4             2149.5  4897.0
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCC15M       pins ADDED TO this existing net (pins not previously on any net)
+                                 Q1.4             2925.5  4899.0
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Tue May 19 16:41:01 2015  |
+|                                                    Tue May 19 17:00:52 2015  |
 |------------------------------------------------------------------------------|
 | COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- LM1117
+ 7815S_L
+ 7915_L
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Tue May 19 16:41:01 2015  |
+|                                                    Tue May 19 17:00:52 2015  |
 |------------------------------------------------------------------------------|
 | COMPONENTS CHANGED from one device type to another in board drawing          |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    ref des        | new device type     |   x   |   y   |  old  device type  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Q4                  LM1117                 3425.0  5650.0 LM1117
+ Q1                  7915_L                 2825.5  4324.0 7915_L
+ Q2                  7815S_L                2049.5  4322.0 7815S_L
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Tue May 19 16:41:01 2015  |
+|                                                    Tue May 19 17:00:52 2015  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Q4.4            3425.0  5650.0 PRIM_FILE      ./Parts/parts/regulators/lm1117/chips/chips.prt
- Q4.4            3425.0  5650.0 ROOM           POWER
+ Q1.4            2825.5  4324.0 PRIM_FILE      ./Parts/parts/regulators/7915_l/chips/chips.prt
+ Q1.4            2825.5  4324.0 ROOM           POWER
+ Q2.4            2049.5  4322.0 PRIM_FILE      ./Parts/parts/regulators/7815s_l/chips/chips.prt
+ Q2.4            2049.5  4322.0 ROOM           POWER
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   5  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Tue May 19 16:41:01 2015  |
+|                                                    Tue May 19 17:00:52 2015  |
 |------------------------------------------------------------------------------|
 | PIN PROPERTIES added to board drawing                                        |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    pin_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Q4.4            3425.0  5774.0 CDS_PINID      OUTPUT_2
+ Q1.4            2925.5  4899.0 CDS_PINID      OUTPUT_2
+ Q2.4            2149.5  4897.0 CDS_PINID      OUTPUT_2
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  6                                              |
+|   total ECO changes reported  12                                             |
 |------------------------------------------------------------------------------|

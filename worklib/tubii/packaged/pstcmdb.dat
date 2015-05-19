@@ -1,4 +1,4 @@
-; Packager-XL run on 19-May-2015 AT 16:56:55 CONSTRAINTS_VIEW_GENERATED
+; Packager-XL run on 19-May-2015 AT 17:39:20 CONSTRAINTS_VIEW_GENERATED
 ( ConstraintFile "tubii"
 	( constraintHeader
 		( objectKey
@@ -8,7 +8,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 335 )
+			( logicalViewRevNum 338 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -11661,6 +11661,9 @@
 			( pin "Q4.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i13:output" )
 			)
+			( pin "Q4.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i13:output_2" )
+			)
 			( pin "Q2.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i15:ground" )
 			)
@@ -11670,6 +11673,9 @@
 			( pin "Q2.3"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i15:output" )
 			)
+			( pin "Q2.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i15:output_2" )
+			)
 			( pin "Q1.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i16:ground" )
 			)
@@ -11678,6 +11684,9 @@
 			)
 			( pin "Q1.3"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i16:output" )
+			)
+			( pin "Q1.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i16:output_2" )
 			)
 			( pin "TP14.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i17:a" )
@@ -15243,15 +15252,6 @@
 			( pin "R390.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i42:b(0)" )
 			)
-			( pin "Q4.4"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i13:output_2" )
-			)
-			( pin "Q2.4"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i15:output_2" )
-			)
-			( pin "Q1.4"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i16:output_2" )
-			)
 			( differentialPair "DP_UNNAMED_1_FRONTPORTS_I2_CLK100"
 				( memberType ( signal ) )
 				( objectFlag fObjectLibdefined )
@@ -15787,14 +15787,6 @@
 				( member ( signalRef "UNNAMED_2_FRONTPORTS_I2_TUBCLKI") )
 				( member ( signalRef "UNNAMED_2_FRONTPORTS_I2_TUBCL_1") )
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):\DP_4\" )
-			)
-			( differentialPair "DP_UNNAMED_1_CSMD0805_I64_B"
-				( memberType ( signal ) )
-				( objectFlag fObjectLibdefined )
-				( objectFlag fObjectRenamed )
-				( member ( signalRef "UNNAMED_1_CSMD0805_I64_B") )
-				( member ( signalRef "UNNAMED_1_CSMD0805_I71_A") )
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):\DP_2\" )
 			)
 			( bus "CNTRL_RAW"
 				( memberType ( signal ) )

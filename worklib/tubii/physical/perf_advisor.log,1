@@ -1,0 +1,76 @@
+
+********************************************************************************
+*  Performance checking for design C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd
+********************************************************************************
+
+Ratsnest schedule check
+-------------------------------
+* VTT net has VOLTAGE property, suggest adding NO_RAT property.
+* VEE net has VOLTAGE property, suggest adding NO_RAT property.
+* VCC net has VOLTAGE property, suggest adding NO_RAT property.
+* GND net has VOLTAGE property, suggest adding NO_RAT property.
+
+DRC checks
+----------------------
+* OK.
+
+Constraint region check
+-------------------------------
+* OK.
+
+Dynamic shape check
+-------------------------------
+* Dynamic shape has a large number of edges (75).
+  Suggest re-entering shape.
+  ISSUE: Attempts to detect shapes that might have been changed from
+         static to dynamic. Large number of edges leads to quality
+         of voiding and performance issues.
+      shape/region location:  (2575.0 4250.0)
+      layer:                  BOUNDARY/VEE
+
+
+Sector table check
+-------------------------------
+* OK.
+
+Constraint set check
+---------------------------------
+* OK.
+
+NODRC_SYM_SAME_PIN check
+---------------------------------
+* OK.
+
+Cross section check for bad dielectric constant values
+--------------------------------------------------------
+* OK.
+
+Padstack size check
+----------------------
+* OK.
+
+Conductor line check
+------------------------------
+* OK.
+
+Design Constraints Statistics
+---------------------------------
+  Physical csets       =     1
+  Spacing csets        =     2
+  Same net csets       =     1
+  Electrical csets     =     0
+  Other csets          =     0
+  Total csets        ===     4
+
+  Cset relation table  =     0
+
+  Constraint regions   =     0
+  Constraint shapes    =     0
+
+* OK.
+
+=========
+SUMMARY
+=========
+
+5 problems found.	0 maintenance problems found.

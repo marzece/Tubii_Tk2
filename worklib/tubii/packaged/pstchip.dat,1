@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 18-May-2015 AT 18:38:42 }
+{ Packager-XL run on 19-May-2015 AT 14:58:57 }
 primitive '1N4448';
   pin
     'IN':
@@ -1589,6 +1589,39 @@ primitive 'CSMD0603-10NF,10%,0603,25V';
       PARENT_PART_TYPE='CSMD0603';
       PARENT_PPT='CSMD0603';
       PARENT_PPT_PART='CSMD0603-10NF,10%,0603,25V';
+  end_body;
+end_primitive;
+primitive 'CSMD0805-0.01UF,10%,0805,25V';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='CSMD0805';
+      PATH='1P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
+      VER='1';
+      XY='(1400,2400)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='CSMD0805';
+      JEDEC_TYPE='CAP805';
+      PHYS_DES_PREFIX='C';
+      CLASS='DISCRETE';
+      VALUE='0.01UF';
+      PARENT_PART_TYPE='CSMD0805';
+      PARENT_PPT='CSMD0805';
+      PARENT_PPT_PART='CSMD0805-0.01UF,10%,0805,25V';
   end_body;
 end_primitive;
 primitive 'CSMD0805-0.1UF,5%,0805,50V';
