@@ -1,9 +1,9 @@
 FILE_TYPE=EXPANDEDPARTLIST;
-{ Packager-XL run on 18-May-2015 AT 16:12:03 }
+{ Packager-XL run on 19-May-2015 AT 14:58:57 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='TUBII';
- POST_TIME='18-May-2015 AT 16:12:03';
+ POST_TIME='19-May-2015 AT 14:58:57';
  SOURCE_TOOL='PACKAGER_XL';
 END_DIRECTIVES;
 
@@ -3525,7 +3525,7 @@ e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i23@capacitors.csmd0805(chips)',
  DIST='FLAT',
  CURRENT='CIMAX',
  PHYS_PAGE='1',
- XY='(-2000,3575)',
+ XY='(-2000,3625)',
  ROT='1',
  VER='1',
  VALUE='100NF',
@@ -3705,7 +3705,7 @@ e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i21@capacitors.csmd0805(chips)',
  DIST='FLAT',
  CURRENT='CIMAX',
  PHYS_PAGE='1',
- XY='(900,3550)',
+ XY='(900,3525)',
  ROT='0',
  VER='1',
  VALUE='0.1UF',
@@ -7597,6 +7597,42 @@ s)',
  ROOM='CAEN_ANALOG',
  CDS_LIB='capacitors',
  CDS_PART_NAME='CSMD0805-NS,10%,0805,25V',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/capacitors/csmd0805/chips/chips.prt';
+
+PART_NAME
+ C202 'CSMD0805-0.01UF,10%,0805,25V':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1_I41@CAPACITORS.CSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i41@capacitors.csmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i41@capacitors.csmd0805(chips)',
+ PATH='I41',
+ DRAWING='@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1',
+ TOL_ON_OFF='ON',
+ TC='0',
+ SLOPE='CSMAX',
+ POSTOL='10%',
+ PACKTYPE='0805',
+ NEGTOL='10%',
+ MAX_TEMP='CTMAX',
+ KNEE='CBMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ CURRENT='CIMAX',
+ PHYS_PAGE='1',
+ XY='(-2900,3050)',
+ ROT='2',
+ VER='1',
+ VALUE='0.01UF',
+ PART_NAME='CSMD0805',
+ TOL='10%',
+ CDS_LIB='capacitors',
+ CDS_PART_NAME='CSMD0805-0.01UF,10%,0805,25V',
  VOLTAGE='25V',
  PRIM_FILE='./Parts/parts/capacitors/csmd0805/chips/chips.prt';
 
@@ -12281,16 +12317,15 @@ tion(sch_1):page1_i16@resistors.rsmd0805(chips)',
  PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
 
 PART_NAME
- R110 'RSMD0805-1000,1%,0805':
- ROOM='SPKR';
+ R110 'RSMD0805-100,1%,0805':;
 
 SECTION_NUMBER 1
- '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I7@RESISTORS.RSMD0805(CHIPS)':
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I37@RESISTORS.RSMD0805(CHIPS)':
  C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
-e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i7@resistors.rsmd0805(chips)',
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i37@resistors.rsmd0805(chips)',
  P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
-e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i7@resistors.rsmd0805(chips)',
- PATH='I7',
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i37@resistors.rsmd0805(chips)',
+ PATH='I37',
  DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
  TC2='RTMPO',
  TC1='RTMPL',
@@ -12307,11 +12342,10 @@ e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i7@resistors.rsmd0805(chips)',
  XY='(75,3675)',
  ROT='1',
  VER='1',
- VALUE='1000',
+ VALUE='100',
  TOL='1%',
- ROOM='SPKR',
  CDS_LIB='resistors',
- CDS_PART_NAME='RSMD0805-1000,1%,0805',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
  VOLTAGE='25V',
  PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
 
@@ -12351,16 +12385,15 @@ e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i8@resistors.rsmd0805(chips)',
  PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
 
 PART_NAME
- R112 'RSMD0805-1000,1%,0805':
- ROOM='SPKR';
+ R112 'RSMD0805-100,1%,0805':;
 
 SECTION_NUMBER 1
- '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I6@RESISTORS.RSMD0805(CHIPS)':
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I35@RESISTORS.RSMD0805(CHIPS)':
  C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
-e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i6@resistors.rsmd0805(chips)',
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i35@resistors.rsmd0805(chips)',
  P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
-e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i6@resistors.rsmd0805(chips)',
- PATH='I6',
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i35@resistors.rsmd0805(chips)',
+ PATH='I35',
  DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
  TC2='RTMPO',
  TC1='RTMPL',
@@ -12377,11 +12410,10 @@ e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i6@resistors.rsmd0805(chips)',
  XY='(75,2750)',
  ROT='1',
  VER='1',
- VALUE='1000',
+ VALUE='100',
  TOL='1%',
- ROOM='SPKR',
  CDS_LIB='resistors',
- CDS_PART_NAME='RSMD0805-1000,1%,0805',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
  VOLTAGE='25V',
  PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
 
@@ -22066,6 +22098,406 @@ e1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i17@resistors.rsmd0805(chips)'
  PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
 
 PART_NAME
+ R379 'RSMD0805-50,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1_I40@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i40@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i40@resistors.rsmd0805(chips)',
+ PATH='I40',
+ DRAWING='@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(-3200,3250)',
+ ROT='1',
+ VER='1',
+ VALUE='50',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-50,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R380 'RSMD0805-50,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1_I39@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i39@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i39@resistors.rsmd0805(chips)',
+ PATH='I39',
+ DRAWING='@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(-3075,3250)',
+ ROT='1',
+ VER='1',
+ VALUE='50',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-50,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R381 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I36@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i36@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i36@resistors.rsmd0805(chips)',
+ PATH='I36',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(100,2750)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R382 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I38@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i38@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i38@resistors.rsmd0805(chips)',
+ PATH='I38',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(150,3675)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R383 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I31@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i31@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i31@resistors.rsmd0805(chips)',
+ PATH='I31',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(175,2750)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R384 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I39@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i39@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i39@resistors.rsmd0805(chips)',
+ PATH='I39',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(225,3675)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R385 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I32@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i32@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i32@resistors.rsmd0805(chips)',
+ PATH='I32',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(225,2750)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R386 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I33@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i33@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i33@resistors.rsmd0805(chips)',
+ PATH='I33',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(275,2750)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R387 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I40@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i40@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i40@resistors.rsmd0805(chips)',
+ PATH='I40',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(300,3675)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R388 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I34@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i34@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i34@resistors.rsmd0805(chips)',
+ PATH='I34',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(325,2750)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R389 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I41@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i41@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i41@resistors.rsmd0805(chips)',
+ PATH='I41',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(375,3675)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
+ R390 'RSMD0805-100,1%,0805':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I11@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1_I42@RESISTORS.RSMD0805(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i42@resistors.rsmd0805(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i42@resistors.rsmd0805(chips)',
+ PATH='I42',
+ DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
+ TC2='RTMPO',
+ TC1='RTMPL',
+ POWER='0.1',
+ TOL_ON_OFF='ON',
+ SLOPE='RSMAX',
+ POSTOL='5%',
+ PACKTYPE='0805',
+ NEGTOL='5%',
+ MAX_TEMP='RTMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ PHYS_PAGE='1',
+ XY='(450,3675)',
+ ROT='1',
+ VER='1',
+ VALUE='100',
+ TOL='1%',
+ CDS_LIB='resistors',
+ CDS_PART_NAME='RSMD0805-100,1%,0805',
+ VOLTAGE='25V',
+ PRIM_FILE='./Parts/parts/resistors/rsmd0805/chips/chips.prt';
+
+PART_NAME
  TP1 'TESTPOINT_L':
  ROOM='CNTRL_REG';
 
@@ -22538,7 +22970,7 @@ e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i19@misc.testpoint_l(chips)',
  DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
  ABBREV='TP',
  PHYS_PAGE='1',
- XY='(1300,3550)',
+ XY='(1300,3525)',
  ROT='0',
  VER='1',
  CDS_LIB='misc',
@@ -22558,7 +22990,7 @@ e1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i18@misc.testpoint_l(chips)',
  DRAWING='@TUBII_TK2_LIB.TUBII_SPKR(SCH_1):PAGE1',
  ABBREV='TP',
  PHYS_PAGE='1',
- XY='(1300,3450)',
+ XY='(1300,3425)',
  ROT='0',
  VER='1',
  CDS_LIB='misc',
@@ -29080,5 +29512,47 @@ e1_i5@tubii_tk2_lib.power(sch_1):page1_i49@misc.ostoq027150(chips)',
  CDS_LIB='misc',
  CDS_PART_NAME='OSTOQ027150',
  PRIM_FILE='./Parts/parts/misc/ostoq027150/chips/chips.prt';
+
+PART_NAME
+ U155 'Z4KE':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1_I37@DIODES.Z4KE(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i37@diodes.z4ke(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i37@diodes.z4ke(chips)',
+ PATH='I37',
+ DRAWING='@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1',
+ PHYS_PAGE='1',
+ XY='(-3625,3050)',
+ ROT='0',
+ VER='1',
+ CDS_LIB='diodes',
+ CDS_PART_NAME='Z4KE',
+ PRIM_FILE='./Parts/parts/diodes/z4ke/chips/chips.prt';
+
+PART_NAME
+ U156 'Z4KE':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I2@TUBII_TK2_LIB.CLOCKS(SCH_1):PAGE1_I1@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1_I38@DIODES.Z4KE(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i38@diodes.z4ke(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):~
+page1_i38@diodes.z4ke(chips)',
+ PATH='I38',
+ DRAWING='@TUBII_TK2_LIB.DEFAULT_CLK_SEL(SCH_1):PAGE1',
+ PHYS_PAGE='1',
+ XY='(-3375,3050)',
+ ROT='0',
+ VER='1',
+ CDS_LIB='diodes',
+ CDS_PART_NAME='Z4KE',
+ PRIM_FILE='./Parts/parts/diodes/z4ke/chips/chips.prt';
 
 END.

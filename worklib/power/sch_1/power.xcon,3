@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-18T16:16:56</modificationTime>
+    <modificationTime>2015-05-19T16:36:11</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>53</instanceid>
         <netid>28</netid>
-        <insttermid>109</insttermid>
+        <insttermid>110</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -174,6 +174,11 @@
             <term>
               <id>T16</id>
               <name>output</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T60</id>
+              <name>output_2</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -898,6 +903,13 @@
             <pin>
               <id>M30</id>
               <termid>T16</termid>
+              <connections>
+                <connection net="N16" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M110</id>
+              <termid>T60</termid>
               <connections>
                 <connection net="N16" />
               </connections>

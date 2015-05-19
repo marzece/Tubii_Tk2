@@ -3,90 +3,63 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Mon May 18 18:42:32 2015  |
+|                                                    Tue May 19 16:41:01 2015  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  FOX_CLK_LVPECL_N pins ADDED TO this existing net (pins not previously on any net)
-                                 R379.2                         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  FOX_CLK_LVPECL_P pins ADDED TO this existing net (pins not previously on any net)
-                                 R380.2                         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_RSMD0805_I39_A pins ADDED TO this new net
-                                 R379.1                         
-                                 R380.1                         
-                                 U156.1                         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_Z4KE_I37_CAT pins ADDED TO this new net
-                                 U155.1                         
-                                 U156.2                         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   V3P3         pins ADDED TO this existing net (pins not previously on any net)
-                                 U155.2                         
+                                 Q4.4             3425.0  5774.0
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Mon May 18 18:42:32 2015  |
+|                                                    Tue May 19 16:41:01 2015  |
 |------------------------------------------------------------------------------|
 | COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Z4KE
+ LM1117
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Mon May 18 18:42:32 2015  |
+|                                                    Tue May 19 16:41:01 2015  |
 |------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
+| COMPONENTS CHANGED from one device type to another in board drawing          |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R379                RSMD0805-50,1%,0805   
- R380                RSMD0805-50,1%,0805   
- U155                Z4KE                  
- U156                Z4KE                  
+ Q4                  LM1117                 3425.0  5650.0 LM1117
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Mon May 18 18:42:32 2015  |
+|                                                    Tue May 19 16:41:01 2015  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R379.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
- R380.2                         PRIM_FILE      ./Parts/parts/resistors/rsmd0805/chips/chips.prt
- U155.1                         PRIM_FILE      ./Parts/parts/diodes/z4ke/chips/chips.prt
- U156.1                         PRIM_FILE      ./Parts/parts/diodes/z4ke/chips/chips.prt
+ Q4.4            3425.0  5650.0 PRIM_FILE      ./Parts/parts/regulators/lm1117/chips/chips.prt
+ Q4.4            3425.0  5650.0 ROOM           POWER
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   5  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Mon May 18 18:42:32 2015  |
+|                                                    Tue May 19 16:41:01 2015  |
 |------------------------------------------------------------------------------|
 | PIN PROPERTIES added to board drawing                                        |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    pin_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R379.1                         CDS_PINID      A(0)
- R379.2                         CDS_PINID      B(0)
- R380.1                         CDS_PINID      A(0)
- R380.2                         CDS_PINID      B(0)
- U155.1                         CDS_PINID      CAT
- U155.2                         CDS_PINID      \and\
- U156.1                         CDS_PINID      CAT
- U156.2                         CDS_PINID      \and\
+ Q4.4            3425.0  5774.0 CDS_PINID      OUTPUT_2
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  25                                             |
+|   total ECO changes reported  6                                              |
 |------------------------------------------------------------------------------|

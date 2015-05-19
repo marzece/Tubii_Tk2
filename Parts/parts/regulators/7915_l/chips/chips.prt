@@ -1,25 +1,38 @@
 FILE_TYPE=LIBRARY_PARTS;
-PRIMITIVE '7915_L';
-  PIN
-    'GROUND':
-	  PIN_NUMBER='(1)';
-    'INPUT':
-	  PIN_NUMBER='(2)';
+primitive '7915_L';
+  pin
     'OUTPUT':
-	  PIN_NUMBER='(3)';
-  END_PIN;
-  BODY
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'INPUT':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'GROUND':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'OUTPUT_2':
+      PIN_NUMBER='(4)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+    PART_NAME='7915_L';
     LAST_MODIFIED='Fri May 22 15:20:13 PDT 1992';
     ABBREV='7915_L';
-  	NEEDS_NO_SIZE='TRUE';
-	PHYS_DES_PREFIX='Q';
-	CLASS='IC';
-	JEDEC_TYPE='TO220ABV';
-        NC_PINS='(4)';
-	LEADOUT_STYLE='TO220ABV';
-	PINCOUNT='4';
-	PATH='10P';
-	SIZE='1';
-  END_BODY;
-END_PRIMITIVE;
+    NEEDS_NO_SIZE='TRUE';
+    LEADOUT_STYLE='TO220ABV';
+    PINCOUNT='4';
+    PATH='10P';
+    SIZE='1';
+    BODY_NAME='7915_L';
+    JEDEC_TYPE='TO220ABV';
+    PHYS_DES_PREFIX='Q';
+    CLASS='IC';
+  end_body;
+end_primitive;
+
 END.
