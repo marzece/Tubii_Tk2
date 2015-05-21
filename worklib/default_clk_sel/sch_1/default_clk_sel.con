@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "default_clk_sel"
     (lastIds
-      (lastInstanceId 31)
-      (lastNetId 27)
-      (lastInstTermId 138)
+      (lastInstanceId 33)
+      (lastNetId 28)
+      (lastInstTermId 142)
       (lastDPInstTermId 4)
     )
     (cells
@@ -154,6 +154,12 @@
           ("T155" "b" 0 0 2)
         )
       )
+      ("S12" "led_l" "misc" "sym_1"
+        (terms
+          ("T168" "a" -1 -1 3)
+          ("T169" "b" -1 -1 3)
+        )
+      )
     )
 
     (nets
@@ -177,6 +183,7 @@
       ("N25" "unnamed_1_mc10h104_i4_a2" -1 -1 0 )
       ("N26" "unnamed_1_rsmd0805_i39_a" -1 -1 0 )
       ("N27" "unnamed_1_z4ke_i37_cat" -1 -1 0 )
+      ("N28" "unnamed_1_z4ke_i38_and" -1 -1 0 )
       ("N11" "gnd" -1 -1 2 )
       ("N17" "vcc" -1 -1 2 )
       ("N18" "vee" -1 -1 2 )
@@ -852,7 +859,7 @@
         (pins
           ("M131" "T140" -1 -1
             (conn
-              ("0" -1 -1 "N27" -1 -1)
+              ("0" -1 -1 "N28" -1 -1)
             )
           )
           ("M132" "T141" -1 -1
@@ -900,6 +907,34 @@
           ("M138" "T155" 0 0
             (conn
               ("0" 0 0 "N26" -1 -1)
+            )
+          )
+        )
+      )
+      ("I32" "page1_i44" "S12"
+        (pins
+          ("M139" "T168" -1 -1
+            (conn
+              ("0" -1 -1 "N26" -1 -1)
+            )
+          )
+          ("M140" "T169" -1 -1
+            (conn
+              ("0" -1 -1 "N11" -1 -1)
+            )
+          )
+        )
+      )
+      ("I33" "page1_i45" "S10"
+        (pins
+          ("M141" "T140" -1 -1
+            (conn
+              ("0" -1 -1 "N27" -1 -1)
+            )
+          )
+          ("M142" "T141" -1 -1
+            (conn
+              ("0" -1 -1 "N28" -1 -1)
             )
           )
         )
