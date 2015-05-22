@@ -1,0 +1,225 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Glossing                                                         )
+(                                                                     )
+(    Drawing          : TubiiPCB_V6.brd                               )
+(    Software Version : 16.6P004                                      )
+(    Date/Time        : Fri May 22 10:24:32 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+**WARNING: Disabling dynamic shapes
+
+
+
+Line and Via Cleanup glossing in progress.
+Started on Fri May 22 10:24:34 2015
+
+ To be cleaned  : lines and vias
+ Number of executions  : 1
+ Retry?  : NO
+ Clean pin escapes?  : NO
+ Slip Slide?  : NO
+ Jog size limit is -0.1.
+
+ Etch length/via is -0.1.
+
+ Net length limit is 10000.0.
+
+ Minimum Via Limit : 1
+ Maximum 45 limit is 10.0.
+
+*********************************************************************
+                         ROUTER-LOG
+*********************************************************************
+
+NEW ROUTE on C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd
+Started on   Fri May 22 10:24:34 2015
+
+---------------------------------------------------------------------
+Statistics at the Start of the Route:
+----------------------------
+
+    Board Statistics:
+    -----------------
+        Components:  Placed 946  Unplaced 0  Total 946
+        Nets:  W/Rats 614  No/Rats 9  Total 651
+        Pins:  W/Rats 1817  No/Rats 1132  Unused 620  Unplaced 0  Total 3569
+        Equivalent ICs (1 pin = 1/14 EIC)  254
+        Router Keepin (in) (0.8000,2.6000) by (16.0000,16.1000)
+        Board area (sq in) 205.2
+        Board density (sq in/EIC) 0.805
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections               1175        1123         2298
+        Already Connected         1175        1085         2260
+        Missing Connections          0          38           38
+        Connection Completion      100.00%      96.62%       98.35%
+        Manh Distance (inches)    1142.95
+        Etch Length (inches)      1155.62      131.83      1287.45
+        Number of vias		   374         759         1133
+        Vias per Connection          0.32        0.70         0.50
+        Smd pins with attached clines                      2369
+
+
+
+---------------------------------------------------------------------
+General Routing Parameters
+--------------------------
+
+    Checkpoint at:  Last step 1:  Last execution 1
+    Overwrite router.log
+    Auto Save ON
+    Dynamic Control OFF
+    Direct Path Router OFF
+    Component Orientation  HORIZONTAL
+    Order Connections Short First
+    Max net priority 0
+    Corner type: 45
+    Side Entry ALLOWED
+    DO NOT FORCE to Pin Escape
+    Ripup/Cleanup Pin Escapes OFF
+    Via Preference OFF
+
+
+---------------------------------------------------------------------
+Layers and Drc Rules
+--------------------
+
+    Subclass                          Spacing       Line Width
+    Idx Name                Dir   ll    lv    vv    Def   Neck    Via    Max45
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     1  TOP                  H   7.0  10.0   8.0    7.0   7.0    24.0   25.0
+        X grids:     10.0  Offset: 0.0
+        Y grids:     10.0  Offset: 0.0
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     7  BOTTOM               H   7.0  10.0   8.0    7.0   7.0    24.0   25.0
+        X grids:     25.0  Offset: 0.0
+        Y grids:     25.0  Offset: 0.0
+
+    ATTEMPTS: 0 this step: 0 skips:  
+    count_invalid 0 in 0  0:0:0 hours
+---------------------------------------------------------------------
+Statistics at the End of the Route:
+----------------------------
+
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections               1175        1123         2298
+        Already Connected         1175        1085         2260
+        Missing Connections          0          38           38
+        Connection Completion      100.00%      96.62%       98.35%
+        Etch Length (inches)      1155.62      131.83      1287.45
+        Number of vias		   374         759         1133
+        Vias per Connection          0.32        0.70         0.50
+        Smd pins with attached clines                      2369
+
+
+    Parameters taken from execution 2
+    ----------------------------------
+    PARAMETERS: Layers  1 7 :
+                Window 200.0: Jog-size 150.0: Keep-Away -1: Jog-Limit -1
+                Ripup: OFF
+                Slide OFF: Length-Limit -1: Hug 0: 
+                Vias:  THRU; offset OFF; Limit -1: Via-line-via 0: 
+    INS/CLEANUP:  Start   - lines, vias -  no retry
+    BITMAP: allocate 8219484 bytes 
+    rt_pass6:rt_bldwin: num 5  area 84855  time 13 0:0:0 hours
+    rt_pass6:rt_bldwin: num 5  area 86078  time 13 0:0:0 hours
+    rt_pass6:rt_bldwin: num 3  area 6349  time 2 0:0:0 hours
+    rt_pass6:rt_bldwin:oops: num 4  area 10499  time 3 0:0:0 hours
+    rt_pass6:rt_bldwin: num 3  area 6449  time 3 0:0:0 hours
+    rt_pass6:rt_bldwin:oops: num 4  area 10849  time 5 0:0:0 hours
+    rt_pass6:rt_bldwin: num 5  area 17536  time 3 0:0:0 hours
+**WARNING: drc violation: check 51  drc 50  location (133000,54938)
+            subclass 0  distance 68.000000  location (133000,54938)
+bad skip found
+
+    Fails:
+        Total Fails:                           0
+    Skips:
+        The route would have caused a drc:     1
+        Total skips:                           1
+    rt_pass6:rt_bldwin:oops: num 6  area 29736  time 4 0:0:0 hours
+    rt_pass6:rt_bldwin: num 3  area 87476  time 3 0:0:0 hours
+    rt_pass6:rt_bldwin: num 3  area 8036  time 1 0:0:0 hours
+    rt_pass6:rt_bldwin: num 3  area 8464  time 2 0:0:0 hours
+**WARNING: drc violation: check 51  drc 21  location (148000,69500)
+            subclass 0  distance 95.000000  location (148000,69500)
+bad skip found
+
+    Fails:
+        Total Fails:                           0
+    Skips:
+        The route would have caused a drc:     1
+        Total skips:                           1
+    rt_pass6:rt_bldwin:oops: num 4  area 12829  time 2 0:0:0 hours
+    rt_pass6:rt_bldwin: num 3  area 8936  time 3 0:0:0 hours
+    rt_pass6:rt_bldwin:oops: num 4  area 15536  time 5 0:0:0 hours
+    rt_pass6:rt_bldwin: num 5  area 19406  time 6 0:0:0 hours
+**WARNING: drc violation: check 51  drc 23  location (119500,141750)
+            subclass 0  distance 55.000000  location (119500,141750)
+bad skip found
+
+    Fails:
+        Total Fails:                           0
+    Skips:
+        The route would have caused a drc:     1
+        Total skips:                           1
+    rt_pass6:rt_bldwin:oops: num 6  area 31356  time 11 0:0:0 hours
+    rt_pass6:rt_bldwin: num 5  area 19136  time 4 0:0:0 hours
+    rt_pass6:rt_bldwin: num 5  area 18656  time 6 0:0:0 hours
+    rt_pass6:rt_bldwin: num 3  area 10536  time 5 0:0:0 hours
+**WARNING: drc violation: check 51  drc 23  location (105500,127000)
+            subclass 0  distance 95.000000  location (105500,127000)
+bad skip found
+
+    Fails:
+        Total Fails:                           0
+    Skips:
+        The route would have caused a drc:     1
+        Total skips:                           1
+    rt_pass6:rt_bldwin:oops: num 4  area 19286  time 8 0:0:0 hours
+    rt_pass6:rt_bldwin: num 3  area 33711  time 2 0:0:0 hours
+**WARNING - owner0 deleted - dangling cline removed
+**WARNING - owner1 deleted - dangling cline removed
+    rt_pass6:rt_bldwin: num 3  area 5620  time 1 0:0:0 hours
+**FATAL - mark_from_thru - bad arrow 0
+---------------------------------------------------------------------
+Statistics at the End of the Route:
+----------------------------
+
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections               1175        1123         2298
+        Already Connected         1175        1081         2256
+        Missing Connections          0          42           42
+        Connection Completion      100.00%      96.26%       98.17%
+        Etch Length (inches)      1159.89      128.98      1288.87
+        Number of vias		   372         754         1126
+        Vias per Connection          0.32        0.70         0.50
+        Smd pins with attached clines                      2367
+
+
+
+    Total cpu time - 0:0:3 hours
+    Total elapsed time - 0:0:5 hours
+    Invalid Count Time: 0 0:0:0 hours
+    Route ended on  Fri May 22 10:24:39 2015
+
+************************************************************************
+** rt_tracornrs:  from_thru_arrows < 1 
+** rt_traceback:  failed 
+** rt_traceback:  status bad at end  -3000289
+** route_by_conn:  failed 
+** route_by_conn:  bad status at end  -3000289
+** rt_pass6:  failed 
+** rt_main_cle:  terminating execution  -3000289
+
+
+
+Glossing complete.
