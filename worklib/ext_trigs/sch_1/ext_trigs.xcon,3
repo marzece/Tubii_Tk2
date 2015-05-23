@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-23T16:07:52</modificationTime>
+    <modificationTime>2015-05-23T16:18:42</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ext_trigs" view="sch_1">
       <lastids>
         <instanceid>59</instanceid>
-        <netid>115</netid>
+        <netid>117</netid>
         <insttermid>242</insttermid>
         <dpinsttermid>28</dpinsttermid>
       </lastids>
@@ -618,20 +618,20 @@
           <name>page1_unnamed_1_74lv07a_i75_y3</name>
         </net>
         <net>
-          <id>N111</id>
-          <name>unnamed_1_74lv07a_i75_y4</name>
-        </net>
-        <net>
-          <id>N112</id>
-          <name>page1_unnamed_1_74lv07a_i75_y4</name>
-        </net>
-        <net>
           <id>N114</id>
           <name>unnamed_1_74lv07a_i74_y6</name>
         </net>
         <net>
           <id>N115</id>
           <name>page1_unnamed_1_74lv07a_i74_y6</name>
+        </net>
+        <net>
+          <id>N116</id>
+          <name>unnamed_1_74lv07a_i75_y6</name>
+        </net>
+        <net>
+          <id>N117</id>
+          <name>page1_unnamed_1_74lv07a_i75_y6</name>
         </net>
         <net>
           <id>N5</id>
@@ -689,10 +689,10 @@
         <alias net1="N108" lsb1="-1" msb1="-1" net2="N107" lsb2="-1" msb2="-1" />
         <alias net1="N110" lsb1="-1" msb1="-1" net2="N4" lsb2="10" msb2="10" />
         <alias net1="N110" lsb1="-1" msb1="-1" net2="N109" lsb2="-1" msb2="-1" />
-        <alias net1="N112" lsb1="-1" msb1="-1" net2="N4" lsb2="11" msb2="11" />
-        <alias net1="N112" lsb1="-1" msb1="-1" net2="N111" lsb2="-1" msb2="-1" />
         <alias net1="N115" lsb1="-1" msb1="-1" net2="N4" lsb2="15" msb2="15" />
         <alias net1="N115" lsb1="-1" msb1="-1" net2="N114" lsb2="-1" msb2="-1" />
+        <alias net1="N117" lsb1="-1" msb1="-1" net2="N4" lsb2="11" msb2="11" />
+        <alias net1="N117" lsb1="-1" msb1="-1" net2="N116" lsb2="-1" msb2="-1" />
       </aliases>
       <differentialnets>
       </differentialnets>
@@ -3348,7 +3348,6 @@
               <id>M224</id>
               <termid>T86</termid>
               <connections>
-                <connection net="N111" />
               </connections>
             </pin>
             <pin>
@@ -3361,6 +3360,7 @@
               <id>M226</id>
               <termid>T88</termid>
               <connections>
+                <connection net="N116" />
               </connections>
             </pin>
           </pins>
@@ -3555,7 +3555,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N111" />
+                <connection pinmsb="0" pinlsb="0" net="N116" />
               </connections>
             </pin>
           </pins>
@@ -3753,7 +3753,7 @@
               <net ref="unnamed_1_74lv07a_i75_y1"></net>
               <net ref="unnamed_1_74lv07a_i75_y2"></net>
               <net ref="unnamed_1_74lv07a_i75_y3"></net>
-              <net ref="unnamed_1_74lv07a_i75_y4"></net>
+              <net ref="unnamed_1_74lv07a_i75_y6"></net>
               <net ref="unnamed_1_8merge_i34_a"></net>
               <net ref="unnamed_1_8merge_i34_b"></net>
               <net ref="unnamed_1_8merge_i34_c"></net>
