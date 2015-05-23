@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 22-May-2015 AT 11:16:34 }
+{ Packager-XL run on 23-May-2015 AT 16:01:34 }
 primitive '1N4448';
   pin
     'IN':
@@ -459,6 +459,81 @@ primitive '74HCT273';
       PART_NAME='74HCT273';
       BODY_NAME='74HCT273';
       JEDEC_TYPE='SOIC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
+primitive '74LV07A';
+  pin
+    'A1':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.010000,0.010000)';
+      PINUSE='IN';
+    'A2':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.010000,0.010000)';
+      PINUSE='IN';
+    'A3':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.010000,0.010000)';
+      PINUSE='IN';
+    'A4':
+      PIN_NUMBER='(9)';
+      INPUT_LOAD='(-0.010000,0.010000)';
+      PINUSE='IN';
+    'A5':
+      PIN_NUMBER='(11)';
+      INPUT_LOAD='(-0.010000,0.010000)';
+      PINUSE='IN';
+    'A6':
+      PIN_NUMBER='(13)';
+      INPUT_LOAD='(-0.010000,0.010000)';
+      PINUSE='IN';
+    'Y1':
+      PIN_NUMBER='(2)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
+      PINUSE='OUT';
+    'Y2':
+      PIN_NUMBER='(4)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
+      PINUSE='OUT';
+    'Y3':
+      PIN_NUMBER='(6)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
+      PINUSE='OUT';
+    'Y4':
+      PIN_NUMBER='(8)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
+      PINUSE='OUT';
+    'Y5':
+      PIN_NUMBER='(10)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
+      PINUSE='OUT';
+    'Y6':
+      PIN_NUMBER='(12)';
+      OUTPUT_LOAD='(-1.000000,1.000000)';
+      PINUSE='OUT';
+    'GND':
+      PIN_NUMBER='(7)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VCC':
+      PIN_NUMBER='(14)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+      PART_NAME='74LV07A';
+      BODY_NAME='74LV07A';
+      JEDEC_TYPE='TSSOP14';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
   end_body;
@@ -5284,6 +5359,40 @@ primitive 'RES_L';
       JEDEC_TYPE='RES805';
       ALT_SYMBOLS='(RES400)';
       PART_NAME='RES_L';
+  end_body;
+end_primitive;
+primitive 'RSMD0603-4K,0.1%,0603';
+  pin
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='RSMD0603';
+      COMP_TYPE='RES';
+      PATH='2P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
+      VER='1';
+      XY='(1350,1350)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='RSMD0603';
+      JEDEC_TYPE='RES0603';
+      PHYS_DES_PREFIX='R';
+      CLASS='DISCRETE';
+      VALUE='4K';
+      PARENT_PART_TYPE='RSMD0603';
+      PARENT_PPT='RSMD0603';
+      PARENT_PPT_PART='RSMD0603-4K,0.1%,0603';
   end_body;
 end_primitive;
 primitive 'RSMD0805-0,1%,0805';
