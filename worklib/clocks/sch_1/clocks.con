@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "clocks"
     (lastIds
-      (lastInstanceId 15)
-      (lastNetId 449)
-      (lastInstTermId 1130)
+      (lastInstanceId 16)
+      (lastNetId 455)
+      (lastInstTermId 1145)
     )
     (cells
       ("S1" "default_clk_sel" "tubii_tk2_lib" "sym_1"
@@ -176,7 +176,6 @@
       ("N86" "data_rdy" -1 -1 1 1)
       ("N87" "unnamed_1_defaultclksel_i1_reseteclp" -1 -1 0 )
       ("N218" "unnamed_1_defaultclksel_i1_reset" -1 -1 0 )
-      ("N219" "unnamed_1_dr610f1button_i24_b1" -1 -1 0 )
       ("N335" "tub_clk_in_n" -1 -1 1 1)
       ("N336" "tub_clk_in_p" -1 -1 1 1)
       ("N362" "unnamed_1_74hct164_i28_q0" -1 -1 0 )
@@ -187,6 +186,7 @@
       ("N367" "unnamed_1_74hct164_i28_q5" -1 -1 0 )
       ("N368" "unnamed_1_74hct164_i28_q6" -1 -1 0 )
       ("N369" "unnamed_1_74hct164_i28_q7" -1 -1 0 )
+      ("N455" "unnamed_1_dr610f1button_i24_b2" -1 -1 0 )
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2 )
@@ -616,13 +616,10 @@
           ("M511" "T205" -1 -1
           )
           ("M512" "T206" -1 -1
-            (conn
-              ("0" -1 -1 "N219" -1 -1)
-            )
           )
           ("M513" "T207" -1 -1
             (conn
-              ("0" -1 -1 "N219" -1 -1)
+              ("0" -1 -1 "N455" -1 -1)
             )
           )
         )
@@ -636,7 +633,7 @@
           )
           ("M528" "T238" -1 -1
             (conn
-              ("0" -1 -1 "N219" -1 -1)
+              ("0" -1 -1 "N455" -1 -1)
             )
           )
           ("M529" "T239" -1 -1
@@ -652,8 +649,14 @@
           ("M534" "T244" -1 -1
           )
           ("M535" "T245" -1 -1
+            (conn
+              ("0" -1 -1 "gnd" -1 -1)
+            )
           )
           ("M536" "T246" -1 -1
+            (conn
+              ("0" -1 -1 "vcc" -1 -1)
+            )
           )
           ("M537" "T247" -1 -1
             (conn
@@ -677,7 +680,7 @@
           )
           ("M542" "T252" 0 0
             (conn
-              ("0" 0 0 "N219" -1 -1)
+              ("0" 0 0 "N455" -1 -1)
             )
           )
         )
@@ -752,6 +755,20 @@
           ("M922" "T328" -1 -1
             (conn
               ("0" -1 -1 "vcc" -1 -1)
+            )
+          )
+        )
+      )
+      ("I16" "page1_i29" "S6"
+        (pins
+          ("M1144" "T88" 0 0
+            (conn
+              ("0" 0 0 "vcc" -1 -1)
+            )
+          )
+          ("M1145" "T89" 0 0
+            (conn
+              ("0" 0 0 "gnd" -1 -1)
             )
           )
         )

@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "pulse_inverter"
     (lastIds
-      (lastInstanceId 5)
+      (lastInstanceId 7)
       (lastNetId 8)
-      (lastInstTermId 13)
+      (lastInstTermId 17)
     )
     (cells
       ("S2" "ad8009" "misc" "sym_1"
@@ -31,6 +31,12 @@
         (terms
           ("T13" "a" 0 0 1)
           ("T14" "b" 0 0 2)
+        )
+      )
+      ("S5" "csmd0805" "capacitors" "sym_1"
+        (terms
+          ("T20" "a" 0 0 1)
+          ("T21" "b" 0 0 2)
         )
       )
     )
@@ -128,6 +134,34 @@
           ("M13" "T14" 0 0
             (conn
               ("0" 0 0 "N4" -1 -1)
+            )
+          )
+        )
+      )
+      ("I6" "page1_i8" "S5"
+        (pins
+          ("M14" "T20" 0 0
+            (conn
+              ("0" 0 0 "N4" -1 -1)
+            )
+          )
+          ("M15" "T21" 0 0
+            (conn
+              ("0" 0 0 "N3" -1 -1)
+            )
+          )
+        )
+      )
+      ("I7" "page1_i9" "S4"
+        (pins
+          ("M16" "T13" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M17" "T14" 0 0
+            (conn
+              ("0" 0 0 "N2" -1 -1)
             )
           )
         )
