@@ -1,9 +1,9 @@
 FILE_TYPE=EXPANDEDPARTLIST;
-{ Packager-XL run on 23-May-2015 AT 17:57:03 }
+{ Packager-XL run on 25-May-2015 AT 11:16:44 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='TUBII';
- POST_TIME='23-May-2015 AT 17:57:03';
+ POST_TIME='25-May-2015 AT 11:16:44';
  SOURCE_TOOL='PACKAGER_XL';
 END_DIRECTIVES;
 
@@ -7741,6 +7741,42 @@ e1_i70@tubii_tk2_lib.ext_trigs(sch_1):page1_i96@capacitors.csmd0603(chips)',
  PRIM_FILE='./Parts/parts/capacitors/csmd0603/chips/chips.prt';
 
 PART_NAME
+ C206 'CSMD0603-0.1UF,10%,0603,50V':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I1@TUBII_TK2_LIB.MICROZED_MODULE(SCH_1):PAGE1_I120@CAPACITORS.CSMD0603(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i120@capacitors.csmd0603(chips)~
+',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i120@capacitors.csmd0603(chips)~
+',
+ PATH='I120',
+ DRAWING='@TUBII_TK2_LIB.MICROZED_MODULE(SCH_1):PAGE1',
+ TOL_ON_OFF='ON',
+ TC='0',
+ SLOPE='CSMAX',
+ POSTOL='10%',
+ PACKTYPE='0603',
+ NEGTOL='10%',
+ MAX_TEMP='CTMAX',
+ KNEE='CBMAX',
+ IC='UNDEF',
+ DIST='FLAT',
+ CURRENT='CIMAX',
+ PHYS_PAGE='1',
+ XY='(3250,3250)',
+ ROT='0',
+ VER='1',
+ VALUE='0.1UF',
+ PART_NAME='CSMD0603',
+ TOL='10%',
+ CDS_LIB='capacitors',
+ CDS_PART_NAME='CSMD0603-0.1UF,10%,0603,50V',
+ VOLTAGE='50V',
+ PRIM_FILE='./Parts/parts/capacitors/csmd0603/chips/chips.prt';
+
+PART_NAME
  D1 'LED_L':
  ROOM='GT_DELAY';
 
@@ -8057,7 +8093,7 @@ e1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i102@misc.led_l(chips)',
  DRAWING='@TUBII_TK2_LIB.MICROZED_MODULE(SCH_1):PAGE1',
  ABBREV='LED',
  PHYS_PAGE='1',
- XY='(525,3475)',
+ XY='(175,3450)',
  ROT='1',
  VER='1',
  CDS_LIB='misc',
@@ -8445,31 +8481,6 @@ e1_i5@tubii_tk2_lib.power(sch_1):page1_i15@regulators.\7815s_l\(chips)',
  CDS_LIB='regulators',
  CDS_PART_NAME='7815S_L',
  PRIM_FILE='./Parts/parts/regulators/7815s_l/chips/chips.prt';
-
-PART_NAME
- Q4 'LM1117':
- ROOM='POWER';
-
-SECTION_NUMBER 1
- '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I5@TUBII_TK2_LIB.POWER(SCH_1):PAGE1_I13@REGULATORS.LM1117(CHIPS)':
- C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
-e1_i5@tubii_tk2_lib.power(sch_1):page1_i13@regulators.lm1117(chips)',
- P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
-e1_i5@tubii_tk2_lib.power(sch_1):page1_i13@regulators.lm1117(chips)',
- PATH='I13',
- DRAWING='@TUBII_TK2_LIB.POWER(SCH_1):PAGE1',
- RCA='DEF',
- NAME='LM1117',
- ABBREV='MC7815K',
- TOL_ON_OFF='ON',
- PHYS_PAGE='1',
- XY='(-450,3850)',
- ROT='0',
- VER='1',
- ROOM='POWER',
- CDS_LIB='regulators',
- CDS_PART_NAME='LM1117',
- PRIM_FILE='./Parts/parts/regulators/lm1117/chips/chips.prt';
 
 PART_NAME
  R1 'RSMD0805-10K,1%,0805':
@@ -21840,7 +21851,7 @@ e1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i103@resistors.rsmd0805(chips)'
  IC='UNDEF',
  DIST='FLAT',
  PHYS_PAGE='1',
- XY='(750,3475)',
+ XY='(400,3450)',
  ROT='0',
  VER='1',
  VALUE='100',
@@ -28083,7 +28094,7 @@ hips)',
  PATH='I23',
  DRAWING='@TUBII_TK2_LIB.MICROZED_MODULE(SCH_1):PAGE1',
  PHYS_PAGE='1',
- XY='(1800,2525)',
+ XY='(1450,2500)',
  ROT='0',
  VER='1',
  CDS_LIB='misc',
@@ -30183,5 +30194,43 @@ e1_i70@tubii_tk2_lib.ext_trigs(sch_1):page1_i86@ttl.\74lv07a\(chips)',
  CDS_LIB='ttl',
  CDS_PART_NAME='74LV07A',
  PRIM_FILE='./Parts/parts/ttl/74lv07a/chips/chips.prt';
+
+PART_NAME
+ U161 '74LV07A':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I1@TUBII_TK2_LIB.MICROZED_MODULE(SCH_1):PAGE1_I117@TTL.74LV07A(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i117@ttl.\74lv07a\(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i117@ttl.\74lv07a\(chips)',
+ PATH='I117',
+ DRAWING='@TUBII_TK2_LIB.MICROZED_MODULE(SCH_1):PAGE1',
+ PHYS_PAGE='1',
+ XY='(3250,2775)',
+ ROT='2',
+ VER='1',
+ CDS_LIB='ttl',
+ CDS_PART_NAME='74LV07A',
+ PRIM_FILE='./Parts/parts/ttl/74lv07a/chips/chips.prt';
+
+PART_NAME
+ U162 'LT1085CT':;
+
+SECTION_NUMBER 1
+ '@TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I5@TUBII_TK2_LIB.POWER(SCH_1):PAGE1_I54@REGULATORS.LT1085CT(CHIPS)':
+ C_PATH='@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i5@tubii_tk2_lib.power(sch_1):page1_i54@regulators.lt1085ct(chips)',
+ P_PATH='@tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):pag~
+e1_i5@tubii_tk2_lib.power(sch_1):page1_i54@regulators.lt1085ct(chips)',
+ PATH='I54',
+ DRAWING='@TUBII_TK2_LIB.POWER(SCH_1):PAGE1',
+ PHYS_PAGE='1',
+ XY='(-500,3875)',
+ ROT='0',
+ VER='1',
+ CDS_LIB='regulators',
+ CDS_PART_NAME='LT1085CT',
+ PRIM_FILE='./Parts/parts/regulators/lt1085ct/chips/chips.prt';
 
 END.

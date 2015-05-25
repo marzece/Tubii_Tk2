@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 28 )
+			( logicalViewRevNum 29 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -624,6 +624,12 @@
 			( signal "@tubii_tk2_lib.microzed_module(sch_1):sync_mz"
 				( objectStatus "sync_mz" )
 			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):bckp_clk_in_use_mz"
+				( objectStatus "bckp_clk_in_use_mz" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):clk100_in_mz"
+				( objectStatus "clk100_in_mz" )
+			)
 			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
@@ -1189,7 +1195,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(1800,2525)"
+				( attribute "XY" "(1450,2500)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "FCI_61083-101400LF"
@@ -1741,7 +1747,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(525,3475)"
+				( attribute "XY" "(175,3450)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "LED_L"
@@ -1836,7 +1842,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(750,3475)"
+				( attribute "XY" "(400,3450)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "RSMD0805"
@@ -2549,6 +2555,141 @@
 					( attribute "PN" "2"
 						( Origin gPackager )
 					)
+				)
+			)
+			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i117"
+				( attribute "CDS_LIB" "ttl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,250,125,-150"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(3250,2775)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "74LV07A"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "74LV07A"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I117" )
+				( pin "a1"
+				)
+				( pin "a2"
+				)
+				( pin "a3"
+				)
+				( pin "a4"
+				)
+				( pin "a5"
+				)
+				( pin "a6"
+				)
+				( pin "gnd"
+				)
+				( pin "vcc"
+				)
+				( pin "y1"
+				)
+				( pin "y2"
+				)
+				( pin "y3"
+				)
+				( pin "y4"
+				)
+				( pin "y5"
+				)
+				( pin "y6"
+				)
+			)
+			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i120"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(3250,3250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I120" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
 				)
 			)
 			( bus "@tubii_tk2_lib.microzed_module(sch_1):le"
