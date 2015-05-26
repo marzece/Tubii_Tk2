@@ -8,8 +8,8 @@
   (design "tubii_pcb"
     (lastIds
       (lastInstanceId 17)
-      (lastNetId 300)
-      (lastInstTermId 1178)
+      (lastNetId 309)
+      (lastInstTermId 1236)
     )
     (cells
       ("S2" "microzed_module" "tubii_tk2_lib" "sym_1"
@@ -44,6 +44,7 @@
           ("T995" "mtca_mimic_trig2" -1 -1 1)
           ("T1119" "read_cntrl_reg_bit" -1 -1 2)
           ("T1120" "gt" -1 -1 1)
+          ("T1501" "mux_enable" -1 -1 2)
         )
       )
       ("S3" "clocks" "tubii_tk2_lib" "sym_1"
@@ -337,13 +338,14 @@
       ("N275" "tub_clk_in_n" -1 -1 1 1)
       ("N276" "tub_clk_in_p" -1 -1 1 1)
       ("N300" "gt_ttl_out" -1 -1 1 2)
-      ("gnd" "gnd" -1 -1 2 )
+      ("N308" "unnamed_1_hct238_i53_e3" -1 -1 0 )
       ("vcc" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2  inherited)
       ("vtt" "vtt" -1 -1 2  inherited)
       ("vcc15" "vcc15" -1 -1 2  inherited)
       ("vcc15m" "vcc15m" -1 -1 2  inherited)
       ("v3p3" "v3p3" -1 -1 2  inherited)
+      ("N309" "gnd" -1 -1 2  inherited)
     )
 
     (instances
@@ -499,6 +501,11 @@
           ("M956" "T1120" -1 -1
             (conn
               ("0" -1 -1 "N132" -1 -1)
+            )
+          )
+          ("M1236" "T1501" -1 -1
+            (conn
+              ("0" -1 -1 "N308" -1 -1)
             )
           )
         )
@@ -1156,7 +1163,7 @@
           )
           ("M481" "T487" -1 -1
             (conn
-              ("0" -1 -1 "gnd" -1 -1)
+              ("0" -1 -1 "N308" -1 -1)
             )
           )
           ("M482" "T488" -1 -1
