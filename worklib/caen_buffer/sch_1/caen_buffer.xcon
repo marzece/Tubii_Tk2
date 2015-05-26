@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-25T17:54:13</modificationTime>
+    <modificationTime>2015-05-26T17:32:08</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_buffer" view="sch_1">
       <lastids>
-        <instanceid>32</instanceid>
-        <netid>29</netid>
-        <insttermid>82</insttermid>
+        <instanceid>34</instanceid>
+        <netid>32</netid>
+        <insttermid>86</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -193,6 +193,26 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S9</id>
+          <library>misc</library>
+          <name>led_1206</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T57</id>
+              <name>a</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T58</id>
+              <name>b</name>
+              <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -282,6 +302,10 @@
           <direction>input</direction>
         </net>
         <net>
+          <id>N30</id>
+          <name>unnamed_1_1n4448_i28_in</name>
+        </net>
+        <net>
           <id>N2</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -302,8 +326,8 @@
           <scope>global</scope>
         </net>
         <net>
-          <id>N29</id>
-          <name>vtt</name>
+          <id>N32</id>
+          <name>vee</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -1303,7 +1327,7 @@
               <id>M65</id>
               <termid>T29</termid>
               <connections>
-                <connection net="N29" />
+                <connection net="N30" />
               </connections>
             </pin>
             <pin>
@@ -1552,6 +1576,41 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I34</id>
+          <cellid>S9</cellid>
+          <name>page1_i40</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M85</id>
+              <termid>T57</termid>
+              <connections>
+                <connection net="N32" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M86</id>
+              <termid>T58</termid>
+              <connections>
+                <connection net="N30" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1605,15 +1664,15 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="vee">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
           <netScope ref="vref5m">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="vtt">
-            <pageScope number="1">
-              <scope>global</scope>
             </pageScope>
           </netScope>
         </netScopes>
@@ -1627,6 +1686,7 @@
               <net ref="in_anal"></net>
               <net ref="out_att"></net>
               <net ref="out_clip"></net>
+              <net ref="unnamed_1_1n4448_i28_in"></net>
               <net ref="unnamed_1_coto2342_i1_ctrlin"></net>
               <net ref="unnamed_1_coto2342_i1_in1"></net>
               <net ref="unnamed_1_coto2342_i1_in2"></net>
@@ -1644,8 +1704,8 @@
               <net ref="vcc"></net>
               <net ref="vcc15"></net>
               <net ref="vcc15m"></net>
+              <net ref="vee"></net>
               <net ref="vref5m"></net>
-              <net ref="vtt"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>
@@ -1678,6 +1738,7 @@
               <instance ref="i36"></instance>
               <instance ref="i37"></instance>
               <instance ref="i38"></instance>
+              <instance ref="i40"></instance>
             </instances>
           </page>
         </pages>

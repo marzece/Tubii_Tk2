@@ -1,4 +1,4 @@
-; Packager-XL run on 25-May-2015 AT 11:16:44 CONSTRAINTS_VIEW_GENERATED
+; Packager-XL run on 26-May-2015 AT 16:44:55 CONSTRAINTS_VIEW_GENERATED
 ( ConstraintFile "tubii"
 	( constraintHeader
 		( objectKey
@@ -8,7 +8,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 372 )
+			( logicalViewRevNum 395 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -361,6 +361,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -537,11 +553,8 @@
 			( signal "UNNAMED_1_AD8009_I1_IN"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):unnamed_1_ad8009_i1_in" )
 			)
-			( signal "UNNAMED_1_AD8009_I1_V"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):unnamed_1_ad8009_i1_v" )
-			)
-			( signal "UNNAMED_1_AD8009_I1_V_1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):unnamed_1_ad8009_i1_v_1" )
+			( signal "UNNAMED_1_CSMD0805_I12_B"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):unnamed_1_csmd0805_i12_b" )
 			)
 			( signal "UNNAMED_1_CSMD0805_I13_B"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i5@tubii_tk2_lib.generic_delays(sch_1):unnamed_1_csmd0805_i13_b" )
@@ -627,20 +640,8 @@
 			( signal "UNNAMED_1_AD7243_I2_REFIN"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ad7243_i2_refin" )
 			)
-			( signal "UNNAMED_1_AD7243_I2_VDD"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ad7243_i2_vdd" )
-			)
-			( signal "UNNAMED_1_AD7243_I2_VSS"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ad7243_i2_vss" )
-			)
 			( signal "SPKR"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):spkr" )
-			)
-			( signal "UNNAMED_1_CSMD0805_I8_B"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_csmd0805_i8_b" )
-			)
-			( signal "UNNAMED_1_CSMD0805_I9_B"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_csmd0805_i9_b" )
 			)
 			( signal "COMP1_THRESH"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):comp1_thresh" )
@@ -756,23 +757,23 @@
 			( signal "DGT_GATE"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):dgt_gate" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I10_A"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):unnamed_1_csmd0805_i10_a" )
+			( signal "UNNAMED_1_AD8009_I1_IN_1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):unnamed_1_ad8009_i1_in_1" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I11_A"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):unnamed_1_csmd0805_i11_a" )
+			( signal "UNNAMED_1_1N4448_I28_IN_3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_1n4448_i28_in" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I6_A"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):unnamed_1_csmd0805_i6_a" )
+			( signal "UNNAMED_1_LED1206_I39_B_3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_led1206_i39_b" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I7_A_1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):unnamed_1_csmd0805_i7_a" )
+			( signal "UNNAMED_1_1N4448_I28_IN_4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_1n4448_i28_in" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I8_A_1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):unnamed_1_csmd0805_i8_a" )
+			( signal "UNNAMED_1_LED1206_I39_B_1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_led1206_i39_b" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I9_B_1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):unnamed_1_csmd0805_i9_b" )
+			( signal "UNNAMED_1_1N4448_I28_IN_2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_1n4448_i28_in" )
 			)
 			( signal "UNNAMED_1_SS22SDP2_I34_P1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_ss22sdp2_i34_p1" )
@@ -948,9 +949,6 @@
 			( signal "UNNAMED_1_COTO2342_I1_NO2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_no2" )
 			)
-			( signal "UNNAMED_1_74F07_I41_Y3"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i41_y3" )
-			)
 			( signal "UNNAMED_1_MMBTH81_I9_C"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):unnamed_1_mmbth81_i9_c" )
 			)
@@ -968,9 +966,6 @@
 			)
 			( signal "UNNAMED_1_COTO2342_I1_NO1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_no1" )
-			)
-			( signal "UNNAMED_1_74F07_I41_Y2"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i41_y2" )
 			)
 			( signal "SYNC_2_P"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):sync_2_p" )
@@ -990,9 +985,6 @@
 			( signal "UNNAMED_1_RESL_I11_B_5"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i11_b" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I20_B_4"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_csmd0805_i20_b" )
-			)
 			( signal "UNNAMED_1_COTO2342_I1_CTRLIN_3"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_ctrlin" )
 			)
@@ -1001,9 +993,6 @@
 			)
 			( signal "UNNAMED_1_COTO2342_I1_NC2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_nc2" )
-			)
-			( signal "UNNAMED_1_74F07_I41_Y1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i41_y1" )
 			)
 			( signal "UNNAMED_1_RESL_I11_A_5"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i11_a" )
@@ -1014,14 +1003,8 @@
 			( signal "UNNAMED_1_COTO2342_I1_NC1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_nc1" )
 			)
-			( signal "UNNAMED_1_74F07_I41_Y0"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i41_y0" )
-			)
 			( signal "UNNAMED_1_RESL_I10_B_5"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i10_b" )
-			)
-			( signal "UNNAMED_1_CSMD0805_I20_B_5"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_csmd0805_i20_b" )
 			)
 			( signal "UNNAMED_1_COTO2342_I1_NO2_5"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_no2" )
@@ -1071,14 +1054,8 @@
 			( signal "UNNAMED_1_COTO2342_I1_IN2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_in2" )
 			)
-			( signal "UNNAMED_1_74F07_I41_A3"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i41_a3" )
-			)
 			( signal "UNNAMED_1_COTO2342_I1_IN1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_in1" )
-			)
-			( signal "UNNAMED_1_74F07_I41_A2"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i41_a2" )
 			)
 			( signal "UNNAMED_1_RESL_I11_B_6"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i11_b" )
@@ -1110,12 +1087,6 @@
 			( signal "UNNAMED_1_RESL_I16_A_2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i16_a" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I20_B_6"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_csmd0805_i20_b" )
-			)
-			( signal "UNNAMED_1_CSMD0805_I20_B_1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_csmd0805_i20_b" )
-			)
 			( signal "UNNAMED_1_COTO2342_I1_NO2_6"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_no2" )
 			)
@@ -1128,14 +1099,8 @@
 			( signal "UNNAMED_1_COTO2342_I1_NC2_6"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_nc2" )
 			)
-			( signal "UNNAMED_1_74F07_I41_A1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i41_a1" )
-			)
 			( signal "UNNAMED_1_COTO2342_I1_NC1_6"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_nc1" )
-			)
-			( signal "UNNAMED_1_74F07_I41_A0"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i41_a0" )
 			)
 			( signal "UNNAMED_1_COTO2342_I1_IN2_6"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_in2" )
@@ -1176,9 +1141,6 @@
 			( signal "UNNAMED_1_RESL_I10_B_3"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i10_b" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I20_B_3"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_csmd0805_i20_b" )
-			)
 			( signal "UNNAMED_1_COTO2342_I1_NO2_3"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_no2" )
 			)
@@ -1199,9 +1161,6 @@
 			)
 			( signal "UNNAMED_1_RESL_I10_B_2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i10_b" )
-			)
-			( signal "UNNAMED_1_CSMD0805_I20_B_2"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_csmd0805_i20_b" )
 			)
 			( signal "UNNAMED_1_COTO2342_I1_NO2_2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_no2" )
@@ -1278,9 +1237,6 @@
 			( signal "UNNAMED_1_RESL_I10_B"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i10_b" )
 			)
-			( signal "UNNAMED_1_CSMD0805_I20_B"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_csmd0805_i20_b" )
-			)
 			( signal "UNNAMED_1_CAENBUFFER_I5_INANAL"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i5_inanal" )
 			)
@@ -1325,9 +1281,6 @@
 			)
 			( signal "UNNAMED_1_COTO2342_I1_NO2_7"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_no2" )
-			)
-			( signal "UNNAMED_1_CSMD0805_I20_B_7"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_csmd0805_i20_b" )
 			)
 			( signal "UNNAMED_1_RESL_I10_B_7"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i10_b" )
@@ -1806,9 +1759,6 @@
 			( signal "UNNAMED_1_CAENBUFFER_I21_CNTRL"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i21_cntrl" )
 			)
-			( signal "UNNAMED_1_CAENBUFFER_I22_CNTRL"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i22_cntrl" )
-			)
 			( signal "UNNAMED_1_CAENBUFFER_I23_CNTRL"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_caenbuffer_i23_cntrl" )
 			)
@@ -1866,8 +1816,8 @@
 			( signal "UNNAMED_1_DEFAULTCLKSEL_I1_RESE"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):unnamed_1_defaultclksel_i1_reset" )
 			)
-			( signal "UNNAMED_1_DR610F1BUTTON_I24_B1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):unnamed_1_dr610f1button_i24_b1" )
+			( signal "UNNAMED_1_1N4448_I28_IN_1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_1n4448_i28_in" )
 			)
 			( signal "INIT#"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):\init#\" )
@@ -2373,6 +2323,99 @@
 			( signal "CLK100_IN_MZ"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):clk100_in_mz" )
 			)
+			( signal "UNNAMED_1_RSMD0805_I53_B"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_rsmd0805_i53_b" )
+			)
+			( signal "UNNAMED_1_RSMD0805_I54_B"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_rsmd0805_i54_b" )
+			)
+			( signal "UNNAMED_1_RSMD0805_I55_B"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):unnamed_1_rsmd0805_i55_b" )
+			)
+			( signal "UNNAMED_1_DR610F1BUTTON_I24_B2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):unnamed_1_dr610f1button_i24_b2" )
+			)
+			( signal "UNNAMED_1_LED1206_I39_B"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_led1206_i39_b" )
+			)
+			( signal "UNNAMED_1_1N4448_I28_IN"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_1n4448_i28_in" )
+			)
+			( signal "UNNAMED_1_LED1206_I39_B_2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_led1206_i39_b" )
+			)
+			( signal "UNNAMED_1_LED1206_I39_B_4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_led1206_i39_b" )
+			)
+			( signal "UNNAMED_1_1N4448_I28_IN_5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_1n4448_i28_in" )
+			)
+			( signal "UNNAMED_1_LED1206_I39_B_5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_led1206_i39_b" )
+			)
+			( signal "UNNAMED_1_1N4448_I28_IN_6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_1n4448_i28_in" )
+			)
+			( signal "UNNAMED_1_LED1206_I39_B_6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_led1206_i39_b" )
+			)
+			( signal "UNNAMED_1_1N4448_I28_IN_7"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_1n4448_i28_in" )
+			)
+			( signal "UNNAMED_1_LED1206_I39_B_7"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_led1206_i39_b" )
+			)
+			( signal "UNNAMED_1_74LV07A_I70_A4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74lv07a_i70_a4" )
+			)
+			( signal "UNNAMED_1_74LV07A_I70_A5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74lv07a_i70_a5" )
+			)
+			( signal "UNNAMED_1_74LV07A_I70_A6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74lv07a_i70_a6" )
+			)
+			( signal "UNNAMED_1_74LV07A_I72_A1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74lv07a_i72_a1" )
+			)
+			( signal "UNNAMED_1_74LV07A_I72_A2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74lv07a_i72_a2" )
+			)
+			( signal "UNNAMED_1_74LV07A_I72_A3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74lv07a_i72_a3" )
+			)
+			( signal "UNNAMED_1_74LV07A_I72_A4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74lv07a_i72_a4" )
+			)
+			( signal "UNNAMED_1_74LV07A_I72_Y3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74lv07a_i72_y3" )
+			)
+			( signal "UNNAMED_1_74LV07A_I70_A1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74lv07a_i70_a1" )
+			)
+			( signal "UNNAMED_1_74F07_I67_Y3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i67_y3" )
+			)
+			( signal "UNNAMED_1_74F07_I67_Y2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i67_y2" )
+			)
+			( signal "UNNAMED_1_74F07_I67_Y1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i67_y1" )
+			)
+			( signal "UNNAMED_1_74F07_I67_Y0"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i67_y0" )
+			)
+			( signal "UNNAMED_1_74F07_I67_A3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i67_a3" )
+			)
+			( signal "UNNAMED_1_74F07_I67_A2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i67_a2" )
+			)
+			( signal "UNNAMED_1_74F07_I67_A1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i67_a1" )
+			)
+			( signal "UNNAMED_1_74F07_I67_A0"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):unnamed_1_74f07_i67_a0" )
+			)
 			( gate "U5"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i1" )
 			)
@@ -2688,8 +2731,8 @@
 			( gate "C107"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i10" )
 			)
-			( gate "C106"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i11" )
+			( gate "C210"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i8" )
 			)
 			( gate "U39"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i1" )
@@ -2721,8 +2764,8 @@
 			( gate "R48"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i21" )
 			)
-			( gate "R47"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i22" )
+			( gate "D20"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i56" )
 			)
 			( gate "R46"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i23" )
@@ -3350,9 +3393,6 @@
 			)
 			( gate "C139"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i42" )
-			)
-			( gate "U101"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41" )
 			)
 			( gate "R186"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i38" )
@@ -4704,8 +4744,8 @@
 			( gate "R349"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i31" )
 			)
-			( gate "R350"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i99" )
+			( gate "D19"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i57" )
 			)
 			( gate "R353"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i100" )
@@ -4730,9 +4770,6 @@
 			)
 			( gate "R355"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i10" )
-			)
-			( gate "C182"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i59" )
 			)
 			( gate "R362"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):page1_i91" )
@@ -4989,8 +5026,8 @@
 			( gate "C185"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i53" )
 			)
-			( gate "R80"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i12" )
+			( gate "R406"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i10" )
 			)
 			( gate "R81"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i13" )
@@ -5273,6 +5310,114 @@
 			)
 			( gate "U162"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i54" )
+			)
+			( gate "C106"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i52" )
+			)
+			( gate "R47"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i53" )
+			)
+			( gate "R80"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i54" )
+			)
+			( gate "R404"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i55" )
+			)
+			( gate "R405"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i9" )
+			)
+			( gate "C208"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i29" )
+			)
+			( gate "D22"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i58" )
+			)
+			( gate "D21"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i59" )
+			)
+			( gate "R350"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i22" )
+			)
+			( gate "C209"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i11" )
+			)
+			( gate "C212"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i11" )
+			)
+			( gate "C211"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i12" )
+			)
+			( gate "R407"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i13" )
+			)
+			( gate "C213"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i14" )
+			)
+			( gate "LED8"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):page1_i39" )
+			)
+			( gate "LED10"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):page1_i39" )
+			)
+			( gate "LED14"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):page1_i39" )
+			)
+			( gate "LED16"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):page1_i39" )
+			)
+			( gate "LED12"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):page1_i39" )
+			)
+			( gate "LED18"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i39" )
+			)
+			( gate "LED4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):page1_i39" )
+			)
+			( gate "LED6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):page1_i39" )
+			)
+			( gate "LED7"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):page1_i40" )
+			)
+			( gate "LED9"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):page1_i40" )
+			)
+			( gate "LED13"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):page1_i40" )
+			)
+			( gate "LED15"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):page1_i40" )
+			)
+			( gate "LED11"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):page1_i40" )
+			)
+			( gate "LED17"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i40" )
+			)
+			( gate "LED3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):page1_i40" )
+			)
+			( gate "LED5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):page1_i40" )
+			)
+			( gate "U101"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67" )
+			)
+			( gate "C182"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i68" )
+			)
+			( gate "U163"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70" )
+			)
+			( gate "U164"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72" )
+			)
+			( gate "C207"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i73" )
+			)
+			( gate "C214"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i74" )
 			)
 			( pin "U5.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i1:\1\" )
@@ -7026,11 +7171,11 @@
 			( pin "C107.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i10:b(0)" )
 			)
-			( pin "C106.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i11:a(0)" )
+			( pin "C210.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i8:a(0)" )
 			)
-			( pin "C106.2"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i11:b(0)" )
+			( pin "C210.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i8:b(0)" )
 			)
 			( pin "U39.5"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i1:a1" )
@@ -7260,11 +7405,8 @@
 			( pin "R48.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i21:b(0)" )
 			)
-			( pin "R47.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i22:a(0)" )
-			)
-			( pin "R47.2"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i22:b(0)" )
+			( pin "D20.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i56:cat" )
 			)
 			( pin "R46.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i23:a(0)" )
@@ -9917,42 +10059,6 @@
 			)
 			( pin "C139.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i42:b(0)" )
-			)
-			( pin "U101.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:a0" )
-			)
-			( pin "U101.3"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:a1" )
-			)
-			( pin "U101.5"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:a2" )
-			)
-			( pin "U101.9"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:a3" )
-			)
-			( pin "U101.11"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:a4" )
-			)
-			( pin "U101.13"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:a5" )
-			)
-			( pin "U101.2"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:y0" )
-			)
-			( pin "U101.4"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:y1" )
-			)
-			( pin "U101.6"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:y2" )
-			)
-			( pin "U101.8"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:y3" )
-			)
-			( pin "U101.10"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:y4" )
-			)
-			( pin "U101.12"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i41:y5" )
 			)
 			( pin "R186.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i38:a(0)" )
@@ -13800,11 +13906,8 @@
 			( pin "R349.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i31:b(0)" )
 			)
-			( pin "R350.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i99:a(0)" )
-			)
-			( pin "R350.2"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i99:b(0)" )
+			( pin "D19.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i57:cat" )
 			)
 			( pin "R353.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):page1_i100:a(0)" )
@@ -13877,12 +13980,6 @@
 			)
 			( pin "R355.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i10:b(0)" )
-			)
-			( pin "C182.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i59:a(0)" )
-			)
-			( pin "C182.2"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i59:b(0)" )
 			)
 			( pin "R362.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i2@tubii_tk2_lib.fault_detection(sch_1):page1_i91:a(0)" )
@@ -14754,11 +14851,11 @@
 			( pin "C185.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i53:b(0)" )
 			)
-			( pin "R80.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i12:a(0)" )
+			( pin "R406.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i10:a(0)" )
 			)
-			( pin "R80.2"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i12:b(0)" )
+			( pin "R406.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i10:b(0)" )
 			)
 			( pin "R81.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i13:a(0)" )
@@ -15648,6 +15745,318 @@
 			( pin "U162.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i54:vout" )
 			)
+			( pin "C106.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i52:a(0)" )
+			)
+			( pin "C106.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i52:b(0)" )
+			)
+			( pin "R47.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i53:a(0)" )
+			)
+			( pin "R47.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i53:b(0)" )
+			)
+			( pin "R80.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i54:a(0)" )
+			)
+			( pin "R80.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i54:b(0)" )
+			)
+			( pin "R404.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i55:a(0)" )
+			)
+			( pin "R404.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i55:b(0)" )
+			)
+			( pin "R405.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i9:a(0)" )
+			)
+			( pin "R405.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i9:b(0)" )
+			)
+			( pin "C208.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i29:a(0)" )
+			)
+			( pin "C208.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i29:b(0)" )
+			)
+			( pin "D22.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i58:cat" )
+			)
+			( pin "D21.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i59:cat" )
+			)
+			( pin "R350.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i22:a(0)" )
+			)
+			( pin "R350.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i22:b(0)" )
+			)
+			( pin "C209.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i11:a(0)" )
+			)
+			( pin "C209.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i4@tubii_tk2_lib.general_utilities(sch_1):page1_i1@tubii_tk2_lib.pulse_inverter(sch_1):page1_i11:b(0)" )
+			)
+			( pin "C212.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i11:a(0)" )
+			)
+			( pin "C212.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i11:b(0)" )
+			)
+			( pin "C211.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i12:a(0)" )
+			)
+			( pin "C211.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i12:b(0)" )
+			)
+			( pin "R407.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i13:a(0)" )
+			)
+			( pin "R407.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i13:b(0)" )
+			)
+			( pin "C213.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i14:a(0)" )
+			)
+			( pin "C213.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i58@tubii_tk2_lib.vref_gen(sch_1):page1_i14:b(0)" )
+			)
+			( pin "LED8.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:a" )
+			)
+			( pin "LED8.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:b" )
+			)
+			( pin "LED10.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:a" )
+			)
+			( pin "LED10.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:b" )
+			)
+			( pin "LED14.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:a" )
+			)
+			( pin "LED14.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:b" )
+			)
+			( pin "LED16.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:a" )
+			)
+			( pin "LED16.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:b" )
+			)
+			( pin "LED12.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:a" )
+			)
+			( pin "LED12.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:b" )
+			)
+			( pin "LED18.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:a" )
+			)
+			( pin "LED18.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:b" )
+			)
+			( pin "LED4.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:a" )
+			)
+			( pin "LED4.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:b" )
+			)
+			( pin "LED6.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:a" )
+			)
+			( pin "LED6.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):page1_i39:b" )
+			)
+			( pin "LED7.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:a" )
+			)
+			( pin "LED7.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:b" )
+			)
+			( pin "LED9.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:a" )
+			)
+			( pin "LED9.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i21@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:b" )
+			)
+			( pin "LED13.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:a" )
+			)
+			( pin "LED13.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i23@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:b" )
+			)
+			( pin "LED15.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:a" )
+			)
+			( pin "LED15.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i24@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:b" )
+			)
+			( pin "LED11.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:a" )
+			)
+			( pin "LED11.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i22@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:b" )
+			)
+			( pin "LED17.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:a" )
+			)
+			( pin "LED17.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i5@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:b" )
+			)
+			( pin "LED3.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:a" )
+			)
+			( pin "LED3.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i18@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:b" )
+			)
+			( pin "LED5.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:a" )
+			)
+			( pin "LED5.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i19@tubii_tk2_lib.caen_buffer(sch_1):page1_i40:b" )
+			)
+			( pin "U101.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:a1" )
+			)
+			( pin "U101.5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:a2" )
+			)
+			( pin "U101.9"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:a3" )
+			)
+			( pin "U101.11"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:a4" )
+			)
+			( pin "U101.13"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:a5" )
+			)
+			( pin "U101.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:y1" )
+			)
+			( pin "U101.6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:y2" )
+			)
+			( pin "U101.8"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:y3" )
+			)
+			( pin "U101.10"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:y4" )
+			)
+			( pin "U101.12"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:y5" )
+			)
+			( pin "C182.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i68:a(0)" )
+			)
+			( pin "C182.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i68:b(0)" )
+			)
+			( pin "U163.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:a1" )
+			)
+			( pin "U163.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:a2" )
+			)
+			( pin "U163.5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:a3" )
+			)
+			( pin "U163.9"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:a4" )
+			)
+			( pin "U163.11"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:a5" )
+			)
+			( pin "U163.13"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:a6" )
+			)
+			( pin "U163.7"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:gnd" )
+			)
+			( pin "U163.14"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:vcc" )
+			)
+			( pin "U163.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:y1" )
+			)
+			( pin "U163.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:y2" )
+			)
+			( pin "U163.6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:y3" )
+			)
+			( pin "U163.8"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:y4" )
+			)
+			( pin "U163.10"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:y5" )
+			)
+			( pin "U163.12"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i70:y6" )
+			)
+			( pin "U164.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:a1" )
+			)
+			( pin "U164.3"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:a2" )
+			)
+			( pin "U164.5"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:a3" )
+			)
+			( pin "U164.9"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:a4" )
+			)
+			( pin "U164.11"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:a5" )
+			)
+			( pin "U164.13"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:a6" )
+			)
+			( pin "U164.7"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:gnd" )
+			)
+			( pin "U164.14"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:vcc" )
+			)
+			( pin "U164.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:y1" )
+			)
+			( pin "U164.4"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:y2" )
+			)
+			( pin "U164.6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:y3" )
+			)
+			( pin "U164.8"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:y4" )
+			)
+			( pin "U164.10"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:y5" )
+			)
+			( pin "U164.12"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i72:y6" )
+			)
+			( pin "C207.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i73:a(0)" )
+			)
+			( pin "C207.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i73:b(0)" )
+			)
+			( pin "U101.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:a0" )
+			)
+			( pin "U101.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i67:y0" )
+			)
+			( pin "C214.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i74:a(0)" )
+			)
+			( pin "C214.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i74:b(0)" )
+			)
 			( differentialPair "DP_UNNAMED_1_FRONTPORTS_I2_CLK100"
 				( memberType ( signal ) )
 				( objectFlag fObjectLibdefined )
@@ -16183,14 +16592,6 @@
 				( member ( signalRef "UNNAMED_2_FRONTPORTS_I2_TUBCLKI") )
 				( member ( signalRef "UNNAMED_2_FRONTPORTS_I2_TUBCL_1") )
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):\DP_4\" )
-			)
-			( differentialPair "DP_UNNAMED_1_CSMD0805_I64_B"
-				( memberType ( signal ) )
-				( objectFlag fObjectLibdefined )
-				( objectFlag fObjectRenamed )
-				( member ( signalRef "UNNAMED_1_CSMD0805_I64_B") )
-				( member ( signalRef "UNNAMED_1_CSMD0805_I71_A") )
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):\DP_2\" )
 			)
 			( bus "CNTRL_RAW"
 				( memberType ( signal ) )

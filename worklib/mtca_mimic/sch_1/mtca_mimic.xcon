@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-25T17:53:33</modificationTime>
+    <modificationTime>2015-05-26T16:51:00</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="mtca_mimic" view="sch_1">
       <lastids>
-        <instanceid>38</instanceid>
-        <netid>126</netid>
-        <insttermid>433</insttermid>
+        <instanceid>42</instanceid>
+        <netid>132</netid>
+        <insttermid>457</insttermid>
         <dpinsttermid>2</dpinsttermid>
       </lastids>
       <cells>
@@ -531,6 +531,26 @@
               <id>T178</id>
               <name>out</name>
               <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S11</id>
+          <library>diodes</library>
+          <name>bas16lt1</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T204</id>
+              <name>an</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T205</id>
+              <name>cat</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -1110,7 +1130,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N15" />
+                <connection pinmsb="0" pinlsb="0" net="N14" />
               </connections>
             </pin>
             <pin>
@@ -1119,7 +1139,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N15" />
+                <connection pinmsb="0" pinlsb="0" net="N14" />
               </connections>
             </pin>
           </pins>
@@ -1149,7 +1169,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N15" />
+                <connection pinmsb="0" pinlsb="0" net="N14" />
               </connections>
             </pin>
             <pin>
@@ -1158,7 +1178,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N15" />
+                <connection pinmsb="0" pinlsb="0" net="N14" />
               </connections>
             </pin>
           </pins>
@@ -2111,14 +2131,14 @@
               <id>M233</id>
               <termid>T176</termid>
               <connections>
-                <connection net="N15" />
+                <connection net="N14" />
               </connections>
             </pin>
             <pin>
               <id>M234</id>
               <termid>T177</termid>
               <connections>
-                <connection net="N15" />
+                <connection net="N14" />
               </connections>
             </pin>
             <pin>
@@ -2372,6 +2392,146 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I39</id>
+          <cellid>S11</cellid>
+          <name>page1_i56</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M438</id>
+              <termid>T204</termid>
+              <connections>
+                <connection net="N15" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M439</id>
+              <termid>T205</termid>
+              <connections>
+                <connection net="N38" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I40</id>
+          <cellid>S11</cellid>
+          <name>page1_i57</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M440</id>
+              <termid>T204</termid>
+              <connections>
+                <connection net="N38" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M441</id>
+              <termid>T205</termid>
+              <connections>
+                <connection net="N14" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I41</id>
+          <cellid>S11</cellid>
+          <name>page1_i58</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M442</id>
+              <termid>T204</termid>
+              <connections>
+                <connection net="N37" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M443</id>
+              <termid>T205</termid>
+              <connections>
+                <connection net="N14" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I42</id>
+          <cellid>S11</cellid>
+          <name>page1_i59</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M444</id>
+              <termid>T204</termid>
+              <connections>
+                <connection net="N15" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M445</id>
+              <termid>T205</termid>
+              <connections>
+                <connection net="N37" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2582,6 +2742,10 @@
               <instance ref="i53"></instance>
               <instance ref="i54"></instance>
               <instance ref="i55"></instance>
+              <instance ref="i56"></instance>
+              <instance ref="i57"></instance>
+              <instance ref="i58"></instance>
+              <instance ref="i59"></instance>
             </instances>
           </page>
         </pages>

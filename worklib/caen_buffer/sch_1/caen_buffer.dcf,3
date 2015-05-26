@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 12 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -360,6 +360,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -402,9 +418,6 @@
 			( signal "@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_coto2342_i1_no2"
 				( objectStatus "unnamed_1_coto2342_i1_no2" )
 			)
-			( signal "@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_csmd0805_i20_b"
-				( objectStatus "unnamed_1_csmd0805_i20_b" )
-			)
 			( signal "@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_resl_i10_b"
 				( objectStatus "unnamed_1_resl_i10_b" )
 			)
@@ -438,8 +451,14 @@
 			( signal "@tubii_tk2_lib.caen_buffer(sch_1):vref5m"
 				( objectStatus "vref5m" )
 			)
-			( signal "@tubii_tk2_lib.caen_buffer(sch_1):vtt"
-				( objectStatus "vtt" )
+			( signal "@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_1n4448_i28_in"
+				( objectStatus "unnamed_1_1n4448_i28_in" )
+			)
+			( signal "@tubii_tk2_lib.caen_buffer(sch_1):unnamed_1_led1206_i39_b"
+				( objectStatus "unnamed_1_led1206_i39_b" )
+			)
+			( signal "@tubii_tk2_lib.caen_buffer(sch_1):vee"
+				( objectStatus "vee" )
 			)
 			( gate "@tubii_tk2_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -1562,7 +1581,7 @@
 				( attribute "POSTOL" "10%"
 					( Origin gFrontEnd )
 				)
-				( attribute "ROT" "0"
+				( attribute "ROT" "1"
 					( Origin gFrontEnd )
 				)
 				( attribute "SLOPE" "CSMAX"
@@ -1587,7 +1606,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2700,2000)"
+				( attribute "XY" "(-2850,1800)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CSMD0805"
@@ -2447,6 +2466,106 @@
 				( pin "a(0)"
 				)
 				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_buffer(sch_1):page1_i39"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
+					( Origin gPackager )
+				)
+				( attribute "COLOR" "GREEN"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "1206"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "GREEN"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "16V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1675,1575)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_1206"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I39" )
+				( pin "a"
+				)
+				( pin "b"
+				)
+			)
+			( gate "@tubii_tk2_lib.caen_buffer(sch_1):page1_i40"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
+					( Origin gPackager )
+				)
+				( attribute "COLOR" "GREEN"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "1206"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "GREEN"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "16V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1500,1575)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_1206"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I40" )
+				( pin "a"
+				)
+				( pin "b"
 				)
 			)
 		)

@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "vref_gen"
     (lastIds
-      (lastInstanceId 5)
-      (lastNetId 6)
-      (lastInstTermId 18)
+      (lastInstanceId 9)
+      (lastNetId 7)
+      (lastInstTermId 26)
     )
     (cells
       ("S2" "ref02" "misc" "sym_1"
@@ -50,6 +50,7 @@
       ("N2" "unnamed_1_opa277_i2_in" -1 -1 0 )
       ("N3" "unnamed_1_ref02_i1_vout" -1 -1 0 )
       ("N6" "vref5m" -1 -1 1 2)
+      ("N7" "unnamed_1_csmd0805_i12_b" -1 -1 0 )
       ("N1" "gnd" -1 -1 2 )
       ("N4" "vcc15" -1 -1 2 )
       ("N5" "vcc15m" -1 -1 2 )
@@ -83,7 +84,7 @@
         (pins
           ("M6" "T10" -1 -1
             (conn
-              ("0" -1 -1 "N1" -1 -1)
+              ("0" -1 -1 "N7" -1 -1)
             )
           )
           ("M7" "T11" -1 -1
@@ -150,6 +151,62 @@
           ("M18" "T20" 0 0
             (conn
               ("0" 0 0 "N6" -1 -1)
+            )
+          )
+        )
+      )
+      ("I6" "page1_i11" "S4"
+        (pins
+          ("M19" "T17" 0 0
+            (conn
+              ("0" 0 0 "N2" -1 -1)
+            )
+          )
+          ("M20" "T18" 0 0
+            (conn
+              ("0" 0 0 "N6" -1 -1)
+            )
+          )
+        )
+      )
+      ("I7" "page1_i12" "S4"
+        (pins
+          ("M21" "T17" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M22" "T18" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+        )
+      )
+      ("I8" "page1_i13" "S5"
+        (pins
+          ("M23" "T19" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M24" "T20" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+        )
+      )
+      ("I9" "page1_i14" "S4"
+        (pins
+          ("M25" "T17" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M26" "T18" 0 0
+            (conn
+              ("0" 0 0 "N5" -1 -1)
             )
           )
         )
