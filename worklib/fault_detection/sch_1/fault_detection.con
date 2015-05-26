@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "fault_detection"
     (lastIds
-      (lastInstanceId 72)
-      (lastNetId 62)
-      (lastInstTermId 316)
+      (lastInstanceId 74)
+      (lastNetId 64)
+      (lastInstTermId 320)
       (lastDPInstTermId 21)
     )
     (cells
@@ -309,6 +309,8 @@
       ("N60" "unnamed_1_mc10h131_i59_cc" -1 -1 0 )
       ("N61" "unnamed_1_mc10h131_i59_d1" -1 -1 0 )
       ("N62" "unnamed_1_mc10h131_i59_d2" -1 -1 0 )
+      ("N63" "unnamed_1_rsmd0805_i95_a" -1 -1 0 )
+      ("N64" "unnamed_1_rsmd0805_i96_a" -1 -1 0 )
       ("N11" "gnd" -1 -1 2 )
       ("N20" "vcc" -1 -1 2 )
       ("N21" "vee" -1 -1 2 )
@@ -473,6 +475,9 @@
             )
           )
           ("M31" "T36" -1 -1
+            (conn
+              ("0" -1 -1 "N64" -1 -1)
+            )
           )
           ("M32" "T37" -1 -1
             (conn
@@ -490,6 +495,9 @@
             )
           )
           ("M35" "T40" -1 -1
+            (conn
+              ("0" -1 -1 "N63" -1 -1)
+            )
           )
           ("M36" "T41" -1 -1
             (conn
@@ -1795,6 +1803,34 @@
           ("M316" "T52" 0 0
             (conn
               ("0" 0 0 "N59" -1 -1)
+            )
+          )
+        )
+      )
+      ("I73" "page1_i95" "S4"
+        (pins
+          ("M317" "T51" 0 0
+            (conn
+              ("0" 0 0 "N63" -1 -1)
+            )
+          )
+          ("M318" "T52" 0 0
+            (conn
+              ("0" 0 0 "N21" -1 -1)
+            )
+          )
+        )
+      )
+      ("I74" "page1_i96" "S4"
+        (pins
+          ("M319" "T51" 0 0
+            (conn
+              ("0" 0 0 "N64" -1 -1)
+            )
+          )
+          ("M320" "T52" 0 0
+            (conn
+              ("0" 0 0 "N21" -1 -1)
             )
           )
         )
