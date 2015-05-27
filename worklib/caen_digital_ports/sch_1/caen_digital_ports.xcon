@@ -5,28 +5,33 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-03-08T16:49:22</modificationTime>
+    <modificationTime>2015-05-27T13:21:42</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_digital_ports" view="sch_1">
       <lastids>
-        <instanceid>6</instanceid>
+        <instanceid>9</instanceid>
         <netid>6</netid>
-        <insttermid>6</insttermid>
+        <insttermid>12</insttermid>
       </lastids>
       <cells>
         <cell>
-          <id>S1</id>
+          <id>S2</id>
           <library>misc</library>
-          <name>testpoint_l</name>
-          <view>sym_1</view>
+          <name>sip_header_2pin</name>
+          <view>sym_2</view>
           <parameters>
           </parameters>
           <terms>
             <term>
-              <id>T7</id>
-              <name>a</name>
+              <id>T14</id>
+              <name>1</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T15</id>
+              <name>2</name>
               <direction>inout</direction>
             </term>
           </terms>
@@ -81,9 +86,9 @@
       </netinterfaces>
       <instances>
         <instance>
-          <id>I1</id>
-          <cellid>S1</cellid>
-          <name>page1_i1</name>
+          <id>I7</id>
+          <cellid>S2</cellid>
+          <name>page1_i12</name>
           <parameters>
           </parameters>
           <masks>
@@ -92,36 +97,15 @@
           </powers>
           <pins>
             <pin>
-              <id>M1</id>
-              <termid>T7</termid>
+              <id>M7</id>
+              <termid>T14</termid>
               <connections>
                 <connection net="N6" />
               </connections>
             </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I2</id>
-          <cellid>S1</cellid>
-          <name>page1_i2</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
             <pin>
-              <id>M2</id>
-              <termid>T7</termid>
+              <id>M8</id>
+              <termid>T15</termid>
               <connections>
                 <connection net="N5" />
               </connections>
@@ -137,9 +121,9 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I3</id>
-          <cellid>S1</cellid>
-          <name>page1_i3</name>
+          <id>I8</id>
+          <cellid>S2</cellid>
+          <name>page1_i13</name>
           <parameters>
           </parameters>
           <masks>
@@ -148,36 +132,15 @@
           </powers>
           <pins>
             <pin>
-              <id>M3</id>
-              <termid>T7</termid>
+              <id>M9</id>
+              <termid>T14</termid>
               <connections>
                 <connection net="N4" />
               </connections>
             </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I4</id>
-          <cellid>S1</cellid>
-          <name>page1_i4</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
             <pin>
-              <id>M4</id>
-              <termid>T7</termid>
+              <id>M10</id>
+              <termid>T15</termid>
               <connections>
                 <connection net="N3" />
               </connections>
@@ -193,9 +156,9 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I5</id>
-          <cellid>S1</cellid>
-          <name>page1_i5</name>
+          <id>I9</id>
+          <cellid>S2</cellid>
+          <name>page1_i14</name>
           <parameters>
           </parameters>
           <masks>
@@ -204,36 +167,15 @@
           </powers>
           <pins>
             <pin>
-              <id>M5</id>
-              <termid>T7</termid>
+              <id>M11</id>
+              <termid>T14</termid>
               <connections>
                 <connection net="N2" />
               </connections>
             </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I6</id>
-          <cellid>S1</cellid>
-          <name>page1_i6</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
             <pin>
-              <id>M6</id>
-              <termid>T7</termid>
+              <id>M12</id>
+              <termid>T15</termid>
               <connections>
                 <connection net="N1" />
               </connections>
@@ -306,12 +248,9 @@
               <net ref="sync_lvds_p"></net>
             </nets>
             <instances>
-              <instance ref="i1"></instance>
-              <instance ref="i2"></instance>
-              <instance ref="i3"></instance>
-              <instance ref="i4"></instance>
-              <instance ref="i5"></instance>
-              <instance ref="i6"></instance>
+              <instance ref="i12"></instance>
+              <instance ref="i13"></instance>
+              <instance ref="i14"></instance>
             </instances>
           </page>
         </pages>

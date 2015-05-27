@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-26T19:58:30</modificationTime>
+    <modificationTime>2015-05-26T21:56:08</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="front_ports" view="sch_1">
       <lastids>
         <instanceid>18</instanceid>
-        <netid>112</netid>
-        <insttermid>264</insttermid>
+        <netid>114</netid>
+        <insttermid>273</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -275,11 +275,6 @@
           </parameters>
           <terms>
             <term>
-              <id>T254</id>
-              <name>dgt_n</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T255</id>
               <name>dgt_p</name>
               <direction>input</direction>
@@ -297,6 +292,11 @@
             <term>
               <id>T260</id>
               <name>lo_star_out_p</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T592</id>
+              <name>dgt_n</name>
               <direction>input</direction>
             </term>
           </terms>
@@ -1315,13 +1315,6 @@
           </powers>
           <pins>
             <pin>
-              <id>M106</id>
-              <termid>T254</termid>
-              <connections>
-                <connection net="N78" />
-              </connections>
-            </pin>
-            <pin>
               <id>M107</id>
               <termid>T255</termid>
               <connections>
@@ -1347,6 +1340,13 @@
               <termid>T260</termid>
               <connections>
                 <connection net="N84" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M273</id>
+              <termid>T592</termid>
+              <connections>
+                <connection net="N78" />
               </connections>
             </pin>
           </pins>

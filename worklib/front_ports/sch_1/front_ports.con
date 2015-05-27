@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "front_ports"
     (lastIds
-      (lastInstanceId 18)
-      (lastNetId 114)
-      (lastInstTermId 273)
+      (lastInstanceId 19)
+      (lastNetId 116)
+      (lastInstTermId 283)
     )
     (cells
       ("S2" "translation_ports" "tubii_tk2_lib" "sym_1"
@@ -124,6 +124,12 @@
       ("S14" "testpoint_l" "misc" "sym_1"
         (terms
           ("T517" "a" -1 -1 3)
+        )
+      )
+      ("S15" "sip_header_2pin" "misc" "sym_1"
+        (terms
+          ("T667" "1" -1 -1 3)
+          ("T668" "2" -1 -1 3)
         )
       )
     )
@@ -599,24 +605,6 @@
           )
         )
       )
-      ("I15" "page1_i122" "S14"
-        (pins
-          ("M245" "T517" -1 -1
-            (conn
-              ("0" -1 -1 "N108" -1 -1)
-            )
-          )
-        )
-      )
-      ("I16" "page1_i123" "S14"
-        (pins
-          ("M246" "T517" -1 -1
-            (conn
-              ("0" -1 -1 "gnd" -1 -1)
-            )
-          )
-        )
-      )
       ("I17" "page1_i124" "S14"
         (pins
           ("M255" "T517" -1 -1
@@ -629,6 +617,20 @@
       ("I18" "page1_i126" "S14"
         (pins
           ("M256" "T517" -1 -1
+            (conn
+              ("0" -1 -1 "gnd" -1 -1)
+            )
+          )
+        )
+      )
+      ("I19" "page1_i127" "S15"
+        (pins
+          ("M282" "T667" -1 -1
+            (conn
+              ("0" -1 -1 "N108" -1 -1)
+            )
+          )
+          ("M283" "T668" -1 -1
             (conn
               ("0" -1 -1 "gnd" -1 -1)
             )
