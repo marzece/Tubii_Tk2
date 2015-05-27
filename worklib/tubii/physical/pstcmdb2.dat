@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 402 )
+			( logicalViewRevNum 405 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -2610,12 +2610,6 @@
 			( gate "U62"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i11@tubii_tk2_lib.tubii_spkr(sch_1):page1_i1" )
 			)
-			( gate "U6"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i1" )
-			)
-			( gate "U16"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i2" )
-			)
 			( gate "U13"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i3" )
 			)
@@ -5061,6 +5055,15 @@
 			( gate "TP57"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i126" )
 			)
+			( gate "TP58"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i55" )
+			)
+			( gate "U16"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i23" )
+			)
+			( gate "U6"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i12@tubii_tk2_lib.baseline_buffer(sch_1):page1_i24" )
+			)
 			( differentialPair "DP_UNNAMED_1_FRONTPORTS_I2_CLK100"
 				( memberType ( signal ) )
 				( objectFlag fObjectLibdefined )
@@ -5596,6 +5599,14 @@
 				( member ( signalRef "UNNAMED_2_FRONTPORTS_I2_TUBCLKI") )
 				( member ( signalRef "UNNAMED_2_FRONTPORTS_I2_TUBCL_1") )
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):\DP_4\" )
+			)
+			( differentialPair "DP_UNNAMED_1_CSMD0805_I64_B"
+				( memberType ( signal ) )
+				( objectFlag fObjectLibdefined )
+				( objectFlag fObjectRenamed )
+				( member ( signalRef "UNNAMED_1_CSMD0805_I64_B") )
+				( member ( signalRef "UNNAMED_1_CSMD0805_I71_A") )
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):\DP_2\" )
 			)
 			( bus "CNTRL_RAW"
 				( memberType ( signal ) )

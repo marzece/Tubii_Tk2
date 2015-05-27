@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-26T19:43:39</modificationTime>
+    <modificationTime>2015-05-26T19:50:20</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="mtca_mimic" view="sch_1">
       <lastids>
-        <instanceid>46</instanceid>
-        <netid>138</netid>
-        <insttermid>473</insttermid>
+        <instanceid>48</instanceid>
+        <netid>140</netid>
+        <insttermid>477</insttermid>
         <dpinsttermid>2</dpinsttermid>
       </lastids>
       <cells>
@@ -735,6 +735,14 @@
           <name>unnamed_1_rsmd0805_i63_b</name>
         </net>
         <net>
+          <id>N139</id>
+          <name>unnamed_1_ad96687_i1_le1_1</name>
+        </net>
+        <net>
+          <id>N140</id>
+          <name>unnamed_1_ad96687_i1_le2_1</name>
+        </net>
+        <net>
           <id>N1</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -840,6 +848,7 @@
               <id>M8</id>
               <termid>T11</termid>
               <connections>
+                <connection net="N139" />
               </connections>
             </pin>
             <pin>
@@ -853,6 +862,7 @@
               <id>M10</id>
               <termid>T13</termid>
               <connections>
+                <connection net="N140" />
               </connections>
             </pin>
             <pin>
@@ -2700,6 +2710,84 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I47</id>
+          <cellid>S9</cellid>
+          <name>page1_i64</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M474</id>
+              <termid>T124</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N15" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M475</id>
+              <termid>T125</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N139" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I48</id>
+          <cellid>S9</cellid>
+          <name>page1_i65</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M476</id>
+              <termid>T124</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N15" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M477</id>
+              <termid>T125</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N140" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2856,7 +2944,9 @@
               <net ref="trig2_out_ttl"></net>
               <net ref="unnamed_1_ad7243_i2_refin"></net>
               <net ref="unnamed_1_ad96687_i1_le1"></net>
+              <net ref="unnamed_1_ad96687_i1_le1_1"></net>
               <net ref="unnamed_1_ad96687_i1_le2"></net>
+              <net ref="unnamed_1_ad96687_i1_le2_1"></net>
               <net ref="unnamed_1_ad96687_i1_q1"></net>
               <net ref="unnamed_1_ad96687_i1_q1_1"></net>
               <net ref="unnamed_1_ad96687_i1_q2"></net>
@@ -2921,6 +3011,8 @@
               <instance ref="i61"></instance>
               <instance ref="i62"></instance>
               <instance ref="i63"></instance>
+              <instance ref="i64"></instance>
+              <instance ref="i65"></instance>
             </instances>
           </page>
         </pages>
