@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "tubii_spkr"
     (lastIds
-      (lastInstanceId 41)
-      (lastNetId 16)
-      (lastInstTermId 112)
+      (lastInstanceId 43)
+      (lastNetId 17)
+      (lastInstTermId 116)
     )
     (cells
       ("S1" "hct123" "misc" "sym_1"
@@ -100,6 +100,7 @@
       ("N14" "spkr_sig" -1 -1 1 1)
       ("N15" "unnamed_1_led1206_i28_a" -1 -1 0 )
       ("N16" "unnamed_1_led1206_i29_a" -1 -1 0 )
+      ("N17" "unnamed_1_csmd0805_i22_a" -1 -1 0 )
       ("N1" "gnd" -1 -1 2 )
       ("N13" "vcc" -1 -1 2 )
     )
@@ -483,7 +484,7 @@
         (pins
           ("M75" "T40" 0 0
             (conn
-              ("0" 0 0 "N4" -1 -1)
+              ("0" 0 0 "N17" -1 -1)
             )
           )
           ("M76" "T41" 0 0
@@ -718,6 +719,34 @@
           ("M112" "T34" 0 0
             (conn
               ("0" 0 0 "N13" -1 -1)
+            )
+          )
+        )
+      )
+      ("I42" "page1_i43" "S3"
+        (pins
+          ("M113" "T33" 0 0
+            (conn
+              ("0" 0 0 "N4" -1 -1)
+            )
+          )
+          ("M114" "T34" 0 0
+            (conn
+              ("0" 0 0 "N17" -1 -1)
+            )
+          )
+        )
+      )
+      ("I43" "page1_i44" "S3"
+        (pins
+          ("M115" "T33" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M116" "T34" 0 0
+            (conn
+              ("0" 0 0 "N17" -1 -1)
             )
           )
         )
