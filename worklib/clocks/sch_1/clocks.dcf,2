@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 58 )
+			( logicalViewRevNum 59 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -922,9 +922,6 @@
 				)
 				( objectStatus "unnamed_1_defaultclksel_i1_reset" )
 			)
-			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_dr610f1button_i24_b1"
-				( objectStatus "unnamed_1_dr610f1button_i24_b1" )
-			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):tub_clk_in_n"
 				( alias ( signalRef "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):tub_clk_in_n") )
 				( objectStatus "tub_clk_in_n" )
@@ -970,6 +967,9 @@
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):unnamed_1_z4ke_i37_cat"
 			)
 			( signal "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):unnamed_1_z4ke_i38_and"
+			)
+			( signal "@tubii_tk2_lib.clocks(sch_1):unnamed_1_dr610f1button_i24_b2"
+				( objectStatus "unnamed_1_dr610f1button_i24_b2" )
 			)
 			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -17459,6 +17459,89 @@
 					)
 				)
 			)
+			( gate "@tubii_tk2_lib.clocks(sch_1):page1_i29"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROOM" "FAULT_DETECT"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2575,4500)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I29" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
 			( pin "@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i1:nc"
 				( attribute "PN" "2"
 					( Status sBlockFlattened )
@@ -17585,7 +17668,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "default_clk_sel"

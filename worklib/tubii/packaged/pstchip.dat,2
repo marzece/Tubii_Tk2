@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 26-May-2015 AT 16:15:17 }
+{ Packager-XL run on 26-May-2015 AT 16:44:55 }
 primitive '1N4448';
   pin
     'IN':
@@ -140,6 +140,68 @@ primitive '74F06';
       JEDEC_TYPE='SOIC14';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
+  end_body;
+end_primitive;
+primitive '74F07';
+  pin
+    'A0':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A1':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A2':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A3':
+      PIN_NUMBER='(9)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A4':
+      PIN_NUMBER='(11)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A5':
+      PIN_NUMBER='(13)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Y0':
+      PIN_NUMBER='(2)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y1':
+      PIN_NUMBER='(4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y2':
+      PIN_NUMBER='(6)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y3':
+      PIN_NUMBER='(8)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y4':
+      PIN_NUMBER='(10)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y5':
+      PIN_NUMBER='(12)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+  end_pin;
+  body
+      PART_NAME='74F07';
+      BODY_NAME='74F07';
+      JEDEC_TYPE='SOIC14';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      GROUND_NETS='GND';
+      POWER_PINS='(GND:7)';
+      POWER_PINS='(VCC:14)';
   end_body;
 end_primitive;
 primitive '74HCT164';
