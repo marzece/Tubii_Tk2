@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-26T21:56:08</modificationTime>
+    <modificationTime>2015-05-27T11:22:41</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="front_ports" view="sch_1">
       <lastids>
-        <instanceid>18</instanceid>
-        <netid>114</netid>
-        <insttermid>273</insttermid>
+        <instanceid>19</instanceid>
+        <netid>116</netid>
+        <insttermid>283</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -492,6 +492,26 @@
             <term>
               <id>T517</id>
               <name>a</name>
+              <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S15</id>
+          <library>misc</library>
+          <name>sip_header_2pin</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T667</id>
+              <name>1</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T668</id>
+              <name>2</name>
               <direction>inout</direction>
             </term>
           </terms>
@@ -1626,62 +1646,6 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I15</id>
-          <cellid>S14</cellid>
-          <name>page1_i122</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M245</id>
-              <termid>T517</termid>
-              <connections>
-                <connection net="N108" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I16</id>
-          <cellid>S14</cellid>
-          <name>page1_i123</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M246</id>
-              <termid>T517</termid>
-              <connections>
-                <connection net="gnd" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I17</id>
           <cellid>S14</cellid>
           <name>page1_i124</name>
@@ -1723,6 +1687,41 @@
             <pin>
               <id>M256</id>
               <termid>T517</termid>
+              <connections>
+                <connection net="gnd" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I19</id>
+          <cellid>S15</cellid>
+          <name>page1_i127</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M282</id>
+              <termid>T667</termid>
+              <connections>
+                <connection net="N108" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M283</id>
+              <termid>T668</termid>
               <connections>
                 <connection net="gnd" />
               </connections>
@@ -2232,10 +2231,9 @@
               <instance ref="i87"></instance>
               <instance ref="i94"></instance>
               <instance ref="i108"></instance>
-              <instance ref="i122"></instance>
-              <instance ref="i123"></instance>
               <instance ref="i124"></instance>
               <instance ref="i126"></instance>
+              <instance ref="i127"></instance>
             </instances>
           </page>
         </pages>

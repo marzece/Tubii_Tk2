@@ -1,4 +1,4 @@
-; Packager-XL run on 27-May-2015 AT 10:39:26 CONSTRAINTS_VIEW_GENERATED
+; Packager-XL run on 27-May-2015 AT 13:35:22 CONSTRAINTS_VIEW_GENERATED
 ( ConstraintFile "tubii"
 	( constraintHeader
 		( objectKey
@@ -8,7 +8,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 408 )
+			( logicalViewRevNum 411 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -363,6 +363,22 @@
 		)
 		( Attribute
 			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "_PDVDUP1" )
 			( Description " " )
 			( Value
 				( DataType ( dString ) )
@@ -4429,242 +4445,8 @@
 			( gate "R192"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i36" )
 			)
-			( gate "TP76"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i7" )
-			)
-			( gate "TP77"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i8" )
-			)
-			( gate "TP64"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i9" )
-			)
-			( gate "TP65"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i10" )
-			)
-			( gate "TP68"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i13" )
-			)
-			( gate "TP69"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i14" )
-			)
-			( gate "TP137"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i1" )
-			)
-			( gate "TP138"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i2" )
-			)
-			( gate "TP139"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i3" )
-			)
-			( gate "TP140"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i4" )
-			)
-			( gate "TP141"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i5" )
-			)
-			( gate "TP142"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i6" )
-			)
-			( gate "TP175"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i1" )
-			)
-			( gate "TP176"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i2" )
-			)
-			( gate "TP177"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i3" )
-			)
-			( gate "TP178"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i4" )
-			)
-			( gate "TP179"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i5" )
-			)
-			( gate "TP180"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i6" )
-			)
-			( gate "TP181"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i7" )
-			)
-			( gate "TP182"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i8" )
-			)
-			( gate "TP183"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i9" )
-			)
-			( gate "TP184"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i10" )
-			)
-			( gate "TP185"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i11" )
-			)
-			( gate "TP186"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i12" )
-			)
-			( gate "TP187"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i13" )
-			)
-			( gate "TP188"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i14" )
-			)
-			( gate "TP189"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i15" )
-			)
-			( gate "TP190"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i16" )
-			)
-			( gate "TP191"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i17" )
-			)
-			( gate "TP192"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i18" )
-			)
-			( gate "TP193"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i19" )
-			)
-			( gate "TP194"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i20" )
-			)
-			( gate "TP195"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i21" )
-			)
-			( gate "TP196"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i22" )
-			)
-			( gate "TP197"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i23" )
-			)
-			( gate "TP198"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i24" )
-			)
-			( gate "TP159"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i37" )
-			)
-			( gate "TP160"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i38" )
-			)
-			( gate "TP161"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i39" )
-			)
-			( gate "TP162"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i40" )
-			)
-			( gate "TP163"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i41" )
-			)
-			( gate "TP164"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i42" )
-			)
-			( gate "TP165"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i43" )
-			)
-			( gate "TP166"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i44" )
-			)
-			( gate "TP167"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i45" )
-			)
-			( gate "TP168"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i46" )
-			)
-			( gate "TP169"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i47" )
-			)
-			( gate "TP170"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i48" )
-			)
-			( gate "TP171"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i49" )
-			)
-			( gate "TP172"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i50" )
-			)
-			( gate "TP173"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i51" )
-			)
-			( gate "TP174"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i52" )
-			)
-			( gate "TP143"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i53" )
-			)
-			( gate "TP144"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i54" )
-			)
-			( gate "TP145"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i55" )
-			)
-			( gate "TP146"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i56" )
-			)
-			( gate "TP147"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i57" )
-			)
-			( gate "TP148"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i58" )
-			)
-			( gate "TP149"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i59" )
-			)
-			( gate "TP150"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i60" )
-			)
-			( gate "TP151"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i61" )
-			)
-			( gate "TP152"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i62" )
-			)
-			( gate "TP153"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i63" )
-			)
-			( gate "TP154"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i64" )
-			)
-			( gate "TP155"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i65" )
-			)
-			( gate "TP156"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i66" )
-			)
-			( gate "TP157"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i67" )
-			)
-			( gate "TP158"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i68" )
-			)
 			( gate "J1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i80@tubii_tk2_lib.scaler_ports(sch_1):page1_i2" )
-			)
-			( gate "TP110"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i1" )
-			)
-			( gate "TP111"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i2" )
-			)
-			( gate "TP114"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i40" )
-			)
-			( gate "TP115"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i41" )
-			)
-			( gate "TP118"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i3" )
-			)
-			( gate "TP119"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i4" )
-			)
-			( gate "TP120"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i5" )
-			)
-			( gate "TP121"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i6" )
-			)
-			( gate "TP113"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i56" )
-			)
-			( gate "TP112"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i57" )
 			)
 			( gate "U65"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i23" )
@@ -4821,78 +4603,6 @@
 			)
 			( gate "R167"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i26" )
-			)
-			( gate "TP82"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i16" )
-			)
-			( gate "TP83"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i17" )
-			)
-			( gate "TP84"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i18" )
-			)
-			( gate "TP85"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i19" )
-			)
-			( gate "TP86"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i20" )
-			)
-			( gate "TP87"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i21" )
-			)
-			( gate "TP88"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i22" )
-			)
-			( gate "TP89"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i23" )
-			)
-			( gate "TP90"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i24" )
-			)
-			( gate "TP91"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i25" )
-			)
-			( gate "TP92"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i26" )
-			)
-			( gate "TP93"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i27" )
-			)
-			( gate "TP95"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i28" )
-			)
-			( gate "TP94"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i29" )
-			)
-			( gate "TP18"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i30" )
-			)
-			( gate "TP19"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i31" )
-			)
-			( gate "TP20"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i32" )
-			)
-			( gate "TP27"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i33" )
-			)
-			( gate "TP28"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i34" )
-			)
-			( gate "TP29"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i35" )
-			)
-			( gate "TP78"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i36" )
-			)
-			( gate "TP79"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i37" )
-			)
-			( gate "TP80"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i38" )
-			)
-			( gate "TP81"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i39" )
 			)
 			( gate "J2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i94" )
@@ -5139,12 +4849,6 @@
 			)
 			( gate "C190"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):page1_i38" )
-			)
-			( gate "TP52"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i122" )
-			)
-			( gate "TP53"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i123" )
 			)
 			( gate "U155"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i37" )
@@ -5407,12 +5111,6 @@
 			( gate "R409"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i65" )
 			)
-			( gate "TP54"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i40" )
-			)
-			( gate "TP55"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i41" )
-			)
 			( gate "TP56"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i124" )
 			)
@@ -5430,6 +5128,168 @@
 			)
 			( gate "U165"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12" )
+			)
+			( gate "U193"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i85" )
+			)
+			( gate "U194"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i86" )
+			)
+			( gate "U202"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i87" )
+			)
+			( gate "U195"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i88" )
+			)
+			( gate "U196"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i89" )
+			)
+			( gate "U203"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i90" )
+			)
+			( gate "U182"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i60" )
+			)
+			( gate "U183"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i61" )
+			)
+			( gate "U184"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i62" )
+			)
+			( gate "U186"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i13" )
+			)
+			( gate "U185"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i14" )
+			)
+			( gate "U181"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i26" )
+			)
+			( gate "U179"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i27" )
+			)
+			( gate "U180"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i28" )
+			)
+			( gate "U187"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i12" )
+			)
+			( gate "U188"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i13" )
+			)
+			( gate "U189"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i14" )
+			)
+			( gate "U204"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i91" )
+			)
+			( gate "U205"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i92" )
+			)
+			( gate "U197"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i93" )
+			)
+			( gate "U198"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i96" )
+			)
+			( gate "U199"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i97" )
+			)
+			( gate "U200"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i98" )
+			)
+			( gate "U201"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i99" )
+			)
+			( gate "U191"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i100" )
+			)
+			( gate "U192"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i101" )
+			)
+			( gate "U190"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i102" )
+			)
+			( gate "U207"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i105" )
+			)
+			( gate "U208"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i106" )
+			)
+			( gate "U209"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i107" )
+			)
+			( gate "U210"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i108" )
+			)
+			( gate "U211"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i109" )
+			)
+			( gate "U212"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i110" )
+			)
+			( gate "U213"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i111" )
+			)
+			( gate "U214"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i112" )
+			)
+			( gate "U215"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i113" )
+			)
+			( gate "U216"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i114" )
+			)
+			( gate "U166"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i127" )
+			)
+			( gate "U167"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i43" )
+			)
+			( gate "U169"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i44" )
+			)
+			( gate "U170"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i45" )
+			)
+			( gate "U171"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i46" )
+			)
+			( gate "U172"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i47" )
+			)
+			( gate "U168"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i48" )
+			)
+			( gate "TP18"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i49" )
+			)
+			( gate "TP55"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i50" )
+			)
+			( gate "U177"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i51" )
+			)
+			( gate "U173"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i52" )
+			)
+			( gate "U174"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i53" )
+			)
+			( gate "U175"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i54" )
+			)
+			( gate "U176"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i55" )
+			)
+			( gate "U178"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i56" )
+			)
+			( gate "U217"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i115" )
+			)
+			( gate "U206"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i116" )
 			)
 			( pin "U5.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i1:\1\" )
@@ -13138,210 +12998,6 @@
 			( pin "R192.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i2@tubii_tk2_lib.caen_dig_coms(sch_1):page1_i36:b(0)" )
 			)
-			( pin "TP76.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i7:a" )
-			)
-			( pin "TP77.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i8:a" )
-			)
-			( pin "TP64.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i9:a" )
-			)
-			( pin "TP65.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i10:a" )
-			)
-			( pin "TP68.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i13:a" )
-			)
-			( pin "TP69.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i14:a" )
-			)
-			( pin "TP137.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i1:a" )
-			)
-			( pin "TP138.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i2:a" )
-			)
-			( pin "TP139.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i3:a" )
-			)
-			( pin "TP140.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i4:a" )
-			)
-			( pin "TP141.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i5:a" )
-			)
-			( pin "TP142.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i6:a" )
-			)
-			( pin "TP175.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i1:a" )
-			)
-			( pin "TP176.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i2:a" )
-			)
-			( pin "TP177.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i3:a" )
-			)
-			( pin "TP178.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i4:a" )
-			)
-			( pin "TP179.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i5:a" )
-			)
-			( pin "TP180.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i6:a" )
-			)
-			( pin "TP181.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i7:a" )
-			)
-			( pin "TP182.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i8:a" )
-			)
-			( pin "TP183.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i9:a" )
-			)
-			( pin "TP184.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i10:a" )
-			)
-			( pin "TP185.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i11:a" )
-			)
-			( pin "TP186.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i12:a" )
-			)
-			( pin "TP187.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i13:a" )
-			)
-			( pin "TP188.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i14:a" )
-			)
-			( pin "TP189.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i15:a" )
-			)
-			( pin "TP190.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i16:a" )
-			)
-			( pin "TP191.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i17:a" )
-			)
-			( pin "TP192.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i18:a" )
-			)
-			( pin "TP193.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i19:a" )
-			)
-			( pin "TP194.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i20:a" )
-			)
-			( pin "TP195.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i21:a" )
-			)
-			( pin "TP196.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i22:a" )
-			)
-			( pin "TP197.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i23:a" )
-			)
-			( pin "TP198.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i24:a" )
-			)
-			( pin "TP159.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i37:a" )
-			)
-			( pin "TP160.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i38:a" )
-			)
-			( pin "TP161.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i39:a" )
-			)
-			( pin "TP162.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i40:a" )
-			)
-			( pin "TP163.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i41:a" )
-			)
-			( pin "TP164.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i42:a" )
-			)
-			( pin "TP165.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i43:a" )
-			)
-			( pin "TP166.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i44:a" )
-			)
-			( pin "TP167.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i45:a" )
-			)
-			( pin "TP168.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i46:a" )
-			)
-			( pin "TP169.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i47:a" )
-			)
-			( pin "TP170.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i48:a" )
-			)
-			( pin "TP171.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i49:a" )
-			)
-			( pin "TP172.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i50:a" )
-			)
-			( pin "TP173.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i51:a" )
-			)
-			( pin "TP174.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i52:a" )
-			)
-			( pin "TP143.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i53:a" )
-			)
-			( pin "TP144.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i54:a" )
-			)
-			( pin "TP145.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i55:a" )
-			)
-			( pin "TP146.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i56:a" )
-			)
-			( pin "TP147.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i57:a" )
-			)
-			( pin "TP148.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i58:a" )
-			)
-			( pin "TP149.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i59:a" )
-			)
-			( pin "TP150.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i60:a" )
-			)
-			( pin "TP151.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i61:a" )
-			)
-			( pin "TP152.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i62:a" )
-			)
-			( pin "TP153.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i63:a" )
-			)
-			( pin "TP154.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i64:a" )
-			)
-			( pin "TP155.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i65:a" )
-			)
-			( pin "TP156.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i66:a" )
-			)
-			( pin "TP157.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i67:a" )
-			)
-			( pin "TP158.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i68:a" )
-			)
 			( pin "J1.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i80@tubii_tk2_lib.scaler_ports(sch_1):page1_i2:\1\" )
 			)
@@ -13389,36 +13045,6 @@
 			)
 			( pin "J1.16"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i80@tubii_tk2_lib.scaler_ports(sch_1):page1_i2:\16\" )
-			)
-			( pin "TP110.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i1:a" )
-			)
-			( pin "TP111.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i2:a" )
-			)
-			( pin "TP114.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i40:a" )
-			)
-			( pin "TP115.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i41:a" )
-			)
-			( pin "TP118.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i3:a" )
-			)
-			( pin "TP119.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i4:a" )
-			)
-			( pin "TP120.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i5:a" )
-			)
-			( pin "TP121.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i6:a" )
-			)
-			( pin "TP113.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i56:a" )
-			)
-			( pin "TP112.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i57:a" )
 			)
 			( pin "U65.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i23:\1\" )
@@ -14214,78 +13840,6 @@
 			)
 			( pin "R167.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i26:b(0)" )
-			)
-			( pin "TP82.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i16:a" )
-			)
-			( pin "TP83.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i17:a" )
-			)
-			( pin "TP84.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i18:a" )
-			)
-			( pin "TP85.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i19:a" )
-			)
-			( pin "TP86.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i20:a" )
-			)
-			( pin "TP87.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i21:a" )
-			)
-			( pin "TP88.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i22:a" )
-			)
-			( pin "TP89.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i23:a" )
-			)
-			( pin "TP90.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i24:a" )
-			)
-			( pin "TP91.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i25:a" )
-			)
-			( pin "TP92.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i26:a" )
-			)
-			( pin "TP93.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i27:a" )
-			)
-			( pin "TP95.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i28:a" )
-			)
-			( pin "TP94.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i29:a" )
-			)
-			( pin "TP18.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i30:a" )
-			)
-			( pin "TP19.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i31:a" )
-			)
-			( pin "TP20.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i32:a" )
-			)
-			( pin "TP27.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i33:a" )
-			)
-			( pin "TP28.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i34:a" )
-			)
-			( pin "TP29.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i35:a" )
-			)
-			( pin "TP78.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i36:a" )
-			)
-			( pin "TP79.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i37:a" )
-			)
-			( pin "TP80.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i38:a" )
-			)
-			( pin "TP81.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i39:a" )
 			)
 			( pin "J2.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i94:\1\" )
@@ -15157,12 +14711,6 @@
 			( pin "C190.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i8@tubii_tk2_lib.caen_coms(sch_1):page1_i1@tubii_tk2_lib.caen_analog_coms(sch_1):page1_i20@tubii_tk2_lib.caen_buffer(sch_1):page1_i38:b(0)" )
 			)
-			( pin "TP52.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i122:a" )
-			)
-			( pin "TP53.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i123:a" )
-			)
 			( pin "U155.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i2@tubii_tk2_lib.clocks(sch_1):page1_i1@tubii_tk2_lib.default_clk_sel(sch_1):page1_i37:\and\" )
 			)
@@ -16003,12 +15551,6 @@
 			( pin "R409.2"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i65:b(0)" )
 			)
-			( pin "TP54.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i40:a" )
-			)
-			( pin "TP55.1"
-				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i41:a" )
-			)
 			( pin "TP56.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i124:a" )
 			)
@@ -16131,6 +15673,324 @@
 			)
 			( pin "U165.10"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin10" )
+			)
+			( pin "U193.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i85:\1\" )
+			)
+			( pin "U193.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i85:\2\" )
+			)
+			( pin "U194.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i86:\1\" )
+			)
+			( pin "U194.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i86:\2\" )
+			)
+			( pin "U202.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i87:\1\" )
+			)
+			( pin "U202.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i87:\2\" )
+			)
+			( pin "U182.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i60:\1\" )
+			)
+			( pin "U182.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i60:\2\" )
+			)
+			( pin "U183.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i61:\1\" )
+			)
+			( pin "U183.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i61:\2\" )
+			)
+			( pin "U184.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i62:\1\" )
+			)
+			( pin "U184.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i82@tubii_tk2_lib.ext_trig_ports(sch_1):page1_i62:\2\" )
+			)
+			( pin "U186.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i13:\1\" )
+			)
+			( pin "U186.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i13:\2\" )
+			)
+			( pin "U185.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i14:\1\" )
+			)
+			( pin "U185.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i87@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i14:\2\" )
+			)
+			( pin "U181.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i26:\1\" )
+			)
+			( pin "U181.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i26:\2\" )
+			)
+			( pin "U179.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i27:\1\" )
+			)
+			( pin "U179.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i27:\2\" )
+			)
+			( pin "U180.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i28:\1\" )
+			)
+			( pin "U180.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i61@tubii_tk2_lib.general_utilities_ports(sch_1):page1_i28:\2\" )
+			)
+			( pin "U187.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i12:\1\" )
+			)
+			( pin "U187.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i12:\2\" )
+			)
+			( pin "U188.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i13:\1\" )
+			)
+			( pin "U188.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i13:\2\" )
+			)
+			( pin "U189.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i14:\1\" )
+			)
+			( pin "U189.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i1@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i14:\2\" )
+			)
+			( pin "U195.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i88:\1\" )
+			)
+			( pin "U195.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i88:\2\" )
+			)
+			( pin "U196.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i89:\1\" )
+			)
+			( pin "U196.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i89:\2\" )
+			)
+			( pin "U203.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i90:\1\" )
+			)
+			( pin "U203.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i90:\2\" )
+			)
+			( pin "U204.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i91:\1\" )
+			)
+			( pin "U204.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i91:\2\" )
+			)
+			( pin "U205.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i92:\1\" )
+			)
+			( pin "U205.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i92:\2\" )
+			)
+			( pin "U197.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i93:\1\" )
+			)
+			( pin "U197.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i93:\2\" )
+			)
+			( pin "U198.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i96:\1\" )
+			)
+			( pin "U198.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i96:\2\" )
+			)
+			( pin "U166.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i127:\1\" )
+			)
+			( pin "U166.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i127:\2\" )
+			)
+			( pin "U167.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i43:\1\" )
+			)
+			( pin "U167.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i43:\2\" )
+			)
+			( pin "U169.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i44:\1\" )
+			)
+			( pin "U169.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i44:\2\" )
+			)
+			( pin "U170.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i45:\1\" )
+			)
+			( pin "U170.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i45:\2\" )
+			)
+			( pin "U171.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i46:\1\" )
+			)
+			( pin "U171.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i46:\2\" )
+			)
+			( pin "U172.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i47:\1\" )
+			)
+			( pin "U172.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i47:\2\" )
+			)
+			( pin "U168.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i48:\1\" )
+			)
+			( pin "U168.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i48:\2\" )
+			)
+			( pin "TP18.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i49:a" )
+			)
+			( pin "TP55.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i50:a" )
+			)
+			( pin "U177.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i51:\1\" )
+			)
+			( pin "U177.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i51:\2\" )
+			)
+			( pin "U173.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i52:\1\" )
+			)
+			( pin "U173.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i52:\2\" )
+			)
+			( pin "U174.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i53:\1\" )
+			)
+			( pin "U174.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i53:\2\" )
+			)
+			( pin "U175.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i54:\1\" )
+			)
+			( pin "U175.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i54:\2\" )
+			)
+			( pin "U176.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i55:\1\" )
+			)
+			( pin "U176.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i55:\2\" )
+			)
+			( pin "U178.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i56:\1\" )
+			)
+			( pin "U178.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i21@tubii_tk2_lib.translation_ports(sch_1):page1_i56:\2\" )
+			)
+			( pin "U199.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i97:\1\" )
+			)
+			( pin "U199.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i97:\2\" )
+			)
+			( pin "U200.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i98:\1\" )
+			)
+			( pin "U200.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i98:\2\" )
+			)
+			( pin "U201.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i99:\1\" )
+			)
+			( pin "U201.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i99:\2\" )
+			)
+			( pin "U191.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i100:\1\" )
+			)
+			( pin "U191.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i100:\2\" )
+			)
+			( pin "U192.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i101:\1\" )
+			)
+			( pin "U192.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i101:\2\" )
+			)
+			( pin "U190.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i102:\1\" )
+			)
+			( pin "U190.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i102:\2\" )
+			)
+			( pin "U207.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i105:\1\" )
+			)
+			( pin "U207.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i105:\2\" )
+			)
+			( pin "U208.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i106:\1\" )
+			)
+			( pin "U208.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i106:\2\" )
+			)
+			( pin "U209.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i107:\1\" )
+			)
+			( pin "U209.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i107:\2\" )
+			)
+			( pin "U210.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i108:\1\" )
+			)
+			( pin "U210.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i108:\2\" )
+			)
+			( pin "U211.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i109:\1\" )
+			)
+			( pin "U211.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i109:\2\" )
+			)
+			( pin "U212.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i110:\1\" )
+			)
+			( pin "U212.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i110:\2\" )
+			)
+			( pin "U213.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i111:\1\" )
+			)
+			( pin "U213.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i111:\2\" )
+			)
+			( pin "U214.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i112:\1\" )
+			)
+			( pin "U214.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i112:\2\" )
+			)
+			( pin "U215.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i113:\1\" )
+			)
+			( pin "U215.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i113:\2\" )
+			)
+			( pin "U216.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i114:\1\" )
+			)
+			( pin "U216.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i114:\2\" )
+			)
+			( pin "U217.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i115:\1\" )
+			)
+			( pin "U217.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i115:\2\" )
+			)
+			( pin "U206.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i116:\1\" )
+			)
+			( pin "U206.2"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i2@tubii_tk2_lib.front_ports(sch_1):page1_i71@tubii_tk2_lib.caen_ports(sch_1):page1_i2@tubii_tk2_lib.caen_analog_ports(sch_1):page1_i116:\2\" )
 			)
 			( differentialPair "DP_UNNAMED_1_FRONTPORTS_I2_CLK100"
 				( memberType ( signal ) )
@@ -16667,6 +16527,14 @@
 				( member ( signalRef "UNNAMED_2_FRONTPORTS_I2_TUBCLKI") )
 				( member ( signalRef "UNNAMED_2_FRONTPORTS_I2_TUBCL_1") )
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):\DP_4\" )
+			)
+			( differentialPair "DP_UNNAMED_1_CSMD0805_I64_B"
+				( memberType ( signal ) )
+				( objectFlag fObjectLibdefined )
+				( objectFlag fObjectRenamed )
+				( member ( signalRef "UNNAMED_1_CSMD0805_I64_B") )
+				( member ( signalRef "UNNAMED_1_CSMD0805_I71_A") )
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):\DP_2\" )
 			)
 			( bus "CNTRL_RAW"
 				( memberType ( signal ) )

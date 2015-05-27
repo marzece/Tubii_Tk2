@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 3 )
+			( logicalViewRevNum 4 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -344,6 +344,54 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "_PDVDUP1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -368,11 +416,11 @@
 			( signal "@tubii_tk2_lib.caen_digital_ports(sch_1):sync_lvds_p"
 				( objectStatus "sync_lvds_p" )
 			)
-			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i1"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
+			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i12"
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -381,42 +429,32 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(625,4100)"
+				( attribute "XY" "(625,4050)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP137"
-					( Origin gPackager )
+				( objectStatus "PAGE1_I12" )
+				( pin "\1\"
 				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP137"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I1" )
-				( pin "a"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
+				( pin "\2\"
 				)
 			)
-			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i2"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
+			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i13"
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -425,42 +463,32 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(625,4000)"
+				( attribute "XY" "(650,3800)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP138"
-					( Origin gPackager )
+				( objectStatus "PAGE1_I13" )
+				( pin "\1\"
 				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP138"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I2" )
-				( pin "a"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
+				( pin "\2\"
 				)
 			)
-			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i3"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
+			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i14"
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -469,167 +497,25 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(650,3850)"
+				( attribute "XY" "(650,3525)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP139"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP139"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I3" )
-				( pin "a"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i4"
-				( attribute "ABBREV" "TP"
+				( attribute "_PDVDUP1" "<< NULL >>"
 					( Origin gFrontEnd )
 				)
-				( attribute "CDS_LIB" "misc"
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(650,3750)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
+				( objectStatus "PAGE1_I14" )
+				( pin "\1\"
 				)
-				( attribute "CDS_LOCATION" "TP140"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP140"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I4" )
-				( pin "a"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i5"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(650,3575)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP141"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP141"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I5" )
-				( pin "a"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_tk2_lib.caen_digital_ports(sch_1):page1_i6"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(650,3475)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP142"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP142"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I6" )
-				( pin "a"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
+				( pin "\2\"
 				)
 			)
 		)

@@ -2,12 +2,12 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"SYNC24_LVDS_P";
-2"GND\G";
-3"SYNC_LVDS_P";
-4"SYNC_LVDS_N";
-5"SYNC24_LVDS_N";
-6"GT_NIM";
+1"GT_NIM";
+2"SYNC24_LVDS_N";
+3"SYNC_LVDS_N";
+4"SYNC_LVDS_P";
+5"GND\G";
+6"SYNC24_LVDS_P";
 %"INPORT"
 "1","(-875,4000)","0","standard","I10";
 ;
@@ -15,7 +15,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"4;
+VHDL_PORT"IN"3;
 %"INPORT"
 "1","(-875,4100)","0","standard","I11";
 ;
@@ -23,31 +23,49 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"3;
+VHDL_PORT"IN"4;
 %"SIP_HEADER_2PIN"
 "2","(625,4050)","0","misc","I12";
 ;
+$LOCATION"U187"
+CDS_LOCATION"U187"
+$SEC"1"
+CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 _PDVDUP1""
 CDS_LIB"misc";
-"2 \B"4;
-"1 \B"3;
+"2 \B"
+$PN"2"3;
+"1 \B"
+$PN"1"4;
 %"SIP_HEADER_2PIN"
 "2","(650,3800)","0","misc","I13";
 ;
+$LOCATION"U188"
+CDS_LOCATION"U188"
+$SEC"1"
+CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 _PDVDUP1""
 CDS_LIB"misc";
-"2 \B"5;
-"1 \B"1;
+"2 \B"
+$PN"2"2;
+"1 \B"
+$PN"1"6;
 %"SIP_HEADER_2PIN"
 "2","(650,3525)","0","misc","I14";
 ;
+$LOCATION"U189"
+CDS_LOCATION"U189"
+$SEC"1"
+CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 _PDVDUP1""
 CDS_LIB"misc";
-"2 \B"2;
-"1 \B"6;
+"2 \B"
+$PN"2"5;
+"1 \B"
+$PN"1"1;
 %"INPORT"
 "1","(-850,3575)","0","standard","I7";
 ;
@@ -55,7 +73,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"6;
+VHDL_PORT"IN"1;
 %"INPORT"
 "1","(-850,3750)","0","standard","I8";
 ;
@@ -63,7 +81,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"5;
+VHDL_PORT"IN"2;
 %"INPORT"
 "1","(-850,3850)","0","standard","I9";
 ;
@@ -71,5 +89,5 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"1;
+VHDL_PORT"IN"6;
 END.

@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "vref_gen"
     (lastIds
-      (lastInstanceId 9)
+      (lastInstanceId 11)
       (lastNetId 7)
-      (lastInstTermId 26)
+      (lastInstTermId 30)
     )
     (cells
       ("S2" "ref02" "misc" "sym_1"
@@ -42,6 +42,12 @@
         (terms
           ("T19" "a" 0 0 1)
           ("T20" "b" 0 0 2)
+        )
+      )
+      ("S6" "csmd0603" "capacitors" "sym_1"
+        (terms
+          ("T25" "a" 0 0 1)
+          ("T26" "b" 0 0 2)
         )
       )
     )
@@ -207,6 +213,34 @@
           ("M26" "T18" 0 0
             (conn
               ("0" 0 0 "N5" -1 -1)
+            )
+          )
+        )
+      )
+      ("I10" "page1_i15" "S6"
+        (pins
+          ("M27" "T25" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M28" "T26" 0 0
+            (conn
+              ("0" 0 0 "N6" -1 -1)
+            )
+          )
+        )
+      )
+      ("I11" "page1_i16" "S6"
+        (pins
+          ("M29" "T25" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M30" "T26" 0 0
+            (conn
+              ("0" 0 0 "N6" -1 -1)
             )
           )
         )

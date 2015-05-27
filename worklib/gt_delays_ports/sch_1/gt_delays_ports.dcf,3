@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 7 )
+			( logicalViewRevNum 8 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -376,6 +376,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "_PDVDUP1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -399,162 +415,6 @@
 			)
 			( signal "@tubii_tk2_lib.gt_delays_ports(sch_1):\mtcd_lo*\"
 				( objectStatus "mtcd_lo*" )
-			)
-			( gate "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i3"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(250,3700)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP118"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP118"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I3" )
-			)
-			( gate "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i4"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(250,3600)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP119"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP119"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I4" )
-			)
-			( gate "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i5"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(250,3275)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP120"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP120"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I5" )
-			)
-			( gate "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i6"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(250,3175)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP121"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP121"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I6" )
 			)
 			( gate "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12"
 				( attribute "CDS_LIB" "misc"
@@ -594,75 +454,123 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I12" )
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i3:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
+				( pin "pin1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "pin2"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "pin3"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "pin4"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "pin5"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
+				( pin "pin6"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
+				( pin "pin7"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
+				)
+				( pin "pin8"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
+				( pin "pin9"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+				)
+				( pin "pin10"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i4:a"
-				( attribute "PN" "1"
+			( gate "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i13"
+				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i5:a"
-				( attribute "PN" "1"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i6:a"
-				( attribute "PN" "1"
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(450,3650)"
+					( Origin gFrontEnd )
+				)
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin1"
-				( attribute "PN" "1"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin2"
-				( attribute "PN" "2"
-					( Origin gPackager )
+				( objectStatus "PAGE1_I13" )
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin3"
-				( attribute "PN" "3"
+			( gate "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i14"
+				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin4"
-				( attribute "PN" "4"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin5"
-				( attribute "PN" "5"
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(275,3250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin6"
-				( attribute "PN" "6"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin7"
-				( attribute "PN" "7"
-					( Origin gPackager )
+				( objectStatus "PAGE1_I14" )
+				( pin "\1\"
 				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin8"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin9"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_tk2_lib.gt_delays_ports(sch_1):page1_i12:pin10"
-				( attribute "PN" "10"
-					( Origin gPackager )
+				( pin "\2\"
 				)
 			)
 		)
