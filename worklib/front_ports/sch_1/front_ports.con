@@ -8,8 +8,8 @@
   (design "front_ports"
     (lastIds
       (lastInstanceId 18)
-      (lastNetId 112)
-      (lastInstTermId 264)
+      (lastNetId 114)
+      (lastInstTermId 273)
     )
     (cells
       ("S2" "translation_ports" "tubii_tk2_lib" "sym_1"
@@ -74,11 +74,11 @@
       )
       ("S11" "gt_delays_ports" "tubii_tk2_lib" "sym_1"
         (terms
-          ("T254" "dgt_n" -1 -1 1)
           ("T255" "dgt_p" -1 -1 1)
           ("T258" "mtcd_lo*" -1 -1 2)
           ("T259" "lo_star_out_n" -1 -1 1)
           ("T260" "lo_star_out_p" -1 -1 1)
+          ("T592" "dgt_n" -1 -1 1)
         )
       )
       ("S12" "conn12" "misc" "sym_1"
@@ -404,11 +404,6 @@
       )
       ("I11" "page1_i87" "S11"
         (pins
-          ("M106" "T254" -1 -1
-            (conn
-              ("0" -1 -1 "N78" -1 -1)
-            )
-          )
           ("M107" "T255" -1 -1
             (conn
               ("0" -1 -1 "N79" -1 -1)
@@ -427,6 +422,11 @@
           ("M112" "T260" -1 -1
             (conn
               ("0" -1 -1 "N84" -1 -1)
+            )
+          )
+          ("M273" "T592" -1 -1
+            (conn
+              ("0" -1 -1 "N78" -1 -1)
             )
           )
         )
