@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-27T19:06:58</modificationTime>
+    <modificationTime>2015-05-27T19:33:52</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
       <lastids>
         <instanceid>26</instanceid>
-        <netid>86</netid>
+        <netid>87</netid>
         <insttermid>376</insttermid>
       </lastids>
       <cells>
@@ -1137,6 +1137,10 @@
         <net>
           <id>N86</id>
           <name>unnamed_1_rsmd0805_i125_b</name>
+        </net>
+        <net>
+          <id>N87</id>
+          <name>unnamed_1_bss138_i128_1</name>
         </net>
         <net>
           <id>N23</id>
@@ -3355,7 +3359,7 @@
               <id>M364</id>
               <termid>T291</termid>
               <connections>
-                <connection net="N24" />
+                <connection net="N87" />
               </connections>
             </pin>
             <pin>
@@ -3438,6 +3442,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N24" />
               </connections>
             </pin>
             <pin>
@@ -3446,7 +3451,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N24" />
+                <connection pinmsb="0" pinlsb="0" net="N87" />
               </connections>
             </pin>
           </pins>
@@ -3485,7 +3490,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N24" />
+                <connection pinmsb="0" pinlsb="0" net="N87" />
               </connections>
             </pin>
           </pins>
@@ -3524,7 +3529,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N24" />
+                <connection pinmsb="0" pinlsb="0" net="N87" />
               </connections>
             </pin>
           </pins>
@@ -3552,6 +3557,7 @@
               <id>M375</id>
               <termid>T298</termid>
               <connections>
+                <connection net="N73" />
               </connections>
             </pin>
           </pins>
@@ -3883,6 +3889,7 @@
               <net ref="tellie_pulse"></net>
               <net ref="tubii_rt_out"></net>
               <net ref="unnamed_1_bss138_i123_3"></net>
+              <net ref="unnamed_1_bss138_i128_1"></net>
               <net ref="unnamed_1_ledl_i102_a"></net>
               <net ref="unnamed_1_rsmd0805_i125_b"></net>
               <net ref="v3p3"></net>
