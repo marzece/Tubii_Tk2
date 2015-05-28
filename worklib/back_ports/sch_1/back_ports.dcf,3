@@ -1,0 +1,592 @@
+( ConstraintFile "back_ports"
+	( constraintHeader
+		( objectKey
+			( logical )
+		)
+		( version
+			( 16.6 )
+		)
+		( revisionNumber
+			( logicalViewRevNum 2 )
+			( physicalViewRevNum 0 )
+			( otherViewRevNum 0 )
+		)
+		( contents
+			( dictionaryExtensions )
+			( worksheetCustomizations )
+			( electricalConstraints )
+			( netClasses )
+			( properties )
+		)
+		( precision
+			( units mil )
+			( numberOfDecimalPlaces 2 )
+		)
+	)
+	( DictionaryExtensions
+		( Attribute
+			( Name "CDS_LMAN_SYM_OUTLINE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "CURRENT" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIST" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "KNEE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_TEMP" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NEGTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PACKTYPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POSTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "SLOPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TOL_ON_OFF" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PULSE_WIDTH" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "ABBREV" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POWER" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC2" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "_PDVDUP1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+	)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "back_ports"
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):gnd"
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(0)"
+				( objectStatus "unnused_mz<0>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(1)"
+				( objectStatus "unnused_mz<1>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(2)"
+				( objectStatus "unnused_mz<2>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(3)"
+				( objectStatus "unnused_mz<3>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(4)"
+				( objectStatus "unnused_mz<4>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(5)"
+				( objectStatus "unnused_mz<5>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(6)"
+				( objectStatus "unnused_mz<6>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(7)"
+				( objectStatus "unnused_mz<7>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(8)"
+				( objectStatus "unnused_mz<8>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(9)"
+				( objectStatus "unnused_mz<9>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(10)"
+				( objectStatus "unnused_mz<10>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(11)"
+				( objectStatus "unnused_mz<11>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(12)"
+				( objectStatus "unnused_mz<12>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(13)"
+				( objectStatus "unnused_mz<13>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(14)"
+				( objectStatus "unnused_mz<14>" )
+			)
+			( signal "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(15)"
+				( objectStatus "unnused_mz<15>" )
+			)
+			( gate "@tubii_tk2_lib.back_ports(sch_1):page1_i1"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,225,125,-200"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-800,3600)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CONN16"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CONN16"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I1" )
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
+				( pin "\3\"
+				)
+				( pin "\4\"
+				)
+				( pin "\5\"
+				)
+				( pin "\6\"
+				)
+				( pin "\7\"
+				)
+				( pin "\8\"
+				)
+				( pin "\9\"
+				)
+				( pin "\10\"
+				)
+				( pin "\11\"
+				)
+				( pin "\12\"
+				)
+				( pin "\13\"
+				)
+				( pin "\14\"
+				)
+				( pin "\15\"
+				)
+				( pin "\16\"
+				)
+			)
+			( gate "@tubii_tk2_lib.back_ports(sch_1):page1_i2"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,225,125,-200"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-800,2725)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CONN16"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CONN16"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I2" )
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
+				( pin "\3\"
+				)
+				( pin "\4\"
+				)
+				( pin "\5\"
+				)
+				( pin "\6\"
+				)
+				( pin "\7\"
+				)
+				( pin "\8\"
+				)
+				( pin "\9\"
+				)
+				( pin "\10\"
+				)
+				( pin "\11\"
+				)
+				( pin "\12\"
+				)
+				( pin "\13\"
+				)
+				( pin "\14\"
+				)
+				( pin "\15\"
+				)
+				( pin "\16\"
+				)
+			)
+			( bus "@tubii_tk2_lib.back_ports(sch_1):unnused_mz"
+				( memberType ( signal ) )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(0)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(1)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(2)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(3)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(4)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(5)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(6)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(7)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(8)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(9)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(10)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(11)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(12)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(13)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(14)") )
+				( member ( signalRef "@tubii_tk2_lib.back_ports(sch_1):unnused_mz(15)") )
+				( objectStatus "UNNUSED_MZ" )
+			)
+		)
+	)
+)

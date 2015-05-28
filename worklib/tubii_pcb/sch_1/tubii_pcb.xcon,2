@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-27T21:43:34</modificationTime>
+    <modificationTime>2015-05-28T01:08:35</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
       <lastids>
         <instanceid>17</instanceid>
-        <netid>315</netid>
-        <insttermid>1299</insttermid>
+        <netid>321</netid>
+        <insttermid>1359</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -174,6 +174,16 @@
               <id>T1641</id>
               <name>generic_delay_out</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T1644</id>
+              <name>smellie_pre_delay</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T1645</id>
+              <name>tellie_pre_delay</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -1841,6 +1851,20 @@
               <termid>T1641</termid>
               <connections>
                 <connection net="N81" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1300</id>
+              <termid>T1644</termid>
+              <connections>
+                <connection net="N199" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1301</id>
+              <termid>T1645</termid>
+              <connections>
+                <connection net="N202" />
               </connections>
             </pin>
           </pins>
