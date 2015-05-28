@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-28T15:42:28</modificationTime>
+    <modificationTime>2015-05-28T15:44:39</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
       <lastids>
         <instanceid>89</instanceid>
-        <netid>141</netid>
+        <netid>142</netid>
         <insttermid>643</insttermid>
       </lastids>
       <cells>
@@ -1411,6 +1411,11 @@
           <name>gnd</name>
           <scope>global</scope>
         </net>
+        <net>
+          <id>N142</id>
+          <name>vccio</name>
+          <scope>global</scope>
+        </net>
       </nets>
       <aliases>
       </aliases>
@@ -1965,21 +1970,21 @@
               <id>M78</id>
               <termid>T78</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N142" />
               </connections>
             </pin>
             <pin>
               <id>M79</id>
               <termid>T79</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N142" />
               </connections>
             </pin>
             <pin>
               <id>M80</id>
               <termid>T80</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N142" />
               </connections>
             </pin>
             <pin>
@@ -2675,21 +2680,21 @@
               <id>M282</id>
               <termid>T78</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N142" />
               </connections>
             </pin>
             <pin>
               <id>M283</id>
               <termid>T79</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N142" />
               </connections>
             </pin>
             <pin>
               <id>M284</id>
               <termid>T80</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N142" />
               </connections>
             </pin>
             <pin>
@@ -6503,6 +6508,11 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
+          <netScope ref="vccio">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
         </netScopes>
         <pages>
           <page number="1">
@@ -6620,6 +6630,7 @@
               <net ref="vbat"></net>
               <net ref="vcc"></net>
               <net ref="vcc_io_en"></net>
+              <net ref="vccio"></net>
               <net ref="vccio_en_o"></net>
             </nets>
             <instances>

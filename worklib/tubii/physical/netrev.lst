@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : TubiiPCB_V6.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Thu May 28 01:58:52 2015                      )
+(    Date/Time        : Thu May 28 17:13:38 2015                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -16,39 +16,39 @@ RIPUP_DELETE_FIRST_SEGMENT FALSE;
 RIPUP_RETAIN_BONDWIRE FALSE;
 RIPUP_SYMBOLS ALWAYS;
 Missing symbol has error FALSE;
-SCHEMATIC_DIRECTORY 'C:\Users\Eric Marzec\Documents\A_NU_START\Tubii_Tk2\worklib\tubii\packaged';
+SCHEMATIC_DIRECTORY 'C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\packaged';
 BOARD_DIRECTORY '';
-OLD_BOARD_NAME 'C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V6.brd';
-NEW_BOARD_NAME 'C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V6.brd';
+OLD_BOARD_NAME 'C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd';
+NEW_BOARD_NAME 'C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd';
 
-CmdLine: netrev -proj C:\Users\Eric Marzec\Documents\A_NU_START\Tubii_Tk2\tubii_tk2.cpm -y 1 -O C:\Users\Eric Marzec\Documents\A_NU_START\Tubii_Tk2\worklib\tubii\physical\TubiiPCB_V6.brd C:\Users\Eric Marzec\Documents\A_NU_START\Tubii_Tk2\worklib\tubii\physical\TubiiPCB_V6.brd -$
+CmdLine: netrev -proj C:\Users\QGPWindowsVB\Documents\ANUSTART\tubii_tk2.cpm -y 1 -O C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\physical\TubiiPCB_V6.brd C:\Users\QGPWindowsVB\Documents\ANUSTART\worklib\tubii\physical\TubiiPCB_V6.brd -$
 
 ------ Preparing to read pst files ------
 
-Starting to read C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/packaged/pstchip.dat 
-   Finished reading C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/packaged/pstchip.dat (00:00:20.84)
-Starting to read C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/packaged/pstxprt.dat 
-   Finished reading C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/packaged/pstxprt.dat (00:00:00.06)
-Starting to read C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/packaged/pstxnet.dat 
-   Finished reading C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/packaged/pstxnet.dat (00:00:00.06)
+Starting to read C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/packaged/pstchip.dat 
+   Finished reading C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/packaged/pstchip.dat (00:00:00.79)
+Starting to read C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/packaged/pstxprt.dat 
+   Finished reading C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/packaged/pstxprt.dat (00:00:00.17)
+Starting to read C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/packaged/pstxnet.dat 
+   Finished reading C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/packaged/pstxnet.dat (00:00:00.23)
 
 ------ Oversights/Warnings/Errors ------
 
 
 #1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
 
-WARNING(SPMHNI-194): Symbol 'INDUCT805' for device 'INDUCTOR_L' not found in PSMPATH or must be "dbdoctor"ed.
+WARNING(SPMHNI-337): Unable to load symbol 'TO220_5PIN' for device 'LM2596': WARNING(SPMHUT-127): Could not find padstack PAD90CIR50D. [help]
 
 
 
 ===========================================================
 Start Constraint Diff3 Import
-	Constraint File:    C:/Users/Eric Marzec/Documents/A_NU_START/Tubii_Tk2/worklib/tubii/packaged/pstcmdb.dat
-	Allegro Baseline:   C:/Users/ERICMA~1/AppData/Local/Temp/#Taaaaae08220.tmp
-	Start time: Thu May 28 01:58:53 2015
+	Constraint File:    C:/Users/QGPWindowsVB/Documents/ANUSTART/worklib/tubii/packaged/pstcmdb.dat
+	Allegro Baseline:   C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaae01544.tmp
+	Start time: Thu May 28 17:13:40 2015
 ===========================================================
 ===========================================================
-Finished Constraint Update	Time: Thu May 28 01:58:54 2015
+Finished Constraint Update	Time: Thu May 28 17:13:43 2015
 ===========================================================
 
 ------ Library Paths ------
@@ -75,9 +75,9 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on May 28 1:58:31 2015
+netrev run on May 28 17:13:37 2015
    DESIGN NAME : 'TUBII'
-   PACKAGING ON 28-May-2015 AT 01:56:54
+   PACKAGING ON 28-May-2015 AT 17:09:43
 
    COMPILE 'logic'
    CHECK_PIN_NAMES OFF
@@ -105,6 +105,6 @@ netrev run on May 28 1:58:31 2015
  No oversight detected
   1 warnings detected
 
-cpu time      1:15:32
-elapsed time  0:00:25
+cpu time      0:20:04
+elapsed time  0:00:11
 

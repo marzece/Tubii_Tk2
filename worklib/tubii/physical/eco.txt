@@ -2,44 +2,365 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:.../A_NU_START/Tubii_Tk2/worklib/tubii/physical/TubiiPCB_V6.brd           |
-|                                                    Thu May 28 01:58:52 2015  |
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  UNNAMED_1_BACKPORTS_I3_UNNUS<0> pins MOVED FROM this net (to net name listed on right)
-                                 J5.1             7377.5  5917.5
-                                                UNNAMED_1_BACKPORTS_I3_UNNUS<7>
+  CARRIER_SRST# pins MOVED FROM this net (to net name listed on right)
+                                 TP60.1                         
+                                                                        I2C_SCL
+                                 U5.6             7343.7  7908.7
+                                                                          GPIO3
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_BACKPORTS_I3_UNNUS<1> pins MOVED FROM this net (to net name listed on right)
-                                 J5.3             7277.5  5917.5
-                                                UNNAMED_1_BACKPORTS_I3_UNNUS<6>
+  FPGA_DONE    pins MOVED FROM this net (to net name listed on right)
+                                 TP61.1                         
+                                                                          INIT#
+                                 U5.8             7343.7  7877.2
+                                                                          GPIO5
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_BACKPORTS_I3_UNNUS<2> pins MOVED FROM this net (to net name listed on right)
-                                 J5.5             7177.5  5917.5
-                                                UNNAMED_1_BACKPORTS_I3_UNNUS<5>
+  GND          pins ADDED TO this existing net (pins not previously on any net)
+                                 C224.2                         
+                                 C225.2                         
+                                 C226.2                         
+                                 U219.5           9427.0  8745.1
+                                 U219.7           9427.0  8693.9
+                                 U219.9           9653.0  8719.5
+                                 U219.11          9653.0  8770.7
+                                 U219.13          9653.0  8821.9
+                                 U220.3                         
+                                 U227.2                         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_BACKPORTS_I3_UNNUS<3> pins MOVED FROM this net (to net name listed on right)
-                                 J5.7             7077.5  5917.5
-                                                UNNAMED_1_BACKPORTS_I3_UNNUS<4>
+  GPIO0        pins MOVED FROM this net (to net name listed on right)
+                                 U65.3            9306.3  7940.2
+                                                                       JTAG_TDO
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_BACKPORTS_I3_UNNUS<4> pins MOVED FROM this net (to net name listed on right)
-                                 J5.9             6977.5  5917.5
-                                                UNNAMED_1_BACKPORTS_I3_UNNUS<3>
+  GPIO1        pins MOVED FROM this net (to net name listed on right)
+                                 U65.4            9093.7  7940.2
+                                                                       JTAG_TDI
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_BACKPORTS_I3_UNNUS<5> pins MOVED FROM this net (to net name listed on right)
-                                 J5.11            6877.5  5917.5
-                                                UNNAMED_1_BACKPORTS_I3_UNNUS<2>
+  GPIO2        pins MOVED FROM this net (to net name listed on right)
+                                 U65.5            9306.3  7908.7
+                                                                         PWR_EN
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_BACKPORTS_I3_UNNUS<6> pins MOVED FROM this net (to net name listed on right)
-                                 J5.13            6777.5  5917.5
-                                                UNNAMED_1_BACKPORTS_I3_UNNUS<1>
+  GPIO3        pins MOVED FROM this net (to net name listed on right)
+                                 U65.6            9093.7  7908.7
+                                                                  CARRIER_SRST#
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UNNAMED_1_BACKPORTS_I3_UNNUS<7> pins MOVED FROM this net (to net name listed on right)
-                                 J5.15            6677.5  5917.5
-                                                UNNAMED_1_BACKPORTS_I3_UNNUS<0>
+  GPIO4        pins MOVED FROM this net (to net name listed on right)
+                                 U65.7            9306.3  7877.2
+                                                                           VBAT
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GPIO5        pins MOVED FROM this net (to net name listed on right)
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  8                                              |
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 U65.8            9093.7  7877.2
+                                                                      FPGA_DONE
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  I2C_SCL      net RENAMED (to net name listed on right)           JTAG_TCK     
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  I2C_SDA      net RENAMED (to net name listed on right)           JTAG_TMS     
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  INIT#        pins MOVED FROM this net (to net name listed on right)
+                                 TP70.1                         
+                                                                       JTAG_TDO
+                                 U65.9            9306.3  7845.7
+                                                                       JX1_SE_0
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  JTAG_TCK     pins MOVED FROM this net (to net name listed on right)
+                                 TP63.1                         
+                                                                       JX2_SE_0
+                                 U5.1             7556.3  7971.7
+                                                                        I2C_SCL
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  JTAG_TDI     pins MOVED FROM this net (to net name listed on right)
+                                 TP59.1                         
+                                                                       JX2_SE_1
+                                 U5.4             7343.7  7940.2
+                                                                          GPIO1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  JTAG_TDO     pins MOVED FROM this net (to net name listed on right)
+                                 TP64.1                         
+                                                                       JTAG_TDI
+                                 U5.3             7556.3  7940.2
+                                                                          GPIO0
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  JTAG_TMS     net RENAMED (to net name listed on right)           I2C_SDA      
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  JX1_SE_0     pins MOVED FROM this net (to net name listed on right)
+                                 TP66.1                         
+                                                                      FPGA_DONE
+                                 U5.9             7556.3  7845.7
+                                                                          INIT#
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  JX1_SE_1     pins MOVED FROM this net (to net name listed on right)
+                                 TP62.1                         
+                                                                       PWR_GOOD
+                                 U5.10            7343.7  7845.7
+                                                                     VCCIO_EN_0
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  JX2_SE_0     pins DELETED FROM this net (pin now not on any net)
+                                 U65.13           9306.3  7782.7
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins MOVED FROM this net (to net name listed on right)
+                                 TP72.1                         
+                                                                       JX1_SE_0
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 U5.13            7556.3  7782.7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  JX2_SE_1     net RENAMED (to net name listed on right)           UNNAMED_1_FCI61083-101400LF_I23 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 U5.14            7343.7  7782.7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PWR_EN       pins MOVED FROM this net (to net name listed on right)
+                                 U5.5             7556.3  7908.7
+                                                                          GPIO2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PWR_GOOD     pins DELETED FROM this net (pin now not on any net)
+                                 U65.11           9306.3  7814.2
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins MOVED FROM this net (to net name listed on right)
+                                 TP71.1                         
+                                                                           VBAT
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 U5.11            7556.3  7814.2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  UNNAMED_1_BSS138_I123_3 pins MOVED FROM this net (to net name listed on right)
+                                 U219.3           9427.0  8796.3
+                                                                            GND
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  UNNAMED_1_LM2596_I56_VOUT pins ADDED TO this new net
+                                 L6.1                           
+                                 U220.2                         
+                                 U227.1                         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  UNNAMED_1_MICROZEDMODULE_I1_VCC pins ADDED TO this new net
+                                 R421.2           8778.0  7785.0
+                                 U219.2           9427.0  8821.9
+                                 U220.5                         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  UNNAMED_1_RSMD0805_I125_B pins MOVED FROM this net (to net name listed on right)
+                                 U220.1                         
+                                                                            VCC
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  V3P3         pins MOVED FROM this net (to net name listed on right)
+                                 U5.78            7343.7  6774.8
+                                                                          VCCIO
+                                 U5.79            7556.3  6743.3
+                                                                          VCCIO
+                                 U5.80            7343.7  6743.3
+                                                                          VCCIO
+                                 U65.78           9093.7  6774.8
+                                                                          VCCIO
+                                 U65.79           9306.3  6743.3
+                                                                          VCCIO
+                                 U65.80           9093.7  6743.3
+                                                                          VCCIO
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 C224.1                         
+                                 U219.14          9653.0  8847.5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VBAT         pins MOVED FROM this net (to net name listed on right)
+                                 TP65.1                         
+                                                                  CARRIER_SRST#
+                                 U5.7             7556.3  7877.2
+                                                                          GPIO4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCC          pins DELETED FROM this net (pin now not on any net)
+                                 U65.12           9093.7  7814.2
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 C225.1                         
+                                 U5.12            7343.7  7814.2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCCIO        pins ADDED TO this new net
+                                 C226.1                         
+                                 L6.2                           
+                                 U220.4                         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCCIO_EN_0   pins ADDED TO this new net
+                                 U219.1           9427.0  8847.5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCCIO_EN_O   pins MOVED FROM this net (to net name listed on right)
+                                 R421.1           8830.0  7785.0
+                                                                            VCC
+                                 TP53.1           9740.0  8880.0
+                                                                     VCCIO_EN_0
+                                 U65.10           9093.7  7845.7
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                                                       JX1_SE_1
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to board drawing                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ 1N5822
+ 74LV06A
+ ELECCAP_ELECTCAP
+ INDUCTOR_L
+ LM2596
+ SRR6038
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   7  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| COMPONENTS DELETED from board drawing                                        |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type      |   x   |   y                        |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ R422                RSMD0805-NS,1%,0805    9575.0  8549.4
+ R423                RSMD0805-NS,1%,0805    9725.0  8320.0
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   8  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to board drawing                                            |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C224                CSMD0603-0.1UF,10%,0603,50V 
+ C225                ELECCAP_ELECTCAP      
+ C226                ELECCAP_ELECTCAP      
+ L6                  SRR6038               
+ U227                1N5822                
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   9  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in board drawing          |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ L1                  INDUCTOR_L             3350.0  3550.0 INDUCTOR_L
+ L2                  INDUCTOR_L             3950.0  3550.0 INDUCTOR_L
+ L3                  INDUCTOR_L             2975.0  3550.0 INDUCTOR_L
+ L4                  INDUCTOR_L             2400.0  3550.0 INDUCTOR_L
+ L5                  INDUCTOR_L             4500.0  3550.0 INDUCTOR_L
+ R421                RSMD0603-4K,0.1%,0603  8830.0  7885.0 RSMD0805-4K,1%,0805
+ U219                74LV06A                9540.0  8770.5 BSS138
+ U220                LM2596                 9740.0  8560.0 SIP_HEADER_2PIN
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  10  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to board drawing                                       |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C224.2                         PRIM_FILE      ./Parts/parts/capacitors/csmd0603/chips/chips.prt
+ C225.2                         PRIM_FILE      ./Parts/parts/capacitors/eleccap/chips/chips.prt
+ C226.2                         PRIM_FILE      ./Parts/parts/capacitors/eleccap/chips/chips.prt
+ L6.2                           PRIM_FILE      ./Parts/parts/misc/srr6038/chips/chips.prt
+ R421.2          8830.0  7885.0 PRIM_FILE      ./Parts/parts/resistors/rsmd0603/chips/chips.prt
+ U219.12         9540.0  8770.5 PRIM_FILE      ./Parts/parts/ttl/74lv06a/chips/chips.prt
+ U220.2                         PRIM_FILE      ./Parts/parts/regulators/lm2596/chips/chips.prt
+ U227.1                         PRIM_FILE      ./Parts/parts/diodes/1n5822/chips/chips.prt
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  11  |
+|------------------------------------------------------------------------------|
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Thu May 28 17:13:38 2015  |
+|------------------------------------------------------------------------------|
+| PIN PROPERTIES added to board drawing                                        |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    pin_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C224.1                         CDS_PINID      A(0)
+ C224.2                         CDS_PINID      B(0)
+ C225.1                         CDS_PINID      \1\
+ C225.2                         CDS_PINID      \2\
+ C226.1                         CDS_PINID      \1\
+ C226.2                         CDS_PINID      \2\
+ L6.1                           CDS_PINID      \1\
+ L6.2                           CDS_PINID      \2\
+ R421.1          8830.0  7785.0 CDS_PINID      A(0)
+ R421.2          8778.0  7785.0 CDS_PINID      B(0)
+ U219.1          9427.0  8847.5 CDS_PINID      A1
+ U219.2          9427.0  8821.9 CDS_PINID      Y1
+ U219.3          9427.0  8796.3 CDS_PINID      A2
+ U219.4          9427.0  8770.7 CDS_PINID      Y2
+ U219.5          9427.0  8745.1 CDS_PINID      A3
+ U219.6          9427.0  8719.5 CDS_PINID      Y3
+ U219.7          9427.0  8693.9 CDS_PINID      GND
+ U219.8          9653.0  8693.9 CDS_PINID      Y4
+ U219.9          9653.0  8719.5 CDS_PINID      A4
+ U219.10         9653.0  8745.1 CDS_PINID      Y5
+ U219.11         9653.0  8770.7 CDS_PINID      A5
+ U219.12         9653.0  8796.3 CDS_PINID      Y6
+ U219.13         9653.0  8821.9 CDS_PINID      A6
+ U219.14         9653.0  8847.5 CDS_PINID      VCC
+ U220.1                         CDS_PINID      VIN
+ U220.2                         CDS_PINID      VOUT
+ U220.3                         CDS_PINID      GND
+ U220.4                         CDS_PINID      FB
+ U220.5                         CDS_PINID      \on*\
+ U220.6                         CDS_PINID      TAB
+ U227.1                         CDS_PINID      CAT
+ U227.2                         CDS_PINID      AN
+|------------------------------------------------------------------------------|
+|   total ECO changes reported  133                                            |
 |------------------------------------------------------------------------------|

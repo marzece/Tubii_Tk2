@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 25 )
+			( logicalViewRevNum 26 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -400,7 +400,7 @@
 				( Status  sProperty  sPackage )
 			)
 			( Objects
-				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
 				( NoInherit
 					( oGate oPin )
 				)
@@ -415,7 +415,6 @@
 			( design "power"
 			)
 			( signal "@tubii_tk2_lib.power(sch_1):gnd"
-				( alias ( signalRef "@tubii_tk2_lib.power(sch_1):page1_gnd") )
 				( attribute "PHYS_NET_NAME" "GND"
 					( Origin gPackager )
 				)
@@ -483,10 +482,6 @@
 			)
 			( signal "@tubii_tk2_lib.power(sch_1):unnamed_1_lm2596_i56_vout"
 				( objectStatus "unnamed_1_lm2596_i56_vout" )
-			)
-			( signal "@tubii_tk2_lib.power(sch_1):page1_gnd"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_gnd" )
 			)
 			( gate "@tubii_tk2_lib.power(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -4403,6 +4398,74 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I58" )
+			)
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i60"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,150,125,-150"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "ELECTCAP"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "5"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(500,2925)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "ELECCAP"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "ELECCAP_ELECTCAP"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I60" )
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
+			)
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i61"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,150,125,-150"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "ELECTCAP"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "5"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-800,2950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "ELECCAP"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "ELECCAP_ELECTCAP"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I61" )
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
 			)
 		)
 	)

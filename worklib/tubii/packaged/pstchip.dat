@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 28-May-2015 AT 01:56:54 }
+{ Packager-XL run on 28-May-2015 AT 17:09:43 }
 primitive '1N4448';
   pin
     'IN':
@@ -25,6 +25,35 @@ primitive '1N4448';
       PART_NAME='1N4448';
       BODY_NAME='1N4448';
       JEDEC_TYPE='DO35';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
+primitive '1N5822';
+  pin
+    'AN':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'CAT':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='1N5822';
+      BODY_NAME='1N5822';
+      JEDEC_TYPE='DO41';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
   end_body;
@@ -459,6 +488,81 @@ primitive '74HCT273';
       PART_NAME='74HCT273';
       BODY_NAME='74HCT273';
       JEDEC_TYPE='SOIC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
+primitive '74LV06A';
+  pin
+    'A1':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A2':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A3':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A4':
+      PIN_NUMBER='(9)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A5':
+      PIN_NUMBER='(11)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A6':
+      PIN_NUMBER='(13)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Y1':
+      PIN_NUMBER='(2)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y2':
+      PIN_NUMBER='(4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y3':
+      PIN_NUMBER='(6)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y4':
+      PIN_NUMBER='(8)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y5':
+      PIN_NUMBER='(10)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y6':
+      PIN_NUMBER='(12)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'VCC':
+      PIN_NUMBER='(14)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'GND':
+      PIN_NUMBER='(7)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+      PART_NAME='74LV06A';
+      BODY_NAME='74LV06A';
+      JEDEC_TYPE='TSSOP14';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
   end_body;
@@ -2807,6 +2911,35 @@ primitive 'DS90LV027';
       CLASS='IC';
   end_body;
 end_primitive;
+primitive 'ELECCAP_ELECTCAP';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='ELECCAP';
+      BODY_NAME='ELECCAP';
+      JEDEC_TYPE='ELECTCAP';
+      PHYS_DES_PREFIX='C';
+      CLASS='IC';
+  end_body;
+end_primitive;
 primitive 'FCI_61083-101400LF';
   pin
     '1':
@@ -4125,7 +4258,7 @@ primitive 'INDUCTOR_L';
   end_pin;
   body
       PART_NAME='INDUCTOR_L';
-      ALT_SYMBOLS='(INDUCT805)';
+      ALT_SYMBOLS='(INDUCT_SMD)';
       PATH='23P';
       DRAWING='ELEMENTCHIPS.LOGIC.1.1';
       VER='1';
@@ -4233,6 +4366,65 @@ primitive 'LED_L';
       JEDEC_TYPE='LED_SSFLXH1031D';
       PHYS_DES_PREFIX='D';
       CLASS='DISCRETE';
+  end_body;
+end_primitive;
+primitive 'LM2596';
+  pin
+    'ON*':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'FB':
+      PIN_NUMBER='(4)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'GND':
+      PIN_NUMBER='(3)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VOUT':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'TAB':
+      PIN_NUMBER='(6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'VIN':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='LM2596';
+      BODY_NAME='LM2596';
+      JEDEC_TYPE='TO220_5PIN';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
   end_body;
 end_primitive;
 primitive 'LT1085CT';
@@ -6524,6 +6716,35 @@ primitive 'SN74S32';
       BODY_NAME='SN74S32';
       JEDEC_TYPE='SOIC14';
       PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
+primitive 'SRR6038';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='SRR6038';
+      BODY_NAME='SRR6038';
+      JEDEC_TYPE='SSR6038';
+      PHYS_DES_PREFIX='L';
       CLASS='IC';
   end_body;
 end_primitive;
