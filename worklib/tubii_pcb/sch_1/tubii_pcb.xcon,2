@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-18T16:16:04</modificationTime>
+    <modificationTime>2015-05-26T18:39:23</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
       <lastids>
         <instanceid>17</instanceid>
-        <netid>300</netid>
-        <insttermid>1178</insttermid>
+        <netid>309</netid>
+        <insttermid>1235</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -1562,9 +1562,8 @@
           <direction>output</direction>
         </net>
         <net>
-          <id>gnd</id>
-          <name>gnd</name>
-          <scope>global</scope>
+          <id>N308</id>
+          <name>unnamed_1_hct238_i53_e3</name>
         </net>
         <net>
           <id>vcc</id>
@@ -1598,6 +1597,12 @@
         <net>
           <id>v3p3</id>
           <name>v3p3</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>N309</id>
+          <name>gnd</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -2961,7 +2966,7 @@
               <id>M481</id>
               <termid>T487</termid>
               <connections>
-                <connection net="gnd" />
+                <connection net="N308" />
               </connections>
             </pin>
             <pin>
@@ -3203,11 +3208,6 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>output</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="gnd">
-            <pageScope number="1">
-              <scope>global</scope>
             </pageScope>
           </netScope>
           <netScope ref="gt_n">
@@ -3521,7 +3521,6 @@
               <net ref="generic_delay_in"></net>
               <net ref="generic_delay_out"></net>
               <net ref="generic_pulse_out"></net>
-              <net ref="gnd"></net>
               <net ref="gt_n"></net>
               <net ref="gt_nim"></net>
               <net ref="gt_p"></net>
@@ -3616,6 +3615,7 @@
               <net ref="unnamed_1_hct238_i53_a0"></net>
               <net ref="unnamed_1_hct238_i53_a1"></net>
               <net ref="unnamed_1_hct238_i53_a2"></net>
+              <net ref="unnamed_1_hct238_i53_e3"></net>
               <net ref="unnamed_1_logen_i13_dgt2"></net>
               <net ref="unnamed_1_logen_i13_lostar2"></net>
               <net ref="unnamed_1_microzedmodule_i1_mtcamimicdatardy"></net>

@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-26T18:39:23</modificationTime>
+    <modificationTime>2015-05-26T18:41:09</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>17</instanceid>
         <netid>309</netid>
-        <insttermid>1235</insttermid>
+        <insttermid>1236</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -179,6 +179,11 @@
               <id>T1120</id>
               <name>gt</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T1501</id>
+              <name>mux_enable</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -1845,6 +1850,13 @@
               <termid>T1120</termid>
               <connections>
                 <connection net="N132" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1236</id>
+              <termid>T1501</termid>
+              <connections>
+                <connection net="N308" />
               </connections>
             </pin>
           </pins>
