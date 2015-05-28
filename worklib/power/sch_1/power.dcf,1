@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 19 )
+			( logicalViewRevNum 24 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -360,6 +360,38 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "_PDVDUP1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -425,6 +457,12 @@
 			)
 			( signal "@tubii_tk2_lib.power(sch_1):vtt_raw"
 				( objectStatus "vtt_raw" )
+			)
+			( signal "@tubii_tk2_lib.power(sch_1):vccio"
+				( objectStatus "vccio" )
+			)
+			( signal "@tubii_tk2_lib.power(sch_1):unnamed_1_lm2596_i56_vout"
+				( objectStatus "unnamed_1_lm2596_i56_vout" )
 			)
 			( gate "@tubii_tk2_lib.power(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -4161,14 +4199,155 @@
 				( attribute "CDS_PART_NAME" "LT1085CT"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U162"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U162"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I54" )
 				( pin "gnd"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "tab"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "vin"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "vout"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i55"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROOM" "POWER"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1100,3950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP58"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP58"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I55" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i56"
+				( attribute "CDS_LIB" "regulators"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,225,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-450,3200)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LM2596"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LM2596"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I56" )
+				( pin "fb"
+				)
+				( pin "gnd"
+				)
+				( pin "\on*\"
 				)
 				( pin "tab"
 				)
 				( pin "vin"
 				)
 				( pin "vout"
+				)
+			)
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i57"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,25,125,-50"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(50,3325)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SRR6038"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SRR6038"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I57" )
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 		)
