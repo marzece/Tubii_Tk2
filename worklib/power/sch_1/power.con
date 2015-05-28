@@ -7,9 +7,9 @@
   (library "tubii_tk2_lib")
   (design "power"
     (lastIds
-      (lastInstanceId 60)
+      (lastInstanceId 61)
       (lastNetId 32)
-      (lastInstTermId 129)
+      (lastInstTermId 131)
     )
     (cells
       ("S1" "ostoq047150" "misc" "sym_1"
@@ -110,12 +110,16 @@
           ("T104" "2" -1 -1 3)
         )
       )
-      ("S17" "1n5824" "diodes" "sym_1"
-      )
       ("S18" "eleccap" "capacitors" "sym_1"
         (terms
           ("T113" "1" -1 -1 3)
           ("T114" "2" -1 -1 3)
+        )
+      )
+      ("S19" "1n5822" "diodes" "sym_1"
+        (terms
+          ("T124" "an" -1 -1 3)
+          ("T125" "cat" -1 -1 3)
         )
       )
     )
@@ -875,8 +879,6 @@
           )
         )
       )
-      ("I58" "page1_i58" "S17"
-      )
       ("I59" "page1_i60" "S18"
         (pins
           ("M126" "T113" -1 -1
@@ -901,6 +903,20 @@
           ("M129" "T114" -1 -1
             (conn
               ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+        )
+      )
+      ("I61" "page1_i63" "S19"
+        (pins
+          ("M130" "T124" -1 -1
+            (conn
+              ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+          ("M131" "T125" -1 -1
+            (conn
+              ("0" -1 -1 "N30" -1 -1)
             )
           )
         )

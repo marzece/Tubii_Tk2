@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-28T15:29:21</modificationTime>
+    <modificationTime>2015-05-28T15:43:20</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="power" view="sch_1">
       <lastids>
         <instanceid>60</instanceid>
-        <netid>31</netid>
+        <netid>32</netid>
         <insttermid>129</insttermid>
       </lastids>
       <cells>
@@ -458,6 +458,12 @@
         <net>
           <id>N30</id>
           <name>unnamed_1_lm2596_i56_vout</name>
+        </net>
+        <net>
+          <id>N32</id>
+          <name>vcc_io_en</name>
+          <scope>interface</scope>
+          <direction>input</direction>
         </net>
         <net>
           <id>N1</id>
@@ -2365,6 +2371,7 @@
               <id>M120</id>
               <termid>T91</termid>
               <connections>
+                <connection net="N32" />
               </connections>
             </pin>
             <pin>
@@ -2557,6 +2564,12 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="vcc_io_en">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>input</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="vccio">
             <pageScope number="1">
               <scope>global</scope>
@@ -2594,6 +2607,7 @@
               <net ref="vcc24_raw"></net>
               <net ref="vcc24m"></net>
               <net ref="vcc24m_raw"></net>
+              <net ref="vcc_io_en"></net>
               <net ref="vcc_raw"></net>
               <net ref="vccio"></net>
               <net ref="vee"></net>

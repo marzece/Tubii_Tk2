@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 24 )
+			( logicalViewRevNum 25 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -392,6 +392,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PIN_TEXT" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -399,6 +415,10 @@
 			( design "power"
 			)
 			( signal "@tubii_tk2_lib.power(sch_1):gnd"
+				( alias ( signalRef "@tubii_tk2_lib.power(sch_1):page1_gnd") )
+				( attribute "PHYS_NET_NAME" "GND"
+					( Origin gPackager )
+				)
 				( objectStatus "gnd" )
 			)
 			( signal "@tubii_tk2_lib.power(sch_1):unnamed_1_ledl_i12_a"
@@ -463,6 +483,10 @@
 			)
 			( signal "@tubii_tk2_lib.power(sch_1):unnamed_1_lm2596_i56_vout"
 				( objectStatus "unnamed_1_lm2596_i56_vout" )
+			)
+			( signal "@tubii_tk2_lib.power(sch_1):page1_gnd"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_gnd" )
 			)
 			( gate "@tubii_tk2_lib.power(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -4296,7 +4320,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-450,3200)"
+				( attribute "XY" "(-475,3075)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "LM2596"
@@ -4335,7 +4359,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(50,3325)"
+				( attribute "XY" "(75,3200)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "SRR6038"
@@ -4349,6 +4373,36 @@
 				)
 				( pin "\2\"
 				)
+			)
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i58"
+				( attribute "CDS_LIB" "diodes"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "PIN_TEXT" "CAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-125,2900)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "1N5824"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "1N5824"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I58" )
 			)
 		)
 	)
