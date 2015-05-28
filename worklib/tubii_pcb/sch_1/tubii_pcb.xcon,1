@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-26T18:41:09</modificationTime>
+    <modificationTime>2015-05-27T21:45:34</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_pcb" view="sch_1">
       <lastids>
         <instanceid>17</instanceid>
-        <netid>309</netid>
-        <insttermid>1236</insttermid>
+        <netid>315</netid>
+        <insttermid>1301</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -32,11 +32,6 @@
             <term>
               <id>T703</id>
               <name>clk</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T704</id>
-              <name>clocks_data_rdy</name>
               <direction>output</direction>
             </term>
             <term>
@@ -111,11 +106,6 @@
               <lsb>0</lsb>
             </term>
             <term>
-              <id>T724</id>
-              <name>smellie_pre_delay</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T725</id>
               <name>sync</name>
               <direction>input</direction>
@@ -123,11 +113,6 @@
             <term>
               <id>T726</id>
               <name>sync24</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T727</id>
-              <name>tellie_pre_delay</name>
               <direction>input</direction>
             </term>
             <term>
@@ -143,11 +128,6 @@
             <term>
               <id>T730</id>
               <name>generic_pulse</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T731</id>
-              <name>generic_delay_out</name>
               <direction>output</direction>
             </term>
             <term>
@@ -184,6 +164,26 @@
               <id>T1501</id>
               <name>mux_enable</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T1639</id>
+              <name>clocks_data_rdy</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1641</id>
+              <name>generic_delay_out</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1644</id>
+              <name>smellie_pre_delay</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T1645</id>
+              <name>tellie_pre_delay</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -1571,6 +1571,12 @@
           <name>unnamed_1_hct238_i53_e3</name>
         </net>
         <net>
+          <id>N309</id>
+          <name>gnd</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
           <id>vcc</id>
           <name>vcc</name>
           <scope>global</scope>
@@ -1602,12 +1608,6 @@
         <net>
           <id>v3p3</id>
           <name>v3p3</name>
-          <scope>global</scope>
-          <inherited>1</inherited>
-        </net>
-        <net>
-          <id>N309</id>
-          <name>gnd</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -1646,13 +1646,7 @@
               <termid>T703</termid>
               <connections>
                 <connection net="N87" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M591</id>
-              <termid>T704</termid>
-              <connections>
-                <connection net="N159" />
+                <connection net="N87" />
               </connections>
             </pin>
             <pin>
@@ -1666,6 +1660,7 @@
               <id>M593</id>
               <termid>T706</termid>
               <connections>
+                <connection net="N88" />
                 <connection net="N88" />
               </connections>
             </pin>
@@ -1685,6 +1680,7 @@
               <termid>T709</termid>
               <connections>
                 <connection net="N144" />
+                <connection net="N144" />
               </connections>
             </pin>
             <pin>
@@ -1701,12 +1697,14 @@
               <termid>T711</termid>
               <connections>
                 <connection net="N198" />
+                <connection net="N198" />
               </connections>
             </pin>
             <pin>
               <id>M599</id>
               <termid>T712</termid>
               <connections>
+                <connection net="N200" />
                 <connection net="N200" />
               </connections>
             </pin>
@@ -1715,12 +1713,14 @@
               <termid>T714</termid>
               <connections>
                 <connection net="N201" />
+                <connection net="N201" />
               </connections>
             </pin>
             <pin>
               <id>M602</id>
               <termid>T715</termid>
               <connections>
+                <connection net="N203" />
                 <connection net="N203" />
               </connections>
             </pin>
@@ -1755,13 +1755,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M611</id>
-              <termid>T724</termid>
-              <connections>
-                <connection net="N199" />
-              </connections>
-            </pin>
-            <pin>
               <id>M612</id>
               <termid>T725</termid>
               <connections>
@@ -1776,13 +1769,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M614</id>
-              <termid>T727</termid>
-              <connections>
-                <connection net="N202" />
-              </connections>
-            </pin>
-            <pin>
               <id>M615</id>
               <termid>T728</termid>
               <connections>
@@ -1794,6 +1780,7 @@
               <termid>T729</termid>
               <connections>
                 <connection net="N152" />
+                <connection net="N152" />
               </connections>
             </pin>
             <pin>
@@ -1801,13 +1788,6 @@
               <termid>T730</termid>
               <connections>
                 <connection net="N82" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M618</id>
-              <termid>T731</termid>
-              <connections>
-                <connection net="N81" />
               </connections>
             </pin>
             <pin>
@@ -1857,6 +1837,34 @@
               <termid>T1501</termid>
               <connections>
                 <connection net="N308" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1295</id>
+              <termid>T1639</termid>
+              <connections>
+                <connection net="N159" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1297</id>
+              <termid>T1641</termid>
+              <connections>
+                <connection net="N81" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1300</id>
+              <termid>T1644</termid>
+              <connections>
+                <connection net="N199" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1301</id>
+              <termid>T1645</termid>
+              <connections>
+                <connection net="N202" />
               </connections>
             </pin>
           </pins>

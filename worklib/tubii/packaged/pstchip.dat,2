@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 27-May-2015 AT 19:09:22 }
+{ Packager-XL run on 27-May-2015 AT 23:12:55 }
 primitive '1N4448';
   pin
     'IN':
@@ -533,6 +533,81 @@ primitive '74LV07A';
   body
       PART_NAME='74LV07A';
       BODY_NAME='74LV07A';
+      JEDEC_TYPE='TSSOP14';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
+primitive '74LVC07A';
+  pin
+    'A1':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A2':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A3':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A4':
+      PIN_NUMBER='(9)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A5':
+      PIN_NUMBER='(11)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A6':
+      PIN_NUMBER='(13)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Y1':
+      PIN_NUMBER='(2)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y2':
+      PIN_NUMBER='(4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y3':
+      PIN_NUMBER='(6)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y4':
+      PIN_NUMBER='(8)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y5':
+      PIN_NUMBER='(10)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y6':
+      PIN_NUMBER='(12)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'GND':
+      PIN_NUMBER='(7)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VCC':
+      PIN_NUMBER='(14)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+      PART_NAME='74LVC07A';
+      BODY_NAME='74LVC07A';
       JEDEC_TYPE='TSSOP14';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
