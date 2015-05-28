@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 27-May-2015 AT 10:39:26 }
+{ Packager-XL run on 27-May-2015 AT 19:09:22 }
 primitive '1N4448';
   pin
     'IN':
@@ -882,6 +882,44 @@ primitive 'BAS16LT1';
       PHYS_DES_PREFIX='D';
       CLASS='DISCRETE';
       NC_PINS='(2)';
+  end_body;
+end_primitive;
+primitive 'BSS138';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='BSS138';
+      BODY_NAME='BSS138';
+      JEDEC_TYPE='SOT23';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
   end_body;
 end_primitive;
 primitive 'CONN12';
@@ -2108,6 +2146,39 @@ primitive 'CSMD0805-1UF,10%,0805,25V';
       PARENT_PART_TYPE='CSMD0805';
       PARENT_PPT='CSMD0805';
       PARENT_PPT_PART='CSMD0805-1UF,10%,0805,25V';
+  end_body;
+end_primitive;
+primitive 'CSMD0805-5PF,5%,0805,50V';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='CSMD0805';
+      PATH='1P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
+      VER='1';
+      XY='(1400,2400)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='CSMD0805';
+      JEDEC_TYPE='CAP805';
+      PHYS_DES_PREFIX='C';
+      CLASS='DISCRETE';
+      VALUE='5PF';
+      PARENT_PART_TYPE='CSMD0805';
+      PARENT_PPT='CSMD0805';
+      PARENT_PPT_PART='CSMD0805-5PF,5%,0805,50V';
   end_body;
 end_primitive;
 primitive 'CSMD0805-NS,10%,0805,25V';
@@ -5877,6 +5948,40 @@ primitive 'RSMD0805-499,1%,0805';
       PARENT_PART_TYPE='RSMD0805';
       PARENT_PPT='RSMD0805';
       PARENT_PPT_PART='RSMD0805-499,1%,0805';
+  end_body;
+end_primitive;
+primitive 'RSMD0805-4K,1%,0805';
+  pin
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='RSMD0805';
+      COMP_TYPE='RES';
+      PATH='2P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
+      VER='1';
+      XY='(1350,1350)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='RSMD0805';
+      JEDEC_TYPE='RES805';
+      PHYS_DES_PREFIX='R';
+      CLASS='DISCRETE';
+      VALUE='4K';
+      PARENT_PART_TYPE='RSMD0805';
+      PARENT_PPT='RSMD0805';
+      PARENT_PPT_PART='RSMD0805-4K,1%,0805';
   end_body;
 end_primitive;
 primitive 'RSMD0805-5.1K,1%,0805';

@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-27T20:06:41</modificationTime>
+    <modificationTime>2015-05-27T20:20:59</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>28</instanceid>
-        <netid>89</netid>
-        <insttermid>404</insttermid>
+        <instanceid>32</instanceid>
+        <netid>97</netid>
+        <insttermid>436</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -793,6 +792,86 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S11</id>
+          <library>ttl</library>
+          <name>74lvc07a</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T325</id>
+              <name>a1</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T326</id>
+              <name>a2</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T327</id>
+              <name>a3</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T328</id>
+              <name>a4</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T329</id>
+              <name>a5</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T330</id>
+              <name>a6</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T331</id>
+              <name>gnd</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T332</id>
+              <name>vcc</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T333</id>
+              <name>y1</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T334</id>
+              <name>y2</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T335</id>
+              <name>y3</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T336</id>
+              <name>y4</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T337</id>
+              <name>y5</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T338</id>
+              <name>y6</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -808,6 +887,8 @@
         <net>
           <id>N3</id>
           <name>clk</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N4</id>
@@ -824,6 +905,8 @@
         <net>
           <id>N6</id>
           <name>data</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N7</id>
@@ -856,6 +939,8 @@
         <net>
           <id>N14</id>
           <name>mtca_mimic_data_rdy</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N15</id>
@@ -868,18 +953,26 @@
         <net>
           <id>N16</id>
           <name>smellie_delay</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N17</id>
           <name>smellie_pulse</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N19</id>
           <name>tellie_delay</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N20</id>
           <name>tellie_pulse</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N21</id>
@@ -990,6 +1083,8 @@
         <net>
           <id>N46</id>
           <name>spkr</name>
+          <scope>interface</scope>
+          <direction>output</direction>
         </net>
         <net>
           <id>N47</id>
@@ -1128,12 +1223,36 @@
           <name>unnamed_1_bss138_i128_1</name>
         </net>
         <net>
-          <id>N88</id>
-          <name>unnamed_1_74lv07a_i136_y1</name>
+          <id>N90</id>
+          <name>clk_mz</name>
         </net>
         <net>
-          <id>N89</id>
-          <name>unnamed_1_74lv07a_i136_y3</name>
+          <id>N91</id>
+          <name>data_mz</name>
+        </net>
+        <net>
+          <id>N92</id>
+          <name>mtca_mimic_data_rdy_mz</name>
+        </net>
+        <net>
+          <id>N93</id>
+          <name>smellie_delay_mz</name>
+        </net>
+        <net>
+          <id>N94</id>
+          <name>smellie_pulse_mz</name>
+        </net>
+        <net>
+          <id>N95</id>
+          <name>spkr_mz</name>
+        </net>
+        <net>
+          <id>N96</id>
+          <name>tellie_delay_mz</name>
+        </net>
+        <net>
+          <id>N97</id>
+          <name>tellie_pulse_mz</name>
         </net>
         <net>
           <id>N23</id>
@@ -1387,7 +1506,7 @@
               <id>M32</id>
               <termid>T32</termid>
               <connections>
-                <connection net="N14" />
+                <connection net="N92" />
               </connections>
             </pin>
             <pin>
@@ -1414,7 +1533,7 @@
               <id>M36</id>
               <termid>T36</termid>
               <connections>
-                <connection net="N6" />
+                <connection net="N91" />
               </connections>
             </pin>
             <pin>
@@ -1427,7 +1546,7 @@
               <id>M38</id>
               <termid>T38</termid>
               <connections>
-                <connection net="N3" />
+                <connection net="N90" />
               </connections>
             </pin>
             <pin>
@@ -1454,7 +1573,7 @@
               <id>M42</id>
               <termid>T42</termid>
               <connections>
-                <connection net="N46" />
+                <connection net="N95" />
               </connections>
             </pin>
             <pin>
@@ -1467,7 +1586,7 @@
               <id>M44</id>
               <termid>T44</termid>
               <connections>
-                <connection net="N20" />
+                <connection net="N97" />
               </connections>
             </pin>
             <pin>
@@ -1495,7 +1614,7 @@
               <id>M48</id>
               <termid>T48</termid>
               <connections>
-                <connection net="N17" />
+                <connection net="N94" />
               </connections>
             </pin>
             <pin>
@@ -1509,7 +1628,7 @@
               <id>M50</id>
               <termid>T50</termid>
               <connections>
-                <connection net="N19" />
+                <connection net="N96" />
               </connections>
             </pin>
             <pin>
@@ -1537,7 +1656,7 @@
               <id>M54</id>
               <termid>T54</termid>
               <connections>
-                <connection net="N16" />
+                <connection net="N93" />
               </connections>
             </pin>
             <pin>
@@ -3592,8 +3711,86 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I27</id>
-          <cellid>S4</cellid>
+          <id>I29</id>
+          <cellid>S6</cellid>
+          <name>page1_i146</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M405</id>
+              <termid>T255</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M406</id>
+              <termid>T256</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N24" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I30</id>
+          <cellid>S6</cellid>
+          <name>page1_i147</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M407</id>
+              <termid>T255</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M408</id>
+              <termid>T256</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N24" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I31</id>
+          <cellid>S11</cellid>
           <name>page1_i135</name>
           <parameters>
           </parameters>
@@ -3603,90 +3800,98 @@
           </powers>
           <pins>
             <pin>
-              <id>M377</id>
-              <termid>T206</termid>
+              <id>M409</id>
+              <termid>T325</termid>
+              <connections>
+                <connection net="N92" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M410</id>
+              <termid>T326</termid>
+              <connections>
+                <connection net="N91" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M411</id>
+              <termid>T327</termid>
+              <connections>
+                <connection net="N90" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M412</id>
+              <termid>T328</termid>
+              <connections>
+                <connection net="N95" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M413</id>
+              <termid>T329</termid>
+              <connections>
+                <connection net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M414</id>
+              <termid>T330</termid>
+              <connections>
+                <connection net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M415</id>
+              <termid>T331</termid>
+              <connections>
+                <connection net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M416</id>
+              <termid>T332</termid>
+              <connections>
+                <connection net="N24" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M417</id>
+              <termid>T333</termid>
               <connections>
                 <connection net="N14" />
               </connections>
             </pin>
             <pin>
-              <id>M378</id>
-              <termid>T207</termid>
+              <id>M418</id>
+              <termid>T334</termid>
               <connections>
                 <connection net="N6" />
               </connections>
             </pin>
             <pin>
-              <id>M379</id>
-              <termid>T208</termid>
+              <id>M419</id>
+              <termid>T335</termid>
               <connections>
                 <connection net="N3" />
               </connections>
             </pin>
             <pin>
-              <id>M380</id>
-              <termid>T209</termid>
+              <id>M420</id>
+              <termid>T336</termid>
               <connections>
                 <connection net="N46" />
               </connections>
             </pin>
             <pin>
-              <id>M381</id>
-              <termid>T210</termid>
+              <id>M421</id>
+              <termid>T337</termid>
               <connections>
               </connections>
             </pin>
             <pin>
-              <id>M382</id>
-              <termid>T211</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M383</id>
-              <termid>T212</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M384</id>
-              <termid>T213</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M385</id>
-              <termid>T214</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M386</id>
-              <termid>T215</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M387</id>
-              <termid>T216</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M388</id>
-              <termid>T217</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M389</id>
-              <termid>T218</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M390</id>
-              <termid>T219</termid>
+              <id>M422</id>
+              <termid>T338</termid>
               <connections>
               </connections>
             </pin>
@@ -3701,8 +3906,8 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I28</id>
-          <cellid>S4</cellid>
+          <id>I32</id>
+          <cellid>S11</cellid>
           <name>page1_i136</name>
           <parameters>
           </parameters>
@@ -3712,94 +3917,98 @@
           </powers>
           <pins>
             <pin>
-              <id>M391</id>
-              <termid>T206</termid>
+              <id>M423</id>
+              <termid>T325</termid>
+              <connections>
+                <connection net="N97" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M424</id>
+              <termid>T326</termid>
+              <connections>
+                <connection net="N94" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M425</id>
+              <termid>T327</termid>
+              <connections>
+                <connection net="N96" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M426</id>
+              <termid>T328</termid>
+              <connections>
+                <connection net="N93" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M427</id>
+              <termid>T329</termid>
+              <connections>
+                <connection net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M428</id>
+              <termid>T330</termid>
+              <connections>
+                <connection net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M429</id>
+              <termid>T331</termid>
+              <connections>
+                <connection net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M430</id>
+              <termid>T332</termid>
+              <connections>
+                <connection net="N24" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M431</id>
+              <termid>T333</termid>
               <connections>
                 <connection net="N20" />
               </connections>
             </pin>
             <pin>
-              <id>M392</id>
-              <termid>T207</termid>
+              <id>M432</id>
+              <termid>T334</termid>
               <connections>
                 <connection net="N17" />
               </connections>
             </pin>
             <pin>
-              <id>M393</id>
-              <termid>T208</termid>
+              <id>M433</id>
+              <termid>T335</termid>
               <connections>
                 <connection net="N19" />
               </connections>
             </pin>
             <pin>
-              <id>M394</id>
-              <termid>T209</termid>
+              <id>M434</id>
+              <termid>T336</termid>
               <connections>
                 <connection net="N16" />
               </connections>
             </pin>
             <pin>
-              <id>M395</id>
-              <termid>T210</termid>
+              <id>M435</id>
+              <termid>T337</termid>
               <connections>
               </connections>
             </pin>
             <pin>
-              <id>M396</id>
-              <termid>T211</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M397</id>
-              <termid>T212</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M398</id>
-              <termid>T213</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M399</id>
-              <termid>T214</termid>
-              <connections>
-                <connection net="N88" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M400</id>
-              <termid>T215</termid>
-              <connections>
-                <connection net="N88" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M401</id>
-              <termid>T216</termid>
-              <connections>
-                <connection net="N89" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M402</id>
-              <termid>T217</termid>
-              <connections>
-                <connection net="N89" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M403</id>
-              <termid>T218</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M404</id>
-              <termid>T219</termid>
+              <id>M436</id>
+              <termid>T338</termid>
               <connections>
               </connections>
             </pin>
@@ -3834,6 +4043,12 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
+          <netScope ref="clk">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="clk100_in">
             <pageScope number="1">
               <scope>interface</scope>
@@ -3856,6 +4071,12 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="data">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="ext_trig">
@@ -3899,6 +4120,12 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
+          <netScope ref="mtca_mimic_data_rdy">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="mtca_mimic_trig1">
             <pageScope number="1">
               <scope>interface</scope>
@@ -3935,10 +4162,28 @@
               <direction>output</direction>
             </pageScope>
           </netScope>
+          <netScope ref="smellie_delay">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="smellie_pre_delay">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="smellie_pulse">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="spkr">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="sync">
@@ -3953,10 +4198,22 @@
               <direction>input</direction>
             </pageScope>
           </netScope>
+          <netScope ref="tellie_delay">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="tellie_pre_delay">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>input</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="tellie_pulse">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>output</direction>
             </pageScope>
           </netScope>
           <netScope ref="tubii_rt_out">
@@ -3988,10 +4245,12 @@
               <net ref="clk"></net>
               <net ref="clk100_in"></net>
               <net ref="clk100_in_mz"></net>
+              <net ref="clk_mz"></net>
               <net ref="clocks_data_rdy"></net>
               <net ref="cntrl_rdy"></net>
               <net ref="cntrl_reg_chk"></net>
               <net ref="data"></net>
+              <net ref="data_mz"></net>
               <net ref="ext_trig">
                 <msb>15</msb>
                 <lsb>0</lsb>
@@ -4029,6 +4288,7 @@
                 <lsb>0</lsb>
               </net>
               <net ref="mtca_mimic_data_rdy"></net>
+              <net ref="mtca_mimic_data_rdy_mz"></net>
               <net ref="mtca_mimic_trig1"></net>
               <net ref="mtca_mimic_trig1_mz"></net>
               <net ref="mtca_mimic_trig2"></net>
@@ -4044,19 +4304,22 @@
                 <lsb>4</lsb>
               </net>
               <net ref="smellie_delay"></net>
+              <net ref="smellie_delay_mz"></net>
               <net ref="smellie_pre_delay"></net>
               <net ref="smellie_pulse"></net>
+              <net ref="smellie_pulse_mz"></net>
               <net ref="spkr"></net>
+              <net ref="spkr_mz"></net>
               <net ref="sync"></net>
               <net ref="sync24"></net>
               <net ref="sync24_mz"></net>
               <net ref="sync_mz"></net>
               <net ref="tellie_delay"></net>
+              <net ref="tellie_delay_mz"></net>
               <net ref="tellie_pre_delay"></net>
               <net ref="tellie_pulse"></net>
+              <net ref="tellie_pulse_mz"></net>
               <net ref="tubii_rt_out"></net>
-              <net ref="unnamed_1_74lv07a_i136_y1"></net>
-              <net ref="unnamed_1_74lv07a_i136_y3"></net>
               <net ref="unnamed_1_bss138_i123_3"></net>
               <net ref="unnamed_1_bss138_i128_1"></net>
               <net ref="unnamed_1_ledl_i102_a"></net>
@@ -4094,6 +4357,8 @@
               <instance ref="i134"></instance>
               <instance ref="i135"></instance>
               <instance ref="i136"></instance>
+              <instance ref="i146"></instance>
+              <instance ref="i147"></instance>
             </instances>
           </page>
         </pages>

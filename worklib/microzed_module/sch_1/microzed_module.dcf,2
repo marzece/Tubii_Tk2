@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 36 )
+			( logicalViewRevNum 37 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -674,11 +674,29 @@
 			( signal "@tubii_tk2_lib.microzed_module(sch_1):unnamed_1_bss138_i128_1"
 				( objectStatus "unnamed_1_bss138_i128_1" )
 			)
-			( signal "@tubii_tk2_lib.microzed_module(sch_1):unnamed_1_74lv07a_i136_y1"
-				( objectStatus "unnamed_1_74lv07a_i136_y1" )
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):clk_mz"
+				( objectStatus "clk_mz" )
 			)
-			( signal "@tubii_tk2_lib.microzed_module(sch_1):unnamed_1_74lv07a_i136_y3"
-				( objectStatus "unnamed_1_74lv07a_i136_y3" )
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):data_mz"
+				( objectStatus "data_mz" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):mtca_mimic_data_rdy_mz"
+				( objectStatus "mtca_mimic_data_rdy_mz" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):smellie_delay_mz"
+				( objectStatus "smellie_delay_mz" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):smellie_pulse_mz"
+				( objectStatus "smellie_pulse_mz" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):spkr_mz"
+				( objectStatus "spkr_mz" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):tellie_delay_mz"
+				( objectStatus "tellie_delay_mz" )
+			)
+			( signal "@tubii_tk2_lib.microzed_module(sch_1):tellie_pulse_mz"
+				( objectStatus "tellie_pulse_mz" )
 			)
 			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -3743,10 +3761,10 @@
 				( attribute "XY" "(-3550,2350)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "74LV07A"
+				( attribute "CHIPS_PART_NAME" "74LVC07A"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "74LV07A"
+				( attribute "CDS_PART_NAME" "74LVC07A"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I135" )
@@ -3795,13 +3813,13 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-3525,1850)"
+				( attribute "XY" "(-3550,1825)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "74LV07A"
+				( attribute "CHIPS_PART_NAME" "74LVC07A"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "74LV07A"
+				( attribute "CDS_PART_NAME" "74LVC07A"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I136" )
@@ -3832,6 +3850,166 @@
 				( pin "y5"
 				)
 				( pin "y6"
+				)
+			)
+			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i146"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3575,2750)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I146" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_tk2_lib.microzed_module(sch_1):page1_i147"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3550,2175)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,10%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I147" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
 				)
 			)
 			( bus "@tubii_tk2_lib.microzed_module(sch_1):le"
