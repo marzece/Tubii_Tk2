@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 27 )
+			( logicalViewRevNum 34 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -408,6 +408,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "TOLERANCE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -480,11 +496,11 @@
 			( signal "@tubii_tk2_lib.power(sch_1):vccio"
 				( objectStatus "vccio" )
 			)
-			( signal "@tubii_tk2_lib.power(sch_1):unnamed_1_lm2596_i56_vout"
-				( objectStatus "unnamed_1_lm2596_i56_vout" )
-			)
 			( signal "@tubii_tk2_lib.power(sch_1):vcc_io_en"
 				( objectStatus "vcc_io_en" )
+			)
+			( signal "@tubii_tk2_lib.power(sch_1):unnamed_1_1n5822_i63_cat"
+				( objectStatus "unnamed_1_1n5822_i63_cat" )
 			)
 			( gate "@tubii_tk2_lib.power(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -4302,87 +4318,14 @@
 					)
 				)
 			)
-			( gate "@tubii_tk2_lib.power(sch_1):page1_i56"
-				( attribute "CDS_LIB" "regulators"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,225,125,-125"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-475,3075)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LM2596"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LM2596"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I56" )
-				( pin "fb"
-				)
-				( pin "gnd"
-				)
-				( pin "\on*\"
-				)
-				( pin "tab"
-				)
-				( pin "vin"
-				)
-				( pin "vout"
-				)
-			)
-			( gate "@tubii_tk2_lib.power(sch_1):page1_i57"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,25,125,-50"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(75,3200)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "SRR6038"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "SRR6038"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I57" )
-				( pin "\1\"
-				)
-				( pin "\2\"
-				)
-			)
-			( gate "@tubii_tk2_lib.power(sch_1):page1_i58"
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i63"
 				( attribute "CDS_LIB" "diodes"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,50,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "PIN_TEXT" "CAT"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "1"
@@ -4391,26 +4334,179 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-125,2900)"
+				( attribute "XY" "(-125,2875)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "1N5824"
+				( attribute "CHIPS_PART_NAME" "1N5822"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "1N5824"
+				( attribute "CDS_PART_NAME" "1N5822"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I58" )
+				( attribute "CDS_LOCATION" "U227"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U227"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I63" )
+				( pin "an"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "cat"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
-			( gate "@tubii_tk2_lib.power(sch_1):page1_i60"
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i64"
+				( attribute "ABBREV" "NDC"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "LMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIELECTRIC" "DSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "LTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "LTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROOM" "POWER"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "33UH"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(0,3175)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "INDUCTOR_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "INDUCTOR_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "L6"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "L6"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I64" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i65"
 				( attribute "CDS_LIB" "capacitors"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,150,125,-150"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,200,125,-50"
 					( Origin gPackager )
 				)
-				( attribute "PACK_TYPE" "ELECTCAP"
+				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "3"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOLERANCE" "20%,16V,X7S"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "100UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(600,2950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CAP_1210"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CAP_1210-100UF,20%,16V,X7S"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C226"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C226"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I65" )
+				( pin "\1\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "\2\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i66"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,200,125,-50"
+					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
@@ -4418,56 +4514,83 @@
 				( attribute "ROT" "5"
 					( Origin gFrontEnd )
 				)
+				( attribute "TOLERANCE" "20%,6.3V,X5R"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "220UF"
+					( Origin gFrontEnd )
+				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(500,2925)"
+				( attribute "XY" "(-900,2925)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "ELECCAP"
+				( attribute "CHIPS_PART_NAME" "CAP_1210"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "ELECCAP_ELECTCAP"
+				( attribute "CDS_PART_NAME" "CAP_1210-220UF,20%,6.3V,X5R"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I60" )
+				( attribute "CDS_LOCATION" "C225"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C225"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I66" )
 				( pin "\1\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "\2\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
-			( gate "@tubii_tk2_lib.power(sch_1):page1_i61"
-				( attribute "CDS_LIB" "capacitors"
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i67"
+				( attribute "CDS_LIB" "regulators"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,150,125,-150"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
-				)
-				( attribute "PACK_TYPE" "ELECTCAP"
-					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "ROT" "5"
+				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-800,2950)"
+				( attribute "XY" "(-475,3175)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "ELECCAP"
+				( attribute "CHIPS_PART_NAME" "LM2595"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "ELECCAP_ELECTCAP"
+				( attribute "CDS_PART_NAME" "LM2595"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I61" )
-				( pin "\1\"
+				( objectStatus "PAGE1_I67" )
+				( pin "fb"
 				)
-				( pin "\2\"
+				( pin "gnd"
+				)
+				( pin "\on*\"
+				)
+				( pin "vin"
+				)
+				( pin "vout"
 				)
 			)
 		)

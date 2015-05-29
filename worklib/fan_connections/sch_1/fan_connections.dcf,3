@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 2 )
+			( logicalViewRevNum 4 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -360,6 +360,70 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "_PDVDUP1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PIN_TEXT" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TOLERANCE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -373,10 +437,10 @@
 				( objectStatus "vcc" )
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i1"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -385,27 +449,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,3900)"
+				( attribute "XY" "(-2425,3875)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I1" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i2"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -414,27 +483,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,3800)"
+				( attribute "XY" "(-1500,3875)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I2" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i3"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -443,27 +517,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,3600)"
+				( attribute "XY" "(-1475,3725)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I3" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i4"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -472,27 +551,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,3500)"
+				( attribute "XY" "(-1450,3550)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I4" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i5"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -501,27 +585,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,3300)"
+				( attribute "XY" "(-1450,3350)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I5" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i6"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -530,27 +619,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,3200)"
+				( attribute "XY" "(-1450,3200)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I6" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i7"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -559,27 +653,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,2975)"
+				( attribute "XY" "(-1425,3025)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I7" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i8"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -588,27 +687,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,2875)"
+				( attribute "XY" "(-1425,2825)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I8" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i9"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -617,27 +721,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,2625)"
+				( attribute "XY" "(-1400,2600)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I9" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i10"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -646,27 +755,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,2525)"
+				( attribute "XY" "(-1375,2350)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I10" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i11"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -675,27 +789,32 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,2275)"
+				( attribute "XY" "(-1350,2200)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I11" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i12"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -704,20 +823,127 @@
 				( attribute "ROT" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2350,2175)"
+				( attribute "XY" "(-250,2200)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I12" )
-				( pin "a"
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
+			)
+			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i13"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-250,2425)"
+					( Origin gFrontEnd )
+				)
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I13" )
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
+			)
+			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i14"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-250,2725)"
+					( Origin gFrontEnd )
+				)
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I14" )
+				( pin "\1\"
+				)
+				( pin "\2\"
+				)
+			)
+			( gate "@tubii_tk2_lib.fan_connections(sch_1):page1_i15"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,50,25,-50"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-275,3000)"
+					( Origin gFrontEnd )
+				)
+				( attribute "_PDVDUP1" "<< NULL >>"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_2PIN"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I15" )
+				( pin "\1\"
+				)
+				( pin "\2\"
 				)
 			)
 		)

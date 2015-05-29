@@ -5,19 +5,23 @@
    (tool "Packager-XL")
    (class "LOGICAL")
    (severity 40)
-   (error_num 228)
-   (short_msg "ERROR(SPCODD-228): Cannot package the following primitive instance in any section of the physical part '1N5824'.")
-   (long_msg "ERROR(SPCODD-228): Cannot package the following primitive instance in any section of the physical part '1N5824'.
-        Primitive Instance: @TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I5@TUBII_TK2_LIB.POWER(SCH_1):PAGE1_I58@DIODES.1N5824(CHIPS) (MODULE: POWER; PART: 1N5824)
-        Physical Path: @tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i58@diodes.\1n5824\(chips)
-        The primitive instance has pins which does not match the section definition in chips.prt. Check the pin definitions for each section in the chips.prt file. Regenerate the netlist and rerun packager.
+   (error_num 1053)
+   (short_msg "ERROR(SPCOPK-1053): Cannot find a ppt part that matches the instance properties.")
+   (long_msg "ERROR(SPCOPK-1053): Cannot find a ppt part that matches the instance properties.
+        Ppt Name: LED_1206
+        Schematic instance: @TUBII_TK2_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_TK2_LIB.TUBII_PCB(SCH_1):PAGE1_I1@TUBII_TK2_LIB.MICROZED_MODULE(SCH_1):PAGE1_I255@MISC.LED_1206(CHIPS)
+        Physical Path: @tubii_tk2_lib.tubii(sch_1):page2_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i255@misc.led_1206(chips)
+                          Property Value: 
+                          Property Value: 
+                          Property Value: 
+                          Property Value: 
 ")
    (location
     (
      (object_kind "instance")
-     (canonical_name "_!drawerror inst I58;")
-     (parent_canonical_name "DRAWERROR inst I58")
-     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1")
+     (canonical_name "_!drawerror inst I255;")
+     (parent_canonical_name "DRAWERROR inst I255")
+     (drawing_name "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1")
     )
    )
   )
