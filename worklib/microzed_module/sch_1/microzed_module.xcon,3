@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-05-29T16:56:24</modificationTime>
+    <modificationTime>2015-05-29T17:41:15</modificationTime>
     <savedLibrary>tubii_tk2_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="microzed_module" view="sch_1">
       <lastids>
-        <instanceid>102</instanceid>
-        <netid>144</netid>
-        <insttermid>656</insttermid>
+        <instanceid>104</instanceid>
+        <netid>145</netid>
+        <insttermid>659</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -932,6 +932,26 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S13</id>
+          <library>misc</library>
+          <name>led_1206</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T426</id>
+              <name>a</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T427</id>
+              <name>b</name>
+              <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -1399,6 +1419,10 @@
         <net>
           <id>N144</id>
           <name>vccio_en_0</name>
+        </net>
+        <net>
+          <id>N145</id>
+          <name>unnamed_1_74lv06a_i237_vcc</name>
         </net>
         <net>
           <id>N23</id>
@@ -5799,7 +5823,7 @@
               <id>M633</id>
               <termid>T382</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N145" />
               </connections>
             </pin>
             <pin>
@@ -5866,7 +5890,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N23" />
+                <connection pinmsb="0" pinlsb="0" net="N145" />
               </connections>
             </pin>
             <pin>
@@ -6291,6 +6315,69 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I103</id>
+          <cellid>S13</cellid>
+          <name>page1_i255</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M657</id>
+              <termid>T426</termid>
+              <connections>
+                <connection net="N23" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M658</id>
+              <termid>T427</termid>
+              <connections>
+                <connection net="N145" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I104</id>
+          <cellid>S10</cellid>
+          <name>page1_i256</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M659</id>
+              <termid>T298</termid>
+              <connections>
+                <connection net="N141" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -6625,6 +6712,7 @@
               <net ref="tellie_pulse_mz"></net>
               <net ref="tubii_rt_out"></net>
               <net ref="tubii_rt_out_mz"></net>
+              <net ref="unnamed_1_74lv06a_i237_vcc"></net>
               <net ref="unnamed_1_bss138_i128_1"></net>
               <net ref="unnamed_1_fci61083-101400lf_i23_14"></net>
               <net ref="unnamed_1_ledl_i102_a"></net>
@@ -6717,6 +6805,8 @@
               <instance ref="i252"></instance>
               <instance ref="i253"></instance>
               <instance ref="i254"></instance>
+              <instance ref="i255"></instance>
+              <instance ref="i256"></instance>
             </instances>
           </page>
         </pages>
