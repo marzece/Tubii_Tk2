@@ -3,30 +3,30 @@ FILE_TYPE = CONNECTIVITY;
 "PAGE_NUMBER" = 1;
 0"NC";
 1"GND\G";
-2"GND\G";
-3"GND\G";
-4"GND\G";
+2"TTL_TO_ECL_IN";
+3"ECL_TO_TTL_IN";
+4"ECL_TO_LVDS_IN";
 5"GND\G";
-6"ECL_TO_NIM_OUT";
-7"ECL_TO_TTL_OUT";
-8"NIM_TO_ECL_OUT";
-9"LVDS_TO_ECL_OUT";
-10"TTL_TO_ECL_OUT";
+6"NIM_TO_ECL_IN";
+7"LVDS_TO_ECL_IN_N";
+8"LVDS_TO_ECL_IN_P";
+9"ECL_TO_NIM_IN";
+10"GND\G";
 11"GND\G";
-12"GND\G";
-13"GND\G";
-14"ECL_TO_LVDS_OUT_N";
-15"ECL_TO_LVDS_OUT_P";
+12"ECL_TO_LVDS_OUT_P";
+13"ECL_TO_LVDS_OUT_N";
+14"GND\G";
+15"GND\G";
 16"GND\G";
-17"GND\G";
-18"ECL_TO_NIM_IN";
-19"LVDS_TO_ECL_IN_P";
-20"LVDS_TO_ECL_IN_N";
-21"NIM_TO_ECL_IN";
+17"TTL_TO_ECL_OUT";
+18"LVDS_TO_ECL_OUT";
+19"NIM_TO_ECL_OUT";
+20"ECL_TO_TTL_OUT";
+21"ECL_TO_NIM_OUT";
 22"GND\G";
-23"ECL_TO_LVDS_IN";
-24"ECL_TO_TTL_IN";
-25"TTL_TO_ECL_IN";
+23"GND\G";
+24"GND\G";
+25"GND\G";
 26"GND\G";
 %"INPORT"
 "1","(1325,2725)","2","standard","I10";
@@ -35,7 +35,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"8;
+VHDL_PORT"IN"19;
 %"INPORT"
 "1","(1325,2850)","2","standard","I11";
 ;
@@ -43,7 +43,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"9;
+VHDL_PORT"IN"18;
 %"INPORT"
 "1","(1325,2600)","2","standard","I12";
 ;
@@ -51,7 +51,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"7;
+VHDL_PORT"IN"20;
 %"INPORT"
 "1","(1325,2500)","2","standard","I13";
 ;
@@ -59,7 +59,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"15;
+VHDL_PORT"IN"12;
 %"INPORT"
 "1","(1325,2400)","2","standard","I14";
 ;
@@ -67,7 +67,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"14;
+VHDL_PORT"IN"13;
 %"INPORT"
 "1","(1325,2300)","2","standard","I15";
 ;
@@ -75,7 +75,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"6;
+VHDL_PORT"IN"21;
 %"OUTPORT"
 "1","(1300,3975)","0","standard","I2";
 ;
@@ -83,7 +83,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"19;
+VHDL_PORT"OUT"8;
 %"OUTPORT"
 "1","(1300,4075)","0","standard","I3";
 ;
@@ -91,7 +91,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"25;
+VHDL_PORT"OUT"2;
 %"OUTPORT"
 "1","(1300,3800)","0","standard","I4";
 ;
@@ -99,7 +99,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"21;
+VHDL_PORT"OUT"6;
 %"SIP_HEADER_2PIN"
 "1","(-1475,4050)","2","misc","I43";
 ;
@@ -110,9 +110,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"16;
+$PN"2"11;
 "1 \B"
-$PN"1"25;
+$PN"1"2;
 %"SIP_HEADER_2PIN"
 "1","(-1475,3650)","2","misc","I44";
 ;
@@ -123,9 +123,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"17;
+$PN"2"10;
 "1 \B"
-$PN"1"21;
+$PN"1"6;
 %"SIP_HEADER_2PIN"
 "1","(-1475,3500)","2","misc","I45";
 ;
@@ -136,9 +136,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"12;
+$PN"2"15;
 "1 \B"
-$PN"1"24;
+$PN"1"3;
 %"SIP_HEADER_2PIN"
 "1","(-1475,3375)","2","misc","I46";
 ;
@@ -149,9 +149,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"11;
+$PN"2"16;
 "1 \B"
-$PN"1"23;
+$PN"1"4;
 %"SIP_HEADER_2PIN"
 "1","(-1475,3225)","2","misc","I47";
 ;
@@ -162,9 +162,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"13;
+$PN"2"14;
 "1 \B"
-$PN"1"18;
+$PN"1"9;
 %"SIP_HEADER_2PIN"
 "2","(-1475,3875)","2","misc","I48";
 ;
@@ -176,9 +176,9 @@ CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc"
 _PDVDUP1"";
 "2 \B"
-$PN"2"20;
+$PN"2"7;
 "1 \B"
-$PN"1"19;
+$PN"1"8;
 %"TESTPOINT_L"
 "1","(-1575,3875)","0","misc","I49";
 ;
@@ -190,7 +190,7 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"22;
+$PN"1"5;
 %"OUTPORT"
 "1","(1300,3875)","0","standard","I5";
 ;
@@ -198,7 +198,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"20;
+VHDL_PORT"OUT"7;
 %"TESTPOINT_L"
 "1","(-1525,2500)","0","misc","I50";
 ;
@@ -210,7 +210,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"26;
+$PN"1"1;
 %"SIP_HEADER_2PIN"
 "2","(-1425,2500)","2","misc","I51";
 ;
@@ -222,9 +222,9 @@ _PDVDUP1""
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"14;
+$PN"2"13;
 "1 \B"
-$PN"1"15;
+$PN"1"12;
 %"SIP_HEADER_2PIN"
 "1","(-1425,2975)","2","misc","I52";
 ;
@@ -235,9 +235,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"1;
+$PN"2"26;
 "1 \B"
-$PN"1"10;
+$PN"1"17;
 %"SIP_HEADER_2PIN"
 "1","(-1425,2875)","2","misc","I53";
 ;
@@ -248,9 +248,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"2;
+$PN"2"25;
 "1 \B"
-$PN"1"9;
+$PN"1"18;
 %"SIP_HEADER_2PIN"
 "1","(-1425,2775)","2","misc","I54";
 ;
@@ -261,9 +261,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"3;
+$PN"2"24;
 "1 \B"
-$PN"1"8;
+$PN"1"19;
 %"SIP_HEADER_2PIN"
 "1","(-1425,2675)","2","misc","I55";
 ;
@@ -274,9 +274,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"4;
+$PN"2"23;
 "1 \B"
-$PN"1"7;
+$PN"1"20;
 %"SIP_HEADER_2PIN"
 "1","(-1425,2125)","2","misc","I56";
 ;
@@ -287,9 +287,9 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"5;
+$PN"2"22;
 "1 \B"
-$PN"1"6;
+$PN"1"21;
 %"OUTPORT"
 "1","(1300,3725)","0","standard","I6";
 ;
@@ -297,7 +297,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"24;
+VHDL_PORT"OUT"3;
 %"OUTPORT"
 "1","(1300,3575)","0","standard","I7";
 ;
@@ -305,7 +305,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"18;
+VHDL_PORT"OUT"9;
 %"OUTPORT"
 "1","(1300,3650)","0","standard","I8";
 ;
@@ -313,7 +313,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 HDL_PORT"OUT"
-VHDL_PORT"OUT"23;
+VHDL_PORT"OUT"4;
 %"INPORT"
 "1","(1325,3000)","2","standard","I9";
 ;
@@ -321,5 +321,5 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"10;
+HDL_PORT"IN"17;
 END.

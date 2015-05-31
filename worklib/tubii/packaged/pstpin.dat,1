@@ -1,6 +1,6 @@
 FILE_TYPE=PINLIST;
-{ Packager-XL run on 29-May-2015 AT 11:54:27 }
-TIME=' COMPILATION ON 29-May-2015 AT 11:54:27';
+{ Packager-XL run on 29-May-2015 AT 16:17:54 }
+TIME=' COMPILATION ON 29-May-2015 AT 16:17:54';
 primitive '1N4448';      body '1N4448';
     'IN':'(1)';
     'OUT':'(2)';
@@ -667,13 +667,12 @@ primitive 'LED_L';       body 'LED_L';
     'B':'(1)';BIDI;
     'A':'(2)';BIDI;
 end_primitive;
-primitive 'LM2596';      body 'LM2596';
-    'ON*':'(5)';IN;
-    'FB':'(4)';
+primitive 'LM2595';      body 'LM2595';
+    'VIN':'(2)';
     'GND':'(3)';
-    'VOUT':'(2)';
-    'TAB':'(6)';
-    'VIN':'(1)';
+    'FB':'(4)';
+    'VOUT':'(1)';
+    'ON*':'(5)';
 end_primitive;
 primitive 'LT1085CT';    body 'LT1085CT';
     'VIN':'(3)';

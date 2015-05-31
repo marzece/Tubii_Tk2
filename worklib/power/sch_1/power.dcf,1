@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 33 )
+			( logicalViewRevNum 34 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -416,7 +416,7 @@
 				( Status  sProperty  sPackage )
 			)
 			( Objects
-				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
 				( NoInherit
 					( oGate oPin )
 				)
@@ -496,11 +496,11 @@
 			( signal "@tubii_tk2_lib.power(sch_1):vccio"
 				( objectStatus "vccio" )
 			)
-			( signal "@tubii_tk2_lib.power(sch_1):unnamed_1_lm2596_i56_vout"
-				( objectStatus "unnamed_1_lm2596_i56_vout" )
-			)
 			( signal "@tubii_tk2_lib.power(sch_1):vcc_io_en"
 				( objectStatus "vcc_io_en" )
+			)
+			( signal "@tubii_tk2_lib.power(sch_1):unnamed_1_1n5822_i63_cat"
+				( objectStatus "unnamed_1_1n5822_i63_cat" )
 			)
 			( gate "@tubii_tk2_lib.power(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -4318,75 +4318,6 @@
 					)
 				)
 			)
-			( gate "@tubii_tk2_lib.power(sch_1):page1_i56"
-				( attribute "CDS_LIB" "regulators"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,225,125,-125"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-475,3075)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LM2596"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LM2596"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U220"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U220"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I56" )
-				( pin "fb"
-					( attribute "PN" "4"
-						( Origin gPackager )
-					)
-				)
-				( pin "gnd"
-					( attribute "PN" "3"
-						( Origin gPackager )
-					)
-				)
-				( pin "\on*\"
-					( attribute "PN" "5"
-						( Origin gPackager )
-					)
-				)
-				( pin "tab"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
-				)
-				( pin "vin"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "vout"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-			)
 			( gate "@tubii_tk2_lib.power(sch_1):page1_i63"
 				( attribute "CDS_LIB" "diodes"
 					( Origin gPackager )
@@ -4623,6 +4554,43 @@
 					( attribute "PN" "2"
 						( Origin gPackager )
 					)
+				)
+			)
+			( gate "@tubii_tk2_lib.power(sch_1):page1_i67"
+				( attribute "CDS_LIB" "regulators"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-475,3175)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LM2595"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LM2595"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I67" )
+				( pin "fb"
+				)
+				( pin "gnd"
+				)
+				( pin "\on*\"
+				)
+				( pin "vin"
+				)
+				( pin "vout"
 				)
 			)
 		)

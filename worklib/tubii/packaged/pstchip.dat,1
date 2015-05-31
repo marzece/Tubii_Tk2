@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 29-May-2015 AT 11:54:27 }
+{ Packager-XL run on 29-May-2015 AT 16:17:54 }
 primitive '1N4448';
   pin
     'IN':
@@ -4411,14 +4411,10 @@ primitive 'LED_L';
       CLASS='DISCRETE';
   end_body;
 end_primitive;
-primitive 'LM2596';
+primitive 'LM2595';
   pin
-    'ON*':
-      PIN_NUMBER='(5)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'FB':
-      PIN_NUMBER='(4)';
+    'VIN':
+      PIN_NUMBER='(2)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
@@ -4428,32 +4424,33 @@ primitive 'LM2596';
       PINUSE='UNSPEC';
     'GND':
       PIN_NUMBER='(3)';
-      PINUSE='GROUND';
+      PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'FB':
+      PIN_NUMBER='(4)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
     'VOUT':
-      PIN_NUMBER='(2)';
-      PIN_TYPE='ANALOG';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-      PINUSE='UNSPEC';
-    'TAB':
-      PIN_NUMBER='(6)';
-      PIN_TYPE='ANALOG';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-      PINUSE='UNSPEC';
-    'VIN':
       PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'ON*':
+      PIN_NUMBER='(5)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
@@ -4463,8 +4460,8 @@ primitive 'LM2596';
       PINUSE='UNSPEC';
   end_pin;
   body
-      PART_NAME='LM2596';
-      BODY_NAME='LM2596';
+      PART_NAME='LM2595';
+      BODY_NAME='LM2595';
       JEDEC_TYPE='TO220_5PIN';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
