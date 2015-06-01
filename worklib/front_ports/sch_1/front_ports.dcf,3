@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 61 )
+			( logicalViewRevNum 63 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -378,6 +378,38 @@
 		)
 		( Attribute
 			( Name "_PDVDUP1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PIN_TEXT" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TOLERANCE" )
 			( Description " " )
 			( Value
 				( DataType ( dString ) )
@@ -4855,9 +4887,6 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U166"
-					( Origin gPackager )
-				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
@@ -5634,8 +5663,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP19"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP19"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I128" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i129"
@@ -5663,8 +5707,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP20"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP20"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I129" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i130"
@@ -5692,8 +5751,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP27"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP27"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I130" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i131"
@@ -5721,8 +5795,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP28"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP28"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I131" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_tk2_lib.front_ports(sch_1):page1_i132"
@@ -5750,8 +5839,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP29"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP29"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I132" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( pin "@tubii_tk2_lib.front_ports(sch_1):page1_i43:tellie_pulse_out"
@@ -6147,7 +6251,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "translation_ports"
@@ -7028,7 +7132,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "general_utilities_ports"
@@ -9797,7 +9901,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "ext_trig_ports"
@@ -10254,7 +10358,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "gt_delays_ports"

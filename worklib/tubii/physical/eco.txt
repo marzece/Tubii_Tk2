@@ -3,50 +3,135 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Sun May 31 17:32:05 2015  |
+|                                                    Mon Jun 01 12:12:04 2015  |
 |------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
+| COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  UNNAMED_1_74LV06A_I237_VCC pins ADDED TO this existing net (pins not previously on any net)
-                                 TP41.1                         
+ DS102350
+ DS1023200
+ DS1023500
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Sun May 31 17:32:05 2015  |
+|                                                    Mon Jun 01 12:12:04 2015  |
 |------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
+| COMPONENTS CHANGED from one device type to another in board drawing          |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- TP41                TESTPOINT_L           
+ U1                  DS1023200              1425.0 12200.0 DS1023200
+ U7                  DS1023500              2025.0 12200.0 DS1023500
+ U36                 DS102350              11500.0  9700.0 DS102350
+ U37                 DS102350              11500.0  9175.0 DS102350
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Sun May 31 17:32:05 2015  |
+|                                                    Mon Jun 01 12:12:04 2015  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- TP41.1                         PRIM_FILE      ./Parts/parts/misc/testpoint_l/chips/chips.prt
+ U1.16           1425.0 12200.0 PRIM_FILE      ./Parts/parts/ttl/ds1023200/chips/chips.prt
+ U1.16           1425.0 12200.0 ROOM           GT_DELAY
+ U7.16           2025.0 12200.0 PRIM_FILE      ./Parts/parts/ttl/ds1023500/chips/chips.prt
+ U7.16           2025.0 12200.0 ROOM           GT_DELAY
+ U36.16         11500.0  9700.0 PRIM_FILE      ./Parts/parts/ttl/ds102350/chips/chips.prt
+ U36.16         11500.0  9700.0 ROOM           GENERIC_DELAYS
+ U37.16         11500.0  9175.0 PRIM_FILE      ./Parts/parts/ttl/ds102350/chips/chips.prt
+ U37.16         11500.0  9175.0 ROOM           GENERIC_DELAYS
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
 |  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
-|                                                    Sun May 31 17:32:05 2015  |
+|                                                    Mon Jun 01 12:12:04 2015  |
 |------------------------------------------------------------------------------|
 | PIN PROPERTIES added to board drawing                                        |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    pin_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- TP41.1                         CDS_PINID      A
+ U1.1            1240.0 12375.0 CDS_PINID      \in\
+ U1.2            1240.0 12325.0 CDS_PINID      \le*\
+ U1.3            1240.0 12275.0 CDS_PINID      \q/p0\
+ U1.4            1240.0 12225.0 CDS_PINID      \clk/p1\
+ U1.5            1240.0 12175.0 CDS_PINID      \d/p2\
+ U1.6            1240.0 12125.0 CDS_PINID      P3
+ U1.7            1240.0 12075.0 CDS_PINID      P4
+ U1.8            1240.0 12025.0 CDS_PINID      GND
+ U1.9            1610.0 12025.0 CDS_PINID      PWM
+ U1.10           1610.0 12075.0 CDS_PINID      P5
+ U1.11           1610.0 12125.0 CDS_PINID      MS
+ U1.12           1610.0 12175.0 CDS_PINID      P6
+ U1.13           1610.0 12225.0 CDS_PINID      P7
+ U1.14           1610.0 12275.0 CDS_PINID      PS
+ U1.15           1610.0 12325.0 CDS_PINID      \out\
+ U1.16           1610.0 12375.0 CDS_PINID      VCC
+ U7.1            1840.0 12375.0 CDS_PINID      \in\
+ U7.2            1840.0 12325.0 CDS_PINID      \le*\
+ U7.3            1840.0 12275.0 CDS_PINID      \q/p0\
+ U7.4            1840.0 12225.0 CDS_PINID      \clk/p1\
+ U7.5            1840.0 12175.0 CDS_PINID      \d/p2\
+ U7.6            1840.0 12125.0 CDS_PINID      P3
+ U7.7            1840.0 12075.0 CDS_PINID      P4
+ U7.8            1840.0 12025.0 CDS_PINID      GND
+ U7.9            2210.0 12025.0 CDS_PINID      PWM
+ U7.10           2210.0 12075.0 CDS_PINID      P5
+ U7.11           2210.0 12125.0 CDS_PINID      MS
+ U7.12           2210.0 12175.0 CDS_PINID      P6
+ U7.13           2210.0 12225.0 CDS_PINID      P7
+ U7.14           2210.0 12275.0 CDS_PINID      PS
+ U7.15           2210.0 12325.0 CDS_PINID      \out\
+ U7.16           2210.0 12375.0 CDS_PINID      VCC
+ U36.1          11325.0  9515.0 CDS_PINID      \in\
+ U36.2          11375.0  9515.0 CDS_PINID      \le*\
+ U36.3          11425.0  9515.0 CDS_PINID      \q/p0\
+ U36.4          11475.0  9515.0 CDS_PINID      \clk/p1\
+ U36.5          11525.0  9515.0 CDS_PINID      \d/p2\
+ U36.6          11575.0  9515.0 CDS_PINID      P3
+ U36.7          11625.0  9515.0 CDS_PINID      P4
+ U36.8          11675.0  9515.0 CDS_PINID      GND
+ U36.9          11675.0  9885.0 CDS_PINID      PWM
+ U36.10         11625.0  9885.0 CDS_PINID      P5
+ U36.11         11575.0  9885.0 CDS_PINID      MS
+ U36.12         11525.0  9885.0 CDS_PINID      P6
+ U36.13         11475.0  9885.0 CDS_PINID      P7
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  4                                              |
+|  C:.../Documents/ANUSTART/worklib/tubii/physical/TubiiPCB_V6.brd             |
+|                                                    Mon Jun 01 12:12:04 2015  |
+|------------------------------------------------------------------------------|
+| PIN PROPERTIES added to board drawing                                        |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    pin_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ U36.14         11425.0  9885.0 CDS_PINID      PS
+ U36.15         11375.0  9885.0 CDS_PINID      \out\
+ U36.16         11325.0  9885.0 CDS_PINID      VCC
+ U37.1          11675.0  9360.0 CDS_PINID      \in\
+ U37.2          11625.0  9360.0 CDS_PINID      \le*\
+ U37.3          11575.0  9360.0 CDS_PINID      \q/p0\
+ U37.4          11525.0  9360.0 CDS_PINID      \clk/p1\
+ U37.5          11475.0  9360.0 CDS_PINID      \d/p2\
+ U37.6          11425.0  9360.0 CDS_PINID      P3
+ U37.7          11375.0  9360.0 CDS_PINID      P4
+ U37.8          11325.0  9360.0 CDS_PINID      GND
+ U37.9          11325.0  8990.0 CDS_PINID      PWM
+ U37.10         11375.0  8990.0 CDS_PINID      P5
+ U37.11         11425.0  8990.0 CDS_PINID      MS
+ U37.12         11475.0  8990.0 CDS_PINID      P6
+ U37.13         11525.0  8990.0 CDS_PINID      P7
+ U37.14         11575.0  8990.0 CDS_PINID      PS
+ U37.15         11625.0  8990.0 CDS_PINID      \out\
+ U37.16         11675.0  8990.0 CDS_PINID      VCC
+|------------------------------------------------------------------------------|
+|   total ECO changes reported  79                                             |
 |------------------------------------------------------------------------------|

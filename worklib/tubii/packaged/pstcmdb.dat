@@ -1,4 +1,4 @@
-; Packager-XL run on 31-May-2015 AT 17:27:51 CONSTRAINTS_VIEW_GENERATED
+; Packager-XL run on 01-Jun-2015 AT 12:08:11 CONSTRAINTS_VIEW_GENERATED
 ( ConstraintFile "tubii"
 	( constraintHeader
 		( objectKey
@@ -8,7 +8,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 499 )
+			( logicalViewRevNum 508 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -5736,6 +5736,9 @@
 			)
 			( gate "TP41"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i257" )
+			)
+			( gate "TP42"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i68" )
 			)
 			( pin "U5.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i1:\1\" )
@@ -17269,6 +17272,9 @@
 			( pin "TP41.1"
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i1@tubii_tk2_lib.microzed_module(sch_1):page1_i257:a" )
 			)
+			( pin "TP42.1"
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i5@tubii_tk2_lib.power(sch_1):page1_i68:a" )
+			)
 			( differentialPair "DP_UNNAMED_1_FRONTPORTS_I2_CLK100"
 				( memberType ( signal ) )
 				( objectFlag fObjectLibdefined )
@@ -17804,6 +17810,14 @@
 				( member ( signalRef "LO_STAR_RAW") )
 				( member ( signalRef "UNNAMED_1_MC10E116_I2_D0") )
 				( objectStatus "@tubii_tk2_lib.tubii(sch_1):\DP_2_3\" )
+			)
+			( differentialPair "DP_UNNAMED_1_CSMD0805_I64_B"
+				( memberType ( signal ) )
+				( objectFlag fObjectLibdefined )
+				( objectFlag fObjectRenamed )
+				( member ( signalRef "UNNAMED_1_CSMD0805_I64_B") )
+				( member ( signalRef "UNNAMED_1_CSMD0805_I71_A") )
+				( objectStatus "@tubii_tk2_lib.tubii(sch_1):page1_i1@tubii_tk2_lib.tubii_pcb(sch_1):page1_i3@tubii_tk2_lib.mtca_mimic(sch_1):page1_i16@tubii_tk2_lib.trigger_logic(sch_1):\DP_2\" )
 			)
 			( bus "CNTRL_RAW"
 				( memberType ( signal ) )
