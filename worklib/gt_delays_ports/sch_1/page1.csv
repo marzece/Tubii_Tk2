@@ -2,14 +2,14 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"LO_STAR_OUT_P";
-2"GND\G";
-3"MTCD_LO*";
-4"LO_STAR_OUT_N";
-5"GND\G";
-6"GND\G";
-7"DGT_N";
-8"DGT_P";
+1"DGT_P";
+2"DGT_N";
+3"GND\G";
+4"GND\G";
+5"LO_STAR_OUT_N";
+6"MTCD_LO*";
+7"GND\G";
+8"LO_STAR_OUT_P";
 %"INPORT"
 "1","(-500,4100)","0","standard","I10";
 ;
@@ -17,7 +17,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"7;
+VHDL_PORT"IN"2;
 %"OUTPORT"
 "1","(1275,3275)","0","standard","I11";
 ;
@@ -25,7 +25,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"OUT"
-HDL_PORT"OUT"3;
+HDL_PORT"OUT"6;
 %"IDS_C10"
 "1","(675,4000)","0","misc","I12";
 ;
@@ -40,7 +40,7 @@ $PN"7"0;
 "PIN8"
 $PN"8"0;
 "PIN6"
-$PN"6"5;
+$PN"6"4;
 "PIN9"
 $PN"9"0;
 "PIN10"
@@ -50,11 +50,11 @@ $PN"4"0;
 "PIN3"
 $PN"3"0;
 "PIN2"
-$PN"2"8;
+$PN"2"1;
 "PIN5"
-$PN"5"6;
+$PN"5"3;
 "PIN1"
-$PN"1"7;
+$PN"1"2;
 %"SIP_HEADER_2PIN"
 "2","(450,3650)","0","misc","I13";
 ;
@@ -66,9 +66,9 @@ _PDVDUP1""
 CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 CDS_LIB"misc";
 "2 \B"
-$PN"2"4;
+$PN"2"5;
 "1 \B"
-$PN"1"1;
+$PN"1"8;
 %"SIP_HEADER_2PIN"
 "2","(275,3250)","2","misc","I14";
 ;
@@ -80,9 +80,9 @@ CDS_LMAN_SYM_OUTLINE"-25,50,25,-50"
 _PDVDUP1""
 CDS_LIB"misc";
 "2 \B"
-$PN"2"2;
+$PN"2"7;
 "1 \B"
-$PN"1"3;
+$PN"1"6;
 %"INPORT"
 "1","(-500,3600)","0","standard","I7";
 ;
@@ -90,7 +90,7 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"4;
+HDL_PORT"IN"5;
 %"INPORT"
 "1","(-500,3700)","0","standard","I8";
 ;
@@ -98,7 +98,7 @@ OFFPAGE"TRUE"
 CDS_LIB"standard";
 "A"
 HDL_PORT"IN"
-VHDL_PORT"IN"1;
+VHDL_PORT"IN"8;
 %"INPORT"
 "1","(550,4275)","0","standard","I9";
 ;
@@ -106,5 +106,5 @@ CDS_LIB"standard"
 OFFPAGE"TRUE";
 "A"
 VHDL_PORT"IN"
-HDL_PORT"IN"8;
+HDL_PORT"IN"1;
 END.

@@ -1,6 +1,6 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 01-Jun-2015 AT 12:08:11 }
-primitive '1N4448';
+{ Packager-XL run on 04-Jun-2015 AT 15:06:54 }
+primitive '1N4448-BASE';
   pin
     'IN':
       PIN_NUMBER='(1)';
@@ -27,6 +27,9 @@ primitive '1N4448';
       JEDEC_TYPE='DO35';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
+      PARENT_PART_TYPE='1N4448';
+      PARENT_PPT='1N4448';
+      PARENT_PPT_PART='1N4448-BASE';
   end_body;
 end_primitive;
 primitive '1N5822';
@@ -53,7 +56,7 @@ primitive '1N5822';
   body
       PART_NAME='1N5822';
       BODY_NAME='1N5822';
-      JEDEC_TYPE='DO41';
+      JEDEC_TYPE='DO201AD';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
   end_body;
