@@ -1,0 +1,189 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\author{Eric Marzec}
+\title{TUBii Server API Description}
+\begin{document}
+\maketitle
+Described here is the set of commands I think would be sufficient and convenient for the server runing on TUBii to implement.
+\begin{itemize}
+\item
+SetGTDelays(uint8 LO\_Delay, uint8 DGT\_Delay)\\
+\{\\
+muxer 3\\
+muxenable 1\\
+loadshift LO\_Delay\\
+loadshift DGT\_Delay\\
+muxenable 0
+
+self.LO\_Delay = LO\_Delay
+self.DGT\_Delay = DGT\_Delay
+
+return ErrorDidHappen?\\
+\}
+\item 
+GetLODelay()
+\{\\
+  return self.LO\_Delay\\
+\}
+\item
+GetDGTDelay()
+\{\\
+  return self.DGT\_Delay\\
+\}
+\item
+SetCaenWords( uint8 GainPathWord, uint8 ChannelSelectWord)\\
+\{\\
+muxer 1 \\
+muxenable 1 \\
+loadshift GainPathWord \\
+loadshift ChannelSelectWord \\
+muxennable 0\\
+dataready 6\\
+dataready 4\\
+
+self.GainPathWord = GainPathWord\\
+self.ChannelSelectWord = ChannelSelectWord\\
+
+	return ErrorDidHappen?\\
+\}\\
+\item 
+GetCAENGainPathWord()\\
+\{\\
+  return self.GainPathWord\\
+\}\\
+\item
+GetCAENChannelSelectWord()\\
+\{\\
+  return self.ChannelSelectWord\\
+\}\\
+\item
+SetControlReg(uint8 ControlRegWord)\\
+\{\\
+muxer 0\\
+muxenable 1\\
+loadshift ControlRegWord\\
+muxenable 0\\
+dataready 5\\
+dataready 4\\
+
+self.ControlRegWord = ControlRegWord\\
+(Perhaps here is where we would like to use the ReadShift command to 
+confirm that things actually worked)\\
+return ErrorDidHappen?\\
+\}\\
+\item
+GetControlReg()\\
+\{\\
+(Maybe we want to use the readshift command here as well)\\
+return self.ControlRegWord\\
+\}\\
+\item
+SetDACThreshold(uint16 DACWord)
+\{\\
+muxer 2\\
+muxenable 1\\
+muxenable 0\\
+(The DAC word is 16 bits (12 actually) but loadshift currently writes 8 at a 
+time. You'll have to figure out how you wanna deal with this.
+Hopefully that won't be too difficult)\\
+
+loadshift DACWord1\\
+loadshift DACWord2\\
+dataready 0\\
+dataready 4\\
+
+self.DACWord = DACWord\\
+
+return ErrorDidHappen?\\
+\}\\
+\item
+GetDACThreshold()\\
+\{\\
+return self.DACWord\\
+\}\\
+\item
+SetAllowableClockMisses(uint8 NMisses)\\
+\{\\
+(I've actually only ever changed this on the TUBii once. 
+So I don't actually know the commands. I'll have to figure this one out later)\\
+
+self.AllowableMisses = self.AllowableMisses
+
+return ErrorDidHappen?
+\}\\
+\item
+smelliePulser(rate, width,nPulses)\\
+\{\\
+(Whatever this function already does)\\
+self.smellieRate = rate\\
+self.smellieWidth = width\\
+self.smellieNPulses = nPulses\\
+
+return ErrorDidHappen?\\
+\}\\
+\item
+GetSmellieRate()\\
+\{\\
+return self.smellieRate\\
+\}\\
+\item
+GetSmellieWidth()\\
+\{\\
+return self.smellieWidth\\
+\}\\
+\item
+GetSmellieNPulses()\\
+\{\\
+return self.smellieNPulses\\
+\}\\
+\item
+smellieDelay(length)\\
+\{\\
+(Whatever this function already does)\\
+self.smellieDelayLength = Length\\
+\}\\
+\item
+GetSmellieDelay()\\
+\{\\
+return self.smellieDelayLength
+\}\\
+\item
+Repeat all the smellie functions for tellie\\
+\item
+Repeat all the smellie functions for Generic\\
+\item
+clockReset()\\
+\{\\
+sets the clock reset pin high than low\\
+This is somewhat different than the current version of clockReset which
+requires an arguement)\\
+
+return ErrorDidHappen?
+\}\\
+\item
+clockStatus()\\
+\{\\
+(same as what it alredy does except returns value not in datastream)\\
+\}\\
+\item
+countMask(countMask)\\
+\{\\
+(same as what it alredy does)\\
+self.countMask = countMask\\
+return ErrorDidHappen?\\
+\}\\
+\item
+GetCountMask()\\
+\{\\
+return self.countMask\\
+\}\\
+\item
+Same functions that count has except for the speaker\\
+\item
+Getters/Setters for trigger mask 
+\item
+Something to do with setting combo/burst/prescale?\\
+You probably know better about how necessary getters/setters for that are\\
+\end{itemize}
+
+\end{document}
