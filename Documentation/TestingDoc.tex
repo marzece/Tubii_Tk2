@@ -9,7 +9,7 @@
 \usepackage{verbatim}
 
 
-\title{Tubii: The Proving Ground}
+\title{TUBii's Gauntlet}
 \author{Eric Marzec}
 
 \begin{document}
@@ -54,11 +54,14 @@ ready line is strobed.
 \section{GlobalTriggering and GT Delays}
 \begin{itemize}
 \item Confirm that the GT shows up on TUBii and looks alright (squarish)
+\item Sync and Sync 24 show up on Tubii
 \item Check that it gets delayed (at all) by the two DS1023s in GT\_Delays section
 \item Check that these delays can be changed by loading their shift registers.
 \item Check that the daisy chainging of their shift registers works
 \item Check that the GT gets to the MZ
 \item Check that the MZ is able to count GTs and keep a running GTID
+\item Sync and Sync24 show up at MZ
+\item MZ can sync up when sync/sync24 show up.
 \item The Microzed can choose between DDGT and LO\_MTCD
 \item Check the all pulses (GT,DGT,DDGT,LO*) are down-going or up-going as they 
 should be. NOTE TO SELF, FIGURE OUT HOW THEY SHOULD BE GOING
@@ -104,16 +107,50 @@ changed by the MZ.
 \item When ECAL\_ACTIVE is low the output is EXT\_PED\_IN
 \end{itemize}
 \section{ELLIE}
-
-
+\begin{itemize}
+\item For SMELLIE
+	\begin{itemize}
+	\item An output pulse can be made at a set-able frequency
+	\item This pulse is synchronous with the 100 MHz clock 
+	\item An ecl pulse can be read it then delayed by a set-able amount
+	\item That pulse is synchronous with the 100MHz clock
+	\end{itemize}
+	\item For TELLIE
+	\begin{itemize}
+	\item An output pulse can be made at a set-able frequency
+	\item This pulse is synchronous with the 100 MHz clock 
+	\item An ECL pulse can be read it then delayed by a set-able amount
+	\item That pulse is synchronous with the 100MHz clock
+	\end{itemize}
+	 
+\end{itemize}
+\section{External Trigger Fan-In}
+\begin{itemize}
+\item TTL pulses can (correctly) be read by the MZ as being high or low
+\item ECL pulses can (correctly) be read by the MZ as being high or low
+\end{itemize}
  
 \section{CAEN Interface}
 \subsection{CAEN Digital}
+\begin{itemize}
+\item A NIM version of GT gets outputted
+\item An LVDS version of Sync gets outputted
+\item An LVDS version of Sync 24 Get outputted
+\end{itemize}
 \subsection{CAEN Analog}
 \begin{itemize}
-\item This will never work, give up
+\item Pickering Reed Relays can be made to switch
 \end{itemize}
- 
+\subsection{VREF5M}
+\begin{itemize}
+\item A precisely -5V line gets made
+\end{itemize}
+\subsection{CAEN BUFFER} 
+\begin{itemize}
+\item COTO reed relays can be made to switch
+\item Anal input pulse gets outputted twice
+\item The Caen output can be either clipped or attenuated at the users whim
+\end{itemize}
 \section{Baseline Monitoring}
 \begin{itemize}
 \item I'm not exactly sure how to test this...figure it out
@@ -125,6 +162,7 @@ changed by the MZ.
 \begin{itemize}
 \item DAC can be set by the MZ to output a sensible volatage value
 \item The stupid pot can be tuned to output equally sensible voltage values
+\item Analog signals get clipped at ~+- 5 volts
 \item Comparator outputs signal appropriate signal when Analog Pulse is over/under
  DAC threshold
  \item Comparatoroutputs signal appropriate signal when Analog Pulse is over/under
@@ -149,6 +187,16 @@ physical switch is thrown such that negative going pulses are selected
 
 \item Comparator outputs high when a signal goes under the POT value AND the 
 physical switch is thrown such that negaitve going pulses are selected
+
+\item The makeshift ECL One-Shot works
+
+\item A trigger pulse shows up at output at all of the following conditions
+no matter what if Analog pulse goes over threshold
+
+\item A trigger pulse shows up at output at about the same time as LO* if analog
+pulse went over threshold during DGT\_Gate (between lockout and DGT)
+
+
 \end{itemize}
 \section{General Utilities}
 \subsection{Generic Delays}
@@ -194,55 +242,5 @@ physical switch is thrown such that negaitve going pulses are selected
 \item Speakers loudness can kinda be tweaked by speaker pot
 \item Speaker outputs a signal that can be recorded by a computer
 \end{itemize}
-
-\section{Shift Registers}
-Below is a list of all the shift registers on the TUBII. The LE MUX is the chip described in \ref{SR_Addr}. More specifically it is an hct238.  For exact information on how to address each pin refer to the hct238's datasheet.
-\subsection{Control Register}
-$\bullet$ 8 bits. Serial in, parallel out\\
-$\bullet$ Connected to pin 13 of LE MUX\\
-$\bullet$ Designed to be programmed once at start up.\\
-$\bullet$ Output gated by flip flops. Toggle $CNTRL\_RDY$ once programming is finished\\
-$\bullet$ Each output acts as an input for the Read Control Register\\
-\subsection{Read Control Register}
-$\bullet$ 8 bits. Parallel in, serial out \\
-$\bullet$ Used to read state of the Control Register non-destructively \\
-$\bullet$ MZ toggles reads it serially by toggling Read\_Enable pin (pin 1) each time it wants to see the next bit.\\
-$\bullet$ The register is circular. So reads should be done 8 at a time.\\
-\subsection{CAEN Register}
-$\bullet$ 16 bits. Serial in, parallel out\\
-$\bullet$ Connected to pin 15 of LE MUX \\
-$\bullet$ The bits 0-3 select between analog pulses for the CAEN\\
-$\bullet$ The 4-7 bits do nothing\\
-$\bullet$ The bits 8-15 choose if analog pulses go to the CAEN or the scope outputs\\
-$\bullet$ Bits 8-15 are gated by flip-flops. Toggle $CAEN\_RDY$ once programming is finished\\
-\subsection{GT Delays Register}
-$\bullet$ 16 bits. Serial in. No output\\
-$\bullet$ Connected to pin 14 of LE MUX\\
-$\bullet$ The data sets the delay length for the two delays\\
-$\bullet$ Bits 0-7 set the time between GT and DGT\\
-$\bullet$ Bits 8-15 set the time between GT and DDGT (LO)\\
-$\bullet$ Bits 0-7 are for a DS1023200 and bits 8-15 are for a DS1023500. See their respective datasheets for programming information.\\
-\subsection{Generic Async Pulse Register}
-$\bullet$ 8 bits. Serial in. No output\\
-$\bullet$ Connected to pin 7 of LE MUX \\
-$\bullet$ The data sets the delay length for the generic pulser. \\
-$\bullet$ The delay length should not exceed the time between pulses. I.e it should not try to delay a 1GHz pulse by 10ns.\\
-$\bullet$ The delay chip is a ds102350. See it's datasheet for programming\\ information.\\
-\subsection{Generic Async Delay Register}
-$\bullet$ 8 bits. Serial in. No output \\
-$\bullet$ Connected to pin 9 of LE MUX \\
-$\bullet$ The data sets the delay length for the generic delay. \\
-$\bullet$ The delay length should not exceed the time between pulses. I.e it should not try to delay a 1GHz pulse by 10ns.\\
-$\bullet$ The delay chip is a ds102350. See it's datasheet for programming\\ information.\\
-\subsection{Comparator DAC Register}
-$\bullet$ 12 bits. Serial in. No output \\
-$\bullet$ Connect to pin 11 of LE MUX \\
-$\bullet$ The data sets the output voltage value for a DAC which acts as a threshold for one of the Comparators. \\
-$\bullet$ The DAC is a AD7243. See datasheet for programming information.\\
-\subsection{Missed Clock Count Register}
-$\bullet$ 8 bits. Serial in, parallel out \\
-$\bullet$ Connected to pin 10 of LE MUX \\
-$\bullet$ Data is gated. Toggle $TubiiTime\_Data\_Time$ once programming is finished.\\
-$\bullet$ Outputs the value for how many missed counts are allowed before clock switch over \\
 
 \end{document}
