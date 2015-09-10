@@ -1,0 +1,248 @@
+\title{TUBII: A Field of Dreams}
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{authblk}
+\usepackage{verbatim}
+
+
+\title{Tubii: The Proving Ground}
+\author{Eric Marzec}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+
+\end{abstract}
+\begin{itemize}
+\item Make Testing Document
+\end{itemize}
+\section{Powers}
+\begin{itemize}
+\item Use multimeter check that there are no shorts between the various powers.
+(VCC,GND,V3P3,VEE,VTT,VCCIO,V15,V15M)
+\item Plug in the board to each power if they're availible
+\item Test regulators (note the VCCIO regulators output should be 0V until the 
+enable pin is used) (Or maybe on second thought the output will be 3.3V when b/c the
+enable pin is disconnected,I'm not sure, but you can test that the output turns on/ off when the enable pin is low/high)
+\end{itemize}
+\section{MicroZed}
+\begin{itemize}
+\item Stuff the lv06a that will control the VCCIO regulator. Then stuff and plug in the MicroZed (MZ)
+\item Make sure the MZ turns on (LEDs light up and all)
+\item Make sure the VCCIO banks get 3.3V
+\item Check that the various lv07a/lvc07a's all work and that outputs from the MZ
+make it through them with decent gain (ie 3.3V signals go to 5V signals)(Note the shift register CLK/Data line may be an excpetion here, more on that later)
+\item MZ Happy light is on when MZ is plugged in and turned on
+\item MZ Hppy light is off when MZ is unplogged and or off
+\end{itemize}
+\section{Multiplexer}
+\begin{itemize}
+\item Check that each the multiplexer turns on/off appropriately
+\item Check that each line can be addressed as expected
+\end{itemize}
+\section {ControlRegister}
+\begin{itemize}
+\item The 74hct164 can be loaded with arbitrary 8bits.
+\item These 8bits don't showup at the  various parts they feed into until the data
+ready line is strobed.
+\item The 8bits can be read back in in a non-destructive manner
+\end{itemize}
+\section{GlobalTriggering and GT Delays}
+\begin{itemize}
+\item Confirm that the GT shows up on TUBii and looks alright (squarish)
+\item Check that it gets delayed (at all) by the two DS1023s in GT\_Delays section
+\item Check that these delays can be changed by loading their shift registers.
+\item Check that the daisy chainging of their shift registers works
+\item Check that the GT gets to the MZ
+\item Check that the MZ is able to count GTs and keep a running GTID
+\item The Microzed can choose between DDGT and LO\_MTCD
+\item Check the all pulses (GT,DGT,DDGT,LO*) are down-going or up-going as they 
+should be. NOTE TO SELF, FIGURE OUT HOW THEY SHOULD BE GOING
+\end{itemize}
+\section{Clocks}
+\subsection{Default Clock Select}
+\begin{itemize}
+\item Some surgery is needed to get the clock in place. Check that a 200MHZ signal comes out of it at all.
+\item Check the the LVPECL pull-down is working well
+\item Check that the 200MZ signal gets divided to 100MHZ
+\item Clock divider's reset button is working
+\item Clock divider reset signal from MZ is working
+\item Quality of external TUB clock is good
+\item One clock becomes Default and the other becomes backup
+\item The clock that is default can be switched with backup and vice versa
+\end{itemize}
+\subsection{Fault Detection}
+\begin{itemize}
+\item The DefaultClock (DefCLK) signal's frequency gets divided and the various jumpers can pick between frequencies.
+\item No DefCLK signal makes output of the HCT123 changed.
+\item Some noticable change in the system happens when the DefCLK output is missing
+\item You can count how many clock pulses get missed. (ie you get 100mhz pulses while the DefCLK is gone and they go away when DefCLK shows up again)
+\item The mc10e016 emits a signal if many clock pulses are missed
+\item The MC10e016's shift register can be loaded and this allows you to pick
+how many pulses until TC does something 
+\item The output of that fucking rats nest that hangs off of TC makes at least some sense, good fucking luck buddy.
+\item The MZ gets told when the clocks should be changed
+\end{itemize}
+\subsection{Change Clocks}
+\begin{itemize}
+\item When physical switch is thrown one way the clock at output is exactly the same
+as back up clock
+\item When thrown the other way the output clock is the DefCLK unless DefCLK 
+ChangeCLK signal is high.
+\item The various LEDs light up in a way that makes some sense/is useful
+\end{itemize}
+\section{Ecal Control}
+\begin{itemize}
+\item The control register outputs an ECAL\_ACTIVE signal that can be actively
+changed by the MZ.
+\item The LED corresponding the the ECAL\_ACTIVE signal works
+\item When ECAL\_ACTIVE is high the output is GT
+\item When ECAL\_ACTIVE is low the output is EXT\_PED\_IN
+\end{itemize}
+\section{ELLIE}
+
+
+ 
+\section{CAEN Interface}
+\subsection{CAEN Digital}
+\subsection{CAEN Analog}
+\begin{itemize}
+\item This will never work, give up
+\end{itemize}
+ 
+\section{Baseline Monitoring}
+\begin{itemize}
+\item I'm not exactly sure how to test this...figure it out
+\end{itemize}
+
+
+
+\section{MTCA\_MIMIC}
+\begin{itemize}
+\item DAC can be set by the MZ to output a sensible volatage value
+\item The stupid pot can be tuned to output equally sensible voltage values
+\item Comparator outputs signal appropriate signal when Analog Pulse is over/under
+ DAC threshold
+ \item Comparatoroutputs signal appropriate signal when Analog Pulse is over/under
+ POT threshold
+
+
+\item GT DGT, and LO* all show up as expected.
+\item The DGT\_Gate signal makes sense.
+\end{itemize}
+\subsection{Trigger Logic}
+\begin{itemize}
+
+
+\item Comparator outputs high when a signal goes over the DAC value AND the 
+physical switch is thrown such that positive going pulses are selected
+
+\item Comparator outputs high when a signal goes over the POT value AND the 
+physical switch is thrown such that positive going pulses are selected
+
+\item Comparator outputs high when a signal goes under the DAC value AND the 
+physical switch is thrown such that negative going pulses are selected
+
+\item Comparator outputs high when a signal goes under the POT value AND the 
+physical switch is thrown such that negaitve going pulses are selected
+\end{itemize}
+\section{General Utilities}
+\subsection{Generic Delays}
+\begin{itemize}
+\item Emits a TTL that can be delay by a tuneable amount that roughly matches the input signal
+\item Blinks an LED that matches the delay
+\end{itemize}
+\subsection{Generic Pulser}
+\begin{itemize}
+\item Emits a TTL pulse at a frequency that can be chosen by the user.
+\end{itemize}
+\subsection{Pulse Inverter}
+\begin{itemize}
+\item Analog pulses can be changed from upward going to downward going
+\item Analog pulses can be changed from downward going to upward going
+\end{itemize}
+
+\subsection{Ribbon Delay}
+\begin{itemize}
+\item ECL pulses can be delayed by an amount that makes physical sense 
+(i.e. a meter long cable leads to a few ns of delay)
+\end{itemize}
+
+\subsection{Pulse Scaler}
+\begin{itemize}
+\item The MZ can output signals that increment the the display
+\item The display can show the frequency (in Hz) of signals
+\item lead zero blanking can be turned on/off by control register
+\end{itemize}
+\subsection{Translation}
+\begin{itemize}
+\item TTL pulses go to ECL pulses
+\item ECL pulses go to TTL pulses
+\item LVDS pulses go to ECL pulses
+\item ECL pulses go to LVDS pulses
+\item NIM pulses go to ECL pulses
+\item ECL pulses go to NIM pulses
+\end{itemize}
+\section{Speaker}
+\begin{itemize}
+\item Speaker clicks when told to do so by MZ
+\item Speaker is loud enough
+\item Speakers loudness can kinda be tweaked by speaker pot
+\item Speaker outputs a signal that can be recorded by a computer
+\end{itemize}
+
+\section{Shift Registers}
+Below is a list of all the shift registers on the TUBII. The LE MUX is the chip described in \ref{SR_Addr}. More specifically it is an hct238.  For exact information on how to address each pin refer to the hct238's datasheet.
+\subsection{Control Register}
+$\bullet$ 8 bits. Serial in, parallel out\\
+$\bullet$ Connected to pin 13 of LE MUX\\
+$\bullet$ Designed to be programmed once at start up.\\
+$\bullet$ Output gated by flip flops. Toggle $CNTRL\_RDY$ once programming is finished\\
+$\bullet$ Each output acts as an input for the Read Control Register\\
+\subsection{Read Control Register}
+$\bullet$ 8 bits. Parallel in, serial out \\
+$\bullet$ Used to read state of the Control Register non-destructively \\
+$\bullet$ MZ toggles reads it serially by toggling Read\_Enable pin (pin 1) each time it wants to see the next bit.\\
+$\bullet$ The register is circular. So reads should be done 8 at a time.\\
+\subsection{CAEN Register}
+$\bullet$ 16 bits. Serial in, parallel out\\
+$\bullet$ Connected to pin 15 of LE MUX \\
+$\bullet$ The bits 0-3 select between analog pulses for the CAEN\\
+$\bullet$ The 4-7 bits do nothing\\
+$\bullet$ The bits 8-15 choose if analog pulses go to the CAEN or the scope outputs\\
+$\bullet$ Bits 8-15 are gated by flip-flops. Toggle $CAEN\_RDY$ once programming is finished\\
+\subsection{GT Delays Register}
+$\bullet$ 16 bits. Serial in. No output\\
+$\bullet$ Connected to pin 14 of LE MUX\\
+$\bullet$ The data sets the delay length for the two delays\\
+$\bullet$ Bits 0-7 set the time between GT and DGT\\
+$\bullet$ Bits 8-15 set the time between GT and DDGT (LO)\\
+$\bullet$ Bits 0-7 are for a DS1023200 and bits 8-15 are for a DS1023500. See their respective datasheets for programming information.\\
+\subsection{Generic Async Pulse Register}
+$\bullet$ 8 bits. Serial in. No output\\
+$\bullet$ Connected to pin 7 of LE MUX \\
+$\bullet$ The data sets the delay length for the generic pulser. \\
+$\bullet$ The delay length should not exceed the time between pulses. I.e it should not try to delay a 1GHz pulse by 10ns.\\
+$\bullet$ The delay chip is a ds102350. See it's datasheet for programming\\ information.\\
+\subsection{Generic Async Delay Register}
+$\bullet$ 8 bits. Serial in. No output \\
+$\bullet$ Connected to pin 9 of LE MUX \\
+$\bullet$ The data sets the delay length for the generic delay. \\
+$\bullet$ The delay length should not exceed the time between pulses. I.e it should not try to delay a 1GHz pulse by 10ns.\\
+$\bullet$ The delay chip is a ds102350. See it's datasheet for programming\\ information.\\
+\subsection{Comparator DAC Register}
+$\bullet$ 12 bits. Serial in. No output \\
+$\bullet$ Connect to pin 11 of LE MUX \\
+$\bullet$ The data sets the output voltage value for a DAC which acts as a threshold for one of the Comparators. \\
+$\bullet$ The DAC is a AD7243. See datasheet for programming information.\\
+\subsection{Missed Clock Count Register}
+$\bullet$ 8 bits. Serial in, parallel out \\
+$\bullet$ Connected to pin 10 of LE MUX \\
+$\bullet$ Data is gated. Toggle $TubiiTime\_Data\_Time$ once programming is finished.\\
+$\bullet$ Outputs the value for how many missed counts are allowed before clock switch over \\
+
+\end{document}
